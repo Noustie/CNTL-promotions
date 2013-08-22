@@ -1,0 +1,240 @@
+/* Global reset-RESET (restores some sensible defaults) based on EJS's reset.css */
+strong { font-weight:bold }
+em { font-style:italic }
+a img { border:none } /* Gets rid of IE's blue borders */
+a:active { outline:none }
+
+* {outline: none;}
+
+/*** GENERAL TYPEOGRAPHY ***/
+body {
+	background-color: #fff;
+	color: #030303;
+	font-family: Arial,Helvetica,sans-serif;
+}
+
+a {
+	color: #00853f;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h2 {
+	color: #00853f;
+	font-size: 153.9%;
+	margin-bottom: 10px;
+}
+
+h3 {
+	font-size: 21px;
+	color: #00853f;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+p {
+	margin-bottom: 15px;
+	font-size: 12px;
+}
+
+ul {
+	margin-left: 35px;
+	margin-bottom: 15px;
+}
+ul li {
+	list-style-type: disc;
+	margin-bottom: 8px;
+}
+
+sup, sub {
+	vertical-align: baseline;
+	line-height: 0;
+	font-size: 65%;
+	position: relative;
+	left: 0;
+	top: -0.5em;
+}
+
+sub {
+	top: 0.2em;
+}
+
+.smallGray {
+	color: #666;
+	font-size: 77%;
+	display: block;
+	line-height: 12px;
+	padding: 3px 0 0 0;
+	margin: 0;
+}
+
+/*** GENERAL LAYOUT ***/
+
+/* Header and Navigation */
+
+#wrapper {
+	margin: 0 auto;
+	width: 920px;
+	padding-top: 15px;
+}
+
+/*** HEADER STYLES ***/
+
+#top_nav {
+	float: right;
+	font-size: 93%;
+	clear: both;
+}
+
+#top_nav ul {
+	margin-left: 0px;
+}
+
+#top_nav ul li {
+	border-right: 1px solid #666;
+	color: #666;
+	display: inline;
+	list-style-type: none;
+	margin-right: 5px;
+	padding-right: 8px;
+}
+
+#top_nav ul li a {
+	color: #666;
+}
+
+#top_nav ul li.topnav_last {
+	border: none;
+}
+
+#hdr_logo {
+	clear: both;
+	padding-bottom: 25px;
+	width: 215px;
+}
+
+#hdr_logo h1 {
+	background: url('../images/logo.gif') left top no-repeat;
+	width: 214px;
+	height: 43px;
+	text-indent: -9999px;
+	line-height: 0;
+}
+
+
+.disclaimer {
+	color: #666;
+	font-size: 85%;
+	margin-bottom: 20px;
+	margin-left: 20px
+}
+
+.smaller {
+	font-size: 93%;
+}
+
+.ir {
+	text-indent: -9999px;
+}
+.abir {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.box {
+	border: 1px solid #CCC;
+	position: relative;
+}
+.box p, .box li {
+	font-size: 14px;
+}
+.header {
+	background: #FFF url("../images/header-ir.gif") no-repeat left center;
+	height: 120px;
+}
+.acctRevCta {
+	font-size: 12px;
+	color: #999;
+	width: 200px;
+	float: right;
+	padding: 40px 0 0 0;
+}
+.acctRevCta .chatbtn {
+	display: block;
+}
+.twoCols  {
+	overflow: hidden;
+	padding: 20px 0;
+}
+.twoCols .colbox {
+	width: 450px;
+	background: #FFF url("../images/box-bg-gray.gif") repeat-x left bottom;
+	height: 420px;
+}
+.twoCols h3 {
+	margin: 0 0 20px 0;
+}
+.colLeft {
+	float: left;
+}
+.colRight {
+	float: right;
+}
+.box .wrap {
+	padding: 30px 40px 30px 30px;
+}
+.acctRev {
+	height: 100%;
+	background: transparent url("../images/acctReviewer.png") no-repeat right bottom;
+}
+.acctRev ul {
+	margin-left: 15px;
+	margin-right: 120px;
+}
+.acctRev ul li {
+	margin-bottom: 15px;
+}
+.checkList li { background-image: url("../images/checkbox.gif"); background-repeat: no-repeat; background-position: left top; list-style-type: none; display: block; margin: 0px; padding: 0 0 15px 35px; }
+.checkList { margin: 0px; padding: 0px; }
+.checkList strong { font-size: 14px; }
+
+.disc {
+	font-size: 11px;
+	color: #777;
+	position: relative;
+	top: -10px;
+	left: 0;
+}
+
+.footer {
+	text-align: center;
+	font-size: 85%;
+	color: #666;
+	padding: 15px 0 20px 0;
+	clear: both;
+}
+
+.footer ul {
+	margin-left: 0px;
+	margin-bottom: 5px;
+}
+
+.footer ul li {
+	border-right: 1px solid #666;
+	color: #666;
+	display: inline;
+	list-style-type: none;
+	margin-right: 5px;
+	padding-right: 8px;
+}
+
+.footer ul li a {
+	color: #666;
+}
+
+.footer ul li.footernav_last {
+	border: none;
+}

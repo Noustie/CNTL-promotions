@@ -1,0 +1,747 @@
+/* Global reset-RESET (restores some sensible defaults) based on EJS's reset.css */
+strong { font-weight:bold }
+em { font-style:italic }
+a img { border:none } /* Gets rid of IE's blue borders */
+a:active { outline:none }
+
+* {outline: none;}
+
+/*** GENERAL TYPEOGRAPHY ***/
+body {
+	background-color: #fff;
+	color: #030303;
+	font-family: Arial,Helvetica,sans-serif;
+}
+
+a {
+	color: #00853f;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h2 {
+	color: #000000;
+	font-size: 28px;
+	margin-bottom: 10px;
+	width:510px;
+}
+
+h3 {
+	color: #00853f;
+	margin-bottom: 10px;
+}
+
+p {
+	margin-bottom: 15px;
+	font-size: 14px;
+	color: #666666;
+}
+
+ul {
+	margin-left: 35px;
+	margin-bottom: 15px;
+}
+ul li {
+	list-style-type: disc;
+	margin-bottom: 8px;
+}
+
+sup {
+	vertical-align: super;
+	line-height: 0;
+	font-size: 11px;
+}
+
+sub {
+	vertical-align: sub;
+	line-height: 0;
+}
+
+.smallGray {
+	color: #666;
+	font-size: 10px;
+	display: block;
+	line-height: 12px;
+	padding: 3px 0 0 0;
+	margin: 0;
+}
+
+/*** GENERAL LAYOUT ***/
+
+/* Header and Navigation */
+
+#wrapper {
+	margin: 0 auto;
+	width: 970px;
+	padding-top: 15px;
+}
+
+/*** HEADER STYLES ***/
+
+#top_nav {
+	float: right;
+	font-size: 12px;
+	clear: both;
+}
+
+#top_nav ul {
+	margin-left: 0px;
+}
+
+#top_nav ul li {
+	border-right: 1px solid #666;
+	color: #666;
+	display: inline;
+	list-style-type: none;
+	margin-right: 5px;
+	padding-right: 8px;
+}
+
+#top_nav ul li a {
+	color: #666;
+}
+
+#top_nav ul li.topnav_last {
+	border: none;
+}
+
+#hdr_logo {
+	clear: both;
+	padding-bottom: 25px;
+	width: 215px;
+}
+
+#hdr_logo h1 {
+	background: url('../images/logo.gif') left top no-repeat;
+	width: 214px;
+	height: 43px;
+	text-indent: -9999px;
+	line-height: 0;
+}
+
+#banner_wrap {
+	width: 100%;
+	position: relative;
+	clear: both;
+	overflow: hidden;
+	float: left;
+	clear: both;
+	display: block;
+	height: 81px;
+}
+
+#banner_right {
+	width: 596px;
+	height: 81px;
+	float: left;
+}
+
+#banner_right h2 {
+	background: url('../images/hdrRight.gif') left top no-repeat;
+	width: 596px;
+	height: 81px;
+	line-height: 0;
+	padding: 0;
+	margin: 0;
+	text-indent: -9999px;
+	line-height: 0;
+}
+
+#banner_left {
+	width: 374px;
+	height: 81px;
+	float: left;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+#main {
+	text-align: center;
+}
+.mainWrap {
+	width: 970px;
+	position: relative;
+	margin: 0 auto;
+	text-align: left;
+}
+body, div {
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+sub {
+	line-height: 0;
+	font-size: 11px;
+}
+#masthead {
+	padding: 10px;
+}
+.logo {
+	float: left;
+}
+.mastNav {
+	float: right;
+	text-align: right;
+}
+.mastNav .links {
+	padding: 7px 0;
+}
+
+div.mastNav p.links {
+	margin-bottom: 0;
+}
+
+.mastNav .contact {
+	text-align: left;
+	/*margin: 0 0 0 47%;*/
+	display: block;
+	padding: 3px 0 3px 20px;
+	float: right;
+}
+.mastNav .phone {
+	width: 155px;
+	background: #fff url('http://www.centurylink.com/prismtv/images/icons/iconPhone.gif') no-repeat 5px center;
+}
+.mastNav .chatOnline {
+	/*width: 155px;*/
+	background: #fff url('http://www.centurylink.com/prismtv/images/icons/iconChat.gif') no-repeat left center;
+}
+
+
+/** BODY CONTAINER **/
+
+#content_wrapper {
+	background: url('../images/outerGlowMain.png') center top repeat-y;
+	/*padding-left: 1px;
+	padding-right: 1px;*/
+	float: left;
+	clear: both;
+	width: 970px;
+	overflow: visible;
+}
+
+#content_bottom_round {
+	background: url('../images/outerGlowBtm.gif') left top no-repeat;
+	height: 11px;
+	display: block;
+	width:970px;
+}
+
+.disclaimer {
+	color: #666;
+	font-size: 11px;
+	padding: 20px;
+	margin: 0;
+	clear: both;
+}
+/*.small{
+	font-size:0.7em;
+	vertical-align:super;
+	position:relative;
+	top:-0.25em;
+}*/
+.smaller {
+	font-size: 12px;
+}
+sup{
+	font-size:70%;
+	line-height:0px;
+	vertical-align:super;
+}
+
+/** INNER CONTAINER STYLES **/
+
+#inner_content_wrapper {
+	position: relative;
+	margin: 0 auto;
+	width: 938px;
+	overflow: hidden;
+}
+#inner_content_gradient {
+	background-image:url(../images/purpleGradBkg.jpg);
+	background-repeat:repeat-x;
+	background-color:#d6d6d6;
+	width:960px;
+	margin-left:5px;
+}
+
+#main_page_nav {
+	display: block;
+	left: 20px;
+	position: relative;
+	width: 100%;
+	z-index: 100;
+	top: 6px;
+	overflow: hidden;
+}
+
+#main_page_nav ul {
+	list-style-type: none;
+	margin-left: 0;
+}
+
+#main_page_nav ul li {
+	list-style-type: none;
+	float: left;
+	margin: 0;
+}
+
+#main_page_nav li a {
+  height: 52px;
+  width: 170px;
+  display: block;
+  background-color: transparent;
+  background-image: url("../images/tab_sprite.gif");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  text-align: center;
+  line-height: 55px;
+  color: #303030;
+}
+
+#main_page_nav li a:hover, #main_page_nav .current a {
+    background-position: left top;
+    color: #030303;
+    text-decoration: none;
+}
+
+#inner_content {
+	position: relative;
+	background: url('../images/innerGlowMain.png') center repeat-y;
+	overflow: visible;
+	margin-top:8px;
+	margin-bottom:8px;
+}
+
+#inner_content_top {
+	height: 14px;
+	background: url('../images/innerGlowTop.png') center top no-repeat;
+	position: absolute;
+	top: -8px;
+	left: 0;
+	width: 100%;
+}
+
+#inner_content_bottom {
+	height: 13px;
+	background: url('../images/innerGlowBtm.png') center top no-repeat;
+	position: absolute;
+	bottom: -13px;
+	left: 0;
+	width: 100%;
+}
+
+.content_disclaim {
+	margin-left: 20px;
+}
+
+.dotted_hr {
+	border: none;
+	height: 12px;
+	width: 494px;
+	margin: 0;
+	padding: 0 0 15px 0;
+}
+
+.tab {
+	display: none;
+	/*height: 45em;*/
+}
+
+.tab .cols {
+	padding: 40px 30px 20px 30px;
+	overflow: hidden;
+}
+
+.lCol {
+	float: left;
+}
+
+.lCol p {
+	line-height: 22px;
+}
+
+.rCol {
+	float: left;
+}
+.rColWide {
+	float: left;
+	position:relative;
+	left:-30px;
+	width:430px;
+	/*margin-top:70px;*/
+}
+
+#inner_content .current {
+	display: block;
+}
+
+.arrowLink {
+	background: url('../images/smallGreenArw.gif') left center no-repeat;
+	padding-left: 10px;
+	text-decoration: underline;
+}
+
+/** TAB 1 SPECIFIC LAYOUTS **/
+
+.wideBar {
+	background-color: #DDDDDD;
+	padding: 15px 0;
+	margin: 0 5px 20px 5px;
+	overflow: hidden;
+	clear: both;
+}
+.wideBar .bdr {
+	border-left: 1px solid #999;
+}
+.premChannel {
+	float: left;
+	width: 49%;
+	padding: 20px 0 10px 0;
+}
+.premChannel .logo {
+	float: left;
+	position: relative;
+	left: 30px;
+	top: 0;
+}
+.premChannel ul {
+	display: block;
+	margin: 0 0 0 35%;
+	width: 290px;
+}
+.premChannel .shortList {
+	padding: 5px 0 0 0;
+}
+.premChannel ul li {
+	display: block;
+	float: left;
+	width: 50%;
+	font-size: 12px;
+}
+
+#premiumChannels .lCol {
+	width: 480px;
+	margin-right: 45px;
+}
+#premiumChannels .lColWide {
+	width: 440px;
+	margin-right: 0px;
+	float:left;
+}
+
+#premiumChannels .lCol h2 {
+	width: 413px;
+	height: 55px;
+	margin-bottom: 20px;
+}
+
+#premiumChannels .lCol h3 {
+	width: 257px;
+	height: 16px;
+	margin-bottom: 20px;
+}
+
+.premiumCTA {
+	overflow: hidden;
+}
+
+.premiumPricePoint {
+	float: left;
+	width: 140px;
+}
+
+.premiumPricePoint p {
+	background: url('../images/premiumPrice.gif') left top no-repeat;
+	text-indent: -9999px;
+	width: 140px;
+	height: 120px;
+}
+
+.premiumChatCont {
+	float: left;
+	padding: 15px 0 0 20px;
+}
+
+.premiumChatCont .chatCTA {
+	background: url('../images/chatCTA.gif') left top no-repeat;
+	text-indent: -9999px;
+	width: 310px;
+	height: 17px;
+	margin-bottom: 4px;
+}
+
+.premiumChatCont .altOrder {
+	background: url('../images/chatCall.gif') left top no-repeat;
+	text-indent: -9999px;
+	width: 259px;
+	height: 32px;
+	margin-bottom: 0;
+}
+
+.premiumChatCont a.chatBtn {
+	background: url('../images/chatBtn.gif') left top no-repeat;
+	text-indent: -9999px;
+	width: 157px;
+	height: 37px;
+	display: block;
+	margin-bottom: 10px;
+}
+
+/** TAB 2 SPECIFIC LAYOUTS **/
+
+#moviesOnDemand .lCol {
+	width: 384px;
+	margin-right: 50px;
+}
+
+#moviesOnDemand .rCol {
+	width: 440px;
+}
+
+#moviesOnDemand .rCol h2 {
+	background: url('../images/onDemandH2.gif') left top no-repeat;
+	text-indent: -9999px;
+	width: 253px;
+	height: 27px;
+	margin-bottom: 0px;
+}
+
+#moviesOnDemand .rCol h3 {
+	background: url('../images/onDemandH3.gif') left top no-repeat;
+	text-indent: -9999px;
+	width: 401px;
+	height: 21px;
+}
+
+#moviesOnDemand .onDemandBtn {
+	background: url('../images/onDemandBtn.gif') left top no-repeat;
+	text-indent: -9999px;
+	width: 438px;
+	height: 73px;
+}
+
+.onDemandPrice {
+	background: url('../images/onDemandPrice.gif') left top no-repeat;
+	text-indent: -9999px;
+	width: 422px;
+	height: 120px;
+}
+
+/** TAB 3 SPECIFIC LAYOUTS **/
+#nflRedZone .lCol {
+	width: 447px;
+	margin-right: 35px;
+}
+
+#nflRedZone .rCol {
+	width: 388px;
+}
+
+#nflRedZone .lCol h2 {
+	background: url('../images/redZoneH2.gif') left top no-repeat;
+	text-indent: -9999px;
+	width: 447px;
+	height: 28px;
+	margin-bottom: 0px;
+}
+
+p.redZonePrice {
+	background: url('../images/redZonePrice.gif') left top no-repeat;
+	text-indent: -9999px;
+	width: 447px;
+	height: 123px;
+	margin-bottom: 25px;
+}
+
+p.redZoneBtn {
+	background: url('../images/redZoneBtn.gif') left top no-repeat;
+	text-indent: -9999px;
+	width: 392px;
+	height: 90px;
+	margin: 45px 0 0 0;
+}
+
+/** FOOTER AND SOCIAL **/
+
+#social_btm {
+}
+
+#social_btm p {
+	text-align: right;
+	font-size: 14px;
+	margin: 10px 40px 10px 0;
+}
+
+#social_btm p img {
+	vertical-align: bottom;
+}
+
+/* MODIFIED FROM MAIN.CSS ON CENTURYLINK.COM*/
+/* =footer */
+#footer {background: url("http://www.centurylink.com/static/Images/Layout/footerBg.gif") no-repeat; font-size: 12px; margin: 0 auto; width: 960px; height: 100px; overflow: hidden; clear:both}
+#footer .copyright {font-size: 11px; margin-top: 14px;}
+#footer .cta {font-size: 16px; color: #999; font-weight: bold;  margin: 0 0 12px; }
+#footer .about {width: 70%; float: left; padding-top: 4px; position: relative; top: 20px; left: 20px;}
+#footer .support {width: 30%; float: right; text-align: right; position: relative; top: 20px; right: 20px;}
+#footer .support ul.nav {float: right; padding-top: 30px;}
+/* =footer navigation */
+#footer ul.nav {list-style: none; margin: 0; padding: 0; height: 1.25em;}
+#footer ul.nav li {margin: 0; border-left: 1px solid #666; float: left; display: block;}
+#footer ul.nav li a {color: #333; padding: 0 1em;}
+#footer ul.nav li.first {border-left: none;}
+#footer ul.nav li.first a {padding-left: 0;}
+#footer ul.nav li.last a {padding-right: 0;}
+#explorePrism{
+	margin-top:25px;
+	margin-bottom:25px;
+}
+ul.check{
+	margin:0;
+	padding:0;
+}
+ul.check li{
+	background-image:url(../images/content/checkMark.png);
+	color:#666666;
+	background-repeat: no-repeat;
+	background-position: left center;
+	margin-left:0;
+	padding-left:30px;
+	list-style:none;
+}
+h3.orange{
+	font-size:18px;
+	color:#ff6319;
+	font-weight:bold;
+	margin-top: 72px;
+}
+#fourNineNineNine{
+	position:relative;
+	left:30px;
+	margin-bottom:15px;
+}
+.seeItYourself{
+	padding-top:20px;
+	width:425px;
+	background-image:url(../images/content/horizGreyLine.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	float:left;
+	margin-top: 15px;
+}
+.seeItYourself p{
+	float:left;
+	font-size:16px;
+	line-height:1.5em;
+	color:#000000;
+}
+.prismVidThumb{
+	width:108px;
+	height:63px;
+	float:left;
+	margin-right:20px;
+}
+.green{
+	color:#34b233;
+}
+.greySmall{
+	font-size:18px;
+	color:#666666;
+	position:relative;
+	top:-10px;
+	letter-spacing: -0.02em;
+}
+.size20pt{
+	font-size:20px;
+	color:#000000;
+	margin:0;
+	line-height:2em;
+}
+.size18pt{
+	font-size:18px;
+	color:#000000;
+}
+.size16pt{
+	font-size:16px;
+}
+#chatBtnTop{
+	position:relative;
+	top:7px;
+	left:15px;
+}
+#pirates{
+	position:relative;
+	left: 25px;
+}
+#bottomBoxes{
+/* 	width:650px; */
+	margin:25px auto;
+	position:relative;
+	left:30px;
+}
+#bottomLeftBox{
+	width:325px;
+/*
+	float:left;
+	background-image:url(../images/content/vertGreyLine.png);
+	background-repeat: no-repeat;
+	background-position: right;
+*/
+}
+/*
+#bottomRightBox{
+	width:280px;
+	float:left;
+	padding-left:40px;
+}
+*/
+.headerImg{
+	position:relative;
+}
+#chatToOrderHeader{
+	position:absolute;
+	left:723px;
+	top:150px;
+}
+#cboxLoadedContent .whiteBorderOverlay {
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 100%;
+    position: relative;
+}
+#overlayHide {
+    display: none;
+}
+
+/*begin ie7 conditional styles*/
+#main.ie7 .lCol p{
+	line-height:20px;
+}
+#main.ie7 h3.orange{
+	margin-top:90px;
+}
+#main.ie7 lColWide h2{
+	line-height:40px;
+	padding:30px;
+	margin:30px;
+}
+#main.ie7 sup{
+	font-size:70%;
+	line-height:0px;
+	vertical-align:top;
+}
+/*end ie7 conditional styles*/

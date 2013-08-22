@@ -1,0 +1,74 @@
+<!--Begin Footer include - /assets/includes/templates/footer.html-->
+
+<div class="footer" id="tpl_footer">
+	<a href="http://storelocator.centurylinkapps.com/index.cfm" class="" id="tpl_footer-store-locator" clicktrack="ctl|corp|hp|footer|link|store_locator">Store Locator</a> |
+	<a href="<!--#echo var="ctl_url"-->/sitemap.html" clicktrack="ctl|corp|hp|footer|link|site_map">Site Map</a> |
+	<a href="<!--#echo var="ctlsecure_url"-->/Pages/AboutUs/CompanyInformation/Careers/" clicktrack="ctl|corp|hp|footer|link|careers">Careers</a> |
+	<a href="<!--#echo var="ctl_url"-->/Pages/AboutUs/Legal/" id="tpl_footer-legal" clicktrack="ctl|corp|hp|footer|link|legal">Legal</a> |
+	<a href="#ZAM" class="modal-trigger" id="tpl_footer-legal-notices" clicktrack="ctl|corp|hp|footer|link|legal_notices">Legal Notices</a> |
+	<!-- mp_trans_remove_start -->
+	<a href="<!--#echo var="ctl_url"-->/Pages/AboutUs/Legal/privacyPolicy.jsp" clicktrack="ctl|corp|hp|footer|link|privacy_policy">Privacy Policy</a> |
+	<!-- mp_trans_remove_end -->
+	<!-- mp_trans_add
+     <a href="http://www.centurylink.com/Pages/AboutUs/Legal/PrivacyPolicy/privacyPolicyEspanol.jsp" clicktrack="ctl|corp|hp|quick_links|info4|link|updated_privacy_policy">Politica de Privacidad</a> | -->
+	<a href="<!--#echo var="ctl_url"-->/Pages/AboutUs/Community/Disabled" clicktrack="ctl|corp|hp|footer|link|disabilities">Customers with Disabilities</a> |
+	<a href="#ZAM" class="modal-trigger" id="tpl_footer-yellow-pages" clicktrack="ctl|corp|hp|footer|link|yellow_pages">Yellow Pages</a> |
+	<a href="<!--#echo var="ctlsecure_url"-->/Pages/AboutUs/Legal/Tariffs/displayTariffLandingPage.html" clicktrack="ctl|corp|hp|footer|link|tariffs">Tariffs</a> |
+	<a href="#ZAM" class="modal-trigger" id="tpl_footer-email-offers" clicktrack="ctl|corp|hp|footer|link|email_offers">Email Offers</a>
+	<br />
+	<a href="<!--#echo var="ctl_url"-->/business/federal-gov/" clicktrack="ctl|corp|hp|footer|link|federal_government">Federal Government</a> |
+	<a href="<!--#echo var="ctl_url"-->/business/state-and-local-gov/" clicktrack="ctl|corp|hp|footer|link|state_government">State & Local Government</a> |
+	<a href="<!--#echo var="ctl_url"-->/business/education/" clicktrack="ctl|corp|hp|footer|link|education">Education</a> |
+	<a href="<!--#echo var="ctl_url"-->/business/partners/" clicktrack="ctl|corp|hp|footer|link|partners">Partners</a> |
+	<a href="#ZAM" class="modal-trigger" id="tpl_footer-referral-program" clicktrack="ctl|corp|hp|footer|link|referral_program">Referral Program</a> |
+	<a href="#ZAM" class="modal-trigger" id="tpl_footer-contact-us" clicktrack="ctl|corp|hp|footer|link|contact_us">Contact Us</a>
+	<br /><br />
+	<a href="<!--#echo var="ctl_url"-->/home/" clicktrack="ctl|corp|hp|footer|link|residential">Residential</a> | <a href="<!--#echo var="ctl_url"-->/small-business/" clicktrack="ctl|corp|hp|footer|link|small_business">Small Business</a> | <a href="<!--#echo var="ctl_url"-->/business/" clicktrack="ctl|corp|hp|footer|link|large_business">Large Business</a> | <a href="<!--#echo var="ctl_url"-->/wholesale/" clicktrack="ctl|corp|hp|footer|link|wholesale">Wholesale</a>
+	<br />
+	<!--#config timefmt="%Y" -->
+	Copyright &copy; <!--#echo var="DATE_LOCAL"--> CenturyLink, Inc.  All Rights Reserved.
+</div>
+
+
+<form action="http://lxdnt31g.dev.qintra.com/search" id="siteSearch" name="searchform" method="get" style="display:none">
+    <input type="text" id="searchTextId" name="q">
+    <!-- This tells us what data collection to use.  If ZAM is Legacy Qwest, site = "ThunderCatProducts". If ZAM is Century Link, site is "ctl" -->
+    <input type="hidden" name="site" id="search-site" value="ThunderCatProducts">
+    <!-- This tells us what front end ui to use.  I can set this on my end so don't worry about this variable for now. -->
+    <input type="hidden" name="proxystylesheet" value="default_frontend">
+	<!-- This tells us what front end client to use.  I can set this on my end so don't worry about this variable for now. -->
+    <input type="hidden" name="client" value="default_frontend">
+
+    <!-- remaining hidden fields left alone -->
+    <input type="hidden" value="1" name="proxyreload">
+    <input type="hidden" value="xml_no_dtd" name="output">
+
+    <input type="hidden" value="date%3AD%3AL%3Ad1" name="sort">
+    <input type="hidden" value="*" name="getfields">
+    <input type="hidden" value="UTF-8" name="oe">
+    <input type="hidden" value="UTF-8" name="ie">
+    <input type="hidden" value="0" name="start">
+
+    <!-- there's a graphic search button in Tova's req's.  If you want to put that in your global area, I'll reference that as well. -->
+    <input type="submit" />
+</form>
+
+<!--End Footer include-->
+
+<!--#include virtual="/assets/includes/templates/analytics.html"-->
+<script type="text/javascript">
+$(document).ready(function(){
+(function() {
+  var h = 'com-centurylink.netmng.com';
+  var a = '1279';
+  var t = document.createElement('script');
+  t.type = 'text/javascript'; t.async = true;
+  var p = 'https:'==document.location.protocol?'https://':'http://';
+  var m = document.referrer.match(/https?:\/\/([a-z]+\.[a-z\.]+)/i);
+  var r = (m && m[1] != document.location.hostname) ? ('&ref=' + escape(document.referrer)) : '';
+  t.src = p + h + '/?async=1&aid=' + a + r;
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(t, s);
+})();
+});
+</script>

@@ -1,0 +1,113 @@
+a, a:focus, a img { outline: none; border: 0 none; }
+.tabin { display:none; }
+#pureWrapper { width:925px; height:auto; margin: 0 auto; position:relative; text-align: left; font-size: 12px; background-color: #FFF; clear: both; }
+#offerWrap { border-left: 1px solid #CCC; border-right: 1px solid #CCC; margin: 0; padding: 10px 0 0 0; }
+#headerCont { width: 100%; margin: 0; padding: 0; }
+#tabNavCont { width: 100%; height: 33px; margin: 0; position:relative; top:0px; z-index: 1000; background-color: transparent; }
+#tabnav { width: auto; padding: 0px; margin: 0px; }
+#tabnav li { float: left; list-style:none; }
+#tabnav li a { display: block; text-align: center; outline: none; }
+#tabCont {
+	display:block;
+	background-color: #FFF;
+	margin: 0;
+	padding: 1px 0 0 0;
+	clear: both;
+	position: relative;
+	z-index: 10;
+	border-right: 1px solid #CCC;
+	border-top: 0 none; 
+	border-bottom: 1px solid #CCC;
+	border-left: 1px solid #CCC;
+	background-image: url("../images/pixelLine.gif");
+	background-repeat: repeat-x;
+	background-position: left top;
+	width: auto;
+	top: -1px;
+}
+#tabCont .tabin { padding: 0 50px; clear:none; }
+.tabContent { padding: 40px 0 0 0; }
+#tabCont .tabcorner { position: relative; right: -1px; float: right; z-index: 1000; top: -1px; background-color:#E4E4E4; height:10px; width:10px; font-size: 1px; line-height: 1px; }
+#tabCont .tabcorner.leftcorner { display: none; }
+#tabCont .active { background-color: #FFF; margin: 0; display: block; clear:both; }
+#tabCont .tabContent .tabcopy { height: 315px; width: 100%; }
+#offerdetails { position:relative; top:0px; margin: 0; padding: 0 20px 5px 20px; width: 635px; float: left;}
+.tabcopy h2 { font-size: 20px; color:#333; margin-bottom: 0; font-weight: normal; }
+.tabcopy h3 { font-size: 18px; color:#00853F; padding: 0 0 15px 0; }
+.tabcopy h4 { font-size: 15px; color:#00853F; padding: 0 0 0 0; }
+.tabcopy p { padding: 0 0 15px 0; }
+ul { margin:0; padding: 0 0 0 15px; }
+.tabbottom { clear: both; height: 10px; position: relative; top: -2px; z-index: 1000; width: 100%; background-image: url("../images/pixelLine.gif"); background-repeat: repeat-x; background-position: left bottom; background-color: #FFF; }
+.contbottom { clear: both; z-index: 1000; position:relative; height: 10px; display: block; border: 0 none; width: 100%; right:0 !important; right: -1px; }
+.cornerBtmRight { display: block; width: 10px; height:10px; float:right; text-align:right; margin:0; padding:0; background-color: #FFF; }
+.cornerBtmLeft { display: block; width: 10px; height:10px; float:left; text-align:left; margin:0; padding:0; background-color: #FFF; }
+.tabbottom .cornerBtmRight, .tabbottom .cornerBtmLeft { background-color: #EFEFEF; }
+
+/* Silver Tab CSS -- Modified from greenTabs.css*/
+#content .silverTabs .tabs li { background-image: url("../images/bodyTabRight_slvr.gif"); background-repeat: no-repeat; background-position: right 2px; padding: 0 5px 0 0; margin: 0 2px 0 0; display: block; }
+#content .silverTabs .tabs a { background-image: url("../images/bodyTabLeft_slvr.gif"); background-position: left 2px; color: #000; background-repeat: no-repeat; padding: 10px 20px 8px 27px; background-color: transparent; }
+#content .silverTabs ul.tabs li.active { margin: 1px 2px 0 0; background-image: url("../images/bodyTabActiveRight_slvr.gif"); background-repeat: no-repeat; background-position: right top; background-color: transparent; }
+#content .silverTabs ul.tabs li.active a { color: #000; background-image: url("../images/bodyTabActiveLeft_slvr.gif"); background-repeat: no-repeat; background-position: left top; background-color: transparent; }
+
+/****  BOTTOM  ****/
+.disclaimer { display:block; clear: both; }
+#footcontent h2 { padding: 20px 30px 0px; color: #000; font-size: 21px; font-weight: normal; }
+#footcontent .storeList { text-align: left; float: left; list-style: none; margin: 0px; padding: 10px 50px 0px 30px; line-height: 1.8em; }
+#pureWrapper .contbottom { background-color: #FFF; }
+#pureWrapper .messageBG { background-color: #FFF; border-bottom:1px solid #CCC; position:relative; }
+#offerdetails .imgBlock { margin-top:0 !important; }
+#footcontent { position:relative;}
+#footcontent .storeList { float:left; left:30px; line-height:1.8em; list-style:none outside none; margin:0; padding:0; position:relative; text-align:left; width:38%; }
+#footerBlock { background-image: url("../images/landingFtrBg.gif"); background-position: center top; background-repeat: no-repeat; clear: both; position: relative; text-align: left; height: 11em; margin-top: 20px;}
+#footerBlock #footcontent .rightfootCol {padding: 0 40px 0 20px; }
+#footerBlock #footcontent .rightfootCol h2 { margin: 0; padding: 30px 10px; font-weight: normal; }
+
+/* general classes */
+.rightfootCol { position: absolute; top: -7px; right: 0px; }
+.tabcopy p { line-height:1.4em !important; margin-bottom: 0; color: #333;}
+.imgCopyBlock p { line-height: 1.2em !important; }
+.bulletList li { list-style-type: disc; margin: 0; padding: 15px 0 0 0; }
+.checkList li { background-image: url("../images/checkbox.gif"); background-repeat: no-repeat; background-position: left top; list-style-type: none; display: block; margin: 0px; padding: 0 0 10px 20px; }
+.checkList { margin: 0px; padding: 0px; }
+.checkList strong { font-size: 14px; }
+.imgFloat { display:block; clear:both; }
+.imgFloat img { display: block; float:left; padding:20px 30px; }
+.imgFloat .copyTop { padding: 30px 0 0 0; }
+.hideTxt { clear: both; z-index: 1; float: left; position: absolute; top: 0px; text-indent:-9999px }
+.clearing { clear: both; line-height:0; font-size:0; }
+.disclaimer { clear: both; padding: 20px 0 0 0; }
+.arrowEndLink a { background: url("../images/arrowLandingMenu.gif") no-repeat scroll right center transparent; padding-right: 18px; }
+
+/* rail styles */
+#rightRail { float: left; position: relative; }
+.cropHeader { overflow:hidden; height:313px; display:block; }
+.rightColumnHdr {display: block; text-indent: -9999px; background: url("../images/rightColumnHdr.gif") left top no-repeat; height: 83px; width: 231px; margin: 0; padding: 0; line-height: 0; float: left; clear: both;}
+.rightColumnBody {background: url("../images/rightColumnBody.gif") left top repeat-x #d9d9d9; width: 229px; position: relative; float: left; clear: both; border-left: 1px solid #ccc; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; margin: 0;}
+.rightColumnBody label {display: block; margin-bottom: 15px; margin-left: 50px;}
+.rightColumnBody input {display: block; margin-bottom: 15px;}
+.inputText {color: #999; width: 135px;}
+.inputAdjust {margin-left: 50px;}
+.submitBtn {margin-left: 50px;}
+#newCustomers {padding: 15px 0 0 0;}
+#continueForm {padding: 5px 0 0 0; position: relative;}
+.existAccountWrap {margin-right: 37px; text-align: right;}
+#continueForm-ban {display: inline;}
+.existFormOr {position: relative; vertical-align: middle;}
+.error {color: #CC0000; font-weight: bold; margin-left: 50px; position: relative; margin-right: 25px;}
+.rightColumnBody hr {width: 80%; height: 1px; background: #ccc; border: none; display: block; margin: 25px auto; text-align: center;}
+
+/****  CSS FOR USERS W/O JAVASCRIPT ****/
+#flashheader { line-height:0; }
+.nojs .jsmsg { display:block; padding: 10px; color:#FFF; font-weight: normal; font-size: 12px; }
+.nojs #tabCont .tabcorner.leftcorner { display: block; left: -1px; float:left; }
+.nojs #tabCont .tabContent .tabcopy { height: auto; }
+.nojs #tabNavCont { display: none; }
+.nojs #tabCont .tabin { display: block; }
+#callToSave { color: #333; text-align: right; clear: both; position: relative; top: -20px; }
+#callToSave h1 { font-size: 22px; color: #333; }
+.contbottom .cornerBtmRight { text-align: left; width: 10px; }
+
+/* TAB Modifications */
+.tabin { background-attachment:scroll; background-position: left 20px ; background-repeat: no-repeat; background-color: transparent; }
+.corners .jsHide { display: none; }
+.nojs .corners .jsHide { display: block; }

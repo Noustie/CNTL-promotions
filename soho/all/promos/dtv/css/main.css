@@ -1,0 +1,413 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+body{
+    background-image: url("../img/background-gradient.gif");
+    background-repeat: repeat-x;
+}
+.c960{
+    width: 960px;
+    margin: 0 auto;
+}
+.orange{color:#ff6319;}
+.float-left{float: left;position: relative;}
+.float-right{float: right;position: relative;}
+.header{}
+.logo{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.upper-tfn p{
+    font-size:20px;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 25px;
+}
+.hero h2{
+    margin-bottom: 0;
+}
+.content{
+    background-color: #fff;
+    border-left: 1px solid #b0b1b2;
+    border-right: 1px solid #b0b1b2;
+}
+.content .float-left{
+    float: left;
+    width:530px;
+}
+.content .float-right{
+    float: right;
+    width: 320px;
+}
+.tv{
+    text-indent: -9999px;
+    background-image: url("../img/tv.png");
+    background-repeat: no-repeat;
+    width: 193px;
+    height: 148px;
+    position: relative;
+    top: -102px;
+    left: 102px;
+}
+.info{margin-left: 65px;margin-top: -90px;}
+.info h2{font-size: 16px;font-weight: bold;margin-top: 8px;}
+.info ul{
+    color: #616365;
+    font-size: 12px;
+    padding-left: 0;
+}
+.info li{
+    list-style-type: none;
+    padding-bottom: 13px;
+    padding-left: 29px;
+    padding-top: 3px;
+    background-image: url("../img/green-check.png");
+    background-repeat: no-repeat;
+    background-position: 0px 2px;
+}
+.tv-icons h2{
+    background-image: url("../img/stations.gif");
+    width: 504px;
+    height: 179px;
+    text-indent: -9999px;
+    margin-bottom: 26px;
+}
+.lower-tfn{
+    margin-top: 35px;
+    display: block;
+}
+.disclaimer{
+    font-size: 11px;
+    color: #616365;
+    padding-top: 73px;
+    position: relative;
+    bottom: -18px;
+    top: auto;
+}
+.disclaimer a{color: #00853f;text-decoration: none;}
+.disclaimer a:visited{color: #00853f;text-decoration: none;}
+.disclaimer a:hover{color:#ff6319;text-decoration: none;}
+.disclaimer a:active{color: #00853f;text-decoration: underline;}
+.badge{
+    width: 306px;
+    height: 262px;
+    background-image: url("../img/badge.png");
+    position: relative;
+    top: -109px;
+    right: 3px;
+    left: auto;
+}
+.badge h1{
+    text-indent: -9999px;
+}
+.badge .hide-me{text-indent: -9999px;}
+.badge .middle-tfn{
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+    position: relative;
+    top: 57px;
+    left: 50px;
+    text-shadow: 1px 1px 2px #2d2929;
+    width: 250px;
+    filter: dropshadow(color=#2d2929, offx=1, offy=0);
+}
+.ticket{margin-top: -120px;}
+.ticket .orange{
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: -6px;
+    margin-left: -21px;
+    font-weight: bold;
+}
+.ticket .small-grey{
+    font-size: 9px;
+    color: #999999;
+    margin-left: -21px;
+    text-align: center;
+    margin-bottom: -10px;
+}
+.ticket .sunday-ticket{
+    background-image: url("../img/centurylink-sunday-ticket.png");
+    text-indent: -9999px;
+    width: 274px;
+    height: 322px;
+    background-repeat: no-repeat;
+    margin-left: 11px;
+}
+.pathways{
+    background-image: url("../img/pathways.jpg");
+    width: 960px;
+    height: 40px;
+}
+.lower-tfn p {
+    font-weight: bold;
+}
+#footer {
+    background: url("/soho/lc/images/Layout/footerBg.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    font-size: 0.75em;
+    margin: 20px auto;
+    overflow: auto;
+    padding: 15px 20px 60px 20px;
+    width: 960px;
+    border: 0 none;
+    position: relative;
+    margin-top: 10px;
+}
+#footer .about {
+    float: left;
+    padding-top: 4px;
+    width: 70%;
+}
+#footer ul.nav {
+    height: 1.25em;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#footer ul.nav li.first {
+    border-left: medium none;
+    padding-right: 5px;
+}
+#footer ul.nav li {
+    border-left: 1px solid #999;
+    float: left;
+    margin: 0;
+}
+#footer ul.nav li a {
+    color: #333;
+    padding: 0 1em;
+    text-decoration: none;
+}
+#footer ul.nav li a:visited{text-decoration: none;}
+#footer ul.nav li a:hover{text-decoration: none;}
+#footer ul.nav li a:active{text-decoration: none;}
+#footer .copyright {
+    font-size: 0.9em;
+    margin-top: 14px;
+    margin-left: 13px;
+}
+#footer .support {
+    float: right;
+    text-align: right;
+    width: 30%;
+}
+#footer .cta {
+    color: #999;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 0 0 12px;
+}
+#footer .support ul.nav {
+    float: right;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

@@ -1,0 +1,130 @@
+.main-price-content {
+	text-align: left;
+}
+.disclaimer {
+	padding: 10px 0px;
+}
+
+.page-content p
+{
+	padding: 6px 0 0 0;
+	font-size: 12px;
+	color: #333;
+}
+
+.dbl-col
+{
+	float: left;
+	width: 49%;
+}
+
+.dbl-col-bumper
+{
+	display: block;
+	float: left;
+	width: 2%;
+}
+
+h1
+{
+	font-size: 22px;
+	color: #00853F;
+	font-weight: normal;
+}
+
+h2
+{
+	font-size: 15px;
+	font-weight: normal;
+	color: #000;
+}
+h2 strong
+{
+	font-weight: bold;
+}
+
+h3
+{
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+	padding-top: 10px;
+}
+
+h4
+{
+	font-size: 15px;
+	font-weight: bold;
+	color: #333;
+	padding-top: 40px;
+}
+
+.page-content h5
+{
+	font-size: 14px;
+	color: #00853F;
+	font-weight: bold;
+	padding-left: 28px;
+	margin-top: 10px;
+}
+
+.page-content h5 a:link,
+.page-content h5 a:visited
+{
+	color: #00853F;
+}
+
+div#choicetv-accordion div.dbl-col dl dt
+{
+	font-size: 14px;
+	color: #00853F;
+	font-weight: bold;
+	padding-left: 28px;
+	background: none;
+	border: none;
+	margin-top: 10px;
+}
+
+div#choicetv-accordion div.dbl-col dl dd
+{
+	font-size: 13px;
+	color: #555;
+	font-weight: normal;
+	display: none;
+	padding-top: 2px;
+	text-align: justify;
+}
+
+div#choicetv-accordion div.dbl-col dl dd a
+{
+	color: #00853F;
+	text-decoration: underline;
+}
+
+div#choicetv-accordion div.dbl-col dl dd a:hover
+{
+	color: #00853F;
+	text-decoration: none;
+}
+
+div#choicetv-accordion div.dbl-col dl dd span
+{
+	font-size: 11px;
+	color: #666;
+	font-weight: normal;
+}
+
+
+.orange-text
+{
+	color: #FF6319;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+
+.page-content
+{
+	overflow: visible;
+}
+

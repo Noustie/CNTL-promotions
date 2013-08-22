@@ -1,0 +1,73 @@
+<!--Begin Header include - /assets/includes/templates/header.html-->
+<!--note: templates A and B are identical for the header except that A has the quick pay button, B has the phone number and C2C-->
+<!--#if expr="$ctl_url=''"-->
+<!--#include virtual="/assets/includes/templates/variables.html"-->
+<!--#endif-->
+
+<!--#if expr="$HTTP_COOKIE = /CTL%7E/"-->
+	<!--#set var="DOMAIN" value="LC"-->
+<!--#elif expr="$HTTP_COOKIE = /Q%7E/"-->
+	<!--#set var="DOMAIN" value="LQ"-->
+<!--#endif-->
+
+<!--#if expr="$nav_level_0='residential'"-->
+	<!--#set var="resClass" value="active"-->
+<!--#elif expr="$nav_level_0='small_business'"-->
+	<!--#set var="smBClass" value="active"-->
+<!--#elif expr="$nav_level_0='large_business'"-->
+	<!--#set var="lgBClass" value="active"-->
+<!--#endif-->
+
+<!-- TnT -->
+<script type="text/javascript">
+var ttGeoLoc = { state: null, city: null, dma: null, zipcode: null };
+
+</script>
+<!-- End TnT-->
+<!-- TnT -->
+<div id="digitalDialogsMain" class="mboxDefault" style="height:auto;"></div>
+<script type="text/javascript">
+	
+	mboxCreate('digitalDialogsMain','path='+location.pathname);
+</script>
+<!-- End TnT-->
+<div class="header" id="tpl_header">
+	<div class="links_left">
+		<ul class="links quick">
+			<li class="<!--#echo var="resClass"-->"><a href="<!--#echo var="ctl_url"-->/home/" clicktrack="ctl|corp|residential">Residential</a></li>
+			<li class="<!--#echo var="smBClass"-->"><a href="<!--#echo var="ctl_url"-->/small-business/" clicktrack="ctl|corp|small_business">Small Business</a></li>
+			<li class="<!--#echo var="lgBClass"-->"><a href="<!--#echo var="ctl_url"-->/business/" clicktrack="ctl|corp|large_business">Large Business</a></li>
+		</ul>
+		<a href="<!--#echo var="ctl_url"-->" clicktrack="ctl|corp|global_nav|logo" class="logo" id="tpl_logo"><img src="/assets/images/sprites/new_header.png" alt="Centurylink Home" /></a>
+	</div>
+<!--#config errmsg="[Error in Header File global nav conditional]" -->
+<!--#if expr="$isHomepage='yes'"-->
+	<!--#config errmsg="[Error in Header File global nav conditional - myaccount]" -->
+
+<!--#elif expr="$template='d' || $template='D'"-->
+	<!--#config errmsg="[Error in Header File global nav conditional - ld_oor]" -->
+
+<!--#elif expr="$ld_oor='true'"-->
+	<!--#config errmsg="[Error in Header File global nav conditional - else]" -->
+
+<!--#elif expr="$template='cox'"-->
+<!--#else-->
+	<div class="links_right">
+		<ul class="links quick">
+			<li><a href="<!--#echo var="ctl_url"-->/Pages/AboutUs/" clicktrack="ctl|corp|landing_page|global_nav|link|about">About Us</a></li>
+			<li><a href="http://storelocator.centurylinkapps.com/index.cfm" class="" id="tpl_global-nav-store_locator-link" clicktrack="ctl|corp|hp|global_nav|link|store_locator">Store Locator</a></li>
+			<li><a href="<!--#if expr="$DOMAIN='LQ'"--><!--#echo var="qwest_url"-->/residential/products/newsletter.html<!--#elif expr="$DOMAIN='LC'"--><!--#echo var="ctl_url"-->/shop/SpecialOffers/connect5.jsp<!--#endif-->" clicktrack="ctl|corp|landing_page|global_nav|link|email_offers">Email Offers</a></li>
+			<li><a href="http://espanol.centurylink.com/" onClick="return switchLanguage('es');function switchLanguage(lang){MP.SrcUrl=unescape('mp_js_orgin_url');MP.UrlLang='mp_js_current_lang';MP.init();MP.switchLanguage(MP.UrlLang==lang?'en':lang);return false;}" clicktrack="ctl|corp|landing_page|global_nav|link|espanol" id="tpl_global-nav-espanol-link">Espa&ntilde;ol</a></li>
+		</ul>
+		<ul class="links contact">
+			<li class="icon_call"><a href="<!--#if expr="$DOMAIN='LQ'"--><!--#echo var="ctl_url"-->/assets/popups/callus_qcenturylink.html<!--#elif expr="$DOMAIN='LC'"--><!--#echo var="ctl_url"-->/shop/SpecialOffers/connect5.jsp<!--#endif-->" clicktrack="ctl|corp|landing_page|global_nav|link|callus" target="_blank">Call Us</a></li>
+			<li class="icon_chat"><a href="<!--#echo var="ctl_url"-->/help/chat/" clicktrack="ctl|corp|landing_page|global_nav|link|chat">Chat</a></li>
+			<li class="icon_email"><a href="
+<!--#if expr="$DOMAIN='LQ'"--><!--#echo var="qwest_url"-->/residential/customerService/help.html<!--#elif expr="$DOMAIN='LC'"--><!--#echo var="ctl_url"-->/Pages/Help/ContactUs/emailResidential.jsp <!--#endif-->" clicktrack="ctl|corp|landing_page|global_nav|link|emailus">Email Us</a></li>
+		</ul>
+	</div>
+<!--#endif-->
+</div>
+<!--End Header include-->
+
+<!--#include virtual="/assets/includes/templates/navigation_support.html"-->

@@ -1,0 +1,118 @@
+<!--Begin Head include - /assets/includes/templates/head.html-->
+<!--set environment and url variables-->
+<script type="text/javascript">
+	//echo server type url
+	//Server type: <!--#echo var="SERVER_TYPE"-->
+</script>
+<!--#if expr="$SERVER_TYPE='DEV'"-->
+	<!--#set var="ctl_url" value="http://webdmzdev2.centurylink.com"-->
+	<!--#set var="ctlsecure_url" value="https://webdmzdev2.centurylink.com"-->
+	<!--#set var="ctlmyacct_url" value="https://eamqa2.centurylink.com"-->
+	<!--#set var="q_url" value="http://tcat-int4.centurylink.com"-->
+	<!--#set var="qshop_url" value="https://tcat-int4.centurylink.com"-->
+	<!--#set var="qmobile_url" value="http://tcat-int4.centurylink.com/mobile"-->
+	<!--#set var="search" value="http://search-dev.tservicesq.com"-->
+	<!--#set var="eq_url" value="http://embarq.centurylink.com"-->
+	<!--#set var="eqsecure_url" value="https://embarq.centurylink.com"-->
+	<!--#set var="ctleam_url" value="https://eqtest2.centurylink.com"-->
+	<!--#set var="qwest_url" value="http://www-test.tservicesq.com"-->
+	<!--#set var="ctl_selfservice_url" value="http://selfserviceqa.centurylink.com"-->
+<!--#elif expr="$SERVER_TYPE='TEST'"-->
+	<!--#set var="ctl_url" value="http://webdmzqa3.centurylink.com"-->
+	<!--#set var="ctlsecure_url" value="https://webdmzqa3.centurylink.com"-->
+	<!--#set var="ctlmyacct_url" value="https://eamqa2.centurylink.com"-->
+	<!--#set var="q_url" value="http://tcat-itv2.centurylink.com"-->
+	<!--#set var="qshop_url" value="https://tcat-itv2.centurylink.com"-->
+	<!--#set var="qmobile_url" value="http://tcat-itv2.centurylink.com/mobile"-->
+	<!--#set var="search" value="http://search-dev.tservicesq.com"-->
+	<!--#set var="eq_url" value="http://embarq.centurylink.com"-->
+	<!--#set var="eqsecure_url" value="https://embarq.centurylink.com"-->
+	<!--#set var="ctleam_url" value="https://eqtest2.centurylink.com"-->
+	<!--#set var="qwest_url" value="http://www-test.tservicesq.com"-->
+	<!--#set var="ctl_selfservice_url" value="http://selfserviceqa.centurylink.com"-->
+<!--#elif expr="$SERVER_TYPE='PROD'"-->
+	<!--#set var="ctl_url" value="http://www.centurylink.com"-->
+	<!--#set var="ctlsecure_url" value="https://www.centurylink.com"-->
+	<!--#set var="ctlmyacct_url" value="https://eam.centurylink.com"-->
+	<!--#set var="q_url" value="http://qwest.centurylink.com"-->
+	<!--#set var="qshop_url" value="https://shop.centurylink.com"-->
+	<!--#set var="qmobile_url" value="http://m.centurylink.com"-->
+	<!--#set var="search" value="http://search-dev.tservicesq.com"-->
+	<!--#set var="eq_url" value="http://embarq.centurylink.com"-->
+	<!--#set var="eqsecure_url" value="https://embarq.centurylink.com"-->
+	<!--#set var="ctleam_url" value="https://eam.centurylink.com"-->
+	<!--#set var="qwest_url" value="http://qwest.centurylink.com"-->
+	<!--#set var="ctl_selfservice_url" value="http://selfservice.centurylink.com"-->
+<!--#else-->
+	<!--#set var="ctl_url" value="http://webdmzdev2.centurylink.com"-->
+	<!--#set var="ctlsecure_url" value="https://webdmzdev2.centurylink.com"-->
+	<!--#set var="ctlmyacct_url" value="https://eamqa2.centurylink.com"-->
+	<!--#set var="q_url" value="http://tcat-int4.centurylink.com"-->
+	<!--#set var="qshop_url" value="https://tcat-int4.centurylink.com"-->
+	<!--#set var="qmobile_url" value="http://m.centurylink.com"-->
+	<!--#set var="search" value="http://search-dev.tservicesq.com"-->
+	<!--#set var="eq_url" value="http://embarq.centurylink.com"-->
+	<!--#set var="eqsecure_url" value="https://embarq.centurylink.com"-->
+	<!--#set var="ctleam_url" value="https://eqtest2.centurylink.com"-->
+	<!--#set var="qwest_url" value="http://www-test.tservicesq.com"-->
+	<!--#set var="ctl_selfservice_url" value="http://selfservice.centurylink.com"-->
+<!--#endif-->
+
+<script type="text/javascript">
+	var SERVER_TYPE='<!--#echo var="SERVER_TYPE"-->';
+	var ctl_url='<!--#echo var="ctl_url"-->';
+	var ctlsecure_url='<!--#echo var="ctlsecure_url"-->';
+	var ctlmyacct_url='<!--#echo var="ctlmyacct_url"-->';
+	var q_url='<!--#echo var="q_url"-->';
+	var qshop_url='<!--#echo var="qshop_url"-->';
+	var qmobile_url='<!--#echo var="qmobile_url"-->';
+	var eq_url='<!--#echo var="eq_url"-->';
+	var eqsecure_url='<!--#echo var="eqsecure_url"-->';
+	var ctleam_url='<!--#echo var="ctleam_url"-->';
+	var qwest_url='<!--#echo var="qwest_url"-->';
+	var ctl_selfservice_url='<!--#echo var="ctl_selfservice_url"-->';
+	var search='<!--#echo var="search"-->';
+</script>
+
+<link rel="stylesheet" type="text/css" href="/assets/css/reset.css" media="screen" />
+<link rel="shortcut icon" href="/favicon.ico" />
+
+<script type="text/javascript" src="/assets/js/require.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/js/plugins/jquery.liveperson.js"></script>
+<script type="text/javascript" src="/assets/js/mbox.js"></script>
+<script type="text/javascript">
+	require({
+    //Leave off the .js extension in the mapping, it will automatically be added by requirejs
+    paths: {'jquery':'jquery.min','jquery-ui':'jquery-ui.min','omniture':'third-party/metrics/s_code','centurycore':'plugins/jquery.qwest-core','superfish':'plugins/jquery.superfish','supersubs':'plugins/jquery.supersubs','modals':'plugins/jqModal','watermark':'plugins/jquery.watermark','rotator':'plugins/jquery.cc_banner-rotator','cookies':'plugins/cookies2','cookie':'plugins/jquery.cookie','locator':'locator','linkMatrix':'template_link_matrix','ratingsReviews':'plugins/jquery.ratingsreviews'},baseUrl: '/assets/js/'});
+
+require(['order!jquery','order!jquery-ui','order!cookies','order!centurycore','order!rotator','order!superfish','order!supersubs','order!modals','order!watermark','order!linkMatrix','order!locator'],
+	function(require){
+		$.centurycore.setup();
+		$.centurycore.thirdparty.loadMtagConfig();
+	});
+</script>
+<link rel="stylesheet" type="text/css" href="/assets/css/plugins/jqModal.css" media="screen" />
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/assets/css/plugins/smoothness/jquery-ui-1.8.11.custom.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/plugins/qwest.jquery-ui-0.0.1.css" />
+
+
+<link rel="stylesheet" type="text/css" href="/assets/css/global.css" media="screen" />
+<link rel="stylesheet" media="screen" href="/assets/css/global-nav.css" />
+
+<!--#if expr="$template='a' || $template='A' || $template='b' || $template='B'"-->
+	<link rel="stylesheet" type="text/css" href="/assets/css/template_a.css" media="screen" />
+
+<!--#elif expr="$template='c' || $template='C'"-->
+
+<!--#endif-->
+
+
+
+<!--#include virtual="/assets/includes/templates/modals.html"-->
+<!--#include virtual="/assets/includes/templates/popups.html"-->
+<!--End Head include-->

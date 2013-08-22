@@ -1,0 +1,11 @@
+<div id="acwidget" style="display:none;">
+	<span id="acwidget_identity"></span>
+	<span id="acwidget_changeme"><a href="" id="acwidget_changeme-link">Change Info</a></span>
+</div>
+
+<script>
+	require(['order!jquery','order!cookies','order!centurycore'],function(){
+		$.centurycore.authInfoWidget.initialize();
+		$.centurycore.authInfoWidget.display();
+	});
+</script>

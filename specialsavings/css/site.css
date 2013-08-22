@@ -1,0 +1,196 @@
+body {
+	text-align: center;
+}
+sup, sub {
+	font-size: 70%;
+	position: relative;
+	top: -0.5em;
+	left: 0;
+	line-height: 0.1em;
+	vertical-align: baseline;
+}
+body sub {
+	top: 0.1em;
+}
+#main {
+	width: 970px;
+	text-align: left;
+	margin: 0 auto;
+	padding-top: 15px;
+}
+#top_nav {
+    clear: both;
+    float: right;
+    font-size: 93%;
+}
+#top_nav ul {
+    margin-left: 0;
+}
+#top_nav ul li {
+    border-right: 1px solid #666666;
+    color: #666666;
+    display: inline;
+    list-style-type: none;
+    margin-right: 5px;
+    padding-right: 8px;
+}
+#top_nav ul li a {
+    color: #666666;
+}
+#top_nav ul li.topnav_last {
+    border: medium none;
+}
+#hdr_logo {
+    clear: both;
+    padding-bottom: 25px;
+    width: 215px;
+}
+#hdr_logo h1 {
+    background: url("/assets/images/logoCenturyLink.gif") no-repeat scroll left top transparent;
+    height: 45px;
+    line-height: 0;
+    text-indent: -9999px;
+    width: 225px;
+}
+.masthead {
+	clear: both;
+}
+#content {
+	margin: 0 42px 0 43px;
+	clear: both;
+}
+.header {
+    background: url("../images/headerImg.jpg") repeat scroll left top transparent;
+	height: 232px;
+}
+.header .chatBtn {
+	position: absolute;
+	display: block;
+	right: 33px;
+	bottom: 22px;
+}
+.details {
+	padding: 20px 30px 15px 15px;
+}
+.details .pageHeader {
+    background: url("../images/page-header.gif") no-repeat scroll left top transparent;
+	height: 30px;
+}
+.compareTable {
+	border-collapse: separate;
+	clear: both;
+}
+.compareTable .tableHeader {
+    background: url("../images/compare-header.jpg") no-repeat scroll left top transparent;
+	height: 129px;
+}
+.compareTable td {
+	border-left: 1px solid #999;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #FFF;
+}
+.compareTable .featWrap {
+	padding: 20px 15px;
+	background-color: #E2E2E2;
+}
+.compareTable .featWrap h3 {
+	color: #00853F;
+	font-size: 16px;
+	padding: 0 0 7px 0;
+}
+.compareTable .directv {
+	width: 21.5%;
+}
+.compareTable .other {
+	border-right: 1px solid #999;
+	width: 22%;
+}
+.compareTable .tableFooter .foot {
+    background: url("../images/compare-bottom.gif") no-repeat scroll left top transparent;
+	height: 70px;
+	line-height: 70px;
+	border-top: 1px solid #999;
+	font-size: 23px;
+	color: #00853F;
+	text-align: left;
+	vertical-align: middle;
+	font-weight: normal;
+	padding: 0 15px;
+}
+.compareTable .tableFooter img {
+	vertical-align: middle;
+}
+.compareTable .tableFooter .tableFootLeft {
+	float: left;
+}
+.compareTable .tableFooter .findAStore {
+	font-size: 18px;
+	color: #000;
+	font-weight: normal;
+	float: right;
+}
+.compareTable .tableFooter .findAStore a {
+	text-decoration: underline;
+}
+.yes {
+    background: url("../images/chart-yes.gif") no-repeat scroll center center transparent;
+}
+.no {
+    background: url("../images/chart-no.gif") no-repeat scroll center center transparent;
+}
+.varies {
+    background: url("../images/chart-varies.gif") no-repeat scroll center center transparent;
+}
+#footer {
+    clear: both;
+    color: #666666;
+    font-size: 85%;
+    padding: 15px 0 20px;
+    text-align: center;
+}
+#footer ul {
+    margin-bottom: 5px;
+    margin-left: 0;
+}
+#footer ul li {
+    border-right: 1px solid #666666;
+    color: #666666;
+    display: inline;
+    list-style-type: none;
+    margin-right: 5px;
+    padding-right: 8px;
+}
+#footer ul li a {
+    color: #666666;
+}
+#footer ul li.footernav_last {
+    border: medium none;
+}
+#social_btm {
+	padding: 20px 15px;
+}
+#social_btm img {
+	vertical-align: middle;
+}
+#social_btm .disclaimer {
+	float: left;
+}
+#social_btm .col {
+	display: block;
+	float: left;
+}
+#social_btm .colRight {
+	float: right;
+}
+.shareBox {
+	float: left;
+	width: 70px;
+}
+.shareBox iframe {
+	display: block;
+	width: 100% !important;
+}
+.disclaimer {
+	font-size: 10px;
+	width:550px;
+}

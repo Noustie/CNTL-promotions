@@ -1,0 +1,100 @@
+
+h3
+{
+	color: #00853F;
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+h4
+{
+	color: #000;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 8px 0 0 0;
+}
+
+h4 span
+{
+	font-size: 12px;
+	font-weight: normal;
+}
+
+h6
+{
+	color: #666;
+	font-size: 12px;
+	font-weight: normal;
+	padding: 0;
+	margin: 0;
+}
+
+img#change-services-creative
+{
+	position: absolute;
+	right: 0;
+	top: 20px;
+	z-index: 0;
+}
+
+div.main-offer
+{
+	width: 500px;
+}
+
+div.main-container div.page-content p
+{
+	padding: 2px 0 0 0;
+	margin: 0;
+}
+
+div.main-container div.page-content a,
+div.main-container div.page-content a:link,
+div.main-container div.page-content a:visited
+{
+	color: #00853F;
+	text-decoration: none;
+}
+
+div.main-container div.page-content a:hover
+{
+	text-decoration: underline;
+}
+
+div.main-container div.page-content ul
+{
+	padding-left: 0;
+	margin-top: 2px;
+}
+
+div.main-container div.page-content ul li
+{
+	list-style-position: outside;
+	text-indent: 0;
+	padding: 2px 0 0 0;
+	margin: 0 0 0 22px;
+}
+
+div.main-container p.content-postscript
+{
+	color: #999;
+	font-size: 11px;
+	padding: 10px 22px;
+}
+
+td.lpStaticButtonAddTextTD
+{
+	display: none;
+}
+
+tr.lpPoweredBy div.lpPoweredByDiv
+{
+	display: none;
+}
+
+
+
+
+

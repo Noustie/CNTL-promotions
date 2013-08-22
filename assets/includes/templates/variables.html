@@ -1,0 +1,154 @@
+<!--begin variable setting file-->
+<!--set environment and url variables-->
+<script type="text/javascript">
+	//echo server type url
+	//Server type: <!--#echo var="SERVER_TYPE"-->
+</script>
+<!--else is not catching in some cases, so setting vars first as alternative-->
+<!--#set var="ctl_url" value="http://www.centurylink.com"-->
+<!--#set var="ctlsecure_url" value="https://www.centurylink.com"-->
+<!--#set var="ctlmyacct_url" value="https://eam.centurylink.com"-->
+<!--#set var="q_url" value="http://qwest.centurylink.com"-->
+<!--#set var="qcookie_url" value="https://q.myaccount.centurylink.com"-->
+<!--#set var="qshop_url" value="https://shop.centurylink.com"-->
+<!--#set var="qmobile_url" value="https://m.centurylink.com"-->
+<!--#set var="search" value="http://c.search.centurylink.com"-->
+<!--#set var="eq_url" value="http://embarq.centurylink.com"-->
+<!--#set var="eqsecure_url" value="https://embarq.centurylink.com"-->
+<!--#set var="ctleam_url" value="https://embarq.centurylink.com"-->
+<!--#set var="qwest_url" value="http://qwest.centurylink.com"-->
+<!--#set var="ctl_selfservice_url" value="http://selfservice.centurylink.com"-->
+<!--#set var="qportal_url" value="https://sbcontrolcenter.centurylink.com"-->
+<!--#set var="faq_url" value="http://faq.centurylink.com"-->
+
+<!--#if expr="$SERVER_TYPE='DEV'"-->
+	<!--#set var="ctl_url" value="http://webdmzdev2.centurylink.com"-->
+	<!--#set var="ctlsecure_url" value="https://webdmzdev2.centurylink.com"-->
+	<!--#set var="ctlmyacct_url" value="https://eamqa2.centurylink.com"-->
+	<!--#set var="q_url" value="https://tcat-int4.centurylink.com"-->
+	<!--#set var="qcookie_url" value="https://tcat-int4.centurylink.com"-->
+	<!--#set var="qshop_url" value="https://tcat-int4.centurylink.com"-->
+	<!--#set var="qmobile_url" value="https://tcat-int4.centurylink.com/mobile"-->
+	<!--#set var="search" value="http://search-dev.tservicesq.com"-->
+	<!--#set var="eq_url" value="http://embarq.centurylink.com"-->
+	<!--#set var="eqsecure_url" value="https://embarq.centurylink.com"-->
+	<!--#set var="ctleam_url" value="https://eqtest2.centurylink.com"-->
+	<!--#set var="qwest_url" value="http://www-test.tservicesq.com"-->
+	<!--#set var="ctl_selfservice_url" value="http://selfserviceqa.centurylink.com"-->
+	<!--#set var="qportal_url" value="https://sbcontrolcenter-itv1.centurylink.com"-->
+	<!--#set var="faq_url" value="http://faq.centurylink.com"-->
+<!--#elif expr="$SERVER_TYPE='PROD'"-->
+	<!--#set var="ctl_url" value="http://www.centurylink.com"-->
+	<!--#set var="ctlsecure_url" value="https://www.centurylink.com"-->
+	<!--#set var="ctlmyacct_url" value="https://eam.centurylink.com"-->
+	<!--#set var="q_url" value="http://qwest.centurylink.com"-->
+	<!--#set var="qcookie_url" value="https://q.myaccount.centurylink.com"-->
+	<!--#set var="qshop_url" value="https://shop.centurylink.com"-->
+	<!--#set var="qmobile_url" value="https://m.centurylink.com"-->
+	<!--#set var="search" value="http://c.search.centurylink.com"-->
+	<!--#set var="eq_url" value="http://embarq.centurylink.com"-->
+	<!--#set var="eqsecure_url" value="https://embarq.centurylink.com"-->
+	<!--#set var="ctleam_url" value="https://embarq.centurylink.com"-->
+	<!--#set var="qwest_url" value="http://qwest.centurylink.com"-->
+	<!--#set var="ctl_selfservice_url" value="http://selfservice.centurylink.com"-->
+	<!--#set var="qportal_url" value="https://sbcontrolcenter.centurylink.com"-->
+	<!--#set var="faq_url" value="http://faq.centurylink.com"-->
+<!--#elif expr="$SERVER_TYPE=E2E"-->
+	<!--#set var="ctl_url" value="http://webdmzpt1.centurylink.com"-->
+	<!--#set var="ctlsecure_url" value="https://webdmzpt1.centurylink.com"-->
+	<!--#set var="ctlmyacct_url" value="https://eampt1.centurylink.com"-->
+	<!--#set var="q_url" value="http://tcat-e2e.centurylink.com"-->
+	<!--#set var="qcookie_url" value="https://tcat-e2e.centurylink.com"-->
+	<!--#set var="qshop_url" value="https://tcat-e2e.centurylink.com"-->
+	<!--#set var="qmobile_url" value="https://tcat-e2e.centurylink.com/mobile"-->
+	<!--#set var="search" value="http://search-dev.tservicesq.com"-->
+	<!--#set var="eq_url" value="http://eqtest1.centurylink.com"-->
+	<!--#set var="eqsecure_url" value="https://eqtest1.centurylink.com"-->
+	<!--#set var="ctleam_url" value="https://eqtest1.centurylink.com"-->
+	<!--#set var="qwest_url" value="http://tcat-e2e.centurylink.com"-->
+	<!--#set var="ctl_selfservice_url" value="http://selfserviceqa.centurylink.com/ticketingpt1"-->
+	<!--#set var="qportal_url" value="https://sbcontrolcenter-e2e.centurylink.com"-->
+	<!--#set var="faq_url" value="http://faq.centurylink.com"-->
+<!--#elif expr="$SERVER_TYPE='PREPROD'"-->
+	<!--#set var="ctl_url" value="http://webdmzqa1.centurylink.com"-->
+	<!--#set var="ctlsecure_url" value="https://webdmzqa1.centurylink.com"-->
+	<!--#set var="ctlmyacct_url" value="https://eamqa3.centurylink.com"-->
+	<!--#set var="q_url" value="http://tcat-itv2.centurylink.com"-->
+	<!--#set var="qcookie_url" value="https://tcat-itv2.centurylink.com"-->
+	<!--#set var="qshop_url" value="https://tcat-itv2.centurylink.com"-->
+	<!--#set var="qmobile_url" value="https://tcat-itv2.centurylink.com/mobile"-->
+	<!--#set var="search" value="http://search-dev.tservicesq.com"-->
+	<!--#set var="eq_url" value="http://eqtest3.centurylink.com"-->
+	<!--#set var="eqsecure_url" value="https://eqtest3.centurylink.com"-->
+	<!--#set var="ctleam_url" value="https://eqtest3.centurylink.com"-->
+	<!--#set var="qwest_url" value="http://tcat-itv2.centurylink.com"-->
+	<!--#set var="ctl_selfservice_url" value="http://selfserviceqa.centurylink.com/ticketingqa3"-->
+	<!--#set var="faq_url" value="http://faq.centurylink.com"-->
+<!--#elif expr="$SERVER_TYPE='TEST'"-->
+	<!--#set var="ctl_url" value="http://webdmzqa3.centurylink.com"-->
+	<!--#set var="ctlsecure_url" value="https://webdmzqa3.centurylink.com"-->
+	<!--#set var="ctlmyacct_url" value="https://eamqa2.centurylink.com"-->
+	<!--#set var="q_url" value="http://tcat-itv1.centurylink.com"-->
+	<!--#set var="qcookie_url" value="https://tcat-itv1.centurylink.com"-->
+	<!--#set var="qshop_url" value="https://tcat-itv1.centurylink.com"-->
+	<!--#set var="qmobile_url" value="https://tcat-itv1.centurylink.com/mobile"-->
+	<!--#set var="search" value="http://search-dev.tservicesq.com"-->
+	<!--#set var="eq_url" value="http://eqtest2.centurylink.com"-->
+	<!--#set var="eqsecure_url" value="https://eqtest2.centurylink.com"-->
+	<!--#set var="ctleam_url" value="https://eqtest2.centurylink.com"-->
+	<!--#set var="qwest_url" value="http://tcat-itv1.centurylink.com "-->
+	<!--#set var="ctl_selfservice_url" value="http://selfserviceqa.centurylink.com/ticketingqa2"-->
+	<!--#set var="qportal_url" value="https://sbcontrolcenter-itv1.centurylink.com"-->
+	<!--#set var="faq_url" value="http://faq.centurylink.com"-->
+<!--#elif expr="$SERVER_TYPE='TEST2'"-->
+	<!--#set var="ctl_url" value="http://webdmzqa2.centurylink.com"-->
+	<!--#set var="ctlsecure_url" value="https://webdmzqa2.centurylink.com"-->
+	<!--#set var="ctlmyacct_url" value="https://eamqa1.centurylink.com"-->
+	<!--#set var="q_url" value="http://tcat-preprod.centurylink.com"-->
+	<!--#set var="qcookie_url" value="https://tcat-preprod.centurylink.com"-->
+	<!--#set var="qshop_url" value="https://tcat-preprod.centurylink.com"-->
+	<!--#set var="qmobile_url" value="https://tcat-preprod.centurylink.com/mobile"-->
+	<!--#set var="search" value="http://search-dev.tservicesq.com"-->
+	<!--#set var="eq_url" value="http://eqtest4.centurylink.com"-->
+	<!--#set var="eqsecure_url" value="https://eqtest4.centurylink.com"-->
+	<!--#set var="ctleam_url" value="https://eqtest4.centurylink.com"-->
+	<!--#set var="qwest_url" value="http://tcat-preprod.centurylink.com"-->
+	<!--#set var="ctl_selfservice_url" value="http://selfserviceqa.centurylink.com/ticketingqa2"-->
+	<!--#set var="qportal_url" value="https://sbcontrolcenter-itv2.centurylink.com"-->
+	<!--#set var="faq_url" value="http://faq.centurylink.com"-->
+<!--#else-->
+	<!--#set var="ctl_url" value="http://webdmzdev2.centurylink.com"-->
+	<!--#set var="ctlsecure_url" value="https://webdmzdev2.centurylink.com"-->
+	<!--#set var="ctlmyacct_url" value="https://eamqa2.centurylink.com"-->
+	<!--#set var="q_url" value="http://tcat-int1.centurylink.com"-->
+	<!--#set var="qshop_url" value="https://tcat-int1.centurylink.com"-->
+	<!--#set var="qmobile_url" value="https://m.centurylink.com"-->
+	<!--#set var="search" value="http://search-dev.tservicesq.com"-->
+	<!--#set var="eq_url" value="http://embarq.centurylink.com"-->
+	<!--#set var="eqsecure_url" value="https://embarq.centurylink.com"-->
+	<!--#set var="ctleam_url" value="https://eqtest2.centurylink.com"-->
+	<!--#set var="qcookie_url" value="https://tcat-int1.centurylink.com"-->
+	<!--#set var="qwest_url" value="http://www-test.tservicesq.com"-->
+	<!--#set var="ctl_selfservice_url" value="http://selfservice.centurylink.com"-->
+	<!--#set var="qportal_url" value="https://sbcontrolcenter-itv1.centurylink.com"-->
+	<!--#set var="faq_url" value="http://faq.centurylink.com"-->
+<!--#endif-->
+
+<script type="text/javascript">
+	var SERVER_TYPE='<!--#echo var="SERVER_TYPE"-->';
+	var ctl_url='<!--#echo var="ctl_url"-->';
+	var ctlsecure_url='<!--#echo var="ctlsecure_url"-->';
+	var ctlmyacct_url='<!--#echo var="ctlmyacct_url"-->';
+	var q_url='<!--#echo var="q_url"-->';
+	var qshop_url='<!--#echo var="qshop_url"-->';
+	var qmobile_url='<!--#echo var="qmobile_url"-->';
+	var eq_url='<!--#echo var="eq_url"-->';
+	var eqsecure_url='<!--#echo var="eqsecure_url"-->';
+	var ctleam_url='<!--#echo var="ctleam_url"-->';
+	var qwest_url='<!--#echo var="qwest_url"-->';
+	var ctl_selfservice_url='<!--#echo var="ctl_selfservice_url"-->';
+	var search='<!--#echo var="search"-->';
+	var qcookie_url='<!--#echo var="qcookie_url"-->';
+	var qportal_url='<!--#echo var="qportal_url"-->';
+	var faq_url='<!--#echo var="faq_url"-->';
+</script>

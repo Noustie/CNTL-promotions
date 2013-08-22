@@ -1,0 +1,63 @@
+@font-face { font-family: 'Adobe Garamond Pro'; src: url('/assets/fonts/agaramondpro-regular-webfont.eot'); }
+@font-face { font-family: 'Adobe Garamond Pro'; src: url('/assets/fonts/AGaramondPro-Regular.otf'); }
+@font-face { font-family: 'Myriad Pro'; src: url('/assets/fonts/MyriadPro-Cond.eot'); }
+@font-face { font-family: 'Myriad Pro'; src: url('/assets/fonts/MyriadPro-Cond.otf'); }
+
+
+/* -------------- BEGIN COUNTER ---------------------*/
+
+#days_text
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 0 0 0 18px;
+	height: 15px;
+	width: 26px;
+	background-image: url('/assets/images/sprites/countdown-sprite.png');
+	background-position: -61px -47px;
+	background-repeat: no-repeat;
+}
+
+#hours_text
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 0 0 0 15px;
+	height: 13px;
+	width: 32px;
+	background-image: url('/assets/images/sprites/countdown-sprite.png');
+	background-position: -61px -32px;
+	background-repeat:no-repeat;
+}
+
+#mins_text
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 0 0 0 7px;
+	height: 13px;
+	width: 43px;
+	background-image: url('/assets/images/sprites/countdown-sprite.png');
+	background-position: -61px -17px;
+	background-repeat: no-repeat;
+}
+
+#secs_text
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 0 0 0 8px;
+	height: 13px;
+	width: 48px;
+	background-image: url('/assets/images/sprites/countdown-sprite.png');
+	background-position: -61px -1px;
+	background-repeat: no-repeat;
+}
+
+
+
+/* -------------- END COUNTER ---------------------*/

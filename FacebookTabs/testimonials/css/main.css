@@ -1,0 +1,148 @@
+html {
+   overflow: hidden;
+   background: #FFF;
+}
+.notFB {
+   overflow: scroll;
+}
+body {
+   background: #FFF;
+   line-height: 1.4;
+}
+#main {
+	background: #000000 url("../images/fbTabBG.jpg") center 90px no-repeat;
+	border-radius: 7px;
+	width: 810px;
+	margin: 0 auto;
+	padding: 10px 0 45px 0;
+}
+.page {
+	margin: 0 45px;
+	background: #FFF;
+	padding: 20px 0 0 0;
+}
+.masthead {
+	padding: 25px 45px;
+}
+.loveBtnWrap {
+	float: right;
+}
+.mainHeader {
+	height: 70px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: transparent url("../images/mainHeader.png") left top no-repeat;
+}
+.padWrap {
+	padding: 20px 65px;
+}
+.videoWrapper {
+	background: #f5f5f5;
+	border: 1px solid #CCC;
+	box-shadow: 0 0 10px #DDD inset;
+	padding: 30px 37px;
+}
+.videoTitle {
+	color: #666;
+	font-size: 24px;
+	font-weight: normal;
+	padding: 0 0 20px 0;
+}
+.videoList h3 {
+	font-size: 14px;
+	padding: 10px 0;
+	border-bottom: 1px solid #CCC;
+}
+.videoSocial {
+	clear: both;
+	padding: 10px 0;
+	overflow: hidden;
+}
+.videoSocial .socialBtn {
+	float: right;
+	overflow: hidden;
+	width: 60px;
+	height: 20px;
+	margin: 0 0 0 10px;
+}
+.videoLinks {
+	display: block;
+	overflow: hidden;
+	padding: 0 0 20px 0;
+}
+.videoLinks ul {
+	display: block;
+	padding: 10px 0;
+	margin: 0;
+	overflow: hidden;
+	width: 635px;
+}
+.videoLinks li {
+	display: block;
+	height: 150px;
+	width: 33%;
+	padding: 0;
+	margin: 0;
+	float: left;
+	background-color: transparent;
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+.videoLinks li a {
+	display: block;
+	height: 100%;
+	width: 180px;
+	padding: 0;
+	margin: 0;
+	font-size: 11px;
+	color: #333;
+}
+.videoLinks li a .vidThumb {
+	display: block;
+	height: 93px;
+	width: 170px;
+	padding: 0;
+	margin: 0;
+	background-color: transparent;
+	background-position: -215px center;
+	background-repeat: no-repeat;
+	background-image: url("../images/vidThumbBtn.png");
+}
+.videoLinks li a:hover .vidThumb {
+	background-position: -415px center;
+}
+.videoLinks li a.selected .vidThumb {
+	background-position: -15px center;
+}
+.videoLinks li a .vidThumbTitle {
+	display: block;
+	padding: 5px 0;
+}
+.videoLinks .vidThumbDesc {
+	display: none;
+}
+.video-thumb-love-whdvr { background-image: url("../images/video-tmb-love-whdvr.jpg"); }
+.video-thumb-love-service { background-image: url("../images/video-tmb-love-service.jpg"); }
+.video-thumb-love-features { background-image: url("../images/video-tmb-love-features.jpg"); }
+.video-thumb-overview { background-image: url("../images/video-thumb-overview.jpg"); }
+.video-thumb-whdvr { background-image: url("../images/video-thumb-whdvr.jpg"); }
+.video-thumb-fif { background-image: url("../images/video-thumb-fif.jpg"); }
+.video-thumb-wscc { background-image: url("../images/video-thumb-wscc.jpg"); }
+.video-thumb-appc { background-image: url("../images/video-thumb-appc.jpg"); }
+.video-thumb-mtvw { background-image: url("../images/video-thumb-mtvw.jpg"); }
+
+.footCta {
+	padding: 30px 65px;
+	border-top: 1px solid #CCC;
+}
+.footCta p {
+	line-height: 31px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.footCta .ctaBtn {
+	position: relative;
+	top: 10px;
+	left: 0;
+}

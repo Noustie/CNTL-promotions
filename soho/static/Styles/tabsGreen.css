@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+#content .details.greenTabs .tabbed {
+	margin: 0px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+#content .details.greenTabs .tabbed .tabs {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+#content .details.greenTabs .tabbed .tabs li {
+	background-image: url("../Images/Discover/tabInactiveRightGreen.gif");
+	background-repeat: no-repeat;
+	background-position: right 3px;
+}
+#content .details.greenTabs .tabbed .tabs a {
+	background-image: url("../Images/Discover/tabInactiveLeftGreen.gif");
+	background-position: left 3px;
+	color: #FFFFFF;
+}
+#content .greenTabs .tabbed ul.tabs li.active {
+	height: 37px;
+	background-image: url("../Images/Discover/bodyTabActiveRight.gif");
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+#content .greenTabs .tabbed ul.tabs li.active a {
+	color: #000;
+	padding-bottom: 7px;
+	background-image: url("../Images/Discover/bodyTabActiveLeft.gif");
+	background-repeat: no-repeat;
+	background-position: left top;
+}

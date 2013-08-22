@@ -1,0 +1,34 @@
+.cipp-content-area{
+	margin:0px 0px auto 0px;
+	padding:20px;
+	min-height:200px;
+	background-repeat:no-repeat;
+	background-position:right bottom;
+}
+.cipp-content-area h4{
+	font-size:16px;
+	color:#999;
+	padding-left:20px;
+}
+.cipp-content-area p{
+	margin-bottom:18px;
+}
+.two-col-content {
+	width:49%;
+}
+.main-offer-details {
+	width:600px;
+	margin-left:20px;
+}
+.grey {
+	color:#444444;
+}
+a.green{
+	color:#00853F
+}
+.disc {
+	list-style-type:circle;
+}
+.cipp-cta {
+	margin-left: 170px;
+}

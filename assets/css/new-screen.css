@@ -1,0 +1,100 @@
+.main-container {
+	width: 960px;
+}
+#tpl_nav-bar .nav li {
+	display: block;
+}
+#tpl_nav-bar .nav li {
+	display: block;
+}
+.links_left .links.quick {
+	display: block;
+}
+
+/* LEVEL 1 NAVIGATION BAR */
+#tpl_nav-bar .nav.level1 {
+	position:relative;
+	top: 1px;
+	z-index: 10;
+}
+#tpl_nav-bar .nav.level1 ul li {
+	background: url(/assets/images/sprites/new_header.png) 0px 0px repeat-x;
+	height: 28px;
+	min-width:100px; 
+	text-align:center;
+}
+
+#tpl_nav-bar .nav.level1 ul li>div {
+	line-height: 24px;
+	padding: 4px 10px 0 10px;
+	margin-left: 1px;
+}
+#tpl_nav-bar .nav.level1 ul li a {
+	font-size: 14px;
+}
+#tpl_nav-bar .nav.level1 ul li.active>div {
+	background: url(/assets/images/sprites/new_header.png) 0px -28px repeat-x;
+}
+#tpl_nav-bar .nav.level1 .cap {
+	width: 1px;
+}
+#tpl_nav-bar .nav.level1 li.right_flavor div, #tpl_nav-bar .nav.level1 li.right_flavor a {
+	float: left;
+	line-height: 20px;
+	font-size: 13px;
+}
+
+/* LEVEL 2 NAVIGATION BAR */
+#tpl_nav-bar .nav.level2 {
+	display: block;
+}
+#tpl_nav-bar .nav.level2 {
+	clear: both;
+	background: url(/assets/images/sprites/new_header.png) 0px -126px repeat-x;
+	height: 35px;
+	font-size:11px;
+}
+#tpl_nav-bar .nav.level2 ul li {
+	height: 35px;
+}
+#tpl_nav-bar .nav.level2 ul li>div {
+	line-height: 12px;
+	margin-top: 10px;
+}
+#tpl_nav-bar .nav.level2 ul li a {
+	display: block;
+	border-left: 1px solid black;
+	padding-left: 8px;
+	margin-left: 8px;
+}
+#tpl_nav-bar .nav.level2 ul li.first a {
+	border-left: 0;
+	margin-left: 0;
+	padding-left: 0;
+}
+#tpl_nav-bar .nav.level2 ul li.right_flavor {
+	float: right;
+	margin-right: 20px;
+}
+#tpl_nav-bar .nav.level2 ul li.right_flavor a {
+	border: 0;
+	display: block;
+	background: url(/assets/images/sprites/new_header.png) right -230px no-repeat;
+	padding-right: 25px;
+	line-height: 33px;
+	height: 35px;
+	color: #00853f;
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 13px;
+}
+
+#tpl_nav-bar .nav.level2 .cap_left {
+	background: url(/assets/images/sprites/new_header.png) 0px -56px no-repeat;
+	width: 10px;
+}
+#tpl_nav-bar .nav.level2 .cap_right {
+	background: url(/assets/images/sprites/new_header.png) 0px -91px no-repeat;
+	width: 10px;
+	float: right;
+}

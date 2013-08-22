@@ -1,0 +1,138 @@
+sup, sub { position: relative; line-height: 0; vertical-align: baseline; left: 0; top: -0.7ex; font-size: 70%; }
+sub { top: 0.1ex; }
+
+.footer {
+	margin: 20px auto 0 auto;
+}
+#main_page_content {
+	width: 960px;
+	padding: 20px 0;
+	margin: 0 auto;
+	clear: both;
+	overflow: hidden;
+}
+
+.serviceDetails { margin-bottom: 15px; }
+.serviceDetails li { list-style-type: disc; font-size: 12px; margin-left: 15px; margin-bottom: 6px; }
+h1 .subHeading { display: block; font-weight: 100; font-size: 13px; color: #333; }
+h1 .subHead2 { display: block; font-weight: 100; font-size: 16px; color: #00853f; line-height: 22px; }
+.generic .ctaHeader { margin: 70px 0 0 20px; }
+
+.bizHeaderMenu {
+	float: right;
+}
+#CTA_phone_number {
+    color: #00853F;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: right;
+}
+.pageTwoCol {
+	width: 49%;
+	float: left;
+}
+.contWrap {
+	padding: 20px;
+}
+.pageContent {
+	border-right: 1px solid #CCC;
+}
+.main h1 {
+    color: #00853F;
+    font-size: 22px;
+    font-weight: bold;
+	margin: 0 0 20px 0;
+}
+.main h2 {
+    color: #000;
+    font-weight: bold;
+	font-size: 15px;
+	margin: 0 0 15px 0;
+}
+.main h3 {
+    color: #00853F;
+    font-weight: bold;
+	margin: 0 0 5px 0;
+}
+.main p {
+	margin: 0 0 10px 0;
+}
+.disclaimer {
+	font-size: 11px;
+}
+.contact .fieldBlock {
+	width: 50%;
+	float: left;
+	margin: 0;
+	padding: 0;
+	height: 60px
+}
+.contact label {
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+.contact input, .contact select {
+	margin: 0;
+	padding: 3px;
+	display: block;
+	border: 1px solid #999;
+	font-size: 14px;
+	width: 85%;
+}
+.contact .submitBtn {
+	margin: 0;
+	padding: 0;
+	display: block;
+	border: 0 none;
+	font-size: 14px;
+	width: auto;
+}
+.timedCta {
+	display: none;
+}
+.activeTimedCta {
+	display: block;
+}
+/*
+.callMeBox {
+	position: relative;
+	left: -7px;
+	top: 0;
+}
+*/
+.callMeBox input {
+	padding: 2px;
+	margin: 0 3px 0 0;
+	background: #FFF;
+	border: 1px solid #CCC;
+	border-radius: 3px;
+}
+/*
+.callMeBox div {
+	top: 0 !important;
+}
+.callMeBox div a {
+	position: relative;
+	top: 0;
+	left: 10px;
+}
+*/
+.callmeTag {
+	position: relative;
+	font-size: 10px;
+	color: #999;
+	top: 30px;
+	left: 0;
+	font-style: italic;
+}
+.thankYouMessage {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 90px 90px 0 30px;
+}
+#errorHolder {
+	padding: 10px 0 0 0;
+	color: red;
+	font-weight: bold;
+}

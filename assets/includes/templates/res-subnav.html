@@ -1,0 +1,179 @@
+<!--#if expr="$ctl_url=''"-->
+<!--#include virtual="/assets/includes/templates/variables.html"-->
+<!--#endif-->
+
+<!--#set var="internet_class" value=" "-->
+<!--#set var="phone_class" value=" "-->
+<!--#set var="bundles_class" value=" "-->
+<!--#set var="moving_class" value=" "-->
+<!--#set var="mobile_class" value=" "-->
+<!--#set var="security_class" value=" "-->
+<!--#set var="tv_class" value=" "-->
+<!--#set var="vzw_display" value="Verizon "-->
+<!--#set var="myaccount_class" value=" "-->
+<!--#set var="myprofile_class" value=" "-->
+<!--#set var="mybill_class" value=" "-->
+
+<!--#if expr="$subnav_current='internet'"-->
+	<!--#set var="internet_class" value="subnav-current"-->
+<!--#elif expr="$subnav_current='phone'"-->
+	<!--#set var="phone_class" value="subnav-current"-->
+<!--#elif expr="$subnav_current='bundles'"-->
+	<!--#set var="bundles_class" value="subnav-current"-->
+<!--#elif expr="$subnav_current='moving'"-->
+	<!--#set var="moving_class" value="subnav-current"-->
+<!--#elif expr="$subnav_current='mobile'"-->
+	<!--#set var="mobile_class" value="subnav-current"-->
+<!--#elif expr="$subnav_current='security'"-->
+	<!--#set var="security_class" value="subnav-current"-->
+<!--#elif expr="$subnav_current='tv'"-->
+	<!--#set var="tv_class" value="subnav-current"-->
+<!--#elif expr="$subnav_current='myaccount'"-->
+	<!--#set var="myaccount_class" value="subnav-current"-->
+<!--#elif expr="$subnav_current='myprofile'"-->
+	<!--#set var="myprofile_class" value="subnav-current"-->
+<!--#elif expr="$subnav_current='mybill'"-->
+	<!--#set var="mybill_class" value="subnav-current"-->
+<!--#endif-->
+
+<!--#if expr="$no_vzw='true'"-->
+	<!--#set var="vzw_display" value=" "-->
+<!--#endif-->
+<!--#config errmsg="[Error in Res-Subnav File content conditional]" -->
+<div class="subnav-bar" id="tpl_subnav-bar">
+	<div class="level1-nav-links">
+		<!--#if expr="$template='a' || $template='A'"-->
+		<!--navigation without drop downs -->
+		<a href="<!--#echo var="ctl_url"-->/home/bundles/" clicktrack="ctl|corp|main_nav|link|bundles">Bundles</a>
+		<a href="<!--#echo var="ctl_url"-->/home/internet/" clicktrack="ctl|corp|main_nav|link|internet">Internet</a>
+		<a href="<!--#echo var="ctl_url"-->/home/phone/" clicktrack="ctl|corp|main_nav|link|phone">Home Phone</a>
+		<a href="javascript:tvNavigation();" id="tpl_subnav_lvl1_tv" clicktrack="ctl|corp|main_nav|link|tv">TV</a>
+		<a href="<!--#echo var="ctl_url"-->/home/homesecurity/" clicktrack="ctl|corp|main_nav|link|home_security">Home Security</a>
+		<a href="<!--#echo var="ctl_url"-->/home/mobile/" clicktrack="ctl|corp|main_nav|link|wireless">Verizon Wireless</a>
+		<a href="#ZAM" class="modal-trigger last" id="tpl_menu-lvl1-help-moving" clicktrack="ctl|corp|main_nav|link|moving">Moving?</a>
+
+		<!--#elif expr="$template='d' || $template='D'"-->
+		<a href="#MAM" class="modal-trigger" id="tpl_menu-lvl1-myaccount" clicktrack="ctl|corp|main_nav|link|myaccount">MyAccount</a>
+		<a href="#MAM" class="modal-trigger" id="tpl_menu-lvl1-myprofile" clicktrack="ctl|corp|main_nav|link|myprofile">My Profile</a>
+		<a href="#MAM" class="modal-trigger" id="tpl_menu-lvl1-mybill" clicktrack="ctl|corp|main_nav|link|mybill">View My Bill Details</a>
+		<a href="#ZAM" class="modal-trigger last" id="tpl_menu-lvl1-help-moving" clicktrack="ctl|corp|main_nav|link|moving">Moving?</a>
+
+		<!--#elif expr="$ld_oor='true'"-->
+		<!--navigation with drop downs -->
+		<ul class="sf-menu">
+			<li id="tpl_subnav-internet-dd" class="<!--#echo var="internet_class"-->"><a href="<!--#echo var="ctl_url"-->/home/internet/" clicktrack="ctl|corp|main_nav|link|internet">Internet</a>
+				<ul class="sf-menu">
+					<li class="first"><a href="<!--#echo var="ctl_url"-->/home/internet/" class="level2-nav-links">Shop Internet service with phone</a></li>
+					<li><a href="<!--#echo var="ctl_url"-->/home/internetonly/" class="level2-nav-links">Shop Internet service without phone</a></li>
+					<li><a href="<!--#echo var="ctl_url"-->/home/internetupgrades/" class="level2-nav-links">Upgrade</a></li>
+					<li><a href="<!--#echo var="ctl_url"-->/home/internet/" id="tpl_menu-lvl2-internet-availability" class="auth-switch-ctam level2-nav-links">Check availability</a></li>
+				</ul>
+			</li>
+			<li id="tpl_subnav-phone-dd" class="<!--#echo var="phone_class"-->"><a href="<!--#echo var="ctl_url"-->/home/phone/" clicktrack="ctl|corp|main_nav|link|phone">Home Phone</a>
+				<ul class="sf-menu">
+					<li class="first"><a href="<!--#echo var="ctl_url"-->/home/phone/index.html#international" class="level2-nav-links">International Long Distance</a></li>
+				</ul>
+			</li>
+			<li id="tpl_subnav-wireless-dd" class="<!--#echo var="mobile_class"-->"><a href="<!--#echo var="ctl_url"-->/home/mobile/" clicktrack="ctl|corp|main_nav|link|wireless"><!--#echo var="vzw_display"-->Wireless</a>
+				<ul class="sf-menu">
+					<li class="first"><a href="<!--#echo var="ctl_url"-->/home/mobile/" class="level2-nav-links">Shop Wireless service</a></li>
+				</ul>
+			</li>
+		</ul>
+
+		<!--#else-->
+		<!--navigation with drop downs -->
+		<ul class="sf-menu">
+			<li id="tpl_subnav-bundles-dd" class="<!--#echo var="bundles_class"-->"><a href="<!--#echo var="ctl_url"-->/home/bundles/" clicktrack="ctl|corp|main_nav|link|bundles">Bundles</a>
+				<ul class="sf-menu">
+					<li class="first"><a href="<!--#echo var="ctl_url"-->/home/bundles/" class="level2-nav-links">Shop our most popular bundles</a></li>
+					<li><a href="<!--#echo var="ctl_url"-->/home/bundles/" class="level2-nav-links">Build your own bundle</a></li>
+				</ul>
+			</li>
+			<li id="tpl_subnav-internet-dd" class="<!--#echo var="internet_class"-->"><a href="<!--#echo var="ctl_url"-->/home/internet/" clicktrack="ctl|corp|main_nav|link|internet">Internet</a>
+				<ul class="sf-menu">
+					<li class="first"><a href="<!--#echo var="ctl_url"-->/home/internet/" class="level2-nav-links">Shop Internet service with phone</a></li>
+					<li><a href="<!--#echo var="ctl_url"-->/home/internetonly/" class="level2-nav-links">Shop Internet service without phone</a></li>
+					<li><a href="<!--#echo var="ctl_url"-->/home/internetupgrades/" class="level2-nav-links">Upgrade</a></li>
+					<li><a href="<!--#echo var="ctl_url"-->/home/internet/" id="tpl_menu-lvl2-internet-availability" class="auth-switch-ctam level2-nav-links">Check availability</a></li>
+				</ul>
+			</li>
+			<li id="tpl_subnav-phone-dd" class="<!--#echo var="phone_class"-->"><a href="<!--#echo var="ctl_url"-->/home/phone/" clicktrack="ctl|corp|main_nav|link|phone">Home Phone</a>
+				<ul class="sf-menu">
+					<li class="first"><a href="<!--#echo var="ctl_url"-->/home/phone/" class="level2-nav-links">Shop Home Phone service</a></li>
+					<li><a href="<!--#echo var="ctl_url"-->/home/phone/index.html#international" class="level2-nav-links">International Long Distance</a></li>
+					<li><a href="<!--#echo var="ctl_url"-->/home/phone/index.html#features" class="level2-nav-links">Calling features</a></li>
+				</ul>
+			</li>
+			<li id="tpl_subnav-tv-dd" class="<!--#echo var="tv_class"-->"><a href="javascript:tvNavigation();" id="tpl_subnav_lvl1_tv" clicktrack="ctl|corp|hp|res|dd|link|tv">TV</a>
+				<ul class="sf-menu">
+					<li class="first"><a href="javascript:tvNavigation();" class="level2-nav-links" id="tpl_subnav_lvl2_tv" clicktrack="ctl|corp|hp|res|dd|link|tv">Shop TV</a></li>
+				</ul>
+			</li>
+			<li id="tpl_subnav-homesecurity-dd" class="<!--#echo var="security_class"-->"><a href="<!--#echo var="ctl_url"-->/home/homesecurity/" title="ctl|corp|main_nav|link|home_security">Home Security</a>
+				<ul class="sf-menu">
+					<li class="first"><a href="<!--#echo var="ctl_url"-->/home/homesecurity/" class="level2-nav-links">Shop Home Security</a></li>
+					<li><a href="<!--#echo var="ctl_url"-->/home/homesecurity/#monitoring" class="level2-nav-links">Security monitoring</a></li>
+					<li><a href="<!--#echo var="ctl_url"-->/home/homesecurity/#wireless" class="level2-nav-links">Wireless security systems</a></li>
+				</ul>
+			</li>
+			<li id="tpl_subnav-wireless-dd" class="<!--#echo var="mobile_class"-->"><a href="<!--#echo var="ctl_url"-->/home/mobile/" clicktrack="ctl|corp|main_nav|link|wireless"><!--#echo var="vzw_display"-->Wireless</a>
+				<ul class="sf-menu">
+					<li class="first"><a href="<!--#echo var="ctl_url"-->/home/mobile/" class="level2-nav-links">Shop Wireless service</a></li>
+				</ul>
+			</li>
+			<li id="tpl_subnav-moving-dd" class="<!--#echo var="moving_class"-->"><a href="#ZAM" id="tpl_menu-lvl1-help-moving" class="level2-nav-links modal-trigger last" clicktrack="ctl|corp|main_nav|link|moving">Moving?</a>
+				<ul class="sf-menu">
+					<li class="first"><a href="#ZAM" class="modal-trigger level2-nav-links" id="tpl_menu-lvl2-help-moving">Get help with moving</a></li>
+				</ul>
+			</li>
+		</ul>
+
+		<!--#endif-->
+	</div>
+	
+	
+	<!--#if expr="$template='a' || $template='A'"-->
+		<!--#if expr="$isCallToOrderPage!='yes'"-->
+		<a href="<!--#echo var="ctlmyacct_url"-->/eam/qbp/identify.do" class="nav-bar-billpay2" id="tpl_global-nav-quick-bill-pay" clicktrack="ctl|corp|button|quick_bill_pay">Quick Bill Pay</a>
+		<!--#endif-->
+		<form class="search-form" id="tpl_search-form">
+			<input type="text" name="search" id="tpl_search-input" width="5" /><a href="#ZAM" class="button btn-arrow search-submit modal-trigger" clicktrack="ctl|corp|search" id="site-search-submit"></a>
+		</form>
+	<!--#else-->
+	<form class="search-form" id="tpl_search-form">
+		<input type="text" name="search" id="tpl_search-input" width="5" /><a href="#ZAM" class="button btn-arrow search-submit modal-trigger" id="site-search-submit" clicktrack="ctl|corp|search"></a>
+	</form>
+	<!--#endif-->
+	
+	
+</div>
+<script type="text/javascript">
+	require(['order!jquery','order!jquery-ui','order!watermark'],function(){
+		$.watermark.options.useNative = false;
+		$('#tpl_search-input').watermark('Search');
+		$('#tpl_search-form').submit(function(){$('#site-search-submit').click();return false});
+	});
+
+</script>
+<script type="text/javascript">
+function tvNavigation() {
+  //ctl_url
+    var cookieName="isIptv";
+	var theCookie=" "+document.cookie;
+	var ind=theCookie.indexOf(" "+cookieName+"=");
+	if (ind==-1) ind=theCookie.indexOf(";"+cookieName+"=");
+	if (ind==-1 || cookieName=="") {
+     location = "<!--#echo var='ctl_url'-->/home/tv/";    
+	 }
+	else {
+	var ind1=theCookie.indexOf(";",ind+1);
+	if (ind1==-1) ind1=theCookie.length; 
+	var isIptvQ = unescape(theCookie.substring(ind+cookieName.length+2,ind1)); 
+	if(isIptvQ == "true")
+      location = "<!--#echo var='ctl_url'-->/prismtv/#index.html";
+	else	
+	 location = "<!--#echo var='ctl_url'-->/home/tv/";
+  }
+}
+</script>

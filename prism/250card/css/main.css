@@ -1,0 +1,406 @@
+/* Global reset-RESET (restores some sensible defaults) based on EJS's reset.css */
+strong {
+	font-weight:bold
+}
+em {
+	font-style:italic
+}
+a img {
+	border:none
+} /* Gets rid of IE's blue borders */
+a:active {
+	outline:none
+}
+* {
+	outline: none;
+}
+/*** GENERAL TYPEOGRAPHY ***/
+body {
+	background-color: #fff;
+	color: #030303;
+	font-family: Arial, Helvetica, sans-serif;
+}
+a {
+	color: #00853f;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+p {
+	margin-bottom: 15px;
+	font-size: 14px;
+}
+ul {
+	margin-left: 35px;
+	margin-bottom: 10px;
+}
+ul li {
+	list-style-type: disc;
+	margin-bottom: 4px;
+}
+sup {
+	vertical-align: baseline;
+	line-height: 0;
+	font-size: 65%;
+	position: relative;
+	left: 0;
+	top: -0.5em
+}
+sub {
+	vertical-align: baseline;
+	line-height: 0;
+	font-size: 65%;
+	position: relative;
+	left: 0;
+	top: 0.2em
+}
+.smallGray {
+	color: #666;
+	font-size: 10px;
+	display: block;
+	line-height: 12px;
+	padding: 3px 0 0 0;
+	margin: 0;
+}
+/*** GENERAL LAYOUT ***/
+
+/*** HEADER STYLES ***/
+
+.clearfix:after {
+	clear: both;
+}
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: block;
+	height: 0;
+	overflow: hidden;
+}
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: block;
+	height: 0;
+	overflow: hidden;
+}
+body, div {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	font-family: arial, sans-serif;
+}
+#masthead {
+	padding: 10px;
+}
+.logo {
+	float: left;
+}
+.mastNav {
+    float: right;
+    height: 90px;
+    text-align: right;
+}
+.mastNav .links {
+	padding: 7px 0;
+}
+div.mastNav p.links {
+	margin-bottom: 0;
+}
+.mastNav .contact {
+	text-align: left;
+	/*margin: 0 0 0 47%;*/
+	display: block;
+	padding: 3px 0 3px 20px;
+	float: right;
+}
+.mastNav .phone {
+	width: 155px;
+	background: #fff url('http://www.centurylink.com/prismtv/images/icons/iconPhone.gif') no-repeat 5px center;
+}
+.mastNav .chatOnline {
+	/*width: 155px;*/
+	background: #fff url('http://www.centurylink.com/prismtv/images/icons/iconChat.gif') no-repeat left center;
+}
+
+.topPhone {
+background: url("../images/phone.jpg") no-repeat scroll 0 0 transparent;
+padding-left: 15px;
+padding-top: 2px;
+text-align: left;
+margin-top: -5px;
+margin-left: 235px;
+}
+
+.chatBtn a {
+	display: block;
+	height: 42px;
+	margin-bottom: 10px;
+	position: absolute;
+	right: 49px;
+	text-indent: -9999px;
+	top: 55px;
+	width: 157px;
+	z-index: 1000;
+}
+
+#wrapper {
+	margin: 0 auto;
+	width: 960px;
+	position: relative
+}
+
+/* HEADER */
+
+#header {
+	width: 960px;
+	height: 430px;
+	margin: 0 auto;
+	position: relative;
+	background: url(../images/header.jpg) center top no-repeat;
+}
+
+#header h2 {
+	color: #8dc63f;
+	font-size: 32px;
+	font-weight: 100;
+	padding: 55px 0 35px 87px;
+	margin: 0
+}
+
+#header h2 span {
+	color: #cccccc;
+	font-size: 27px;
+	display: block;
+}
+
+#header p {
+	color: #ccc;
+	font-size: 16px;
+	padding: 0 0 0 87px;
+	margin: 0;
+}
+
+#header p.larger {
+	font-size: 20px;
+}
+
+#header h3 {
+	color: #8dc63f;
+	font-size: 105px;
+	padding: 0 0 18px 87px;
+	width: 242px;
+	float: left;
+	line-height: 105px;
+	font-weight: 100;
+}
+
+#header h4 {
+	color: #8dc63f;
+	width: 200px;
+	font-size: 28px;
+	float: left;
+	padding-top: 7px;
+	font-weight: 100;
+}
+
+#header h5 {
+	clear: left;
+	padding: 0 0 0 87px;
+	font-size: 32px;
+	color: #ccc;
+}
+
+#header h5 span {
+	color: #f68428;
+	font-weight: bold;
+}
+
+
+/* CONTENT */
+
+#content {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+	background: url(../images/contentBG.jpg) center top repeat-y;
+}
+
+#benefits {
+	width: 960px;
+	height: 549px;
+	margin: 0 auto;
+	position: relative;
+	background: url(../images/benefitBG.jpg) center top no-repeat;
+}
+
+#benefits h2 {
+	font-size: 30px;
+	color: #8dc63f;
+	padding: 20px 0 5px 87px;
+} 
+
+#benefits p {
+	padding: 0 0 0 87px;
+	width: 680px;
+	font-size: 18px;
+	color: #333333;
+}
+
+#benefits ul {
+	width: 360px;
+	float: right;
+	padding: 60px 90px 0 0;
+	color: #8dc63f;
+}
+
+#benefits ul li {
+	float: left;
+	clear: left;
+	margin: 0 0 20px 15px;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+#benefits ul li span {
+	color: #333;
+}
+
+#benefits ul li.offers {
+	color: #8dc63f;
+	font-weight: bold;
+	list-style-type: none;
+	font-size: 20px;
+	margin-left: 0;
+	margin-bottom: 10px;
+	
+}
+
+#switch {
+	width: 960px;
+	height: 330px;
+	margin: 0 auto;
+	position: relative;
+	background: url(../images/switchBG.jpg) center top no-repeat;
+	text-align: center;
+}
+
+#switch h2 {
+	color: #8dc63f;
+	font-size: 30px;
+}
+
+#switch p {
+	color: #999999;
+	font-size: 24px;
+}
+
+#bottomCTA {
+	width: 960px;
+	height: 153px;
+	margin: 0 auto;
+	position: relative;
+	background: url(../images/bottomCTA.jpg) center top no-repeat;
+}
+
+#bottomCTA p {
+	padding: 42px 0 0 87px;
+	font-size: 24px;
+	color: #999999;
+	font-weight: 100;
+	line-height: 20px;
+}
+
+#bottomCTA p span {
+	color: #f68428;
+	font-weight: bold;
+}
+
+#bottomCTA p.large {
+	padding-top: 0;
+	font-size: 28px;
+}
+
+.disclaimer {
+	color: #666;
+	font-size: 11px;
+	padding: 20px;
+	margin: 0;
+	clear: both;
+}
+
+p.disclaimer a {
+	text-decoration: underline;
+}
+
+/* FOOTER */
+#footer {
+	background: url("http://www.centurylink.com/static/Images/Layout/footerBg.gif") no-repeat;
+	font-size: 12px;
+	margin: 0 auto;
+	width: 960px;
+	height: 100px;
+	overflow: hidden;
+	clear:both
+}
+#footer .copyright {
+	font-size: 11px;
+	margin-top: 14px;
+}
+#footer .cta {
+	font-size: 16px;
+	color: #999;
+	font-weight: bold;
+	margin: 0 0 12px;
+}
+#footer .about {
+	width: 70%;
+	float: left;
+	padding-top: 4px;
+	position: relative;
+	top: 20px;
+	left: 20px;
+}
+#footer .support {
+	width: 30%;
+	float: right;
+	text-align: right;
+	position: relative;
+	top: 20px;
+	right: 20px;
+}
+#footer .support ul.nav {
+	float: right;
+	padding-top: 30px;
+}
+/* =footer navigation */
+#footer ul.nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	height: 1.25em;
+}
+
+#footer ul.nav li {
+	margin: 0;
+	border-left: 1px solid #666;
+	float: left;
+	display: block;
+}
+#footer ul.nav li a {
+	color: #333;
+	padding: 0 1em;
+}
+#footer ul.nav li.first {
+	border-left: none;
+}
+#footer ul.nav li.first a {
+	padding-left: 0;
+}
+#footer ul.nav li.last a {
+	padding-right: 0;
+}
+.no-js #main_page_nav {
+	display: none;
+}
+.no-js #inner_content .tab {
+	display: block;
+}

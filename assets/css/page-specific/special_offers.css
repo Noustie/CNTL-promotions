@@ -1,0 +1,178 @@
+.offer-heading{
+	display:block;
+	font-weight:bold;
+	font-size:11pt;
+	margin-bottom:5px;
+	height : 20px;
+	padding-bottom:6px;
+}
+.offer-heading p{
+	display:block;
+	font-weight:bold;
+	font-size:11pt;
+	margin-bottom:5px;
+	color:#094D9C
+}
+.offer-text{
+	display:block;
+	color:#000;
+}
+
+a.offer-seedetails{
+	display:block;
+	float:right;
+	width:auto;
+	color:#00853F;
+}
+/*
+ * NEW styles for spec offers page, 3/31/2011
+ */
+#internet .content{background:url('/assets/images/page-components/icon_hsi_0.jpg') no-repeat;}
+#phone .content{background:url('/assets/images/page-components/icon_phone_0.jpg') no-repeat;}
+#wireless .content{background:url('/assets/images/page-components/icon_wireless_0.jpg') no-repeat;}
+#bundles .content{background:url('/assets/images/page-components/icon_bundle_0.jpg') no-repeat;}
+#tv .content
+{
+	position: relative;
+	background: url('/assets/images/page-components/tv/genie_TVpromo.jpg') no-repeat;
+	background-position: 20px 14px;
+}
+
+.offer-box-top {
+	height:50px; 
+	background:url('/assets/images/page-components/300x50_bx_top.gif') no-repeat; 
+	margin-top:5px;
+	width:300px;
+	z-index:1;
+}
+.offer-box-bottom{
+	height:14px; 
+	background:url('/assets/images/page-components/300x14_bx_bottom.gif') no-repeat; 
+	margin-bottom:5px;
+	width:300px;
+}
+.offer-box {
+  background: url('/assets/images/page-components/300x10_bx_center.gif') repeat-y; 
+  padding:10px;
+  width:280px!important;
+  width:300px;
+  z-index:1;
+  overflow:visible;
+}
+.offer-box-content{
+	margin:-40px 10px -10px 10px;
+	z-index:100;
+	overflow:visible;
+	background:transparent;
+}
+.offer-box-content img{margin:10px;}
+.offers-right {
+	position:relative;
+	left:570px;
+	top:10px;
+	margin-bottom:10px;
+	width:300px;
+}
+.offer-heading {font-size:14px; color:#00853F;}
+
+
+.offer-callout-container {clear:both;margin:0px auto; width:auto;}
+.offer-callout {
+	width:260px!important;
+	width:300px;
+	height:187px;
+	background:url('/assets/images/page-components/300x187_bottom_box.gif') no-repeat; 
+	float:left; 
+	padding:10px 20px;
+	margin-right:6px;
+	position:relative;
+}
+.offer-callout p{
+	min-height:70px;
+	margin-top:10px;
+}
+.offer-callout a.learn-more{float:left; width:100px; display:block;}
+.offer-callout .icon{
+	float:right;
+	height:60px;
+}
+.offer-callout-title {font-size:16px;font-weight:bold; color:#009D00;}
+
+
+/*
+ * NEW styles for spec offers bundles tab, 5/18/2012
+ */
+.offer-heading-2-line {
+	height: 25px;
+}
+.offer-sub-heading-copy {
+	font-size:10pt;
+	font-weight: bold;
+	color: #00853F;
+}
+.offer-content-section h4{
+	color: #00853F;
+}
+.offer-content-section .learn-more-wrapper{
+	height:20px;
+}
+.offer-box-content .last-sub-element {
+	margin-top : 18px;
+}
+.orange-text {
+	color:#ff6600;
+	font-family:arial;
+	font-size:12px;
+}
+
+.small-pane-special-disclaimer { margin-bottom:1em; font-size:10px; color:#7a7a7a;}
+
+/* Begin added 2.18.2013 for QC2815 eMKTG  FEB Cybersale $50  */
+#hsi-1 div.offer-box-content {
+}
+
+.internet-offer-pane-sub-element1 {
+	
+	background:url('/assets/images/page-components/5yrPL-pad-lock_60.jpg') 0 0 no-repeat; 
+	margin-left : -12px;
+	margin-bottom:12px;
+}
+.internet-offer-pane-sub-element2 {
+	background: url('/assets/images/page-components/icon_hsi_1.jpg') no-repeat;
+	width: 160px; 
+	height: 110px;
+	padding-right: 100px;
+	background-position: 165px 8px;
+}
+
+.internet-sub-pane1-right-block {
+	width : 230px;
+	margin-left : 50px;
+}
+
+.internet-offer-pane-sub-heading {
+	font-weight : bold;
+	font-size : 13px;
+}
+
+.internet-offer-pane-sub-element2 .internet-tab-learn-more-wrapper {
+	margin-top : 40px; 
+	height : 20px;
+}
+
+
+.internet-offer-pane-sub-element2-learn-more .spo-inet-learn-more-link {
+    color: #00853F;
+}
+
+.internet-offer-pane-sub-element2-learn-more {
+    background: url("/assets/images/templates/learnmore_icon.png") no-repeat scroll 0 0 transparent;
+    color: #00853F;
+    padding-left: 20px;
+    height:20px;
+    margin-top : 40px; 
+}
+
+
+/* End added 2.18.2013 for QC2815 eMKTG  FEB Cybersale $50  */
+

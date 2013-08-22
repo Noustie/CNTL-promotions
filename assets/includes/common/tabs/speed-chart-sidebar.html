@@ -1,0 +1,25 @@
+<div class="sidebar-speed">
+<!--#if expr="$rc_page='aspirer'"-->
+<p>In order to evaluate the right speed you may need for your home, use this chart to find the speed level that suits you.</p>
+<!--#endif-->
+<img src="/assets/images/page-components/research-center/speed_chart.png" alt="" usemap="#speedchart">
+	<map name="speedchart">
+		<area href="/Pages/AboutUs/Legal/InternetServiceManagement/" coords="65,600,384,612" shape="rect" alt="http://www.centurylink.com/Pages/AboutUs/Legal/InternetServiceManagement/" />
+		<area href="#" coords="10,637,79,656" shape="rect" alt="Learn More" id="speedchart-learnmore" />
+	</map>
+</div>
+<style>
+#speedchart-learnmore-hover{
+	display:none; position:absolute; z-index:999; margin-left:450px; width:400px; margin-top:420px; background:white; border:1px solid black; padding:5px;
+}
+*+html #speedchart-learnmore-hover{margin-left:40px;}
+</style>
+<div id="speedchart-learnmore-hover">
+<span style='font-weight:bold;'>There are two ways that your computer uses internet bandwidth - downloading and uploading.</span><br /><ul><li>When you bring something from the internet to your computer, like photos attached to an email or an album from iTunes, you are downloading.</li><li>When you add something to the internet - like photos that you're ordering from Walgreens or a file that you're emailing, you are uploading.</li><li>When you make a Skype call, you are downloading and uploading because your computer is both sending and receiving information.</li><li>As a general rule, it takes longer (or requires more speed) to upload a file than to download the same file.</li></ul>
+</div>
+<script type="text/javascript">
+	$('#speedchart-learnmore').hover( function(){$('#speedchart-learnmore-hover').fadeIn(500);
+		},function(){
+		$('#speedchart-learnmore-hover').delay(800).fadeOut(500);});
+	$('#speedchart-learnmore').click( function(){return false;});
+</script>

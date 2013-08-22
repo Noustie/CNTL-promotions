@@ -1,0 +1,268 @@
+	<script type="text/javascript">
+
+							    function mouseOverMyQwestContent()
+							    {
+							    document.getElementById("DVR").src = q_url+"/residential/products/tile_DVR.jpg";
+							    document.getElementById("OnDemand").src = q_url+"/residential/products/tile_Cinema_blue.jpg";
+							    document.getElementById("WholeHome").src = q_url+"/residential/products/tile_WholeHome.jpg";
+							    document.getElementById("MyQwest").src = q_url+"/residential/products/tile_myQwest_ROLLOVER.jpg";
+							    document.getElementById("HighDefinition").src = q_url+"/residential/products/tile_HighDef.jpg";
+
+							    document.getElementById("MyQwestContent").style.display = "block";
+							    document.getElementById("DvrContent").style.display = "none";
+							    document.getElementById("OnDemandContent").style.display = "none";
+							    document.getElementById("WholeHomeContent").style.display = "none";
+							    document.getElementById("HighDefinitionContent").style.display = "none";
+							    }
+
+							    function mouseOverDvrContent()
+							    {
+							    document.getElementById("MyQwest").src = q_url+"/residential/products/tile_myQwest.jpg";
+							    document.getElementById("DVR").src = q_url+"/residential/products/tile_DVR_ROLLOVER.jpg";
+							    document.getElementById("OnDemand").src = q_url+"/residential/products/tile_Cinema_blue.jpg";
+							    document.getElementById("WholeHome").src = q_url+"/residential/products/tile_WholeHome.jpg";
+							    document.getElementById("HighDefinition").src = q_url+"/residential/products/tile_HighDef.jpg";
+
+							    document.getElementById("MyQwestContent").style.display = "none";
+							    document.getElementById("DvrContent").style.display = "block";
+							    document.getElementById("OnDemandContent").style.display = "none";
+							    document.getElementById("WholeHomeContent").style.display = "none";
+							    document.getElementById("HighDefinitionContent").style.display = "none";
+							    }
+
+							    function mouseOverOnDemandContent()
+							    {
+							    document.getElementById("MyQwest").src = q_url+"/residential/products/tile_myQwest.jpg";
+							    document.getElementById("DVR").src = q_url+"/residential/products/tile_DVR.jpg";
+							    document.getElementById("OnDemand").src = q_url+"/residential/products/tile_Cinema_ROLLOVER_blue.jpg";
+							    document.getElementById("WholeHome").src = q_url+"/residential/products/tile_WholeHome.jpg";
+							    document.getElementById("HighDefinition").src = q_url+"/residential/products/tile_HighDef.jpg";
+
+							    document.getElementById("MyQwestContent").style.display = "none";
+							    document.getElementById("DvrContent").style.display = "none";
+							    document.getElementById("OnDemandContent").style.display = "block";
+							    document.getElementById("WholeHomeContent").style.display = "none";
+							    document.getElementById("HighDefinitionContent").style.display = "none";
+							    }
+
+							    function mouseOverWholeHomeContent()
+							    {
+							    document.getElementById("MyQwest").src = q_url+"/residential/products/tile_myQwest.jpg";
+							    document.getElementById("DVR").src = q_url+"/residential/products/tile_DVR.jpg";
+							    document.getElementById("OnDemand").src = q_url+"/residential/products/tile_Cinema_blue.jpg";
+							    document.getElementById("WholeHome").src = q_url+"/residential/products/tile_WholeHome_ROLLOVER.jpg";
+							    document.getElementById("HighDefinition").src = q_url+"/residential/products/tile_HighDef.jpg";
+
+							    document.getElementById("MyQwestContent").style.display = "none";
+							    document.getElementById("DvrContent").style.display = "none";
+							    document.getElementById("OnDemandContent").style.display = "none";
+							    document.getElementById("WholeHomeContent").style.display = "block";
+							    document.getElementById("HighDefinitionContent").style.display = "none";
+							    }
+
+							    function mouseOverHighDefinitionContent()
+							    {
+							    document.getElementById("MyQwest").src = q_url+"/residential/products/tile_myQwest.jpg";
+							    document.getElementById("DVR").src = q_url+"/residential/products/tile_DVR.jpg";
+							    document.getElementById("OnDemand").src = q_url+"/residential/products/tile_Cinema_blue.jpg";
+							    document.getElementById("WholeHome").src = q_url+"/residential/products/tile_WholeHome.jpg";
+							    document.getElementById("HighDefinition").src = q_url+"/residential/products/tile_HighDef_ROLLOVER.jpg";
+
+							    document.getElementById("MyQwestContent").style.display = "none";
+							    document.getElementById("DvrContent").style.display = "none";
+							    document.getElementById("OnDemandContent").style.display = "none";
+							    document.getElementById("WholeHomeContent").style.display = "none";
+							    document.getElementById("HighDefinitionContent").style.display = "block";
+							    }
+								require(['order!jquery'],function(require){
+								$(document).ready(function(){
+							    var navOpen = "";
+							    //get the hash from the url
+							    if(window.location.hash){
+							        navOpen1=window.location.hash;
+							        navOpen=navOpen1.replace("#","");
+							    }
+
+							    // set default if blank hash to fix bug for release
+							    if(navOpen == ""){
+							        navOpen="MyQwest";
+							    }
+
+							    switch(navOpen){
+							        case "MyQwestDisplay":
+							            mouseOverMyQwestContent();
+							            break;
+							        case "DvrDisplay":
+							            mouseOverDvrContent();
+							            break;
+							        case "OnDemandDisplay":
+							            mouseOverOnDemandContent();
+							            break;
+							        case "WholeHomeDisplay":
+							            mouseOverWholeHomeContent();
+							            break;
+							        case "HighDefinitionDisplay":
+							            mouseOverHighDefinitionContent();
+							            break;
+							        default:
+							            mouseOverMyQwestContent();
+							            break;
+							    }})});
+    					</script>
+
+	<div class="rollover-bar" style="text-align:center">
+		<img onmouseover="mouseOverMyQwestContent()" id="MyQwest" src="<!--#echo var="q_url"-->/residential/products/tile_myQwest_ROLLOVER.jpg" name="MyCenturyLink">
+		<img onmouseover="mouseOverDvrContent()" id="DVR" src="<!--#echo var="q_url"-->/residential/products/tile_DVR.jpg" name="DVR">
+		<img onmouseover="mouseOverOnDemandContent()" id="OnDemand" src="<!--#echo var="q_url"-->/residential/products/tile_onDemand.jpg" name="OnDemand">
+		<img onmouseover="mouseOverWholeHomeContent()" id="WholeHome" src="<!--#echo var="q_url"-->/residential/products/tile_WholeHome.jpg" name="WholeHome">
+		<img onmouseover="mouseOverHighDefinitionContent()" id="HighDefinition" src="<!--#echo var="q_url"-->/residential/products/tile_HighDef.jpg" name="HighDefinition">
+	</div>
+	<center>
+
+	<div class="content-panes">
+		<div style="position:relative;" id="MyQwestContent">
+			<img src="/assets/images/page-components/tv/Content_Tile_TOP.jpg">
+			<div class="content-container">
+				<h2>My CenturyLink<sup>&reg;</sup> on DIRECTV<sup>&reg;</sup></h2>
+				Now with My CenturyLink<sup>&reg;</sup> on DIRECTV<sup>&reg;</sup>, you can access some of your favorite calling features right on your TV.
+
+				<h4>TV Caller ID</h4>
+				Manage your calls at a glance by seeing incoming Caller ID notifications on your TV.
+
+				<h4>TV Voice Mail</h4>
+				Manage your CenturyLink voice mail right from your TV where you can listen to, save and delete your messages.
+
+				<h4>TV Call History</h4>
+				Access your complete call history and see a list of incoming and outgoing calls.
+
+				<h4>Click to Call</h4>
+				Place outgoing calls using Click to Call. Select the number in your call history you'd like to call and wait for your phone to ring.
+				<br clear="all">
+				<div class="vm_faqs">
+					<a class="btn-green-arrow button"></a><a class="green" clicktrack="ctl|rsd|shop|tv|pre_id_learn|benefits_tab|my_ctl|bottom|link|position1|my_ctl_demo" href="#" onclick="window.open('http://www.qwest-business.com/demos/myctl-dtv.html','tv_voice_mail','scrollbars=yes, width=802, height=740');return false;">My CenturyLink&reg; Demo - see how it works</a><br clear="left" /></a>
+				</div>
+				<br clear="all" />
+
+				<div class="float-right">
+					<a class="button btn-start-now modal-trigger" clicktrack="ctl|rsd|shop|tv|pre_id_learn|benefits_tab|my_ctl|bottom|button|order" href="#CTAM" id="home-tv-tab-benefits-order"></a>
+				</div>
+				<br clear="all" />
+				<br />
+
+				<div class="disclaimer">
+					My Centurylink&reg; on DIRECTV&reg;: This service is provided by CenturyLink at no additional charge when customer has CenturyLink local phone service with Caller ID and/or Voice Mail and a DIRECTV&reg; HD DVR receiver connected to CenturyLink High Speed Internet&reg;. The service will start automatically with no customer action required. My CenturyLink&reg; on DIRECTV&reg; is available in Arizona, Utah, Colorado, Wyoming, New Mexico, Washington, Oregon, Idaho, and Montana.</font>
+				</div>
+				<br clear="all" />
+			</div>
+			<img src="/assets/images/page-components/tv/Content_Tile_BOTTOM.jpg">
+			<br clear="all" />
+		</div>
+
+
+		<div class="open-tile-content" id="DvrContent">
+			<img src="/assets/images/page-components/tv/Content_Tile_TOP.jpg">
+			<div class="content-container">
+				<h2>You'll never have to miss your favorite shows again!</h2>
+
+				<p>DVR Scheduler allows you to schedule DVR recordings and on Demand downloads from any internet-connected computer.</p>
+				<p>A convenient service that is included at no additional charge with your CenturyLink billed DIRECTV service and CenturyLink High Speed Internet&reg;.</p>
+				<p>DVR Scheduler is available for the following receivers: DIRECTV Plus&reg; DVR, and DIRECTV Plus&reg; HD DVR.</p>
+				<br clear="all" />
+
+				<div class="float-right">
+					<a class="button btn-start-now modal-trigger" clicktrack="ctl|rsd|shop|tv|pre_id_learn|benefits_tab|dvr_window|bottom|button|order" href="#CTAM" id="home-tv-tab-benefits-order"></a>
+				</div>
+				<br clear="all" />
+				<br />
+
+				<div class="disclaimer">
+					DIRECTV DVR Scheduler requires Internet access via computer or mobile phone to directv.com. Remote connections may vary. In rare instances, scheduled recording(s) may not be recognized. Requires DIRECTV Plus&reg; DVR (models R15, R16, R22), DIRECTV Plus&reg; HD DVR (models HR20, HR21, HR22, HR23) or TiVo Series 2 receivers with 6.4a software.
+				</div>
+				<br clear="all" />
+			</div>
+			<img src="/assets/images/page-components/tv/Content_Tile_BOTTOM.jpg">
+			<br clear="all" />
+		</div>
+	</div>
+
+	<div id="OnDemandContent">
+		<div class="cinema-content">
+			<div class="cinema-content-ph">
+				<div class="spacing"></div>
+				<br clear="all" />
+				<div class="float-right">
+					<a class="button btn-start-now modal-trigger" clicktrack="ctl|rsd|shop|tv|pre_id_learn|benefits_tab|cinema_window|bottom|button|order" href="#CTAM" id="home-tv-tab-benefits-ondemand-order"></a>
+				</div>
+			</div>
+			<br clear="all" />
+			<div class="disclaimer">
+				<sup>1</sup> Additional fees required for new releases. 2 Limited titles available in 1080p. To view programs in 1080p, DIRECTV HD Equipment and a high-definition 1080p television are required: a DIRECTV CINEMA HD DVR Receiver (model HR20 or higher), an HDMI cable connecting the receiver and the television, and a high-definition 1080p24 television. Not all models are compatible. 3 HD channels include 5.1 surround sound when available from programmer. Additional equipment required and sold separately. 'Dolby' and the double-D symbol are trademarks of Dolby Laboratories. 4 Access to available DIRECTV CINEMA programming based on package selection. Actual number of TV shows and movies will vary. Some DIRECTV CINEMA content requires an HD DVR (HR20 or later) or DVR (R22 or later), DIRECTV CINEMA Connection Kit ($25) and broadband Internet service with speeds of 750 kbps or higher and a network router with an available Ethernet port are required. Visit directv.com/cinema for details.
+			</div>
+		</div>
+	</div>
+
+	<div class="content-panes">
+		<div class="open-tile-content" id="WholeHomeContent">
+			<img src="/assets/images/page-components/tv/Content_Tile_TOP.jpg">
+			<div class="content-container">
+				<h2>Genie<sup>&trade;</sup> Advanced Whole-Home DVR Service</h2>
+
+				<p>Introducing Genie&trade;, the most advanced HD DVR ever. Genie&trade;, only from DIRECTV, is one HD DVR receiver that serves your entire home<sup>1</sup>. </p>
+				
+				<a class="btn-green-arrow button"></a>With Genie&trade;, enjoy a full HD DVR experience on every TV in your home. Now you can record, pause, fast-forward, rewind and delete pre-recorded shows from any room. You can even start watching in one room and finish in any other. <br clear="left" /><br clear="left" />
+
+				<a class="btn-green-arrow button"></a>Genie&trade; lets you record any 5 shows you want — all at the same time — all in HD — and all with one central HD DVR.<sup>2</sup><br clear="left" />
+
+				<a class="btn-green-arrow button"></a>Genie&trade; has more than enough room, so you'll never have to delete your favorite shows to make room for new ones. Genie&trade; comes with a 1 terabyte HD DVR storage drive and up to 3 times more HD recording capacity than cable. <sup>3</sup><br clear="left" /><br clear="left" />
+
+				<a class="btn-green-arrow button"></a>Genie&trade; serves your entire home, so you can enjoy a full HD DVR experience on every TV in your home — without seeing boxes in every room. <sup>1</sup><br clear="left" />
+
+				<a class="btn-green-arrow button"></a>Genie&trade; even recommends new shows you might like, based on the ones you typically watch. It’s never been easier to discover new favorites.<br clear="left" />
+
+				<br clear="all" />
+
+				<br clear="all" />
+				<div class="float-right">
+					<a class="button btn-start-now modal-trigger" clicktrack="ctl|rsd|shop|tv|pre_id_learn|benefits_tab|whole_home_window|bottom|button|order" href="#CTAM" id="home-tv-tab-benefits-order"></a>
+				</div>
+				<br clear="all" />
+				<br />
+				<div class="disclaimer">
+					<sup>1</sup>Requires C31 Client or an RVU-enabled TV/device for each additional room. Additional fees apply. <sup>2</sup>Access to programming based on package selection. Blackout restrictions apply to sports programming. Program must air in HD to record in HD. <sup>3</sup>Based on one Genie HD DVR setup (model HR34 Advanced Whole-Home DVR only). Actual recording capacity varies based on type of programming being recorded. Program must air in HD to record in HD. Additional required legal: Remote viewing requires a model C31 Client, H25 HD Receiver(s) or RVU-enabled TV/device in each additional room, a SWiM network and Advanced Receiver Service ($20/mo.). Visit directv.com/genie for complete details. To access HD programming, HD television equipment also required. Number of HD channels varies by package. Limit three remote viewings per Genie HD DVR (model HR34 Advanced Whole-Home DVR) at a time.
+				</div>
+				<br clear="all" />
+			</div>
+			<img src="/assets/images/page-components/tv/Content_Tile_BOTTOM.jpg">
+			<br clear="all" />
+		</div>
+
+		<div class="open-tile-content" id="HighDefinitionContent">
+			<img src="/assets/images/page-components/tv/Content_Tile_TOP.jpg">
+			<div class="content-container">
+				<h2>See things you never noticed before with HD!</h2>
+
+				<p>Most full-time HD Channels. DIRECTV has an HD channel lineup you can’t get with cable, access to over 170 full-time HD channels, all in hi-def, all the time.*</p>
+
+				<p>Most Sports in HD. DIRECTV is the sports leader with exclusive sports programming not available on cable.</p>
+
+				<br clear="all" />
+				<div class="float-right">
+					<a class="button btn-start-now modal-trigger" clicktrack="ctl|rsd|shop|tv|pre_id_learn|benefits_tab|hd_window|bottom|button|order" href="#CTAM" id="home-tv-tab-benefits-order"></a>
+				</div>
+				<br clear="all" />
+				<br />
+				<div class="disclaimer">
+					Based on national offering of exclusive sports packages and other major sports programming in HD. Professional and collegiate sports subscriptions sold separately. Blackout restrictions and other conditions apply. Actual number of games varies by market due to blackout rules and other conditions.
+				</div>
+				<br clear="all" />
+				<br />
+				<div class="disclaimer">
+					*Number of HD channels varies by package. To access DIRECTV&reg; HD programming, HD Access fee ($10/mo.), HD equipment is required.
+				</div>
+			</div>
+			<img src="/assets/images/page-components/tv/Content_Tile_BOTTOM.jpg">
+			<br clear="all" />
+		</div>
+	</div>
+	<!--end content-panes div-->
+</center>

@@ -1,0 +1,120 @@
+/** IE 6 STUFF **/
+#ie6 #inner_content {
+	float: left;
+	clear: both;
+	display: block;
+	padding: 0;
+}
+
+#ie6 #inner_content {
+	margin-bottom: -5px;
+}
+
+#ie6 #content_bottom_round {
+	margin-bottom: -5px;
+}
+
+#ie6 #main_page_nav li a {
+	line-height: 50px;
+}
+
+body.welcome #ie6 #inner_content h3 {
+	background: url('../images/homeInnerHdr.gif') left center no-repeat;
+	height: 120px;
+	margin: 0 0 0 6px;
+	text-indent: -9999px;
+	display: block;
+}
+
+body.internet #ie6 #inner_content h3 {
+	background: url('../images/internetInnerHdr.gif') left center no-repeat;
+	height: 150px;
+	margin: 0 0 0 6px;
+	text-indent: -9999px;
+}
+
+body.tv #ie6 #inner_content h3 {
+	background: url('../images/tvInnerHdr.gif') left center no-repeat;
+	height: 150px;
+	margin: 0 0 0 6px;
+	text-indent: -9999px;
+}
+
+body.phone #ie6 #inner_content h3 {
+	background: url('../images/phoneInnerHdr.gif') left center no-repeat;
+	height: 100px;
+	margin: 0 0 0 45px;
+	text-indent: -9999px;
+}
+
+body.bundles #ie6 #inner_content h3 {
+	background: url('../images/bundlesInnerHdr.gif') left center no-repeat;
+	height: 150px;
+	margin: 0 0 0 6px;
+	text-indent: -9999px;
+}
+
+body.wireless #ie6 #inner_content h3 {
+	background: url('../images/wirelessInnerHdr.gif') left center no-repeat;
+	height: 150px;
+	margin: 0 0 0 6px;
+	text-indent: -9999px;
+}
+
+#ie6 #content_copy p {
+	margin-top: 5px;
+	clear: both;
+}
+
+#ie6 p.disclaimer {
+	margin-top: 0;
+}
+
+#ie6 #social_btm p img {
+	vertical-align: text-bottom;
+}
+
+/** IE 7 STUFF **/
+
+body.welcome #ie7 #inner_content h3 {
+	background: url('../images/homeInnerHdr.gif') left center no-repeat;
+	height: 120px;
+	margin: 0 0 0 6px;
+	text-indent: -9999px;
+	display: block;
+}
+
+body.internet #ie7 #inner_content h3 {
+	background: url('../images/internetInnerHdr.gif') left center no-repeat;
+	height: 150px;
+	margin: 0 0 0 6px;
+	text-indent: -9999px;
+}
+
+body.tv #ie7 #inner_content h3 {
+	background: url('../images/tvInnerHdr.gif') left center no-repeat;
+	height: 150px;
+	margin: 0 0 0 6px;
+	text-indent: -9999px;
+}
+
+body.phone #ie7 #inner_content h3 {
+	background: url('../images/phoneInnerHdr.gif') left center no-repeat;
+	height: 100px;
+	margin: 0 0 0 45px;
+	text-indent: -9999px;
+}
+
+body.bundles #ie7 #inner_content h3 {
+	background: url('../images/bundlesInnerHdr.gif') left center no-repeat;
+	height: 150px;
+	margin: 0 0 0 6px;
+	text-indent: -9999px;
+}
+
+body.wireless #ie7 #inner_content h3 {
+	background: url('../images/wirelessInnerHdr.gif') left center no-repeat;
+	height: 150px;
+	margin: 0 0 0 6px;
+	text-indent: -9999px;
+}

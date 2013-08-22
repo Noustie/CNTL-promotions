@@ -1,0 +1,69 @@
+.bea-portal-layout-grid {
+	text-align: center;
+}
+#main {
+	width: 100%;
+	max-width: 963px;
+}
+.logoLink {
+	float: left;
+	padding: 20px 0;
+}
+#masthead {
+	overflow: hidden;
+	padding: 0 20px;
+	margin: 0 auto;
+	width:715px;
+}
+#top_nav {
+    float: right;
+    font-size: 12px;
+	padding: 10px 0 0 0;
+}
+#top_nav ul {
+    margin-left: 0;
+}
+#top_nav ul li {
+    border-right: 1px solid #666666;
+    color: #666666;
+    display: inline;
+    list-style-type: none;
+    margin-right: 5px;
+    padding-right: 8px;
+}
+#top_nav ul li a {
+    color: #666666;
+}
+#top_nav ul li.topnav_last {
+    border: medium none;
+}
+#dtvMainContentContainer {
+	margin: 0 auto;
+	width: 715px;
+	text-align: left;
+}
+#appFooter {
+    clear: both;
+    color: #666666;
+    font-size: 12px;
+    padding: 15px 0 20px;
+    text-align: center;
+}
+#appFooter ul {
+    margin-bottom: 5px;
+    margin-left: 0;
+}
+#appFooter ul li {
+    border-right: 1px solid #666666;
+    color: #666666;
+    display: inline;
+    list-style-type: none;
+    margin-right: 5px;
+    padding-right: 8px;
+}
+#appFooter ul li a {
+    color: #666666;
+}
+#appFooter ul li.footernav_last {
+    border: medium none;
+}
