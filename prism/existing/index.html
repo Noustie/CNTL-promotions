@@ -1,3 +1,43 @@
+<!--#if expr="${SERVER_NAME}=/staging/"-->
+	<!--#set var="SERVER_TYPE" value="DEV"-->
+<!--#else -->
+	<!--#set var="SERVER_TYPE" value="PROD"-->
+<!--#endif -->
+<!--#if expr="$SERVER_TYPE='DEV'"-->
+	<!--#set var="promos_url" value="http://staging.promotions.centurylink.com"-->
+	<!--#set var="ctl_url" value="http://webdmzqa2.centurylink.com"-->
+	<!--#set var="ctlsecure_url" value="https://webdmzqa2.centurylink.com"-->
+	<!--#set var="ctlmyacct_url" value="https://eamqa1.centurylink.com"-->
+	<!--#set var="q_url" value="http://tcat-preprod.centurylink.com"-->
+	<!--#set var="qcookie_url" value="https://tcat-preprod.centurylink.com"-->
+	<!--#set var="qshop_url" value="https://tcat-preprod.centurylink.com"-->
+	<!--#set var="qmobile_url" value="https://tcat-preprod.centurylink.com/mobile"-->
+	<!--#set var="search" value="http://search-dev.tservicesq.com"-->
+	<!--#set var="eq_url" value="http://eqtest4.centurylink.com"-->
+	<!--#set var="eqsecure_url" value="https://eqtest4.centurylink.com"-->
+	<!--#set var="ctleam_url" value="https://eqtest4.centurylink.com"-->
+	<!--#set var="qwest_url" value="http://tcat-preprod.centurylink.com"-->
+	<!--#set var="ctl_selfservice_url" value="http://selfserviceqa.centurylink.com/ticketingqa2"-->
+	<!--#set var="qportal_url" value="https://sbcontrolcenter-itv2.centurylink.com"-->
+	<!--#set var="faq_url" value="http://faq.centurylink.com"-->
+<!--#elif expr="$SERVER_TYPE='PROD'"-->
+	<!--#set var="promos_url" value="http://promotions.centurylink.com"-->
+	<!--#set var="ctl_url" value="http://www.centurylink.com"-->
+	<!--#set var="ctlsecure_url" value="https://www.centurylink.com"-->
+	<!--#set var="ctlmyacct_url" value="https://eam.centurylink.com"-->
+	<!--#set var="q_url" value="http://qwest.centurylink.com"-->
+	<!--#set var="qcookie_url" value="https://q.myaccount.centurylink.com"-->
+	<!--#set var="qshop_url" value="https://shop.centurylink.com"-->
+	<!--#set var="qmobile_url" value="https://m.centurylink.com"-->
+	<!--#set var="search" value="http://c.search.centurylink.com"-->
+	<!--#set var="eq_url" value="http://embarq.centurylink.com"-->
+	<!--#set var="eqsecure_url" value="https://embarq.centurylink.com"-->
+	<!--#set var="ctleam_url" value="https://embarq.centurylink.com"-->
+	<!--#set var="qwest_url" value="http://qwest.centurylink.com"-->
+	<!--#set var="ctl_selfservice_url" value="http://selfservice.centurylink.com"-->
+	<!--#set var="qportal_url" value="https://sbcontrolcenter.centurylink.com"-->
+	<!--#set var="faq_url" value="http://faq.centurylink.com"-->
+<!--#endif -->
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -8,14 +48,79 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
 	<link rel="stylesheet" type="text/css" href="css/ie.css" />
 	<link rel="stylesheet" href="./css/colorbox.css" />
+
+	<style>
+
+		/* MODIFIED FROM MAIN.CSS ON CENTURYLINK.COM */
+		/*----------------------Modal Window Styles---------------*/
+		.modals { position: absolute; top: 0; left: 0; z-index: 9000; }
+		.modal { z-index: 9000; width:406px; min-height:100px; padding:0; position: absolute; }
+		.modal .modal-top { background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -7px -2px; height:17px!important; height:37px; width:386px!important; width:406px; padding:10px; text-align:center; font-weight:bold; }
+		.modal .modal-bottom { background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -7px -80px; width:406px; height:52px; }
+		.modal .modal-content { width:366px!important; width:406px; padding:20px; background:transparent url('/assets/images/templates/modal_bg.png') repeat-y 0px 0px; overflow:visible; }
+		.modal a.modal-close-btn { background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -378px -168px; height:16px; width:16px;	display:block; float:right; vertical-align:bottom; float:right; }
+		.modal .modal-close{ float:right; width:100px; line-height:15px; *margin-top:-15px; text-align:right; }
+		.zam_close, .ctam_close, .mam_close{float:left;}
+		#zam_close-button,#ctam_close-button,#mam_close-button{float:left; margin-left:5px;}
+		.modal .modal-close a{ font-size:11px; color:green; }
+		.modal .modal-block-top{ margin-top:10px; background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -9px -136px; height:10px; width:356px; }
+		.modal .modal-block-bottom{ background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -9px -168px; height:12px; width:356px; }
+		.modal .modal-block{ border-right:1px solid #CCC; border-left:1px solid #CCC; background-color:#E7E7E7; min-height:10px; width:354px; }
+		.modal-block-title{ background: url('/assets/images/sprites/modal_sprite.png') no-repeat -378px -188px; padding-left:20px; margin-left:10px; }
+		.modal-block-title{ background: url('/assets/images/sprites/modal_sprite.png') no-repeat -378px -188px; padding-left:20px; margin-left:10px; }
+		.modal-block-expanded, .modal-block-expanded_lvl2{ display:none; }
+		.modal-block-expanded_lvl2{ margin:10px; }
+		.modals .modal form{ margin:10px 10px 0 0; background: transparent; padding:0; }
+		.modals .modal, .modals .modal p { font-size: 12px; }
+		.modals .modal input { font-size: 11px; }
+		.modals .error { clear: both; overflow: hidden; }
+		.modal form input{ font: inherit; }
+		.modal form label{ display:block; font-size:11px; }
+		.address-block{ float:left; margin:auto 10px 7px auto; }
+		.remember-me{ margin-left:20px; }
+		.link-protect-info{ background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -378px -138px; padding-left:20px; margin-left:20px; display:block; line-height:20px; }
+		.modal-button{ font-size:0; display:block; background:url('/assets/images/sprites/modal_sprite.png') no-repeat; }
+		.btn-modal-show-options{ background-position:-10px -185px; height:26px; width:131px; }
+
+		.btn-modal-show-options:hover{ background-position:-10px -215px; }
+		/*----------------------End Modal---------------*/
+
+		/*----------------------PopUp Window Styles---------------*/
+		.popup{ width:406px; min-height:100px; padding:0; }
+		.popup .popup-top{ background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -7px -2px; height:17px!important; height:37px; width:386px!important; width:406px; padding:10px; text-align:center; font-weight:bold; }
+		.popup .popup-bottom{ background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -7px -80px; width:406px; height:52px; }
+		.popup .popup-content{ width:366px!important; width:406px; padding:20px; background:transparent url('/assets/images/templates/modal_bg.png') repeat-y 0px 0px; overflow:visible; }
+		.popup-content p{ margin-bottom: 16px; }
+		.popup a.popup-close-btn{ background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -378px -168px; height:16px; width:16px; display: block; vertical-align: bottom; }
+		.popup-close-link { float: left; }
+		.popup .popup-close{ width:90px; line-height:15px; *margin-top:-15px; text-align:right; float:right; }
+		.popup .popup-close a{ font-size:11px; color:green; }
+
+		/*----------------------End Pop Up---------------*/
+
+	</style>
+	
     <script language="JavaScript" type="text/javascript" src="./js/jquery.min.js"></script>
 	<script language="JavaScript" type="text/javascript" src="./js/colorbox/jquery.colorbox.js"></script>
 	<script language="JavaScript" type="text/javascript" src="./js/jquery.cycle.all.js"></script>
+
+	<script type="text/javascript" src="//www.centurylink.com/assets/js/plugins/jqModal.js"></script>
+	<script type="text/javascript" src="//www.centurylink.com/assets/js/plugins/jquery.cookie.js"></script>
+	<script type="text/javascript" src="//www.centurylink.com/assets/js/plugins/cookies2.js"></script>
 	<script type="text/javascript" src="//www.centurylink.com/assets/js/plugins/jquery.qwest-core.js"></script>
+	<script type="text/javascript" src="//www.centurylink.com/assets/js/locator.js"></script>
 	<script type="text/javascript" src="//www.centurylink.com/assets/js/plugins/centurycore.shortcuts.js"></script>
-	<script type="text/javascript" src="http://qwest.centurylink.com/global/includes/c2c/residential/mtagconfig.js"></script>
+	<script type="text/javascript" src="//qwest.centurylink.com/global/includes/c2c/residential/mtagconfig.js"></script>
 
 	<script type="text/javascript">
+		//REQUIRE.JS IS REMOVED AND SHIMMED.
+		function require ( _reqs, _callback ) {
+			var delayed = function () {
+				_callback();
+			}
+			$( function () { setTimeout(delayed, 1);} );
+		}
+
 		//var createBundlesCTCButton = function(name, pid, targetContainer){
 			// Associate button name and skill
 			//if(typeof(lpMTagConfig.dynButton)!="undefined") {
@@ -48,14 +153,14 @@
 					$("#cboxClose").css({"top":"55px"});
 				},
 				innerWidth: 870, fixed: false,
-				initialWidth: 300, initialHeight: 300, transition: "fade"
+				initialWidth: 300, initialHeight: 300, transition: "none"
 			});
 
 			function paginate (ind, el) {
-				if (ind == 0) return '<a href="#"><li id="tab1">HBO<sup>&reg;</sup></li></a>';
-				else if (ind == 1) return '<a href="#"><li id="tab2">Cinemax<sup>&reg;</sup></li></a>';
-				else if (ind == 2) return '<a href="#"><li id="tab3">SHOWTIME<sup>&reg;</sup></li></a>';
-				else if (ind == 3) return '<a href="#"><li id="tab4">STARZ<sup>&reg;</sup></li></a>';
+				if (ind == 0) return '<a href="#" data-clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|hbo_tab" class="trackMe"><li id="tab1">HBO<sup>&reg;</sup></li></a>';
+				else if (ind == 1) return '<a href="#" data-clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|cinemaxhbo_tab" class="trackMe"><li id="tab2">Cinemax<sup>&reg;</sup></li></a>';
+				else if (ind == 2) return '<a href="#" data-clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|showtimehbo_tab" class="trackMe"><li id="tab3">SHOWTIME<sup>&reg;</sup></li></a>';
+				else if (ind == 3) return '<a href="#" data-clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|starzhbo_tab" class="trackMe"><li id="tab4">STARZ<sup>&reg;</sup></li></a>';
 				return "";
 			}
 			//add css to push the close box up on these overlays
@@ -69,7 +174,7 @@
 					//do something
 				},
 				innerWidth: 870, fixed: false,
-				initialWidth: 300, initialHeight: 300, transition: "fade"
+				initialWidth: 300, initialHeight: 300, transition: "none"
 			});
 
 			$("#longBox_container a.onDemand").colorbox({
@@ -80,7 +185,7 @@
 					$("#cboxClose").css({"top":"25px"});
 				},
 				innerWidth: 870, fixed: false,
-				initialWidth: 300, initialHeight: 300, transition: "fade"
+				initialWidth: 300, initialHeight: 300, transition: "none"
 			});
 
 			$("#longBox_container a.go").colorbox({
@@ -99,18 +204,19 @@
 					$("#cboxClose").css({"top":"55px"});
 				},
 				innerWidth: 870, fixed: false,
-				initialWidth: 300, initialHeight: 300, transition: "fade"
+				initialWidth: 300, initialHeight: 300, transition: "none"
 			});
 
 			function goPaginate (ind, el) {
-				if (ind == 0) return '<a href="#"><li id="goTab1">HBO GO<sup>&reg;</sup></li></a>';
-				else if (ind == 1) return '<a href="#"><li id="goTab2">MAX GO<sup>&reg;</sup></li></a>';
+				if (ind == 0) return '<a href="#" data-clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|hbo_gohbo_tab" class="trackMe"><li id="goTab1">HBO GO<sup>&reg;</sup></li></a>';
+				else if (ind == 1) return '<a href="#" data-clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|max_gohbo_tab" class="trackMe"><li id="goTab2">MAX GO<sup>&reg;</sup></li></a>';
 				return "";
 			}
 			//add css to push the close box up on these overlays
 
 			//tracking init with qa.initialize()
 			qa.initialize();
+			qm.initialize();
 
 		});
 		//createBundlesCTCButton("chat-centurylink-residential-customer-support-prism-existing", "chat-centurylink-residential-customer-support-prism-existing","#chatBtn");
@@ -119,8 +225,26 @@
 	Copyright 1997-2009 Omniture, Inc. More info available at
 	http://www.omniture.com -->
 	<script type="text/javascript">
+		var SERVER_TYPE='<!--#echo var="SERVER_TYPE"-->';
+		var ctl_url='<!--#echo var="ctl_url"-->';
+		var promos_url='<!--#echo var="promos_url"-->';
+		var ctlsecure_url='<!--#echo var="ctlsecure_url"-->';
+		var ctlmyacct_url='<!--#echo var="ctlmyacct_url"-->';
+		var q_url='<!--#echo var="q_url"-->';
+		var qshop_url='<!--#echo var="qshop_url"-->';
+		var qmobile_url='<!--#echo var="qmobile_url"-->';
+		var eq_url='<!--#echo var="eq_url"-->';
+		var eqsecure_url='<!--#echo var="eqsecure_url"-->';
+		var ctleam_url='<!--#echo var="ctleam_url"-->';
+		var qwest_url='<!--#echo var="qwest_url"-->';
+		var ctl_selfservice_url='<!--#echo var="ctl_selfservice_url"-->';
+		var search='<!--#echo var="search"-->';
+		var qcookie_url='<!--#echo var="qcookie_url"-->';
+		var qportal_url='<!--#echo var="qportal_url"-->';
+		var faq_url='<!--#echo var="faq_url"-->';
+
 		var sAddress = ""; //s.address
-		var pageName = "ctl|rsd|shop|iptv_retention|pre_id_learn"; //s.pageName
+		var eBiz_pageName = "ctl|rsd|shop|iptv_retention|pre_id_learn"; //s.pageName
 		var pageType = ""; //s.pageType
 		var errorType = ""; //s.prop2
 		var accountEvents = ""; //eVar1
@@ -139,23 +263,65 @@
 		var totalOrderPrice = ""; //Doubleclick
 		var eBiz_server = "centurylink.com"; // s.server
 		var eBiz_channel = "rsd"; // s.channel, s.eVar41
-		var eBiz_prop20 = "";
+		var eBiz_prop20 = "IPTV";
 		var eBiz_prop24 = "rsd|shop";
-		var eBiz_prop25 = "rsd|shop|iptv";
-		var eBiz_prop26 = "rsd|shop|iptv|pre_id_learn";
+		var eBiz_prop26 = "rsd|shop|iptv";
 		var eBiz_prop38 = "static_page";
-		var eBiz_prop39 = "landing_page";
+		var eBiz_prop39 = "static_page";
 		var eBiz_prop52 = "ctl";
-		var eBiz_evar27 = "";
+		var eBiz_evar35 = eBiz_prop24;
 		var eBiz_evar41 = eBiz_prop52;
 		var eBiz_evar48 = eBiz_prop38;
 		var eBiz_evar49 = eBiz_prop39;
 		var eBiz_evar53 = eBiz_prop24;
-		var eBiz_evar54 = eBiz_prop25;
+		var eBiz_evar54 = eBiz_prop26;
 		var eBiz_evar55 = eBiz_prop26;
 		var eBiz_evar56 = eBiz_prop52;
 
-
+		//Create a mock LM object if we havent loaded the real link matrix.
+		if(typeof linkMatrix == "undefined") {
+			linkMatrix = {
+				ctam : {},
+				zam : {},
+				mam : {}
+			};
+		}
+		linkMatrix.zam["prism-hbo-trigger"] = {
+		    type: "popup",
+		    Q: promos_url+"/prism/existing/clicktochat-cris.html",  
+		    CTL: promos_url +"/prism/existing/clicktochat-ens.html", 
+		    EQ: promos_url+"/prism/existing/clicktochat-ens.html" 
+		}
+		linkMatrix.zam["prism-max-trigger"] = {
+		    type: "popup",
+		    Q: promos_url+"/prism/existing/clicktochat-cris.html",  
+		    CTL: promos_url +"/prism/existing/clicktochat-ens.html", 
+		    EQ: promos_url+"/prism/existing/clicktochat-ens.html" 
+		}
+		linkMatrix.zam["prism-sho-trigger"] = {
+		    type: "popup",
+		    Q: promos_url+"/prism/existing/clicktochat-cris.html",  
+		    CTL: promos_url +"/prism/existing/clicktochat-ens.html", 
+		    EQ: promos_url+"/prism/existing/clicktochat-ens.html" 
+		}
+		linkMatrix.zam["prism-starz-trigger"] = {
+		    type: "popup",
+		    Q: promos_url+"/prism/existing/clicktochat-cris.html",  
+		    CTL: promos_url +"/prism/existing/clicktochat-ens.html", 
+		    EQ: promos_url+"/prism/existing/clicktochat-ens.html" 
+		}
+		linkMatrix.zam["prism-hbo-go-trigger"] = {
+		    type: "popup",
+		    Q: promos_url+"/prism/existing/clicktochat-cris.html",  
+		    CTL: promos_url +"/prism/existing/clicktochat-ens.html", 
+		    EQ: promos_url+"/prism/existing/clicktochat-ens.html" 
+		}
+		linkMatrix.zam["prism-max-go-trigger"] = {
+		    type: "popup",
+		    Q: promos_url+"/prism/existing/clicktochat-cris.html",  
+		    CTL: promos_url +"/prism/existing/clicktochat-ens.html", 
+		    EQ: promos_url+"/prism/existing/clicktochat-ens.html" 
+		}
 	</script>
 	<!--/DO NOT REMOVE/-->
 	<!-- End SiteCatalyst code version: H.14. -->
@@ -546,6 +712,7 @@
 					<h2>Enjoy HBO<sup>&reg;</sup>. Anytime. Anywhere.</h2>
 					<h3>Plus, with HBO On Demand<sup>&reg;</sup> and HBO GO<sup>&reg;</sup> you have access to 11 HBO<sup>&reg;</sup> channels.</h3>
 					<div class="price sixteen99-tfn">Add for just $16.99 a month* Call 1.855.435.4173 to order.</div>
+					<a href="#ZAM" class="modal-trigger close-color-box" id="prism-hbo-trigger" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|hbo|button|chat">Chat to Order</a>
 					<p class="blurb">HBO<sup>&reg;</sup> gives you hit original series, the biggest Hollywood hit movies, comedy specials, award-winning documentaries, sports and much more. Plus, you have the ability to enjoy HBO<sup>&reg;</sup> whenever and wherever you want with HBO On Demand<sup>&reg;</sup> and HBO GO<sup>&reg;</sup> &ndash; both of which are included when you add HBO<sup>&reg;</sup> to your Prism&trade; TV service. So go ahead, make your own schedule. Catch up on the hottest new releases like <em>Family Tree</em>, <em>The Dark Knight Rises</em> and <em>Trouble With The Curve</em> whenever it's convenient. And be sure to make time for the new season of the critically acclaimed series <em>True Blood</em><sup>&reg;</sup>.</p>
 					<p class="disclaimer floatingDisclaimer">
 						HBO<sup>&reg;</sup>, Cinemax<sup>&reg;</sup> and related channels and service marks are the property of Home Box Office, Inc.
@@ -557,8 +724,9 @@
 					<h2>Take your entertainment to the MAX.</h2>
 					<h3>Enjoy all 5 Cinemax<sup>&reg;</sup> channels and Cinemax On Demand<sup>&reg;</sup>.</h3>
 					<div class="price fifteen49-tfn">Add for just $15.49 a month* Call 1.855.435.4173 to order.</div>
+					<a href="#ZAM" class="modal-trigger close-color-box" id="prism-max-trigger" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|cinemax|button|chat">Chat to Order</a>
 					<p class="blurb">With Cinemax<sup>&reg;</sup> you get the best Hollywood hits, action-packed original series, and behind-the-scenes exclusives &ndash; all in True HD*. From exclusive premieres on the flagship station to first-rate programming on 4 additional genre-focused multiplex channels, Cinemax<sup>&reg;</sup> delivers the entertainment you deserve. And that includes movies like <em>The Campaign</em>, <em>Killer Joe</em> and <em>The Best Exotic Marigold Hotel</em>.</p>
-					<p class="blurb" style="font-size:11px;padding-top:70px;">*Subscription to HD service required to view HD movies. HD availability varies by area.</p>
+					<p class="blurb" style="font-size:11px;padding-top:50px;">*Subscription to HD service required to view HD movies. HD availability varies by area.</p>
 					<p class="disclaimer floatingDisclaimer">
 						HBO<sup>&reg;</sup>, Cinemax<sup>&reg;</sup> and related channels and service marks are the property of Home Box Office, Inc.
 					</p>
@@ -572,6 +740,7 @@
 						ON DEMAND<sup>&reg;</sup>, plus THE MOVIE CHANNEL&trade; and <br>
 						FLIX ON DEMAND<sup>&reg;</sup>.</h3>
 					<div class="price fifteen49-tfn-alt">Add for just $15.49 a month* Call 1.855.435.4173 to order.</div>
+					<a href="#ZAM" class="modal-trigger close-color-box" id="prism-sho-trigger" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|showtime|button|chat">Chat to Order</a>
 					<p class="blurb">SHOWTIME<sup>&reg;</sup> is the complete premium entertainment package, offering the hottest original series, sports and movies. Order now and catch critically acclaimed series like <em>Dexter</em><sup>&reg;</sup> and <em>Homeland</em>, as well as the new original series <em>Ray Donovan</em>, starring Liev Schreiber and Jon Voight. For hard-hitting action, SHOWTIME<sup>&reg;</sup> gives you a wide variety of sports programming &ndash; from <em>Championship Boxing</em> and <em>60 Minutes Sports</em><sup>&trade;</sup> to <em>Jim Rome on Showtime</em>. Plus, SHOWTIME<sup>&reg;</sup> delivers hits like <em>Lawless</em> and <em>War Horse</em>.</p>
 					<p class="disclaimer floatingDisclaimer">
 						Dexter<sup>&reg;</sup>: &copy;Showtime Networks Inc. All Rights Reserved. SHOWTIME, THE MOVIE CHANNEL, FLIX and related marks are trademarks of Showtime Networks Inc., a CBS Company.
@@ -583,8 +752,9 @@
 					<h2>STARZ<sup>&reg;</sup> delivers Hollywood&rsquo;s biggest movies and brightest stars.</h2>
 					<h3>Get all 13 STARZ<sup>&reg;</sup> and ENCORE<sup>&reg;</sup> channels,<br>plus STARZ and ENCORE On Demand.</h3>
 					<div class="price fifteen49-tfn-alt">Add for just $15.49 a month* Call 1.855.435.4173 to order.</div>
+					<a href="#ZAM" class="modal-trigger close-color-box" id="prism-starz-trigger" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|starz|button|chat">Chat to Order</a>
 					<p class="blurb">Gather the family together for entertainment overdrive. With STARZ, you can enjoy the hottest original series and over 1,000 different movies a month, like <em>Total Recall</em> and <em>Premium Rush</em>. Plus, thanks to the convenience of STARZ and ENCORE On Demand, you can get instant access to non-stop entertainment, including movies the whole family will love, like <em>Hotel Transylvania</em>, and original series like <em>Magic City</em> that parents can enjoy together.</p>
-					<p style="font-size:80%;color:#999999;padding-top:30px;">On Demand services available at no additional charge with your STARZ/ENCORE subscriptions.</p>
+					<p style="font-size:80%;color:#999999;padding-top:10px;">On Demand services available at no additional charge with your STARZ/ENCORE subscriptions.</p>
 					<p class="disclaimer floatingDisclaimer">
 						STARZ and related channels and service marks are the property of Starz Entertainment, LLC. Visit starz.com for airdates/times. Magic City: &copy; 2013 Starz Entertainment, LLC. All Rights Reserved
 					</p>
@@ -629,7 +799,9 @@
 				<div class="childWrap">
 					<h2>HBO GO<sup>&reg;</sup></h2>
 					<p class="blurb blurb-trim">Did you know that HBO GO<sup>&reg;</sup> is included in your subscription to HBO<sup>&reg;</sup>? That means you can access groundbreaking original series like <em>True Blood</em><sup>&reg;</sup>, <em>Game of Thrones</em><sup>&reg;</sup> and <em>Girls</em><sup>&reg;</sup> &ndash; PLUS movies, sports and more from your favorite devices. So whether you're watching from your laptop, mobile phone, gaming console or smart TV, sit back, relax and enjoy great entertainment on your terms.</p>
-					<p class="orange-cta" style="height:150px; margin: 0;">Call <strong>1.855.435.4173</strong> to order.</p>
+					<!-- <p class="orange-cta" style="height:150px; margin: 0;">Call <strong>1.855.435.4173</strong> to order.</p> -->
+					<div class="go-pop-up go-modal-tfn">Call 1.855.435.4173</div>
+					<a href="#ZAM" class="modal-trigger close-color-box" id="prism-hbo-go-trigger" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|hbo_go|button|chat">Chat to Order</a>
 					<p class="blurb" style="font-size:11px; width: 80%;color:#999999;">Separate channel package subscription charges will apply if not included in TV package selected. All other marks are property of their respective owners.</p>
 					<p class="disclaimer floatingDisclaimer">
 						HBO GO<sup>&reg;</sup> is only accessible in the U.S. and certain U.S. territories. Some restrictions may apply. &copy;2013 Home Box Office, Inc. All Rights Reserved. HBO<sup>&reg;</sup> and related channels and service marks are the property of Home Box Office, Inc.
@@ -640,7 +812,8 @@
 				<div class="childWrap">
 					<h2>MAX GO<sup>&reg;</sup></h2>
 					<p class="blurb blurb-trim">One great benefit of subscribing to Cinemax<sup>&reg;</sup>: free access to MAX GO<sup>&reg;</sup>, which allows you to access all Cinemax programming wherever you are, on any device &ndash; laptop, tablet, smartphone, gaming console or smart TV. That includes recent Hollywood hits like <em>Rock of Ages</em>, <em>The Best Exotic Marigold Hotel</em> and <em>Snow White and the Huntsman</em> as well as original series like <em>Banshee</em><sup>SM</sup> and <em>Strike Back<sup>&reg;</sup></em>. Get ready to enjoy the best of Cinemax &ndash; on the go.</p>
-					<p class="orange-cta" style="height:130px; margin: 0;">Call <strong>1.855.435.4173</strong> to order.</p>
+					<div class="go-pop-up go-modal-tfn">Call 1.855.435.4173</div>
+					<a href="#ZAM" class="modal-trigger close-color-box" id="prism-max-go-trigger" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|max_go|button|chat">Chat to Order</a>
 					<p class="blurb" style="font-size:11px; width: 80%;color:#999999;">Separate channel package subscription charges will apply if not included in TV package selected. All other marks are property of their respective owners.</p>
 					<p class="disclaimer floatingDisclaimer">
 						MAX GO<sup>&reg;</sup> is only accessible in the U.S. and certain U.S. territories. Some restrictions may apply. &copy;2013 Home Box Office, Inc. All Rights Reserved. Cinemax<sup>&reg;</sup> and related channels and service marks are the property of Home Box Office, Inc.
@@ -655,6 +828,11 @@
 
 </div>
 
+<div class="modals">
+	<!--#include virtual="/assets/includes/templates/modals.html" -->
+</div>
+
+<script type="text/javascript" src="js/main.js"></script>
 <!-- ***************  METRIX RESOURCE SCRIPT CODE BEGIN  ******************** -->
 <div id="GlobalMetrixRouter" class="mboxDefault"><!--DefaultContent--></div>
 <script type="text/javascript">

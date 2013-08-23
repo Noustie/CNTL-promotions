@@ -1,0 +1,85 @@
+/*----------------------PopUp Window Styles---------------*/
+body, div, td, span, h1, h2, h3, h4, li{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	color:#000;
+	line-height:1.2em;
+}
+
+.popup{
+	width:406px;
+	min-height:100px;
+	padding:0;
+	font-family: arial;
+}
+.popup-header{
+	font-size: 15px;
+	font-weight: bold;
+	padding-left: 40px;
+}
+.popup .popup-top{
+	background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -7px -2px;
+	height:17px!important;
+	width:386px!important;
+	padding:10px;
+	text-align:center;
+	font-weight:bold;
+}
+.popup .popup-bottom{
+	background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -7px -80px;
+	width:406px;
+	height:52px;
+}
+.popup .popup-content{
+	width:366px!important;
+	width:406px;
+	padding:20px;
+	background:transparent url('/assets/images/templates/modal_bg.png') repeat-y 0px 0px;
+	overflow:visible;
+}
+.popup-content p{
+	font-size: 14px;
+	margin-bottom: 16px;
+	width: 300px;
+	margin: 0 auto;
+}
+.popup-inner-wrapper{
+	margin-left: -10px;
+	border: 1px solid #000;
+	width: 383px;
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+.popup a.popup-close-btn{
+	background: rgba(0, 0, 0, 0) url('/assets/images/sprites/modal_sprite.png') no-repeat -378px -168px;
+	height: 17px;
+	width: 17px;
+	display: block;
+	vertical-align: bottom;
+	margin-left: 6px;
+	float: left;
+}
+.popup-close-link {
+	float: left;
+	margin-left: -4px;
+	padding-top: 2px;
+}
+.popup .popup-close{
+	width:90px;
+	line-height:15px;
+	*margin-top:-15px;
+	text-align:right;
+	float:right;
+}
+.popup .popup-close a{
+	font-size:11px;
+	color:green;
+	text-decoration: none;
+}
+
+.click2chat{
+	margin-top: 30px;
+	display: block;
+}
+
+/*----------------------End Pop Up---------------*/

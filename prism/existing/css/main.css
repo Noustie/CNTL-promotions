@@ -1,3 +1,4 @@
+.modals { position: absolute; top: 0; left: 0; z-index: 9000; }
 /* Global reset-RESET (restores some sensible defaults) based on EJS's reset.css */
 strong {
 	font-weight:bold
@@ -917,6 +918,7 @@ p.squash-top {
 	margin-top: 5px;
 	margin-left: 252px;
 }
+
 p.blurb-trim{width: 395px;}
 p.hideText{width:259px;height:49px;text-indent:-9999px;overflow:hidden;}
 a p#moreBrowseBtn{background: url("../images/moreBrowseBtnSprite.jpg") no-repeat scroll 0 0 transparent;}
@@ -927,3 +929,57 @@ a:hover p#moreBrowseBtn{background: url("../images/moreBrowseBtnSprite.jpg") no-
 a:hover p#moreNetworksBtn{background: url("../images/moreNetworksBtnSprite.jpg") no-repeat scroll 0 -49px transparent;}
 a:hover p#moreOnDemandBtn{background: url("../images/moreOnDemandBtnSprite.jpg") no-repeat scroll 0 -49px transparent;}
 a:hover p#moreSignInBtn{background: url("../images/moreSignInBtnSprite.jpg") no-repeat scroll 0 -49px transparent;}
+
+/*new chat buttons*/
+.modal-trigger{
+	background-image: url("../images/chat-to-order.png");
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	display: block;
+	width: 112px;
+	height: 33px;
+}
+#prism-hbo-trigger{
+	position: relative;
+	top: -63px;
+	left: 208px;
+}
+#prism-max-trigger{
+	position: relative;
+	top: -63px;
+	left: 208px;
+}
+#prism-sho-trigger{
+	position: relative;
+	top: -63px;
+	left: 208px;
+}
+#prism-starz-trigger{
+	position: relative;
+	top: -63px;
+	left: 208px;
+}
+#prism-hbo-go-trigger{
+	position: relative;
+	top: -56px;
+}
+#prism-max-go-trigger{
+	position: relative;
+	top: -56px;
+}
+.go-modal-tfn{
+	background-image: url("../images/go-modal-tfn.jpg");
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	display: block;
+	width: 353px;
+	height: 54px;
+	background-position: -1px 0px;
+}
+.child .go-pop-up {
+	width:457px;
+	height:93px;
+	text-indent:-9999px;
+	margin-bottom:20px;
+	margin-top:15px;
+}
