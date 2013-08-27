@@ -1,4 +1,5 @@
-CNTL-promotions
+CNTL - promotions.centurylink.com
 ===============
 
-promotions.centurylink.com
+Repository for promotions.centurylink.com, now hosted on Savvis.
+
