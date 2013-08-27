@@ -3,13 +3,14 @@ AddCharset utf-8 .html .css .js .xml .json .rss .php
 Options FollowSymLinks Includes ExecCGI
 AddHandler server-parsed .html
 
-# ModPagespeedDisallow "*/soho/lc/promos/price-lock-down/*"  
-# ModPagespeedDisallow "*/soho/lq/promos/price-lock-down/*"  
+ModPagespeedDisallow "*"
+ModPagespeedDisallow "*/soho/lc/promos/price-lock-down/*"  
+ModPagespeedDisallow "*/soho/lq/promos/price-lock-down/*"  
 
 ErrorDocument 400     /index.php
 ErrorDocument 401     /error.html
 ErrorDocument 403     /error.html
-ErrorDocument 404     /error.html
+ErrorDocument 404     /index.php
 ErrorDocument 500     /error.html
 
 <IfModule mod_rewrite.c>
@@ -49,14 +50,14 @@ ErrorDocument 500     /error.html
 </IfModule>
 
 # PHP ERRORS -- STAGING SETTINGS -- COMMENT ON LIVE
-# php_flag display_startup_errors on
-# php_flag display_errors on
-# php_flag html_errors on
+php_flag display_startup_errors on
+php_flag display_errors on
+php_flag html_errors on
 
 # PASSWORD PROTECTION -- STAGING SETTINGS -- COMMENT ON LIVE
-# AuthName "Protected Area. Please Authenticate."
-# AuthType Basic
-# AuthUserFile /var/www/.htpasswd
-# AuthGroupFile /dev/null
-# Require valid-user
+AuthName "Protected Area. Please Authenticate."
+AuthType Basic
+AuthUserFile /var/www/.htpasswd
+AuthGroupFile /dev/null
+Require valid-user
 

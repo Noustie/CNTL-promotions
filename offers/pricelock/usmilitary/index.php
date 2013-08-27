@@ -104,8 +104,8 @@ http://www.omniture.com -->
 	// var sAccount; // SET THE VALUE OF THIS VAR IF THE ACCOUNT IS NOT THE STANDARD ACCOUNT, EG FOR MOBILE PAGES.
 	var pageName = "ctl|rsd|product|emktg|T1_2012|military_lq"; //s.pageName
 	var pageType = ""; //s.pageType
-	var errorType = ""; //s.prop2
 	var sAddress = ""; 
+	var errorType = ""; //s.prop2
 	var accountEvents = ""; //eVar1
 	var serviceEvents = ""; //eVar2
 	var pCategory = ""; //eVar3

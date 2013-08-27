@@ -177,7 +177,7 @@ h1, h2, h3, h4{
 	margin-bottom: 30px;
 }
 .internetLQ .headerBlock {
-	background: url('/soho/assets/images/internet/lq-header.jpg') transparent top left no-repeat;
+	background: url('/soho/assets/images/internet/12-mbps-100visa.jpg') transparent top left no-repeat;
 	width:960px;
 	padding:0px;
 	left:0px;
@@ -186,6 +186,24 @@ h1, h2, h3, h4{
 	margin-bottom: 30px;
 }
 .internetLC .headerBlock {
+	background: url('/soho/assets/images/internet/10-mbps-100visa.jpg') transparent top left no-repeat;
+	width:960px;
+	padding:0px;
+	left:0px;
+	height:313px;
+	text-indent:-9999px;
+	margin-bottom: 30px;
+}
+.internetLQ .internet_headerBlock {
+	background: url('/soho/assets/images/internet/lq-header.jpg') transparent top left no-repeat;
+	width:960px;
+	padding:0px;
+	left:0px;
+	height:313px;
+	text-indent:-9999px;
+	margin-bottom: 30px;
+}
+.internetLC .internet_headerBlock {
 	background: url('/soho/assets/images/internet/10-mbps.jpg') transparent top left no-repeat;
 	width:960px;
 	padding:0px;
@@ -206,7 +224,13 @@ h1, h2, h3, h4{
 .tfn-cta h4{
 	font-size: 14px;
 	text-transform: uppercase;
-	padding-top: 75px;
+	padding-top: 55px;
+	padding-bottom: 5px;
+}
+.tfn-cta h4.internet{
+	font-size: 14px;
+	text-transform: uppercase;
+	padding-top: 70px;
 	padding-bottom: 5px;
 }
 ul.orange-check{
@@ -221,12 +245,11 @@ ul.orange-check{
 	line-height: 16px;
 	list-style-type: none;
 	background: url('/soho/assets/images/internet/orange-check.png') no-repeat 7px 2px transparent;
-
 }
 .page_wrapper .tfn-cta{
 	position:absolute;
 	top:312px;
-	left:674px;
+	left:673px;
 	background: url('/soho/assets/images/internet/cta-bg.png') repeat-x left bottom transparent;
 	width: 251px;
 	height: 317px;
@@ -257,6 +280,20 @@ ul.orange-check{
 }
 .internetLQ .special-offers-form, .internetLC .special-offers-form  {
 	top:312px;
+}
+a.header-disclaimer-link{
+	position: relative;
+	top: -49px;
+	left: 7px;
+	font-size: 8px;
+}
+.pathway{
+	background-image: url('/soho/assets/images/internet/pathway.gif');
+	width: 959px;
+	height: 40px;
+}
+.promo-code{
+	padding-top: 4px;
 }
 .page_wrapper {
 	background: none;
@@ -458,6 +495,17 @@ body {
 	font-weight:bold;
 	padding-top:25px;
 	width:400px;
+}
+#smilingBox .internet-page h3 {
+	color:#000;
+	font-weight:bold;
+	padding-top:36px;
+	width:405px;
+}
+#smilingBox .internet-page p {
+	padding-top:7px;
+	width:360px;
+	font-size: 14px;
 }
 #smilingBox p {
 	padding-top:7px;

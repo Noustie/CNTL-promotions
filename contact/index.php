@@ -40,10 +40,9 @@
 
 	    <!--START MAIN CONTENT AREA - set height in master.css-->
 	    <div id="content">
-	    	<?php
-				session_start();
-			?>
-
+		<?php
+			session_start();
+		?>
 		<?php include('includes/subhead.php'); ?>
 	    	
 	    	<?php include('includes/form.php'); ?>

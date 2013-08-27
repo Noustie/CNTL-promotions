@@ -1,11 +1,11 @@
 <?php
 $pagePhone = "855.891.4080";
 if( $_GET['source']=="email" ) {
-	$pagePhone = "EEE.EEE.EEEE";
+	$pagePhone = "855.891.4080";
 } else if ( $_GET['source']=="display" ) {
-	$pagePhone = "855.345.6981";
+	$pagePhone = "855.891.4080";
 } else if ( $_GET['source']=="search" ){
-	$pagePhone = "855.693.4168";
+	$pagePhone = "855.891.4080";
 }
 
 $metaTitle = '<title>CenturyLink High-Speed Internet | Small-Medium Business | Special Offers</title>';
@@ -38,13 +38,15 @@ include_once('inc/head.php');
 	</div>
 	<div id="pageWrapper" class="ccSave ccTrustSave page_wrapper page_wrapper_top widepage internetLQ">
 		<div>
-			<div class="headerBlock">
-				<h6>Today, I have the speed to work faster and smarter.</h6>
-				<h1>GO CONSISTENTLY FAST WITH HIGH-SPEED INTERNET</h1>
-				<h6>High-Speed INTERNET</h6>
+			<div class="internet_headerBlock">
+				<h1>TODAY, I HAVE THE SPEED TO WORK FASTER AND SMARTER.</h1>
+				<h6>Go consistently fast with high speed internet.</h6>
 				<h3>$29.99 PER MONTH* | UP TO 12 MBPS</h3>
 				<h6>New Internet customers for 12 months with a 36-month term.</h6>
 			</div>
+			<!--<a href="/soho/lc/promos/internet/disclaimer.html" class="header-disclaimer-link" onclick="window.open(this.href,'disclaimer','height=650,width=600,left=100,top=50,resizable=no,scrollbars=yes,toolbar=no,status=no');return false;" target="_blank">
+				See Important Details
+			</a>-->
 		</div>
 		<div class="tfn-cta roundcorners roundbtmcorners rcHasBdr">
 			<div class="cta">
@@ -54,8 +56,8 @@ include_once('inc/head.php');
 
 							<h2 class="accent-cta">Order today to start saving!</h2>
 							<h3 class="accent-phone"><span>Call</span> <?php echo $pagePhone; ?></h3> 
-
-							<h4>Switch with peace of mind</h4>
+							<!--<p class="promo-code">Mention Promo Code: GIFTCARD</p>-->
+							<h4 class="internet">Switch with peace of mind</h4>
 							<ul class="orange-check">
 								<li>24/7 tech support</li>
 								<li>Security tools and backup</li>
@@ -113,16 +115,17 @@ include_once('inc/head.php');
 				</ul>
 			</div>
 			<div id="smilingBox">
-				<div class="smilingBoxWrap">
-					<h3>We help businesses like yours succeed. </h3>
-					<p>"CenturyLink small business service has evolved with our company to offer new services to keep us and companies like us content and competitive in today's market."</p>
-					<p>&ndash; Wasatch Transfer<br/>
+				<div class="smilingBoxWrap internet-page">
+					<h3>CenturyLink helps small businesses succeed!</h3>
+					<p>CenturyLink's small business products and services help businesses succeed - and are designed to grow as your business grows. It's one of many reasons why more than 500,000 small businesses trust CenturyLink.</p>
+<!-- 					<p>&ndash; Wasatch Transfer<br/>
 						<span style="padding-left: 11px;">Park City, UT</span>
-					 </p>
+					 </p> -->
 				</div>
 			</div>
 		</div>
 		<div class="special-offers-asterisk">*Other fees and conditions may apply. <a href="http://www.centurylink.com/small-business/disclaimers/" onclick="window.open(this.href,'disclaimer','height=650,width=970,left=100,top=50,resizable=no,scrollbars=yes,toolbar=no,status=no');return false;" target="_blank">View details.</a></div>
+		<div class="pathway"></div>
 	</div>
 
 <!--end container div-->

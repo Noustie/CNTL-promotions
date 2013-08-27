@@ -28,6 +28,7 @@ $legacyMarket = trim($_POST['legacyMarket']);
 //$legacyMarket = 'QA_MARKET';
 
 
+
 $productOffer = trim($_POST['productOffer']);
 $successView = trim($_POST['successView']);
 $custName = trim($_POST['name']);

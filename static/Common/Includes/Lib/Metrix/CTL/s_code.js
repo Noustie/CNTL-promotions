@@ -694,6 +694,7 @@ if(typeof eBiz_prop52 != 'undefined' && eBiz_prop52)s.prop52=eBiz_prop52;
 if(typeof eBiz_evar24 != 'undefined' && eBiz_evar24)s.eVar24=eBiz_evar24;
 if(typeof eBiz_evar27 != 'undefined' && eBiz_evar27)s.eVar27=eBiz_evar27;
 if(typeof eBiz_evar30 != 'undefined' && eBiz_evar30)s.eVar30=eBiz_evar30;
+if(typeof eBiz_evar35 != 'undefined' && eBiz_evar35)s.eVar35=eBiz_evar35;
 if(typeof eBiz_evar41 != 'undefined' && eBiz_evar41)s.eVar41=eBiz_channel;
 if(typeof eBiz_evar48 != 'undefined' && eBiz_evar48)s.eVar48=eBiz_evar48;
 if(typeof eBiz_evar49 != 'undefined' && eBiz_evar49)s.eVar49=eBiz_evar49;

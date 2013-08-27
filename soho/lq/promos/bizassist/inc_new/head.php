@@ -93,8 +93,8 @@ include_once('../common/fn/start.php');
 <script src="/assets/js/common/jquery.latest.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/jquery.colorbox.js"></script>
-<script type="text/javascript" src="js/cycle.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
+<script type="text/javascript" src="http://malsup.github.com/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="//www.centurylink.com/assets/js/plugins/jquery.qwest-core.js"></script>
 <script type="text/javascript" src="//www.centurylink.com/assets/js/plugins/centurycore.shortcuts.js"></script>	
 </head>
