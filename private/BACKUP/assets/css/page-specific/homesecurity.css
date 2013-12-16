@@ -1,0 +1,20 @@
+.security-content-area{
+	margin:20px 0px auto 0px;
+	padding:20px;
+	min-height:200px;
+	background-image:url('/assets/images/page-components/homesecuritybox.png');
+	background-repeat:no-repeat;
+	background-position:right bottom;
+}
+
+.security-content-area h4{
+	font-size:16px;
+	color:#999;
+	padding-left:20px;
+}
+ul.two-column {
+	margin-left: 50px;
+}
+.two-column li{
+	list-style-type:disc;
+}

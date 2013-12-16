@@ -1,0 +1,132 @@
+﻿body
+{
+	margin: 0px;
+	padding: 0px;
+	background: #D4E1F1 url("../images/bg_gradient.jpg") repeat-x left top;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#mainWidth
+{
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	position:relative;
+}
+
+#contentHeight
+{
+	height: 1020px;
+	outline: 0;
+	position:relative;
+	z-index:100;
+}
+
+#flash_container
+{
+	outline: 0;
+}
+
+.empty, #empty, .clear
+{
+	clear: both;
+	height: 0px;
+	overflow: hidden;
+}
+
+a, a:link, a:visited
+{
+	color:#094D9C;
+	text-decoration:none;
+}
+
+a:hover
+{
+	text-decoration:underline;
+}
+
+a img
+{
+	border: none;
+	outline: 0;
+}
+
+#headerContainer
+{
+	height: 129px;
+}
+
+#qwestLogo
+{
+	width: 150px;
+	height: 70px;
+	margin: 0px;
+	padding: 30px 0px 0px 0px;
+	float: left;
+}
+
+#headerLinks
+{
+	width: 590px;
+	float: right;
+	color: #a1b1da;
+	font-size: 11px;
+	text-align: right;
+	margin-right: 100px;
+	height: 85px;
+	padding: 9px 0px 0px 0px;
+}
+
+#headerLinks a
+{
+	color: #ffffff;
+}
+
+#headerTabs
+{
+	height: 35px;
+	width: 590px;
+	margin-right: 100px;
+	float: right;
+}
+
+a.headerTab
+{
+	height: 25px;
+	width: 165px;
+	background: transparent url("../images/tab_inactive.png") no-repeat left top;
+	float: right;
+	text-align: center;
+	padding-top: 11px;
+}
+
+a.headerTab:hover
+{
+	background: transparent url("../images/tab_hover.png") no-repeat left top;
+}
+
+#footerContainer
+{
+	text-align: center;
+	padding-bottom:0px;
+}
+
+#footerContainer p
+{
+	color: #849ECB;
+	font-size: 10px;
+	line-height: 24px;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	padding-top: 32px;
+	width: 500px;
+	
+}
+
+
+#lpButton
+{
+    position:absolute; left:739px; top:493px; z-index:300;
+}

@@ -1,0 +1,386 @@
+/* IOS(IPOD/IPAD) HARDWARE ACCELERATION FIX */
+@media screen {
+	/* ADD THE 'hwacel' CLASS ONLY TO WRAPPERS OF ELEMENTS THAT ANIMATE */
+	.ios .hwacel {
+		-webkit-transform: translate3d(0,0,0);
+	}
+}
+
+/* GLOBAL ELEMENTS
+---------------------*/
+body { margin: 0 auto; padding: 0; width: 100%; max-width: 480px; }
+div { position: relative; }
+noscript { position: absolute; bottom: 0; left: 0; }
+p,h1,h2,h3,h4,h5,h6 { margin: 0 0 0.5em 0; }
+
+/* UTILITY CLASSES
+---------------------*/
+.ir { text-indent: -9999px; display: block; }
+.abir { text-indent: -9999px; display: block; position: absolute; top: 0; left: 0;}
+.ajax { z-index: 800; clear: both; background: #333 url('../images/loaderDots.gif') no-repeat center 30px; color: #FFF; }
+
+
+/* REUSABLE ELEMENTS
+---------------------*/
+.backLink {
+	background: transparent url('../images/btn-backlink.png') no-repeat left center;
+	display: block;
+	font-weight: bold;
+	color: #000;
+	height: 100%;
+	width: 70px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-indent: -9999px;
+}
+
+.gotoFullWrap {
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+	padding: 25px 0;
+	text-align: center;
+	font-size: 20px;
+}
+
+/*ORANGE CTA BUTTON*/
+.ctaButtonWrap {
+	clear: both;
+	height: 50px
+}
+.ctaButtonWrap .ctaButton {
+	position: relative;
+	margin: 0 auto;
+	padding: 0 20px;
+	height:45px;
+	background: transparent url('../images/btn-orng-bg.gif') repeat top left;
+	text-align:center;
+	text-decoration: none;
+	color: #FFFFFF;
+	line-height: 45px;
+	display: block;
+	font-size: 21px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 2px #000;
+	text-shadow: 0 -1px 2px #AF4C00;
+	float: left;
+	font-weight: normal;
+}
+
+/* FIXED POSITION NAVBAR AND HEADER */
+.fixedWrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+}
+#container .fixedWrap {
+	position: fixed;
+}
+.globalHeader {
+	position: relative;
+	max-width: 480px;
+	width: 100%;
+	margin: 0 auto;
+	background: #FFF;
+	overflow: hidden;
+}
+.tImg {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/* MAIN MENU/NAVBAR */
+.mainMenu {
+    display: block;
+    z-index: 900;
+	font-size: 14px;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	float: left;
+	height: 0;
+	overflow: hidden;
+}
+.menuLink {
+	width: 90px;
+	height: 40px;
+	text-align: center;
+	position: absolute;
+	z-index: 1000;
+	right: 0;
+	top: 0;
+	line-height: 40px;
+	color: #878787;
+	text-decoration: none;
+	font-weight: bold;
+	background-image: url('../images/menu-arrow.gif');
+	background-repeat: no-repeat;
+	background-position: 70px top;
+	display: block;
+}
+.navBar {
+	height: 50px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: block;
+	border-left: 1px solid #CCC;
+}
+.navBar li {
+    display: block;
+    float: left;
+    height: 50px;
+    width: 25%;
+	-webkit-tap-highlight-color: transparent;
+	background: #3d3d3d;
+}
+.navBar li a {
+    background-image: url("../images/nav-bg.gif");
+    background-position: left top;
+    background-repeat: repeat;
+    color: #FFF;
+    display: block;
+	overflow: hidden;
+	font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    height: 100%;
+	-webkit-tap-highlight-color: transparent;
+	border-right: 1px solid #CCC;
+}
+.navBar li a .btnPad {
+	padding: 15px 0 0 0;
+	width: 100%;
+	cursor: pointer;
+	display: block;
+	text-align: center;
+}
+.navBar li a:hover, .navBar .active a {
+    background-position: left bottom;
+	color: #000;
+}
+.navBar li a .btnBg {
+	display: block;
+	height: 100%;
+    background-image: url("../images/nav-bdr-bg.gif");
+    background-position: right top;
+    background-repeat: no-repeat;
+    color: #00853F;
+    text-decoration: none;
+}
+
+/*HEADER AND MAIN MESSAGE*/
+.header {
+	background: #5b8f22 url("../images/header-bg.gif") repeat-x 0 0;
+	width: 100%;
+	position: relative;
+	margin: 40px 0 0;
+	min-height: 180px;
+}
+.headerImg {
+	position: absolute;
+	z-index: 10;
+	left: 50%;
+	padding: 20px 0;
+	margin: 0 0 0 -200px;
+}
+.headerTxt {
+	position: absolute;
+	padding: 30px 0 0 0;
+	z-index: 100;
+	right: 5%;
+	top: 0;
+	width: 60%;
+}
+.message {
+	color: #FFF;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0;
+}
+.subMessage {
+	color: #FFF;
+	font-size: 17px;
+	font-weight: normal;
+}
+
+/*CONTENT AREA*/
+.content {
+	padding: 0 0 20px 0;
+}
+.section {
+	padding: 20px 5% 0 5%;
+}
+.section ul {
+	display: block;
+	list-style: disc;
+	padding: 0 0 15px 15px;
+}
+.section ul li {
+	display: list-item;
+}
+
+/*FOOTER AND PATHWAYS*/
+.footer{
+	clear: both;
+	padding-bottom:55px;
+	background: #FFF url('../images/pathways.gif') no-repeat right bottom;
+}
+.footer p {
+	padding-bottom: 15px;
+}
+.footer p a{
+	color:#00853f;
+	text-decoration:none;
+	font-weight:bold;
+}
+.disclaimer {
+	padding: 25px 5% 0 5%;
+	font-size:12px;
+	color:#333;
+}
+
+/*SLIDE TABS*/
+.tabCont {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+/*SLIDE TABS NAV*/
+.slideTabNav{
+	display: block;
+	width: 100%;
+	position: relative;
+}
+.slideTabNav li {
+	display: block;
+	height: 90px;
+	line-height: 90px;
+	font-size: 21px;
+	background: #FFF url('../images/slide-tabnav-bg.gif') repeat-x right bottom;
+	border-bottom: 1px solid #CCC;
+	padding: 0 0 0 5%;
+	overflow: hidden;
+}
+.slideTabNav li a {
+	display: block;
+	height: 100%;
+	line-height: 90px;
+	font-size: 21px;
+	color: #666;
+	padding: 0;
+	background: url("../images/btn-rt-arrow.png") no-repeat scroll 95% 55% transparent;
+	text-decoration: none;
+}
+.slideTabs .tab {
+
+}
+.slideTabs .tab .tabheader {
+	background: #FFF url('../images/slide-tab-bg.gif') repeat-x right bottom;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 21px;
+	font-weight: normal;
+	color: #FE8700;
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+	margin: 0;
+	position: relative;
+}
+.tab .section {
+	padding: 20px 5%;
+}
+
+/* ELEMENT-SPECIFIC STYLES
+---------------------*/
+
+#container {
+	position: relative;
+	overflow: hidden;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC
+}
+#logo {
+	background: #FFF url('../images/logo-cntl.png') no-repeat left top;
+	position:relative;
+	display: block;
+	width: 100%;
+	margin: 0;
+	height: 40px;
+	border-bottom: 1px solid #CCC;
+}
+
+
+/* UNSUPPORTED/NON-JS
+---------------------*/
+.notSupported .menuLink,
+.nojs .menuLink,
+.notSupported .slideTabNav,
+.nojs .slideTabNav,
+.notSupported .backLink,
+.nojs .backLink
+{
+	display: none;
+}
+
+.notSupported .mainMenu,
+.nojs .mainMenu
+{
+   display: block;
+   height: 50px;
+}
+.notSupported .tab,
+.nojs .tab {
+    position: relative;
+}
+.notSupported .header,
+.nojs .header {
+    margin: 90px 0 0 0;
+}
+
+.notSupported  #container .fixedWrap {
+    position: absolute;
+}
+
+
+/* Print styles!
+---------------------*/
+@media print {
+
+
+
+}
+
+
+/* Media queries!
+---------------------*/
+@media screen and (max-width: 500px) {
+	.headerTxt {
+		width: 60%;
+	}
+	.section {
+		padding: 20px 5% 0;
+	}
+}
+@media screen and (max-width: 400px) {
+	.headerTxt {
+		width: 65%;
+	}
+	.section {
+		padding: 20px 5% 0;
+	}
+}
+@media all and (orientation: portrait) {
+
+}
+
+@media all and (orientation: landscape) {
+
+}

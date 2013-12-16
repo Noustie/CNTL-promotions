@@ -1,0 +1,88 @@
+.college-student{background:url("../img/student-header_bg.png") transparent -2px -2px no-repeat;height:192px;}
+.college-offer-header{background:url("../img/offer-header_bg.png") transparent -2px -2px no-repeat;height:192px;}
+.college-header{background:url("../img/header_bg.png") transparent -2px -2px no-repeat;height:192px;}
+.college-header-12{background:url("../img/header_bg_12.png") transparent -2px -2px no-repeat;height:192px;}
+.college-student h1, .college-student h2, .college-student h3, .college-offer-header h1, .college-offer-header h2,.college-offer-header h3,.college-header h1,.college-header h2,.college-header h3,.college-header-12 h1,.college-header-12 h2,.college-header-12 h3{text-indent:-9999px;}
+/*.green-grad{height:46px;background:url("../img/green-grad-bg.jpg") transparent 0 0 repeat-x;margin-top:20px;}*/
+.green-grad{height:21px;}
+.green-grad p{
+  color: #FFF;
+  text-align: center;
+  padding-top: 3px;
+}
+.guy {
+    background: url("../img/guy.png") no-repeat scroll left -27px transparent;
+    height: 577px;
+    left: 604px;
+    position: absolute;
+    top: 0;
+    width: 321px;
+    z-index: 2;
+}
+.offer-guy {
+    background: url("../img/guy.png") no-repeat scroll left -27px transparent;
+    height: 541px;
+    left: 604px;
+    position: absolute;
+    top: 0;
+    width: 321px;
+    z-index: 2;
+}
+.middle{padding-left:35px;padding-top:30px;}
+.middle h3{font-size:20px;font-weight:bold;color:#000000;}
+.middle h2{font-size:26px;font-weight:bold;color:#8abf18;}
+.middle p{margin-top:20px;width:527px;line-height:18px;}
+.grey-grad{
+	background: url("../img/grey-grad-bg.jpg") no-repeat scroll 0 0 transparent;
+	height: 143px;
+	margin: 20px 0 0;
+	padding: 0;
+	width: 527px;
+   }
+.grey-grad ul {
+   float: left;
+   left: 40px;
+   margin: 0;
+   padding: 0;
+   position: relative;
+   top: 20px;
+   width: 220px;
+   padding-left:15px;
+}
+.grey-grad ul.right {
+   float: left;
+   left: 40px;
+   margin: 0;
+   padding: 0;
+   position: relative;
+   top: 20px;
+   width: 220px;
+   padding-left:15px;
+}
+.grey-grad ul li {
+   color: #666666;
+   font-size: 14px;
+   font-weight: bold;
+   margin: 0 35px 5px 0;
+}
+.black{color:#000000;}
+.college-chatBtn a{
+    bottom: -65px;
+    height: 41px;
+    left:80px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+	z-index:100;
+}
+
+.college-chatBtn-39 a{
+  bottom: -65px;
+  height: 41px;
+  left:50px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index:100;
+}
+.txtAndButton{width:100%;height:100%;top:0;left:0;}

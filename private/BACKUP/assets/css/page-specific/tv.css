@@ -1,0 +1,541 @@
+.content-panes {
+	width:700px;text-align:left;
+	background:url("/assets/images/page-components/tv/Content_Tile_CENTER.jpg") repeat-y left top;
+}	
+.content-container a, .content-container a:link, .content-container a:visited {
+	color: #00853F;
+}
+.content-container{
+	position: relative; 
+	display: block; 
+	padding-left:40px; 
+	right: 20px;
+	width:620px;
+}
+h2	{
+	color:#00853F;
+	font-size:22px;
+}
+h4	{
+	color:#00853F;
+	font-weight:bold;
+	font-size:14px;
+	margin-top:18px;
+}
+.main-offer-details{
+	border-left:1px solid #ddd; 
+	padding-left:10px;
+}
+
+.includes{
+	color:#00853F;
+	font-size:14px;
+	font-weight:bold; 
+	height:142px;
+	text-align : center;
+	padding-top : 5px;
+}
+.cinema-content {
+	width:675px;
+	text-align:left;
+}
+.cinema-content-ph{
+	background:url('/assets/images/page-components/tv/DTV_Cinema_house.jpg') no-repeat;
+	padding-right: 20px;
+}
+.spacing{
+	width:675px;
+	height:495px;
+}
+.no-split{
+	width:100%;
+	padding: 0px auto;
+}
+.left-pricing, .right-pricing {
+	width:48%;
+	float:left;
+}
+.left-pricing {
+	margin-right:5px; 
+	border-right:1px solid #000;
+}
+
+.price-amount .dollarsign {	
+	color:#00853F; 
+	font-size:24px; 
+	vertical-align:top; 
+	position:relative;
+}
+.price-amount .dollar-amount {
+	color:#00853F; 
+	font-size:44px;
+	font-weight: bold;
+}
+.price-amount .cent-amount, .pricing .price-amount .term-unit{
+	color:#00853F; 
+	font-size:15px;
+	font-weight: bold;
+	vertical-align:top; 
+	position:relative;
+}
+.price-amount .dollarsign,.price-amount .dollar-amount,.price-amount .price-stacker{
+	float:left;
+}
+.price-stacker {
+	width:25px; 
+	padding-top:3px;
+	font-size:15px;
+}
+.term-unit {
+	border-top:2px solid #00853F;
+}
+.pricing {
+	margin: 0px auto;	
+}
+.pricing .fine-print {
+	font-size:9px; 
+	font-family: "Arial Narrow"; 
+	color:#9a9b9c; 
+	line-height:1em; 
+	display:block;
+}
+.pricing .pricing-details {
+	font-size:9px; 
+	color:#000;
+	font-weight:bold;
+}
+span.includes-title,span.channel-callout{
+	display:block;
+	width:100%;
+	text-align:center;
+	color:#7a7a7a;
+	font-weight:bold;
+}
+span.titlebar {
+	margin-left:-1px; 
+	position:relative;
+}
+.column-top {
+	min-height:100px;
+}
+.package-details {
+	background:url("/assets/images/page-components/tv/shadowBox_background.jpg") no-repeat; 
+	font-size:12px;
+	margin:0 2px 0;
+	font-weight:normal;
+}
+.centered {
+	padding-left: 25px;
+}
+.includes-bar {
+	margin-bottom: 10px;
+}
+
+div.equipment .header {
+	padding: 20px;
+	border-right: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+}
+.package {
+	width:220px; 
+	min-height: 500px;
+	float:left;
+}	
+.package-box-top {
+	background: url('/assets/images/page-components/bx_top.gif') no-repeat bottom left; 
+	height:27px;
+	text-align:center; 
+}
+.package-box-middle {
+	background: url('/assets/images/page-components/bx_center.gif') repeat-y;
+	padding:10px;
+}
+.package-box-bottom {
+	background: url('/assets/images/page-components/bx_bottom.gif') no-repeat top left;
+	height:9px;
+}
+.package-box-top .title {
+	color: #7A7A7A;
+	display: block;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+div.equipment .price {
+	font-size:14px; 
+	font-weight:bold;
+}
+div.equipment .price  sup {
+	font-size:9px; 
+	font-weight:normal;
+}
+div.equipment .price-callout .price, div.equipment .price-callout .image {
+	float:left;
+	position:relative; 
+	right:0;
+	height:49px;
+	}
+div.equipment .price-callout .caption {clear:both;}
+
+div.equipment span.includes-title,span.channel-callout{
+	display:block;
+	width:100%;
+	text-align:center;
+	color:#7a7a7a;
+	font-weight:bold;
+}
+
+.caption { margin-bottom:1em; font-size:10px; color:#7a7a7a; height:48px;}
+.red-caption {font-size:14px; font-weight:bold; color:#fd4202; margin-bottom:1em; height:90px;}
+.green-caption {font-size:12px; font-weight:bold; color:#00853F; margin-bottom:1em; height:40px;}
+.blue-caption {font-size:11px; font-weight:bold; color:#0056b5; margin-bottom:1em;}
+
+div.equipment .package-details .title {
+	font-weight:bold; 
+	margin-bottom:1em; 
+	font-size:16px; 
+	font-weight:bold
+}
+
+div.equipment .price-callout > img {float:right;}
+
+#tv-right-headline-1 {
+	color:#00853F;
+	font-size:22px;
+}
+
+#tv-right-headline-2 {
+	color:#00853F;
+	font-weight:bold;
+	font-size:14px;
+}
+
+#tv-left-head-banner {
+	padding-top : 20px;
+}
+
+.icon-directtv
+{
+	float: right;
+	background: url('/assets/images/sprites/template.png') no-repeat -779px -711px;
+	width: 84px;
+	height: 79px;
+}
+
+#home_tv_tabs .partner-logos
+{
+	position: absolute;
+	top: 10px;
+	right: 36px;
+	z-index: 1;
+}
+
+
+
+
+
+
+
+
+.includes em {text-decoration:none; font-size:22px; font-style:normal;}
+.includes-title{ display:block;text-align:center; color:#7a7a7a; font-weight:bold;}
+.img.includes-bar {margin:0 auto;}
+.comparison-table .button{margin:auto auto 10px 45px;}
+.package-details{clear:both; width:auto;}
+img.movie-logos{
+	margin:10px auto;
+	width:auto;
+	display:block;
+	clear:both;
+}
+
+
+ ul.question_list li{
+    font-weight:bold;
+    }
+    .vm_faqs{
+		float:left;
+		width:300px;
+		margin-top:10px;
+		z-index:1;
+		display:block;
+    }
+    #vm_faqs li a{
+    text-decoration:none;
+    }
+    #vm_faqs li a:hover{
+    text-decoration:underline;
+    }
+	p{margin-bottom:10px;}
+
+	.open-tile-content{position:relative;display:none;}
+
+.includes {color:#00a9da; font-size:14px; font-weight:bold; height:120px;}
+.includes em {text-decoration:none; font-size:22px;font-style:normal;}
+
+.equip-title {font-size:24px; color:#00a9da; font-weight:bold;}
+
+
+*/
+@charset "utf-8";
+
+
+.package-details a {
+	color : #00853F
+}
+
+
+
+
+/* new styles for dtv redesign - single tab only!!!!*/
+#dtv-english-compare-table .package-details {
+	background:none; 
+}
+#dtv-english-compare-table .includes{
+	height:98px;
+}
+*+html #dtv-english-compare-table .includes{
+	height:110px;
+}
+#dtv-english-compare-table td.expanded .includes{
+	height:auto;
+}
+#dtv-english-compare-table .pricing {
+	margin: 0px auto 6px auto;	
+	width:118px;
+	
+}
+#dtv-english-compare-table td.expanded .pricing{
+	width:230px;
+}
+#dtv-english-compare-table .pricing .fine-print {
+	font-size:9px; 
+	color:#808080; 
+	line-height:1.2em; 
+	font-weight:bold;
+	clear:both;
+	width:100%;
+	margin-top:10px;
+	float:left;
+	height:65px;
+}
+table#dtv-english-compare-table td.expanded .pricing .fine-print {
+	height:auto;
+}
+#dtv-english-compare-table .pricing .pricing-details {
+	font-size:9px; 
+	color:#808080;
+	font-weight:normal;
+}
+
+#dtv-english-compare-table .price-amount .dollar-amount {
+	font-weight: normal;
+}
+
+#dtv-english-compare-table .price-stacker {
+	width:50px; 
+
+}
+#dtv-english-compare-table .price-amount .cent-amount, .pricing .price-amount .term-unit{
+	border:0;
+}
+#dtv-english-compare-table .pricing .price-amount .term-unit{
+	font-size:10px;
+	font-weight: normal;
+	font-family:"Arial Narrow";
+}
+#dtv-english-compare-table .price-amount .cent-amount{
+	font-size:24px;
+	font-weight: bold;
+	text-decoration:none;
+	display:block;
+	clear:both;
+}
+
+#dtv-english-compare-table span.includes-title,span.channel-callout{
+	color:#808080;
+	font-style:italic;
+	font-size:14px;
+}
+
+#dtv-english-compare-table .package-details {
+	/*background:url("/assets/images/page-components/tv/shadowBox_background.jpg") no-repeat; */
+	font-size:12px;
+	margin:0 2px 0;
+	font-weight:normal;
+}
+
+#dtv-english-compare-table .free-title{
+	font-size:15px;
+	font-weight:normal;
+	color:#00a9da;
+}
+#dtv-english-compare-table .free-title .italic{
+	font-weight:bold;
+	font-style:italic;
+	color:#00a9da;
+	font-size:15px;
+}
+table#dtv-english-compare-table td.expanded .free-title{
+	font-size:20px;
+}
+table#dtv-english-compare-table td.expanded .free-title .italic{
+	font-size:20px;
+}
+table#dtv-english-compare-table td.expanded .package-details .btn-continue,table.comparison-table td.expanded .package-details a.button{ display:block; margin:10px auto auto 75px;}
+
+#dtv-english-compare-table .package-details .btn-continue {display:none;}
+
+
+#dtv-english-compare-table .tab-cta{border:0;}
+
+
+
+#dtv-english-compare-table .includes em {text-decoration:none; font-size:22px; font-style:normal;}
+#dtv-english-compare-table .includes-title{ display:block;text-align:center; color:#7a7a7a; font-weight:bold; margin:0;}
+
+
+/*  Comparison Table */
+
+/*.comparison-table .button{margin:auto auto 10px 45px;}*/
+#dtv-english-compare-table td{
+	width:130px!important;
+	width:150px;
+	padding:10px;
+	overflow:hidden;
+	border:0;
+	vertical-align:top;
+	height:650px;
+	background:url('/assets/images/page-components/tv/collapsed-bg.png') no-repeat;
+}
+#dtv-english-compare-table td.expanded{
+	width:240px!important;
+	width:260px;
+	background:url('/assets/images/page-components/tv/expanded-bg.png') no-repeat;
+}
+#dtv-english-compare-table ul a{color:#00853F;}
+#dtv-english-compare-table .feature-highlight{
+color:#00a9da;
+}
+
+#dtv-english-compare-table hr{background-color:#8f8f8f; border:0; height:1px; margin:5px auto 5px auto;}
+
+#dtv-english-compare-table td.expanded .expand-icon{
+	background:none;
+}
+
+#dtv-english-compare-table .expand-icon{
+	background:url('/assets/images/page-components/tv/DTV_elements.png') -278px -296px no-repeat;
+	height:18px;
+	width:40px;
+	float:right;
+}
+
+/*title bars*/
+#dtv-english-compare-table .titlebar {
+	clear:both;
+	position:relative;
+	background:url('/assets/images/page-components/tv/DTV_elements.png') -258px -11px no-repeat;
+	height:30px;
+	width:130px;
+	padding:0;
+	margin:0; 
+}
+
+#dtv-english-compare-table #entertainment-package-titlebar{
+	background-position:-271px -11px;
+}
+#dtv-english-compare-table #choice-package-titlebar{
+	background-position:-271px -51px;
+}
+#dtv-english-compare-table #xtra-package-titlebar{
+	background-position:-271px -90px;
+}
+#dtv-english-compare-table #ultimate-package-titlebar{
+	background-position:-271px -131px;
+}
+#dtv-english-compare-table #premier-package-titlebar{
+	background-position:-271px -169px;
+}	
+
+#dtv-english-compare-table td.expanded .titlebar{
+	height:50px;
+	width:240px;
+}
+#dtv-english-compare-table td.expanded #entertainment-package-titlebar{
+	background-position:-10px -79px;
+}
+#dtv-english-compare-table td.expanded #choice-package-titlebar{
+	background-position:-10px -146px;
+}
+#dtv-english-compare-table td.expanded #xtra-package-titlebar{
+	background-position:-10px -8px;
+}
+#dtv-english-compare-table td.expanded #ultimate-package-titlebar{
+	background-position:-10px -217px;
+}
+#dtv-english-compare-table td.expanded #premier-package-titlebar{
+	background-position:-10px -288px;
+}	
+
+/*end title bars*/
+#dtv-english-compare-table .right-pricing{
+	display:none;
+
+}
+#dtv-english-compare-table .left-pricing{
+	width:120px;
+	border:0;
+	margin:0;
+}
+#dtv-english-compare-table td.expanded .nosplit{
+	width:120px; margin:auto; display:block;
+}
+#dtv-english-compare-table td.expanded .right-pricing{
+	display:block;
+	float:right;
+	width:113px;
+	padding-left:5px;
+	border-left:1px solid #8f8f8f;
+}
+#dtv-english-compare-table td.expanded .left-pricing{
+	display:block;
+	float:left;
+	width:111px;
+	
+}
+#dtv-english-compare-table td ul li{
+	font-size:11px;
+}
+#dtv-english-compare-table ul.expanded-features{
+	display:none;
+}
+#dtv-english-compare-table ul.collapsed-features{
+	display:block;
+}
+#dtv-english-compare-table td.expanded ul.expanded-features{
+	display:block;
+}
+#dtv-english-compare-table td.expanded ul.collapsed-features{
+	display:none;
+}	
+
+
+#dtv-english-compare-table .includes {color:#00a9da; font-size:14px; font-weight:bold; }
+
+/* begin added for intake 336 */
+
+.equipment-tab-column-disclaimer { margin-bottom:1em; font-size:10px; color:#7a7a7a;}
+.equipment-tab-column-details-link { }
+.equipment-tab-column-details-link a, a:hover, a:visited {
+	font-size:12px;
+	font-weight:normal;
+	color:#00853F;
+	margin-bottom:1em;
+}
+
+
+/* end added for intake 336 */
+
+#WholeHomeContent .btn-green-arrow {margin-bottom:20px;}
+

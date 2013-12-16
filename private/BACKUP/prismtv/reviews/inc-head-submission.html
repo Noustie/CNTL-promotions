@@ -1,0 +1,36 @@
+	<script type="text/javascript"  language="javascript" src="//qwest.centurylink.com/residential/reviews/bvmd5.js"></script>
+	<script type="text/javascript" language="javascript">
+		pageName = "ctl|rsd|ratings_reviews|iptv|"; //s.pageName	
+
+		window.auxilaryPage = true;
+
+		// GET QUERY STRING VALUE BY KEY
+		function getQueryParam (key) {
+			var a = location.search.slice(1).split("&"), GET = [];
+			for (var i in a) { GET[a[i].split("=")[0]] = a[i].split("=")[1]; }
+			return GET[key] || null;
+		}
+		window.getParameter = getQueryParam;
+	   	var myDomain = document.domain;
+		var myURL = "reviews.centurylink.com";
+		document.domain = "centurylink.com";
+
+		var bvc_product = getQueryParam("bvdisplaycode");
+
+		document.write('<script src=\"//'+myURL+'/static/'+bvc_product+'/bazaarvoiceUI.js\"><\/script>');
+		document.write('<link type=\"text/css\" rel=\"stylesheet\" href=\"//'+myURL+'/static/'+bvc_product+'/bazaarvoice.css\"><\/link>');
+		document.write('<link type=\"text/css\" rel=\"stylesheet\" href=\"//'+myURL+'/static/'+bvc_product+'/bazaarvoiceUI.css\"><\/link>');
+
+	</script>
+	<style>
+		.bvc_loader, .bvError {
+			text-align: center;
+			display: block;
+			padding: 100px 0;
+			border: 10px solid #000;
+			border-radius: 8px;
+		}
+		body .BVRRContentSubmission {
+			padding-top: 79px;
+		}
+	</style>

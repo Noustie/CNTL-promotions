@@ -1,0 +1,227 @@
+body{background-color:#f7f7f7;}
+.page_wrapper {
+    background: url("../images/special-offers/bg.png") no-repeat scroll 0 0 transparent;
+	width:963px;
+}
+.special-offers-left{
+	float:left;
+	width:663px;
+	margin-top:30px;
+	margin-left:30px;
+}
+.special-offers-left h1{width:490px;}
+.page_wrapper_green .special-offers-form{
+	*+float:right;
+}
+h1{
+	color:#1d1d1d;
+	font-weight:700;
+
+}
+h2{
+	color:#fe7a38;
+}
+h1 span{
+	position:absolute;
+	display:block;
+	top:70px;
+	height:53px;
+	width:417px;
+	background:url("../images/special-offers/gradient_1.png") repeat-x;
+}
+h3 {color:#00853E;}
+h4{color:#fe7a38;}
+table tr{
+height:30px;
+}
+#smb_ctoc{
+	background: url("../images/phone.png") no-repeat scroll 0 0 transparent;
+	padding-left:10px;
+	padding-bottom:2px;
+}
+
+.special-offers-bottom-info{
+	margin-left:30px;
+	margin-top:25px;
+	*+margin-top:5px;
+	height:360px;
+	clear:both;
+}
+.page_wraper_green .special-offers-bottom-info{*+margin-top:25px;}
+.special-offers-bottom-info div{float:left;}
+.special-offers-bottom-info-cc-left{
+	width:360px;
+}
+.special-offers-bottom-info-cc-left img{
+	float:left;
+}
+.special-offers-bottom-info-cc-left-callout{color:#FE7A38;padding-top:14px;float:left;width:200px;font-size:15px;}
+.special-offers-bottom-info-cc-left ul{clear:both;}
+.special-offers-bottom-info-cc-mid{width:210px;margin-top:-13px;*+margin-top:-17px;}
+.special-offers-bottom-info-cc-mid img{
+	/*vertical-align:bottom;*/
+
+
+}
+.special-offers-bottom-info-cc-right{
+	width:340px;
+	height:230px;
+	padding-top:30px;
+}
+.special-offers-bottom-info-cc-right-callout{color:#FE7A38;font-size:15px;}
+.special-offers-bottom-info-cc-right-quote{*+clear:both;*+width:350px;}
+.special-offers-bottom-info-green{
+	clear:both;
+	padding-left:15px;
+	margin-top:-58px;
+	*+margin-top:-10px;
+	height:315px;
+}
+.special-offers-bottom-align{
+	vertical-align:bottom;
+}
+.special-offers-inner-float{
+	float:left;
+	margin-top:-6px;
+}
+.special-offers-asterisk{margin-top:15px;}
+.special-offers-price-core-connect{
+	background:url("../images/special-offers/85.png") no-repeat scroll 0 0 transparent;
+	width:181px;
+	height:30px;
+	padding-top:118px;
+	float:left;
+	/*margin-left:37px;*/
+
+}
+.page_wrapper sup{
+	font-size:10px;
+	font-weight:700;
+	vertical-align:146%;
+}
+.special-offers-price-high-speed{
+	/*background:url("/small-business/images/special-offers/85.png") no-repeat scroll 0 0 transparent;*/
+	width:276px;
+	height:81px;
+	margin-left:37px;
+	margin-top:10px;
+
+}
+.special-offers-price-disclaim{
+	color:#00853F;
+	float:right;
+	font-size:11px;
+	font-weight:700;
+	margin-right:57px;
+	margin-top:-50px;
+	width:72px;
+}
+.special-offers-price-high-speed ul li{
+	font-size:15px;
+	font-weight:700;
+}
+.special-offers-price-high-speed ul li ul li{
+	font-size:12px;
+}
+
+.special-offers-hide-text{
+	display:none;
+}
+.special-offers-high-speed-callout{
+	font-size:20px;
+	text-shadow:1px 1px 1px #000;
+}
+.page_wrapper .special-offers-sub-headline{background:url("../images/special-offers/ctlandcoreconnectlogo.png") no-repeat;}
+.special-offers-sub-headline{
+
+	font-weight:700;
+	font-size:18px;
+	height:71px;
+	width:498px;
+}
+.special-offers-arrow{
+	/*background:url("/small-business/images/special-offers/green_arrow.png") no-repeat scroll 0 0 transparent;*/
+	height:180px;
+	width:600px;
+	position:relative;
+	z-index:5;
+}
+.special-offers-arrow ul li{
+	list-style:none;
+	height:55px;
+	width:300px;
+
+}
+.special-offers-arrow ul li div{
+	background:url("../images/special-offers/icons.png") no-repeat;
+	height:34px;
+	width:36px;
+	margin-right:10px;
+	float:left;
+}
+.greentitle{
+	color:#00853E;
+	font-weight:bold;
+}
+
+.special-offers-arrow ul li.li2 div{background-position:0px -42px;}
+.special-offers-arrow ul li.li3 div{background-position:-42px 0px;}
+.special-offers-arrow ul li.li4 div{background-position:-42px -42px;}
+.special-offers-arrow-left{float:left;width:230px;}
+.special-offers-arrow-right{float:right;width:230px;}
+.special-offers-image{
+	float:left;
+	/*margin-top:-152px;*/
+	margin-left:68px;
+	position:relative;
+	z-index:10;
+}
+}
+.special-offers-imageb{
+	float:right;
+	margin-top:-184px;
+	margin-right:13px;
+	position:relative;
+	z-index:10;
+}
+.page_wrapper_green{
+    background: url("../images/special-offers/bg-1999.png") no-repeat scroll 0 0 transparent;
+	*+padding-top:20px;
+    margin: 0 auto;
+    width: 960px;
+}
+.page_wrapper_green h1{
+	color:#ffc423;
+
+	text-shadow:#000 1px 1px 1px;
+}
+.page_wrapper_green .special-offers-left{
+	float:left;
+	width:663px;
+	margin-top:7px;
+	margin-left:30px;
+}
+
+.special-offers-call-action{
+	background:url("../images/special-offers/greenbar.png") no-repeat;
+	width:662px;
+	height:44px;
+	color:#fff;
+	clear: both;
+	text-shadow:#000 1px 1px 1px;
+	padding-top:11px;
+	padding-left:30px;
+	font-weight:700;
+	font-size:15px;
+	position: relative;
+	top: -13px;
+	margin-left:-28px;
+}
+/* Added by Peter A. Mayer */
+.phoneNumberBoxes input {
+	width: auto !important;
+	text-align: center;
+	padding: 3px !important;
+	margin: 0 3px 0 0 !important;
+	height: auto !important;
+}

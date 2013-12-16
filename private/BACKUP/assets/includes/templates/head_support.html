@@ -1,0 +1,54 @@
+<!--Begin Head include - /assets/includes/templates/head.html-->
+<!--#include virtual="/assets/includes/templates/variables.html"-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="/assets/css/reset.css" media="screen" />
+<link rel="shortcut icon" href="/favicon.ico" />
+
+<script type="text/javascript" src="/assets/js/require.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/js/plugins/jquery.liveperson.js"></script>
+<script type="text/javascript" src="/assets/js/mbox.js"></script>
+<script type="text/javascript">
+	require({
+    //Leave off the .js extension in the mapping, it will automatically be added by requirejs
+    paths: {'cc-shortcuts':'plugins/centurycore.shortcuts','jquery':'jquery.min','jquery-ui':'jquery-ui.min','omniture':'/common/js/third-party/metrics/s_code','centurycore':'plugins/jquery.qwest-core','superfish':'plugins/jquery.superfish','supersubs':'plugins/jquery.supersubs','modals':'plugins/jqModal','watermark':'plugins/jquery.watermark','rotator':'plugins/jquery.cc_banner-rotator','cookies':'plugins/cookies2','cookie':'plugins/jquery.cookie','locator':'locator','linkMatrix':'template_link_matrix','ratingsReviews':'plugins/jquery.ratingsreviews', 'ratingstars':'plugins/jquery.rating.pack', 'countdown':'plugins/jquery.lwtCountdown'},baseUrl: '/assets/js/',waitSeconds:120});
+
+require(['order!jquery','order!jquery-ui','order!cookies','order!centurycore','order!rotator','order!superfish','order!supersubs','order!modals','order!watermark','order!linkMatrix','order!locator','order!cc-shortcuts'],
+	function(require){
+		$.centurycore.setup();
+		$.centurycore.thirdparty.loadMtagConfig();
+	});
+</script>
+<link rel="stylesheet" type="text/css" href="/assets/css/plugins/jqModal.css" media="screen" />
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/assets/css/plugins/smoothness/jquery-ui-1.8.11.custom.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/plugins/qwest.jquery-ui-0.0.1.css" />
+
+
+<link rel="stylesheet" type="text/css" href="/assets/css/global.css" media="screen,print" />
+<link rel="stylesheet" href="/assets/css/new-nav.css" />
+<link rel="stylesheet" href="/assets/css/new-screen.css" media="screen and (min-device-width:45em) and (min-width: 481px)" />
+<link rel="stylesheet" href="/assets/css/new-print.css" type="text/css" media="print" />
+<!--[if lte IE 8]>
+<link rel="stylesheet" media="screen" href="/assets/css/new-screen.css">
+<![endif]-->
+
+
+
+
+
+<!--#if expr="$template='a' || $template='A' || $template='b' || $template='B'|| $template='D'|| $template='d'"-->
+	<link rel="stylesheet" type="text/css" href="/assets/css/template_a.css" media="screen" />
+
+<!--#elif expr="$template='c' || $template='C'"-->
+
+<!--#endif-->
+
+
+
+<!--#include virtual="/assets/includes/templates/modals.html"-->
+<!--#include virtual="/assets/includes/templates/popups.html"-->
+<!--End Head include-->

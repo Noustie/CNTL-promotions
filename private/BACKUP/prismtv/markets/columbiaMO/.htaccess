@@ -1,0 +1,2 @@
+SetEnvIf Request_URI "\.pdf$" requested_pdf=pdf
+Header add Content-Disposition "attachment" env=requested_pdf

@@ -1,0 +1,100 @@
+.product-content{
+	background:url('/assets/images/page-components/919x171_box.png') no-repeat;
+	width:919px;
+	height:171px;
+	margin-bottom:10px;
+	margin-top:5px;
+}
+.product-content .product-box{
+	float:left;
+	width:200px;
+	margin:10px;
+	padding-right:10px;
+	background:url('/assets/images/page-components/horz_bar.png') right top no-repeat;
+	min-height:151px;
+}
+.product-content .product-box h2{
+	float:left;
+	width:150px;
+	font-size:18px;
+}
+.product-content .product-box .icon{
+	float:right;
+	width:auto;
+}
+.product-content .product-box p{clear:left;}
+.product-content .last{
+	background:transparent;
+	margin-right:0;
+	padding-right:0;		
+}
+.supplementary-content{
+
+}
+.supplementary-content .supplementary-box{
+	float:left;
+	background:url('/assets/images/page-components/293x250_box.png') no-repeat;
+	width:253px!important;
+	width:293px;
+	height:210px!important;
+	height:250px;
+	margin-right:17px;
+	padding:20px;
+}
+.supplementary-box p, .supplementary-box h4, .supplementary-box h3, .supplementary-box ul li{color:#484747;}
+.supplementary-box .content{height:160px;}
+.supplementary-box .learn-more{
+	display:block;
+	float:right;
+}
+.supplementary-content .last{margin-right:0;}
+.supplementary-content .supplementary-box h3{
+	text-align:center;
+	margin-bottom:10px;
+}
+.supplementary-content .supplementary-box p{
+	line-height:1.6em;
+	margin:10px auto 10px auto;
+}
+.main-offer-details{
+	width:182px!important;
+	width:222px;
+	height:149px!important;
+	height:189px;
+	padding:20px;
+	float:right;
+	margin-top:0px;
+	margin-bottom:10px;
+	min-height:159px;
+	background:url('/assets/images/page-components/222x189_box.png') no-repeat;
+	
+}
+.main-offer-details h2{
+	margin:-10px auto 5px auto;
+	text-align:center;
+}
+.main-offer-details img{margin-bottom:10px;}
+.main-offer-details .btn-start-now{
+	float:none; margin:auto; clear:both;
+}
+a.start-now-link{
+	line-height:20px;
+	font-weight:bold;
+	color:#00853F;
+	display:block;
+	margin:10px auto auto 50px;
+}
+a.start-now-link img{
+	vertical-align:middle;
+}
+a.start-now-link:hover img{text-decoration:underline;}
+.product-box p{
+	height:55px;
+}
+/*---------------------------Rotating Banners------------------------*/
+
+#banners{height:189px;width:675px;}
+.banner-buttons {
+	top:247px;
+}
+*+html .banner-buttons{top:238px;}

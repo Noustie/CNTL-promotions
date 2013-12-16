@@ -1,0 +1,74 @@
+.header-wrapper{
+	background-image: url("../img/header-bg-notext.jpg") !important;
+	position: relative;
+	overflow: hidden;
+}
+
+.navigation-wrapper{
+	-webkit-transform: translate3d(0,0,0);
+	z-index: 1000;
+}
+
+.text-animation{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 90;
+	width: 938px;
+	height: 323px;
+	overflow: hidden;	
+	visibility: hidden;
+	-webkit-perspective: 500px;
+	-moz-perspective: 500px;
+	-ms-perspective: 500px;
+	-o-perspective: 500px;
+	perspective: 500px;
+}
+.ie8 .text-animation{
+	visibility: visible !important;
+	filter: none !important;
+	opacity: 1;
+}
+.text1{
+	position: absolute;
+	top: 0px;
+
+}
+.text2{
+	position: absolute;
+	top: 133px;
+}
+.text3{
+	position: absolute;
+	top: 205px;
+}
+.text4{
+	position: absolute;
+	top: 278px;
+}
+
+
+.bitstatic{
+	position: absolute;
+	background-repeat: no-repeat;
+	filter: none !important;
+	opacity: 1;
+}
+.ie8 .bitstatic{
+	visibility: visible !important;
+	filter: none !important;
+	opacity: 1;
+}
+.bitstatic_streak {
+	background-image: url("../img/Streak.png") !important;
+	width: 266px;
+	height: 49px;
+}
+.bitstatic_blur {
+	background-image: url("../img/Line_Blur.png") !important;
+	width: 266px;
+	height: 42px;
+}
+/*.ie8 .bitstatic{
+	display: none;
+}*/

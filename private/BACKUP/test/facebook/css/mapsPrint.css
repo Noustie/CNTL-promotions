@@ -1,0 +1,53 @@
+.printPage { font-size: 10pt; }
+
+.printPage {
+	text-align: center;
+}
+.printPage #main {
+	width: 980px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.printPage .overlayWrap {
+	position: relative;
+}
+.printPage .dontPrint {
+	display: none;
+}
+.printPage .printOnly {
+	display: block;
+}
+.printPage .printMast {
+	display: block;
+	padding: 20px 0;
+	margin: 0 0 20px 0;
+	border-bottom: 1px solid #000;
+}
+.printPage .magicNumber {
+	padding: 10pt;
+}
+.printPage .rightBar {
+	position:relative;
+	top: 0;
+	right: 0;
+	width: 48%;
+	float: right;
+}
+.printPage .mapWrap {
+	width: 50%;
+	height: 7in;
+	top: 0;
+}
+.printPage #main .gmnoprint {
+	display: none;
+}
+.printPage #main .printBtn {
+	display: none;
+}
+
+@media print {
+	.printPage #main .backToMap {
+		display: none !important;
+	}
+}

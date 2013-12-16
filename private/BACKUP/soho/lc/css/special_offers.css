@@ -1,0 +1,484 @@
+body{background-color:#f7f7f7;}
+.page_wrapper {
+    background: url("../images/special-offers/bg.png") no-repeat scroll 0 0 transparent;
+	width:963px;
+	height:965px;
+	position: relative;
+}
+#mobility {
+    background: url("../images/special-offers/bgLong.png") no-repeat scroll 0 0 transparent;
+	width:963px;
+	height:1076px;
+	position: relative;
+	margin-bottom:90px;
+}
+.special-offers-left{
+	float:left;
+	width:663px;
+}
+.page_wrapper .special-offers-left{
+	float:left;
+	width:663px;
+	position: relative;
+	top: 25px;
+	left: 45px;
+}
+.special-offers-left * {
+	color: #FFF;
+}
+.no-green-bg * {
+    color: #000;
+}
+.check {
+	float: right;
+}
+.special-offers-left h1{
+	width:490px;
+}
+.page_wrapper .special-offers-form{
+	background: url("../images/special-offers/module-bg.png") no-repeat scroll 0 0 transparent;
+	float: right;
+	width: 224px;
+	height: 490px;
+	position: relative;
+	top: 45px;
+	left: 0;
+}
+.page_wrapper_green .special-offers-form{
+	background: url("../images/special-offers/2499-form.png") no-repeat scroll 0 0 transparent;
+	float: right;
+	width: 224px;
+	height: 410px;
+	position: relative;
+	top: 15px;
+	left: 0;
+}
+.special-offers-form h3 {
+	font-size: 13px;
+    font-weight: 700;
+    padding: 5px 20px;
+	color: #000;
+}
+.special-offers-form h2 {
+	font-size: 16px;
+}
+.callCta {
+	float: right;
+	padding: 10px 0;
+}
+.headerRow {
+	height: 100px;
+	vertical-align: top;
+}
+.instRow {
+	height: 195px;
+	padding: 0 13px;
+	vertical-align: bottom;
+	color: #666666;
+}
+.tallrow {
+	height: auto;
+}
+.thankYouBox {
+	height: 290px;
+	width: 170px;
+}
+.page_wrapper_green .thankYouBox {
+	height: 210px;
+	width: 170px;
+}
+.pricepoint {
+	margin: 0 40% 0 10px;
+	display: block;
+}
+.pricepoint span {
+	font-size: 50px;
+    font-weight: 700;
+	color: #00853F;
+	line-height: 1;
+}
+.pricepoint sup {
+	font-size: 25px;
+	bottom: 18px;
+}
+.submitbtn {
+    background: url("../images/special-offers/orangebutton_small.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+	display: block;
+    height: 32px;
+    width: 140px;
+	cursor: pointer;
+}
+.page_wrapper .submitbtn {
+    background: url("../images/special-offers/orangebutton.png") no-repeat scroll 0 0 transparent;
+	width: 192px;
+}
+.submitWrap {
+	overflow: hidden;
+	display: block;
+	clear: both;
+	padding: 0 10px 0 0;
+}
+.submitWrap .submitbtn {
+	float: left;
+}
+.padRow {
+	padding: 0 10px 2px 10px;
+}
+.page_wrapper .padRow {
+	padding: 0 10px 2px 13px;
+}
+.lastRow {
+    height: 95px;
+    vertical-align: top;
+}
+.accentForm {
+	color:#00853F;
+	font-weight:700;
+}
+.lastRow .accentForm {
+	font-size: 18px;
+}
+.whentocall select {
+	padding: 3px 1px 3px 3px;
+	width: 60%;
+}
+.whentocall option {
+	text-indent: 3px;
+}
+.wideTxtBox {
+	width: 90%;
+	padding: 3px 0;
+}
+.accentTxt {
+    color: #FFC423;
+    font-size: 15px;
+    font-weight: 700;
+}
+.special-offers-left .headline {
+	position: relative;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+	font-weight: 700;
+}
+.headline span{
+	position:absolute;
+	display:block;
+	top:-15px;
+	height:50px;
+	width:100%;
+	background:url("../images/special-offers/gradient_1.png") repeat-x;
+}
+h1{
+	color:#00853F;
+	font-weight:700;
+
+}
+h2{
+	color:#fe7a38;
+}
+ul {
+	padding: 0 0 0 15px;
+}
+
+h3 {color:#00853E;}
+h4 {color:#fe7a38;}
+
+table tr{
+	height:30px;
+}
+.frameSubmit {
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+#smb_ctoc{
+	background: url("../images/phone.png") no-repeat scroll 0 0 transparent;
+	padding-left:10px;
+	padding-bottom:2px;
+}
+
+.special-offers-bottom-info{
+	height:360px;
+	width: 920px;
+	margin: 0 auto;
+	clear:both;
+	position: absolute;
+	bottom: 35px;
+	left: 30px;
+}
+.page_wraper_green .special-offers-bottom-info{*+margin-top:25px;}
+.special-offers-bottom-info div{float:left;}
+.special-offers-bottom-info-cc-left{
+	width:360px;
+}
+.special-offers-bottom-info-cc-left img{
+	float:left;
+}
+.special-offers-bottom-info-cc-left-callout{color:#FE7A38;padding-top:14px;float:left;width:200px;font-size:15px;}
+.special-offers-bottom-info-cc-left ul{clear:both;}
+.special-offers-bottom-info-cc-mid{width:210px;margin-top:-13px;*+margin-top:-17px;}
+.special-offers-bottom-info-cc-mid img{
+	/*vertical-align:bottom;*/
+
+
+}
+.special-offers-bottom-info-cc-right{
+	width:330px;
+	height:200px;
+	padding-top:30px;
+}
+.special-offers-bottom-info-cc-right-callout{color:#FE7A38;font-size:15px;}
+.special-offers-bottom-info-cc-right-quote{*+clear:both;*+width:350px;}
+.special-offers-bottom-info-green{
+	clear:both;
+	height:315px;
+	width: 920px;
+	text-align: center;
+	position: absolute;
+	bottom: 50px;
+	left: 0;
+}
+.special-offers-bottom-align{
+	vertical-align:bottom;
+}
+.special-offers-inner-float{
+	float:left;
+	width: 420px;
+}
+.special-offers-image-hsi {
+   position: absolute;
+    right: 223px;
+    top: 100px;
+}
+.page_wrapper .special-offers-inner-float{
+	float:left;
+	width: 100%;
+}
+.special-offers-asterisk{
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+}
+.special-offers-asterisk-mobility{
+	position: absolute;
+	bottom: -70px;
+	left: 0;
+}
+.special-offers-price-core-connect{
+	background:url("../images/special-offers/85.png") no-repeat scroll 0 0 transparent;
+	width:181px;
+	height:30px;
+	padding-top:118px;
+	float:left;
+}
+
+.special-offers-price-core-connect-mobility{
+	background:url("../images/special-offers/85.png") no-repeat scroll 0 0 transparent;
+	width:181px;
+	height:30px;
+	padding-top:118px;
+	float:left;
+	margin-left:40px;
+}
+
+.special-offers-price-high-speed {
+	padding: 10px 20px;
+}
+.special-offers-price-high-speed ul {
+	list-style: url("../images/special-offers/orangeplus.png");
+}
+.special-offers-price-high-speed ul ul {
+	list-style: disc;
+}
+.special-offers-price-disclaim{
+	color:#00853F;
+	float:right;
+	font-size:11px;
+	font-weight:700;
+	margin-right:30px;
+	margin-top:-45px;
+	width:72px;
+}
+.special-offers-price-high-speed ul li{
+	font-size:15px;
+	font-weight:700;
+}
+.special-offers-price-high-speed ul li ul li{
+	font-size:12px;
+}
+
+.special-offers-hide-text{
+	display:none;
+}
+.special-offers-high-speed-callout{
+	font-size:20px;
+	text-shadow:1px 1px 1px #000;
+}
+.page_wrapper .special-offers-sub-headline{background:url("../images/special-offers/ctlandcoreconnectlogo.png") no-repeat;}
+.special-offers-sub-headline{
+	font-weight:700;
+	font-size:18px;
+	height:71px;
+	width:498px;
+}
+.special-offers-arrow {
+	position:relative;
+	z-index:5;
+    width: 100%;
+	float: left;
+	clear: both;
+	padding: 25px 0 0 0;
+}
+.special-offers-arrow ul li{
+	list-style:none;
+	height:55px;
+	width:270px;
+
+}
+.mobility ul li{
+	list-style:none;
+	height:55px;
+	width:250px;
+}
+.special-offers-arrow ul li div{
+	background:url("../images/special-offers/icons.png") no-repeat;
+	height:34px;
+	width:36px;
+	float:left;
+}
+.verizon-icons{
+	background: url("../images/special-offers/CNTL12-524_VerizonWirelessBG.png") no-repeat scroll 0px 7px transparent;
+    height: 140px;
+	padding-left:49px;
+	}
+.greentitle {
+	color:#00853E;
+	font-weight:bold;
+	font-size: 14px;
+}
+.smallGreentitle {
+	color:#00853E;
+	font-weight:bold;
+	font-size: 12px;
+}
+.listpad {
+	display: block;
+	margin: 0 0 0 50px;
+}
+.morepad {
+	display: block;
+	margin: 0 0 0 80px;
+	width:80%;
+}
+.wide{
+	width:300px!important;
+}
+.AskHowUCanSave{
+	background:url('../images/special-offers/CNTL12-524_AskHowUCanSave.png') no-repeat transparent scroll left center;
+	clear:both;
+	padding-left:25px;
+	font-weight:bold;
+	font-size:16px;
+	color:#ff6319;
+	width:350px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.extra-cta .special-offers-arrow {
+	padding: 0;
+}
+.special-offers-arrow h4 {
+	color: #FE7A38;
+}
+.special-offers-arrow ul li.li2 div{background-position:0px -42px;}
+.special-offers-arrow ul li.li3 div{background-position:-42px 0px;}
+.special-offers-arrow ul li.li4 div{background-position:-42px -42px;}
+.special-offers-arrow-left{float:left;width:40%;margin-left:6%;}
+.special-offers-arrow-right{float:left;width:40%;}
+.special-offers-image{
+	float:left;
+	/*margin-top:-152px;*/
+	margin-left:68px;
+	position:relative;
+	z-index:10;
+}
+
+.mobility-special-offers-arrow-left{float:left;width:33%;}
+.mobility-special-offers-arrow-middle{float:left;width:33%;}
+.mobility-special-offers-arrow-right{float:left;width:33%;}
+.mobility-special-offers-image{
+    position: absolute;
+	left:330px;
+    top: 77px;
+    z-index: 10;
+}
+.mobileOrLand {
+	background: url('../images/special-offers/CNTL12-524_ChooseWirelessOrLandlineBG.png') transparent center center no-repeat;
+	color:#ffffff;
+	font-weight:bold;
+	font-size:14px;
+	width:100%;
+	text-align:center;
+	clear:left;
+	padding-top:15px;
+	padding-bottom:15px;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.special-offers-imageb{
+	float:right;
+	margin-top:-184px;
+	margin-right:13px;
+	position:relative;
+	z-index:10;
+}
+.page_wrapper_green{
+    background: url("../images/special-offers/bg-1999.png") no-repeat scroll 0 0 transparent;
+    margin: 0 auto;
+    width: 920px;
+    height: 810px;
+	position: relative;
+}
+.page_wrapper_green h1{
+	color:#ffc423;
+	text-shadow:#000 1px 1px 1px;
+}
+.page_wrapper_green .special-offers-left{
+	float:left;
+	width:663px;
+	margin-top:15px;
+	margin-left:30px;
+}
+.ctaHeader {
+	display: block;
+	padding: 10px 0;
+}
+.special-offers-call-action{
+	background:url("../images/special-offers/greenbar.png") no-repeat;
+	width:662px;
+	height:44px;
+	line-height: 44px;
+	text-indent: 20px;
+	color:#fff;
+	clear: both;
+	text-shadow:#000 1px 1px 1px;
+	font-weight:700;
+	font-size:15px;
+	position: relative;
+	top: -13px;
+	left: -43px;
+}
+
+.phoneNumberBoxes input {
+	width: auto !important;
+	padding: 3px !important;
+	margin: 0 3px 0 0 !important;
+	height: auto !important;
+}
+#relativePos{
+	position:absolute;
+	left:560px;
+	color:#00853f;
+}

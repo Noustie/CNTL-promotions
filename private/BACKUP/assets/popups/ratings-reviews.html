@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--#if expr="$QUERY_STRING = /prod=([^&]*)&*/" -->
+	<!--#set var="bvID" value="$1" -->
+<!--#endif -->
+<!--#if expr="$bvID='RP0100'"-->
+	<!--#set var="prod_name" value="Internet/DSL - 1.5 Mbps High-Speed Internet"-->
+	<!--#set var="pagename" value="RSD | Shop | Broadband | Ratings Reviews | 1.5 mbps summary"-->
+<!--#elif expr="$bvID='RP0200'"-->
+	<!--#set var="prod_name" value="Internet/DSL - 3 Mbps High-Speed Internet"-->
+	<!--#set var="pagename" value="RSD | Shop | Broadband | Ratings Reviews | 3 mbps summary"-->
+<!--#elif expr="$bvID='RP0400'"-->
+	<!--#set var="prod_name" value="Internet/DSL - 7 Mbps High-Speed Internet"-->
+	<!--#set var="pagename" value="RSD | Shop | Broadband | Ratings Reviews | 7 mbps summary"-->
+<!--#elif expr="$bvID='RP0600'"-->
+	<!--#set var="prod_name" value="Internet/DSL - 12 Mbps High-Speed Internet"-->
+	<!--#set var="pagename" value="RSD | Shop | Broadband | Ratings Reviews | 12 mbps summary"-->
+<!--#elif expr="$bvID='RP0800'"-->
+	<!--#set var="prod_name" value="Internet/DSL - 20 Mbps High-Speed Internet"-->
+	<!--#set var="pagename" value="RSD | Shop | Broadband | Ratings Reviews | 20 mbps summary"-->
+<!--#elif expr="$bvID='RP1000'"-->
+	<!--#set var="prod_name" value="Internet/DSL - 40 Mbps High-Speed Internet"-->
+	<!--#set var="pagename" value="RSD | Shop | Broadband | Ratings Reviews | 40 mbps summary"-->
+<!--#endif-->
+    <script type="text/javascript" language="javascript">  
+		var myDomain = document.domain;
+		var myURL = "reviews.centurylink.com";
+		document.domain = "centurylink.com";
+		if (typeof SERVER_TYPE != 'undefined' && (SERVER_TYPE=='DEV' || SERVER_TYPE=='TEST')) {
+			myURL = "reviews.centurylink.com/bvstaging";
+		} else{
+			myURL = "reviews.centurylink.com";
+		}
+		function ratingsDisplayed(totalReviewsCount, avgRating, ratingsOnlyReviewCount, recommendPercentage, productID){  
+			if (totalReviewsCount > 0) {  
+				var bvRevCntr = document.getElementById("BVReviewsContainer");  
+				if (bvRevCntr) { bvRevCntr.style.display = "block"; }  
+			}  
+			// Other custom items leveraging these values.  
+			// TODO: insert Web Analytics tracking here  
+		}  
+		//-->  
+    </script>  
+    <link type="text/css" rel="stylesheet" href="http://reviews.centurylink.com/bvstaging/static/7108/bazaarvoice.css" ></link>  
+    <script language="JavaScript" src="http://reviews.centurylink.com/bvstaging/static/7108/bazaarvoice.js" type="text/javascript"></script>  
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="eBiz_pageName" value="<!--#echo var="pagename"-->" />
+	<title>Customer Reviews - CenturyLink - <!--#echo var="prod_name"--></title>
+	<!--#include virtual="/assets/includes/templates/head.html"-->
+</head>
+<body>
+<div class="popup">
+	<div class="popup-top">
+		Customer Reviews
+		<div class="popup-close">
+			<a href="javascript:void(window.close())" class="popup-close-link">Close Window</a> <a href="javascript:void(window.close())" class="popup-close-btn"></a>
+		</div>
+	</div>
+	<div class="popup-content">
+	<p class="disclaimer">Notice: Qwest is now CenturyLink; Customer reviews submitted before 8/5/2011 may reflect legacy Qwest product and brand names.</p>
+	<div id="BVCustomerRatings"></div>  
+	<div id="BVReviewsContainer" style="display: none;"></div>  
+	<noscript>  
+		<iframe src="http://reviews.centurtylink.com/bvstaging/7108/<!--#echo var="bvID"-->/reviews.htm?format=noscript" width="100%"></iframe><br/>  
+	</noscript> 
+	
+	<!-- Reviews -->  
+	<script type="text/javascript" language="javascript">  
+	<!--  
+		var BVisLoaded = false;  
+		function BVcheckLoadState() {  
+			if(!BVisLoaded) {  
+				var page = document.getElementById('BVFrame').src;  
+				document.getElementById('BVFrame').src='http://'+myURL+'/logging?page=' + escape(page);  
+				document.getElementById('BVReviewsContainer').innerHTML = '<!-- Review retrieval timed out -->';  
+		   }  
+		}  
+	//-->  
+	</script>  
+	  
+	<div id="BVSubmissionParameters" style="display: none;"></div>  
+	  
+	<iframe id="BVFrame" name="BVFrame" src="" style="visibility: hidden; width: 1px; height: 1px; position: absolute; left: -999px; top: -999px;"></iframe>  
+	  
+	<script type="text/javascript" language="javascript">  
+	<!--  
+		 var bvPage = 'http://'+myURL+'/7108/<!--#echo var="bvID"-->/reviews.htm?format=embedded';  
+		 var bvReviewIDName = 'featurereview';  
+		 var bvReviewIDRegex = new RegExp('[?&]' + bvReviewIDName + '=([^&#]+)');  
+		 var bvReviewIDMatch = bvReviewIDRegex.exec(window.location.search);  
+		 var bvReviewID = bvReviewIDMatch ? decodeURIComponent(bvReviewIDMatch[1]) : null;  
+		   
+		 document.getElementById('BVFrame').src = /^[0-9]+$/.test(bvReviewID) ? bvPage + '&reviewid=' + bvReviewID : bvPage;  
+		 document.getElementById('BVFrame').style.visibility='visible';
+		 //Timeout for review load.  Consider reviews unavailable if not loaded within 15 seconds  
+		 setTimeout("BVcheckLoadState()", 15000);  
+	//-->  
+	</script>  
+	<!-- End Reviews -->
+	
+		</div>
+	<div class="popup-bottom"></div>
+</div>
+
+</body>
+</html>

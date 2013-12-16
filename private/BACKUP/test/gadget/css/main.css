@@ -1,0 +1,56 @@
+body {
+	font-family: sans-serif;
+	margin: 0;
+}
+h1, h2 {
+	text-align: center;
+}
+.playlist {
+	width: 95%;
+	padding: 20px 0;
+	margin: 0 auto;
+	clear: both;
+}
+.entries {
+	float: left;
+	clear: both;
+	width: 100%;
+}
+.entries a {
+	width: 33%;
+	display: block;
+	float: left;
+	height: 480px;
+	-webkit-transition: background-color 0.2s;
+	-moz-transition: background-color 0.2s;
+	-ms-transition: background-color 0.2s;
+	transition: background-color 0.2s;
+	color: #00853F;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+	text-decoration: none;
+	font-weight: bold;
+}
+.entries a:hover {
+	background-color: #9bcb44;
+}
+.entries a img {
+	width: 100%;
+	margin: 0;
+}
+.entries a span {
+	display: block;
+	text-align: center;
+	padding: 0 30px;
+	margin: 10px 0;
+}		
+.entries .vidTitle {
+	margin: 0;
+	text-align: left;
+}
+.entries .vidDesc {
+	color: #000;
+	font-size: 11px;
+	text-shadow: 0 0 0 transparent;
+	text-align: left;
+	font-weight: normal;
+}

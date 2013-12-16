@@ -1,0 +1,3606 @@
+/*BASIC TEXT STYLES*/
+body {
+	line-height: 1.3;
+	-webkit-text-size-adjust: 100%;
+	color: #444444;
+}
+
+p, td {
+	color: #444444;
+}
+
+.content a {
+	color: #8CC63F;
+}
+.pageBody a {
+	color: #00853F;
+}
+
+
+/* MODIFIED FROM MAIN.CSS ON CENTURYLINK.COM*/
+/* =footer */
+#footer {background: url("/static/Images/Layout/footerBg.gif") no-repeat; font-size: 12px; padding: 15px 20px; margin: 20px 0; width: 919px; overflow: hidden; clear:both}
+#footer .copyright {font-size: 11px; margin-top: 14px;}
+#footer .cta {font-size: 16px; color: #999; font-weight: bold;  margin: 0 0 12px;}
+#footer .about {width: 70%; float: left; padding-top: 4px;}
+#footer .support {width: 30%; float: right; text-align: right;}
+#footer .support ul.nav {float: right;}
+/* =footer navigation */
+#footer ul.nav {list-style: none; margin: 0; padding: 0; height: 1.25em;}
+#footer ul.nav li {margin: 0; border-left: 1px solid #666; float: left;}
+#footer ul.nav li a {color: #333; padding: 0 1em;}
+#footer ul.nav li.first {border-left: none;}
+#footer ul.nav li.first a {padding-left: 0;}
+#footer ul.nav li.last a {padding-right: 0;}
+
+/* MODIFIED FROM MAIN.CSS ON CENTURYLINK.COM */
+/*----------------------Modal Window Styles---------------*/
+
+.modals { position: absolute; top: 0; left: 0; z-index: 9000; }
+.modal { z-index: 9000; width:406px; min-height:100px; padding:0; position: absolute; }
+.modal .modal-top { background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -7px -2px; height:17px!important; height:37px; width:386px!important; width:406px; padding:10px; text-align:center; font-weight:bold; }
+.modal .modal-bottom { background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -7px -80px; width:406px; height:52px; }
+.modal .modal-content { width:366px!important; width:406px; padding:20px; background:transparent url('/assets/images/templates/modal_bg.png') repeat-y 0px 0px; overflow:visible; }
+.modal a.modal-close-btn { background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -378px -168px; height:16px; width:16px;	display:block; float:right; vertical-align:bottom; float:right; }
+.modal .modal-close{ float:right; width:100px; line-height:15px; *margin-top:-15px; text-align:right; }
+.zam_close, .ctam_close, .mam_close{float:left;}
+#zam_close-button,#ctam_close-button,#mam_close-button{float:left; margin-left:5px;}
+.modal .modal-close a{ font-size:11px; color:green; }
+.modal .modal-block-top{ margin-top:10px; background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -9px -136px; height:10px; width:356px; }
+.modal .modal-block-bottom{ background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -9px -168px; height:12px; width:356px; }
+.modal .modal-block{
+	border-right:1px solid #CCC;
+	border-left:1px solid #CCC;
+	background-color:#E7E7E7;
+	min-height:10px;
+	width:354px;
+}
+.modal-block-title{
+	background: url('/assets/images/sprites/modal_sprite.png') no-repeat -378px -188px;
+	padding-left:20px;
+	margin-left:10px;
+}
+.modal-block-title{
+	background: url('/assets/images/sprites/modal_sprite.png') no-repeat -378px -188px;
+	padding-left:20px;
+	margin-left:10px;
+}
+.modal-block-expanded, .modal-block-expanded_lvl2{
+	display:none;
+}
+.modal-block-expanded_lvl2{
+	margin:10px;
+}
+.modals .modal form{
+	margin:10px 10px 0 0;
+	background: transparent;
+	padding:0;
+}
+.modals .modal, .modals .modal p {
+	font-size: 12px;
+}
+.modals .modal input {
+	font-size: 11px;
+}
+.modals .error {
+	clear: both;
+	overflow: hidden;
+}
+.modal form input{
+	font: inherit;
+}
+.modal form label{
+	display:block;
+	font-size:11px;
+}
+
+.address-block{
+	float:left;
+	margin:auto 10px 7px auto;
+}
+.remember-me{
+	margin-left:20px;
+}
+.link-protect-info{
+	background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -378px -138px;
+	padding-left:20px;
+	margin-left:20px;
+	display:block;
+	line-height:20px;
+}
+.modal-button{
+	font-size:0;
+	display:block;
+	background:url('/assets/images/sprites/modal_sprite.png') no-repeat;
+}
+.btn-modal-show-options{
+	background-position:-10px -185px;
+	height:26px;
+	width:131px;
+}
+
+.btn-modal-show-options:hover{
+	background-position:-10px -215px;
+}
+/*----------------------End Modal---------------*/
+
+/*----------------------PopUp Window Styles---------------*/
+.popup{
+	width:406px;
+	min-height:100px;
+	padding:0;
+}
+.popup .popup-top{
+	background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -7px -2px;
+	height:17px!important;
+	height:37px;
+	width:386px!important;
+	width:406px;
+	padding:10px;
+	text-align:center;
+	font-weight:bold;
+}
+.popup .popup-bottom{
+	background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -7px -80px;
+	width:406px;
+	height:52px;
+}
+.popup .popup-content{
+	width:366px!important;
+	width:406px;
+	padding:20px;
+	background:transparent url('/assets/images/templates/modal_bg.png') repeat-y 0px 0px;
+	overflow:visible;
+}
+.popup-content p{
+	margin-bottom: 16px;
+}
+.popup a.popup-close-btn{
+	background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -378px -168px;
+	height:16px;
+	width:16px;
+	display: block;
+	vertical-align: bottom;
+}
+.popup-close-link {
+	float: left;
+}
+.popup .popup-close{
+	width:90px;
+	line-height:15px;
+	*margin-top:-15px;
+	text-align:right;
+	float:right;
+}
+.popup .popup-close a{
+	font-size:11px;
+	color:green;
+}
+
+/*----------------------End Pop Up---------------*/
+
+
+/* ROUNDED CORNER STYLES */
+.roundcorners { position: relative; top: 0; left: 0; }
+.oldIE .roundcorners { overflow: visible; }
+.roundcornersInnerWrap { position: relative; top: 0; left: 0; }
+.roundcorners .insideW { background-image:url("../images/corners/cornerWhiteInside.png"); }
+.roundcorners .outsideW { background-image:url("../images/corners/cornerWhiteOutside.png"); }
+.roundcorners .outsideWNoBdr { background-image:url("../images/corners/cornerWhiteOutsideNoBdr.png"); }
+.roundcorners .outsideB { background-image:url("../images/corners/cornerBlackOutside.png"); }
+.roundcorners .roundcorner { position: absolute; z-index: 1000; display: block; height: 10px; width:10px; }
+.roundcorners .rcLeft.rcTop { left: 0; right: auto; top: 0; bottom: auto; background-position: left top; }
+.roundcorners .rcRight.rcTop { left: auto; right: 0; top: 0; bottom: auto; background-position: right top; }
+.roundcorners .rcLeft.rcBottom { left: 0; right: auto; top: auto; bottom: 0; background-position: left bottom; }
+.roundcorners .rcRight.rcBottom { left: auto; right: 0; top: auto; bottom: 0; background-position: right bottom; }
+.rcHasBdr .rcLeft.rcTop { left: -1px; right: auto; top: -1px; bottom: auto; background-position: left top; }
+.rcHasBdr .rcRight.rcTop { left: auto; right: -1px; top: -1px; bottom: auto; background-position: right top; }
+.rcHasBdr .rcLeft.rcBottom { left: -1px; right: auto; top: auto; bottom: -1px; background-position: left bottom; }
+.rcHasBdr .rcRight.rcBottom { left: auto; right: -1px; top: auto; bottom: -1px; background-position: right bottom; }
+
+@media screen and ( min-width: 100px ) {
+	body .roundcorners { border-radius: 8px; -webkit-background-clip: padding-box; -moz-background-clip: padding-box; -ms-background-clip: padding-box; background-clip: padding-box; }
+	body .roundtopcorners { border-radius: 8px 8px 0 0; }
+	body .roundbtmcorners { border-radius: 0 0 8px 8px; }
+	body .roundcorners .roundcorner { display: none; }
+}
+body .forceimagerounded .roundtopcorners { border-radius: 0; }
+body .forceimagerounded .roundbtmcorners { border-radius: 0; }
+body .forceimagerounded .roundcorner { display: block; }
+
+
+
+/*PRISM GLOBAL STYLES*/
+.modal {
+	display: none;
+}
+#main {
+	text-align: center;
+}
+.mainWrap {
+	width: 960px;
+	position: relative;
+	margin: 0 auto;
+	text-align: left;
+}
+body, div {
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+#masthead {
+	padding: 5px 0 10px 0;
+}
+.prismLogo {
+	float: left;
+	margin: 0 0 31px 5px;
+}
+.mastNav {
+	float: right;
+	text-align: right;
+	z-index: 100;
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 0 0 10px 0;
+}
+.mastNav .links {
+	padding: 7px 0;
+}
+.mastNav .contact {
+    clear: both;
+    display: block;
+    float: right;
+    padding: 3px 0 3px 20px;
+    text-align: left;
+    width: 155px;
+}
+.mastNav .phone {
+	width: 155px;
+    padding: 12px 0;
+	text-indent: 27px;
+	background: #fff url('../images/icons/iconPhone.gif') no-repeat 8px center;
+}
+.mastNav .chatOnline {
+	width: 155px;
+	background: #fff url('../images/icons/iconChat.gif') no-repeat left center;
+}
+.content {
+	background: #000;
+	border: 1px solid #CCC;
+	z-index: 10;
+}
+.content .pad {
+	padding: 10px 20px 20px 20px;
+	overflow: hidden;
+}
+.content .introMainHeader {
+	font-weight: normal;
+	padding: 40px 0 0 0;
+}
+.absCorners {
+	position: absolute;
+	z-index: 100;
+}
+
+/*HEADER OFFERS + CYCLE*/
+.prismheader .hdr1,
+.prismheader .hdr2,
+.prismheader .hdr3,
+.prismheader .hdr4,
+.prismheader .hdr5
+{
+	color: #FFF;
+	font-weight: normal;
+	line-height: 1.05;
+}
+.prismheader .hdr1 { font-size: 31px; }
+.prismheader .hdr2 { font-size: 21px; }
+.prismheader .hdr3 { font-size: 18px; }
+.prismheader .hdr4 { font-size: 17px; }
+.prismheader .hdr5 { font-size: 16px; }
+
+.prismheader .hdr4 {
+	font-size: 21px;
+	color: #FFF;
+	font-weight: normal;
+}
+.headCopy {
+	height: 290px;
+	float: right;
+	z-index: 200;
+}
+.headCopy p {
+	color: #DDD;
+}
+.headCopy .info {
+	width: 460px;
+	top: 30px;
+	left: -50px;
+}
+.headCopy .info .hdr1 {
+	padding: 0 0 5px 0;
+	color: #FFF;
+	font-size: 31px;
+}
+.headCopy .info .hdrBlock {
+	display: block;
+}
+.headCopy .info .hdr1 .tiny {
+	top: -1.1em;
+	font-size: 11px;
+}
+.headCopy .info .hdr4 {
+	padding: 0 0 15px 0;
+}
+.prismheader {
+	position: relative;
+	top: 0;
+	left: -20px;
+	width: 960px;
+	height: 300px;
+	overflow: visible;
+}
+.prismheader .headMainCycle {
+	height: 360px;
+	width: 100%;
+	position: relative;
+	display: block;
+	top: -10px;
+	left: 0;
+	background: #000;
+}
+
+.notAndroid .headCycleItem,
+.notAndroid .headCycleItem p,
+.notAndroid .headCycleItem div
+{
+	-webkit-perspective: 500px; 
+	-moz-perspective: 500px; 
+	-ms-perspective: 500px; 
+	perspective: 500px;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.prismheader .headCycleItem {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	display: none;
+	overflow: hidden;
+	background: #000;
+}
+.prismheader .headCycleImg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 560px;
+	height: 320px;
+	z-index: 100;
+	overflow: hidden;
+	display: block;
+}
+.prismheader .headCycleImgNOBG {
+	background: transparent;
+}
+.prismheader .headCycleImg img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+}
+.prismheader .snipe-limitedTime {
+	position: absolute;
+	top: 0;
+	right: 40px;
+	width: 201px;
+	height: 39px;
+	text-indent: -9999px;
+	display: block;
+	background: transparent url("/prismtv/images/headers/snipe-limitedTime.gif") left top;
+}
+.prismheader .headerDisclaimer {
+	position: absolute;
+	z-index: 200;
+	left: 30px;
+	top: 275px;
+	width: 40%;
+}
+.initnojs .prismheader {
+	display: block;
+	position: relative;
+	height: auto;
+}
+.initnojs .prismheader .headMainCycle {
+	display: block;
+	position: relative;
+	height: auto;
+}
+.initnojs .prismheader .headCycleItem {
+	display: block;
+	position: relative;
+}
+.oldIE .prismheader .info * {
+	-ms-filter: inherit;
+	filter: inherit;
+}
+.oldIE .prismheader .info {
+	-ms-filter: none;
+    filter: none;
+}
+.prismheader .defaultCycleItem {
+	display: block;
+}
+.headCycleNav {
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: visible;
+	z-index: 1000;
+}
+.headCycleNav .cycleNavBtn {
+	width: 70px;
+	height: 150px;
+	position: absolute;
+	top: 50px;
+	left: -11px;
+	background-image: url("/prismtv/images/btns/header-nav-arrows.png");
+	background-repeat: no-repeat;
+	background-position: -500% center;
+	display:block;
+	text-indent: -9999px;
+}
+.prismheader .headCycleNav .prev {
+	background-position: 10px center;
+}
+.prismheader .headCycleNav .next {
+	background-position: -40px center;
+	left: auto;
+	right: -11px;
+}
+.headCyclePager {
+    bottom: 10px;
+    right: 35px;
+    position: absolute;
+    z-index: 1000;
+	height: 20px;
+}
+#headCyclePagerWrap {
+    float: left;
+	margin: 0 0 0 12px;
+}
+.headCyclePager .pagerBtn {
+    width: 18px;
+	height: 20px;
+	display: block;
+	margin: 0 5px 0 0;
+	float: left;
+}
+.headCyclePager .pagerBtn {
+	background-image: url("/prismtv/images/headers/headCyclePager-btn.png");
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+.headCyclePager .pagerBtn.activeSlide {
+	background-position: left center;
+}
+.headCyclePager .playPauseBtn {
+    width: 14px;
+	height: 20px;
+	float: left;
+	background-image: url("/prismtv/images/headers/headCyclePager-playPause.gif");
+	background-repeat: no-repeat;
+	background-position: right 2px;
+}
+.headCyclePager .playPauseBtn.showPlay {
+	background-position: left 2px;
+}
+.prismheader .launchDemoLink {
+    bottom: -30px;
+    font-size: 18px;
+    position: absolute;
+    right: 35px;
+    z-index: 1000;
+}
+.prismheader .launchDemoLink a {
+	color: #FFF;
+	padding: 5px 0 5px 25px;
+	font-size: 14px;
+}
+.headCta {
+	float: left;
+	color: #FFF;
+	clear: both;
+	width: 100%;
+	border-top: 1px solid #333;
+	height: 130px;
+	overflow: hidden;
+}
+.headCopy .noCrop {
+	overflow: visible;
+}
+.headCopy .noTopBdr {
+	border-top: 0 none;
+}
+.headCtaItem {
+	margin-top: 15px;
+	width: 100%;
+	height: 100%;
+}
+.headCta .pricepoint {
+	padding-right: 15px;
+}
+.headCta .accent {
+	font-size: 12px;
+	color: #FDB52B;
+}
+.headCta .phoneCta {
+	font-size: 14px;
+}
+.headCta .cta {
+	width: 170px;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 1.2;
+}
+.headCta .cta p {
+	padding: 0 0 10px 0;
+}
+.headCta .cta strong, .headCta .pricepoint strong {
+	color: #FDB52B;
+	font-weight: normal;
+}
+.headCta .accent strong {
+	font-weight: bold;
+}
+.headCta .pricepoint, .headCta .cta {
+	float: left;
+}
+.headCta .priceglow {
+	background: transparent url("/prismtv/images/headers/headerOffer-priceglow.png") no-repeat right center;
+	min-height: 150px;
+	padding-right: 45px;
+}
+.headMainCycle .disclaimer {
+ 	color: #999;
+ 	font-size: 10px;
+ 	line-height: 1.2;
+}
+.headMainCycle .disclaimer a {
+ 	color: #999;
+	text-decoration: underline;
+}
+
+.headMainCycle .bulleted {
+	list-style: disc;
+	padding: 5px 0 5px 15px;
+}
+.leftbdr {
+	display: block;
+	border-left: 1px solid #333;
+	padding: 10px 0 10px 15px;
+}
+.twoCol {
+	float: left;
+	width: 100%;
+	clear: both;
+}
+.twoCol .col {
+	width: 50%;
+	float: left;
+}
+
+.prismheader .headMainCycle .headCycleItem .textPrice {
+ 	color: #f49f32;
+ 	font-size: 72px;
+ 	line-height: 72px;
+}
+.prismheader .headMainCycle .headCycleItem .sup {
+	top: -15px;
+}
+.prismheader .or-divider {
+	color: #666;
+	font-size: 12px;
+	height: 20px;
+	line-height: 15px;
+}
+
+#header-onlineOnlySnipe {
+	background: transparent url("/prismtv/images/headers/snipe-OnlineOnly.png") no-repeat left top;
+	height: 117px;
+	width: 117px;
+	text-indent: -9999px;
+	display: none;
+	position: absolute;
+	top: 193px;
+	right: -4px;
+	z-index: 200;
+}
+.headerInited #header-onlineOnlySnipe {
+	display: block;
+}
+
+#bundlePackageHeader .headCopy { float: left; }
+#bundlePackageHeader .headCopy .info { left: 80px }
+#bundlePackageHeader .hdr1 { color: #8dc941; }
+#bundlePackageHeader .callNumber { color: #ed6227; display: inline; font-weight: bold; }
+#bundlePackageHeader .offerPricePoint .textPrice { color: #FFF; }
+
+#bundlePackageHeader .headCta  { margin: 0; padding: 10px 0 0 0; }
+#bundlePackageHeader .headCtaItem { margin: 0; }
+#bundlePackageHeader .acnt { color: #8dc941; }
+
+#bundlePackageHeader .bundlePP { float: left; }
+#bundlePackageHeader .headerCTA { float: left; }
+
+#bundlePackageHeader .headCycleImg { 
+	float: right; left: auto; right: 0; 
+	background: transparent url("/prismtv/images/headers/doublebundle-header-bk.jpg") no-repeat 0px 0px; 
+	width: 730px;
+}
+#bundlePackageHeader .headCycleImg .dbhdr-glow { left: 280px; top: 0px; position: absolute; display: block; z-index: 50; }
+#bundlePackageHeader .headCycleImg .dbhdr-tv { left: 350px; top: 33px; position: absolute; display: block; z-index: 50; }
+#bundlePackageHeader .headCycleImg .dbhdr-laptop { left: 295px; top: 175px; position: absolute; display: block; z-index: 51; }
+#bundlePackageHeader .headCycleImg .dbhdr-phone { left: 510px; top: 180px; position: absolute; display: block; z-index: 52; }
+
+
+
+
+#pricepointOfferHeader .headCycleImg { background: transparent url("/prismtv/images/headers/main-header1.jpg") no-repeat left top; }
+#pricepointOfferHeader .headCycleImg .hdr1-tv { left: 60px; top: 15px; position: absolute; display: block; z-index: 50; }
+#pricepointOfferHeader .headCycleImg .hdr1-tablet { left: 260px; top: 155px; position: absolute; display: block; z-index: 51; }
+#pricepointOfferHeader .headCycleImg .hdr1-phone { left: 215px; top: 230px; position: absolute; display: block; z-index: 52; }
+
+#pricepointOfferHeader .headCopy .info {
+	left: -40px;
+	top: 35px;
+}
+#pricepointOfferHeader .hdr1 {
+	color: #a0cfeb;
+	font-size: 32px;
+	font-weight: normal;
+}
+#pricepointOfferHeader .bonus {
+	line-height: 16px;
+}
+#pricepointOfferHeader .bonus .accent {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 18px;
+	padding-top: 4px;
+	display: block;
+}
+#pricepointOfferHeader .bonus em {
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+}
+#pricepointOfferHeader .pricepoint {
+ 	padding-bottom: 20px;
+}
+#pricepointOfferHeader .pricepoint .disclaimer {
+ 	color: #FFF;
+}
+#pricepointOfferHeader .textPrice {
+ 	color: #f49f32;
+ 	font-size: 72px;
+ 	line-height: 72px;
+}
+#pricepointOfferHeader .textPrice .sup {
+	top: -15px;
+}
+#pricepointOfferHeader .headerCTA .disclaimer {
+ 	width: 140px;
+ 	left: 20px;
+ 	top: 0;
+ 	position: relative;
+}
+#pricepointOfferHeader .floatleft {
+	float: left;
+}
+#pricepointOfferHeader .cta {
+	width: 240px;
+}
+#pricepointOfferHeader .headCtaItem {
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 0;
+}
+
+#premiumOfferHeader .headCycleImg {
+	background: transparent url("/prismtv/images/headers/main-header2.jpg") no-repeat left top;
+}
+#premiumOfferHeader .header2-tv-dvr {
+	position: absolute;
+	top: 47px;
+	left: 70px;
+	display: block;
+}
+#premiumOfferHeader .hdr1 {
+	color: #ffcda6;
+	font-weight: normal;
+	font-size: 38px;
+	line-height: 1;
+}
+#premiumOfferHeader .accent {
+	color: #edb71d;
+}
+
+#premiumOfferHeader .prepaidCardBubble {
+	height: 123px;
+	width: 123px;
+	background: transparent url("/prismtv/images/headers/header-bubble.png") no-repeat center center;
+	text-align: center;
+	position: absolute;
+	right: -10px;
+	top: 20px;
+	font-size: 12px;
+	line-height: 14px;
+	color: #22ffe8;
+}
+#premiumOfferHeader .prepaidCardBubble .line {
+	display: block;
+	text-align: center;
+	line-height: 1.2;
+}
+#premiumOfferHeader .prepaidCardBubble .leadin {
+	padding: 30px 0 0 0;
+}
+#premiumOfferHeader .prepaidCardBubble .accent {
+	color: #FFF;
+	text-transform: uppercase;	
+}
+#premiumOfferHeader .prepaidCardBubble strong {
+	font-size: 20px;
+	line-height: 20px;
+	font-weight: normal;
+	text-transform: capitalize;
+}
+#premiumOfferHeader .prepaidCardBubble sup {
+	font-size: 9px;
+	top: -1em;
+}
+#premiumOfferHeader .headCtaItem {
+	margin: 0;
+}
+#premiumOfferHeader .phoneCTA {
+	line-height: 33px;
+	width: 100%;
+	overflow: hidden;
+	height: 40px;
+	margin: 10px 0;
+}
+#premiumOfferHeader .phoneCTA .sect {
+	display: block;
+	float: left;
+}
+#premiumOfferHeader .callNumber {
+	color: #ed6227;
+}
+#premiumOfferHeader .barOr {
+	color: #5e6854;
+	font-size: 12px;
+	position: relative;
+	border-left: 1px solid #5e6854;
+	top: -2px;
+	left: 0;
+	height: 35px;
+	width: 20px;
+	margin: 0 0 0 20px;
+	font-weight: bold;
+}
+#premiumOfferHeader .barOr .or {
+	color: #5e6854;
+	position: absolute;
+	padding: 0 3px;
+	background: #000;
+	top: 12px;
+	left: -12px;
+	display: block;
+	line-height: 14px;
+	height: 14px;
+}
+#channelLineupHeader .wideCycleImg {
+	background: transparent url("/prismtv/images/headers/main-header3-bg.jpg") no-repeat left top;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+#channelLineupHeader .wideCycleImg div {
+	position: absolute;
+}
+#channelLineupHeader .shadow {
+	background: url("/prismtv/images/headers/soccer-guy-shadow.png") no-repeat left top;
+	height: 340px;
+	width: 585px;
+	top: 0px;
+	left: 260px;
+}
+#channelLineupHeader .player {
+	background: url("/prismtv/images/headers/soccer-guy.png") no-repeat left top;
+	height: 340px;
+	width: 530px;
+	top: 0px;
+	left: 270px;
+}
+#channelLineupHeader .ball {
+	background: url("/prismtv/images/headers/soccer-ball.png") no-repeat left top;
+	height: 143px;
+	width: 136px;
+	top: 10px;
+	left: 220px;
+}
+#channelLineupHeader .wideCycleCopy {
+	position: relative;
+	top: 170px;
+	width: 100%;
+	height: 150px;
+	padding: 10px 0 0 0;
+}
+#channelLineupHeader .wideCycleCopy {
+	background: url("/prismtv/images/headers/main-header3-shadow.png") no-repeat 50% 0px;
+}
+
+#channelLineupHeader .wideCycleCopy p {
+	width: 100%;
+	text-align: center;
+}
+#channelLineupHeader .wideCycleCopy .hdr1 {
+	font-size: 36px;
+}
+#channelLineupHeader .wideCycleCopy .hdr2 {
+	font-size: 24px;
+}
+.notAndroid #channelLineupHeader .wideCycleCopy p {
+	z-index: 250;
+}
+
+
+/*MAIN PAGE NAV*/
+.mainPageNav {
+	position: relative;
+	left: 10px;
+	clear: both;
+	display: block;
+	width: 100%;
+	z-index: 100;
+	top: 1px;
+	font-size: 12px;
+	height: 35px;
+}
+.mainPageNav ul {
+	height: 35px;
+	position: relative;
+	float: left;
+	width: 100%;
+}
+.mainPageNav li {
+	float:left;
+	padding: 0 10px 0 0;
+	position: relative;
+}
+.mainPageNav li a {
+	height: 34px;
+	width: 140px;
+	top: 1px;
+	left: 0;
+	position: relative;
+	display: block;
+	background-color: transparent;
+	background-image: url("../images/btn-mainNav.png");
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	text-align: center;
+	line-height: 35px;
+	color: #333;
+	font-weight: bold;
+}
+.mainPageNav li a:hover, .mainPageNav .current a, .mainPageNav .ui-tabs-selected a {
+	height: 35px;
+	color: #00853F;
+	text-decoration: none;
+	background-position: left top;
+}
+
+
+/* ICON UTILITY STYLES */
+.icon {
+	background-color: transparent;
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+.iconMed {
+	background-color: transparent;
+	background-position: left top;
+	background-repeat: no-repeat;
+	padding: 10px 10px 0 100px;
+	min-height: 100px;
+}
+.iconWrap {
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center 10px;
+	position: relative;
+}
+.tab-icon{
+	position: relative;
+}
+.bi-line{margin-top: 1px;display: block;}
+.static-state{width: 52px;padding-top: 10px;}
+.static-state-tv{width: 71px;padding-top: 12px;}
+.icon-small-appc { background-image: url("/prismtv/images/icons/icon-small-appc.png"); }
+.icon-small-cid { background-image: url("/prismtv/images/icons/icon-small-cid.png"); }
+.icon-small-fif { background-image: url("/prismtv/images/icons/icon-small-fif.png"); }
+.icon-small-l5 { background-image: url("/prismtv/images/icons/icon-small-l5.png"); }
+.icon-small-mtvw { background-image: url("/prismtv/images/icons/icon-small-mtvw.png"); }
+.icon-small-pip { background-image: url("/prismtv/images/icons/icon-small-pip.png"); }
+.icon-small-pms { background-image: url("/prismtv/images/icons/icon-small-pms.png"); }
+.icon-small-whdvr { background-image: url("/prismtv/images/icons/icon-small-whdvr.png"); }
+.icon-small-wscc { background-image: url("/prismtv/images/icons/icon-small-wscc.png"); }
+.icon-small-overview { background-image: url("/prismtv/images/icons/icon-prismtv-tv.png"); }
+
+.icon-smmed-appc { background-image: url("/prismtv/images/icons/icon-smmed-appc.png"); }
+.icon-smmed-cid { background-image: url("/prismtv/images/icons/icon-smmed-cid.png"); }
+.icon-smmed-fif { background-image: url("/prismtv/images/icons/icon-smmed-fif.png"); }
+.icon-smmed-l5 { background-image: url("/prismtv/images/icons/icon-smmed-l5.png"); }
+.icon-smmed-mtvw { background-image: url("/prismtv/images/icons/icon-smmed-mtvw.png"); }
+.icon-smmed-pip { background-image: url("/prismtv/images/icons/icon-smmed-pip.png"); }
+.icon-smmed-pms { background-image: url("/prismtv/images/icons/icon-smmed-pms.png"); }
+.icon-smmed-whdvr { background-image: url("/prismtv/images/icons/icon-smmed-whdvr.png"); }
+.icon-smmed-wscc { background-image: url("/prismtv/images/icons/icon-smmed-wscc.png"); }
+.icon-smmed-3dod { background-image: url("/prismtv/images/icons/icon-smmed-3dod.png"); }
+.icon-smmed-mams { background-image: url("/prismtv/images/icons/icon-smmed-mams.png"); }
+.icon-smmed-wsw { background-image: url("/prismtv/images/icons/icon-smmed-wsw.png"); }
+.icon-smmed-prism { background-image: url("/prismtv/images/icons/icon-smmed-prism.png"); }
+
+.icon-med-appc { background-image: url("/prismtv/images/icons/icon-med-appc.gif"); }
+.icon-med-cid { background-image: url("/prismtv/images/icons/icon-med-cid.gif"); }
+.icon-med-fif { background-image: url("/prismtv/images/icons/icon-med-fif.gif"); }
+.icon-med-l5 { background-image: url("/prismtv/images/icons/icon-med-l5.gif"); }
+.icon-med-mtvw { background-image: url("/prismtv/images/icons/icon-med-mtvw.gif"); }
+.icon-med-pip { background-image: url("/prismtv/images/icons/icon-med-pip.gif"); }
+.icon-med-pms { background-image: url("/prismtv/images/icons/icon-med-pms.gif"); }
+.icon-med-whdvr { background-image: url("/prismtv/images/icons/icon-med-whdvr.gif"); }
+.icon-med-wscc { background-image: url("/prismtv/images/icons/icon-med-wscc.gif"); }
+.icon-med-wsb { background-image: url("/prismtv/images/icons/icon-med-wsb.gif"); }
+.icon-med-pog { background-image: url("/prismtv/images/icons/icon-med-pog.gif"); }
+
+.icon-big-appc { background-image: url("/prismtv/images/icons/icon-big-appc.png"); }
+.icon-big-cid { background-image: url("/prismtv/images/icons/icon-big-cid.png"); }
+.icon-big-fif { background-image: url("/prismtv/images/icons/icon-big-fif.png"); }
+.icon-big-l5 { background-image: url("/prismtv/images/icons/icon-big-l5.png"); }
+.icon-big-mtvw { background-image: url("/prismtv/images/icons/icon-big-mtvw.png"); }
+.icon-big-pip { background-image: url("/prismtv/images/icons/icon-big-pip.png"); }
+.icon-big-pms { background-image: url("/prismtv/images/icons/icon-big-pms.png"); }
+.icon-big-whdvr { background-image: url("/prismtv/images/icons/icon-big-whdvr.png"); }
+.icon-big-wscc { background-image: url("/prismtv/images/icons/icon-big-wscc.png"); }
+.icon-big-overview { background-image: url("/prismtv/images/icons/icon-big-overview.png"); }
+.icon-big-prism { background-image: url("/prismtv/images/icons/icon-big-prism.png"); }
+
+.icon-dollar { background-image: url("/prismtv/images/icons/icon-dollar.png"); }
+.icon-bundle { background-image: url("/prismtv/images/icons/icon-bundle.png"); }
+.icon-raf { background-image: url("/prismtv/images/icons/icon-raf.png"); }
+
+
+/*PAGE BODY*/
+.pageCont {
+	z-index: 200;
+	top: 0;
+	left: 0;
+	line-height: 1.5;
+	font-size: 95%;
+}
+.pageBody {
+	clear: both;
+	background: #FFF;
+	border: 1px solid #CCC;
+}
+.pageBody .padded {
+	padding: 30px 45px;
+}
+.pageBody .noLeadingPadding {
+	padding: 0 45px 30px 45px;
+}
+.pageHeader {
+	padding: 15px 0 0 0;
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+}
+.pageHeader img {
+	line-height: 0;
+	padding: 0;
+	margin: 0 auto;
+	display: block;
+}
+.pageBody .pageHeaderText {
+	text-align: left;
+}
+.pageBody .subContHeader {
+    left: 0;
+    position: relative;
+    top: 20px;
+}
+.pageBody .paddedHeader {
+	padding: 0 0 30px 0;
+	clear: both;
+}
+.pageBody .longFeatureHeader {
+	font-size: 24px;
+}
+.pageBody .pageHeaderIconMed {
+	text-align: left;
+	background-repeat: no-repeat;
+	background-position: left 80%;
+	padding: 30px 100px 10px 100px;
+	margin: 0 0 0 50px;
+}
+.subpageBacktrack {
+	padding: 20px 50px 0;
+}
+.subContent {
+	overflow: hidden;
+}
+.pageBody p {
+	margin: 0 0 15px 0;
+}
+.pageBody hr {
+	background: transparent url('../images/feature/featureBtmDivider.gif') no-repeat center top;
+	height: 1px;
+	border: 0 none #FFF;
+	display: block;
+	width: 100%;
+	clear: both;
+	margin: 0;
+	padding: 10px 0;
+	color: transparent;
+}
+.pageBody h1 {
+	color: #00853F;
+    font-size: 32px;
+    font-weight: normal;
+	line-height: 1.1;    
+	margin: 0 0 5px 0;
+	padding: 40px 0 0 0;
+}
+.pageBody h2 {
+    font-size: 28px;
+    font-weight: normal;
+    padding: 0;
+	color: #444;
+	line-height: 1.1;
+	margin: 0 0 5px 0;
+}
+.pageBody h3 {
+    font-size: 24px;
+    font-weight: normal;
+    padding: 0;
+	color: #444;
+	line-height: 1.1;
+	margin: 0 0 5px 0;
+}
+.pageBody h4 {
+    font-size: 20px;
+    font-weight: normal;
+	color: #000;
+	line-height: 1.2;
+	margin: 0 0 15px 0;
+}
+.pageBody h5 {
+    font-size: 19px;
+    font-weight: normal;
+	color: #000;
+	line-height: 1.2;
+	margin: 0 0 15px 0;
+}
+.pageBody h6 {
+    font-size: 18px;
+    font-weight: normal;
+	color: #000;
+	line-height: 1.2;
+	margin: 0 0 15px 0;
+}
+.pageBody .h1gray {
+	color: #444;
+}
+
+.pageBody .threeCol h1 {
+    font-size: 29px;
+}
+.pageBody .threeCol h2 {
+    font-size: 25px;
+}
+.pageBody .threeCol h3 {
+    font-size: 21px;
+}
+.pageBody .threeCol h4 {
+    font-size: 17px;
+}
+.pageBody .threeCol h5 {
+    font-size: 16px;
+}
+.pageBody .threeCol h6 {
+    font-size: 15px;
+}
+
+
+.pageBody ul {
+	padding: 0 0 10px 20px;
+}
+.pageBody ol {
+	padding: 0 0 10px 30px;
+}
+.pageBody ul li {
+	list-style: disc;
+	line-height: 1.2;
+	padding: 0 0 5px 0;
+}
+
+/* FLEXIBLE BUTTON STYLES */
+
+.bookendButton {
+	height: 33px;
+	line-height: 30px;
+	display: inline-block;
+	color: #FFF;
+	text-decoration: none;
+	font-size: 14px;
+}
+.bookend {
+	height: 33px;
+	display: inline-block;
+	color: #FFF;
+	text-decoration: none;
+	font-size: 14px;
+	background-position: center top;
+	background-color: transparent;
+	background-image: url("/prismtv/images/btns/btn-bg-greenShadow.png");
+	font-weight: bold;
+	vertical-align: top;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.centerBookend {
+	padding: 0 5px;
+}
+.leftBookend {
+	background-position: left top;
+	width: 20px;
+	top: 0;
+	left: 1px;
+}
+.rightBookend {
+	background-position: right top;
+	width: 20px;
+	top: 0;
+	left: -1px;
+}
+.orangeBookend .bookend {
+	background-image: url("/prismtv/images/btns/btn-bg-orangeShadow.png");
+}
+
+
+body .flexBtn {
+	display: block;
+	display: inline-block;
+	padding: 0 0 0 15px;
+	height: 30px;
+	line-height: 30px;
+	background-position: left top;
+	background-image: url("/prismtv/images/btns/btn-bg-green.gif");
+	background-color: transparent;
+	color: #FFF;
+	text-decoration: none;
+	font-size: 14px;
+	vertical-align: top;
+	-webkit-transition: background-position 100ms;
+	-moz-transition: background-position 100ms;
+	-ms-transition: background-position 100ms;
+	-o-transition: background-position 100ms;
+	transition: background-position 100ms;	
+}
+.flexBtn .flex {
+	color: #FFF;
+	font-weight: bold;
+	display: block;
+	height: 30px;
+	padding: 0 15px 0 0;
+	line-height: 30px;
+	background-position: right top;
+	background-image: url("/prismtv/images/btns/btn-bg-green.gif");
+	text-shadow: 0 -1px 4px rgba(0,0,0,0.2);
+	text-decoration: none;
+	-webkit-transition: background-position 100ms;
+	-moz-transition: background-position 100ms;
+	-ms-transition: background-position 100ms;
+	-o-transition: background-position 100ms;
+	transition: background-position 100ms;
+}
+a.flexBtn:hover {
+	text-decoration: none;
+	background-position: left 30px;
+}
+a:hover.flexBtn .flex {
+	background-position: right 30px;
+}
+body .greenShadow, body .greenShadow .flex { background-image: url("/prismtv/images/btns/btn-bg-greenShadow.gif"); height: 32px; }
+body .greenBlackBG, body .greenBlackBG .flex { background-image: url("/prismtv/images/btns/btn-bg-greenBlackMatte.gif"); height: 32px; }
+
+body .orangeShadow, body .orangeShadow .flex { background-image: url("/prismtv/images/btns/btn-bg-orangeShadow.gif"); height: 32px; }
+body .orangeBlackBG, body .orangeBlackBG .flex { background-image: url("/prismtv/images/btns/btn-bg-orangeBlackMatte.gif"); height: 32px; }
+
+body .ghostWhiteShadow, body .ghostWhiteShadow .flex { background-image: url("/prismtv/images/btns/btn-bg-ghostWhiteShadow.gif"); height: 41px; line-height: 39px; color: #666; text-shadow: 0 1px 4px rgba(0,0,0,0.3); }
+body .ghostWhiteBlackBG, body .ghostWhiteBlackBG .flex { background-image: url("/prismtv/images/btns/btn-bg-ghostWhiteBlackMatte.gif"); height: 41px; line-height: 39px; color: #666; text-shadow: 0 1px 4px rgba(0,0,0,0.3); }
+
+.darkBubble {
+	float: left;
+	clear: both;
+	padding: 20px;
+	background: #000;
+	border-radius: 10px;
+	margin: 10px 0;
+	width: 80%;
+}
+
+
+.disclaimer {
+	color: #999;
+	font-size: 11px;
+	line-height: 1.1;
+}
+.pageBody ol li {
+	line-height: 1.2;
+	padding: 0 0 5px 0;
+}
+.grayHeader h4 {
+	padding: 0 0 10px 0;
+}
+.grayHeader p {
+	padding: 0 0 10px 0;
+}
+
+/* ACCORDIAN TABLE */
+.accordianTableHeader {
+	clear: both;
+	padding: 0 250px 0 0;
+	position: relative;
+	top: 10px;
+	border-collapse: collapse;
+}
+.accordianTable td, .accordianTable th {
+	border-collapse: collapse;
+	border-bottom: 1px solid #CCC;
+}
+.accordianTable th { 
+	padding: 0;
+	line-height: 1.1;
+}
+.accordianTable thead .accordian-features {
+	padding: 10px 0;
+	text-align: left;
+}
+.accordianTable thead .prismtvHasFeatures {
+	font-size: 19px;
+	vertical-align: middle;
+	text-align: center;
+	color: #666666;
+}
+.accordianTable thead .otherHasFeatures {
+	font-size: 14px;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 1.1;
+	padding: 10px 0;
+}
+.accordianTable tbody td {
+	padding: 20px 0;
+}
+.accordianTable .accordian-features {
+	width: 72%;
+}
+.accordianTable .prismtvHasFeatures {
+	border-top: 1px solid #e7e7e7;
+	border-left: 1px solid #e7e7e7;
+	border-right: 1px solid #e7e7e7;
+	background: transparent url('../images/shaded-col-bg.gif') center center;
+}
+.accordianTable .prismtvHasFeatures, .accordianTable .otherHasFeatures {
+	width: 14%;
+}
+.accordianTable .prismtvHasFeatures .ir, .accordianTable .otherHasFeatures .ir {
+	height: 39px;
+	width: 100%;
+	display: block;
+	position: relative;
+	top: 10px;
+}
+.accordianTable .prismtvHasFeatures .ir {
+	background: transparent url('../images/icons/whyswitch-checkmark.png') no-repeat center center;
+}
+.accordianTable .otherHasFeatures .ir {
+	background: transparent url('../images/icons/whyswitch-question.png') no-repeat center center;
+}
+.accordianTable .accordian {
+	margin: 0 0 20px 0;
+	overflow: hidden;
+}
+.expander {
+	display: block;
+	display: inline-block;
+	font-weight: normal;
+}
+.expander span {
+	display: none;
+	padding: 0px 14px 0px 0;
+	background-color: transparent;
+	background-image: url('../images/btns/text-arrow-updown.png');
+	background-repeat: no-repeat;
+	background-position: right top;	
+}
+.expander .toexpand {
+	background-position: right -21px;	
+}
+.accoridan-closed .toexpand,
+.accoridan-open .tocollapse,
+.clicktoexpand .toexpand,
+.clicktocollapse .tocollapse,
+.toCollapseAll .expandAll .tocollapse,
+.toExpandAll .expandAll .toexpand {
+	display: block;
+	display: inline-block;
+}
+.experienceCTA {
+	padding: 30px 20px;
+	border-bottom: 1px solid #CCC;
+	margin: 0 0 20px 0;
+}
+.experienceCTA h3 {
+	text-align: center;
+	color: #000;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 33px;
+}
+
+/* BLOCKQUOTE UTILITY */
+.showcaseQuote blockquote {
+	font-size: 21px;
+	font-weight: bold;
+	color: #FFF;
+	text-indent: -12px;
+}
+.showcaseQuote .cite {
+	font-size: 14px;
+	font-weight: normal;
+	text-indent: 0.5em;
+	color: #FFF;
+}
+
+/* SUBCONTENT FEATURES */
+.subContent .feature {
+	clear: both;
+	width: 100%;
+	min-height: 300px;
+	float: left;
+}
+.subContent .introfeature {
+	clear: both;
+	width: 100%;
+	float: left;
+}
+.subContent .introSubHeader {
+	font-weight: normal;
+	font-size: 17px;
+	color: #333;
+}
+.subContent .topFeature {
+	background: transparent url('../images/feature/featureBtmDivider.gif') no-repeat center bottom;
+	padding: 0 0 70px 0;
+}
+.subContent .centerCompareNow {
+	background: transparent url('../images/feature/featureBtmDivider.gif') no-repeat center top;
+	padding: 40px 0 0 0;
+}
+.subContent .centerCompareNow h3 {
+	text-align: center;
+	font-size: 20px;
+}
+
+.subContent .nolist {
+	padding: 0;
+}
+.subContent .nolist li {
+	list-style: none;
+}
+.subContent .blockList {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	float: left;
+	clear: both;
+}
+.subContent .blockList li {
+	display: block;
+	margin: 0 0 10px 0;
+	padding: 0;
+	list-style: none;
+}
+.subContent .blockList .caption {
+	display: block;
+	margin: 0;
+	padding: 0 25px 0 0;
+	text-align: center;
+}
+.subContent .twoColList li {
+	width: 50%;
+	float: left;
+}
+.subContent .threeColList li {
+	width: 33%;
+	float: left;
+}
+.subContent .iconList li {
+	height: 70px;
+}
+.subContent .iconList h4 {
+	font-size: 14px;
+	font-weight: bold;
+	padding: 5px 0 5px 0;
+}
+.subContent .iconList h4, .subContent .iconList p {
+	margin: 0 20px 0 60px;
+}
+.subContent .wideIcons h4, .subContent .wideIcons p {
+	margin: 0 20px 0 90px;
+}
+
+.iconList .icon-smmed-appc h4 	{ color: #852469; }
+.iconList .icon-smmed-fif h4 	{ color: #f3961a; }
+.iconList .icon-smmed-l5 h4 	{ color: #719fb6; }
+.iconList .icon-smmed-mtvw h4 	{ color: #3f7d8b; }
+.iconList .icon-smmed-whdvr h4 	{ color: #339933; }
+.iconList .icon-smmed-wscc h4 	{ color: #670c7e; }
+.iconList .icon-smmed-3dod h4 	{ color: #ff3333; }
+.iconList .icon-smmed-mams h4 	{ color: #cc0000; }
+.iconList .icon-smmed-prism h4 	{ color: #000; }
+.iconList .icon-smmed-wsw h4 	{ color: #6bbc96; }
+
+.iconList .icon-dollar h4 	{ color: #ffa02f; }
+.iconList .icon-bundle h4 	{ color: #ff6600; }
+.iconList .icon-raf h4 	{ color: #0099cc; }
+
+
+.heroCta {
+	position: absolute;
+	bottom: 10px;
+	left: 0px;
+	width: 100%;
+	font-weight: normal;
+	color: #333;
+}
+.heroCta .btn {
+	display: block;
+	padding: 5px 0 0 0;
+}
+.relative {
+	position: relative;
+}
+.feature .featCopy {
+	padding-bottom: 70px;
+	clear: both;
+	color: #666;
+}
+.featCopy .narrowCopy {
+	padding: 0 125px 0 0;
+}
+.feature .featureImg {
+	display: block;
+	position: absolute;
+	top: 0;
+}
+.feature .featureImg {
+	text-align: center;
+}
+.feature .featureImgFloat {
+	display: block;
+	position: relative;
+	top: 0;
+	left: 0;
+	float: right;
+}
+.feature .featureWideImg {
+	display: block;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.feature .wideFeatureHeader {
+	display: block;
+	position: relative;
+	top: 0;
+	left: 0;
+	clear: both;
+	float: left;
+	width: 100%;
+	padding: 15px 0 0 0;
+}
+.feature .whySwitchTopFeature {
+	color: #000;
+	background: transparent url('../images/feature/whyswitch-headerTopBg.jpg') repeat-x left top;
+	width: 498px;
+	height: 391px;
+	position: absolute;
+	top: 50px;
+	right: -45px;
+	left: auto;
+}
+.feature .whySwitchTopFeature a {
+	position: relative;
+	top: 135px;
+	left: 185px;
+	color: #FFF;
+	text-decoration: none;
+}
+.featCopyDividers .featCopy {
+	margin-bottom: 50px;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #CCC;
+}
+.featCopyDividers .noDivider  {
+	margin-bottom: 0;
+	border-bottom: 0 none;
+}
+.offerFeature {
+	border: 1px solid #CCC;
+	background: transparent url('../images/bg-featOffer.gif') repeat-x left top;
+	color: #666;
+}
+
+.offerFeature h3{
+	padding: 0px;
+}
+.offerFeature h4{
+	margin-bottom: 15px;
+}
+.offerFeature .offerPad {
+	padding: 25px;
+}
+.offerPricePoint {
+	padding: 5px 0;
+	/*overflow: hidden*/
+}
+.offerPricePoint .textPrice {
+	font-size: 55px;
+	line-height: 60px;
+	height: 60px;
+	margin: 0;
+	padding: 0;
+	color: #00853F;
+	float: left;
+}
+.offerPricePoint .prePrice {
+	font-size: 16px;
+	color: #666;
+	margin: 0;
+}
+.offerPricePoint .noPrice {
+	font-size: 28px;
+	color: #00853F;
+	font-weight: normal;
+	line-height: 1;
+    padding: 0 0 10px;
+}
+.offerPricePoint .terms {
+	display: block;
+	padding: 0 0 5px 0;
+	clear: both;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+.offerPricePoint .terms a {
+	position: relative;
+	top: 0;
+	left: 0;
+	display: block;
+	z-index: 1000;
+	text-decoration: none;
+}
+.offerPricePoint .terms a .tooltip {
+	cursor: default;
+	display: none;
+	padding: 5px;
+	clear: both;
+	background: #FFF;
+	border: 1px solid #CCC;
+	box-shadow: 0 3px 7px #999;
+	color: #000;
+	text-decoration: none;
+	position: absolute;
+	top: -70px;
+	left: 0;
+	width: 200px;
+}
+.offerPricePoint .terms a:hover .tooltip, .offerPricePoint .terms a:focus .tooltip  {
+	display: block;
+}
+.offerPricePoint .textPrice sup, .offerPricePoint .textPrice .sup {
+	font-size: 30px;
+	top: -20px;
+	position: relative;
+	left: 0;
+	height: 61px;
+}
+.offerPricePoint .textPrice .sup {
+	top: -9px;
+}
+.offerPricePoint .textPrice .dollar {
+	letter-spacing: -1px;
+}
+.offerPricePoint .textPrice .disclaimer {
+    font-size: 9px;
+    left: -30px;
+    position: relative;
+    top: 36px;
+    width: 53px;
+}
+.addPrismOptions .offerPricePoint .textPrice .disclaimer {
+    top: 36px;
+    width: 90px;
+}
+.offerPricePoint .textPrice span {
+	float: left;
+}
+.offerPricePoint.boldPrice .textPrice .sup, .offerPricePoint.boldPrice .textPrice .dollars {
+	font-weight: bold;
+}
+.imgRight .featureImg {
+	right: -30px;
+}
+.imgLeft .featureImg {
+	left: -30px;
+}
+.onEdgeLeft .featureImg {
+	left: -51px;
+}
+.onEdgeRight .featureImg {
+	right: -51px;
+}
+.imgLeft .featCopy {
+	margin-left: 48%;
+}
+.imgRight .featCopy {
+	margin-right: 48%;
+}
+.topFeature .featCopy {
+	margin-right: 52%;
+	clear: none;
+}
+.narrowImgLeft .featCopy {
+	margin-left: 42%;
+}
+.narrowImgRight .featCopy {
+	margin-right: 40%;
+}
+.feature .icon {
+	float: left;
+	padding: 0 20px 10px 0;
+}
+.feature .featureHead {
+	display: block;
+	clear: both;
+}
+.feature .demoCallout {
+	display: block;
+	float: left;
+	clear: both;
+	width: 100%;
+	border-top: 1px solid #CCC;
+	margin: 20px 0 0 0;
+	padding: 20px 0 0 0;
+	font-size: 14px;
+}
+.feature .demoCallout h4 {
+	padding: 7px 0 0 0;
+}
+.featureHero {
+	height: 380px;
+	clear: both;
+}
+.featureHero img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.featureHero .disclaimer {
+    bottom: 10px;
+    display: block;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 300;
+}
+.content .pageBody .twoCol {
+	float: left;
+	width: 50%;
+	clear: none;
+	min-height: 100%;
+}
+.twoCol .colPad {
+	padding: 0 30px 0 0;
+}
+.pageBody .btm {
+	height: 75px;
+	width: 100%;
+	background: transparent url('../images/btm-rainbow.jpg') repeat left top;
+	clear: both;
+	float: left;
+}
+.pageBody .btm h3 {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 75px;
+	color: #FFF;
+	margin: 0;
+	padding: 0;
+}
+.threeCol {
+	float: left;
+	margin: 0 0 20px 20px;
+	z-index: 300;
+}
+.firstCol {
+	margin: 0;
+}
+/*
+.threeCol h3, .threeCol h4{
+	line-height: 1;
+	margin-bottom: 6px;
+}
+.feature .threeCol .featureHead {
+	padding: 0 0 15px 0;
+}
+*/
+.pageBody .lastCol .colPad {
+	padding: 0;
+}
+.threeCol .colPad {
+	width: 260px;
+}
+.threeCol .colPad p {
+	padding: 0 10px 0 0;
+}
+.contFooter {
+	padding: 20px;
+}
+.bubbleCta {
+	height: 7em;
+	border: 1px solid #CCC;
+	float: left;
+	width: 48%;
+}
+.contFooter .right {
+	float: right;
+}
+.bubbleCta h4 {
+	font-size: 17px;
+	color: #867474;
+	font-weight: normal;
+}
+.bubbleCta h5 {
+	color: #888;
+}
+.contFooter .storeLocator h4 {
+	padding: 20px 10px 0 20px;
+}
+.contFooter .storeLocator p {
+	padding: 0px 20px;
+}
+.contFooter .viewOffers h5 {
+	padding: 20px 160px 0 20px;
+	text-align: left;
+	color: #ff6319;
+	font-size: 13px;
+	font-weight: bold;
+}
+.contFooter .viewOffers h6 {
+	padding: 0 180px 0 20px;
+	text-align: left;
+	color: #000;
+	font-size: 11px;
+	font-weight: bold;
+}
+.contFooter .viewOffers .floatingFooterCTA {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	font-size: 11px;
+}
+.contFooter .sharing {
+	clear: both;
+	padding: 20px 0;
+}
+.sharing .fblike, .sharing .tweet{
+	float: left;
+	width: 100px;
+	height: 22px;
+}
+.sharing .mobileToggle {
+	position: absolute;
+	right: 0;
+	top: 140px;
+}
+.arrowLink {
+	display: block;
+	background: transparent url('../images/btns/btn-green-arrow.gif') no-repeat 0px center;
+	padding: 5px 20px;
+	position:relative;
+}
+.arrowLinkDark {
+	display: block;
+	background: transparent url('../images/btns/btn-green-arrow-dark.gif') no-repeat 0px center;
+	padding: 5px 20px;
+	position:relative;
+}
+.forBizcallNumber {
+	float: right;
+	font-size: 16px;
+	font-weight: normal;
+	color: #666;
+}
+.forBizcallNumber strong {
+	color: #00853F;
+	font-weight: normal;
+}
+.btn img {
+	vertical-align: middle;
+}
+.addPrismOptions .disclaimer {
+	line-height: 8px;
+}
+.addPrismOptions #line-height-adjust.disclaimer {
+	line-height: 1.1!important;
+}
+.wideFeature {
+	clear: both;
+	padding: 20px 0;
+	margin: 0;
+	width: 100%;
+	float: left;
+}
+
+.colWrap {
+	width: 100%;
+	overflow: hidden;
+}
+
+.medWideGroup {
+	width: 100%;
+	clear: both;
+}
+.wideGroup {
+	width: 100%;
+	clear: both;
+}
+
+
+.pageCont .multiVideoPlayerHeader {
+	padding: 40px 0 0 0;
+}
+.pageCont .multiVideoPlayerHeader h3, .tabholder .multiVideoPlayerHeader h4 {
+	padding: 0;
+	margin: 0;
+}
+.pageCont .videoPlayerFrameBox {
+	
+
+	margin: 10px 0 40px 0;
+	color: #FFF;
+/*	box-shadow: 0 5px 15px #999;
+*/}
+.pageCont .videoPlayerFrame {
+	width: 100%;
+	height: 700px;
+	display: block;
+	overflow: hidden;
+/*	background-image: url("/prismtv/images/videoPlayer/iframe-shadow.png");
+	background-repeat: no-repeat;
+	background-position: 1px -4px;
+	padding-left: 9px;
+	margin-left: -9px;
+	padding-right: 9px;
+*/}
+.noVideo .pageCont .videoPlayerFrame,
+.initnojs .pageCont .videoPlayerFrame {
+	width: 100%;
+	height: 1250px;
+	display: block;
+	overflow: hidden;
+}
+#mainMultiVideoPlayer .feature {
+	background-image: url("/prismtv/images/videoPlayer/iframe-shadow-left.png");
+	background-repeat: no-repeat;
+	background-position: -2px -8px;
+}
+#mainMultiVideoPlayer .multiVideoPlayer {
+	margin: 0;
+	color: #FFF;
+	padding-left: 6px;
+	padding-right: 8px;
+	background-image: url("/prismtv/images/videoPlayer/iframe-shadow-right.png");
+	background-repeat: no-repeat;
+	background-position: right -8px;
+}
+#mainMultiVideoPlayer .multiVideoPlayer h3 {
+	margin: 0;
+	font-size: 22px;
+	float: left;	
+}
+#mainMultiVideoPlayer .multiVideoPlayer h3,  #mainMultiVideoPlayer .multiVideoPlayer p {
+	color: #00853f;
+	font-size: 18px;
+	font-weight: 100;
+	display: block;
+}
+#mainMultiVideoPlayer .multiVideoPlayer h4{
+	color: #333333;
+	font-size: 18px;
+	font-weight: 100;
+	display: block;
+	float: left;
+}
+#mainMultiVideoPlayer .multiVideoPlayer p {
+	margin: 0 0 10px 0;
+	font-size: 13px;
+	color: #666666;
+}
+#mainMultiVideoPlayer .multiVideoPlayer * {
+	outline: 0 none;
+}
+#mainMultiVideoPlayer .multiVideoPlayer .icon-small-overview .vertCent span {
+	text-indent: -9999px;
+}
+#mainMultiVideoPlayer .multiVideoPlayer a {
+	color: #8CC63F;
+}
+.noVideo #mainMultiVideoPlayer .multiVideoPlayer .multiVideoLink,
+.initnojs #mainMultiVideoPlayer .multiVideoPlayer .multiVideoLink {
+	display: none;
+}
+#mainMultiVideoPlayer .multiVideoPlayer .vidPlayer {
+	height: 100px;
+	overflow: hidden;
+}
+.noVideo #mainMultiVideoPlayer .multiVideoPlayer .vidPlayer,
+.initnojs #mainMultiVideoPlayer .multiVideoPlayer .vidPlayer {
+	display: none;
+}
+#mainMultiVideoPlayer .multiVideoPlayer #homeVideoPlayer {
+	width: 745px;
+	height: 433px;
+	margin: 0 auto;
+	z-index: 60;
+	background-image: url("../images/videoPlayer/video-player-bg.jpg");
+	background-position: left center;
+	padding-left: 12px;
+	padding-top: 9px;
+	background-repeat: no-repeat;
+	top: 5px;
+	left: -5px;
+}
+#mainMultiVideoPlayer .multiVideoPlayer .videosList {
+	width: auto;
+}
+#mainMultiVideoPlayer .multiVideoPlayer .nanoSlider {
+	background: transparent url("/prismtv/images/videoPlayer/videoScrubber.gif") no-repeat left bottom;
+}
+#mainMultiVideoPlayer .multiVideoPlayer .videosList ul {
+	display: block;
+	height: 100px;
+	background-image: url("/prismtv/images/videoPlayer/tab-bg-gradient.gif");
+	background-repeat: repeat-x;
+	background-position: 0px -20px;
+}
+#mainMultiVideoPlayer .multiVideoPlayer .videosList ul li {
+	display: block;
+	height: 100%;
+	width: 14.2%;
+	float: left;
+	line-height: 1.1;
+	position: relative;
+	z-index: 99;
+}
+#mainMultiVideoPlayer .multiVideoPlayer .videosList ul li a {
+	height: 100px;
+	color: #FFF;
+	display: block;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+
+}
+#mainMultiVideoPlayer .multiVideoPlayer .videosList ul li a * {
+	cursor: pointer;
+}
+#mainMultiVideoPlayer .multiVideoPlayer .videosList .nolist li a img {
+	display: block;
+	margin: 0 auto;
+	-webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+	-ms-transition: all 300ms;
+	-o-transition: all 300ms;
+	transition: all 300ms;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+#mainMultiVideoPlayer .multiVideoPlayer .videosList .nolist li a:hover img {
+	top: -5px;
+}
+#mainMultiVideoPlayer .multiVideoPlayer .videosList .nolist li.selected a img {
+	top: 0;
+	padding-bottom: 20px;
+}
+#mainMultiVideoPlayer .multiVideoPlayer .videosList ul li:last-child {
+	background-image: none !important;
+}
+
+#mainMultiVideoPlayer .multiVideoPlayer .videosList ul li.last{background-image: none;}
+.rightbookend, .leftbookend{ display: none; }
+
+#mainMultiVideoPlayer .multiVideoPlayer .videosList ul li.selected:before li {
+	content: "";
+	background-image: none !important;
+}
+#mainMultiVideoPlayer .multiVideoPlayer .videosList ul li.selected {
+	/*width: 16% !important;*/
+	background-image: none !important;
+	z-index: 100;
+}
+#mainMultiVideoPlayer .multiVideoPlayer .videosList ul li.selected a {
+	width: 110%;
+	left: -5%;
+}
+#mainMultiVideoPlayer .multiVideoPlayer .videosList ul li.first.selected a {
+	left: 0%;
+}
+#mainMultiVideoPlayer .multiVideoPlayer .videosList ul li a .middleLink{
+	display: block;
+    height: 100%;
+    position: relative;
+}
+#mainMultiVideoPlayer .multiVideoPlayer .videosList ul li.selected .rightbookend {
+	background: url("/prismtv/images/videoPlayer/big-tab.png");
+    display: block;
+    height: 100%;
+    width: 22px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#mainMultiVideoPlayer .multiVideoPlayer .videosList ul li.selected .leftbookend { 
+	background: url('/prismtv/images/videoPlayer/big-tab.png') top right;
+    display: block;
+    height: 100%;
+    width: 22px;
+    background-position: 23px 0px;
+    position: absolute;
+    top: 0;
+    right: 0;    
+}
+#mainMultiVideoPlayer .multiVideoPlayer .videosList ul li.first.selected .rightbookend {
+	background: url("/prismtv/images/videoPlayer/tab-straight-edge.png");
+	background-position: -9px 0px;
+}
+#mainMultiVideoPlayer .multiVideoPlayer .videosList ul li.last.selected .leftbookend {
+	background: url("/prismtv/images/videoPlayer/tab-straight-edge-alt.png");
+	background-position: 92% 0px;
+}
+
+#mainMultiVideoPlayer .multiVideoPlayer .videosList ul li.selected .middleLink{
+    margin: 0 22px;
+    display: block;
+    height: 100%;
+    background: url('/prismtv/images/videoPlayer/big-tab.png') top center;
+}
+#mainMultiVideoPlayer .multiVideoPlayer .videosList ul li.selected .static-state-tv{
+	width: 95%;
+	padding-top: 30px;
+}
+li.selected .static-state-tv{ margin-left: -4px; }
+#mainMultiVideoPlayer .multiVideoPlayer .videosList ul li.selected .static-state {
+	width: 73px;
+	padding: 20px 0px 0px 0px;
+	display: block;
+	margin: 0 auto;
+}
+
+.vertCent-txt > * {
+	font-size: 11px;
+	color: #00853F;
+}
+
+
+
+#mainMultiVideoPlayer .multiVideoPlayer .videosList ul li.selected a {
+
+}
+#mainMultiVideoPlayer .multiVideoPlayer .videoInfoList {
+	position: relative;
+	width: 745px;
+	margin: 0 auto;
+	background: #FFF;
+}
+#mainMultiVideoPlayer .multiVideoPlayer .videoInfoList ul {
+	width: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 60px;
+}
+.noVideo #mainMultiVideoPlayer .multiVideoPlayer .videoInfoList ul,
+.initnojs #mainMultiVideoPlayer .multiVideoPlayer .videoInfoList ul {
+	height: auto;
+	display: block;
+}
+#mainMultiVideoPlayer .multiVideoPlayer .videoInfoList ul li {
+	display: none;
+	width: 100% !important;
+	height: 100%;
+}
+.oldIE #mainMultiVideoPlayer .multiVideoPlayer .videoInfoList ul,
+.oldIE #mainMultiVideoPlayer .multiVideoPlayer .videoInfoList ul li {
+	background: #1a1a1a;
+}
+.hasJS #mainMultiVideoPlayer .multiVideoPlayer .videoInfoList ul li {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.noVideo #mainMultiVideoPlayer .multiVideoPlayer .videoInfoList ul li,
+.initnojs #mainMultiVideoPlayer .multiVideoPlayer .videoInfoList ul li {
+	display: block;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+#mainMultiVideoPlayer .multiVideoPlayer .videoInfoList ul .selected {
+	display: block;
+}
+#mainMultiVideoPlayer .multiVideoPlayer .videoInfoList .videoInfo {
+	padding: 30px 0 0;
+	float: left;
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+	clear: both;
+}
+#mainMultiVideoPlayer .multiVideoPlayer .vidInfoBody {
+	overflow: hidden;
+	height: 230px;
+	max-width: 733px;
+	margin-top: 480px;
+	clear: both;
+	padding: 0;
+}
+.noVideo #mainMultiVideoPlayer .multiVideoPlayer .vidInfoBody, .initnojs #mainMultiVideoPlayer .multiVideoPlayer .vidInfoBody {
+	height: auto;
+}
+#mainMultiVideoPlayer .multiVideoPlayer .vidInfoBody h3, #mainMultiVideoPlayer .multiVideoPlayer .vidInfoBody h4, #mainMultiVideoPlayer .multiVideoPlayer .vidInfoBody p {
+	overflow: hidden;
+	width: 100%;
+}
+#mainMultiVideoPlayer .multiVideoPlayer .videoInfoList .vidInfoImg {
+	width: 230px;
+	height: 230px;
+	display: block;
+	position: absolute;
+	left: -230px;
+	top: 0;
+	background-position: center center;
+	padding: 0;
+	margin: 0;
+}
+.ie9 #videoPlayerElement_jwplayer_display_text {
+	display: none !important;
+}
+
+.expanderBtn {
+	clear: both;
+	padding: 20px 0 0 0;
+	display: none;
+}
+.expanderBtn .ghostWhiteBtn {
+	background: transparent url('/prismtv/images/btns/btn-ghostWhite.png') no-repeat left top;
+	width: 273px;
+	height: 38px;
+	display: block;
+	margin: 0 auto;
+	font-weight: bold;
+	font-size: 14px;
+	color: #34b233;
+	text-decoration: none;
+}
+.expanderBtn .ghostWhiteBtn .grnArrow {
+	background: transparent;
+	background-image: url('/prismtv/images/btns/arrow-greenUpDown.png');
+	background-repeat: no-repeat;
+	background-position: 240px top;
+	width: 100%;
+	height: 100%;
+	display: block;
+	text-align: left;
+	text-indent: 25px;
+	line-height: 35px;
+}
+.expanderBtn .ghostWhiteBtn .pointdown {
+	background-position: 240px bottom;
+}
+
+.sliderWrap {
+	clear: both;
+	width: 816px;
+	margin: 25px 0 45px 0;
+}
+.enableSlider {
+	padding: 0 25px;
+	overflow: hidden;
+	margin: 0;
+	background: transparent url('../images/slider-bg-inactive.gif') repeat-x center top;
+}
+.initnojs .enableSlider {
+	background: transparent;
+}
+.sliderWrap .sliderActive {
+	padding: 0;
+	margin: 0 25px;
+	background: transparent url('../images/slider-bg.gif') repeat-x left top;
+}
+.enableSlider .sliding img {
+	vertical-align:middle;
+}
+.enableSlider .sliding {
+	float: left;
+	display: block;
+	width: 190px;
+	text-align: left;
+	height: 109px;
+	line-height: 109px;
+	overflow: hidden;
+	top: 9px;
+}
+.sliderWrap .prev, .sliderWrap .next  {
+	position: absolute;
+	display: block;
+	height: 109px;
+	width: 33px;
+	top: 0px;
+	text-indent: -9999px;
+}
+.sliderWrap .prev {
+	left: 0;
+	background-image: url('../images/btns/slider-prev.gif');
+	background-position: left top;
+}
+.sliderWrap .next {
+	right: 0;
+	background-image: url('../images/btns/slider-next.gif');
+	background-position: right top;
+}
+.sliderWrap a {
+	background-repeat: no-repeat;
+}
+.sliderWrap a.prev:hover {
+	background-position: left bottom;
+}
+.sliderWrap a.next:hover {
+	background-position: right bottom;
+}
+.contFooter .disclaimer {
+	padding: 0;
+}
+.featureOffersHead {
+	padding: 0 0 10px 0;
+	text-align: left;
+}
+.offerFeature {
+	width: 47%;
+	height: 41em;
+}
+.featLeft {
+	float: left;
+}
+.featRight {
+	float: right;
+}
+.backTrackFoot {
+	padding: 20px 0;
+	width: 100%;
+	clear: both;
+	float: left;
+}
+.backTrackFoot .leftLink {
+	float:left;
+}
+.backTrackFoot .rightLink {
+	float:right;
+	text-align: right;
+}
+.addthis_toolbox {
+	float: left;
+}
+.footerPhoneCTA, .hoveringPhoneCTA {
+	font-size: 24px;
+	font-weight: bold;
+	color: #FF6600;
+}
+.footerPhoneCTA {
+	text-align: center;
+	padding: 35px 0 0 0;
+}
+.hoveringPhoneCTA {
+	position: absolute;
+	right: 45px;
+	top: 60px;
+	z-index: 1005;
+	display: none;
+}
+.headCyclePhoneCTA {
+	position: relative;
+	right: 0;
+	top: 0;
+	margin: 0 0 10px 0;
+	z-index: 100;
+	font-size: 18px;
+	line-height: 1.1;
+	font-weight: normal;
+	color: #FFF;
+	display: block;
+}
+.headCyclePhoneCTA .callNumber {
+	color: #FF6600;
+	font-size: 28px;
+	font-weight: bold;
+}
+.callNumber a {
+	color: inherit;
+}
+#tabScrollToView .hoveringPhoneCTA { display: block; }
+
+
+
+/*SECTION SPECIFIC STYLES*/
+#index .hero {
+	height: 360px;
+	background: transparent;
+}
+#index .heroHead {
+	margin: 0;
+	padding: 40px 0 0 0;
+	font-size: 28px;
+	color: #000;
+}
+#index .heroSubHead {
+	margin: 0;
+	padding: 0 0 10px 0;
+	font-size: 24px;
+}
+#index .heroCopy {
+	margin: 0 480px 0 45px;
+	color: #666;
+	font-size: 14px;
+	height: 100%;
+}
+#index .heroCopy .fiberOverlay {
+	text-decoration: underline;
+}
+#index .heroQuote {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 260px;
+	width: 100%;
+	text-indent: -9999px;
+	background: transparent url('../images/wip-HeroImg.jpg') no-repeat right bottom;
+}
+
+
+/* Why Switch Tab */
+#prismWhySwitch .loveVideoThumbBtn {
+	width: 405px;
+	height: 230px;
+	display: block;
+	background: #fff url('/prismtv/images/feature/loveVideoLinkPoster.jpg') no-repeat left top;
+}
+#prismWhySwitch .feature .featCopy {
+	padding-bottom: 40px;
+}
+#prismWhySwitch .loveVideoThumbBtn .bigvidbtn {
+	display: block;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: transparent url('/prismtv/images/videoPreview/bigVidPlayBtn.png') no-repeat left bottom;
+	background: transparent url('/prismtv/images/greenbox-bg.png') no-repeat left bottom;
+}
+#prismWhySwitch .wideFeature {
+	padding: 20px 0 0 0;
+}
+#whySwitchVideoPlayerWrap .videoPlayer {
+	width: 100%;
+	height: 312px;
+	float: left;
+	clear: both;
+}
+#whySwitchVideoPlayerWrap .disclaimer {
+	padding: 0;
+	margin: 0;
+}
+#whySwitchVideoPlayerWrap .videoPlayer .playerBoxWrap {
+	width: 512px;
+	height: 288px;
+	float: left;
+}
+#whySwitchVideoPlayer {
+	width: 512px;
+	height: 288px;
+	display: block;
+}
+#videoShowcaseBox {
+	float: right;
+	width: 290px;
+	background: transparent url('/prismtv/images/greenbox-bg.png') no-repeat left top;
+	height: 288px;	
+}
+#videoShowcaseBox .showcaseWrap {
+	padding: 30px;
+}
+#whySwitchVideoPlayerWrap .videoNav {
+	height: 190px;
+	width: 870px;
+	padding: 0;
+	margin: 0 auto;
+	clear: both;
+	position: relative;
+	top: 0px;
+	left: -22px;
+	background: transparent url('/prismtv/images/videoPlayer/video-thumb-navbar-bg.gif') no-repeat center top;
+}
+#whySwitchVideoPlayerWrap .videoNav ul {
+	width: 826px;
+	position: relative;
+	top: 15px;
+	left: 22px;
+}
+#whySwitchVideoPlayerWrap .videoNav .launchVid {
+	float: left;
+	display: block;
+	background-position: left top;
+	background-repeat: no-repeat;
+	width: 290px;
+	height: 150px;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+#whySwitchVideoPlayerWrap .videoNav .prev, #whySwitchVideoPlayerWrap .videoNav .next {
+	background-color: transparent;
+	background-image: url('/prismtv/images/btns/btns-videoslider.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	position: absolute;
+	left: 0;
+	top: 40px;
+	height: 90px;
+	width: 15px;
+	display: block;
+	text-indent: -9999px;
+}
+#whySwitchVideoPlayerWrap .videoNav .next {
+	background-position: right center;
+	right: 0;
+	left: auto;
+}
+#whySwitchVideoPlayerWrap .videoNav .test1 a { background-image: url('/prismtv/images/prismtvproject/test1-thumb.jpg'); }
+#whySwitchVideoPlayerWrap .videoNav .test2 a { background-image: url('/prismtv/images/prismtvproject/test2-thumb.jpg'); }
+#whySwitchVideoPlayerWrap .videoNav .test3 a { background-image: url('/prismtv/images/prismtvproject/test3-thumb.jpg'); }
+#whySwitchVideoPlayerWrap .videoNav .iloveprism1 a { background-image: url('/prismtv/images/videoPreview/video-tmb-love-whdvr.jpg'); }
+#whySwitchVideoPlayerWrap .videoNav .iloveprism2 a { background-image: url('/prismtv/images/videoPreview/video-tmb-love-service.jpg'); }
+#whySwitchVideoPlayerWrap .videoNav .iloveprism3 a { background-image: url('/prismtv/images/videoPreview/video-tmb-love-features.jpg'); }
+
+#whySwitchVideoPlayerWrap .videoNav li a {
+	background-position: left center;
+	background-repeat: no-repeat;
+	display:block;
+	height: 145px;
+	width: 257px;
+	overflow: hidden;
+}
+#whySwitchVideoPlayerWrap .videoNav li a .playbtn {
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-image: url('/prismtv/images/btns/video-btns-overlay.png');
+	display:block;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+#whySwitchVideoPlayerWrap .videoNav li a:hover .playbtn {
+	background-position: left center;
+}
+#whySwitchVideoPlayerWrap .videoNav .selected a .playbtn,
+#whySwitchVideoPlayerWrap .videoNav .selected a:hover .playbtn {
+	background-position: left bottom;
+}
+
+
+/* Whole Home DVR Tab */
+
+#wholeHomeDVR .noLeadingPadding .featCopy {
+	padding: 20px 0 50px 0;
+}
+#wholeHomeDVR #prism-wholehomedvr-startorder1 {
+	float: right;
+	position: relative;
+	top: 10px;
+	left: -50px;
+}
+#wholeHomeDVR .dvrImgAdj1 .featureImg {
+	left: -51px;
+	top: -31px;
+}
+#wholeHomeDVR .dvrImgAdj2 .featureImg {
+	top: 35px;
+}
+#wholeHomeDVR .dvrImgAdj3 {
+	height: 250px;
+}
+#wholeHomeDVR .dvrImgAdj3 img {
+	left: 7%;
+	bottom: 40px;
+	top: auto;
+}
+#wholeHomeDVR .pageBody h5 {
+	padding: 0;
+}
+#wholeHomeDVR .featCopy {
+	padding: 40px 0 50px 0;
+}
+
+/* Channel Lineup Tab */
+
+#dynamicChannelLineup {
+	display: none;
+	padding: 0;
+	margin: 0;
+	background: #FFF;
+	height: 880px;
+	width: 850px;
+	left: -5px;
+}
+
+#prismChannelLineup #channelLineupSelectionBox {
+	background: url("../images/prismtv-lineup-bgimg.jpg");
+	width: 872px;
+	height: 250px;
+	margin: 0;
+	padding: 0;
+	background-repeat: no-repeat;
+	background-position: 386px 42px;
+	position: relative;
+	z-index: 200;
+	top: 0;
+	left: 0;
+}
+
+#prismChannelLineup .chanLineTitle {
+	background: transparent url('../images/headers/hdr-chnlLineup.gif') no-repeat left top;
+	height: 45px;
+	width: 550px;
+}
+#prismChannelLineup .channelLogos {
+	padding: 20px 0;
+}
+#prismChannelLineup .subContent .softShadowDivider {
+	background: transparent url("/prismtv/images/channelLineup/softShadowDivider.png") no-repeat center bottom;
+	padding-bottom: 50px;
+	margin-bottom: 40px;
+}
+#prismChannelLineup .featureHero {
+	height: 340px;
+}
+#prismChannelLineup #channelInfo {
+	width: 100%;
+}
+#prismChannelLineup #lineupHolder {
+	position: relative;
+	z-index: 200;
+	top: 0;
+	left: 0;
+	padding: 20px 0 0 0;
+	width: 840px;
+	margin: 0 auto;
+}
+#prismChannelLineup #lineupHolder .rightCol {
+	position: absolute;
+	top: -8px;
+	right: -50px;
+	z-index: 1000;
+}
+#prismChannelLineup #lineupHolder .bubbleCta {
+	width: 100%;
+	height: 50px;
+	background-color: #EEE;
+	position: relative;
+}
+#prismChannelLineup #lineupHolder .lineupHeader {
+	position: relative;
+	display: block;
+	padding: 30px 0 10px 60px;
+	font-size: 18px;
+	color: #666;
+}
+#prismChannelLineup #lineupHolder .lineupPrompt {
+	position: relative;
+	display: block;
+	height: 32px;
+	line-height: 32px;
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+	background: transparent;
+	float: left;
+	padding: 0 10px 0 60px;
+}
+#prismChannelLineup #lineupHolder #alternateLineup {
+	position: relative;
+	display: block;
+	height: 38px;
+	overflow: hidden;
+	padding: 0;
+	width: 280px;
+	margin: 40px 0 0 0;
+	background: url("../images/channelLineup/selectBg-green.png") no-repeat left #FFF;
+	float: left;
+	-webkit-box-shadow:  3px 3px 3px rgba(0, 0, 0, .1);
+    box-shadow:  3px 3px 3px rgba(0, 0, 0, .1);
+    border-radius: 5px 5px 5px 5px; 
+	-moz-border-radius: 5px 5px 5px 5px; 
+	-webkit-border-radius: 5px 5px 5px 5px; 
+	z-index: 200;
+}
+
+#prismChannelLineup #alternateLineup #marketNameBox {
+	width: 265px;
+	background: #FFF;
+	border: 1px solid #ccc;
+	display: block;
+	top: 38px;
+	left: 7px;
+	box-shadow: 0 5px 10px #999;
+}
+#prismChannelLineup #alternateLineup .select_replace {
+	background: transparent;
+	font-weight: bold;
+	color: #666666;
+	width: 100%;
+	font-size: 14px;
+	border: 0 none;
+	border-radius: 0;
+	display: block;
+	position: relative;
+	top: 0;
+	left: 0;
+	text-indent: 14px;
+	outline: 0 none;
+	padding: 0;
+	margin: 0;
+	height: 28px;
+	line-height: 28px;
+}
+#prismChannelLineup #alternateLineup label:hover {
+	background-color: #4BA33E;
+	background-image: -webkit-linear-gradient(top, #8CC63F, #00853F);
+	background-image:    -moz-linear-gradient(top, #8CC63F, #00853F);
+	background-image:      -o-linear-gradient(top, #8CC63F, #00853F);
+	background-image:         linear-gradient(to bottom, #8CC63F, #00853F);
+	color: #FFF;
+}
+#prismChannelLineup #alternateLineup .select_blank {
+	display: none;
+}
+#prismChannelLineup #alternateLineup #marketNameBox .selected {
+	color: #666;
+	background: transparent;	
+	height: 38px;
+	line-height: 38px; 
+	border: 0 none;
+	position: absolute;
+	top: -38px;
+	display: block;
+}
+#prismChannelLineup #alternateLineup .select_replace input {
+	visibility: hidden;
+}
+#prismChannelLineup #lineupHolder .bubbleCta h5 {
+	padding: 10px 0;
+	font-weight: bold;
+	line-height: 32px;
+	width: 100%;
+	position: relative;
+	text-indent: 15px;
+	font-size: 14px;
+}
+#prismChannelLineup #lineupHolder .citySelFormCont{
+	position: relative;
+	background: transparent url('../images/bg-channelLineupForm.gif') no-repeat left top;
+	padding: 20px 10px;
+	text-align: center;
+	display: none;
+}
+
+#prismChannelLineup #lineupHolder .citySelFormCont p{
+	font-size: 12px;
+	padding-bottom: 10px;
+}
+#prismChannelLineup .wideFeature {
+	padding: 0;
+}
+#prismChannelLineup .heroFlushLeft {
+	height: 330px;
+    left: -45px;
+    overflow: visible;
+    position: relative;
+    top: 0;
+}
+#prismChannelLineup .overflowHeaderImg {
+	left: -10px;
+    position: relative;
+    top: 0;
+	padding: 0;
+}
+#prismChannelLineup .twoCol .colPad {
+	padding: 0 40px 20px 0;
+}
+.lastChanceFooter {
+	clear: both;
+}
+
+/* PLANS AND PRICES BOX */
+.pageBody  .pnpHeader {
+	padding: 30px 27px 20px 30px;
+}
+#index .pageBody  .pnpHeader {
+	padding: 0 27px 20px 30px;
+}
+.plansAndPricesBox .packageHeader {
+	padding: 20px 0 20px 20px;
+}
+.plansAndPricesBox .packageNav {
+	height: 177px;
+	width: 100%;
+	background: #FFF url('../images/plansAndPrices/packageNav-offBG.gif') repeat-x left top;
+}
+.plansAndPricesBox .packageNav ul {
+	height: 100%;
+	width: 100%;
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+.plansAndPricesBox .packageNav li {
+	height: 100%;
+	width: 305px;
+	display: block;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+.plansAndPricesBox .packageNav li a,
+.plansAndPricesBox .packageNav li strong,
+.plansAndPricesBox .packageNav li small,
+.plansAndPricesBox .packageNav li .navItemWrap {
+	-webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out;
+	-moz-transition: color 0.3s ease-out, background-color 0.3s ease-out;
+	-o-transition: color 0.3s ease-out, background-color 0.3s ease-out;
+	transition: color 0.3s ease-out, background-color 0.3s ease-out;
+}
+.plansAndPricesBox .packageNav li a .deviceBox {
+	-webkit-transition: opacity 0.3s ease-out;
+	-moz-transition: opacity 0.3s ease-out;
+	-o-transition: opacity 0.3s ease-out;
+	transition: opacity 0.3s ease-out;
+}
+.plansAndPricesBox .packageNav li a .bubbleText {
+	color: #FFF;
+	font-weight: bold;
+	position: absolute;
+	top: 51px;
+	left: 161px;
+	width: 100px;
+	text-align: center;
+	font-size: 13px;
+	line-height: 1.2;
+}
+.plansAndPricesBox .packageNav li a .bubbleText .bubblePrice {
+	display: block;
+	position: relative;
+	text-align: center;
+	font-size: 140%;
+}
+.plansAndPricesBox .packageNav li a .bubbleText .bubblePrice .sup {
+	position: relative;
+	top: -0.5em;
+	font-size: 60%;
+}
+.plansAndPricesBox .packageNav li a {
+	position: relative;
+	height: 100%;
+	width: 301px;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	background: transparent url("/prismtv/images/plansAndPrices/packagesNav-tabBG.png") no-repeat right top;
+}
+.plansAndPricesBox .packageNav li a .navItemWrap {
+	height: 100%;
+	margin: 0 1px 0 0;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+}
+.plansAndPricesBox .packageNav li a strong {
+	width: 100%;
+	display: block;
+	text-align: center;
+	font-size: 21px;
+	font-weight: bold;
+	color: #999;
+	padding: 0 0 7px 0;
+	background: transparent url("/prismtv/images/plansAndPrices/packagesNav-btnArrow.png") no-repeat center bottom;
+}
+.plansAndPricesBox .packageNav li a small {
+	margin: 0 20%;
+	display: block;
+	text-align: center;
+	font-size: 12px;
+	line-height: 1.2;
+	color: #999;
+}
+.plansAndPricesBox .packageNav li a .device {
+	height: 125px;
+	width: 260px;
+	margin: 0 auto;
+	display: block;
+	background-image: url("../images/plansAndPrices/packagesDevices.png");
+	background-repeat: no-repeat;
+	background-position: left top;
+	position: relative;
+	top: 15px;
+	left: 0;
+}
+.plansAndPricesBox .packageNav li a .deviceBox {
+	height: 125px;
+	width: 260px;
+	display: block;
+	opacity: 0;
+	background-image: url("../images/plansAndPrices/packagesDevices.png");
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.oldIE .plansAndPricesBox .packageNav li a .deviceBox {
+	display: none;
+}
+
+.plansAndPricesBox .packageNav .tripleBundle a .device { background-position: left top; }
+.plansAndPricesBox .packageNav .doubleBundle a .device { background-position: center top; }
+.plansAndPricesBox .packageNav .addPrism a .device { background-position: right top; }
+
+.plansAndPricesBox .packageNav .tripleBundle a .deviceBox { background-position: left bottom; }
+.plansAndPricesBox .packageNav .doubleBundle a .deviceBox { background-position: center bottom; }
+.plansAndPricesBox .packageNav .addPrism a .deviceBox { background-position: right bottom; }
+
+.plansAndPricesBox .packageNav a:hover .deviceBox { display: block; opacity: 1; }
+
+.selectTripleBundle .plansAndPricesBox .packageNav .tripleBundle a .deviceBox { background-position: left bottom; display: block; opacity: 1; }
+.selectDoubleBundle .plansAndPricesBox .packageNav .doubleBundle a .deviceBox { background-position: center bottom; display: block; opacity: 1; }
+.selectAddPrism .plansAndPricesBox .packageNav .addPrism a .deviceBox { background-position: right bottom; display: block; opacity: 1; }
+
+
+
+.plansAndPricesBox .packageNav li a:hover {
+
+}
+.plansAndPricesBox .packageNav li a:hover .navItemWrap {
+	background: transparent url("/prismtv/images/plansAndPrices/packagesNav-tabBG.png") no-repeat left top;
+}
+.plansAndPricesBox .packageNav li a:hover strong {
+	color: #00853F;
+}
+.plansAndPricesBox .packageNav li a:hover small {
+	color: #000;
+}
+/*
+.selectTripleBundle .plansAndPricesBox .packageNav .tripleBundle a,
+.selectDoubleBundle .plansAndPricesBox .packageNav .doubleBundle a,
+.selectAddPrism .plansAndPricesBox .packageNav .addPrism a {
+	background: transparent url("../images/plansAndPrices/packageNav-edgeBdr.gif") no-repeat right top;
+}
+*/
+.selectTripleBundle .plansAndPricesBox .packageNav .tripleBundle a .navItemWrap,
+.selectDoubleBundle .plansAndPricesBox .packageNav .doubleBundle a .navItemWrap,
+.selectAddPrism .plansAndPricesBox .packageNav .addPrism a .navItemWrap {
+	background: transparent url("/prismtv/images/plansAndPrices/packagesNav-tabBG.png") no-repeat left top;
+}
+.selectTripleBundle .plansAndPricesBox .packageNav .tripleBundle a strong,
+.selectDoubleBundle .plansAndPricesBox .packageNav .doubleBundle a strong,
+.selectAddPrism .plansAndPricesBox .packageNav .addPrism a strong {
+	color: #00853F;
+}
+.selectTripleBundle .plansAndPricesBox .packageNav .tripleBundle a small,
+.selectDoubleBundle .plansAndPricesBox .packageNav .doubleBundle a small,
+.selectAddPrism .plansAndPricesBox .packageNav .addPrism a small {
+	color: #000;
+}
+
+.packagesInfo .packageOptions { 
+	display: block; opacity: 0; position: absolute; top: 0; left: 0;
+	visibility: hidden; height: 0;
+	-webkit-transition: opacity 0.3 ease-out;
+	-moz-transition: opacity 0.3 ease-out;
+	-ms-transition: opacity 0.3 ease-out;
+	-o-transition: opacity 0.3 ease-out;
+	transition: opacity 0.3 ease-out;
+}
+
+.selectTripleBundle .tripleBundleOptions,
+.selectDoubleBundle .doubleBundleOptions,
+.selectAddPrism .addPrismOptions, 
+.initnojs .packageOptions { visibility: visible; opacity: 1; position: relative; height: auto;} 
+
+.packagesInfo {
+	margin: 20px 20px 30px 20px;
+}
+.packagesInfo .optionsRow {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	background: transparent url("../images/plansAndPrices/dividerSlice.gif") repeat-y 57% top;
+}
+.packagesInfo .oddRow {
+	background: #F8F8F8 url("../images/plansAndPrices/dividerSlice.gif") repeat-y 57% top;
+	box-shadow: 0 0 15px #CCC inset;
+}
+.packagesInfo .longRow {
+	background: #F8F8F8;
+	box-shadow: 0 0 15px #CCC inset;
+}
+.packagesInfo .optionsRow h3 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+}
+.packagesInfo .optionsRow h3 small {
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	color: #000;
+}
+.packagesInfo .optionsRow h3 em {
+	font-weight: normal;
+	font-style: normal;
+	color: #000;
+}
+.packagesInfo .packageOptions .largeOrangePhoneCTA  {
+	font-size: 20px;
+	font-weight: bold;
+	color: #FF6600;
+}
+.packagesInfo .packageOptions .largeOrangePhoneCTA .subtle  {
+	color: #999999;
+}
+.packagesInfo .optionsRow .col {
+	height: 100%;
+	float: left;
+	position: relative;
+}
+.packagesInfo .optionsRow .colPad {
+	padding: 15px 0 15px 20px;
+	position: relative;
+}
+.packagesInfo .priceRow .colPad {
+	padding: 15px 0 25px 20px;
+	position: relative;
+}
+.packagesInfo .optionsRow .labelCol {
+	width: 12%;
+}
+.packagesInfo .optionsRow .dealBanner {
+	background: #FFF url("../images/plansAndPrices/dealBanner.gif") repeat-y left top;
+	height: 52px;
+	line-height: 52px;
+	margin: 0 50px 0 20px;
+	padding: 0 0 0 15px;
+}
+.packagesInfo .optionsRow .bestDealCol .dealBanner {
+	background: #FFF url("../images/plansAndPrices/dealBanner.gif") repeat-y right top;
+}
+.packagesInfo .optionsRow .orCallCTA strong {
+	color: #FF6600;
+}
+.packagesInfo .priceRow strong {
+	font-weight: bold;
+}
+.packagesInfo .priceRow em {
+	color: #FF6600;
+	font-style: normal;
+}
+.packagesInfo .priceRow .offerSavingsOf {
+	text-align: center;
+	margin: 0 70px 0 0;
+}
+.packagesInfo .addPrismOptions .priceRow .offerSavingsOf {
+	text-align: center;
+	margin: 65px 70px 0 0;
+}
+.packagesInfo .priceRow .offerSavingsOf strong {
+	display: block;
+	text-align: center;
+	font-size: 16px;
+	line-height: 1.1;
+}
+.packagesInfo .priceRow .prepaidCard {
+	display: block;
+	font-size: 16px;
+	padding: 15px 0;
+}
+.packagesInfo .priceRow .prepaidCard strong {
+	color: #000;
+}
+.packagesInfo .optionsRow .pckgCol {
+	width: 29%;
+}
+.packagesInfo .numChannels {
+	color: #434343;
+}
+.packagesInfo .numChannels .chanLine {
+    line-height: 1;
+	display: block;
+	position: relative;
+	top: -10px;
+	left: 0;
+}
+.packagesInfo .numChannels .boldChan {
+    color: #434343;
+    font-size: 32px;
+    font-weight: bold;
+	position: relative;
+	top: 5px;
+	left: 0;
+}
+.packagesInfo .hsi h4 {
+    text-indent: 0;
+	float: left;
+	padding: 10px 0 10px 10px;
+	margin: 0;
+	width: 120px;
+	font-size: 15px;
+}
+.packagesInfo .phone h4 {
+    text-indent: 0;
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+}
+.packagesInfo .phone h4 strong {
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	display: block;
+	font-weight: normal;
+}
+.packagesInfo .freefeature h4 {
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+	font-weight: normal;
+}
+.packagesInfo .freefeature ul {
+	padding: 0 0 10px 15px;
+	margin: 0;
+	list-style: disc;
+}
+.packagesInfo .freefeature li {
+	padding: 0;
+	margin: 0 0 10px 0;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.1;
+}
+.packagesInfo .freefeature strong {
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	display: block;
+	font-weight: normal;
+}
+.packagesInfo .freefeature em {
+	color: #FF6600;
+	font-style: normal;
+}
+.packagesInfo .freefeature .disclaimer {
+	margin: 0 0 5px 0;
+}
+.packagesInfo .ffOneLine {
+	padding: 10px 0 0 0;
+}
+.packagesInfo .hsi .pnpSprite {
+    text-indent: 0;
+	float: left;
+}
+.packagesInfo .hsi .pnpSprite strong {
+    text-indent: 0;
+	display: block;
+	padding: 35px 0 0 0;
+	color: #00853F;
+	text-align: center;
+	font-weight: bold;
+}
+.packagesInfo .hsi .upgrade {
+	color: #666;
+	margin: 0;
+	padding: 0;
+	clear: both;
+}
+.packagesInfo .dvrIcon {
+	display: block;
+	height: 43px;
+	width: 40px;
+}
+.packagesInfo .ppOnlineOnly {
+	background: transparent url("../images/plansAndPrices/blip-onlineOnly.png") no-repeat top left;
+	height: 42px;
+	width: 60px;
+	display: block;
+	float: left;
+	text-indent: -9999px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.packagesInfo .addPrismOptions .ppOnlineOnly {
+	top: -22px;
+	right: 20px;
+}
+.packagesInfo .longRow .giftCardImg {
+	float: left;
+}
+.packagesInfo .longRow .giftCardImg img {
+	display: block;
+	margin: 0;
+	padding: 0 25px 0 30px;
+}
+.packagesInfo .longRow .giftCardInfo {
+	float: left;
+	width: 56%;
+	padding: 35px 0 10px 0;
+}
+.packagesInfo .longRow .giftCardInfo .giftCardHeader {
+	color: #00853F;
+	margin: 0;
+}
+.packagesInfo .longRow .giftCardInfo .giftCardBody {
+	color: #444;
+	font-size: 16px;
+	line-height: 1.1;
+}
+.packagesInfo .longRow .giftCardInfo .prepaidCardAccent {
+	font-weight: bold;
+}
+.packagesInfo .longRow .giftCardInfo .prepaidCardAccent .premiumCardAmt {
+	font-size: 30px;
+	font-style: normal;
+}
+.packagesInfo .longRow .giftCardCTA {
+	float: right;
+	width: 25%;
+	text-align: right;
+	position: relative;
+	top: 0;
+	left: -30px;
+	padding: 65px 0 10px 0;
+}
+
+.pnpSprite { background-image: url("../images/plansAndPrices/plansAndPrices.png"); background-color: transparent; background-repeat: no-repeat; display: block; text-indent: -9999px; }
+.sprite-2yr { width: 130px; height: 59px; background-position: -128px -60px; }
+.sprite-dvr { width: 68px; height: 28px; background-position: 0 -39px; }
+.sprite-hd { width: 68px; height: 47px; background-position: 0 -68px; }
+.sprite-highspeed { width: 58px; height: 55px; background-position: -69px -56px; }
+.sprite-lowspeed { width: 58px; height: 55px; background-position: -69px 0; }
+.sprite-install { width: 68px; height: 40px; background-position: -259px 0; }
+.sprite-oo2yr { width: 130px; height: 59px; background-position: -128px 0; }
+.sprite-prem { width: 68px; height: 65px; background-position: -259px -41px; }
+.sprite-prepaid { width: 68px; height: 38px; background-position: 0 0; }
+.sprite-30day { width: 190px; height: 34px; background-position: 0px -119px; }
+
+
+.product-icon-laptop {
+    background: url("/assets/images/sprites/template.png") no-repeat scroll -791px -798px transparent;
+    display: block;
+    height: 50px;
+    width: 73px;
+}
+.product-icon-phone {
+    background: url("/assets/images/sprites/template.png") no-repeat scroll -821px -872px transparent;
+    display: block;
+    height: 63px;
+    width: 35px;
+}
+.product-icon-bundle {
+    background: url("/assets/images/sprites/template.png") no-repeat scroll -626px -790px transparent;
+    display: block;
+    height: 61px;
+    width: 108px;
+}
+.product-icon-directtv {
+    background: url("/assets/images/sprites/template.png") no-repeat scroll -678px -880px transparent;
+    display: block;
+    height: 46px;
+    width: 56px;
+}
+.product-icon-prismtv {
+    background: url("/assets/images/sprites/template.png") no-repeat scroll -867px -1019px transparent;
+    display: block;
+    height: 46px;
+    width: 56px;
+}
+
+
+/* PRISM ADVANCED FEATURES TAB */
+#prismAdvancedFeatures .threeCol {
+	height: 23em;
+}
+#prismAdvancedFeatures .twoCol .featureHead {
+	min-height: 120px;
+}
+
+
+/* EXTERNAL TABS & PAGES */
+#external .content {
+	background: #FFF;
+}
+#external .content .pad  {
+	padding: 0;
+}
+
+
+/* FIXES FOR LACK OF JAVSCRIPT, DELAYED AJAX LOADING, OR TABS */
+.initnojs #viewChannelBtnPreID {
+	display: none;
+}
+.initnojs .dbl_social {
+	display: none;
+}
+.socialLink {
+	display: none;
+}
+#BlankPreload {
+	display: none;
+}
+.deeplinkToTab #BlankPreload {
+	display: block;
+	background: #FFF url("images/loading.gif") no-repeat center 40px;
+}
+.noVideo #main .hideIfNoVideo {
+	display: none;
+}
+.tabholder {
+	display: none;
+}
+.ajaxFragment {
+	display: none;
+}
+.tabPreload .subContent {
+	display: block;
+	height: 2000px;
+}
+.ui-tabs-panel {
+	display: block;
+	height: auto;
+}
+.initnojs .hideIfNoJS {
+	display: none;
+}
+.js-proc .validateCity, .initnojs .videoOverlay, .js-proc .videoOverlay, .initnojs .ptvpVideoOverlay, .js-proc .ptvpVideoOverlay {
+	display: none;
+}
+.hideTab {
+	display: none;
+}
+#main .ui-tabs .ui-tabs-hide {
+	display: none;
+}
+.contFooter .ajaxDisclaimer {
+	display: none;
+}
+#index .index, #prismAdvancedFeatures .prismAdvancedFeatures, #prismChannelLineup .prismChannelLineup, #prismCompare .prismCompare, #prismFeaturedOffers .prismFeaturedOffers, #prismWhySwitch .prismWhySwitch, #wholeHomeDVR .wholeHomeDVR { display: block; }
+
+.initnojs #index .prismAdvancedFeatures, .initnojs #index .prismChannelLineup, .initnojs #index .prismCompare, .initnojs #index .prismFeaturedOffers, .initnojs #index .prismWhySwitch, .initnojs #index .wholeHomeDVR { display: none; }
+
+
+.greyBoxSeparator{
+	border-bottom:1px solid #ebebeb;
+	margin-bottom:40px;
+}
+#more_reasons{
+	width:905px;
+	margin: 0 auto;
+}
+#headline{
+	height:56px;
+	width:905px;
+	background-image:url('../images/needEvenMoreReasons.jpg');
+	background-repeat:no-repeat;
+}
+#columns{
+	width:905px;
+	width:905px;
+	background-image:url('../images/moreReasonsBG.gif');
+	background-repeat:no-repeat;
+	float:left;
+}
+#columns p{
+	color:#666666;
+}
+#columns img{
+	border:none;
+	float:left;
+	margin-top:3px;
+	margin-right:15px;
+}
+#columns .title{
+	color:#000000 !important;
+	font-size:140%;
+	margin-bottom:15px;
+	display: block;
+}
+#col_1{
+	width:264px;
+	padding:15px;
+	float:left;
+}
+#col_2{
+	width:285px;
+	padding:15px;
+	float:left;
+}
+#col_3{
+	width:260px;
+	padding:15px;
+	float:left;
+}
+.reverse_indent{text-indent:-9999px;}
+#tallhead{
+	height:402px;
+	width:905px;
+	background-image:url('../images/headers/hdr-whySwitch2.jpg');
+	background-repeat:no-repeat;
+	margin: 0 auto;
+	position:relative;
+}
+.head_description{
+	width:330px;
+	color:#FFFFFF;
+	top: 150px;
+	left: 27px;
+	padding: 0 0 30px 0;
+	border-bottom: 1px solid #363636;
+	text-align:left;
+	position:absolute;
+}
+.head_description .large{
+	font-size:20px;
+	line-height:20px;
+	font-weight:bold;
+	margin-bottom:10px;
+}
+#compareCTA{
+	position:absolute;
+	top:20px;
+	right:20px;
+}
+#compareCTA img {
+	display:inline;
+}
+.seeItYourself {
+	width:400px;
+	clear:left;
+	color:#FFFFFF;
+	line-height:1em;
+	bottom:30px;
+	left: 27px;
+	text-align:left;
+	position:absolute;
+}
+.seeItYourself .vidThumbLink {
+	float: left;
+}
+.seeItYourself .vidThumbLink img {
+	display: inline;
+}
+.seeItYourself p {
+	position:relative;
+	top:10px;
+	padding-bottom:10px;
+	display: block;
+	margin-left: 120px;
+}
+.seeItYourself .largeGreen{
+	font-size:16px;
+}
+.seeItYourself .largeGreen img {
+	display: inline;
+	vertical-align: top;
+}
+#arrowIconPlay {
+	margin-right:10px;
+	margin-left:0px;
+	margin-top:-4px;
+}
+#try30days {
+	position:absolute;
+	right: -1px;
+    top: -1px;
+    z-index: 1000;
+}
+.promoSash {
+	position: absolute;
+	right: 10px;
+	z-index: 100;
+	top: -7px;
+}
+#prismWhySwitch .head_description .fiberOverlay {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+#chatBtn{padding-right:15px;}
+
+/*formatting for changes made to prismFeaturedOffers*/
+#satisfactionGuaranteed {margin:0 auto;width:750px;height:100px; display: none;}
+#satisfactionGuaranteed img{float:left;}
+#satisfactionGuaranteed p{float:left;margin-top:25px;margin-left:22px;color:#616365;font-size:17px;}
+
+/*overlay alt styles*/
+#html5VideoList {
+	margin: 10px 0 0 0;
+	padding: 0;
+}
+
+#html5VideoList.msie6, #html5VideoList.msie7, #html5VideoList.msie8 {
+	display: none;
+	margin: 0;
+}
+
+#html5VideoList li {
+	display: block;
+	float: left;
+	position: relative;
+	width: 138px;
+	height: 130px;
+	margin: 0 10px 0 0;
+	padding: 0;
+}
+
+#html5VideoList li.last {
+	margin: 0;
+}
+
+#html5VideoList li a {
+	display: block;
+	float: left;
+	position: relative;
+	color: #fff;
+	font-size: 11px;
+	padding: 0;
+	margin: 0;
+	background: #000;
+}
+#html5VideoList li a img {
+	display: block;
+}
+#html5VideoList li a:hover {
+	text-decoration: none;
+}
+p.FB_text{
+	color:#666666;
+	padding-bottom:10px;
+}
+.subContent h5.lightGrey{
+	color:#999999;
+	margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.mkt .tnthide,
+.mkt .callNumber,
+.mkt .textPrice,
+.mkt .pricepoint,
+.mkt .numChannels,
+.mkt .sprite-oo2yr,
+.mkt .sprite-2yr,
+.mkt .offerSavingsOf,
+.mkt .headCtaItem,
+.mkt .hsi,
+.mkt .freefeature,
+.mkt .guarantee,
+.mkt .offerbox,
+.mkt .midTriBox,
+.mkt .premiumCardAmt,
+.mkt .prepaidCard { visibility: hidden; }
+
+.bool_wireless_set_top_false .wireless_set_top { display: none; }
+.bool_prism_buisness_false  .forBizcallNumber { display: none; }
+.secondary-header{color: #00853F !important;padding-bottom: 35px !important;}
+.fullWidthShadow{
+	background-image: url('../images/full-width-divider.png');
+	background-repeat: no-repeat;
+	background-position: 0px -26px;
+	margin-left: -45px;
+	width: 872px;
+	padding-left: 45px;
+	padding-top: 30px;
+}
+
+#index #specialOfferSnipe{display:block!important;}
+#prismTVOverviewChallenger{ }
+
+.overviewTopThird { padding:30px 0px 20px 45px; background:url('../images/topThirdTV.jpg') transparent right 140px no-repeat; overflow: hidden; }
+.overviewMidThird { padding:30px 40px 40px 45px; }
+.overviewLowerThird { padding: 0px 0px 0px 480px; margin: 40px 0 0 0; background: url('../images/lowerThirdTV.jpg') transparent bottom left no-repeat; height: 360px; }
+
+.overviewTopThird p, .overviewTopThird ul { margin-right:370px; }
+.overviewTopThird ul li{ list-style: disc; margin-left:30px; }
+#index .challengedivider { display:block; background:url('../images/divider.jpg') transparent 0 center repeat-x; padding:18px 0 0 0; height: 1px; width:100%; border: 0 none #FFF; color: #FFF }
+.overviewMidThird .center { clear: both; }
+.midTriBox { height:224px;float:left;margin-top:30px;text-align:center;margin-bottom:30px;}
+.midTriBox h4{padding-top:115px;}
+.midTriBox ul{text-align:left;padding-left:30px;font-size:12px;list-style:outside;}
+.challfirst{background:url('../images/first.jpg') transparent bottom right no-repeat;margin-right:5px;width:259px;}
+.challsecond{background:url('../images/second.jpg') transparent bottom right no-repeat;margin-right: 18px;padding-left: 20px;width: 284px;}
+.challthird{background:url('../images/third.jpg') transparent bottom right no-repeat;text-align:center;}
+.center{text-align:center;}
+.grey{color:#999999;}
+.overviewLowerThird .price .offerPricePoint .textPrice{font-size:60px;color:#636363;}
+.overviewLowerThird .price .offerPricePoint .disclaimer{width:105px;}
+.price .guarantee {color:#34b233;text-transform:uppercase;clear:left;float:left;}
+.overviewLowerThird .price { background:url('../images/onlineOnly.jpg') transparent 130px 0px no-repeat; height:120px; float: left; clear: both; width: 100%; }
+
+#specialOfferSnipe{width:282px;height:61px;background:url('../images/specialOfferSnipe.png') transparent 0px 0px no-repeat;position:absolute; top:65%; left:-20px;z-index:100;display:none;}
+a.no-undrln:link{text-decoration: none !important;}
+a.no-undrln:hover{border-bottom: 1px solid #00853F;}
+a.no-undrln:visited{text-decoration: none !important;}
+a.no-undrln:active{text-decoration: none !important;}

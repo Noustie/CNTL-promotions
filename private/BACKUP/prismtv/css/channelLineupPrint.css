@@ -1,0 +1,57 @@
+body, #channelLineup {
+	width: 8in;
+	margin: 0;
+	float: none;
+	background: #fff url(none);
+}
+
+#channelLineup input, .filters, .meta {
+	display: none !important;
+}
+#channelLineup table {
+	width: 100% !important;
+}
+#channelLineup table td, #channelLineup table th {
+	text-align: center;
+	width: 20% !important;
+}
+html, body {
+	overflow: auto !important;
+}
+#channelLineup .channel-name {
+	text-align: left !important;
+}
+body, a {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #000 !important;
+	font-size: 10pt !important;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #000;
+}
+h1 { font-size: 250%; }
+h2 { font-size: 175%; }
+h3 { font-size: 135%; }
+h4 { font-size: 100%; font-variant: small-caps; }
+h5 { font-size: 100%; }
+h6 { font-size: 90%; font-style: italic; }
+
+.dataTables_scrollHead, .dataTables_scrollHead div {
+	height: auto !important;
+	width: 100% !important;
+}
+#channelLineup div {
+	height: auto !important;
+}
+.dataTables_scrollBody {
+	height: 10000px !important;
+	overflow: visible !important;
+}
+#channelLineup td, #channelLineup th {
+	padding: 5pt;
+	border-bottom: 1pt solid #CCC;
+}
+#channelLineup .inpackage-false span {
+	display: none;
+}

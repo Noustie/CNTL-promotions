@@ -1,0 +1,614 @@
+a, a:focus {
+	outline: none;
+}
+.tabin {
+	display:none;
+}
+#pureWrapper {
+	width:960px;
+	height:auto;
+	margin: 0 auto;
+	position:relative;
+	text-align: left;
+	font-size: 12px;
+	background-color: #FFF;
+	clear: both;
+}
+#offerWrap {
+	margin-bottom: 0px;
+	height: 225px;
+	overflow: hidden;
+	clear: both;
+}
+#headerCont {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	background: url("/soho/assets/images/promoHdrBundle-bg.gif") repeat-y scroll left top transparent;
+	float: left;
+	clear: both;
+}
+#tabNavCont {
+	width: 100%;
+	height: 33px;
+	margin: 0;
+	position:relative;
+	top:0px;
+	z-index: 1000;
+	background-color: transparent;
+}
+#tabnav {
+	width: auto;
+	padding: 0px;
+	margin: 0px;
+}
+#tabnav li {
+	float: left;
+	list-style:none;
+}
+#tabnav li a {
+	display: block;
+	text-align: center;
+}
+#tabCont {
+	height: auto;
+	background-color: #FFF;
+	margin: 0;
+	padding: 1px 0 0 0;
+	clear: both;
+	position: relative;
+	z-index: 10;
+	border-right: 1px solid #CCC;
+	border-top: 0 none;
+	border-bottom: 0 none;
+	border-left: 1px solid #CCC;
+	background-image: url("/soho/static/Images/GenericLanding/pixelLine.gif");
+	background-repeat: repeat-x;
+	background-position: left top;
+	width: auto;
+	top: -1px;
+}
+#tabCont .tabin {
+	padding: 0 30px;
+}
+#tabCont .tabcorner {
+	position: relative;
+	right: -1px;
+	float: right;
+	z-index: 1000;
+	top: -1px;
+	background-color:#E4E4E4;
+	height:10px;
+	width:10px;
+}
+#tabCont .tabcorner.leftcorner {
+	display: none;
+}
+#tabCont .active {
+	background-color: #FFF;
+	margin: 0;
+	display: block;
+}
+#tabCont .tabContent .tabcopy {
+	height: 39em;
+	width: 100%;
+}
+#offerdetails {
+	position:relative;
+	top:15px;
+	margin: 0;
+	padding: 0;
+	width: 650px;
+	float: left;
+	left: 30px;
+}
+#offerdetails2 {
+	position:relative;
+	margin: 0;
+	padding: 15px 0 0 17px;
+	width: 887px;
+	height: 418px;
+	float: left;
+	left: 17px;
+	background-image: url("../../images/promos/grayBoxBG2.gif");
+	background-repeat: no-repeat;
+}
+.tabcopy h2 {
+	font-size: 20px;
+	color:#FF6319;
+	margin-bottom: 25px;
+}
+.tabcopy h3 {
+	font-size: 14px;
+	color:#00853F;
+	padding: 5px 0;
+}
+ul {
+	margin:0;
+	padding: 0 0 0 15px;
+}
+.tabbottom {
+	clear: both;
+	height: 10px;
+	position: relative;
+	top: -2px;
+	z-index: 1000;
+	width: 100%;
+	background-image: url("/soho/static/Images/GenericLanding/pixelLine.gif");
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	background-color: #FFF;
+}
+.tabbottomGreen {
+	clear: both;
+	height: 10px;
+	position: relative;
+	z-index: 1000;
+	width: 650px;
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	background-color: #00853f;
+}
+#contFtr {
+	background-color: #00853F;
+	color: #FFF;
+	overflow: hidden;
+	float: left;
+	clear: both;
+}
+#contFtr h3 {
+	color: #fff;
+	font-size: 25px;
+	font-weight: bold;
+	padding: 25px 0 15px 35px;
+	margin-bottom: 0;
+}
+#contFtr p {
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 0 0 0 35px;
+}
+.contbottom {
+	clear: both;
+	z-index: 1000;
+	position:relative;
+	height: 10px;
+	display: block;
+	border: 0 none;
+	width: 100%;
+	right:0 !important;
+	right: -1px;
+}
+.cornerBtmRight {
+	display: block;
+	width: 10px;
+	height:10px;
+	float:right;
+	text-align:right;
+	margin:0;
+	padding:0;
+	background-color: #FFF;
+}
+.cornerBtmLeft {
+	display: block;
+	width: 10px;
+	height:10px;
+	float:left;
+	text-align:left;
+	margin:0;
+	padding:0;
+	background-color: #FFF;
+}
+/* Tab CSS -- Modified from greenTabs.css*/
+#content .greenTabs .tabs li {
+	background-image: url("/soho/static/Images/GenericLanding/tabRightGreenTrans.gif");
+	background-repeat: no-repeat;
+	background-position: right 2px;
+	padding: 0 5px 0 0;
+	margin: 0 2px 0 0;
+	display: block;
+}
+#content .greenTabs .tabs a {
+	background-image: url("/soho/static/Images/GenericLanding/tabLeftGreenTrans.gif");
+	background-position: left 2px;
+	color: #FFFFFF;
+	background-repeat: no-repeat;
+	padding: 10px 20px 8px 27px;
+	background-color: transparent;
+}
+#content .greenTabs ul.tabs li.active {
+	margin: 1px 2px 0 0;
+	background-image: url("/soho/static/Images/Discover/bodyTabActiveRight.gif");
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-color: transparent;
+}
+#content .greenTabs ul.tabs li.active a {
+	color: #000;
+	background-image: url("/soho/static/Images/Discover/bodyTabActiveLeft.gif");
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-color: transparent;
+}
+/****  BOTTOM  ****/
+#bottomInfo {
+	overflow: hidden;
+	clear: both;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+#bottomInfo #location {
+	float: left;
+	width: 65%;
+	font-weight: bold;
+}
+#bottomInfo #location h2 {
+	font-size: 20px;
+}
+#logos {
+	float: right;
+	width: 30%;
+}
+.disclaimer {
+	display:block;
+	clear: both;
+}
+#footcontent h2 {
+	padding: 20px 30px 0px;
+	color: #000;
+	font-size: 19px;
+}
+#footcontent .storeList {
+	text-align: left;
+	float: left;
+	list-style: none;
+	margin: 0px;
+	padding: 10px 50px 0px 30px;
+	line-height: 1.8em;
+}
+.rightfootCol {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+.rightfootCol.withOrderBtn {
+	padding: 0 140px 0 40px;
+	border-left: 1px solid #999
+}
+#footcontent .rightfootCol.withOrderBtn h2 {
+	padding: 20px 0 0 0;
+}
+.hideTxt {
+	clear: both;
+	z-index: 1;
+	float: left;
+	position: absolute;
+	top: 0px;
+}
+#pureWrapper #headerCont {
+	height: auto;
+}
+#pureWrapper .contbottom {
+	background-color: #EBEBEB;
+	background-image: url("/soho/static/Images/GenericLanding/offerMainContBG.gif");
+	background-repeat: repeat-x;
+	background-position: left bottom;
+}
+#pureWrapper .messageBG {
+	background-color: #FFF;
+	background-image: url("../../images/promos/offerBG.gif");
+	background-repeat: repeat-x;
+	background-position: left bottom;
+}
+.imgCopyBlock p {
+	line-height: 1.2em !important;
+}
+#offerdetails .imgBlock {
+	margin-top:0 !important;
+}
+#footcontent {
+	position:relative;
+	top: 10px;
+}
+#footcontent .storeList {
+	float:left;
+	left:30px;
+	line-height:1.8em;
+	list-style:none outside none;
+	margin:0;
+	padding:0;
+	position:relative;
+	text-align:left;
+	width:38%;
+}
+#footerBlock {
+	height: 9em;
+}
+.checkList li {
+	background-image: url("/soho/static/Images/GenericLanding/checkbox.gif");
+	background-repeat: no-repeat;
+	background-position: left top;
+	list-style-type: none;
+	display: block;
+	margin: 0px;
+	padding: 0 0 10px 35px;
+}
+.checkList {
+	margin: 0px;
+	padding: 0px;
+}
+.checkList strong {
+	font-size: 14px;
+}
+.imgFloat {
+	display:block;
+	clear:both;
+}
+.imgFloat img {
+	display: block;
+	float:left;
+	padding:20px 30px;
+}
+.imgFloat .copyTop {
+	padding: 30px 0 0 0;
+}
+.fillBgE4 .corner {
+	background-color: #E4E4E4;
+}
+/* CTA */
+#rightRail .cta {
+	width: 221px;
+	height: 455px;
+	font-size: 11px;
+	background: transparent url("../../images/promos/formBG2.gif") no-repeat left top;
+}
+.cta .ctaTop .ctaBody, .cta .ctaFoot {
+	padding: 9px 14px 20px;
+}
+.ctaHdr h3 {
+	color: #0098db;
+	font-size:17px;
+}
+.ctaFoot h3 {
+	font-size:16px;
+}
+sup, sub {
+	font-size: 70%;
+	line-height:0;
+	vertical-align: baseline;
+	position:relative;
+	top: -0.5em;
+}
+sub {
+	top: auto;
+	bottom: -0.25em;
+}
+/****  CSS FOR USERS W/O JAVASCRIPT ****/
+#flashheader {
+	position:relative;
+	line-height:0;
+}
+#flashheader img {
+	position:relative;
+	top:0;
+	left:0;
+	display:block;
+	clear: both;
+}
+.nojs .jsmsg {
+	display:block;
+	padding: 10px;
+	color:#FFF;
+	font-weight: normal;
+	font-size: 12px;
+}
+.nojs #tabCont .tabcorner.leftcorner {
+	display: block;
+	left: -1px;
+	float:left;
+}
+.nojs #tabCont .tabContent .tabcopy {
+	height: auto;
+}
+.nojs #tabNavCont {
+	display: none;
+}
+.nojs #tabCont .tabin {
+	display: block;
+}
+#rightRail {
+	position: absolute;
+	right: 15px;
+	top: 65px;
+}
+#callToSave {
+	color: #333;
+	text-align: right;
+	clear: both;
+	position: relative;
+	top: -20px;
+}
+#callToSave h1 {
+	font-size: 22px;
+	color: #333;
+	padding: 0;
+	font-weight: bold;
+	border-bottom: none;
+}
+* {
+	z-index:1
+}
+#headerCont .promoHdrBundle {
+	height: 547px;
+	background: transparent url("/soho/assets/images/promoHdrBundle.gif") no-repeat top left;
+}
+#headerCont .promoHdrBundle1 {
+	height: 547px;
+	background: transparent url("../../images/promos/promoHdrBundle1.jpg") no-repeat top left;
+}
+#headerCont .promoHdrBundle2 {
+	height: 547px;
+	background: transparent url("../../images/promos/promoHdrBundle2.jpg") no-repeat top left;
+}
+#headerCont .promoHdrBundle3 {
+	height: 547px;
+	background: transparent url("../../images/promos/promoHdrBundle3.jpg") no-repeat top left;
+}
+.ir {
+	display: block !important;
+	text-indent: -9999px !important;
+	position:absolute !important;
+}
+#rightRail .ctaHdr {
+	padding: 15px 10px 10px 10px;
+	text-align: center;
+}
+#rightRail .formHeader {
+	color: #20943e;
+}
+#rightRail .ctaFoot {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 0;
+}
+#rightRail .phoneCta {
+	padding: 15px;
+	color: #000;
+	font-weight: normal;
+	font-size: 14px;
+}
+#rightRail .phoneCta strong {
+	color: #00853F;
+	font-weight: bold;
+	font-size: 18px;
+	display: block;
+	width: 100%;
+}
+.coreConnectInfo {
+	padding: 0 320px 0 40px;
+	line-height: 1.4;
+}
+.coreConnectInfo h2 {
+	font-size: 16px;
+	padding: 0 0 10px 0;
+}
+.coreConnectInfo ul {
+	list-style: none;
+	display: block;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+.coreConnectInfo ul li {
+	padding: 0 31px 20px 45px;
+	margin: 0;
+	position: relative;
+}
+.coreConnectInfo ul li .ccIcon {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.coreConnectInfo ul li strong {
+	font-size: 14px;
+	display: block;
+	color: #00853F;
+}
+.accentText {
+	color: #ff6319;
+}
+.coreConnectInfo .col, .tabcopy .col {
+	width: 50%;
+	position:relative;
+	float: left;
+}
+.tabcopy h3 {
+	font-size: 16px;
+}
+.tabcopy .col {
+	color: #555;
+}
+.tabcopy .col p {
+	margin: 10px 0 10px 0;
+}
+.tabcopy .col ul {
+	padding: 0 20px 20px 15px;
+}
+.tabcopy .col ul li {
+	padding: 0 0 10px;
+}
+.footCta {
+	font-size: 18px;
+	font-weight: normal;
+}
+.footCta strong {
+	font-weight: bold;
+}
+
+.headerBlock {
+    float: left;
+    left: 40px;
+    padding: 30px 0 0;
+    position: relative;
+	width: 660px;
+}
+.special-offers-sub-headline {
+    background: url("/soho/assets/images/special-offers/ctlandcoreconnectlogo.png") no-repeat scroll 0 0 transparent;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    width: 100%;
+}
+.promoHdrBundle .headline {
+	position: relative;
+    margin: 0;
+    padding: 0 0 10px 0;
+	font-weight: normal;
+	width: 100%;
+	font-size: 26px;
+	color: #000;
+	border: 0 none;
+}
+.special-offers-inner-float {
+    float: left;
+}
+.special-offers-image {
+    float: left;
+    top: 0;
+    left: 20px;
+    position: relative;
+    z-index: 100;
+}
+.price-core-connect {
+    background: transparent;
+    float: left;
+	position: relative;
+	left: 40px;
+	top: 0;
+}
+.price-core-connect .img {
+    display: block;
+	position: relative;
+	left: -40px;
+	top: 0;
+}
+.special-offers-call-action {
+    background: url("/soho/assets/images/special-offers/greenbar.png") no-repeat scroll 0 0 transparent;
+    clear: both;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 700;
+    height: 44px;
+    left: -40px;
+    line-height: 44px;
+    position: relative;
+    text-indent: 40px;
+    text-shadow: 1px 1px 4px #000000;
+    top: -13px;
+    width: 662px;
+}

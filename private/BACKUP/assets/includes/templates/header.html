@@ -1,0 +1,93 @@
+<!--Begin Header include - /assets/includes/templates/header.html-->
+<!--note: templates A and B are identical for the header except that A has the quick pay button, B has the phone number and C2C-->
+<!--#if expr="$ctl_url=''"-->
+<!--#include virtual="/assets/includes/templates/variables.html"-->
+<!--#endif-->
+
+<!-- TnT -->
+<div id="GlobalProvisioner" class="mboxDefault"></div>
+<script type="text/javascript">
+mboxCreate('GlobalProvisioner','path='+location.pathname);
+</script>
+<!-- End TnT-->
+<div class="header" id="tpl_header">
+	<div class="global-above-logo-nav" id="tpl_global-nav">
+		<span class="current">
+		<a href="<!--#echo var="ctl_url"--><!--#if expr="$isHomepage == yes"-->#<!--#else-->/home/<!--#endif-->" clicktrack="ctl|corp|residential">Residential</a> |
+    </span>
+		<a clicktrack="ctl|corp|small_business" href="<!--#echo var="ctl_url"-->/small-business/">Small - Medium Business</a> |
+		<a clicktrack="ctl|corp|global_nav|business|large_business" href="<!--#echo var="ctl_url"-->/business/">Large Business</a></br>
+    <a clicktrack="ctl|corp|logo" href="<!--#echo var="ctl_url"-->" class="logo" id="tpl_logo"></a>
+	</div>
+<!--#config errmsg="[Error in Header File global nav conditional]" -->
+<!--#if expr="$isHomepage='yes'"-->
+	<div class="global-nav" id="tpl_global-nav">
+		<a href="<!--#echo var="qcookie_url"-->/mobile/index.vm" id="tpl_global-nav-mobile-link" clicktrack="ctl|corp|hp|global_nav|link|mobile_site">Mobile Site</a> |
+		<a href="<!--#echo var="ctl_url"-->/Pages/AboutUs/" id="tpl_global-nav-about-us-link" clicktrack="ctl|corp|hp|global_nav|link|about">About Us</a> |
+		<a href="http://storelocator.centurylinkapps.com/index.cfm" class="" id="tpl_global-nav-store_locator-link" clicktrack="ctl|corp|hp|global_nav|link|store_locator">Store Locator</a> |
+		<a mporgnav href="http://espanol.centurylink.com/" onClick="return switchLanguage('es');function switchLanguage(lang){MP.SrcUrl=unescape('mp_js_orgin_url');MP.UrlLang='mp_js_current_lang';MP.init();MP.switchLanguage(MP.UrlLang==lang?'en':lang);return false;}" id="tpl_global-nav-espanol-link" clicktrack="ctl|corp|hp|global_nav|link|espanol">Espa&ntilde;ol</a> |
+		<a class="modal-trigger" href="#ZAM" id="tpl_global-nav-email-offers-link" clicktrack="ctl|corp|landing_page|global_nav|link|email_offers">Email Offers</a> |
+		<a href="#MAM" class="modal-trigger" id="tpl_global-nav-contact-us-link" clicktrack="ctl|corp|global_nav|myaccount|sign_in">Sign In</a>
+	</div>
+	<!--#config errmsg="[Error in Header File global nav conditional - myaccount]" -->
+<!--#elif expr="$template='d' || $template='D'"-->
+	<div class="global-nav" id="tpl_global-nav">
+		<a href="<!--#echo var="ctl_url"-->">Home</a> |
+		<a class="modal-trigger" href="#ZAM"  id="tpl_global-nav-customer-support-link" clicktrack="ctl|corp|landing_page|global_nav|link|customer_support">Customer Support</a> |
+		<a mporgnav href="http://espanol.centurylink.com/" onClick="return switchLanguage('es');function switchLanguage(lang){MP.SrcUrl=unescape('mp_js_orgin_url');MP.UrlLang='mp_js_current_lang';MP.init();MP.switchLanguage(MP.UrlLang==lang?'en':lang);return false;}" id="tpl_global-nav-espanol-link" clicktrack="ctl|corp|hp|global_nav|link|espanol">Espa&ntilde;ol</a>
+	</div>
+	<!--#config errmsg="[Error in Header File global nav conditional - ld_oor]" -->
+<!--#elif expr="$ld_oor='true'"-->
+	<div class="global-nav" id="tpl_global-nav">
+		<a href="<!--#echo var="ctl_url"-->">Home</a> |
+		<a href="<!--#echo var="ctl_url"-->/Pages/AboutUs/" id="tpl_global-nav-about-us-link" clicktrack="ctl|corp|landing_page|global_nav|link|about">About Us</a> |
+		<a class="modal-trigger" href="#ZAM" id="tpl_global-nav-email-offers-link" clicktrack="ctl|corp|landing_page|global_nav|link|email_offers">Email Offers</a> |
+		<a class="modal-trigger" href="#ZAM"  id="tpl_global-nav-customer-support-link" clicktrack="ctl|corp|landing_page|global_nav|link|customer_support">Customer Support</a> |
+		<a href="https://residential.qwest.com/account/menu.jsp"  id="tpl_global-nav-myaccount" clicktrack="ctl|corp|landing_page|global_nav|link|manage_my_account">Manage My Account</a>
+	</div>
+	<!--#config errmsg="[Error in Header File global nav conditional - else]" -->
+<!--#elif expr="$template='cox'"-->
+	<div class="global-nav" id="tpl_global-nav">
+		<a href="<!--#echo var="ctl_url"-->">Home</a> |
+		<a href="<!--#echo var="ctl_url"-->/Pages/AboutUs/" id="tpl_global-nav-about-us-link" clicktrack="ctl|corp|landing_page|global_nav|link|about">About Us</a> |
+		<a class="modal-trigger" href="#ZAM" id="tpl_global-nav-email-offers-link" clicktrack="ctl|corp|landing_page|global_nav|link|email_offers">Email Offers</a> |
+		<a class="modal-trigger" href="#ZAM"  id="tpl_global-nav-customer-support-link" clicktrack="ctl|corp|landing_page|global_nav|link|customer_support">Customer Support</a> |
+		<a href="https://residential.qwest.com/account/menu.jsp"  id="tpl_global-nav-myaccount" clicktrack="ctl|corp|landing_page|global_nav|link|manage_my_account">Manage My Account</a>
+	</div>
+<!--#else-->
+	<div class="global-nav" id="tpl_global-nav">
+		<a href="<!--#echo var="ctl_url"-->">Home</a> |
+		<a href="<!--#echo var="ctl_url"-->/Pages/AboutUs/" id="tpl_global-nav-about-us-link" clicktrack="ctl|corp|landing_page|global_nav|link|about">About Us</a> |
+		<a class="modal-trigger" href="#ZAM" id="tpl_global-nav-email-offers-link" clicktrack="ctl|corp|landing_page|global_nav|link|email_offers">Email Offers</a> |
+		<a class="modal-trigger" href="#ZAM" id="tpl_global-nav-customer-support-link" clicktrack="ctl|corp|landing_page|global_nav|link|customer_support">Customer Support</a> |
+		<a href="<!--#echo var="ctlmyacct_url"-->/eam/entryPoint.do" id="tpl_global-nav-myaccount" clicktrack="ctl|corp|landing_page|global_nav|link|manage_my_account">Manage My Account</a>
+	</div>
+<!--#endif-->
+
+<!--#config errmsg="[Error in Header File contact info conditional]" -->
+<!--#if expr="$ld_oor='true'"-->
+	<div class="header-contact" id="tpl_header-contact">
+	<!-- mp_trans_remove_start -->
+		<div class="phone-icon"></div><span id="dynamic-800-number">866-642-0444</span>
+	<!-- mp_trans_remove_end -->
+	</div>
+	<!--#config errmsg="[Error in Header File contact info conditional - elif]" -->
+<!--#elif expr="$template!='a' && $template!='A' && $template!='d' && $template!='D'"-->
+	<div class="header-contact" id="tpl_header-contact">
+	<!-- mp_trans_remove_start -->
+	<table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td><a href="#ZAM" class="modal-trigger pop-up" id="tpl_global-contact-info-call"><div class="phone-icon"></div></a></td>
+      <td><a href="#ZAM" class="modal-trigger pop-up" id="tpl_global-contact-info-call"><span id="dynamic-800-number">Call Us</span></a></td>
+      <td><a href="#ZAM" class="modal-trigger" id="tpl_global-contact-info-chat"><div class="chat-icon"></div></a></td>
+      <td><a href="#ZAM" class="modal-trigger" id="tpl_global-contact-info-chat">Chat</a></td>
+      <td><a href="#ZAM" class="modal-trigger" id="tpl_global-contact-info-email-us"><div class="gheader-emailus-icon"></div></a></td>
+      <td><a href="#ZAM" class="modal-trigger" id="tpl_global-contact-info-email-us">Email us</a></td>
+    </tr>
+  </table>
+	<!-- mp_trans_remove_end -->
+	</div>
+<!--#endif-->
+
+</div>
+<!--End Header include-->

@@ -1,0 +1,143 @@
+<!--#set var="includeHeros" value="true" -->
+<!--#set var="mainWrapID" value="index" -->
+<!--#set var="tabID" value="Prism_TV_Overview" -->
+
+<!--#if expr="${REQUEST_URI}!=/isajaxed=true/" -->
+<!--#set var="isajaxed" value="false" -->
+<!--#else -->
+<!--#set var="isajaxed" value="true" -->
+<!--#endif -->
+
+<!--#if expr="${REQUEST_URI}=/(m=1)/" -->
+  <!--#set var="isMobileDevice" value="1" -->
+  <!--#set var="isMobileOS" value="$1" -->
+<!--#elif expr="${REQUEST_URI}=/(m=0)/" -->
+  <!--#set var="isMobileDevice" value="0" -->
+  <!--#set var="isMobileOS" value="$1" -->
+<!--#elif expr="${HTTP_COOKIES}=/(prismmobile=true)/" -->
+  <!--#set var="isMobileDevice" value="1" -->
+  <!--#set var="isMobileOS" value="$1" -->
+<!--#elif expr="${HTTP_USER_AGENT}=/(iPhone|iPod)/" -->
+  <!--#set var="isMobileDevice" value="1" -->
+  <!--#set var="isMobileOS" value="$1" -->
+<!--#elif expr="${HTTP_USER_AGENT}=/(Android).*(Mobile)/" -->
+  <!--#set var="isMobileDevice" value="1" -->
+  <!--#set var="isMobileOS" value="$1" -->
+<!--#elif expr="${HTTP_USER_AGENT}=/(Symbian|Blackberry|BlackBerry|blackberry|Opera Mini|Opera Mobi|webOS|Fennec|WindowsCE|IEMobile|Googlebot\-Mobile)/" -->
+  <!--#set var="isMobileDevice" value="1" -->
+  <!--#set var="isMobileOS" value="$1" --> 
+<!--#else -->
+  <!--#set var="isMobileDevice" value="0" -->
+  <!--#set var="isMobileOS" value="notmobile" -->  
+<!--#endif -->
+<!--#if expr="$isMobileDevice=1" -->
+    <!--#include virtual="/prismtv/mobile/inc-mobile-header.html" -->
+<!--#else -->
+    <!--#include virtual="/prismtv/inc-prismHeader.html" -->
+<!--#endif -->
+<!--#if expr="$isMobileDevice!=1" -->
+                <div id="tabScrollToView" class="pageCont">
+                    <h3 class="hoveringPhoneCTA phone contact">Call Now! <span class="callNumber mkt_phone_number">1.888.273.5968</span></h3>
+                    <div class="mainPageNav clearfix">
+                        <ul>
+                            <li class="nojs-ui-tabs-selected">
+                                <a id="tnt-tab-index" class="tab" href="index.html" rel="index.html" title="Prism TV Overview" clicktrack="ctl|rsd|shop|iptv|pre_id_learn|what_is" data-isinpage="true">Prism<sup>&trade;</sup> TV Overview</a>
+                            </li>
+                            <li>
+                                <a id="tnt-tab-prismwhyswitch" class="tab" href="./prismWhySwitch.html" rel="prismWhySwitch.html" title="Why Switch" clicktrack="ctl|rsd|shop|iptv|pre_id_learn|why_switch">Why Switch?</a>
+                            </li>
+                            <li>
+                                <a id="tnt-tab-prismadvancedfeatures" class="tab" href="./prismAdvancedFeatures.html" rel="prismAdvancedFeatures.html" title="Advanced Features" clicktrack="ctl|rsd|shop|iptv|pre_id_learn|advanced">Advanced Features</a>
+                            </li>
+                            <li class="hideTab">
+                                <a id="tnt-tab-wholehomedvr" class="tab" href="./wholeHomeDVR.html" rel="wholeHomeDVR.html" title="Whole Home DVR" clicktrack="ctl|rsd|shop|iptv|pre_id_learn|whole_home">Whole Home DVR</a>
+                            </li>
+                            <li>
+                                <a id="tnt-tab-prismChannelLineup" class="tab" href="./prismChannelLineup.html" rel="prismChannelLineup.html" title="Channel Lineup" clicktrack="ctl|rsd|shop|iptv|pre_id_learn|channel_lineup">Channel Lineup</a>
+                            </li>
+                            <li>
+                                <a id="tnt-tab-prismfeaturedoffers" class="tab" href="./prismFeaturedOffers.html" rel="prismFeaturedOffers.html" title="Plans And Prices" clicktrack="ctl|rsd|shop|iptv|pre_id_learn|featured_offers">Plans &amp; Prices</a>
+                            </li>
+                            <li>
+                                <a id="tnt-tab-prismtestdrive" href="./prismTestDrive.html" rel="prismTestDrive.html" title="Virtual Test Drive" clicktrack="ctl|rsd|shop|iptv|pre_id_learn|prism_videos">Virtual Test-Drive</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="BlankPreload" class="pageBody clearfix roundcorners rcHasBdr">
+                        <div class="tabPreload roundcorners">
+                            <div class="subContent padded clearfix">&nbsp;</div>
+                            <span class="roundcorner rcLeft rcTop insideW">&nbsp;</span> <span class="roundcorner rcLeft rcBottom outsideW">&nbsp;</span> <span class="roundcorner rcRight rcTop insideW">&nbsp;</span> <span class="roundcorner rcRight rcBottom outsideW">&nbsp;</span>
+                        </div>
+                    </div>
+                    <div id="<!--#echo var="tabID"-->" class="<!--#echo var="mainWrapID"--> pageBody ajaxFragment tabholder clearfix roundcorners rcHasBdr">
+                        <div>
+                            <div class="overviewTopThird">
+                                <h1>Prism<sup>&trade;</sup> TV puts you in control.</h1>
+                                <h4>Get next-generation TV with innovative features.</h4>
+                                <p>CenturyLink<sup>&reg;</sup> Prism<sup>&trade;</sup> delivers unparalleled entertainment to your neighborhood through a dynamic <a href="./fiberOverlay.html" class="fiberOverlay" clicktrack="ctl|rsd|shop|iptv|pre_id_learn|what_is_tab|fiber_optic">fiber-optic<sup>&dagger;</sup></a> network. Simply put, it&rsquo;s one of the most advanced TV services in the world.</p>
+                                <ul>
+                                    <li>It&rsquo;s not cable or satellite. It&rsquo;s IPTV, an innovative platform, powered by <strong>Microsoft Mediaroom</strong>.</li>
+                                    <li>Enjoy interactive features like &ndash; Whole Home DVR, App Center and Find-It-Fast Navigation<sup>&reg;</sup> - with just a simple touch of your remote.</li>
+                                    <li>Get your local channels, box office hits, award winning series and sporting events, all included.</li>
+                                </ul>
+                                <h4>Experience Prism<sup>&trade;</sup> TV for Yourself. </h4>
+                                <h4><a id="tnt-chllngr-watch-videos" href="#prismTestDrive.html" class="crossPageLink" clicktrack="ctl|rsd|shop|iptv|pre_id_learn|what_is_tab|virtual_test_drive"><strong>Watch the Demo Videos »</strong></a></h4>
+                            </div>
+                            <hr class="challengedivider" />
+                            <div class="overviewMidThird clearfix mkt_triple_bundle">
+                                <h3>Find the Prism<sup>&trade;</sup> TV plan that is right for you.</h3>
+                                <h5>There&rsquo;s a bundle that is perfect for you &ndash; with all the sports,<br />international and premium programming you want.</h5>
+                                <div class="mkt_prism_tv midTriBox challfirst">
+                                    <h4><strong>Prism<sup>&trade;</sup> TV</strong></h4>
+                                    <ul>
+                                        <li><a id="tnt-chllngr-ptv-channels" href="#prismChannelLineup.html" class="crossPageLink" clicktrack="ctl|rsd|shop|iptv|pre_id_learn|what_is_tab|channels|link1|view_lineup"><span class="mkt_num_channels prismNumChannels">130</span>+ channels</a></li>
+                                        <li>Free Whole Home DVR for 3 months</li>
+                                    </ul>
+                                </div>
+                                <div class="mkt_prism_complete midTriBox challsecond">
+                                    <h4><strong>Prism<sup>&trade;</sup> Complete</strong></h4>
+                                    <ul>
+                                        <li><a id="tnt-chllngr-complete-channels" href="#prismChannelLineup.html" class="crossPageLink" clicktrack="ctl|rsd|shop|iptv|pre_id_learn|what_is_tab|channels|link2|view_lineup"><span class="mkt_num_channels completeNumChannels">150</span>+ channels</a></li>
+                                        <li>Free Whole Home DVR for 12 months</li>
+                                        <li>Free HD for life</li>
+                                    </ul>
+                                </div>
+                                <div class="mkt_prism_premium midTriBox challthird">
+                                    <h4><strong>Prism<sup>&trade;</sup> Premium</strong></h4>
+                                    <ul>
+                                        <li><a id="tnt-chllngr-premium-channels" href="#prismChannelLineup.html" class="crossPageLink" clicktrack="ctl|rsd|shop|iptv|pre_id_learn|what_is_tab|channels|link3|view_lineup"><span class="mkt_num_channels premiumNumChannels">180</span>+ channels</a></li>
+                                        <li>Free Whole Home DVR and HD for life</li>
+                                        <li>Premium channels included</li>
+                                    </ul>
+                                </div>
+                                <h4 class="center"><a id="tnt-chllngr-seeplans" href="#prismFeaturedOffers.html" class="crossPageLink" clicktrack="ctl|rsd|shop|iptv|pre_id_learn|what_is_tab|prices_and_plans"><strong>Compare Plans &amp; Prices &raquo;</strong></a></h4>
+                            </div>
+                            <hr class="challengedivider" />
+                            <div class="overviewLowerThird mkt_add_prism_tv">
+                                <h3>With Prism<sup>&trade;</sup> TV, you get<br /> A LOT for a little.</h3>
+                                <h4>Act now to lock in a low monthly price for<br /> two years of BIG entertainment.</h4>
+                                <div class="price mkt_prism_tv" id="challengerSpecialOffer">
+                                    <div class="offerPricePoint">
+                                        <p class="grey">Packages starting at</p>
+                                        <p class="textPrice mkt_pricepoint grey">
+                                            <span class="sup">$</span>
+                                            <span class="dollars mkt_dollars">39</span>
+                                            <span class="sup cents mkt_cents">99</span>
+                                            <span class="disclaimer mkt_text_terms_full">a month for 2 years when you bundle*</span>
+                                        </p>
+                                    </div>
+                                    <p class="guarantee mkt_text_lock_terms">2-Year Price Guarantee</p>
+                                </div>
+                                <a id="prism-overview-challenger-seewhatsavailable" href="#CTAM" class="flexBtn btn modal-trigger" clicktrack="ctl|rsd|shop|iptv|pre_id_learn|what_is_tab|bottom|button|whats_available"><span class="flex">See what&rsquo;s available in your area</span></a>
+                            </div>
+                        </div>                        
+                        <span class="roundcorner rcLeft rcTop outsideB">&nbsp;</span> <span class="roundcorner rcLeft rcBottom outsideB">&nbsp;</span> <span class="roundcorner rcRight rcTop outsideB">&nbsp;</span> <span class="roundcorner rcRight rcBottom outsideB">&nbsp;</span>
+                    </div>
+                </div>
+<!--#endif -->                
+<!--#if expr="$isMobileDevice=1" -->
+<!--#include virtual="/prismtv/mobile/inc-mobile-body.html" -->
+<!--#else -->
+<!--#include virtual="/prismtv/inc-prismFooter.html" -->
+<!--#endif -->
+

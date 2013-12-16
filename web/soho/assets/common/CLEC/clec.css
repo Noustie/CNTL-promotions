@@ -1,0 +1,81 @@
+#content.menuContent {width:690px; margin-right: 10px;}
+.bodyCopy {padding: 0 10px 0 20px;}
+.bodyCopy.vib {width:510px;}
+#menu li p {font-size: 0.9em; margin: 0 6px 0 26px;}
+p {margin: 0 0 1em;}
+
+.disclaimer {font-size: 0.95em; font-style:italic;}
+.targetlink {padding-left: 10px; background: url("../images/Layout/Content/arrowTargetlink.gif") no-repeat left center;}
+#banner {margin-bottom: 20px;}
+
+#bodyMenu {margin: 20px 0; position: relative;}
+#bodyMenu .menuItem {width:300px; height: 106px; padding: 25px 40px 25px 124px; float: left; background-repeat: no-repeat; margin: 0 20px 20px 0;}
+#bodyMenu .last {margin-right: 0;}
+#bodyMenu h2 a {padding-right: 20px; background: url("../images/Layout/Content/arrowLandingMenu.gif") no-repeat right;}
+#traditionalVoice {background-image: url("../images/CLEC/menuVoice.jpg");}
+#dataNetworking {background-image: url("../images/CLEC/menuDataNetworking.jpg");}
+#managedServices {background-image: url("../images/CLEC/menuManagedServices.jpg");}
+#marketsSupport {background-image: url("../images/CLEC/menuMarketsSupport.jpg");}
+
+/* Comparison table */
+.comparison {margin-left: 20px; border: 1px solid #BFBFBF; font-size: 0.9em;}
+.comparison th, .comparison td {border: solid #bfbfbf; border-width: 0 1px; padding: 10px 8px; text-align: left;}
+.comparison thead th {background-color: #007531; color: white; font-size: 1.1em;}
+.comparison .even td, .comparison .even th {background-color: #aed47a;}
+.comparison .checked b {background: url("../images/CLEC/comparisonChecked.gif") no-repeat; display: block; height: 15px;padding-left: 15px; color: #fff;}
+.comparison .even .checked b {background-image: url("../images/CLEC/comparisonCheckedEven.gif"); color: #aed47a;}
+
+.buckets {width: 530px; padding-left: 20px;}
+.bucket {width: 378px; height: 66px; padding: 18px 130px 10px 15px; margin-bottom: 15px; background: url("../images/CLEC/bgBucket.jpg") no-repeat;}
+.bucket h3, .bucket p {margin: 0;}
+.bucket h3 a {padding-right: 20px; background: url("../images/Layout/Content/arrowLandingMenu.gif") no-repeat right;}
+.bucket.voicemail {background-image: url("../images/CLEC/bgVoicemail.jpg");}
+.bucket.longdistance {background-image: url("../images/CLEC/bgLongDistance.jpg");}
+.bucket.audioConferencing {background-image: url("../images/CLEC/bgAudioConferencing.jpg");}
+.bucket.privateLine {background-image: url("../images/CLEC/bgPrivateLine.jpg");}
+.bucket.bundles {background-image: url("../images/CLEC/bgBundles.jpg");}
+.managed .bucket {height:77px;}
+.bucket.security {background-image: url("../images/CLEC/bgSecurity.jpg"); height:94px;}
+.bucket.dataCenter {background-image: url("../images/CLEC/bgDataCenter.jpg");}
+.bucket.network {background-image: url("../images/CLEC/bgNetwork.jpg"); width: 365px; padding-right: 143px;}
+.bucket.cpe {background-image: url("../images/CLEC/bgCPE.jpg"); width: 330px; padding-right: 178px;}
+
+.narrowBucket {width: 188px; height: 126px; padding: 18px 130px 10px 15px; margin: 0 0 15px 10px; background: no-repeat; float: left; display:inline;}
+.narrowBucket h3, .bucket p {margin: 0;}
+.narrowBucket.last {margin-right: 0;}
+.narrowBucket h3 a {padding-right: 20px; background: url("../images/Layout/Content/arrowLandingMenu.gif") no-repeat right;}
+
+.narrowBucket.metro {background-image: url("../images/CLEC/bgMetroEthernet.jpg")}
+.narrowBucket.dedicated {background-image: url("../images/CLEC/bgDedicatedInternet.jpg")}
+
+ul.benefits {margin-left: 0; padding-left: 0;}
+ul.benefits li {margin: 0 0 1em 1.5em;}
+
+ul.plaintext {list-style: none; margin-left:0; padding-left: 0; }
+ul.plaintext li {padding:0; margin: 0 0 1em 0;}
+
+#menu .callout {background: url("../images/CLEC/bgCallout.gif") no-repeat; width: 200px; height: 128px; padding:14px;}
+#menu .network {background-image: url("../images/CLEC/bgCalloutNetwork.gif");}
+#menu .callout p.caseStudy {position: relative;}
+#menu .callout p.caseStudy img {position: absolute; right: 0; bottom: 0;}
+
+#contactCta {color:#8cb61d; font-size: 1.1em; font-weight: bold; margin-top: 2em;}
+#contactCta p {margin:0;}
+#contactCta h3 {font-size: 1.2em; margin:0; color: inherit;}
+#contactCta h4 {font-size: 1.2em; margin:0; color: inherit;}
+
+.contactCallout {margin-top: 30px; font-size: 1.3em; font-weight: bold; color: #e95a18;}
+.contactCallout a {color: #e95a18; text-decoration:underline;}
+.contactCallout .phone {font-size: 1.2em; margin: 0;}
+
+/* Why CenturyLink callout*/
+.whyCTL {float: right; width: 245px; padding-bottom: 30px; margin: 0 -10px 0 30px;  
+	font-size: 0.85em; background: url("../images/CLEC/whyCtlBottom.jpg") no-repeat bottom;}
+.whyCTL .heading {padding: 6px 16px; background: url("../images/CLEC/whyCtlHeading.jpg") no-repeat; height:31px}
+.whyCTL .inner {padding: 12px 16px; background: url("../images/CLEC/whyCtlBg.jpg") repeat-y;}
+.whyCTL .heading h2 {color: #0d3b22; font-size: 1.1em; margin: 0;}
+.whyCTL .heading h3 {color: #fff; font-size: 1.4em; margin: 0;}
+.mainCopy {padding-left: 20px; float: left; width: 405px;}
+
+#cpeLogos {text-align: center;}
+#cpeLogos img {padding-right: 20px;}

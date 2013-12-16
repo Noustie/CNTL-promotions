@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<title>CenturyLink Prism | Get Premium Channels, Access Movies On Demand, and Upgrade to HD Access</title>
+	<link rel="stylesheet" type="text/css" href="css/reset-min.css" />
+	<link rel="stylesheet" type="text/css" href="css/fonts-min.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="css/ie.css" />
+	<link rel="stylesheet" href="./css/colorbox.css" />
+    <script language="JavaScript" type="text/javascript" src="/assets/js/common/jquery.min.js"></script>
+	<script language="JavaScript" type="text/javascript" src="./js/colorbox/jquery.colorbox.js"></script>
+	<script language="JavaScript" type="text/javascript" src="./js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="//www.centurylink.com/assets/js/plugins/jquery.qwest-core.js"></script>
+	<script type="text/javascript" src="//www.centurylink.com/assets/js/plugins/centurycore.shortcuts.js"></script>
+	<script type="text/javascript" src="http://qwest.centurylink.com/global/includes/c2c/residential/mtagconfig.js"></script>
+
+	<script type="text/javascript">
+		//var createBundlesCTCButton = function(name, pid, targetContainer){
+			// Associate button name and skill
+			//if(typeof(lpMTagConfig.dynButton)!="undefined") {
+				//lpMTagConfig.dynButton[lpMTagConfig.dynButton.length] = {"name":name,"pid":pid};
+				lpMTagConfig.dynButton[lpMTagConfig.dynButton.length] = {"name":"chat-centurylink-residential-customer-support-prism-existing","pid":"chat-centurylink-residential-customer-support-prism-existing"};
+			//}
+		//}
+		$(document).ready( function () {
+			//createBundlesCTCButton("chat-centurylink-residential-customer-support-prism-existing", "chat-centurylink-residential-customer-support-prism-existing","#chatBtn");
+			$("#chatBtn a").live("mouseup", function () {
+				qa.trackAction("ctl|rsd|shop|iptv_retention|pre_id_learn|top|link|position3|chat");
+			});
+
+			var firstcycle = false;
+			var secondcycle = false;
+
+			$("#longBox_container a.premium_channels").colorbox({
+				inline:true,
+				scrolling:false,
+				onComplete: function(){
+					if (!firstcycle){
+						$("#cycleMe").cycle({
+							timeout: 0,
+							pager: "#tabNav",
+							pagerAnchorBuilder: paginate
+						});
+						firstcycle = true;
+					}
+					//alert("change css");
+					$("#cboxClose").css({"top":"55px"});
+				},
+				innerWidth: 870, fixed: false,
+				initialWidth: 300, initialHeight: 300, transition: "fade"
+			});
+
+			function paginate (ind, el) {
+				if (ind == 0) return '<a href="#"><li id="tab1">HBO<sup>&reg;</sup></li></a>';
+				else if (ind == 1) return '<a href="#"><li id="tab2">Cinemax<sup>&reg;</sup></li></a>';
+				else if (ind == 2) return '<a href="#"><li id="tab3">SHOWTIME<sup>&reg;</sup></li></a>';
+				else if (ind == 3) return '<a href="#"><li id="tab4">STARZ<sup>&reg;</sup></li></a>';
+				return "";
+			}
+			//add css to push the close box up on these overlays
+
+			$("#longBox_container a.redzone").colorbox({
+				inline:true,
+				scrolling:false,
+				onComplete: function(){
+					//correction to close box position
+					$("#cboxClose").css({"top":"25px"});
+					//do something
+				},
+				innerWidth: 870, fixed: false,
+				initialWidth: 300, initialHeight: 300, transition: "fade"
+			});
+
+			$("#longBox_container a.onDemand").colorbox({
+				inline:true,
+				scrolling:false,
+				onComplete: function(){
+					//correction to close box position
+					$("#cboxClose").css({"top":"25px"});
+				},
+				innerWidth: 870, fixed: false,
+				initialWidth: 300, initialHeight: 300, transition: "fade"
+			});
+
+			$("#longBox_container a.go").colorbox({
+				inline:true,
+				scrolling:false,
+				onComplete: function(){
+					if(!secondcycle){
+						$("#goCycleMe").cycle({
+							timeout: 0,
+							pager: "#goTabNav",
+							pagerAnchorBuilder: goPaginate
+						});
+						secondcycle = true;
+					}
+					//alert("change css");
+					$("#cboxClose").css({"top":"55px"});
+				},
+				innerWidth: 870, fixed: false,
+				initialWidth: 300, initialHeight: 300, transition: "fade"
+			});
+
+			function goPaginate (ind, el) {
+				if (ind == 0) return '<a href="#"><li id="goTab1">HBO GO<sup>&reg;</sup></li></a>';
+				else if (ind == 1) return '<a href="#"><li id="goTab2">MAX GO<sup>&reg;</sup></li></a>';
+				return "";
+			}
+			//add css to push the close box up on these overlays
+
+			//tracking init with qa.initialize()
+			qa.initialize();
+
+		});
+		//createBundlesCTCButton("chat-centurylink-residential-customer-support-prism-existing", "chat-centurylink-residential-customer-support-prism-existing","#chatBtn");
+	</script>
+	<!-- SiteCatalyst code version: H.14.
+	Copyright 1997-2009 Omniture, Inc. More info available at
+	http://www.omniture.com -->
+	<script type="text/javascript">
+		var sAddress = ""; //s.address
+		var pageName = "ctl|rsd|shop|iptv_retention|pre_id_learn"; //s.pageName
+		var pageType = ""; //s.pageType
+		var errorType = ""; //s.prop2
+		var accountEvents = ""; //eVar1
+		var serviceEvents = ""; //eVar2
+		var pCategory = ""; //eVar3
+		var unisysEvent = ""; //eVar4
+		var orderType = ""; //eVar7
+		var zipAvail = ""; //eVar8
+		var phoneAvail = ""; //eVar9
+		var addressAvail = ""; //eVar10
+		var respMsg = ""; //eVar11
+		var availType = ""; //eVar12
+		var sEvents = ""; //s.events
+		var sProducts = ""; //s.products
+		var orderNum = ""; //s.purchaseID
+		var totalOrderPrice = ""; //Doubleclick
+		var eBiz_server = "centurylink.com"; // s.server
+		var eBiz_channel = "rsd"; // s.channel, s.eVar41
+		var eBiz_prop20 = "";
+		var eBiz_prop24 = "rsd|shop";
+		var eBiz_prop25 = "rsd|shop|iptv";
+		var eBiz_prop26 = "rsd|shop|iptv|pre_id_learn";
+		var eBiz_prop38 = "static_page";
+		var eBiz_prop39 = "landing_page";
+		var eBiz_prop52 = "ctl";
+		var eBiz_evar27 = "";
+		var eBiz_evar41 = eBiz_prop52;
+		var eBiz_evar48 = eBiz_prop38;
+		var eBiz_evar49 = eBiz_prop39;
+		var eBiz_evar53 = eBiz_prop24;
+		var eBiz_evar54 = eBiz_prop25;
+		var eBiz_evar55 = eBiz_prop26;
+		var eBiz_evar56 = eBiz_prop52;
+
+
+	</script>
+	<!--/DO NOT REMOVE/-->
+	<!-- End SiteCatalyst code version: H.14. -->
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--[if lt IE 7 ]> <div id="main" class="ie ie6 no-js"> <![endif]-->
+<!--[if IE 7 ]>    <div id="main" class="ie ie7 no-js"> <![endif]-->
+<!--[if IE 8 ]>    <div id="main" class="ie ie8 no-js"> <![endif]-->
+<!--[if IE 9 ]>    <div id="main" class="ie ie9 no-js"> <![endif]-->
+<!--[if gt IE 9]><!--><div id="main" class="no-js"><!--<![endif]-->
+<!-- BEGIN MAIN CONTENT AREA -->
+	<div id="index" class="mainWrap clearfix">
+		<div id="masthead" class="clearfix">
+			<div class="logo"><a href="http://seeprismtv.com" target="_blank" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|top|image|position1|visit"><img src="/assets/images/logoCenturylinkPrism.gif" alt="CenturyLink<sup>&reg;</sup> | Prism&trade;" /></a></div>
+			<div class="mastNav">
+				<p class="links">
+
+					<a href="http://www.seeprismtv.com" target="_blank" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|top|image|position1|visit">SeePrismTV.com</a> &nbsp; | &nbsp;
+					<a href="http://www.centurylink.com" target="_blank" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|top|link|position1|visit">Visit CenturyLink.com</a> &nbsp; | &nbsp; 
+					<a href="https://eam.centurylink.com/eam/login.do" target="_blank" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|top|link|position2|my_account">Manage My Account</a>
+				</p>
+
+				<p class="topPhone">Call 1.855.435.4173</p><!--<p class="chatOnline contact"><a href="https://sncare.centurylink.com/netagent/cimlogin.aspx?questid=03E78ACF-231C-4588-B076-CA693E399261&portid=53BB7F04-97AF-4B41-A9C7-C4BF7A5AC5DB" onclick="javascript:window.open(this.href,'Chat','height=550,width=650,left=100,top=50,resizable=no,scrollbars=yes,toolbar=no,status=no');return false;" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|top|link|position3|chat">Chat Online Now</a></p>-->
+									<div class="chatBtn" id="chatBtn">
+						<div id="chat-centurylink-residential-customer-support-prism-existing"></div>
+					</div>
+			</div>
+		</div>
+		<div id="content_wrapper">
+			<div class="headerImg">
+				<!--<div class="chatBtn" id="chatBtn">
+					<div id="chat-centurylink-residential-customer-support-prism-existing"></div>
+				</div>-->
+			</div>
+			<div id="inner_content_wrapper">
+				<div class="corners outsideW cTop">
+					<span class="corner cLeft">   </span>
+					<span class="corner cRight">   </span>
+				</div>
+				<div class="black-head">
+					<div id="headBlockContainer">
+						<div class="blockLeft">
+							<h1>Welcome to Prism&trade; TV.</h1>
+							<p>Learn about new features and the latest offers,
+	and get answers to common questions. </p>
+						</div>
+						<div class="blockRight">
+							<p>Find Local TV Listings, Access your DVR Scheduler and more.</p>
+							<a href="https://secure.centurylink.net/login.php
+" target="_blank" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|top|button1|sign_in"><img src="images/headerSignInBtn.jpg" class="headerSignInBtn" alt="SIGN IN"/></a>
+						</div>
+					</div>
+				</div>
+				<div id="inner_content">
+					<div class="corners outsideB cTop">
+						<span class="corner cLeft">   </span>
+						<span class="corner cRight">   </span>
+					</div>
+					<!--content between the corners-->
+						<div id="inner_content_main">
+							<div id="lCol_container">
+								<div class="lCol">
+									<div class="corners outsideW cTop">
+										<span class="corner cLeft">   </span>
+										<span class="corner cRight">   </span>
+									</div>
+									<h2>Discover all that Prism&trade; TV has to offer.</h2>
+									<div id="longBox_container">
+<!-- 										NFL RED ZONE DIV START       -->
+
+										<div class="longbox">
+											<div class="corners outsideG cTop">
+												<span class="corner cLeft">   </span>
+												<span class="corner cRight">   </span>
+											</div>
+											<div class="longboxTop">
+												<div class="lt_left">
+													<h3>NFL RedZone</h3>
+													<p class="squash">Every touchdown. Every game. Every Sunday Afternoon. Available in crystal-clear HD.</p>
+												</div>
+												<div class="lt_right">
+													<a class='redzone' href="#redzone" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|middle|button1|learn_more">
+														<img class="learnMoreBtn" src="images/learnMoreBtn.jpg" width="98" height="35"/>
+													</a>
+												</div>
+											</div>
+											<div class="longboxBottom">
+												<img class="icon" src="images/iconRedZone.gif"/>
+												<div class="corners outsideG cBottom">
+													<span class="corner cLeft">   </span>
+													<span class="corner cRight">   </span>
+												</div>
+											</div>
+										</div>
+
+<!-- 										NFL RED ZONE DIV END       -->
+										<div class="longbox">
+											<div class="corners outsideG cTop">
+												<span class="corner cLeft">   </span>
+												<span class="corner cRight">   </span>
+											</div>
+											<div class="longboxTop">
+												<div class="lt_left">
+													<h3>Premium Channels</h3>
+													<p>The best entertainment is just a click away.</p>
+													</div>
+												<div class="lt_right">
+													<a class='premium_channels' href="#premium_channels" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|middle|button2|learn_more">
+														<img class="learnMoreBtn" src="images/learnMoreBtn.jpg" width="98" height="35"/>
+													</a>
+												</div>
+											</div>
+											<div class="longboxBottom">
+												<img class="icon" src="images/iconHBO.gif"/>
+												<img class="icon fix" src="images/century-link-prism-cinemax.png"/>
+												<img class="icon" src="images/iconShowtime.gif"/>
+												<img class="icon" src="images/iconStarz.gif"/>
+												<div class="corners outsideG cBottom">
+													<span class="corner cLeft">   </span>
+													<span class="corner cRight">   </span>
+												</div>
+											</div>
+										</div>
+										<div class="longbox">
+											<div class="corners outsideG cTop">
+												<span class="corner cLeft">   </span>
+												<span class="corner cRight">   </span>
+											</div>
+											<div class="longboxTop">
+												<div class="lt_left">
+													<h3>Prism On Demand</h3>
+													<p class="squash">Watch what you want, when you want &ndash; from the hottest movies to your favorite premium channels and more.</p>
+													</div>
+												<div class="lt_right">
+													<a class='onDemand' href="#onDemand" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|middle|button3|learn_more">
+														<img class="learnMoreBtn" src="images/learnMoreBtn.jpg" width="98" height="35"/>
+													</a>
+												</div>
+											</div>
+											<div class="longboxBottom">
+												<img class="icon" src="images/iconHBO_OD.gif"/>
+												<img class="icon" src="images/iconCinemax_OD.gif"/>
+												<img class="icon" src="images/iconShowtime_OD.gif"/>
+												<img class="icon" src="images/iconStarz_OD.gif"/>
+												<div class="corners outsideG cBottom">
+													<span class="corner cLeft">   </span>
+													<span class="corner cRight">   </span>
+												</div>
+											</div>
+										</div>
+										<div class="longbox">
+											<div class="corners outsideG cTop">
+												<span class="corner cLeft">   </span>
+												<span class="corner cRight">   </span>
+											</div>
+											<div class="longboxTop">
+												<div class="lt_left">
+													<h3>HBO GO<sup>&reg;</sup> &amp; MAX GO<sup>&reg;</sup></h3>
+													<p>Now, the hottest entertainment goes where you go.</p>
+													</div>
+												<div class="lt_right">
+													<a class='go' href="#go" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|middle|button4|learn_more">
+														<img class="learnMoreBtn" src="images/learnMoreBtn.jpg" width="98" height="35"/>
+													</a>
+												</div>
+											</div>
+											<div class="longboxBottom">
+												<img class="icon" src="images/iconHBO_GO.gif"/>
+												<img class="icon" src="images/iconCinemax_GO.gif"/>
+												<div class="corners outsideG cBottom">
+													<span class="corner cLeft">   </span>
+													<span class="corner cRight">   </span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="corners outsideW cBottom">
+										<span class="corner cLeft">   </span>
+										<span class="corner cRight">   </span>
+									</div>
+								</div>
+								<div class="lCol">
+									<div class="corners outsideW cTop">
+										<span class="corner cLeft">   </span>
+										<span class="corner cRight">   </span>
+									</div>
+									<h2>Did You Know?</h2>
+									<div id="didYouKnow">
+										<h3>You can access apps right through your TV.</h3>
+										<p>With Prism&trade; TV, the apps you use most are just a few clicks away. Simply press the 	"Go Interactive" button on your remote. Then enjoy your favorite apps from Facebook, Picassa, Yahoo! Fantasy Sports, The Weather Channel and more.</p>
+
+										<h3>CenturyLink now offers Prism Paquete Latino.</h3>
+										<p>Now you can watch all your favorite shows in Spanish. Get over 20 channels &ndash; like ESPN Deportes, CNN en Español, and Discovery Familia &ndash; for only $8.49 a month.</p>
+
+										<h3>Find answers to all your Prism&trade; TV questions on Channel 411.</h3>
+										<p>Use Channel 411 to access "Highlights and Help" to get the most out of your 		Prism&trade; TV. Once there, you'll find the latest highlights previews as well as a detailed 	Help menu &ndash; it's all just a click away! Even check out weekly previews of the movies available On Demand.</p>
+
+										<h3>Leave your passport at home.</h3>
+										<p>Now you can watch your favorite international shows with Prism. Get channels like Filipino Channel, Filipino On Demand, History Channel International, CCTV4 and more. Call your CenturyLink Customer Consultant now to order your favorite international channels. </p>
+
+										<p>To find out more about any of the items above, or to order, </p>
+										<h3 class="cta">Call 1.855.435.4173</h3>
+									</div>
+									<div class="corners outsideW cBottom">
+										<span class="corner cLeft">   </span>
+										<span class="corner cRight">   </span>
+									</div>
+								</div>
+								<div class="lCol facebook">
+									<div class="fb-like-box" data-href="https://www.facebook.com/CenturyLinkPrismTV" data-width="545" data-height="420" data-show-faces="true" data-stream="true" data-header="true"></div>
+								</div>
+							</div>
+							<div id="rCol_container">
+								<!--<div class="rCol">
+									<div class="corners outsideW cTop">
+										<span class="corner cLeft">   </span>
+										<span class="corner cRight">   </span>
+									</div>-->
+									<img src="images/USN_CenturyLink_290x420.png" style="margin-bottom:20px;" alt="New to the Prism&trade; Premium Package | Watch your favorite olympic and endurance sports all year long. | Universal Sports Network, Where champions are made&trade; | ch. 644 | 1644 in HD">
+									<!--<div class="corners outsideW cBottom">
+										<span class="corner cLeft">   </span>
+										<span class="corner cRight">   </span>
+									</div>
+								</div>-->
+								<div class="rCol">
+									<div class="corners outsideW cTop">
+										<span class="corner cLeft">   </span>
+										<span class="corner cRight">   </span>
+									</div>
+									<h2>Quick Links</h2>
+									<div id="quicklinksBox">
+										<ul>
+											<li><a href="http://www.centurylink.com/help/guidance/prism.php" target="_blank" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|middle|link|position1|support">Prism&trade; TV Support</a></li>
+											<li><a href="https://eam.centurylink.com/eam/login.do" target="_blank" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|middle|link|postition2|bill">Online Bill Pay</a></li>
+											<li><a href="http://www.centurylink.com/help/images/uploads/PrismQuickUserGuide_r6.pdf" target="_blank" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|middle|link|position3|user_guide">Prism User Guides (pdf)</a></li>
+											<li><a href="http://www.centurylink.com/help/guidance/prism.php" target="_blank" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|middle|link|position4|remote_guide">Remote Control User Guides</a></li>
+										</ul>
+									</div>
+									<div class="corners outsideW cBottom">
+										<span class="corner cLeft">   </span>
+										<span class="corner cRight">   </span>
+									</div>
+								</div>
+								<div class="rCol">
+									<div class="corners outsideW cTop">
+										<span class="corner cLeft">   </span>
+										<span class="corner cRight">   </span>
+									</div>
+									<h2>How-To Videos</h2>
+									<div id="videolinks">
+										<ul>
+											<li>
+												<a href="http://www.centurylink.com/help/index.php?assetid=178" target="_blank" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|middle|video1|install_overview"><img class="v_thumb" src="images/v_installation.jpg"/>
+												<p><img class="greenArrow" src="images/rightGreenArrow.jpg"/>Installation Overview</p></a>
+											</li>
+											<li>
+												<a href="http://www.centurylink.com/help/index.php?assetid=171" target="_blank" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|middle|video3|equipment_overview"><img class="v_thumb" src="images/v_equipment.jpg"/>
+												<p><img class="greenArrow" src="images/rightGreenArrow.jpg"/>Prism Equipment Overview</p></a>
+											</li>
+											<li>
+												<a href="http://www.centurylink.com/help/index.php?assetid=173" target="_blank" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|middle|video4|remote_overview"><img class="v_thumb" src="images/v_remote.jpg"/>
+												<p><img class="greenArrow" src="images/rightGreenArrow.jpg"/>Remote Control Overview</p></a>
+											</li>
+											<li>
+												<a href="http://www.centurylink.com/help/index.php?assetid=172" target="_blank" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|middle|video5|program_remote"><img class="v_thumb" src="images/v_programming.jpg"/>
+												<p><img class="greenArrow" src="images/rightGreenArrow.jpg"/>Programming your Remote Control</p></a>
+											</li>
+											<li>
+												<a href="http://www.centurylink.com/help/index.php?assetid=157" target="_blank" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|middle|video6|recording_programs"><img class="v_thumb" src="images/v_recording.jpg"/>
+												<p><img class="greenArrow" src="images/rightGreenArrow.jpg"/>Recording Programs on Your DVR</p></a>
+											</li>
+										</ul>
+									</div>
+									<div class="corners outsideW cBottom">
+										<span class="corner cLeft">   </span>
+										<span class="corner cRight">   </span>
+									</div>
+								</div>
+								<div class="rCol">
+									<div class="corners outsideW cTop">
+										<span class="corner cLeft">   </span>
+										<span class="corner cRight">   </span>
+									</div>
+									<h2>More on Prism&trade; TV</h2>
+									<div id="morelinks">
+										<ul>
+											<li>
+												<a href="http://www.centurylink.net/tv/3/landing" target="_blank" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|middle|image|position1|browse"><p class="hideText" id="moreBrowseBtn">Browse and Watch Latest TV Programming</p></a>
+											</li>
+											<li>
+												<a href="http://www.centurylink.net/tv/3/browse/networks/" target="_blank" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|middle|image|position2|networks"><p class="hideText" id="moreNetworksBtn">Networks</p></a>
+											</li>
+											<li>
+												<a href="http://www.centurylink.net/tv/3/browse/prism/vod" target="_blank" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|middle|image|position3|demand"><p class="hideText" id="moreOnDemandBtn">On Demand</p></a>
+											</li>
+											<li>
+												<a href="http://www.centurylink.net/tv/3/browse/prism/listings" target="_blank" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|middle|image|position4|tv_listings"><p class="hideText" id="moreSignInBtn">Sign In</p></a>
+											</li>
+										</ul>
+									</div>
+									<div class="corners outsideW cBottom">
+										<span class="corner cLeft">   </span>
+										<span class="corner cRight">   </span>
+									</div>
+								</div>
+							</div>
+						</div>
+					<!--content between the corners ends-->
+					<div class="corners outsideB cBottom">
+						<span class="corner cLeft">   </span>
+						<span class="corner cRight">   </span>
+					</div>
+				</div>
+				<!-- END INNER_CONTENT -->
+				<div class="corners outsideW cBottom">
+					<span class="corner cLeft">   </span>
+					<span class="corner cRight">   </span>
+				</div>
+			</div>
+			<!-- END INNER_CONTENT_WRAPPER -->
+		</div>
+		<!-- END CONTENT_WRAPPER -->
+		<p class="disclaimer">*Other fees and conditions may apply. <a href="disclaimer.html" onclick="javascript:window.open(this.href,'Disclaimer','height=400,width=500,left=100,top=50,resizable=no,scrollbars=yes,toolbar=no,status=no');return false;">View details</a>. <br />
+		All marks are property of their respective owners.</p>
+		<div id="footer">
+			<div class="about">
+				<ul class="nav">
+					<li class="first"><a href="http://www.centurylink.com/" target="_blank" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|footer|link|position1|home">Home</a></li>
+					<li><a href="http://www.centurylink.com/Pages/AboutUs/" target="_blank" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|footer|link|position2|about">About Us</a></li>
+					<li><a href="http://www.centurylink.com/Pages/AboutUs/Careers/" target="_blank" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|footer|link|position3|careers">Careers</a></li>
+					<li><a href="http://www.centurylink.com/Pages/AboutUs/InvestorRelations/" target="_blank" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|footer|link|position4|investor">Investor Relations</a></li>
+					<li><a href="http://www.centurylink.com/Pages/AboutUs/PressRoom/" target="_blank" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|footer|link|position5|media">Media</a></li>
+					<li><a href="http://www.centurylink.com/Pages/AboutUs/Legal/" target="_blank" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|footer|link|position6|legal">Legal</a></li>
+					<li><a href="http://www.centurylink.com/static/Pages/PrivacyPolicy/privacyPolicy.html" target="_blank" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|footer|link|position7|privacy">Privacy</a></li>
+					<li><a href="http://www.centurylink.com/sitemap.html" target="_blank" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|footer|link|position8|site_map">Site Map</a></li>
+				</ul>
+				<p class="copyright">&copy; 2013 CenturyLink, Inc. All Rights Reserved. The name CenturyLink and the pathways logo are trademarks of CenturyLink, Inc.</p>
+			</div>
+			<div class="support">
+				<p style="color:#999999;">Call us at: 1.855.435.4173</p>
+				<ul class="nav">
+					<li class="first"><a href="http://storelocator.centurylinkapps.com" target="_blank" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|footer|link|position10|store">Find a Store</a></li>
+					<li class="last"><a href="http://www.centurylink.com/Pages/Support/ContactUs/" target="_blank" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|footer|link|position11|contact_us">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- END WRAPPER -->
+</div>
+
+<!-- This contains the hidden content for inline calls -->
+<div style='display:none'>
+	<div id='redzone' style='padding:10px; background:#fff;'>
+		<!--this makes the content box-->
+		<div class="topRounded"></div>
+		<!--this makes the content box-->
+		<div class="dontCycleMe r-zone">
+			<div class="child redzone">
+				<div class="childWrap">
+					<img src="images/nfl-redzone-logo.png" alt="" class="red-zone-logo" />
+					<h2>All the fun, all the games.</h2>
+					<h3>Catch every touchdown from every game<br/>Sunday afternoons.</h3>
+					<p class="blurb nfl-paragraph-width">NFL RedZone with Prism&trade; TV is your ticket to get in the game this season. Watch all the touchdowns and major plays from every game all season long. NFL RedZone puts you there by bringing all of the key moments to you when you want them. With NFL RedZone, you&rsquo;ll also get up-to-the-minute fantasy football stats, extended highlights, and more.</p>
+					<div class="price redzone">$54.99 (a one time charge) for the 2013 - 2014 season. Available with any PRISM<sup>&trade;</sup> TV package. Go to channel 9200 to order. Then watch on channel 629 or 1629 in HD!</div>
+				</div>
+			</div>
+		</div>
+		<!--this makes the content box-->
+		<div class="bottomRounded"></div>
+		<!--this makes the content box-->
+	</div>
+	<div id="premium_channels" style="padding:10px; background:#fff;">
+		<ul id="tabNav"></ul>
+		<!--this makes the content box-->
+		<div class="topRounded"></div>
+		<!--this makes the content box-->
+		<div id="cycleMe">
+			<div class="child hbo">
+				<div class="childWrap">
+					<h2>Enjoy HBO<sup>&reg;</sup>. Anytime. Anywhere.</h2>
+					<h3>Plus, with HBO On Demand<sup>&reg;</sup> and HBO GO<sup>&reg;</sup> you have access to 11 HBO<sup>&reg;</sup> channels.</h3>
+					<div class="price sixteen99-tfn">Add for just $16.99 a month* Call 1.855.435.4173 to order.</div>
+					<p class="blurb">HBO<sup>&reg;</sup> gives you hit original series, the biggest Hollywood hit movies, comedy specials, award-winning documentaries, sports and much more. Plus, you have the ability to enjoy HBO<sup>&reg;</sup> whenever and wherever you want with HBO On Demand<sup>&reg;</sup> and HBO GO<sup>&reg;</sup> &ndash; both of which are included when you add HBO<sup>&reg;</sup> to your Prism&trade; TV service. So go ahead, make your own schedule. Catch up on the hottest new releases like <em>Family Tree</em>, <em>The Dark Knight Rises</em> and <em>Trouble With The Curve</em> whenever it's convenient. And be sure to make time for the new season of the critically acclaimed series <em>True Blood</em><sup>&reg;</sup>.</p>
+					<p class="disclaimer floatingDisclaimer">
+						HBO<sup>&reg;</sup>, Cinemax<sup>&reg;</sup> and related channels and service marks are the property of Home Box Office, Inc.
+					</p>
+				</div>
+			</div>
+			<div class="child cinemax">
+				<div class="childWrap">
+					<h2>Take your entertainment to the MAX.</h2>
+					<h3>Enjoy all 5 Cinemax<sup>&reg;</sup> channels and Cinemax On Demand<sup>&reg;</sup>.</h3>
+					<div class="price fifteen49-tfn">Add for just $15.49 a month* Call 1.855.435.4173 to order.</div>
+					<p class="blurb">With Cinemax<sup>&reg;</sup> you get the best Hollywood hits, action-packed original series, and behind-the-scenes exclusives &ndash; all in True HD*. From exclusive premieres on the flagship station to first-rate programming on 4 additional genre-focused multiplex channels, Cinemax<sup>&reg;</sup> delivers the entertainment you deserve. And that includes movies like <em>The Campaign</em>, <em>Killer Joe</em> and <em>The Best Exotic Marigold Hotel</em>.</p>
+					<p class="blurb" style="font-size:11px;padding-top:70px;">*Subscription to HD service required to view HD movies. HD availability varies by area.</p>
+					<p class="disclaimer floatingDisclaimer">
+						HBO<sup>&reg;</sup>, Cinemax<sup>&reg;</sup> and related channels and service marks are the property of Home Box Office, Inc.
+					</p>
+
+				</div>
+			</div>
+			<div class="child showtime">
+				<div class="childWrap">
+					<h2>There's no time like SHOWTIME<sup>&reg;</sup>!</h2>
+					<h3>Get up to 13 SHOWTIME<sup>&reg;</sup> channels and SHOWTIME<br>
+						ON DEMAND<sup>&reg;</sup>, plus THE MOVIE CHANNEL&trade; and <br>
+						FLIX ON DEMAND<sup>&reg;</sup>.</h3>
+					<div class="price fifteen49-tfn-alt">Add for just $15.49 a month* Call 1.855.435.4173 to order.</div>
+					<p class="blurb">SHOWTIME<sup>&reg;</sup> is the complete premium entertainment package, offering the hottest original series, sports and movies. Order now and catch critically acclaimed series like <em>Dexter</em><sup>&reg;</sup> and <em>Homeland</em>, as well as the new original series <em>Ray Donovan</em>, starring Liev Schreiber and Jon Voight. For hard-hitting action, SHOWTIME<sup>&reg;</sup> gives you a wide variety of sports programming &ndash; from <em>Championship Boxing</em> and <em>60 Minutes Sports</em><sup>&trade;</sup> to <em>Jim Rome on Showtime</em>. Plus, SHOWTIME<sup>&reg;</sup> delivers hits like <em>Lawless</em> and <em>War Horse</em>.</p>
+					<p class="disclaimer floatingDisclaimer">
+						Dexter<sup>&reg;</sup>: &copy;Showtime Networks Inc. All Rights Reserved. SHOWTIME, THE MOVIE CHANNEL, FLIX and related marks are trademarks of Showtime Networks Inc., a CBS Company.
+					</p>
+				</div>
+			</div>
+			<div class="child starz">
+				<div class="childWrap">
+					<h2>STARZ<sup>&reg;</sup> delivers Hollywood&rsquo;s biggest movies and brightest stars.</h2>
+					<h3>Get all 13 STARZ<sup>&reg;</sup> and ENCORE<sup>&reg;</sup> channels,<br>plus STARZ and ENCORE On Demand.</h3>
+					<div class="price fifteen49-tfn-alt">Add for just $15.49 a month* Call 1.855.435.4173 to order.</div>
+					<p class="blurb">Gather the family together for entertainment overdrive. With STARZ, you can enjoy the hottest original series and over 1,000 different movies a month, like <em>Total Recall</em> and <em>Premium Rush</em>. Plus, thanks to the convenience of STARZ and ENCORE On Demand, you can get instant access to non-stop entertainment, including movies the whole family will love, like <em>Hotel Transylvania</em>, and original series like <em>Magic City</em> that parents can enjoy together.</p>
+					<p style="font-size:80%;color:#999999;padding-top:30px;">On Demand services available at no additional charge with your STARZ/ENCORE subscriptions.</p>
+					<p class="disclaimer floatingDisclaimer">
+						STARZ and related channels and service marks are the property of Starz Entertainment, LLC. Visit starz.com for airdates/times. Magic City: &copy; 2013 Starz Entertainment, LLC. All Rights Reserved
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--this makes the content box-->
+		<div class="bottomRounded"></div>
+		<!--this makes the content box-->
+	</div>
+	<div id="onDemand" style="padding:10px; background:#fff;">
+		<!--this makes the content box-->
+		<div class="topRounded"></div>
+		<!--this makes the content box-->
+		<div class="dontCycleMe">
+			<div class="child onDemand">
+				<div class="childWrap">
+					<h2 style="width:540px;padding-bottom:10px;">Prism On Demand is everything you love about the movies – and nothing you don’t.</h2>
+					<h3>No long lines. No high-priced tickets.<br />No tall people sitting in front of you.</h3>
+					<p class="blurb">Watch what you want, when you want, with hundreds of hours of Prism On Demand programming. Access new DVD releases, FREE movie previews, karaoke, kids&rsquo; programming and more. Check out hot new releases like <em>Cloud Atlas</em>, <em>Django Unchained</em> and <em>Safe Haven</em>.</p>
+					<div class="price onDemand">New releases start at just $4.99 each | Additional titles are as low as $2.99 each</div>
+					<h3 style="font-size:14px;"><strong style="color:#ff6319;font-size:18px">Start watching movies now.</strong><br>
+					Follow these 3 easy steps to order movies On Demand.</h3>
+					<p class="blurb" style="color:#666666;">1. Press "On Demand" on your remote.<br>
+					2. Select "Movies" or "HD Movies" and begin browsing titles.<br>
+					3. Pick a program and start it ANYTIME.</p>
+					<p class="blurb" style="font-size:12px;color:#999999;">For additional movie listings, descriptions and trailers, visit <a id="dotNetLink" href="http://www.centurylink.net" target="_blank">centurylink.net</a>. For full lineups, view right from your On Demand guide.</p>
+				</div>
+			</div>
+		</div>
+		<!--this makes the content box-->
+		<div class="bottomRounded"></div>
+		<!--this makes the content box-->
+	</div>
+	<div id="go" style="padding:10px; background:#fff;">
+		<ul id="goTabNav"></ul>
+		<!--this makes the content box-->
+		<div class="topRounded"></div>
+		<!--this makes the content box-->
+		<div id="goCycleMe">
+			<div class="child hbo-go">
+				<div class="childWrap">
+					<h2>HBO GO<sup>&reg;</sup></h2>
+					<p class="blurb blurb-trim">Did you know that HBO GO<sup>&reg;</sup> is included in your subscription to HBO<sup>&reg;</sup>? That means you can access groundbreaking original series like <em>True Blood</em><sup>&reg;</sup>, <em>Game of Thrones</em><sup>&reg;</sup> and <em>Girls</em><sup>&reg;</sup> &ndash; PLUS movies, sports and more from your favorite devices. So whether you're watching from your laptop, mobile phone, gaming console or smart TV, sit back, relax and enjoy great entertainment on your terms.</p>
+					<p class="orange-cta" style="height:150px; margin: 0;">Call <strong>1.855.435.4173</strong> to order.</p>
+					<p class="blurb" style="font-size:11px; width: 80%;color:#999999;">Separate channel package subscription charges will apply if not included in TV package selected. All other marks are property of their respective owners.</p>
+					<p class="disclaimer floatingDisclaimer">
+						HBO GO<sup>&reg;</sup> is only accessible in the U.S. and certain U.S. territories. Some restrictions may apply. &copy;2013 Home Box Office, Inc. All Rights Reserved. HBO<sup>&reg;</sup> and related channels and service marks are the property of Home Box Office, Inc.
+					</p>
+				</div>
+			</div>
+			<div class="child max-go">
+				<div class="childWrap">
+					<h2>MAX GO<sup>&reg;</sup></h2>
+					<p class="blurb blurb-trim">One great benefit of subscribing to Cinemax<sup>&reg;</sup>: free access to MAX GO<sup>&reg;</sup>, which allows you to access all Cinemax programming wherever you are, on any device &ndash; laptop, tablet, smartphone, gaming console or smart TV. That includes recent Hollywood hits like <em>Rock of Ages</em>, <em>The Best Exotic Marigold Hotel</em> and <em>Snow White and the Huntsman</em> as well as original series like <em>Banshee</em><sup>SM</sup> and <em>Strike Back<sup>&reg;</sup></em>. Get ready to enjoy the best of Cinemax &ndash; on the go.</p>
+					<p class="orange-cta" style="height:130px; margin: 0;">Call <strong>1.855.435.4173</strong> to order.</p>
+					<p class="blurb" style="font-size:11px; width: 80%;color:#999999;">Separate channel package subscription charges will apply if not included in TV package selected. All other marks are property of their respective owners.</p>
+					<p class="disclaimer floatingDisclaimer">
+						MAX GO<sup>&reg;</sup> is only accessible in the U.S. and certain U.S. territories. Some restrictions may apply. &copy;2013 Home Box Office, Inc. All Rights Reserved. Cinemax<sup>&reg;</sup> and related channels and service marks are the property of Home Box Office, Inc.
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--this makes the content box-->
+		<div class="bottomRounded"></div>
+		<!--this makes the content box-->
+	</div>
+
+</div>
+
+<!-- ***************  METRIX RESOURCE SCRIPT CODE BEGIN  ******************** -->
+<div id="GlobalMetrixRouter" class="mboxDefault"><!--DefaultContent--></div>
+<script type="text/javascript">
+	var GMXR=GMXR;if(GMXR=="activate")mboxCreate("GlobalMetrixRouter","URL="+document.location);
+</script>
+<script type="text/javascript" src="/static/Common/Includes/Lib/Metrix/CTL/metrixConfig.js"></script>
+
+<noscript>
+<img src="http://centelcom.112.2O7.net/b/ss/centelcom/1/H.14--NS/0" height="1" width="1" border="0"/>
+</noscript>
+<!-- ***************  METRIX RESOURCE SCRIPT CODE END  ******************** -->
+
+<!-- Ignition Tracking code -->
+<script type="text/javascript">
+(function() {
+  var h = 'com-centurylink.netmng.com';
+  var a = '1279';
+  var t = document.createElement('script');
+  t.type = 'text/javascript'; t.async = true;
+  var p = 'https:'==document.location.protocol?'https://':'http://';
+  var m = document.referrer.match(/https?:\/\/([a-z]+\.[a-z\.]+)/i);
+  var r = (m && m[1] != document.location.hostname) ? ('&ref=' + escape(document.referrer)) : '';
+  t.src = p + h + '/?async=1&aid=' + a + r;
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(t, s);
+})();
+</script>
+</body>
+
+</html>

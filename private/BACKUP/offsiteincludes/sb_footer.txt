@@ -1,0 +1,800 @@
+<style>
+#ol_smb_footer_feedback_wrapper {
+     float: right;
+    position: relative;
+    top: -73px;
+}
+</style>
+<div class="smbFooter" style="margin:20px auto;" >
+	<div class="footerWrap" >
+					<style>
+			.lastElementInSection{
+				margin-bottom:15px!important;
+			}
+			</style>
+			<div class="column col-products">
+				<h4><a href="//www.centurylink.com/small-business/products/">Products</a></h4>
+				<ul class="subColumns">
+					<div class="column col1">
+						<section>
+							<h5><a href="//www.centurylink.com/small-business/products/business-phone">Business Phone</a></h5>
+							<a href="//www.centurylink.com/small-business/products/business-phone/voip">VoIP</a>
+							<a href="#CTAM" class="lastElementInSection modal-trigger" id="sb_local_ld_foot_profiled">Local and Long Distance</a>
+						</section>
+						<section>
+							<h5><a href="//www.centurylink.com/small-business/products/business-internet-data">Internet and Data</a></h5>
+							<a href="#CTAM" class="modal-trigger" id="sb_hsi_foot_profiled">Business Class High Speed Internet</a>
+							<a href="//www.centurylink.com/small-business/products/business-internet-data/data-networking">Data Networking Services</a>
+							<a href="//www.centurylink.com/small-business/products/business-internet-data/security" class="lastElementInSection">Security</a>
+						</section>
+						<section>
+							<h5><a href="//www.centurylink.com/small-business/products/hosting-services">Hosting Services</a></h5>
+							<a href="//www.centurylink.com/small-business/products/hosting-services/data-center">Colocation</a>
+							<a href="//www.centurylink.com/small-business/products/hosting-services/managed-hosting">Managed Hosting</a>
+							<a href="//www.centurylink.com/small-business/products/hosting-services/hosted-contact-center" class="lastElementInSection">Hosted Contact Center</a>
+						</section>
+					</div>
+					<div class="column col2">
+						<section>
+						    <h5><a class=" modal-trigger" href="#CTAM" id="sb_wireless">Wireless</a></h5>
+							<a class=" modal-trigger" href="#CTAM" id="sb_wireless_mobile">Mobile Phone Plans</a>
+							<a class="lastElementInSection link modal-trigger" href="#CTAM" id="sb_wireless_broadband">Broadband</a>							
+						</section>
+						<section>
+							<h5><a href="//www.centurylink.com/small-business/products/bundles">Bundles</a></h5>							
+							<a href="#CTAM" class="modal-trigger" id="sb_bp_internet_foot">Business Phone and Internet</a>							
+							<a href="//www.centurylink.com/small-business/products/bundles" class="lastElementInSection">Enterprise Voice and Data</a>
+						</section>					
+						
+						<section>
+							<h5><a href="//www.centurylink.com/small-business/products/business-communications-equipment">Business Communications Equipment</a></h5>
+							<a href="//www.centurylink.com/small-business/products/business-communications-equipment/phone-equipment/">Business Phone Equipment</a>
+							<a href="//www.centurylink.com/small-business/products/business-communications-equipment/data">Data Equipment</a>
+							<a href="//www.centurylink.com/small-business/products/business-communications-equipment/financing">Financing</a>
+							<a href="//www.centurylink.com/small-business/products/business-communications-equipment/professional-services" class="lastElementInSection">Professional Services</a>
+						</section>
+						
+					</div>
+						<div class="column col3">
+						<section>
+							<h5><a href="//www.centurylink.com/small-business/products/enhanced-business-services">Enhanced Services</a></h5>
+							<!-- <a class="modal-trigger" href="#CTAM" id="sb_comm_tools_footer">Communication Tools</a> -->
+							<a href="//www.centurylink.com/small-business/products/enhanced-business-services/data-protection">Data Protection</a>
+							<a href="//www.centurylink.com/small-business/products/enhanced-business-services/network-protection" class="lastElementInSection">Network Protection</a>
+						</section>
+						<section>
+							<h5><a class="link modal-trigger" href="#CTAM" id="sb_business_tv">Business TV</a></h5>	
+							<a class="link modal-trigger" href="#CTAM" id="sb_tv_restaurants">TV for Restaurants</a>
+							<a class="link modal-trigger" href="#CTAM" id="sb_tv_bus">TV for Business</a>
+							<a class="lastElementInSection link modal-trigger" href="#CTAM" id="sb_tv_private_office">TV for Private Office</a>							
+						</section>
+						<section>
+							<h5><a href="//www.centurylink.com/small-business/products/managed-services">Managed Services</a></h5>
+							<a href="//www.centurylink.com/small-business/products/managed-services">Managed Network</a>
+							<a href="//www.centurylink.com/small-business/products/managed-services">Managed Security</a>
+							<a href="//www.centurylink.com/small-business/products/managed-services" class="lastElementInSection">Managed IP Telephony</a>
+						</section>
+						
+					</div>
+				</ul>
+			</div>	
+		
+			<div class="column col-resource">
+				<h4><a href="http://smb-resources.centurylink.com/">Resource Center</a></h4>
+				<ul class="topLevelLinks">
+					<li><a href="http://smb-resources.centurylink.com/market-your-business/">Market Your Business</a></li>
+
+					<li><a href="http://smb-resources.centurylink.com/technology-for-business/">Improve Business Operations</a></li>
+
+					<li><a href="http://smb-resources.centurylink.com/protect-your-business/">Protect Your Business</a></li>
+
+					<li><a href="http://smb-resources.centurylink.com/take-your-business-mobile/">Take Your Business Mobile</a></li>
+
+					<li><a href="http://smb-resources.centurylink.com/videos">Videos</a></li>
+
+					<li><a href="http://smb-resources.centurylink.com/customer-stories/">Customer Stories</a></li>
+				</ul>
+			</div>	
+		
+			<div class="column col-customer">
+				<h4><a   id="sb_c_sdd_a_cs_footer" href='#ZAM' class="modal-trigger">Customer Support</a></h4>
+				<ul class="topLevelLinks">
+					<li><a id="sb_c_sdd_a_cu_footer" href="#ZAM" class="category_title_sb modal-trigger"> Contact Us</a> </li>
+
+					<li> <a id="sb_c_sdd_a_bh_footer" href="#ZAM" class="category_title_sb modal-trigger"> Billing Help</a></li>
+
+					<li><a id="sb_c_sdd_a_phg_footer" href="#ZAM" class="category_title_sb modal-trigger"> Product Help and Guides</a></li>
+
+					<li><a id="sb_c_sdd_a_faq_footer" href="#ZAM" class="category_title_sb modal-trigger"> Knowledgebase and FAQs</a> </li>
+				</ul>
+				
+				<h4><span>Connect with</span><br />CenturyLink Business</h4>
+				<ul class="social-icons">
+					<li><a href="http://www.linkedin.com/company/1434913?trk=tyah" target="_blank" class="linkedin">LinkedIn</a></li>
+					<li><a href="https://twitter.com/#!/CenturyLinkBiz" target="_blank" class="twitter">Twitter</a></li>
+				</ul>
+			</div>	
+	</div>
+</div>
+<div class="footer" >
+	<p align="center">
+		<a href="http://storelocator.centurylinkapps.com/index.cfm" class="" id="tpl_footer-store-locator">Store Locator</a> |
+		<a href="//www.centurylink.com/sitemap.html">Site Map</a> |
+		<a href="//www.centurylink.com/Pages/AboutUs/CompanyInformation/Careers/">Careers</a> |
+		<a href="#ZAM" class="modal-trigger" id="tpl_footer-legal-notices">Legal Notices</a> |
+		<a href="//www.centurylink.com/Pages/AboutUs/Legal/PrivacyPolicy/">Privacy Policy</a> |
+		<a href="//www.centurylink.com/Pages/AboutUs/Community/Disabled">Customers with Disabilities</a> |
+		<a href="#ZAM" class="modal-trigger" id="tpl_footer-yellow-pages">Yellow Pages</a> |
+		<a href="//www.centurylink.com/Pages/AboutUs/Legal/Tariffs/displayTariffLandingPage.html">Tariffs</a> |
+		<a href="#ZAM" class="modal-trigger" id="tpl_footer-email-offers">Email Offers</a>
+		<br />
+		<a href="//www.centurylink.com/business/federal-gov/">Federal Government</a> |
+		<a href="//www.centurylink.com/business/state-and-local-gov/">State & Local Government</a> |
+		<a href="//www.centurylink.com/business/education/">Education</a> |
+		<a href="//www.centurylink.com/business/partners/">Partners</a> |
+		<a href="#ZAM" class="modal-trigger" id="tpl_footer-referral-program">Referral Program</a>
+		<br /><br />
+        <a href="//www.centurylink.com/home/">Residential</a> | <a href="//www.centurylink.com/small-business/">Small Business</a> | <a href="//www.centurylink.com$!CENTURYLINK_COM_SERVER/business">Large Business</a> | <a href="//www.centurylink.com/wholesale/">Wholesale</a>
+		<span class="price_other_cat"><br />
+		Copyright &copy;
+		<script type="text/javascript">var dater=new Date(); var theyear=dater.getFullYear(); document.write(theyear);</script>
+	CenturyLink, Inc. All Rights Reserved.</span>
+	
+	
+	</p>
+			<div id="ol_smb_footer_feedback_wrapper">
+							<a id="ol_smb_footer_feedback_link" href="//www.centurylink.com">
+								Feedback &nbsp;<img src="//www.centurylink.com/common/3rdparty/opinionlab/5/oo_icon.gif" />
+							</a>
+		</div>
+
+	
+	
+</div>
+
+
+<p>&nbsp;
+
+</p>
+<!--end container div-->
+<!-- BEGIN: OnlineOpinion v5.x.x - Released: xx/xx/xxx - Components: Full - The following code is
+		Copyright 1998-2010 OpinionLab, Inc. All rights reserved. Unauthorized use is prohibited. This product
+		and other products of OpinionLab, Inc. are protected by U.S. Patent No. 6606581, 6421724, 6785717 B1
+		and other patents pending. http://www.opinionlab.com -->
+
+		<!-- MAIN OL STYLESHEET -->
+		<link rel="stylesheet" type="text/css" href="//www.centurylink.com/common/3rdparty/opinionlab/5/oo_style.css" />
+
+		<!-- MAIN OL ENGINE; NECESSARY FOR ALL IMPLEMENTATIONS -->
+		<script language="javascript" type="text/javascript" charset="windows-1252" src="//www.centurylink.com/common/3rdparty/opinionlab/5/oo_engine.min.js"></script>
+
+		<!-- FEEDBACK CONFIGURATION ; INLINE FEEDBACK -->
+		<script language="javascript" type="text/javascript" charset="windows-1252" src="//www.centurylink.com/common/3rdparty/opinionlab/5/oo_conf_inline.js"></script>
+		<!-- END: OnlineOpinion v5.x.x -->
+
+		<script type="text/javascript">
+		$('#ol_smb_footer_feedback_link').click(function() {
+			oo_feedback.show(); 
+			return false;
+		});
+		</script>
+<script type="text/javascript" src="//www.centurylink.com/small-business/js/rememberMe.js"></script>
+
+<script language="JavaScript" type="text/javascript">
+	require(['order!jquery','order!centurycore'],function(){
+	qa.initialize();
+	});
+</script>
+
+
+
+<!-- Donut touch! -->
+<!-- SiteCatalyst code version: H.14.
+Copyright 1997-2009 Omniture, Inc. More info available at
+http://www.omniture.com -->
+<!-- January 2009 -->
+<script language="JavaScript" type="text/javascript">
+try{
+<!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+
+s.server=(typeof s.server!="undefined")?s.server:"qwest.com";
+s.channel=(typeof s.channel!="undefined")?s.channel:"Small Business";
+s.pageType=(typeof s.pageType!="undefined")?s.pageType:"";
+s.prop1=(typeof s.prop1!="undefined")?s.prop1:"";
+s.prop2=(typeof s.prop2!="undefined")?s.prop2:"";
+s.prop3=(typeof s.prop3!="undefined")?s.prop3:"";
+s.prop4=(typeof s.prop4!="undefined")?s.prop4:"";
+s.prop5=(typeof s.prop5!="undefined")?s.prop5:"";
+s.prop7=(typeof s.prop7!="undefined")?s.prop7:"";
+s.prop20=(typeof s.prop20!="undefined")?s.prop20:"";
+s.prop38=(typeof s.prop38!="undefined")?s.prop38:"";
+s.prop39=(typeof s.prop39!="undefined")?s.prop39:"";
+/* Conversion Variables */
+s.campaign=(typeof s.campaign!="undefined")?s.campaign:"";
+s.state=(typeof s.state!="undefined")?s.state:"";
+s.zip=(typeof s.zip!="undefined")?s.zip:"";
+s.events=(typeof s.events!="undefined")?s.events:"";
+s.products=(typeof s.products!="undefined")?s.products:"";
+s.purchaseID=(typeof s.purchaseID!="undefined")?s.purchaseID:"";
+s.eVar1=(typeof s.eVar1!="undefined")?s.eVar1:"";
+s.eVar2=(typeof s.eVar2!="undefined")?s.eVar2:"";
+s.eVar3=(typeof s.eVar3!="undefined")?s.eVar3:"";
+s.eVar4=(typeof s.eVar4!="undefined")?s.eVar4:"";
+s.eVar5=(typeof s.eVar5!="undefined")?s.eVar5:"";
+s.eVar11=(typeof s.eVar11!="undefined")?s.eVar11:"";
+s.eVar41=(typeof s.eVar41!="undefined")?s.eVar41:"";
+var theCartURL=window.location.toString();
+var cartURL=theCartURL.substring(theCartURL.indexOf("MasterWebPortal/freeRange/smb/")+30);
+if(cartURL=='SMBShoppingCartAction_addProductToCart.action'){
+
+	s.prop24=(typeof s.prop24!="undefined")?s.prop24:"smb|shopping_cart";
+s.prop25=(typeof s.prop25!="undefined")?s.prop25:"smb|shopping_cart";
+s.prop26=(typeof s.prop26!="undefined")?s.prop26:"smb|shopping_cart";
+s.prop27=(typeof s.prop27!="undefined")?s.prop27:"smb|shopping_cart";
+s.pageName=(typeof s.pageName!="undefined")?s.pageName:"smb|shopping_cart";
+	s.eVar35=(typeof s.eVar35!="undefined")?s.eVar35:"smb|shopping_cart";
+		s.eVar37=(typeof s.eVar37!="undefined")?s.eVar37:"smb|shopping_cart";
+}
+else if(cartURL=='SMBShoppingCartAction_checkout.action'){
+s.prop24=(typeof s.prop24!="undefined")?s.prop24:"smb|checkout";
+s.prop25=(typeof s.prop25!="undefined")?s.prop25:"smb|checkout";
+s.prop26=(typeof s.prop26!="undefined")?s.prop26:"smb|checkout";
+s.prop27=(typeof s.prop27!="undefined")?s.prop27:"smb|checkout";
+s.pageName=(typeof s.pageName!="undefined")?s.pageName:"smb|checkout";
+s.eVar35=(typeof s.eVar35!="undefined")?s.eVar35:"smb|checkout";
+s.eVar37=(typeof s.eVar37!="undefined")?s.eVar37:"smb|checkout";
+}
+else if(cartURL=='SMBShoppingCartAction_submitOrder.action'){
+s.prop24=(typeof s.prop24!="undefined")?s.prop24:"smb|checkout|confirmation";
+s.prop25=(typeof s.prop25!="undefined")?s.prop25:"smb|checkout|confirmation";
+s.prop26=(typeof s.prop26!="undefined")?s.prop26:"smb|checkout|confirmation";
+s.prop27=(typeof s.prop27!="undefined")?s.prop27:"smb|checkout|confirmation";
+s.pageName=(typeof s.pageName!="undefined")?s.pageName:"smb|checkout|confirmation";
+s.eVar35=(typeof s.eVar35!="undefined")?s.eVar35:"smb|checkout|confirmation";
+s.eVar37=(typeof s.eVar37!="undefined")?s.eVar37:"smb|checkout|confirmation";
+}
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+if(window.smbHomePage === undefined || window.smbHomePage === false){
+	var s_code=s.t();if(s_code)document.write(s_code)
+}
+}catch(err){}//--></script>
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script>
+<noscript>
+	<a href="http://www.omniture.com" title="Web Analytics"><img src="http://qwest.com/images/spacer.gif" height="1" width="1" border="0" alt="" /></a>
+</noscript>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.14. -->
+
+<!--i2a content unit tracking code-->
+<script type="text/javascript">
+var ic_ch = "Small Business";
+</script>
+
+<!--i2a, Interest2Action, iCrossing-->
+<script type="text/javascript" src="//www.centurylink.com/assets/js/third-party/metrics/metrixConfig.js"></script>
+<!--i2a, Interest2Action, iCrossing-->
+
+<style type="text/css">
+	div .sbr_iapWrapper {
+		padding-left:15px;
+	}
+	
+	
+	.sbr_iapFormLabel {
+		color:black;
+		font-size:12px;		
+	}
+	
+	.sbr_iapZip_goButton {
+		background:transparent url(/assets/images/sprites/modal_sprite.png) no-repeat scroll -181px -587px;
+		display:block;
+		height:28px;
+		margin-left:0;
+		margin-top:0;
+		vertical-align:bottom;
+		width:66px;
+	}
+	.sbr_iapZip_goButton:hover {
+		background:transparent url(/assets/images/sprites/modal_sprite.png) no-repeat scroll -181px -616px;
+		display:block;
+		height:28px;
+		margin-left:0;
+		margin-top:0;
+		vertical-align:bottom;
+		width:66px;
+	}
+	
+	div .sbr_tnAddressform_item {
+		padding-bottom:7px;
+		color:#000;
+	}
+	.textLayoutStyle {
+	    padding: 0px;
+		background:none;
+	    width: 190px;
+	}
+
+	#sbr_zip_field{
+		border: 1.5px inset black; margin-right: 10px; margin-top: 5px; width: 147px
+	}
+	
+	#sbr_uname_field{
+		border:1.5px inset black;
+		margin-top:5px;
+		width:168px;
+	}
+	
+	#sbr_pwd_field{
+		border:1.5px inset black;
+		margin-top:5px;
+		width:168px;
+	}
+
+
+</style>
+<!--Omniture code-->
+<script type="text/javascript">
+    // test to see if code is on prod or staging
+    var locURL = String(window.location);
+    var s_account = "qwestfull";
+    if((locURL.indexOf("qwest.com") == -1) && (locURL.indexOf("qwestwireless.com") == -1)) {
+      var s_account = "devqwestfull";
+    }	
+</script>
+<script type="text/javascript" src="//www.centurylink.com/small-business/js/s_h_code_sb_omni_feb2011.js"></script>
+<!--end Omniture-->
+
+<script type="text/javascript" language="javascript">
+var getCurrentLocationUrl=window.location.href;
+var initializeLocatorUrlHomePage="";
+if(getCurrentLocationUrl.indexOf("//www.centurylink.com/") > -1){
+	initializeLocatorUrlHomePage="http://www.centurylink.com"
+}
+else{
+	initializeLocatorUrlHomePage="http://webdmzqa3.centurylink.com";
+}
+function validateZip() {
+		document.getElementById("zipError1").style.display="none";
+        var currentUrl = window.location.href;
+
+        var qPortalFormActionUrl = "";
+        var ctlPortalFormActionUrl = "https://eamqa2.centurylink.com";
+
+        if (currentUrl.indexOf("tcat-int1.centurylink.com") > -1) {
+            qPortalFormActionUrl = "https://sbcontrolcenter-itv1.centurylink.com";
+        } else if (currentUrl.indexOf("//tcat-int2.centurylink.com/") > -1) {
+            qPortalFormActionUrl = "https://sbcontrolcenter-itv1.centurylink.com";
+        } else if (currentUrl.indexOf("//tcat-int3.centurylink.com/") > -1) {
+            qPortalFormActionUrl = "https://sbcontrolcenter-itv1.centurylink.com";
+        } else if (currentUrl.indexOf("//tcat-int4.centurylink.com/") > -1) {
+            qPortalFormActionUrl = "https://sbcontrolcenter-itv2.centurylink.com";
+        } else if (currentUrl.indexOf("//tcat-itv1.centurylink.com/") > -1) {
+            qPortalFormActionUrl = "https://sbcontrolcenter-itv1.centurylink.com";
+        } else if (currentUrl.indexOf("//tcat-itv2.centurylink.com/") > -1) {
+            qPortalFormActionUrl = "https://sbcontrolcenter-itv2.centurylink.com";
+        } else if (currentUrl.indexOf("//webdmzdev1.centurylink.com/") > -1) {
+            qPortalFormActionUrl = "https://sbcontrolcenter-itv1.centurylink.com";
+        } else if (currentUrl.indexOf("//webdmzdev2.centurylink.com/") > -1) {
+            qPortalFormActionUrl = "https://sbcontrolcenter-itv2.centurylink.com";
+        } else if (currentUrl.indexOf("//webdmzdev3.centurylink.com/") > -1) {
+            qPortalFormActionUrl = "https://sbcontrolcenter-itv2.centurylink.com";
+        } else if (currentUrl.indexOf("//webdmzqa1.centurylink.com/") > -1) {
+            qPortalFormActionUrl = "https://sbcontrolcenter-itv2.centurylink.com";
+        } else if (currentUrl.indexOf("//webdmzqa2.centurylink.com/") > -1) {
+            qPortalFormActionUrl = "https://sbcontrolcenter-itv2.centurylink.com";
+        } else if (currentUrl.indexOf("//webdmzqa3.centurylink.com/") > -1) {
+            qPortalFormActionUrl = "https://sbcontrolcenter-itv2.centurylink.com";
+        } else if (currentUrl.indexOf("//tcat-preprod.centurylink.com/") > -1) {
+            qPortalFormActionUrl = "https://sbcontrolcenter-itv2.centurylink.com";
+		} else if (currentUrl.indexOf(".centurylink.com/") > -1) {
+            qPortalFormActionUrl = "https://sbcontrolcenter.centurylink.com";
+            ctlPortalFormActionUrl = "https://eam.centurylink.com";
+        }
+
+	var zip = document.getElementById("sbr_zip_field").value;
+	if(zip.length == 5 && !isNaN(zip) ) {
+	    setOmnitureRegistryCookie('smb_mam', 'zip', zip);
+		initializeLocator('TCATSMB',initializeLocatorUrlHomePage);
+		var remember_me = "N";
+		getProfileFromZip(zip, remember_me, function(data){ 
+			//alert("response : data : "+data.shoppingDomain);			
+			if(data.shoppingDomain == "Q"){				
+				document.getElementById("currentZip").innerHTML = zip;
+				document.getElementById("forgotUser").innerHTML = "Forgot user name?<br/>Call 800.350.1044";	
+				document.getElementById("forgotPassword").innerHTML = '<a href="//www.centurylink.com' + qPortalFormActionUrl + '/smallbusiness/appmanager/smb/login?_nfpb=true&_pageLabel=SmbForgotPassword_page">Forgot password</a>?';
+				document.getElementById("enroll").innerHTML = '<a href="//www.centurylink.com' + qPortalFormActionUrl + '/smallbusiness/appmanager/smb/login?_nfpb=true&_pageLabel=SmbRegister_page">Enroll Now</a>';
+				document.getElementById("zipAndMyAcctDiv").style.display = 'block';
+				document.getElementById("zipOnlyDiv").style.display = 'none';
+				document.getElementById("sbr_domain").value = data.shoppingDomain;
+				setOmnitureMAMZipSuccess(zip);
+				//return true;
+			} else if (data.shoppingDomain == "CTL"){
+				document.getElementById("currentZip").innerHTML = zip;
+				document.getElementById("forgotUser").innerHTML = '<a href="//www.centurylink.com' + ctlPortalFormActionUrl + '/eam/troubleLoginUserID.do">Forgot user name?</a?';	
+				document.getElementById("forgotPassword").innerHTML = '<a href="//www.centurylink.com' + ctlPortalFormActionUrl + '/eam/troubleLoginpwd.do">Forgot password?</a>';
+				document.getElementById("enroll").innerHTML = '<a href="//www.centurylink.com' + ctlPortalFormActionUrl + '/eam/registration.do?enrollButton.x=44&enrollButton.y=14">Enroll Now</a> | <a href="//www.centurylink.com/Pages/MyAccount/overview.jsp">View Benefits</a>';
+				document.getElementById("zipAndMyAcctDiv").style.display = 'block';
+				document.getElementById("zipOnlyDiv").style.display = 'none';
+				document.getElementById("sbr_domain").value = data.shoppingDomain;
+				setOmnitureMAMZipSuccess(zip);
+				//return false;
+			} else if (data.shoppingDomain == "OOR"){
+			//	alert("show OOR popup " +data.shoppingDomain);	
+				document.getElementById("zipError1").style.display = 'block';
+			//	return false;
+			} else {
+				document.getElementById('welcomeObjLayer').style.display = 'none';
+				showZipOORLayer();
+				
+			//	alert("oops Undefined " +data.shoppingDomain);	
+			//	return false;
+			}
+		}
+		);
+	} else {
+		document.getElementById("zipError1").style.display = 'block';
+		sendOmnitureRegistryFailure("zip", zip, "The zip code you entered is not recognized.Please try again.");
+	}
+}
+
+function showZipDiv() {
+	document.getElementById("zipError1").style.display="none";
+	document.getElementById("zipAndMyAcctDiv").style.display = 'none';
+	document.getElementById("zipOnlyDiv").style.display = 'block';
+}
+
+function setQPortalCookie( name, value, expires, path, domain, secure )
+{
+        // set time, it's in milliseconds
+        var today = new Date();
+        today.setTime( today.getTime() );
+
+        /*
+        if the expires variable is set, make the correct
+        expires time, the current script below will set
+        it for x number of days, to make it for hours,
+        delete * 24, for minutes, delete * 60 * 24
+        */
+        if ( expires )
+        {
+                expires = expires * 1000 * 60 * 60 * 24;
+        }
+        var expires_date = new Date( today.getTime() + (expires) );
+
+        document.cookie = name + "=" +escape( value ) +
+        ( ( expires ) ? ";expires=" + expires_date.toGMTString() : "" ) +
+        ( ( path ) ? ";path=" + path : "" ) +
+        ( ( domain ) ? ";domain=" + domain : "" ) +
+        ( ( secure ) ? ";secure" : "" );
+
+}
+
+
+function sumbitMAM() {	
+        var currentUrl = window.location.href;
+
+        var qPortalUserPostFix = "";
+        var qPortalFormActionUrl = "";
+        var ctlPortalFormActionUrl = "https://eqtest2.centurylink.com";
+		setOmnitureRegistryCookie('smb_mam', 'userId', document.getElementById("sbr_uname_field").value);
+
+        if (currentUrl.indexOf("tcat-int1.centurylink.com") > -1) {
+            qPortalUserPostFix = "@test1.control.centurylink.com";
+            qPortalFormActionUrl = "https://sbcontrolcenter-itv1.centurylink.com";
+        } else if (currentUrl.indexOf("//tcat-int2.centurylink.com/") > -1) {
+            qPortalUserPostFix = "@test1.control.centurylink.com";
+            qPortalFormActionUrl = "https://sbcontrolcenter-itv1.centurylink.com";
+        } else if (currentUrl.indexOf("//tcat-int3.centurylink.com/") > -1) {
+            qPortalUserPostFix = "@test1.control.centurylink.com";
+            qPortalFormActionUrl = "https://sbcontrolcenter-itv1.centurylink.com";
+        } else if (currentUrl.indexOf("//tcat-int4.centurylink.com/") > -1) {
+            qPortalUserPostFix = "@test2.control.centurylink.com";
+            qPortalFormActionUrl = "https://sbcontrolcenter-itv2.centurylink.com";
+        } else if (currentUrl.indexOf("//tcat-itv1.centurylink.com/") > -1) {
+            qPortalUserPostFix = "@test1.control.centurylink.com";
+            qPortalFormActionUrl = "https://sbcontrolcenter-itv1.centurylink.com";
+        } else if (currentUrl.indexOf("//tcat-itv2.centurylink.com/") > -1) {
+            qPortalUserPostFix = "@test2.control.centurylink.com";
+            qPortalFormActionUrl = "https://sbcontrolcenter-itv2.centurylink.com";
+        } else if (currentUrl.indexOf("//webdmzdev1.centurylink.com/") > -1) {
+            qPortalUserPostFix = "@test2.control.centurylink.com";
+            qPortalFormActionUrl = "https://sbcontrolcenter-itv1.centurylink.com";
+        } else if (currentUrl.indexOf("//webdmzdev2.centurylink.com/") > -1) {
+            qPortalUserPostFix = "@test2.control.centurylink.com";
+            qPortalFormActionUrl = "https://sbcontrolcenter-itv2.centurylink.com";
+        } else if (currentUrl.indexOf("//webdmzdev3.centurylink.com/") > -1) {
+            qPortalUserPostFix = "@test2.control.centurylink.com";
+            qPortalFormActionUrl = "https://sbcontrolcenter-itv2.centurylink.com";
+        } else if (currentUrl.indexOf("//webdmzqa1.centurylink.com/") > -1) {
+            qPortalUserPostFix = "@test1.control.centurylink.com";
+            qPortalFormActionUrl = "https://sbcontrolcenter-itv2.centurylink.com";
+        } else if (currentUrl.indexOf("//webdmzqa2.centurylink.com/") > -1) {
+            qPortalUserPostFix = "@test2.control.centurylink.com";
+            qPortalFormActionUrl = "https://sbcontrolcenter-itv2.centurylink.com";
+        } else if (currentUrl.indexOf("//webdmzqa3.centurylink.com/") > -1) {
+            qPortalUserPostFix = "@test2.control.centurylink.com";
+            qPortalFormActionUrl = "https://sbcontrolcenter-itv2.centurylink.com";
+        } else if (currentUrl.indexOf("//tcat-preprod.centurylink.com/") > -1) {
+            qPortalUserPostFix = "@test2.control.centurylink.com";
+            qPortalFormActionUrl = "https://sbcontrolcenter-itv2.centurylink.com";
+        } else if (currentUrl.indexOf(".centurylink.com/") > -1) {
+            qPortalUserPostFix = "@control.centurylink.com";
+            qPortalFormActionUrl = "https://sbcontrolcenter.centurylink.com";
+            ctlPortalFormActionUrl = "https://embarq.centurylink.com";
+        }
+
+	ValidateFields();
+	if(document.getElementById("sbr_domain").value == "Q") {
+		document.getElementById("q_user").value = document.getElementById("sbr_uname_field").value + qPortalUserPostFix;
+		var userName=document.getElementById("q_user").value;
+		document.getElementById("q_password").value = document.getElementById("sbr_pwd_field").value;	
+		var pswd=document.getElementById("q_password").value;
+		setQPortalCookie( 'QportalUser',userName,0, '/','centurylink.com', 'true' );        
+        setQPortalCookie( 'QportalPassword',pswd,0, "/",'centurylink.com', 'true' );
+		document.forms["QPortalForm"].action = qPortalFormActionUrl + "/smallbusiness/appmanager/smb/login";
+		document.forms["QPortalForm"].submit();		
+	//	return false;
+	} else if (document.getElementById("sbr_domain").value == "CTL") {	
+		//alert("sbr_uname_field:"+document.getElementById("sbr_uname_field").value);
+		document.forms["CTLForm"].user.value = document.getElementById("sbr_uname_field").value;
+	//	alert("USER:"+document.forms["CTLForm"].user.value);
+		//alert("sbr_pwd_field:"+document.getElementById("sbr_pwd_field").value);
+		document.forms["CTLForm"].password.value = document.getElementById("sbr_pwd_field").value;	
+		//alert("PASSWORD:"+document.forms["CTLForm"].password.value);
+		document.forms["CTLForm"].action = ctlPortalFormActionUrl + "/entrycheck/eam/loggedin.html";
+		//alert("action:"+document.forms["CTLForm"].action);
+		document.forms["CTLForm"].submit();		
+	//	return false;
+	}	
+}
+
+function ValidateFields(){
+		var uname = document.getElementById("sbr_uname_field").value
+		var pwd = document.getElementById("sbr_pwd_field").value
+		if(uname.length == 0 && pwd .length == 0){
+		var divid = document.getElementById("errorBlankValue")
+		divid.style.display = "block";
+		divid.style.color = "#FF0000";
+		divid.innerHTML="Please specify username and password.";
+		sendOmnitureRegistryFailure("userId", uname, "Please specify username and password.");
+			return false;
+		}
+		if(uname.length == 0 && pwd .length != 0){
+		var divid = document.getElementById("errorBlankValue")
+		divid.style.display = "block";
+		divid.style.color = "#FF0000";
+		divid.innerHTML="Please specify username.";	
+		sendOmnitureRegistryFailure("userId", uname, "Please specify username");
+			return false;
+		}
+		if(uname.length != 0 && pwd .length == 0){
+		var divid = document.getElementById("errorBlankValue")
+		divid.style.display = "block";
+		divid.style.color = "#FF0000";
+		divid.innerHTML="Please specify password.";	
+		sendOmnitureRegistryFailure("userId", uname, "Please specify password.");
+			return false;
+		}
+		
+}
+
+function showZipOORLayer() {
+	//	tb_show(null, '#TB_inline?height=550&width=530&inlineId=Zip_OORPopup&modal=true',false); 
+		showProfileLayer();
+	}
+
+	function showProfileLayer() {
+		tb_show("Try again", '/small-business/includes/tryagain.html?height=275&width=400&inlineId=profilePopUp&usePopImage=true',false); 		
+	}
+
+
+function setOmnitureMAMZipSuccess(zip) {
+    try{
+	s.prop3="Existing Customer";
+	s.prop51="locator|smb_mam";
+	/* Conversion Variables */
+	s.events="event47";
+	s.eVar24="Existing Customer";
+	s.eVar51="locator|smb_mam";
+	s.eVar60="smb_mam:zip:"+zip;
+	/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+	var s_code=s.tl();
+    }catch(err){}
+}
+
+//Sets an Omniture Cookie to be used on the success and failure pages
+function setOmnitureRegistryCookie(modal, registryType, registryDetail) {
+    try{
+	var registryCookieValue = "";
+	
+	if (modal != "" || modal != null) {
+		registryCookieValue = registryCookieValue + "modal:" + modal + "~";
+	}
+	if (registryType != "" || registryType != null) {
+		registryCookieValue = registryCookieValue + "registryType:" + registryType + "~";
+	}
+	if (registryDetail != "" || registryDetail != null) {
+		registryCookieValue = registryCookieValue + "registryDetail:" + registryDetail + "~";
+	}
+
+	var domains = document.domain;
+	var lastIndex = domains.lastIndexOf(".");	
+	var lastPart = domains.substring(lastIndex+1, domains.length);
+	var domainsRemovedLast = domains.substring(0,lastIndex);
+	var secondLastIndex = domainsRemovedLast.lastIndexOf(".");
+	var secontLastPart = domainsRemovedLast.substring(secondLastIndex+1, domainsRemovedLast.length);
+	var cookieDomains = secontLastPart + "." + lastPart;
+	
+	if (registryCookieValue != "") {
+		//Cookie "OmnitureRegistryCookie" expires after one day
+		setCookie1('OmnitureRegistryCookie', registryCookieValue, 1, '/', cookieDomains,'');
+	}
+    }catch(err){}
+}
+
+function sendOmnitureRegistryFailure(registryType, registryDetail, errorMsg){
+    try{
+	s.prop3 = s.eVar24 = "Existing Customer";
+	s.prop4 = s.eVar28 = "smb_mam|"+registryType+" - "+errorMsg;
+	s.prop51 = s.eVar51 = "locator|smb_mam";
+	s.eVar60 = "smb_mam:"+registryType+":"+registryDetail;
+	s.events = "event34";
+	/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+	var s_code=s.tl();
+    }catch(err){}
+}
+
+</script>
+
+<script type="text/javascript" src="//www.centurylink.com/small-business/js/smbUtils.js"></script>
+
+<script type="text/javascript">
+function whyZipLogin(){
+	var thediv=document.getElementById('whyZipNeeded1');
+	if(thediv.style.display == "none"){
+		thediv.style.display = "block";
+	} else {
+		thediv.style.display = "none";
+	}
+}
+function whyAccountLoginNeeded(){
+	var thediv=document.getElementById('whyAccountLoginNeeded');
+	if(thediv.style.display == "none"){
+		thediv.style.display = "block";
+	} else {
+		thediv.style.display = "none";
+	}
+}
+
+</script>
+<div id="welcomeObjLayer" style="display:none;">
+	
+	<form id="myAcctForm" method="post" name="myAcctForm" onSubmit="return sumbitMAM();">
+	<div id="zipAndMyAcctDiv" style ="display:none;padding:15px">
+		<div style="padding:5px;padding-left:0px">
+			Please enter your username and password to access your account
+			<div style="float:left;padding-right:3px;padding-top:8px;">
+				Service Address Zip:<span id='currentZip' style="font-weight:bold;margin-left:5px"> </span>&nbsp;<a href="javascript:showZipDiv();" style="color:#00853F;">Change</a>
+			</div>
+			<br clear="all"/>
+		</div>	
+		<div style="padding:5px;padding-left:0px">Enter your My Account user name and password.
+		</div>
+		<div id="errorBlankValue" style="display:none;"> <font color="red"></font></div>		
+		<div class="sbr_tnAddressform_item">
+				<div class="sbr_iapFormLabel">UserName(required)</div>
+				<div>
+					<div class="textLayoutStyle" style="float:left">
+						<input type="text" id="sbr_uname_field" size="15" maxlength="49" name="form.userName" />
+					</div>
+					<div id="forgotUser" style="float:left;width:157px;"></div>
+				</div>
+				<div class="clear" style="height:1px">&nbsp;</div>
+		</div>
+		<div class="sbr_tnAddressform_item">
+				<div class="sbr_iapFormLabel">Password (required)</div>
+				<div>
+					<div class="textLayoutStyle" style="float:left">
+						<input type="password" id="sbr_pwd_field" size="15" maxlength="49" name="form.password" />
+					</div>
+					<div id="forgotPassword" style="float:left;width:157px;margin-top:6px;"></div>
+				</div>
+		</div>
+		
+		<br clear="all"/>		
+		<div style="margin-top:25px!important!;margin-top:10px;margin-left:2px;">
+			<input type="checkbox" id="myAcctRememberMe" name="form.rememberMe" checked="true"/>
+			<label for="sbr_zip_rememberMe">Remember Me *</label>
+			<div style="margin-top:10px"><a href="javascript:sumbitMAM();" class="sbr_iapZip_goButton" onclick="javascript:return ValidateFields(); "></a></div>
+		</div>
+		<input type="hidden" id="sbr_domain"/>
+		<br clear="all">
+		<div>Not a registered user?</div>
+		<div><i>Get free and secure access to view and pay bills.<br>
+		Set up paperless billing,autopay and more.</i><br>
+		</div>
+		<div id="enroll"></div>
+		<div class="clear"></div>
+		<p class=""><a onClick="whyAccountLoginNeeded();" style="cursor:pointer;color:#00853F">Why is this needed?</a></p>
+		<div id="whyAccountLoginNeeded" style="display:none;font-size:12px;">
+			<div class="divExpandTop" style="margin-left:0px;"></div>
+			<div class="divExpandCenter" style="margin-left:1px;">
+				<div style="padding-left:4px;padding-right:4px">As CenturyLink and Qwest merge companies,we are working hard to combine our systems.By supplying your zip code we will be able to get you to the right location. Thank you for your patience during the merger process.</div>
+			</div>
+			<div class="divBottomExpand" style="margin-left:0px;margin-bottom:7px;"></div>
+		</div>	
+			<p>
+				<a class="lockImage"></a><a style="color: rgb(114, 114, 114);" href="https://www.centurylink.com/Pages/AboutUs/Legal/PrivacyPolicy/" target="_blank">How does CenturyLink protect my information?</a></p>
+	</div>
+	</form>
+	
+	<form id="CTLForm" method="post" action="" name="CTLForm">
+		<input type="hidden" id="user" name="user" size="30"/>
+        <input type="hidden" id="password" name="password" size="30"/>
+	</form>
+	
+	<form id="QPortalForm" method="post" action="" name="QPortalForm">
+		<input type="hidden" id="q_user" name="user" size="30"/>
+        <input type="hidden" id="q_password" name="password" size="30"/>
+	</form>
+	
+	<div id="zipOnlyDiv" style="padding:15px;" >
+		<div style="padding-bottom:10px;">
+			Enter your service address zip code so we can help you to get the right place
+		</div>
+		<div id="zipError1" style="display:none;color:red;">			
+			The zip code you entered is not recognized.<br>Please try again.
+		</div>
+		<div class="sbr_iapFormLabel" style="margin-bottom:3px;">Service address zip:(required)</div>
+		<div>
+			<div style="float: left;" >
+			<input type="text" id="sbr_zip_field" size="20" maxlength="5"></div>
+			<div style="float: right;margin-right: 70px;"><a style="padding-top: 0px;" href="javascript:validateZip();" class="sbr_iapZip_goButton"></a></div>
+		</div>	
+		<br clear="all">
+		<br clear="all">
+		<br clear="all">
+		<p class=""><a href="javascript:void (window.open('http://zip4.usps.com/zip4/welcome.jsp','Help','width=466,height=400,menubar=no,toolbar=no,scrollbars=yes,resizable=yes'));" style="cursor:pointer;color:#00853F">Help</a></p> <!-- New link added for the new design-->
+		
+		<p class=""><a onClick="whyZipLogin();" style="cursor:pointer;color:#00853F">Why is this needed?</a></p>
+		<div id="whyZipNeeded1" style="display:none;font-size:12px;">
+			<div class="divExpandTop" style="margin-left:0px;"></div>
+			<div class="divExpandCenter" style="margin-left:1px;">
+				<div style="padding-left:4px;padding-right:4px">As CenturyLink and Qwest merge companies,we are working hard to combine our systems.By supplying your zip code we will be able to get you to the right location. Thank you for your patience during the merger process.</div>
+			</div>
+			<div class="divBottomExpand" style="margin-left:0px;"></div>
+		</div>		
+	</div>
+	
+<br clear="all"/>
+<!-- not needed for this new design
+<hr style="width:353px"/>
+<p class="">
+<img alt="lock" src="//www.centurylink.com/small-business/images/lock.png"/>
+<i><a style="color:#00853F" href="https://www.centurylink.com/Pages/AboutUs/Legal/PrivacyPolicy/" target="_blank">How does CenturyLink protect my information?</a></i>
+</p> -->
+
+
+</div>
+
+<script type="text/javascript" src="http://munchkin.marketo.net/munchkin.js"></script>
+<script type="text/javascript"> 
+jQuery(document).ready(function(){
+  var url = window.location.href;
+  if(url.indexOf("http://www.centurylink.com/small-business")!= -1)
+  {
+         mktoMunchkin("131-SYO-861");
+  }
+  else
+  {
+         mktoMunchkin("504-PXB-473");
+  }
+}); 
+</script>
+
+</body>
+</html>

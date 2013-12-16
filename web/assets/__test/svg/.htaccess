@@ -1,0 +1,4 @@
+Options Indexes FollowSymLinks MultiViews
+RewriteEngine on
+RewriteBase /
+RewriteRule ^/assets/js/(.*)$ http://www.centurylink.com/$1 [PT]

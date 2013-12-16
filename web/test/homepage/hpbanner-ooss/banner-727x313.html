@@ -1,0 +1,142 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<title>Countdown Timer</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<link rel="shortcut icon" href="/favicon.ico" />
+
+	<!-- FILES PULLED FROM CENTURYLINK.COM TO REDUCE THE LIKELYHOOD OF CONFLICTS -->
+	<link rel="stylesheet" type="text/css" href="http://www.centurylink.com/assets/css/reset.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="http://www.centurylink.com/assets/css/plugins/jqModal.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="http://www.centurylink.com/assets/css/global.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="http://www.centurylink.com/assets/css/global-nav.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="http://www.centurylink.com/assets/css/template_a.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="http://www.centurylink.com/assets/css/plugins/jqModal.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="http://www.centurylink.com/assets/css/modals.css" media="screen" />
+	<script type="text/javascript" src="http://www.centurylink.com/assets/js/jquery.min.js"></script>
+	<!-- END FILES PULLED FROM CENTURYLINK.COM TO REDUCE THE LIKELYHOOD OF CONFLICTS  -->
+
+
+	<script type="text/javascript">
+		(function (window, $) {
+			var year = 2013, month = 8, day = 29,
+				hour = 14, min = 30, sec = 0,
+				dateNow = new Date();     
+
+
+			hour = hour + ( 6-(dateNow.getTimezoneOffset()/60));
+			month = --month;
+			dateFuture = new Date( year, month, day, hour, min, sec );
+
+			function GetCount(){
+				var out="";
+
+		        dateNow = new Date();                                                            
+		        amount = dateFuture.getTime() - dateNow.getTime() + 5;               
+		        delete dateNow;
+
+		        if(amount < 0){
+		            out='<div class="countNum days"><span></span>0<div class="days_text countText">days</div></div>' + 
+						'<div class="countNum hours"><span></span>0<div class="hours_text countText">hrs</div></div>' + 
+						'<div class="countNum mins"><span></span>0<div class="mins_text countText">mins</div></div>' + 
+						'<div class="countNum secs"><span></span>0<div class="secs_text countText">secs</div></div>' ;
+
+		            document.getElementById('countbox').innerHTML=out;       
+		        } else{
+		            days=0;hours=0;mins=0;secs=0;
+
+		            amount = Math.floor( amount / 1000 ); /* kill the milliseconds */
+
+		            days = Math.floor( amount / 86400 ); /* days */
+		            amount = amount % 86400;
+
+		            hours = Math.floor( amount / 3600 ); /* hours */
+		            amount = amount % 3600;
+
+		            mins = Math.floor( amount / 60 ); /* minutes */
+		            amount = amount % 60;
+
+		            secs=Math.floor(amount); /* seconds */
+
+		            out=
+						'<div class="countNum days"><span></span>' + days +'<div class="days_text countText">days</div></div>' + 
+						'<div class="countNum hours"><span></span>' + hours +'<div class="hours_text countText">hrs</div></div>' + 
+						'<div class="countNum mins"><span></span>' + mins +'<div class="mins_text countText">mins</div></div>' + 
+						'<div class="countNum secs"><span></span>' + secs +'<div class="secs_text countText">secs</div></div>' ;
+
+		            document.getElementById('countbox').innerHTML=out;
+
+		            setTimeout(GetCount, 1000);
+		        }
+			}
+
+			$( GetCount );
+			
+		})(window, jQuery);
+	</script>
+
+	<style>
+		.counterBanner {
+			position: relative;
+			left: 0;
+			top: 0;
+		}
+		#countbox {
+			color: #fff;
+			font-family: Arial, Helvetica, sans-serif;
+			width: 260px;
+			height: 80px;
+			position: absolute;
+			top: 170px;
+			left: 430px;
+		}
+		.countNum {
+			color: #fff;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 42px;
+			float: left;
+			text-align: center;	
+			background-image:url('./ooss_countdown/img/flip.png');
+			background-repeat:no-repeat;
+			margin: 0;
+			height: 80px;
+			width: 62px;
+			line-height: 60px;
+			z-index:1;
+			position: relative;
+			letter-spacing: -1px;
+		}
+		.countText {
+			font-family: Arial, Helvetica, sans-serif;
+			color: #fff;
+			font-size: 12px;
+			height: 23px;
+			width: 57px;
+			text-align: right;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			letter-spacing: 0;
+		}
+		.countNum span {
+			background: url('./ooss_countdown/img/flip_gradient.png');
+			background-repeat:no-repeat;
+			position: absolute;
+			display: block;
+			height: 43px;
+			width: 58px;
+		}
+	</style>
+</head>
+<body>
+	<div class="banner">
+		<div id="hp-banner-ooss" class="counterBanner">
+			<div id="countbox"></div>
+			<img src="./ooss_countdown/OOSS_727x313.png" alt="Online Only Summer Sale | Get a $50 CenturyLink&reg; Visa&reg; Prepaid Card. When you bundle Internet with Home Phone.* | HURRY! &ndash; Offer ends August 29th." usemap="#hp-oossbanner1-challenge">
+			<map name="hp-oossbanner1-challenge" id="hp-oossbanner1-challenge"><area shape="rect" coords="130,250,263,289" href="/home/internet/" alt="Learn More" clicktrack="ctl|corp|hp|main_promo|position1|tnt_ctla|button|learn_more"><area shape="rect" coords="504,290,612,304" href="/common/disclaimers/general.html" alt="See Important Details" clicktrack="" class="popup-trigger" popup-height="572" popup-width="800"></map>	
+		</div>
+	</div>
+	<noscript><div id="noscript"></div></noscript>
+</body>
+</html> 

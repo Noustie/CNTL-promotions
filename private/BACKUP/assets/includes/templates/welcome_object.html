@@ -1,0 +1,78 @@
+<!--#if expr="$ctl_url=''"-->
+<!--#include virtual="/assets/includes/templates/variables.html"-->
+<!--#endif-->
+
+<style>
+
+.wo-input
+{
+	width: 119px;
+}
+
+#wo_myaccount-login .modal-button-signin
+{
+	border: none;
+	float: right;
+	margin-top: 30px;
+	cursor: pointer;
+}
+
+</style>
+
+<div id="welcome-object-container">
+<form id="wo_myaccount-login" name="loginform" method="post" action="<!--#echo var="ctlmyacct_url"-->/eam/login.do" class="wo-form">
+<select name="section" id="wo-business-group-selection">
+	<option value="res">Residential</option>
+	<option value="smb">Small Business</option>
+	<option value="bmg">Large Business</option>
+	<option value="wholesale">Wholesale</option>
+</select> <img src="/assets/images/page-components/lock.png" /><br />
+<input type="text" name="user" size="12" class="wo-input" id="hp-wo-username" tabindex="40" /> <a href="<!--#echo var="ctlmyacct_url" -->/eam/loginTrouble/obtainForgottenUserID.do"  style="font-size:10px;" tabindex="48">Forgot user name?</a><br />
+<input type="password" name="password" size="12" class="wo-input" id="hp-wo-password" tabindex="42" /> <a href="<!--#echo var="ctlmyacct_url" -->/eam/loginTrouble/forgotPassword.do" style="font-size:10px;" tabindex="50">Forgot password?</a><br />
+<input type="checkbox" name="rememberMe" value="1" tabindex="44" id="wo-remember-me"/> Remember me? <button type="submit" class="modal-button modal-button-signin" tabindex="46" id="wo-submit-login"></button>
+<input type="hidden" name="auth_mode" value="basic" />
+<!--<a href="#MAM" class="button btn-myaccount-signin modal-trigger" id="hp-wo-signin" clicktrack="ctl|corp|hp|myaccount|button|sign_in_button"></a>-->
+<div class="welcome-object-links">
+	<a href="#TAM" class="modal-trigger" id="hp-wo-set-up-my-account" clicktrack="ctl|corp|hp|myaccount|link|set_up">Set up My Account</a><br />
+	<a href="<!--#echo var="ctl_url"-->/common/popups/residential/what_is_my_account.html" id="hp-wo-what-is-my-account" clicktrack="ctl|corp|hp|myaccount|link|what_is" class="popup-trigger">What is My Account?</a><br />
+</div>
+</form>
+</div>
+<script type="text/javascript">
+	require(['order!jquery','order!jquery-ui'],function(){
+		$("#wo-business-group-selection").live("change",function(){
+			var bus_group=$("#wo-business-group-selection").val();
+			switch(bus_group){
+				case "res":
+					//do nothing - leave link as is
+				break;
+				case "bmg":
+					window.location=ctl_url+"/business/appmanager/centurylink/controlcenter";
+				break;
+				case "smb":
+					window.location=ctl_url+"/small-business/";
+				break;
+				case "wholesale":
+					window.location=ctl_url+"/wholesale/";
+				break;
+			}
+		});
+	});
+
+	require(['order!jquery','order!jquery-ui','order!watermark'],function(){
+		$.watermark.options.useNative = false;
+		
+		if (!$.browser.msie || ($.browser.msie  && parseInt($.browser.version, 10) > 7)) {
+			$('#hp-wo-username').watermark('User name');
+			$('#hp-wo-password').watermark('Password');
+		}
+	});
+
+	require(['order!jquery','order!jquery-ui','order!cookies','order!centurycore','order!rotator','order!superfish','order!supersubs','order!modals','order!watermark','order!linkMatrix','order!locator','order!cc-shortcuts'],
+	function(require){
+		$('#wo_myaccount-login').submit(function(){
+			qm.showInterstitial('',function(){window.location.href=ctleam_url+'/eam/login.do'});
+			return true;
+		});
+	});
+</script>

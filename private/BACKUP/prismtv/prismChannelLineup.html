@@ -1,0 +1,175 @@
+<!--#set var="includeHeros" value="true" -->
+<!--#set var="mainWrapID" value="prismChannelLineup" -->
+<!--#set var="tabID" value="Channel_Lineup" -->
+
+<!--#if expr="${REQUEST_URI}!=/isajaxed=true/" -->
+<!--#set var="isajaxed" value="false" -->
+<!--#else -->
+<!--#set var="isajaxed" value="true" -->
+<!--#endif -->
+
+<!--#include virtual="/prismtv/inc-prismHeader.html" -->
+				<div id="tabScrollToView" class="pageCont">
+					<h3 class="hoveringPhoneCTA phone contact">Call Now! <span class="callNumber mkt_phone_number">1.888.273.5968</span></h3>
+					<div class="mainPageNav clearfix">
+						<ul>
+							<li>
+                                <a id="tnt-tab-index" class="tab" href="index.html" rel="index.html" title="Prism TV Overview" clicktrack="ctl|rsd|shop|iptv|pre_id_learn|what_is" data-isinpage="true">Prism<sup>&trade;</sup> TV Overview</a>
+                            </li>
+							<li>
+                                <a id="tnt-tab-prismwhyswitch" class="tab" href="./prismWhySwitch.html" rel="prismWhySwitch.html" title="Why Switch" clicktrack="ctl|rsd|shop|iptv|pre_id_learn|why_switch">Why Switch?</a>
+                            </li>
+							<li>
+                                <a id="tnt-tab-prismadvancedfeatures" class="tab" href="./prismAdvancedFeatures.html" rel="prismAdvancedFeatures.html" title="Advanced Features" clicktrack="ctl|rsd|shop|iptv|pre_id_learn|advanced">Advanced Features</a>
+                            </li>
+							<li class="hideTab">
+                                <a id="tnt-tab-wholehomedvr" class="tab" href="./wholeHomeDVR.html" rel="wholeHomeDVR.html" title="Whole Home DVR" clicktrack="ctl|rsd|shop|iptv|pre_id_learn|whole_home">Whole Home DVR</a>
+                            </li>
+							<li class="nojs-ui-tabs-selected">
+                                <a id="tnt-tab-prismChannelLineup" class="tab" href="./prismChannelLineup.html" rel="prismChannelLineup.html" title="Channel Lineup" clicktrack="ctl|rsd|shop|iptv|pre_id_learn|channel_lineup">Channel Lineup</a>
+                            </li>
+							<li>
+                                <a id="tnt-tab-prismfeaturedoffers" class="tab" href="./prismFeaturedOffers.html" rel="prismFeaturedOffers.html" title="Plans And Prices" clicktrack="ctl|rsd|shop|iptv|pre_id_learn|featured_offers">Plans &amp; Prices</a>
+                            </li>
+							<li>
+                                <a id="tnt-tab-prismtestdrive" href="./prismTestDrive.html" rel="prismTestDrive.html" title="Virtual Test Drive" clicktrack="ctl|rsd|shop|iptv|pre_id_learn|prism_videos">Virtual Test-Drive</a>
+                            </li>
+						</ul>
+					</div>
+<!--#if expr="$isajaxed!=/true/" -->
+					<div id="BlankPreload" class="pageBody clearfix roundcorners rcHasBdr">
+						<div class="tabPreload roundcorners">
+							<div class="subContent padded clearfix">&nbsp;</div>
+							<span class="roundcorner rcLeft rcTop insideW">&nbsp;</span> <span class="roundcorner rcLeft rcBottom outsideW">&nbsp;</span> <span class="roundcorner rcRight rcTop insideW">&nbsp;</span> <span class="roundcorner rcRight rcBottom outsideW">&nbsp;</span>
+						</div>
+					</div>
+<!--#endif-->					
+					<div id="<!--#echo var="tabID"-->" class="<!--#echo var="mainWrapID"--> ajaxFragment pageBody tabholder clearfix roundcorners rcHasBdr">
+ 						<div class="subContent padded clearfix">
+							<div id="lineupHolder" class="clearfix">
+								<div id="channelLineupSelectionBox" class="contHeaderCopy clearfix">
+									<h1 class="introMainHeader">Start here to see the channel<br/>lineup in your area:</h1>
+									<form id="alternateLineup" method="GET" target="ChannelLineupTarget" action="./channelLineupTable.html">
+										<div id="marketNameBox"> 
+											<label for="mkt_select_choose" class="select_replace selected select_blank"> Choose Your Location 
+												<input type="radio" checked="true" name="marketName" id="mkt_select_choose" value="" class="select_check_hide"> 
+											</label> 
+											<label for="mkt_select_Orlando" class="select_replace"> Central Florida 
+												<input type="radio" name="marketName" id="mkt_select_Orlando" value="Orlando" class="select_check_hide"> 
+											</label>
+											<label for="mkt_select_Raleigh" class="select_replace"> Central North Carolina 
+												<input type="radio" name="marketName" id="mkt_select_Raleigh" value="Raleigh" class="select_check_hide"> 
+											</label> 
+											<label for="mkt_select_ColoradoSprings" class="select_replace"> Colorado Springs 
+												<input type="radio" name="marketName" id="mkt_select_ColoradoSprings" value="ColoradoSprings" class="select_check_hide"> 
+											</label> 
+											<label for="mkt_select_Columbia" class="select_replace"> Columbia/Jefferson City 
+												<input type="radio" name="marketName" id="mkt_select_Columbia" value="Columbia" class="select_check_hide"> 
+											</label> 
+											<label for="mkt_select_FtMyers" class="select_replace"> Ft Myers 
+												<input type="radio" name="marketName" id="mkt_select_FtMyers" value="FtMyers" class="select_check_hide"> 
+											</label> 
+											<label for="mkt_select_LaCrosse" class="select_replace"> La Crosse 
+												<input type="radio" name="marketName" id="mkt_select_LaCrosse" value="LaCrosse" class="select_check_hide"> 
+											</label> 
+											<label for="mkt_select_LasVegas" class="select_replace"> Las Vegas 
+												<input type="radio" name="marketName" id="mkt_select_LasVegas" value="LasVegas" class="select_check_hide"> 
+											</label> 
+											<label for="mkt_select_Omaha" class="select_replace"> Omaha 
+												<input type="radio" name="marketName" id="mkt_select_Omaha" value="Omaha" class="select_check_hide"> 
+											</label> 
+											<label for="mkt_select_Phoenix" class="select_replace"> Phoenix 
+												<input type="radio" name="marketName" id="mkt_select_Phoenix" value="Phoenix" class="select_check_hide"> 
+											</label> 
+											<label for="mkt_select_Tallahassee" class="select_replace"> Tallahassee 
+												<input type="radio" name="marketName" id="mkt_select_Tallahassee" value="Tallahassee" class="select_check_hide"> 
+											</label> 
+										</div>
+									</form>
+								</div>
+								<div id="dynamicChannelLineup">
+									<iframe id="ChannelLineupTarget" name="ChannelLineupTarget" width="100%" height="100%" frameborder="0" data-src="./channelLineupTable.html"></iframe>
+								</div>
+								<div class="expanderBtn contract">
+									<a href="#channelInfo" class="ghostWhiteBtn" data-action="contract" clicktrack="ctl|rsd|shop|iptv|pre_id_learn|channel_lineup|button|hide_channel_info"><span class="grnArrow pointup">Hide Channel Information</span></a>
+								</div>
+								<div class="expanderBtn expand">
+									<a href="#channelInfo" class="ghostWhiteBtn" data-action="expand" clicktrack="ctl|rsd|shop|iptv|pre_id_learn|channel_lineup|button|show_channel_info"><span class="grnArrow pointdown">Show Channel Information</span></a>
+								</div>									
+							</div>
+							<div class="expandContract" id="channelInfo">
+								<div class="fullWidthShadow">
+									<div class="wideGroup softShadowDivider fullWidthShadow">
+										<h2 class="secondary-header">With Prism<sup>&trade;</sup>  TV, you get all this &ndash; and more.</h2>
+										<h3>Local Channels</h3>
+										<h4>Watch your favorite local network affiliates from sunrise to sunset. </h4>
+										<p>Keep up with news, sports and shows in your area. Prism<sup>&trade;</sup> TV has them all &ndash; ABC, NBC, CBS, FOX, and CW.</p>
+										<div class="channelLogos">
+											<img src="/prismtv/images/channelLineup/sprite-localChannels.png" alt="NBC, FOX, CBS, ABC">
+										</div>
+									</div>
+								</div>
+								<div class="wideGroup softShadowDivider">
+									<h3>Premium Channels</h3>
+									<h4>The best in entertainment is just a click away.</h4>
+									<p>Prism&trade; TV has tons of Hollywood box office hits, award-winning original series and special events from HBO<sup>&reg;</sup>, SHOWTIME<sup>&reg;</sup>, Cinemax<sup>&reg;</sup>, STARZ<sup>&reg;</sup>/ENCORE<sup>&reg;</sup> and The Movie Channel<sup>&trade;</sup>. Just add any of these premium channels to any programming package for the ultimate stay-at-home movie night.</p>
+									<div class="channelLogos">
+										<img src="/prismtv/images/channelLineup/sprite-premiumChannels.png" alt="HBO&reg;, STARZ&reg;, SHOWTIME&reg;, Cinemax&reg;, Encore&reg;, Flix&reg;, The Movie Channel&reg;">
+									</div>
+								</div>
+								<div class="wideGroup softShadowDivider">
+									<h3>HD Channels</h3>
+									<h4>Reach-out-and-touch-it HD will leave you in awe.</h4>
+									<p>If you&rsquo;re into HD &ndash; and really, who isn&rsquo;t these days &ndash; Prism<sup>&trade;</sup> TV has a picture that&rsquo;s truly brilliant. So your shows, from local channels to premium channels, will be seen with the clearest, sharpest picture you can imagine. And because Prism<sup>&trade;</sup> TV comes HD ready, there&rsquo;s no equipment to buy or upgrade. Add HD service at any time for an additional charge without changing your equipment.</p>
+									<div class="channelLogos">
+										<img src="/prismtv/images/channelLineup/sprite-HDChannels.png" alt="Discovery HD&reg;, National Geographic HD&reg;, Food Network HD&reg;, CNN HD&reg;, E! HD&reg;, Animal Planet HD&reg;, Spike HD&reg;, Bravo HD&reg;, AE HD&reg;, Nickelodeon HD&reg;, Disney Channel HD&reg;, SyFy HD&reg;">
+									</div>
+								</div>
+								<div class="wideGroup softShadowDivider">
+									<h3>Sports Channels</h3>
+									<h4>Don&rsquo;t miss a second of the action.</h4>
+									<p>Prism<sup>&trade;</sup> TV has more sports channels in our basic package than cable or satellite. And with 14 channels of coast-to-coast sports coverage and CenturyLink<sup>&reg;</sup> Prism&rsquo;s Whole Home DVR, you&rsquo;ll never miss a big play again (requires Prism<sup>&trade;</sup> Complete Package). Plus, get edge-of-your-seat action with the NFL Network&rsquo;s RedZone (additional programming fees apply).</p>
+									<div class="channelLogos">
+										<img src="/prismtv/images/channelLineup/sprite-sportsChannels.png" alt="ESPN&reg;, ESPN2&reg;, FOX Sports Network&reg;, NFL Network&reg;, ESPN Classic&reg;, BigTen Network&reg;, Golf Channel&reg;, MLB Network&reg;">
+									</div>
+								</div>
+								<div class="wideGroup softShadowDivider">
+									<h3>Prism<sup>&trade;</sup> Paquete Latino</h3>
+									<h4>Your favorite shows en espa&ntilde;ol.</h4>
+									<p>Now all your favorite shows in Spanish will be ready to watch with just the click of your remote. Get channels like ESPN Deportes, CNN en Espa&ntilde;ol, Discovery Familia and more &ndash; for less. Just call your CenturyLink Customer Consultant to order Prism<sup>&trade;</sup> Paquete Latino.</p>
+									<div class="channelLogos">
+										<img src="/prismtv/images/channelLineup/sprite-latinoChannels.png" alt="CNN Esp.&reg;, FOX Deportes&reg;, ESPN Deportes&reg;, Discovery Espa&ntilde;ol&reg;, La Famillia Espa&ntilde;ol&reg;, Boomerang&reg;, cinemecicano&reg;, Cable Noticas&reg;, VideoRola&reg;, Latele Novela&reg;">
+									</div>
+								</div>
+								<div class="feature wideFeature softShadowDivider">
+									<div class="featureHero heroFlushLeft">
+										<img src="./images/feature/image_wide_hbog_maxgo.jpg" alt="Game of Thrones&reg; on HBO GO&reg; | The Adjustment Bureau on HBO GO&reg; | True Blood&reg; on HBO GO&reg;" />
+									</div>
+									<div class="twoCol">
+										<div class="colPad">
+											<h3 class="overflowHeaderImg"><img src="/prismtv/images/feature/icon-hbogo.png" alt="HBO GO&reg;" /></h3>
+											<h4>The best shows. The biggest stars. <nobr>The hottest movies.</nobr></h4>
+											<br />
+											<p>HBO GO<sup>&reg;</sup> is now available as part of your HBO subscription with CenturyLink<sup>&reg;</sup> Prism&trade;. Which means you can access 1,400 of your favorite HBO shows, including HBO Original Series like Game of Thrones and True Blood, hit movies, comedies, sports and documentaries from your laptop, mobile devices, streaming players, gaming consoles and your smart TV, too. Plus, access bonus features and behind-the-scenes extras.</p>
+										</div>
+									</div>
+									<div class="twoCol">
+										<div class="colPad">
+											<h3 class="overflowHeaderImg"><img src="/prismtv/images/feature/icon-maxgo.png" alt="MAX GO&reg;" /></h3>
+											<h4>The best seats in the house <nobr>are in your living room.</nobr></h4>
+											<br />
+											<p>Now you can get MAX GO<sup>&reg;</sup> as a part of your Cinemax subscription with CenturyLink<sup>&reg;</sup> Prism<sup>&trade;</sup>. You'll get unlimited access to hundreds of Hollywood hits, indie favorites, behind-the-scenes extras and more. And you can access it anytime, anywhere from your computer, iPad<sup>&reg;</sup>, iPhone<sup>&reg;</sup> or Android<sup>&trade;</sup> device. Plus, you can block youngsters from watching more mature content with the easy-to-use parental controls.</p>
+										</div>
+									</div>
+									<div class="expanderBtn contract">
+										<a href="#channelInfo" class="ghostWhiteBtn" data-action="contract" clicktrack="ctl|rsd|shop|iptv|pre_id_learn|channel_lineup|button|hide_channel_info"><span class="grnArrow pointup">Hide Channel Information</span></a>
+									</div>
+								</div>
+							</div>
+							<!-- div class="clearfix lastChanceFooter">
+								<p class="footerPhoneCTA phone contact">Call Now! <span class="callNumber mkt_phone_number">1.888.273.5968</span></p>
+							</div -->
+						</div>
+						<span class="roundcorner rcLeft rcTop outsideB">&nbsp;</span> <span class="roundcorner rcLeft rcBottom outsideB">&nbsp;</span> <span class="roundcorner rcRight rcTop outsideB">&nbsp;</span> <span class="roundcorner rcRight rcBottom outsideB">&nbsp;</span>
+					</div>
+<!--#include virtual="/prismtv/inc-prismFooter.html" -->

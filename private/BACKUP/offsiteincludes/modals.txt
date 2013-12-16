@@ -1,0 +1,488 @@
+
+<!--begin variable setting file-->
+<!--set environment and url variables-->
+<script type="text/javascript">
+	//echo server type url
+	//Server type: PROD
+</script>
+<!--else is not catching in some cases, so setting vars first as alternative-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+<script type="text/javascript">
+	var SERVER_TYPE='PROD';
+	var ctl_url='http://www.centurylink.com';
+	var ctlsecure_url='https://www.centurylink.com';
+	var ctlmyacct_url='https://eam.centurylink.com';
+	var q_url='http://qwest.centurylink.com';
+	var qshop_url='https://shop.centurylink.com';
+	var qmobile_url='http://m.centurylink.com';
+	var eq_url='http://embarq.centurylink.com';
+	var eqsecure_url='https://embarq.centurylink.com';
+	var ctleam_url='https://embarq.centurylink.com';
+	var qwest_url='http://qwest.centurylink.com';
+	var ctl_selfservice_url='http://selfservice.centurylink.com';
+	var search='http://c.search.centurylink.com';
+	var qcookie_url='https://q.myaccount.centurylink.com';
+	var qportal_url='https://sbcontrolcenter.centurylink.com';
+	var faq_url='http://www3.qwest.com';
+</script>
+
+<style>
+.input-hidden
+{
+  border: none;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  padding:0;
+  margin: 0;
+}
+</style>
+<!-- Modal Setup -->
+<link rel="stylesheet" href="//www.centurylink.com/assets/css/plugins/jqModal.css" />
+<link rel="stylesheet" href="//www.centurylink.com/assets/css/modals.css" />
+<!-- end modal setup -->
+
+<!--zam-->
+<div class="modal jqmWindow" id="zam-modal">
+	<div class="modal-top">
+		Customer Info <div class="modal-close"><a href="//www.centurylink.com" id="zam_close_link" class="zam_close">Close Window</a><a href="//www.centurylink.com" class="modal-close-btn zam_close" id="zam_close-button"></a></div>
+	</div>
+	<div class="modal-content">
+		<div class="page initial" id="zam-initial">
+			<form name="zam_form" id="zam-form" method="post">
+				<div id="zam-error-zip-required" class="modal-errors"><div class="modal-error-icon"></div><span class="error-text">You must enter a zip code.</span></div>
+				<div id="zam-error-zip-length" class="modal-errors"><div class="modal-error-icon"></div><span class="error-text">A zipcode must contain five digits.</span></div>
+				<div id="zam-zip-unexpected" class="error interstital-timeout"><div class="modal-error-icon"></div><span class="error-text">We had an unexpected error, please try again.</span></div>
+				<div id="zam_zip">Service address zip:(required)<br /><input type="text" id="zam_zip-code" style="position:relative;top:-4px;" /> <a href="#" id="zam_zip-auth-go" class="modal-button-go" style="margin-bottom:-6px;"></a></div>
+						<div id="zam_zip-on-file">Service address zip: <span id="zam_stored-zip"></span> <a href="#" id="zam_zip-reset">change</a></div>
+						<div id="zam_company-selector" class="company-selector-container">
+							<span class="select-company zam_instructions error-text"><br /> Attention: We cannot match your zip code properly. Please indicate below which company used to provide service to your area in the past.<div id="zam-company-not-selected" class="error"><br /><br /><div class="modal-error-icon"></div><span class="error-text">A company selection is required.</span></div></span><br /><br />
+							<div>
+								<img src="//www.centurylink.com/assets/images/page-components/qwest_logo.png" /><br />
+								<input type="radio" name="zam_company-selector-radio" value="Q" id="zam_company-selector-q"> Qwest
+							</div>
+							<div>
+								<img src="//www.centurylink.com/assets/images/page-components/ctl_logo.png" style="margin-top:6px"/><br />
+								<input type="radio" name="zam_company-selector-radio" value="CTL" id="zam_company-selector-ctl"> CenturyLink
+							</div>
+							<br clear="all"/>
+							<br clear="all"/>
+							<div><a href="#" id="zam_overlap-go" class="modal-button-go" style="height:35px;"></a></div>
+						</div>
+				<br clear="both" />
+				<a href="http://zip4.usps.com/zip4/welcome.jsp" class="popup-trigger">Help</a>
+			</form>
+
+			<a href="#" class="needed-link" id="zam_needed-link">Why is this needed?</a>
+			<div id="zam_needed-content">
+				As CenturyLink and Qwest merge companies, we are working hard to combine our systems. By supplying your service address zip code we will be able to get you to the right location. Thank you for your patience during the merger process.
+			</div>
+		</div>
+		<div class="page" id="zam_oor" style="display:none;">
+			<h3>Sorry, we don't recognize the information you provided.</h3>
+			<br /><br />
+			<p>What would you like to do?</p>
+			<form name="ctam_nc_form"  method="post">
+				<input type="radio" name="oor_options" value="oor_services" />Id like to shop for CenturyLink Out of Region Long Distance.<br />
+				<input type="radio" name="oor_options" value="oor_nc-address" />I am a new customer moving to a CenturyLink service area. I'd like to search by my new address.<br />
+				<input type="radio" name="oor_options" value="oor_try-again" />I'd like to try to enter my information again.<br /><br />
+				<a href="#" id="zam_oor-go" class="modal-button modal-button-go"></a><br /><br /><br />
+				<a href="http://qwest.centurylink.com/residential/customerService/contactus/phone.html">Not sure what to do? Try Customer Service</a></a>
+			</form>
+		</div>
+		<input type="hidden" name="targetRedirect" id="targetRedirect" value="sorry" />
+	</div>
+	<div class="modal-bottom"></div>
+</div>
+<!--end zam-->
+<!--ctam-->
+<div id="ctam_modal" class="modal jqmWindow">
+	<div class="modal-top">
+		Customer Info <div class="modal-close"><a href="//www.centurylink.com" class="ctam_close">Close Window</a><a id="ctam_close-button" href="//www.centurylink.com" class="modal-close-btn ctam_close"></a></div>
+	</div>
+	<div class="modal-content">
+		<div class="page initial" id="ctam_initial">
+			<p>To customize your pricing and feature options we need a little more information.</p><br />
+			<div id="ctam-error-street-required" class="error"><div class="modal-error-icon"></div><span class="error-text">A street address is required.</span></div>
+				<div id="ctam-error-city-required" class="error"><div class="modal-error-icon"></div><span class="error-text">A city is required.</span></div>
+				<div id="ctam-error-state-required" class="error"><div class="modal-error-icon"></div><span class="error-text">A state is required.</span></div>
+				<div id="ctam-error-zip-required" class="error"><div class="modal-error-icon"></div><span class="error-text">Please enter a valid zip code.</span></div>
+				<div id="ctam-error-zip-length" class="error"><div class="modal-error-icon"></div><span class="error-text">Please enter a valid zip code.</span></div>
+				<div id="ctam-error-zip-unrecognized" class="error"><div class="modal-error-icon"></div><span class="error-text">Your zip code is unrecognized. Please try again.</span></div>
+				<div id="ctam-overlap-unexpected" class="error interstital-timeout"><div class="modal-error-icon"></div><span class="error-text">We had an unexpected error, please try again.</span></div>
+			<div class="modal-block-top"></div>
+			<div class="modal-block" id="ctam_new-customer">
+				<a href="#" class="modal-block-title" id="ctam_new-customer-link">New Customers</a>
+
+				<div class="modal-block-expanded" id="ctam_new-customer-expanded">
+				<div id="ctam_nc-form-container">
+				<p>Enter your service address so we can show you pricing and the options available to you.</p><br />
+					<form name="ctam_nc_form" id="ctam_nc-form" method="post">
+						<div class="address-block">
+							<label>Address (required)</label>
+							<input type="text" name="address" id="ctam_nc-address" />
+						</div>
+						<div class="address-block">
+							<label>Unit Type</label>
+							<select name="unit" id="ctam_nc-unit-type">
+								<option value="">Select</option>
+<option value="">None/House</option>
+<option value="APT">Apt</option>
+<option value="LOT">Lot</option>
+<option value="RM">Room</option>
+<option value="SLIP">Slip</option>
+<option value="SUIT">Suite</option>
+<option value="TRLR">Trailer</option>
+<option value="UNIT">Unit</option>
+							</select>
+						</div>
+							<label for="ctam_nc-unit-number">Unit No</label>
+						<div class="address-block">
+							<input type="text" name="unit_number" size=2 id="ctam_nc-unit-number" />
+						</div>
+						<br clear="all" />
+						<div class="address-block">
+							<label for="ctam-nc-city">City (required)</label>
+							<input type="text" name="city" id="ctam_nc-city" />
+						</div>
+						<div class="address-block">
+							<label for="ctam-nc-state">State (required)</label>
+							<select name="state" id="ctam_nc-state">
+								<option value="">Select</option>
+<option value="AL">Alabama</option>
+<option value="AZ">Arizona</option>
+<option value="AR">Arkansas</option>
+<option value="CA">California</option>
+<option value="CO">Colorado</option>
+<option value="FL">Florida</option>
+<option value="GA">Georgia</option>
+<option value="ID">Idaho</option>
+<option value="IL">Illinois</option>
+<option value="IN">Indiana</option>
+<option value="IA">Iowa</option>
+<option value="KS">Kansas</option>
+<option value="LA">Louisiana</option>
+<option value="MI">Michigan</option>
+<option value="MN">Minnesota</option>
+<option value="MS">Mississippi</option>
+<option value="MO">Missouri</option>
+<option value="MT">Montana</option>
+<option value="NE">Nebraska</option>
+<option value="NV">Nevada</option>
+<option value="NJ">New Jersey</option>
+<option value="NM">New Mexico</option>
+<option value="NC">North Carolina</option>
+<option value="ND">North Dakota</option>
+<option value="OH">Ohio</option>
+<option value="OK">Oklahoma</option>
+<option value="OR">Oregon</option>
+<option value="PA">Pennsylvania</option>
+<option value="SC">South Carolina</option>
+<option value="SD">South Dakota</option>
+<option value="TN">Tennessee</option>
+<option value="TX">Texas</option>
+<option value="UT">Utah</option>
+<option value="VA">Virginia</option>
+<option value="WA">Washington</option>
+<option value="WI">Wisconsin</option>
+<option value="WY">Wyoming</option>
+							</select>
+						</div>
+						<br clear="both" />
+						<div class="address-block">
+							<label for="ctam-nc-zip">Zip (required)</label>
+							<input type="text" name="zip" size=3 id="ctam_nc-zip" /> <a href="http://zip4.usps.com/zip4/welcome.jsp" class="popup-trigger">Help</a>
+						</div>
+						<br clear="both" />
+						<input type="checkbox" id="ctam_nc-address-remember-me" class="remember-me" /> Remember me<br /><br />
+						<a href="#" class="modal-button btn-modal-show-options" id="ctam_nc-go">Submit!</a>
+						<input type="submit" class="input-hidden" value="Submit" />
+					</form>
+					</div>
+					<div id="ctam_nc-overlap">
+						<form id="ctam_nc-overlap-form" method="post">
+						<div id="ctam_nc-instructions">
+								<br />
+								<div class="select-company ctam_nc-instructions error-text">Attention: We cannot match your zip code properly. Please indicate below which company used to provide service to your area in the past.<div id="ctam_nc-company-not-selected" class="error"><br /><br /><div class="modal-error-icon"></div><span class="error-text">A company selection is required.</span></div></span>
+								<br /><br /></div>
+							</div>
+							<div id="ctam_nc-company-selector" class="company-selector-container">
+								<div>
+									<img src="//www.centurylink.com/assets/images/page-components/qwest_logo.png" /><br />
+									<input type="radio" name="ctam_nc-company-selector-radio" value="Q"   id="ctam_nc-company-selector-q" checked="false"> Qwest
+								</div>
+								<div>
+									<img src="//www.centurylink.com/assets/images/page-components/ctl_logo.png"  style="margin-top:6px"/><br />
+									<input type="radio" name="ctam_nc-company-selector-radio" value="CTL" id="ctam_nc-company-selector-ctl" checked="false"> CenturyLink
+								</div>
+							</div><br /><br />
+							<a href="#" class="modal-button btn-modal-show-options" id="ctam_nc-overlap-go"></a>
+							<input type="submit" class="input-hidden" value="Submit" />
+							</form>
+					</div>
+				</div>
+			</div>
+			<div class="modal-block-bottom"></div>
+
+			<div class="modal-block-top"></div>
+			<div class="modal-block" id="ctam_existing-customer">
+				<a href="#" class="modal-block-title" id="ctam_current-customer-link">Current Customers</a>
+				<div class="modal-block-expanded" id="ctam_current-customer-expanded">
+
+						<p>Give us your phone number or login with MyAccount so that we can show you the pricing and options available to you.</p><br />
+						<input type="radio" name="ec_login_type" value="phone_acct_num" id="ctam_ec-phonenum-radio" checked="checked" /> Phone Number or Account Number<br />
+						<div class="modal-block-expanded_lvl2" id="ctam_ec-phonenum">
+							<form id="ctam_ec-btn" method="post">
+								<div id="ctam-phonenumber-required-error" class="error"><div class="modal-error-icon"></div><span class="error-text">A phone or account number is required</span></div>
+								<div id="ctam-mya-zip-unexpected" class="error interstital-timeout"><div class="modal-error-icon"></div><span class="error-text">We had an unexpected error, please try again.</span></div>
+								<input type="text" name="phone_acct_num_val" id='ctam_ec-phone-or-account' />
+								<br />
+								<p id="ctam_phone-explanation">example: 333-222-2222</p><br />
+							
+								<input type="checkbox" id="ctam_ec-phone-remember-me" class="remember-me" /> Remember me<br />
+								<input type="submit" class="input-hidden" value="Submit" />
+							</form>
+						</div>
+						<input type="radio" name="ec_login_type" value="myaccount" id="ctam_ec-myaccount-radio" /> MyAccount<br />
+						<div id="ctam_ec-zip"><form id="ctam-mya-zip" method="post">Service address zip:(required)<br /><input type="text" id="ctam_ec-zip-code" /> <a href="#" id="ctam_ec-zip-auth-go" class="modal-button-go"></a></form></div>
+						
+						<div id="ctam_ec-zip-on-file">Service address zip: <span id="ctam_ec-stored-zip"></span> <a href="#" id="ctam_ec-zip-reset">change</a></div>
+						<div class="modal-block-expanded_lvl2" id="ctam_ec-myaccount">
+							<div id="ctam-username-required-error" class="error"><div class="modal-error-icon"></div><span class="error-text">A username is required.</span></div>
+							<div id="ctam-password-required-error" class="error"><div class="modal-error-icon"></div><span class="error-text">A password is required.</span></div>
+							<div id="ctam-mya-unexpected" class="error interstital-timeout"><div class="modal-error-icon"></div><span class="error-text">We had an unexpected error, please try again.</span></div>
+							<div id="ctam_mya-instructions">
+								<br />
+								<div class="select-company ctam_instructions">Select the company you set up your account with, and enter your user name and password.<br /><br />
+								</div>
+								<div class="select-company company-required"><div class="modal-error-icon"></div><span class="error-text">A company selection is required.</span><br /><br />
+								</div>
+								<div class="enter-info ctam_instructions">Enter your My Account user name and password.</div>
+							</div>
+							<div id="ctam_company-selector" class="company-selector-container">
+								<div>
+									<img src="//www.centurylink.com/assets/images/page-components/qwest_logo.png" /><br />
+									<input type="radio" name="ctam_company-selector-radio" value="Q"   id="ctam_company-selector-q" checked="false"> Qwest
+								</div>
+								<div>
+									<img src="//www.centurylink.com/assets/images/page-components/ctl_logo.png"  style="margin-top:6px"/><br />
+									<input type="radio" name="ctam_company-selector-radio" value="CTL" id="ctam_company-selector-ctl" checked="false"> CenturyLink
+								</div>
+							</div>
+							<div id="qwest_ma-container">
+								<form id="qwest-ma-modal-login" class="ctam-myaccount-form" method="post">
+									<label for="ctam_qwest-ec-myaccount-username">User Name (required)</label>
+									<input type="text" name="userId" id="ctam_qwest-ec-myaccount-username" />
+									<label for="ctam_qwest-ec-myaccount-password">Password (required)</label>
+									<input type="password" name="password" id="ctam_qwest-ec-myaccount-password" /><br /><br />
+									<input type="checkbox" id="ctam_ec-q-ma-remember-me" class="remember-me" /> Remember me<br />
+									<input type="hidden" name="form.contentSet" value="myAccount"/>
+									<input type="hidden" name="form.redirectUrl" id="qwest-ma-login-redirectUrl"  value="/freeRange/acctMgmt/startMAFlow.action"/>
+									<input type="submit" class="input-hidden" value="Submit" />
+								</form>
+
+							</div>
+							<div id="ctl_ma-container">
+								<form id="ctl_ctam-ec-ma-form" class="ctam-myaccount-form" method="post">
+								<label for="ctam_ctl-ec-myaccount-username">User Name (required)</label>
+								<input type="text" name="USER" id="ctam_ctl-ec-myaccount-username" />
+								<label for="ctam_ctl-ec-myaccount-password">Password (required)</label>
+								<input type="password" name="PASSWORD" id="ctam_ctl-ec-myaccount-password" /><br /><br />
+								<input type="checkbox" id="ctam_ec-ctl-ma-remember-me" class="remember-me" /> Remember me<br />
+								<input type="submit" class="input-hidden" value="Submit" />
+								</form>
+							</div>
+
+						</div>
+						<div id="ctam_ec-submit-tools">
+							<br />
+							<a href="#" class="modal-button btn-modal-show-options" id="ctam_ec-go"></a>
+						</div>
+				</div>
+				<input type="hidden" name="targetRedirect" id="ctam_target-redirect" />
+			</div>
+			<div class="modal-block-bottom"></div>
+			<a href="//www.centurylink.com/Pages/AboutUs/Legal/privacyPolicy.jsp" class="link-protect-info popup-trigger">How does CenturyLink protect my information?</a>
+		</div>
+		<div class="page" id="ctam_oor" style="display:none;">
+			<h3>Sorry, we don't recognize the information you provided.</h3>
+			<br /><br />
+			<p>What would you like to do?</p>
+			<form name="ctam_nc_form" method="post" id="ctam-oor-form">
+				<input type="radio" name="oor_options" value="oor_services" />Id like to shop for CenturyLink Out of Region Long Distance.<br />
+				<input type="radio" name="oor_options" value="oor_nc-address" />I am a new customer moving to a CenturyLink service area. I'd like to search by my new address.<br />
+				<input type="radio" name="oor_options" value="oor_try-again" />I'd like to try to enter my information again.<br /><br />
+				<a href="#" id="ctam_oor-go" class="modal-button btn-modal-show-options"></a><br /><br /><br />
+				<a href="http://qwest.centurylink.com/residential/customerService/contactus/phone.html">Not sure what to do? Try Customer Service</a>
+				<input type="submit" class="input-hidden" value="Submit" />
+			</form>
+		</div>
+	</div>
+	<div class="modal-bottom"></div>
+</div>
+<!-- end ctam -->
+<!-- mam -->
+<div id="mam-modal" class="modal jqmWindow">
+	<div class="modal-top">
+		Customer Info <div class="modal-close"><a href="//www.centurylink.com" class="mam_close">Close Window</a><a href="//www.centurylink.com" id="mam_close-button" class="modal-close-btn mam_close" class="mam_close"></a></div>
+	</div>
+	<div class="modal-content">
+			<div id="mam-initial">
+				<p id="mam_zip-instructions">Enter your service address zip code so we can help you manage your account. (Required to direct you to the right account)</p>
+				<div id="mam-error-zip-required" class="error"><div class="modal-error-icon"></div><span class="error-text">A zip code is required.</span></div>
+				<div id="mam-error-zip-length" class="error"><div class="modal-error-icon"></div><span class="error-text">A zip code must contain five digits</span></div>
+				<div id="mam-zip-unexpected" class="error interstital-timeout"><div class="modal-error-icon"></div><span class="error-text">We had an unexpected error, please try again.</span></div>
+				<form name="mam_ec_form-zipentry" id="mam_ec_form-zipentry"  method="post">
+					<div id="mam_ec-zip">
+						Service address zip:(required)<br />
+						<input type="text" id="mam_ec-zip-code" /> <a href="#" id="mam_ec-zip-auth-go" class="modal-button-go">&nbsp;</a>
+						<br clear="all" />
+						<a href="http://zip4.usps.com/zip4/welcome.jsp" class="popup-trigger">Help</a>
+
+						</div>
+					<div id="mam_ec-zip-on-file">Service address zip: <span id="mam_ec-stored-zip"></span> <a href="#" id="mam_ec-zip-reset">change</a></div>
+				</form>
+					<div class="modal-block-expanded_lvl2" id="mam_ec-myaccount">
+						<div id="mam-username-required-error" class="error"><div class="modal-error-icon"></div><span class="error-text">A username is required.</span></div>
+						<div id="mam-password-required-error" class="error"><div class="modal-error-icon"></div><span class="error-text">A password is required.</span></div>
+						<div id="mam-mya-unexpected" class="error interstital-timeout"><div class="modal-error-icon"></div><span class="error-text">We had an unexpected error, please try again.</span></div>
+						<div id="mam_mya-instructions">
+							<div class="select-company mam_instructions error-text"><br /> Attention: We cannot match your zip code properly. Please indicate below which company used to provide service to your area in the past.<div id="mam-company-not-selected" class="error"><br /><div class="modal-error-icon"></div><span class="error-text">Please select a company so we can get you to the right account.</span></div>
+
+							</div>
+							<div class="enter-info mam_instructions"><br />Enter your My Account user name and password.</div>
+						</div>
+						<div id="mam_company-selector" class="company-selector-container">
+						<br />
+							<div>
+								<img src="//www.centurylink.com/assets/images/page-components/qwest_logo.png" /><br />
+								<input type="radio" name="mam_company-selector-radio" value="Q" id="mam_company-selector-q"> Qwest
+							</div>
+							<div>
+								<img src="//www.centurylink.com/assets/images/page-components/ctl_logo.png"  style="margin-top:6px"/><br />
+								<input type="radio" name="mam_company-selector-radio" value="CTL" id="mam_company-selector-ctl"> CenturyLink
+							</div>
+							<br />
+						</div>
+						<div id="mam_qwest-ma-container"><br />
+							<form id="mam-qwest-myaccount" class="myaccount-form" method="post">
+							<label for="mam_qwest-ec-myaccount-username">User Name (required)</label>
+							<input type="text" name="userId" id="mam_qwest-ec-myaccount-username" />&nbsp;&nbsp;&nbsp;<a href="http://qwest.centurylink.com/MasterWebPortal/freeRange/acctMgmt/ForgotUserId.action">Forgot user name?</a>
+							<label for="mam_qwest-ec-myaccount-password">Password (required)</label>
+							<input type="password" name="password" id="mam_qwest-ec-myaccount-password" />&nbsp;&nbsp;&nbsp;<a href="http://qwest.centurylink.com/MasterWebPortal/freeRange/acctMgmt/ForgotMyPasswordAction.action">Forgot password?</a>
+							<input type="hidden" name="form.contentSet" value="myAccount"/>
+							<input type="hidden" name="form.redirectUrl"  value="/freeRange/acctMgmt/startMAFlow.action"/>
+							<input type="submit" class="input-hidden" />
+							</form>
+						</div>
+						<div id="mam_ctl-ma-container"><br />
+							<form id="mam-ctl-myaccount" class="myaccount-form" method="post">
+							<label for="mam_ctl-ec-myaccount-username">User Name (required)</label>
+							<input type="text" name="USER" id="mam_ctl-ec-myaccount-username" /> <a href="https://eam.centurylink.com/eam/troubleLoginUserID.do">Forgot user name?</a>
+							<label for="mam_ctl-ec-myaccount-password">Password (required)</label>
+							<input type="password" name="PASSWORD" id="mam_ctl-ec-myaccount-password" /> <a href="https://eam.centurylink.com/eam/troubleLoginpwd.do ">Forgot password?</a>
+							<input type="submit" class="input-hidden" value="Submit" />
+							</form>
+						</div>
+						<div id="mam_company-buttons">
+							<div id="mam_standard-buttons">
+								<br />
+								<input type="checkbox" value="mam_remember-me" class="remember-me" /> Remember me<br /><br />
+								<a href="#" class="modal-button modal-button-signin" id="mam_ec-go"></a>
+							</div>
+							<div id="mam_company-links">
+								<span id="mam_qwest-links" class="mam_link-container">
+									<a href="http://qwest.centurylink.com/MasterWebPortal/freeRange/QuickPay.action">Quick Bill Pay</a><br />
+									<a href="http://qwest.centurylink.com/MasterWebPortal/freeRange/acctMgmt/RegisterForMyAccount.action">Sign up for MyAccount</a>
+								</span>
+								<span id="mam_ctl-links" class="mam_link-container">
+									<a href="https://eam.centurylink.com/eam/registration.do?enrollButton.x=65&enrollButton.y=11">Sign up for MyAccount</a><br />
+									<a href="http://www.centurylink.com/Pages/MyAccount/overview.jsp ">View Benefits of MyAccount</a>
+								</span>
+							</div>
+						</div>
+					</div>
+
+				<input type="hidden" id="mam_target-redirect" />
+				<a href="#" class="needed-link" id="mam_needed-link">Why is this needed?</a>
+				<div id="mam_needed-content">
+					As CenturyLink and Qwest merge companies, we are working hard to combine our systems. By supplying your service address zip code we will be able to get you to the right location. Thank you for your patience during the merger process.
+				</div>
+				<a href="//www.centurylink.com/Pages/AboutUs/Legal/privacyPolicy.jsp" class="link-protect-info popup-trigger">How does CenturyLink protect my information?</a><br />
+			</div>
+			<div class="page" id="mam_oor" style="display:none;">
+				<h3>Sorry, we don't recognize the information you provided.</h3><br />
+				<br />
+				<p>What would you like to do?</p>
+				<form name="mam_oor_form"  method="post" id="mam-oor-form">
+					<input type="radio" name="oor_options" value="oor_services" />Id like to shop for CenturyLink Out of Region Long Distance.<br />
+					<input type="radio" name="oor_options" value="oor_try-again" />I'd like to try to enter my information again.<br /><br />
+					<a href="#" id="mam_oor-go" class="modal-button modal-button-go"></a><br /><br /><br />
+					<a href="http://qwest.centurylink.com/residential/customerService/contactus/phone.html">Not sure what to do? Try Customer Service</a>
+				</form>
+			</div>
+	</div>
+
+	<div class="modal-bottom"></div>
+</div>
+<!-- end mam -->
+
+<div id="interstitial">
+	<div class="badge"><img id="interstitial-badge-image" src="//www.centurylink.com/assets/images/page-components/interstitial.gif" /></div>
+</div>
+
+<!--uapmodal-->
+<div class="modal jqmWindow" id="unavailable-modal">
+	<div class="modal-top">
+		Customer Service &amp; Support <div class="modal-close"><a href="//www.centurylink.com" id="upm_close_link" class="upm_close">Close Window</a><a href="//www.centurylink.com" class="modal-close-btn upm_close" id="upm_close-button"></a></div>
+	</div>
+	<div class="modal-content">
+		<div class="page initial" id="zam-initial">
+			<h3>We apologize for the inconvenience.  This product is currently not available in your area.</h3><br />
+			<p>Continue to view these CenturyLink products:</p>
+			<form name="upm_form"  method="post">
+				<input type="radio" name="unavailable_product_options" value="upm_directv" />DIRECTV&reg;<br />
+				<input type="radio" name="unavailable_product_options" value="upm_hsi" />High-Speed Internet<br />
+				<input type="radio" name="unavailable_product_options" value="upm_bundles" />Bundles<br />
+				<input type="radio" name="unavailable_product_options" value="upm_phone" />Phone<br />
+				<input type="radio" name="unavailable_product_options" value="upm_home" />Go back to the CenturyLink home page.<br /><br />
+				<a href="#" id="upm_go" class="modal-button modal-button-go"></a><br />
+			</form>
+		</div>
+	</div>
+	<div class="modal-bottom"></div>
+</div>
+<!--end uap modal-->

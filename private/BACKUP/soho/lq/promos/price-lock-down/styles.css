@@ -1,0 +1,413 @@
+
+
+
+#footer {
+	background: url("../images/footerBg.gif") no-repeat scroll 0 0 transparent;
+	font-size: 0.75em;
+	margin: 20px auto;
+	/*overflow: auto;*/
+	padding: 15px 20px 60px 20px;
+	width: 918px;
+	border-top:solid 1px #cccccc;
+	border-left:solid 1px #cccccc;
+	border-right:solid 1px #cccccc;
+	position:relative;
+}
+#footer .copyright {
+	font-size: 0.9em;
+	margin-top: 14px;
+}
+#footer .cta {
+	color: #999999;
+	font-size: 1.3em;
+	font-weight: bold;
+	margin: 0 0 12px;
+}
+#footer .about {
+	float: left;
+	padding-top: 4px;
+	width: 70%;
+}
+#footer .support {
+	float: right;
+	text-align: right;
+	width: 30%;
+}
+#footer .support ul.nav {
+	float: right;
+}
+#footer ul.nav {
+	height: 1.25em;
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+}
+#footer ul.nav li {
+	border-left: 1px solid #999999;
+	float: left;
+	margin: 0;
+}
+#footer ul.nav li a {
+	color: #333333;
+	padding: 0 1em;
+}
+#footer ul.nav li.first {
+	border-left: medium none;
+}
+#footer ul.nav li.first a {
+	padding-left: 0;
+}
+#footer ul.nav li.last a {
+	padding-right: 0;
+}
+.headerBlock {
+	background: url('images/headerimg.png') transparent top left no-repeat;
+	width:960px;
+	padding:0px;
+	left:0px;
+	height:280px;
+	text-indent:-9999px;
+}
+
+.page_wrapper {
+	background: none;
+	margin:0px auto;
+	width: 960px;
+	color:#616365;
+}
+.padlockit{
+	margin-top: 60px;
+	margin-right: 100px;
+}
+#mainR{
+width:220px;
+float: right;
+
+}
+.wrapmain{
+	padding-top: 40px;
+}
+.cta .ctaFoot {
+	background: none;
+}
+.cta .ctaTop .ctaBody {
+	background:none;
+	font-size: 11px;
+	padding: 10px 15px 0;
+}
+.cta .ctaMid {
+	background:none;
+}
+.accentForm {
+	color: #000000;
+	font-weight: 700;
+}
+body, div, td, h1, h2, h3, h4, li {
+	color:#616365;
+}
+body {
+	background-color:#FFFFFF;
+}
+#underForm {
+	background: url("images/grad_underForm.jpg") repeat-x scroll 0 bottom #FFFFFF;
+	border: 1px solid #CCCCCC;
+	left: 676px;
+	position: absolute;
+	top: 768px;
+	width: 248px;
+}
+#underForm ul {
+	padding:0 20px;
+	margin-left: 20px;
+}
+#underForm ul.greenDot li {
+	list-style-image: url('images/greenDot.png');
+}
+/* CORNER Styles */ 
+/* ROUNDED CORNER HTML IMPLEMENTATION: 
+<div class="corners insideW fillBgG cBottom"> <span class="corner cLeft"> &nbsp; </span> <span class="corner cRight"> &nbsp; </span> </div> 
+*/ 
+.corners {
+	position: relative;
+	clear:both;
+	display:block;
+	width:100%;
+	height:10px;
+}
+.corners * {
+	display:block;
+}
+.corner {
+	height: 10px;
+	width:10px;
+	display:block;
+	position:relative;
+	line-height: 0px;
+}
+.cTop .cLeft {
+	float:left;
+	background-position: left top;
+	top: -1px;
+	right: 1px;
+}
+.cTop .cRight {
+	float:right;
+	background-position: right top;
+	top: -1px;
+	left: 1px;
+}
+.cBottom .cLeft {
+	float:left;
+	background-position: left bottom;
+	bottom: -1px;
+	right: 1px;
+}
+.cBottom .cRight {
+	float:right;
+	background-position: right bottom;
+	bottom: -1px;
+	left: 1px;
+}
+.cBottom.push .cLeft {
+	float:left;
+	background-position: left bottom;
+	bottom: -21px;
+	right: 21px;
+}
+.cBottom.push .cRight {
+	float:right;
+	background-position: right bottom;
+	bottom: -21px;
+	left: 21px;
+}
+.insideW .corner {
+	background-image:url("images/cornerWhiteOutside.png");
+}
+.outsideW .corner {
+	background-image:url("images/cornerWhiteOutside.png");
+}
+.outsideW .corner {
+	background-image:url("images/cornerWhiteOutside.png");
+}
+.outsideWNoBdr .corner {
+	background-image:url("../images/cornerWhiteOutsideNoBdr.png");
+}
+.outsideB .corner {
+	background-image:url("../images/cornerBlackOutside.png");
+}
+.fillBgW .corner {
+	background-color:#FFF;
+}
+.fillBgG .corner {
+	background-color:#DDD;
+}
+.fillBgB .corner {
+	background-color:#000;
+}
+.noLayoutTop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 200;
+}
+.noLayoutBtm {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 200;
+}
+#main {
+	padding-left: 35px;
+	padding-right: 25px;
+	width: 560px;
+	font-size:13px;
+	float: left;
+}
+#main h2 {
+	color:#284e36 !important;
+	font-size:16px;
+}
+#main img{
+	padding: 30px 0 30px 40px;
+	
+}
+#main p{
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.green-big{
+	font-size: 20px!important; 
+	
+}
+
+#tableThing {
+	width:560px;
+	height:170px;
+	margin-top:30px;
+	position:relative;
+}
+.black {
+	float:left;
+	height:37px;
+	width:207px;
+	background-color:#000000;/*padding-top:12px;*/
+	text-align:center;
+}
+.black:first-child {
+	margin-left:144px;
+}
+.cell {
+	float:left;
+	width:206px;
+	height:39px;
+	border-bottom: 1px solid #CCCCCC;
+	text-align:center;
+	padding:10px 0;
+}
+.col {
+	float:left;
+	width:142px;
+	border-bottom: 1px solid #CCCCCC;
+	font-weight:bold;
+	color:#000000;
+	padding:10px 0;
+}
+.grey {
+	background-color:#f1f1f1;
+}
+.mid {
+	height:36px;
+	border-top: 1px solid #CCCCCC;
+}
+.left {
+	border-left: 1px solid #CCCCCC;
+}
+.right {
+	border-right: 1px solid #CCCCCC;
+}
+.col .cTop {
+	top:-10px;
+}
+.col .cBottom .cLeft {
+	bottom:-11px;
+}
+#vs {
+	position:absolute;
+	left:325px;
+	top:-5px;
+}
+#underTableThing {
+	positon:relative;
+	font-size:11px;
+}
+#coreConnectBundle {
+	margin-top:20px;
+	background:url("images/rosette.jpg") no-repeat scroll 330px 80px transparent;
+}
+#coreConnectBundle ul {
+	list-style-type:none;
+}
+#coreConnectBundle ul li {
+	background: url('images/tick.jpg') transparent no-repeat 0 0;
+	min-height:20px;
+	width:240px;
+	padding-left:50px;
+	margin-bottom:10px;
+}
+#coreConnectBundle h4 {
+	color:#000000;
+}
+.page_wrapper {
+	height:auto;
+}
+#lockInYourPrice {
+/* 	height:150px; */
+}
+#underForm h4 {
+	border-bottom:#8cc63f 1px solid;
+	padding:15px;
+	color:#000000;
+	font-weight:bold;
+	font-size:14px;
+	text-transform:uppercase;
+}
+#smilingBox {
+	background: url('images/weHelpBusinessesBg.jpg') transparent no-repeat 0 0;
+	width:560px;
+	height:162px;
+	margin-left: 35px;
+}
+#smilingBox h3 {
+	color:#00853f;
+	font-weight:bold;
+	padding-top:35px;
+	padding-left:20px;
+	width:400px;
+}
+#smilingBox p {
+	padding-top:10px;
+	padding-left:20px;
+	width:375px;
+}
+.smaller {
+	font-size:0.75em;
+}
+.page_wrapper .special-offers-asterisk {
+	margin-top:30px;
+	position:relative;
+	padding-top: 30px;
+	padding-left: 35px;
+	margin-bottom: -60px;
+}
+.cta .subBtn, .cta .submit {
+	border: 0 none;
+	margin-top: 20px;
+	padding: 0;
+	width: 210px;
+}
+.hover-tfn{
+	position: absolute;
+	bottom: 30px;	
+	left:610px;
+	z-index: 1000;
+	color: #007936;
+	font-weight:bold;font-size:30px;
+}
+.special-offers-left.no-green-bg{
+	width: 960px !important;
+
+}
+.hover-tfn span.phone{
+	color: #424242 !important;
+}
+.info_panel{
+	margin-top: 10px;
+}
+.pagePhone{
+	background: url("images/phone_icon.jpg") no-repeat scroll 0 0 transparent;
+	padding-left: 20px;
+	color:#000 !important;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #575757;
+	line-height: 11px;
+	height:20px;
+	padding-bottom: 2px;
+}
+
+
+#lockInYourPrice h2{font-family:Arial, Helvetica, sans-serif;color:#8cc63f;font-size:18px;font-weight:bold;}
+#lockInYourPrice h3{font-family:Arial, Helvetica, sans-serif;color:#284e36;font-size:14px;font-weight:bold;}
+#coreConnectAdvantages h3{font-family:Arial, Helvetica, sans-serif;color:#284e36;font-size:14px;font-weight:bold;margin-bottom:20px;}
+#coreConnectAdvantages ul{padding:0;margin:0;}
+#coreConnectAdvantages ul li{list-style:none;background: url('images/greenDot.jpg') transparent no-repeat 0 5px;padding-left:15px;width:270px;float:left;margin-bottom:20px;margin-right:20px;}
+#coreConnectAdvantages ul li .largeText{font-size:15px;color:#2d2929;}
+#coreConnectAdvantages ul li p{font-size:13px;color:#616365;}
+.lockItDownBox p .phone{color:#424242;font-weight:bold;font-size:22px;}
+.lockItDownBox p{font-weight:bold;padding-top:30px;padding-bottom:15px;color: #007836;font-size: 22px;}
+.lockItDownBox{}
+#pathways{width:961px;height:68px;background: url('images/pathways.jpg') transparent no-repeat 0 0;margin-top:50px;}

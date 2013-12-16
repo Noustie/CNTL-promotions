@@ -1,0 +1,84 @@
+﻿<%@ WebHandler Language="C#" Class="support" %>
+
+using System;
+using System.Web;
+using System.Net;
+using System.Net.Mail;
+using System.Text;
+
+public class support : IHttpHandler {
+
+    private const string TO_ADDRESS = "talktous@centurylink.com";
+    //private const string TO_ADDRESS = "brownkg@peteramayer.com";
+    //private const string TO_ADDRESS = "teresa.cole@centurylink.com";
+    //private const string TO_ADDRESS = "keegan.brown@centurylink.com";
+
+	public void SendEmail(string message, string subject, bool isHtml, string toEmail, string fromEmail, string smtpServer, string smtpUser, string smtpPassword)
+    {
+        MailMessage message2 = new MailMessage
+        {
+            From = new MailAddress(fromEmail)
+        };
+		message2.Headers.Add("X-peteramayer-whitelist", "5TxfWIuhbBEayO9emzWutkYB3PIxAuMk");
+        message2.To.Add(toEmail);
+        message2.Subject = subject;
+        message2.Body = message;
+        message2.IsBodyHtml = isHtml;
+        message2.BodyEncoding = Encoding.UTF8;
+        SmtpClient client = new SmtpClient(smtpServer, 0x19);
+        if ( (smtpUser != null) && (smtpPassword != null) )
+        {
+            client.UseDefaultCredentials = false;
+            client.Credentials = new NetworkCredential(smtpUser, smtpPassword);
+        }
+        client.DeliveryMethod = SmtpDeliveryMethod.Network;
+        client.EnableSsl = false;
+        client.Send(message2);
+    }
+
+    public void ProcessRequest (HttpContext context) {
+
+        string name = context.Request.Params["name"];
+        string email = context.Request.Params["email"];
+        string subject = context.Request.Params["subject"];
+		string state = context.Request.Params["state"];
+        string comments = context.Request.Params["comments"];
+
+        StringBuilder sb = new StringBuilder();
+		StringBuilder sb2 = new StringBuilder();
+
+        sb.Append("Facebook 'Need Help' form submitted at: ");
+        sb.Append(DateTime.Now.ToString());
+        sb.Append(Environment.NewLine);
+        sb.Append("<br />");
+        sb.Append("entry question: ");
+        sb.Append(comments);
+		sb.Append(Environment.NewLine);
+        sb.Append("<br />");
+        sb.Append("state: ");
+        sb.Append(state);
+        sb.Append(Environment.NewLine);
+        sb.Append("<br />");
+        sb.Append("entry email address: ");
+        sb.Append(email);
+        sb.Append(Environment.NewLine);
+        sb.Append("<br />");
+        sb.Append("entry name: ");
+        sb.Append(name);
+
+		sb2.Append("Facebook Request - ");
+		sb2.Append(subject);
+		sb2.Append(" - ");
+		sb2.Append(state);
+
+        SendEmail(sb.ToString(), sb2.ToString(), true, TO_ADDRESS, email, "mail.contactcenturylink.com", "supportform@contactcenturylink.com", "z10b6T0E");
+
+    }
+
+    public bool IsReusable {
+        get {
+            return false;
+        }
+    }
+
+}

@@ -1,0 +1,20 @@
+<script>
+require(['order!jquery','order!jquery-ui','order!centurycore','order!modals'],function(){
+	$().ready(function(){
+		$.centurycore.popups.initialize({triggerClass:'.popup'});
+		$.centurycore.popups.initialize({triggerClass:'.popup-trigger'});
+	});
+});
+
+</script>
+<div id="popup-modal" class="modal jqmWindow">
+	<div class="modal-top">
+		Customer Info <div class="modal-close"><a href="" class="popup-close">Close Window</a><a href="" class="modal-close-btn popup-close"></a></div>
+	</div>
+	<div class="modal-content">
+		<iframe id="jqmContent" src="">
+        
+		</iframe>
+	</div>
+	<div class="modal-bottom"></div>
+</div>

@@ -1,0 +1,4 @@
+# OLD -- php_value include_path ".:/usr/share/pear:/usr/share/php:/mnt/stor2-wc1-dfw1/391839/pear_modules"
+php_value upload_max_filesize 6M
+Allow from all
+Satisfy Any

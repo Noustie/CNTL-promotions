@@ -1,0 +1,111 @@
+body { 
+	background-color: #000;
+	color:#FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	text-align:center;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+#wrapper{
+	width: 100%;
+	max-width: 600px;/* a max-width may be desirable to keep this layout from getting too wide on a large monitor. This keeps line length more readable. IE6 does not respect this declaration. */
+	min-width: 320px;/* a min-width may be desirable to keep this layout from getting too narrow. This keeps line length more readable in the side columns. IE6 does not respect this declaration. */
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout. It is not needed if you set the .container's width to 100%. */
+}
+
+#headerBlock{
+	margin-top: 15px;
+	width: 100%;
+}
+#headerBlock p{
+	padding: 10px 0; 
+	font-size:21px;	
+}
+
+.clickToCall{
+	width:248px;
+	height:43px;
+	background-image: url(../images/cta.gif);
+	background-repeat: no-repeat;
+	cursor:pointer;
+	margin: 0 auto;
+}
+
+#bigHr{
+	height: 10px;
+	width: 100%;
+	background: #9c3; /* for non-css3 browsers */
+	background-color: #9c3;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9c3', endColorstr='#030'); /* for IE */
+	background: -webkit-gradient(linear, left top, right top, from(#9c3), to(#030)); /* for webkit browsers */
+	background: -moz-linear-gradient(left,  #9c3,  #030); /* for firefox 3.6+ */ 
+	margin:0;	
+}
+
+#priceBlock{
+	background-color: #fff;
+	color:#000;
+	font-size: 18px;
+	line-height:18px;
+	padding: 15px 0;
+	width: 100%;
+	margin:0;
+}
+
+#priceBlock img{
+	padding: 5px 0 5px 0;
+	margin:0;
+}
+
+#bulletBlock{
+	color: #9c3;
+	font-size: 14px;
+	text-align: left;
+	padding: 15px 0px 8px 10px;
+	line-height: 14px;
+	display:block;
+	margin:0;
+}
+
+#bulletBlock img{
+	float:right;
+	padding: 0 15px 15px 15px;
+	margin:0;
+	
+}
+
+#bulletBlock p{
+	line-height:10px;
+	font-size:9px;
+}
+
+ul{
+	padding-left: 20px;
+	list-style:disc;
+}
+
+li{
+	margin-bottom: 10px;
+}
+
+#logoBlock{
+	float:none;
+	display:block;
+	width: 100%;
+}
+
+#littleHr{
+	height:2px;
+	background-color: #9c3;
+	width:100%;
+	margin-bottom: 10px;
+}
+
+#legalBlock{
+	text-align:left;
+	padding: 20px 10px 10px 10px;
+	line-height:12px;
+	color:#999;
+}

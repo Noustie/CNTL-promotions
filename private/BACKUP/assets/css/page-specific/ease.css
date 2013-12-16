@@ -1,0 +1,222 @@
+.main-price-content {
+	text-align: left;
+}
+.disclaimer {
+	padding: 10px 0px;
+}
+.check-avail {
+	padding-left: 7px;
+}
+
+
+.secondary a.important-details-internet {
+	color: #00853F;
+	display: block;
+}
+.internet-bottom-links-block {
+	margin-bottom: 15px;
+}
+
+div#home-ease-header-banner
+{
+	margin-right: 20px;
+}
+
+div.page-content .main-offer
+{
+	margin-top: 0;
+}
+
+div.page-content .main-offer h2
+{
+	font-weight: bold;
+	font-size: 24px;
+	margin-bottom: 4px;
+}
+
+div.page-content .main-offer h2 span
+{
+	font-size: 24px;
+	color: #00853F;
+	font-weight: normal;
+}
+
+
+.main-offer h3
+{
+	font-weight: bold;
+	font-size: 16px;
+	color: #333;
+	padding: 0;
+	margin: 0;
+}
+
+.main-offer p
+{
+	padding: 6px 0 0 0;
+	font-size: 12px;
+	color: #333;
+}
+
+.main-offer p.ease-cta
+{
+	font-weight: bold;
+	font-size: 14px;
+	padding: 8px 0 2px 0;
+	color: #333;
+}
+
+div.main-offer div.main-get-ease
+{
+	float: left;
+	padding-right: 20px;
+	margin-top: 8px;
+	border-right: #666 solid 1px;
+}
+
+div#chat-residential-centurylink-customer-support
+{
+	padding: 20px 0 0 20px;
+}
+
+table.comparison-table
+{
+	margin-top: 20px;
+}
+
+table.comparison-table .expanded-heading td span
+{
+	font-weight: normal;
+	font-size: 12px;
+	color: #333;
+}
+
+table.comparison-table .expanded-heading td span strong
+{
+	font-size: 16px;
+	color: #333;
+}
+
+table.comparison-table .expanded-heading td
+{
+	font-weight: bold;
+	border: none;
+	border-bottom: #DDD solid 1px;
+}
+
+table.comparison-table td,
+table.comparison-table td li,
+table.comparison-table td div,
+table.comparison-table td p
+{
+	vertical-align: top;
+	color: #666;
+	font-size: 12px
+}
+
+table.comparison-table td div
+{
+	display: block;
+}
+
+table.comparison-table td strong
+{
+	color: #333;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+table.comparison-table td ul,
+table.comparison-table td li
+{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	text-indent: 0;
+}
+
+table.comparison-table td li,
+table.comparison-table td p
+{
+	padding: 6px 0 0 0;
+}
+
+table.comparison-table td .sub-note
+{
+	font-size: 11px;
+	font-weight: normal;
+}
+
+
+div.secondary .ease-secondary-content
+{
+	display: block;
+	float: none;
+	width: 690px;
+	margin: 40px auto 20px auto;
+}
+
+.ease-bottom-hsi
+{
+	display: block;
+	float: left;
+	width: 422px;
+}
+
+.ease-bottom-hsi h4
+{
+	font-weight: bold;
+	font-size: 16px;
+	color: #333;
+	padding-right: 16px;
+	border-right: #666 solid 1px;
+}
+
+.ease-bottom-hsi p
+{
+	padding: 6px 16px 6px 0;
+}
+
+.ease-secondary-content-right-banner
+{
+	float: left;
+	display: block;
+	width: 220px;
+	vertical-align: middle;
+	padding-left: 16px;
+}
+
+.btn-get-hsi-now
+{
+	background: url("/assets/images/sprites/page-specific/ease/get-hsi-now.png") no-repeat scroll 0 0 transparent;
+	display: block;
+	float: left;
+	font-size: 0;
+	margin: auto 5px;
+	height: 31px;
+	width: 213px;
+}
+
+.btn-get-hsi-now:hover
+{
+	background-position: 0 -32px;
+}
+
+.orange-text
+{
+	color: #FF6319;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.icon-checkmark
+{
+	float: left;
+	background: url('/assets/images/sprites/template.png') no-repeat -942px -498px;
+	width: 18px;
+	height: 20px;
+	vertical-align: bottom; 
+}
+
+.page-content {overflow:visible;}
+#ease-offer-sprite {position:absolute;top:-12px;right:10px;margin-right:0;float:none;}

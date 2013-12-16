@@ -1,0 +1,457 @@
+.bundle-header {
+	border-top:1px solid #ddd;
+	margin-top: 10px;
+	padding-top:10px;
+}
+.bundle-banner{
+	float:left;
+	padding-right:60px;
+	margin-right:20px;
+	border-right:1px solid #ddd;
+}
+.main-bundle-content{
+	float:right;
+}
+.main-offer-details{
+	padding:10px 0px 0px 20px;
+}
+.main-offer h4{font-size:14px; margin-bottom:7px;}
+.bundle-box{
+	float:left;
+	background:url('/assets/images/page-components/442x453_box.png') no-repeat;
+	padding:20px;
+	width:401px!important;
+	width:442px;
+	height:413px!important;
+	height:453px;
+	margin-left:8px;
+	margin-right:8px;
+	text-align:center;
+}
+#home-bundles-build-bundle{
+	margin-left:0;
+	margin-top:12px;
+}
+.bundle_cta{
+	bottom:0;
+	margin-left:170px;
+}
+.price-container{
+	height:100px;
+}
+.bundle-details-container{
+	height:200px;
+	text-align:left;
+	margin-left:50px;
+	margin-right:40px;
+}
+.price-lock{
+	float:left;
+	margin-left:120px;
+	margin-right:-90px;
+}
+.orange {
+	color: #FF6319;
+	font-weight: bold;
+}
+.details-link, .details-link a{
+	font-size:10px;
+	color:#00853F;
+}
+.bundle-bottom{
+	padding: 0px 0px 10px 10px;
+}
+.ec-options{
+	margin-top:10px;
+}
+.ec-options a{
+	color:#00853F;
+	line-height: 120%;
+}
+.btn-build-bundle{
+	background:url('/assets/images/sprites/buildmybundle_button_sprite.png') no-repeat 0 0;
+	height:26px;
+	width:130px;
+	margin-left:50px;
+}
+.btn-build-bundle:hover{background-position:0 -30px;}
+
+
+
+
+
+
+
+/*Begin styles for 6/1/2012 A/B */
+
+.three-pane-container {
+}
+.alt-stripe-content-positioner-left {
+	float:left;
+	padding-right:7px;
+}
+.alt-stripe-content-positioner-right {
+	float:right;
+}
+.alt-stripe-content-positioner-middle {
+	float:left;
+}
+.alt-stripe-content-box {
+	background:url('/assets/images/sprites/page-specific/bundles_sprite.png') no-repeat -12px -91px;
+	height:625px;
+	width:302px;
+}
+
+.main-offer-left-banner {
+	height:229px;
+	width:349px;
+	background:url('/assets/images/sprites/page-specific/bundles_sprite.png') no-repeat -350px -566px;
+	float:left;
+}
+
+
+.bundle-three-pane-main-headline-wrapper {
+	margin-left:15px;
+	/*margin-top:74px;*/
+	margin-top:5px;
+	float:left;
+	width:395px;
+	
+}
+
+.threepane-main-already-customer {
+	margin-bottom:34px;
+	position:absolute;
+	top:5px;
+	right: 20px;
+}
+
+.bundle-three-pane-main-price-wrapper .copy-header {
+	color:#999999;
+	font-family:arial;
+	font-size:12px;
+	text-align:center;
+}
+
+.bundle-three-pane-main-price-wrapper {
+	float:left;
+	border-right: 1px solid #E0E0E0;
+	width:185px;
+	margin-top:15px;
+}
+
+.bundle-three-pane-main-price-wrapper .threepane-main-price {
+	color:#00853F;
+	font-family:arial;
+	font-size:70px;
+	font-weight:bold;
+	text-align:center;
+}
+.bundle-three-pane-main-price-wrapper .threepane-main-price-superscript {
+	color:#00853F;
+	font-family:arial;
+	font-size:24px;
+	font-weight:bold;
+	text-align:center;
+	/*font-size: 35&#37;; */
+	position: relative; 
+	top: -30px;
+}
+
+.bundle-three-pane-main-price-wrapper .threepane-main-disclaimer {
+	color:#999999;
+	font-family:arial;
+	font-size:10px;
+	text-align:center;
+}
+
+.threepane-check-avail {
+	margin-top:10px;
+	margin-left:20px;
+}
+
+
+
+
+
+.main-offer-details-internet-three-pane {
+	float:right;
+	width:350px;
+	margin-top:25px;
+}
+
+
+#bundles-threepane-main-offer-heading {
+	color:#00853F;
+	font-family:arial;
+	font-weight:bold;
+	font-size:22px;
+}
+
+#bundles-threepane-main-offer-subheading {
+	color:#333333;
+	font-family:arial;
+	font-weight:bold;
+	font-size:24px;
+}
+
+.bundles-three-pane-product-primary-heading {
+	color:#333333;
+	font-family:arial;
+	font-weight:bold;
+	font-size:24px;
+	text-align:center;
+	margin-top:5px;
+
+}
+
+.bundles-three-pane-product-secondary-heading-container {
+	margin-top:5px;
+	height:60px;
+}
+
+.bundles-three-pane-product-secondary-heading-copy {
+	color:#333333;
+	font-family:arial;
+	font-size:12px;
+	margin-left:10px;
+	float:left;
+	text-align:center;
+	width:275px;
+}
+
+.orange-text {
+	color:#ff6600;
+	font-family:arial;
+	font-size:12px;
+}
+
+.icon-product-heading-lock {
+	background:url('/assets/images/sprites/page-specific/bundles_sprite.png') no-repeat -1045px -630px;
+	width:31px;
+	height:42px;
+	margin-left:10px;
+}
+
+.alt-stripe-bundle-component-first {
+	height:120px;
+}
+
+.alt-stripe-bundle-component-middles {
+	height:108px;
+}
+
+.alt-stripe-bundle-component-last {
+	height:48px;
+}
+
+.alt-stripe-start-now-button-container {
+	margin-top:10px;
+	margin-left:96px;
+}
+
+.bundles-three-pane-phone-icon {
+	background:url('/assets/images/sprites/page-specific/bundles_sprite.png') no-repeat -868px -621px;
+	width:36px;
+	height:62px;
+	margin-top:1px;
+	margin-left:14px;
+}
+.bundles-three-pane-internet-icon {
+	background:url('/assets/images/sprites/page-specific/bundles_sprite.png') no-repeat -804px -626px;
+	width:64px;
+	height:43px;
+	margin-left:6px;
+	margin-top:5px;
+}
+
+.bundles-three-pane-dtv-icon {
+	background:url('/assets/images/sprites/page-specific/bundles_sprite.png') no-repeat -921px -628px;
+	width:53px;
+	height:49px;
+	margin-left:6px;
+	margin-top:5px;
+}
+
+.bundles-three-pane-vzw-icon {
+	background:url('/assets/images/sprites/page-specific/bundles_sprite.png') no-repeat -987px -626px;
+	width:29px;
+	height:60px;
+	margin-left:16px;
+	margin-top:0px;
+}
+
+.alt-stripe-product-item-container-middle {
+	margin-top:12px;
+}
+
+.alt-stripe-content-box .copy-header {
+	color:#333333;
+	font-family:arial;
+	font-weight:bold;
+}
+
+.alt-stripe-product-item .copy {
+	color:#333333;
+	font-family:arial;
+	padding-left:25px;
+}
+
+.three-pane-copy-block-wrapper-first {
+	padding-left:3px;
+	margin-top:8px;
+	width:220px;
+}
+
+.three-pane-copy-block-wrapper-middles {
+	padding-left:3px;
+	margin-top:0px;
+	width:220px;
+}
+
+.product-icon-container {
+	width:58px;
+	height:65px;
+	float:left;
+}
+
+.start-now-text-link {
+	text-align:center;
+	padding-top:7px;
+}
+
+.start-now-text-link a{
+	color:#00853F;
+	font-family:arial;
+	font-weight:bold;
+	font-size:14px;
+}
+
+.bundles-disclaimer-copy-start-now {
+	color:#999999;
+	font-family:arial;
+	font-size:10px;
+	text-align:center;
+}
+
+.bundles-disclaimer-copy-embedded {
+	color:#999999;
+	font-family:arial;
+	font-size:10px;
+	text-align:left;
+	line-height:80%;
+}
+
+
+.bundles-disclaimer-wrapper-start-now {
+	text-align:center;
+	width:280px;
+	line-height:80%;
+}
+
+
+
+.horizontal-content-container-top {
+	width:920px;
+	margin-top:15px;
+}
+
+.horizontal-content-container { width:920px; }
+
+.hc-text-A{
+	float:left;
+	width:488px;
+	margin-top:60px;
+	margin-left:13px;
+}
+
+.hc-image-A{
+	background:url('/assets/images/sprites/page-specific/bundles_sprite.png') no-repeat -349px -0px;
+	width:419px;
+	/*height:289px;*/
+	height:269px;
+	margin-left:0px;
+	margin-top:0px;
+	float:right;
+}
+
+.hc-text-B {
+	float:right;
+	width:542px;
+	margin-top:70px;
+}
+
+.hc-image-B {
+	background:url('/assets/images/sprites/page-specific/bundles_sprite.png') no-repeat -340px -283px;
+	width:378px;
+	height:262px;
+	margin-left:0px;
+	margin-top:0px;
+	float:left
+}
+
+.hc-text-C{
+	float:left;
+	width:578px;
+	margin-top:30px;
+	margin-left:13px;
+}
+
+.hc-image-C{
+	background:url('/assets/images/sprites/page-specific/bundles_sprite.png') no-repeat -770px -35px;
+	width:329px;
+	height:241px;
+	margin-left:0px;
+	margin-top:0px;
+	float:right
+}
+
+.hc-text-D {
+	float:right;
+	width:504px;
+	margin-top:90px;
+	/*padding-left:30px;*/
+}
+
+.hc-image-D {
+	background:url('/assets/images/sprites/page-specific/bundles_sprite.png') no-repeat -759px -309px;
+	width:416px;
+	height:269px;
+	margin-left:0px;
+	margin-top:0px;
+	float:left;
+}
+
+.hc-text-heading {
+	color:#00853F;
+	font-family:arial;
+	font-size:24px;
+}
+
+.hc-li-copy {
+	padding-left:24px;
+	color:#333333;
+	font-family:arial;
+	font-size:14px;
+}
+
+.hc-sub-link-block {
+	margin-left:45px;
+}
+
+.hc-sub-link-block a {
+	color:#00853F;
+}
+
+
+
+
+/*End styles for 6/1/2012 A/B */
+
+
+/* begin styles added to support qc2042 8.9.2012 */
+
+#Bundles-Value-prop-content-2042 { height : auto ;}
+
+/* end styles added to support qc2042 8.9.2012 */
+

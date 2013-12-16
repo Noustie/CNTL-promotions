@@ -1,0 +1,234 @@
+#hp-spdemo {
+	display: block;
+	width: 530px;
+	margin: 0;
+	padding: 0;
+}
+.spd-graph {
+	width: 530px;
+}
+.spd-graph ul li,
+.spd-graph ul {
+	margin: 0;
+	padding: 0;
+	display: block;
+	list-style: none;
+	color: #666;	
+}
+.spd-graph div, .spd-graph span {
+	display: block;
+	position: relative;
+	color: #666;		
+}
+.spd-graph .spd-speeds {
+	background: url("./images/hp-spdemo-speednav-bg.png");
+	height: 47px;
+	width: 530px;
+}
+.spd-graph .spd-speeds h4 {
+	line-height: 47px;
+	text-transform: uppercase;
+	color: #959595;
+	font-size: 10px;
+	letter-spacing: 1px;
+	width: 35%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	font-weight: normal;
+}
+.spd-graph .spd-speeds ul {
+	width: 65%;
+	height: 100%;
+	float: right;
+}
+.spd-graph .spd-speeds ul li {
+	width: 81px;
+	height: 100%;
+	float: left;
+	display: block;
+	position: relative;
+	z-index: 100;
+	overflow: visible;
+}
+.spd-graph .spd-speeds ul li a {
+	position: relative;
+	z-index: 100;
+	top: 5px;
+	left: 0px;
+	width: 81px;
+	height: 37px;
+	line-height: 37px;
+	display: block;
+	color: #333;
+	font-size: 17px;
+	text-align: center;
+	box-shadow: 0 0 0 #CCC inset;
+	background-color: transparent;
+	background-image: url("./images/hp-spdemo-speednav.png");
+	background-position:  -169px center;
+	background-repeat: no-repeat;	
+	text-decoration: none;
+	-webkit-transition: box-shadow 200ms;
+	-moz-transition: box-shadow 200ms;
+	-ms-transition: box-shadow 200ms;
+	-o-transition: box-shadow 200ms;
+	transition: box-shadow 200ms;
+}
+.spd-graph .spd-speeds ul li a:hover {
+	color: #000;
+	box-shadow: 0 0 20px #CCC inset;	
+}
+.spd-graph .spd-speeds ul .selectedSpeedNav {
+	z-index: 101;
+}
+#hp-spdemo .spd-graph .spd-speeds ul .selectedSpeedNav a {
+	box-shadow: 0 0 0 #CCC inset;	
+	background-position: left center;
+	width: 88px;
+	z-index: 101;
+	top: -2px;
+	left: -4px;
+	color: #FFF;
+	height: 100%;
+	line-height: 51px;			
+}
+.spd-graph .spd-icon {
+	width: 39px;
+	height: 53px;
+	display: block;
+	background-image: url("./images/hp-spdemo-icons.png");
+	background-position: 0% 0%;
+	position: absolute;
+}
+#spd-photos .spd-icon { background-position: 0% 3%; }
+#spd-music .spd-icon { background-position: -3px 35%; }
+#spd-tvshows .spd-icon { background-position: 0% 67%; }
+#spd-movies .spd-icon { background-position: 0% 100%; }
+
+.spd-graph .spd-bar-holder { height: 33px; width: 0%; position: relative; top: 6px; left: 0; }
+.spd-graph .spd-bar-holder .spd-b { height: 33px; position: absolute; top: 0; z-index: 50; }
+.spd-graph .spd-bar-holder .spd-b-left { width: 2px; left: 0; background-position: left 0%; }
+.spd-graph .spd-bar-holder .spd-b-center { width: 100%; z-index: 49; left: 0; background-position: left 0%; }
+.spd-graph .spd-bar-holder .spd-b-right { width: 2px; right: 0;  background-position: right 0%; }
+
+#spd-photos .spd-bar-holder .spd-b { background-image: url("./images/hp-spdemo-bar-photos.png") }
+#spd-music .spd-bar-holder .spd-b { background-image: url("./images/hp-spdemo-bar-music.png") }
+#spd-tvshows .spd-bar-holder .spd-b { background-image: url("./images/hp-spdemo-bar-tvshows.png") }
+#spd-movies .spd-bar-holder .spd-b { background-image: url("./images/hp-spdemo-bar-movies.png") }
+
+
+.spd-graph .spd-downloadables {
+	background: transparent url("./images/hp-spdemo-bgtile.png") 10px -5px;
+	margin: 30px 0;
+}
+.spd-graph .spd-downloadables ul {
+	background: transparent url("./images/spdemo-white-fade-bg.png") repeat-y -100px top;	
+}
+.spd-graph .spd-downloadables ul li {
+	background: transparent url("./images/spdemo-white-fade-bg.png") repeat-y 430px top;	
+}
+.spd-graph .spd-downloadrow {
+	width: 100%;
+	height: 53px;
+	position: relative;
+}
+.spd-graph .spd-pic, .spd-graph .spd-bar, .spd-graph .spd-time {
+	display: block;
+	height: 100%;
+	margin: 0;
+}
+.spd-graph .spd-pic {
+	width: 90px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.spd-graph .spd-bar {
+	margin: 0 89px 0 97px;
+}
+.spd-graph .spd-time {
+	width: 90px;
+	position: absolute;
+	top: 10px;
+	right: 0;
+	height: 28px;
+}
+.spd-graph .spd-time .spd-num {
+	font-size: 16px;
+	line-height: 16px;
+	height: 16px;
+	float: left;
+	padding: 0 5px;
+	text-align: right;
+	width: 3em;
+}
+.spd-graph .spd-time .spd-final-time {
+	font-size: 10px;
+	line-height: 10px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: auto;
+	padding: 0;
+	text-align: right;
+	width: 100%;
+}
+.spd-graph .spd-time .spd-type {
+	font-size: 10px;
+	line-height: 1;
+	height: 8px;
+	float: left;
+	top: 0;
+}
+.spd-graph .spd-time .spd-secs {
+	padding: 0 0 6px 0;
+	background: url("./images/spd-arrowup.png") left bottom no-repeat;
+}
+.spd-graph .spd-time .spd-mins {
+	padding: 6px 0 0 0;
+	background: url("./images/spd-arrowdown.png") left top no-repeat;
+}
+.spd-graph .spd-timeinsecs .spd-mins ,
+.spd-graph .spd-timeinmins .spd-secs {
+	display: none;
+}
+.spd-graph .spd-title {
+	font-size: 12px;
+	position: absolute;
+	bottom: 5px;
+	left: 2px;
+}
+.spd-graph .spd-fileweight {
+	font-size: 10px;
+	position: absolute;
+	top: 15px;
+	left: 30px;
+	width: 55px;
+	text-align: center;
+	color: #9e9d9d;
+}
+.spd-copygroup {
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 160px;
+}
+.spd-copygroup * {
+	color: #999;
+	font-size: 12px;
+}
+.spd-copygroup .spd-copy {
+	position: absolute;
+	visibility: hidden;
+}
+.spd-copygroup h3 {
+	padding: 0 0 10px 0;
+	font-size: 14px;
+	font-weight: bold;
+}
+.spd-copygroup .halflist li {
+	width: 215px;
+	float: left;
+	margin-right: 35px;
+}

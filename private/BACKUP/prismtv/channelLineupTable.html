@@ -1,0 +1,588 @@
+<!doctype html>
+<!--[if IE 7 ]> <html lang="en" class="oldIE ie7"> <![endif]-->
+<!--[if IE 8 ]> <html lang="en" class="oldIE ie8"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> 
+<html lang="en"> 
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<title>Channel Lineup</title>
+	<link rel="stylesheet" href="/prismtv/css/reset.css">
+	<link rel="stylesheet" href="/prismtv/css/main.css">
+	<link rel="stylesheet" href="/prismtv/css/channelLineupTable.css">
+	<link rel="stylesheet" href="/prismtv/css/channelLineupPrint.css" media="print">
+	<style>
+		#dynamicLineup #alternateLineup {
+			position: relative;
+			display: block;
+			height: 38px;
+			padding: 0 0 0 5px;
+			margin: 40px 0 0 0;
+			background: url("/prismtv/images/channelLineup/selectBg-green.png") no-repeat left #FFF;
+			float: left;
+			-webkit-box-shadow:  3px 3px 3px rgba(0, 0, 0, .1);
+		    box-shadow:  3px 3px 3px rgba(0, 0, 0, .1);
+		}
+
+		#dynamicLineup #alternateLineup #marketNameLabel {
+			width: 274px;
+			height: 38px;
+			overflow: hidden;
+			background: url("/prismtv/images/channelLineup/selectBg-green.png") no-repeat right rgba(0, 0, 0, 0);
+			border: 0px none rgba(0, 0, 0, 0);
+			display: block;
+		}
+		#dynamicLineup #alternateLineup #marketName {
+			background: transparent;
+			font-weight: bold;
+			color: #666666;
+			width: 308px;
+			font-size: 16px;
+			line-height: 1;
+			border: 0;
+			border-radius: 0;
+			-webkit-appearance: none;
+			display: block;
+			position: relative;
+			top: 10px;
+			left: 14px;
+			outline: 0 none;
+			font-size: 14px;
+			line-height: 18px;   
+		}
+		#dynamicLineup #alternateLineup select,
+		#dynamicLineup #alternateLineup option,
+		#dynamicLineup #alternateLineup select:active,
+		#dynamicLineup #alternateLineup select:focus {
+			outline: 0 none !important;
+			background: transparent;
+		}
+	</style>
+<!--#if expr="${REQUEST_URI}=/marketName=(\w+)/" -->
+<!--#set var="marketName" value="$1" -->
+	<script src="//prisminfo.centurylink.net/getChannelInfo.php?city=<!--#echo var="marketName" -->"></script>
+<!--#endif -->
+	<script>
+		// GET QUERY STRING VALUE FROM OBJ BY KEY
+		function getQueryParam (key, obj) {
+			if ( !obj || !obj.search ) var obj = location;
+			var a = obj.search.slice(1).split("&"), GET = [];
+			for (var i in a) { GET[a[i].split("=")[0]] = a[i].split("=")[1]; }
+			return GET[key] || null;
+		}
+		var mrktline = '|'+getQueryParam("marketName");
+		var qafeed;		
+	</script>
+<!--#if expr="${REQUEST_URI}=/qafeed=true/" -->
+	<script type="text/javascript">
+		qafeed = 'prisminfodev.isglab.com';
+	</script>
+<!--#endif -->	
+	<script type="text/javascript" src="/assets/js/plugins/cookies2.js"></script>
+	<script type="text/javascript">
+		var sAddress = "";
+		var pageName = "ctl|rsd|shop|iptv|pre_id_learn|channel_lineup"+mrktline.toLowerCase(); //s.pageName
+		var pageType = ""; //s.pageType
+		var errorType = ""; //s.prop2
+		var accountEvents = ""; //eVar1
+		var serviceEvents = ""; //eVar2
+		var pCategory = ""; //eVar3
+		var unisysEvent = ""; //eVar4
+		var orderType = ""; //eVar7
+		var zipAvail = ""; //eVar8
+		var phoneAvail = ""; //eVar9
+		var addressAvail = ""; //eVar10
+		var respMsg = ""; //eVar11
+		var availType = ""; //eVar12
+		var sEvents = ""; //s.events
+		var sProducts = ""; //s.products
+		var orderNum = ""; //s.purchaseID
+		var totalOrderPrice = ""; //Doubleclick
+
+		var ttPrismDMAName = ''; //Don't remove- picked up by omniture
+		var ttPrismMarketConfig = { zip: null, city: null, dma: null, state: null };		
+
+
+		eBiz_prop20 = "IPTV";
+		eBiz_prop24 = "rsd|shop";
+		eBiz_prop26 = "rsd|shop|iptv";
+		eBiz_prop38 = "static_page";
+		eBiz_prop39 = "static_page";
+		eBiz_prop52 = "ctl";
+		eBiz_evar35 = eBiz_prop24;
+		eBiz_evar48 = eBiz_prop38;
+		eBiz_evar49 = eBiz_prop39;
+		eBiz_evar54 = eBiz_prop26;
+		eBiz_evar56 = eBiz_prop52;
+
+		var prism_cust_info = {
+			domain: cookiejar.fetch("profile_cookie"),
+			type: "NC",
+			company: "Unknown",
+			customerType: "unknown"
+		}
+
+		if ( cookiejar.fetch('customerType','customerType') || cookiejar.fetch('remember_me','accountNumber') || 
+		    cookiejar.fetch('remember_me','telephoneNumber') || cookiejar.fetch('remember_me','userName') ) {
+			prism_cust_info.type = "EC";
+		}
+		if ( !!prism_cust_info.domain && !!prism_cust_info.domain.shoppingDomain ) {
+			switch(prism_cust_info.domain.shoppingDomain) {
+				case 'Q':
+					prism_cust_info.company = "Qwest";
+					break;
+				case 'CTL':
+					prism_cust_info.company = "CenturyLink"
+					break;
+				default:
+					break;
+			}
+			if ( prism_cust_info.domain.domainOverlap == 'Y') {
+				prism_cust_info.company = "Overlapped";
+			}
+		}
+		if ( !!prism_cust_info.type ) {
+			switch(prism_cust_info.type){
+				case "NC":
+					prism_cust_info.customerType = "New Customer";
+					break;
+				case 'EC':
+					prism_cust_info.customerType = "Existing Customer: Legacy " + prism_cust_info.company;
+					break;
+				default:
+					prism_cust_info.customerType = "unknown";
+			}
+		}
+
+		eBiz_prop3 = prism_cust_info.customerType;
+		eBiz_evar24 = eBiz_prop3;
+
+	</script>	
+</head>
+<body class="hideOnLoad">
+<div class="lineupWrapper">
+	<div id="channelLineup" class="show-prism-tv show-prism-complete show-prism-premium">
+		<div id="dynamicLineup">
+			<div class="market-lineup-header">
+				<h2><span id="friendlyMarketName"></span>  Channel Lineup</h2>
+				<div id="printBtn"></div>	
+				<div style="clear:both"></div>			
+			</div>
+
+			<div class="bg-wrap">
+				<div class="tableinfo">
+					<div class="options">
+						<div class="dataTablesFilter" id="channelLineupDataFilter">
+							<label>
+								<input type="text" />
+							</label>
+						</div>
+					</div>				
+					<a href="#viewall" class="clearAllLink"> &nbsp; </a>
+					<div class="hide-trigger">
+						<a href="#">Filter by Channel Category <img src="images/up-arrow-toggle.png" alt="" id="bg" /></a>
+					</div>
+					<a href="#channelLineup" rel="show-prism-tv show-prism-complete show-prism-premium" class="compareAllLink">Compare All +</a>		
+				</div>
+				<div class="filters">
+					<div class="hide-w-slider">
+						<div id="filterOpts">
+							<div class="filter-break">
+								<h3 class="filtersLabel">Select a channel category:</h3><span class="opt checked"><input type="radio" checked="true" value="" id="viewall" name="categoryFilter"><label for="viewall">View All Channels</label></span>
+							</div>
+							<span class="opt"><input type="radio" value="Local" id="cat-Local" name="categoryFilter"><label for="cat-Local">Local</label></span>
+							<span class="opt"><input type="radio" value="Sports" id="cat-Sports" name="categoryFilter"><label for="cat-Sports">Sports</label></span>
+							<span class="opt"><input type="radio" value="News" id="cat-News" name="categoryFilter"><label for="cat-News">News</label></span>
+							<span class="opt"><input type="radio" value="Family" id="cat-Family" name="categoryFilter"><label for="cat-Family">Family</label></span>
+							<span class="opt"><input type="radio" value="Educational" id="cat-Educational" name="categoryFilter"><label for="cat-Educational">Educational</label></span>
+							<span class="opt"><input type="radio" value="Premium Channels" id="cat-Premium" name="categoryFilter"><label for="cat-Premium">Premium Channels</label></span>
+							<span class="opt"><input type="radio" value="HD" id="cat-HD" name="categoryFilter"><label for="cat-HD">HD Channels</label></span>
+							<span class="opt"><input type="radio" value="Music" id="cat-Music" name="categoryFilter"><label for="cat-Music">Music</label></span>
+							<span class="opt"><input type="radio" value="Hispanic" id="cat-Hispanic" name="categoryFilter"><label for="cat-Hispanic">Hispanic</label></span>
+							<span class="opt"><input type="radio" value="International" id="cat-International" name="categoryFilter"><label for="cat-International">International</label></span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="tableHolder"></div>
+		</div>
+	</div>
+
+	<div id="legend">
+		<p class="hdDisclaimer"><small>*HD channels require HD add on service.</small></p>
+		<span class="packageInclude">Included </span>
+		<span class="packageAddon">Available as an add-on</span>
+	</div>
+</div>
+
+<script src="/assets/js/jquery.min.js"></script>
+
+<script src="/prismtv/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="/assets/js/plugins/jquery.qwest-core.js"></script>
+<script type="text/javascript" src="/assets/js/plugins/centurycore.shortcuts.js"></script>
+<script type="text/javascript" src="/prismtv/markets/markets.js"></script>
+
+<script>
+	$(function () {
+		$('.hide-trigger a').click(function( e ){
+			e.preventDefault();
+			$("#channelLineup .filters").slideToggle('slow');
+			var src = $("#bg").attr('src') == "images/up-arrow-toggle.png" ? "images/down-arrow-toggle.png" : "images/up-arrow-toggle.png";
+        	$("#bg").attr('src',src);
+        	return false;
+
+		});
+
+
+		var jsonCityURL = "//prisminfo.centurylink.net/getChannelInfo.php";
+		if ( !!qafeed ) jsonCityURL = jsonCityURL.replace("prisminfo.centurylink.net", qafeed);
+
+		var dataTableTemplate = '\
+			<table id="channelLineupData" cellspacing="0" cellpadding="0" cellmargin="0" width="100%" class="mkt"> \
+				<thead> \
+					<tr class="mkt_triple_bundle"> \
+						<th class="channel-number thSorter"><span class="sorter">#</span></th> \
+						<th class="channel-name thSorter"><span class="sorter">Channel Name</span></th> \
+						<th class="packageData prism-tv mkt_prism_tv"> \
+							<a href="#prism-tv" class="hideLink"> &nbsp; </a> \
+							<a href="./#prismFeaturedOffers.html" target="_top" class="jumpToPackage">Prism<sup>&trade;</sup> TV </a> \
+							<small id="prismCHNLS"><span><span class="mkt_num_channels">130</span>+ Channels*</small> \
+						</th> \
+						<th class="packageData prism-complete mkt_prism_complete"> \
+							<a href="#prism-complete" class="hideLink"> &nbsp; </a> \
+							<a href="./#prismFeaturedOffers.html" target="_top" class="jumpToPackage">Prism<sup>&trade;</sup> Complete </a> \
+							<small id="completeCHNLS"><span><span class="mkt_num_channels">180</span>+</span> Channels*</small> \
+						</th> \
+						<th class="packageData prism-premium mkt_prism_premium"> \
+							<a href="#prism-premium" class="hideLink"> &nbsp; </a> \
+							<a href="./#prismFeaturedOffers.html" target="_top" class="jumpToPackage">Prism<sup>&trade;</sup> Premium </a> \
+							<small id="premiumCHNLS"><span><span class="mkt_num_channels">210</span>+</span> Channels*</small> \
+						</th> \
+					</tr> \
+				</thead> \
+				<tbody id="tableBody"> \
+					<tr> \
+						<td colspan="5">LOADING CHANNEL LINEUP...</td> \
+					</tr> \
+				</tbody> \
+			</table>';
+
+		var channelLineupDataTable = null;
+		window.allChannelsConfig = null;
+		
+		function init () {
+			var marketNameParam = getQueryParam("marketName");
+
+			var citesToMarketMap = {
+				ttPrismMarketConfig: {
+					"ColoradoSprings" : "colorado",
+					"Columbia" : "missouri",
+					"FtMyers" : "florida",
+					"LasVegas" : "nevada",
+					"Orlando" : "florida",
+					"Phoenix" : "arizona",
+					"Raleigh" : "north carolina",
+					"Tallahassee" : "florida",	
+					"LaCrosse": "wisconsin",
+					"Omaha" : "nebraska"
+				},
+				pdf: {
+					"ColoradoSprings" : "coloradoSpringsCO",
+					"Columbia" : "columbiaMO",
+					"FtMyers" : "fortMyersFL",
+					"LasVegas" : "lasVegasNV",
+					"Orlando" : "orlandoFL",
+					"Phoenix" : "phoenixAZ",
+					"Raleigh" : "raleighNC",
+					"Tallahassee" : "tallahasseeFL",	
+					"LaCrosse": "laCrosseWI",
+					"Omaha" : "omahaNE"
+				}
+			}
+			getAllMarketsData ( marketNameParam, citesToMarketMap );
+
+
+			if ( !!citesToMarketMap.pdf[marketNameParam] ) {
+				$("#printBtn").html('<a href="/prismtv/markets/'+citesToMarketMap.pdf[marketNameParam]+'/channelLineup.pdf" target="_blank" clicktrack="ctl|rsd|shop|iptv|pre_id_learn|channel_lineup|button|print_channel_lineup'+mrktline.toLowerCase()+'">Print complete Channel Lineup</a>');
+
+				!!window.initializeMarkets && initializeMarkets( citesToMarketMap.ttPrismMarketConfig[marketNameParam] );
+			}
+			$("#tableHolder").html( dataTableTemplate );
+			$("#tableHolder").addClass("mkt");
+			$(".clearAllLink").hide();
+
+			$.ajax({
+				url: jsonCityURL,
+				data: { city: marketNameParam },
+				dataType: "jsonp",
+				success: processChannelData,
+				error: function (e) {
+					$(".hideOnLoad").removeClass("hideOnLoad");
+					if ( !!top.$ && !!top.$("#dynamicChannelLineup") ) {
+						top.$("#dynamicChannelLineup").height(80);
+					}
+					$("#dynamicLineup").html( '<iframe id="pdfForDL" src="'+$("#printBtn a")[0].href+'" height="1" width="1"></iframe>' );
+				}
+			});
+
+			$("#filterOpts input").live("change click", function () {
+				if ( !!channelLineupDataTable ) {
+					channelLineupDataTable.fnFilter( this.value );
+					$("#filterOpts .opt").removeClass("checked");
+					$(this).parent().addClass("checked");
+				}
+			});
+			$("#channelLineup .clearAllLink").live("click", function (e) {
+				e.preventDefault();
+				channelLineupDataTable.fnFilter("");
+			});				
+			$("#channelLineup th a.jumpToPackage").live("click", function (e) {
+				e.preventDefault();
+				window.top.location.hash = this.hash;
+			});				
+			$("#channelLineup a.addonDisplay").live("click", function (e) {
+				e.preventDefault();
+				channelLineupDataTable.fnFilter( this.rel );
+			});				
+			$("#channelLineup a.compareAllLink").live("click", function (e) {
+				e.preventDefault();
+				$("#channelLineup").attr("class","").addClass( this.rel );
+				channelLineupDataTable.fnSetColumnVis( 2, true );
+				channelLineupDataTable.fnSetColumnVis( 3, true );
+				channelLineupDataTable.fnSetColumnVis( 4, true );
+			});				
+			$("#channelLineup a.hideLink").live("click", function (e) {
+				e.preventDefault();
+				var pack = this.hash.replace("#", "");
+				var packageHideClass = "hide-" + pack;
+				var packageShowClass = "show-" + pack;
+				$("#channelLineup").removeClass( packageShowClass ).addClass( packageHideClass );
+				var colIndex = {
+					"prism-tv": 2,
+					"prism-complete": 3,
+					"prism-premium": 4
+				};
+				channelLineupDataTable.fnSetColumnVis( colIndex[pack], false );
+			});
+		}
+
+		function getAllMarketsData ( marketNameParam, citesToMarketMap ) {
+			var configURL = "//prisminfo.centurylink.net/getCofigInfo.php";
+			if ( !!qafeed ) configURL = configURL.replace("prisminfo.centurylink.net", qafeed);
+			$.ajax( {
+				dataType: "jsonp",
+				global: false,
+				type: 'GET',
+		        url: configURL,
+		        async: false,
+		        contentType: "application/json",
+				success: function (data, textStatus, jqXHR) {
+					if ( !marketNameParam || !citesToMarketMap.pdf[marketNameParam] ) {
+						var locationOptions = [
+							'<form id="alternateLineup" method="GET" target="_self" action="./channelLineupTable.html">',
+							'<label for="marketName" id="marketNameLabel">',
+							'<select name="marketName" id="marketName">',
+							'<option value="">Choose Your Location </option>'
+						];
+						var locationOptionsEnd = [
+							'</select>',
+							'</label>',
+							'</form>'
+						];
+
+
+						var cityConfigObj = data["Cities"];
+						for ( var varName in cityConfigObj ) {
+							locationOptions.push( '<option value="'+varName+'">'+cityConfigObj[varName]+'</option>' );
+						}
+						var output = locationOptions.concat(locationOptionsEnd);
+						$("#dynamicLineup").html( output.join(" ") );
+						$("#alternateLineup #marketName").live( "change", function (e) {
+							if ( !!this.value ) {
+								$("#alternateLineup").submit();
+							}
+						});
+					} else {
+						allChannelsConfig = data;
+						try {
+							$("#friendlyMarketName").text( allChannelsConfig["Cities"][marketNameParam] );
+						} catch (e) {
+							//nothing.
+						}
+					}
+				}
+			});
+		}		
+
+		function getQueryParam (key) {
+			var a = location.search.slice(1).split("&"), GET = [];
+			for (var i in a) { GET[a[i].split("=")[0]] = a[i].split("=")[1]; }
+			return GET[key] || null;
+		}			
+
+		function processChannelData (data, s, e) {
+			$(".hideOnLoad").removeClass("hideOnLoad");
+
+			var tableData = data;
+
+			if ( !tableData ) { return false; }
+
+			var tableElements = [];
+			var trstring = [];
+			var rowclass = "";
+			var packages = "";
+			var boltOns = "";
+			var boltOnList = "";
+			var category = "";
+			var packagesMap = {};
+			var channelArr = tableData;
+
+			for ( var channelIndex in channelArr ) {
+				if ( !channelArr[channelIndex].channelName ) continue;
+
+				var channelObj = channelArr[channelIndex];
+				var channelName = channelObj.channelName;
+
+
+				if ( channelObj.category.match("Local") ) {
+					channelName += " (" + channelObj.channelCallLetter +")";
+				}
+
+				if ( !!channelObj.packages.join ) {
+					 packages = channelObj.packages.join(" | ");
+				}
+				if ( !!channelObj.boltOns.join ) {
+					boltOns = "isBoltOn";
+					var boltOnRel = channelObj.boltOns.join(" ");
+					if ( !!boltOnRel.match(/latino/gi) && !boltOnRel.match(/paquete/gi) ) {
+						boltOnRel = "Paquete " + boltOnRel;
+					}
+					if ( !!boltOnRel.match(/StarzEncore/gi) ) {
+						boltOnRel = boltOnRel.replace("StarzEncore", "Starz/Encore");
+					}
+					boltOnList = '<a class="addonDisplay boltOnsMeta" href="#channelLineupData" rel="[' + boltOnRel + ' Add-on Package]">' + boltOnRel + " Add-on Package" + '</a>';
+					if ( !!boltOnList.match(/al\-carte/gi) ) boltOnList = '<span class="meta boltOnsMeta">' + boltOnRel + '</span>';
+				}
+				category = channelObj.category;
+
+				if ( !!channelObj.genre.join ) { category += " " + channelObj.genre.join(" ") }
+				if ( !!category.match("PEG") ) { category += " Local" }
+				if ( !!category.match("Premium") ) { category += " Premium Channels" }
+				if ( !!category.match(/latino/gi) ) { category += " Hispanic"; }
+
+				
+				packagesMap = {
+					tv: !!( packages.match("PrismTV") ),
+					complete: !!( packages.match("PrismComplete") ),
+					premium: !!( packages.match("PrismPremium") )
+				}
+
+				var hdflag = ( channelObj.isHD === "false" ) ? "sd" : null;
+				if ( !hdflag && channelObj.isHD === "true" ) hdflag = "hd";
+
+				var packagesDisplayMap = {
+					tv: ( packagesMap.tv ) ? "&bull;" : "&ndash;",
+					complete: ( packagesMap.complete ) ? "&bull;" : "&ndash;",
+					premium: ( packagesMap.premium ) ? "&bull;" : "&ndash;"
+				}
+
+				rowclass = "bolton-false ";
+				if ( !!boltOns ) rowclass = "bolton-true ";
+				for ( var pack in packagesMap ) {
+					rowclass += "prism-"+pack+"-"+packagesMap[pack]+" ";
+				}
+
+				//BUILD TABLE ROW
+				trstring = [];
+				trstring.push('<tr class="'+rowclass+'">'); 
+				trstring.push('<td class="channel-number">'+channelObj.channelNo+'</td>');
+				trstring.push('<td class="channel-name">'+channelName+' <span class="meta packagesMeta">'+packages+'</span> '+boltOnList+' <span class="meta categoryMeta">'+category+'</span> <span class="meta channelCallLetterMeta">' + channelObj.channelCallLetter + '</span> </td>');
+
+				trstring.push('<td class="packageData inpackage-'+packagesMap.tv+' prism-tv '+boltOns+'"><span class="packageDisplay">'+packagesDisplayMap.tv+'</span></td>');
+				trstring.push('<td class="packageData inpackage-'+packagesMap.complete+' prism-complete '+boltOns+'"><span class="packageDisplay">'+packagesDisplayMap.complete+'</span></td>');
+				trstring.push('<td class="packageData inpackage-'+packagesMap.premium+' prism-premium '+boltOns+'"><span class="packageDisplay">'+packagesDisplayMap.premium+'</span></td>');
+				trstring.push('</tr>');
+
+				tableElements.push( trstring.join(" ") );
+
+				packages = "";
+				boltOns = "";
+				boltOnList = "";
+				category = "";
+				rowclass = "";
+			}
+
+			$("#tableBody").html( tableElements.join(" ") );
+
+			channelLineupDataTable = $("#channelLineupData").dataTable( {
+				bPaginate: false,
+				sScrollY: "440px",
+				//oSearch: { "sSearch": "" },
+				//sDom: '<"options"f>tr',
+				sDom: '<"options">tr',
+				//oLanguage: { "sSearch": "", "sEmptyTable": "No Channels match this criteria" },
+				"aoColumns": [
+				    { "asSorting": [ "asc", "desc" ] },
+				    { "asSorting": [ "asc", "desc" ] },
+				    { "bSortable": false }, 
+				    { "bSortable": false }, 
+				    { "bSortable": false }
+			    ]
+			});
+			channelLineupDataTable.live("filter", function (event, dt) {
+				var val = $("#channelLineupDataFilter input").attr("value");
+				if ( val != dt.oPreviousSearch.sSearch ) {
+					$("#channelLineupDataFilter input").attr("value", dt.oPreviousSearch.sSearch );
+				}
+			})
+			$("#channelLineupDataFilter input").live("change keyup", function () {
+				channelLineupDataTable.fnFilter( this.value );
+			});
+
+			window.channelLineupDataTable = channelLineupDataTable;
+
+			channelLineupDataTable.fnSort( [ [1,'asc'] ] );
+			channelLineupDataTable.live("draw", function (event, dt) {
+				//var inputFilter = channelLineupDataTable.fnSettings().oPreviousSearch.sSearch;
+				var inputFilter = dt.oPreviousSearch.sSearch;
+				if ( !!inputFilter ) {
+					$("#filterOpts input").attr("checked", "false");
+					$("#filterOpts .opt").removeClass("checked");
+					$(".clearAllLink").show();
+					$("#channelLineup .options .dataTablesFilter input").css("backgroundColor","#FFF");
+				} else {
+					$("#filterOpts .opt").removeClass("checked");
+					$("#viewall").attr("checked", "true");
+					$("#viewall").parent().addClass("checked");
+					$(".clearAllLink").hide();
+					$("#channelLineup .options .dataTablesFilter input").css("backgroundColor","");
+				}
+			});
+
+			$("#channelLineup .options .dataTablesFilter input").before('<p id="placeholder">Search by Channel Name (e.g. ESPN)</p>');
+
+			!!window.updateMarketInfo && window.updateMarketInfo();
+
+			if ( !!window.qa ) qa.initialize();
+			if ( !!window.s ) s.linkInternalFilters += (","+location.hostname);
+		}
+		if ( !!window.s ) s.linkInternalFilters += (","+location.hostname);
+
+		init();
+	});
+</script>
+
+<!-- ***************  METRIX RESOURCE SCRIPT CODE BEGIN  ******************** -->
+<div id="GlobalMetrixRouter" class="mboxDefault"><!--DefaultContent--></div>
+<script type="text/javascript">
+	var GMXR=GMXR;if(GMXR=='activate')mboxCreate('GlobalMetrixRouter','URL='+document.location);
+</script>
+<script type="text/javascript" src="/static/Common/Includes/Lib/Metrix/CTL/metrixConfig.js"></script>
+<noscript><img src="http://centelcom.112.2O7.net/b/ss/centelcom/1/H.14--NS/0" height="1" width="1" border="0"/></noscript>
+<!-- ***************  METRIX RESOURCE SCRIPT CODE END  ******************** -->
+
+
+</body>
+</html>

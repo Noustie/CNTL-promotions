@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/iframe.css" />
+		<script type="text/javascript" src="js/vendor/jquery-1.9.1.js"></script>
+		<script>
+			jQuery.migrateMute = true;
+		</script>
+		<script src="//code.jquery.com/jquery-migrate-1.1.1.js"></script>
+
+		<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+
+		<script type="text/javascript" src="//www.centurylink.com/assets/js/plugins/jquery.qwest-core.js"></script>
+		<script type="text/javascript" src="//www.centurylink.com/assets/js/plugins/centurycore.shortcuts.js"></script>	
+
+		<script type="text/javascript">
+			//getting url in js instead of ssi. ssi isn't currently changing based on server_type
+			var smburl = window.location.pathname.split( '/' );
+			var	host = smburl[2];
+		</script>
+		<script type="text/javascript">
+			var sAddress = ""; //s.address
+			var pageType = ""; //s.pageType
+			var errorType = ""; //s.prop2
+			var accountEvents = ""; //eVar1
+			var serviceEvents = ""; //eVar2
+			var pCategory = ""; //eVar3
+			var unisysEvent = ""; //eVar4 	
+			var orderType = ""; //eVar7
+			var zipAvail = ""; //eVar8
+			var phoneAvail = ""; //eVar9
+			var addressAvail = ""; //eVar10
+			var respMsg = ""; //eVar11
+			var availType = ""; //eVar12
+			var sEvents = ""; //s.events
+			var sProducts = ""; //s.products
+			var orderNum = ""; //s.purchaseID
+			var SERVER_TYPE='PROD';
+			var ctl_url='http://www.centurylink.com';
+			var ctlsecure_url='https://www.centurylink.com';
+			var ctlmyacct_url='https://eam.centurylink.com';
+			var q_url='http://qwest.centurylink.com';
+			var qshop_url='https://shop.centurylink.com';
+			var qmobile_url='http://m.centurylink.com';
+			var eq_url='http://embarq.centurylink.com';
+			var eqsecure_url='https://embarq.centurylink.com';
+			var ctleam_url='https://embarq.centurylink.com';
+			var qwest_url='http://qwest.centurylink.com';
+			var ctl_selfservice_url='http://selfservice.centurylink.com';
+			var search='http://c.search.centurylink.com';
+			var qcookie_url='https://q.myaccount.centurylink.com';
+			var qportal_url='https://sbcontrolcenter.centurylink.com';
+		</script>
+		
+		<script type="text/javascript"> 
+			var player;
+			var selectedPlayerLink = null;
+
+			var modVP;
+			var modExp;
+			var modCon;
+			var previousVideoID=0;
+			var currentVideo;
+			var dontAutoPlay = true;
+			 
+			function myTemplateLoaded(experienceID) {
+			    player = brightcove.api.getExperience(experienceID);
+			    modVP = player.getModule(brightcove.api.modules.APIModules.VIDEO_PLAYER);
+			    modExp = player.getModule(brightcove.api.modules.APIModules.EXPERIENCE);
+			    modCon = player.getModule(brightcove.api.modules.APIModules.CONTENT);
+			    modExp.addEventListener(brightcove.api.events.ExperienceEvent.TEMPLATE_READY, onTemplateReady);
+			}
+			 
+			function onTemplateReady(evt) {
+			    //modVP.addEventListener(brightcove.api.events.MediaEvent.BEGIN, onMediaEventFired);
+			    //modVP.addEventListener(brightcove.api.events.MediaEvent.CHANGE, onMediaEventFired);
+			    //modVP.addEventListener(brightcove.api.events.MediaEvent.COMPLETE, onMediaEventFired);
+			    //modVP.addEventListener(brightcove.api.events.MediaEvent.ERROR, onMediaEventFired);
+			   	modVP.addEventListener(brightcove.api.events.MediaEvent.PLAY, onMediaEventFired);
+			    modVP.addEventListener(brightcove.api.events.MediaEvent.PROGRESS, onMediaProgressFired);
+			    //modVP.addEventListener(brightcove.api.events.MediaEvent.STOP, onMediaEventFired);
+				selectedPlayerLink.click();
+				
+			}
+			 
+			function onMediaEventFired(evt) {
+				//document.getElementById("eventLog").innerHTML += "MEDIA EVENT: " + evt.type + " fired at position: " + evt.position + "<BR>";
+				//_gaq.push(['_trackEvent', 'Video', evt, '']);
+				//console.log(evt);
+			}
+			
+			function onMediaProgressFired(evt) {
+					if ( dontAutoPlay){
+ 						modVP.pause();
+ 						dontAutoPlay = false;
+ 					}
+				//console.log(evt);
+			   	//document.getElementById("positionLog").innerHTML = "CURRENT POSITION: " + evt.position;
+			}
+
+			function getQueryParam (key) {
+				var a = location.search.slice(1).split("&"), GET = [];
+				for (var i in a) { GET[a[i].split("=")[0]] = a[i].split("=")[1]; }
+				return GET[key] || null;
+			}
+		</script> 
+		
+		<script type="text/javascript">
+			$(function () {
+
+				function onChangeVideo (e) {
+					e.preventDefault();
+
+					var $this = $(this);
+					$('.selected').removeClass('selected');
+					$this.addClass('selected');
+					var selectedPlayerID = $this.attr("data-vidid");
+
+					$("#videoTitle").html( $this.attr("data-title") );
+					$("#videoSubTitle").html( $this.attr("data-subtitle") );
+ 					
+ 					modVP.loadVideoByID(selectedPlayerID);
+ 					
+
+ 				}
+
+				$("a.playerlink").click(onChangeVideo);
+
+				if ( !!getQueryParam("selectVideo") && !!$( "a#"+getQueryParam("selectVideo") ).length ) {
+					selectedPlayerLink = $( "a#"+getQueryParam("selectVideo") );
+				} else {
+					selectedPlayerLink = $("a.playerlink.selected");
+				}
+
+				!!window.qa && qa.initialize();
+			});
+		</script>
+		<script type="text/javascript">
+		
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-11360203-1']);
+		  _gaq.push(['_setDomainName', 'centurylink.com']);
+		  _gaq.push(['_setAllowLinker', true]);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		
+		</script>
+		
+		<!-- 
+		Start of DoubleClick Floodlight Tag: Please do not remove 
+		Activity name of this tag: MidUpper Educational LP Video Player LCTL 
+		URL of the webpage where the tag is expected to be placed: https://promotions.centurylink.com/soho/lc/promos/bizhelp/ 
+		This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag. 
+		Creation Date: 02/22/2013 
+		--> 
+		<script type="text/javascript"> 
+		var axel = Math.random() + ""; 
+		var a = axel * 10000000000000; 
+		document.write('<iframe src="https://3490900.fls.doubleclick.net/activityi;src=3490900;type=landi831;cat=midup564;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>'); 
+		</script> 
+		<noscript> 
+		<iframe src="https://3490900.fls.doubleclick.net/activityi;src=3490900;type=landi831;cat=midup564;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe> 
+		</noscript> 
+		<!-- End of DoubleClick Floodlight Tag: Please do not remove -->
+		
+	</head>
+	<body>
+	<div class="frame-it">
+		<h1 id="videoTitle"></h1>	
+		<div id="playerDiv">
+			<object id="myExperience2191623641001" class="BrightcoveExperience" > 
+			  <param name="autoStart" value="false" />
+			  <param name="bgcolor" value="#FFFFFF" /> 
+			  <param name="width" value="648" /> 
+			  <param name="height" value="412" />
+			  <param name="playerID" value="2149034739001" />
+			  <param name="playerKey" value="AQ~~,AAABFCaVWsE~,leY1Q68UnbqxyN2ET9ZTaQv6iH-6FMct" />
+			  <param name="isVid" value="true" /> 
+			  <param name="dynamicStreaming" value="true" /> 
+			  <param name="includeAPI" value="true" /> 
+			  <param name="templateLoadHandler" value="myTemplateLoaded" /> 
+			  <param name="@videoPlayer" value="2191623641001" />
+			</object>
+		</div>
+		<div class="button-links">
+				<a id="seo" class="playerlink selected" href="#playerDiv" data-vidid="2191674676001" data-title="Search Engine Optimization (SEO)" class="vidLink" onclick="_gaq.push(['_trackEvent', 'Video Modal', 'Click', 'Change to seo Video']);" clicktrack="ctl|smb|mid_upper_educational|video_modal|zero_to_hero_video">SEO</a>
+				<a id="social" class="playerlink" href="#playerDiv" data-vidid="2191623641001" data-title="Social Media and the Workplace" class="vidLink" onclick="_gaq.push(['_trackEvent', 'Video Modal', 'Click', 'Change to social Video']);" clicktrack="ctl|smb|mid_upper_educational|video_modal|socialize_video">Social</a>
+				<a id="cloud" class="playerlink" href="#playerDiv" data-vidid="2191674678001" data-title="Cloud Computing in Plain English" class="vidLink" onclick="_gaq.push(['_trackEvent', 'Video Modal', 'Click', 'Change to cloud Video']);" clicktrack="ctl|smb|mid_upper_educational|video_modal|to_the_cloud_video">Cloud</a>
+			<div style="clear:both;"></div>
+		</div>
+	</div>
+	<!-- Omniture -->
+	<script type="text/javascript">
+		eBiz_server="promotions.centurylink.com";
+		eBiz_pageName="ctl|smb|mid_upper_educational|landing|video_modal";
+		eBiz_channel=eBiz_evar41="Small Business";
+		eBiz_prop3=eBiz_evar24="unknown";
+		eBiz_prop20="Business";
+		eBiz_evar35=eBiz_prop24="smb|mid_upper_educational";
+		eBiz_evar48=eBiz_prop38="static_page";
+		eBiz_evar49=eBiz_prop39="static_page";
+		eBiz_evar56=eBiz_prop52="ctl";
+		function setCookie(c_name,value,expiredays){
+			var exdate=new Date();
+			exdate.setDate(exdate.getDate()+expiredays);
+			document.cookie=c_name+ "=" +escape(value)+
+			((expiredays==null) ? "" : ";expires="+exdate.toGMTString())+";path=/";
+		}
+		//check url for param
+		var campaign_param=getQueryParam("Source");
+		if(!!campaign_param){
+			setCookie('campaign_source',escape(campaign_param));
+			s.prop36=campaign_param;
+		}
+		setCookie('searchtarget', 'small business');
+	</script>
+	
+	<script type="text/javascript" src="/soho/assets/js/third-party/metrics/s_h_code_sb_omni_feb2011.js"></script>
+	
+	<!--i2a, Interest2Action, iCrossing-->
+	<script type="text/javascript" src="//www.centurylink.com/static/Common/Includes/Lib/Metrix/CTL/metrixConfig.js"></script>
+	<!--i2a, Interest2Action, iCrossing-->
+	
+	<!-- Omniture -->
+	
+	<script language="JavaScript" type="text/javascript"><!--
+		if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+	//-->
+	</script>
+	
+	<noscript>
+	<a href="http://www.omniture.com" title="Web Analytics"><img src="/assets/images/spacer.gif" height="1" width="1" border="0" alt="" /></a>
+	</noscript>
+	<!--/DO NOT REMOVE/-->
+	<!-- End SiteCatalyst code version: H.14. -->
+	<script type="text/javascript">
+		brightcove.createExperiences();
+	</script>
+	</body>
+</html

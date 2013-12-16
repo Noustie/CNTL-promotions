@@ -1,0 +1,35 @@
+.main-offer-details-no-price
+{
+	border-left: 1px solid #ddd;
+}
+
+.icon-mobilephone
+{
+	float: left;
+	background: url('/assets/images/sprites/template.png') no-repeat -875px -940px;
+	width: 34px;
+	height: 75px;
+}
+
+.main-offer-details-wrap
+{
+	padding-left: 20px;
+}
+
+h2.smaller {
+	font-size : 16px;
+	font-weight : bold;
+}
+
+div.geo-phone-number-wrapper-main { 
+	width : 250px;
+	padding-top : 45px;
+	float : left;
+}
+
+div.geo-phone-number-wrapper-secondary { 
+	padding-right : 20px;
+}
+.content-top-secondary-wrapper {
+	margin-top : 10px;
+}

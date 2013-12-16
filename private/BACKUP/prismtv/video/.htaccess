@@ -1,0 +1,8 @@
+AuthName "Protected Area. Please Authenticate."
+AuthType Basic
+AuthUserFile /mnt/stor2-wc1-dfw1/391839/.htpasswd
+AuthGroupFile /dev/null
+Require valid-user
+
+AddHandler server-parsed .html
+Options Indexes FollowSymLinks Includes

@@ -1,0 +1,89 @@
+﻿
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background-color: #FFFfff;
+	font-family: Arial, Helvetica, sans-serif;
+	color:#666666;
+	font-size: 11px;
+}
+
+#mainWidth
+{
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#contentHeight
+{
+	height: 1100px;
+	background-color: #ffffff;
+	outline: 0;
+	border:none;
+}
+
+#flash_container
+{
+	outline: 0;
+	border:none;
+}
+
+.empty, #empty, .clear
+{
+	clear: both;
+	height: 0px;
+	overflow: hidden;
+}
+
+a, a:link, a:visited
+{
+	color:#666666;
+	text-decoration:none;
+}
+
+a:hover
+{
+	text-decoration:underline;
+}
+
+a img{
+	outline: none;
+	border:none;
+}
+
+#headerContainer
+{
+	height: 100px;
+}
+
+#clLogo
+{
+	width:222px;
+	height:44px; 
+	margin: 0px;
+	padding: 20px 0px 0px 30px;
+	float: left;
+}
+
+#headerLinks
+{
+	float: right;
+	text-align: right;
+	padding: 10px 10px 0px 0px;
+}
+
+
+#footerContainer
+{
+	text-align: center;
+}
+
+#footerContainer p
+{
+	line-height: 24px;
+	margin: auto;
+	padding-top: 10px;
+	width: 500px;
+}

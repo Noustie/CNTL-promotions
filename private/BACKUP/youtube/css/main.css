@@ -1,0 +1,126 @@
+body {
+	font-family: sans-serif;
+	margin: 0;
+}
+h1, h2 {
+	text-align: center;
+}
+#main {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+#main .nav_home, 
+#main .nav_government, 
+#main .nav_small_medium_business, 
+#main .nav_small_medium_business, 
+#main .nav_large_business, 
+#main .nav_careers {
+	display: none;
+}
+.segmentBlock {
+	margin: 50px 0;
+	padding: 20px 0;
+	border: 1px solid #CCC;
+	float: left;
+	clear: both;
+	width: 100%;
+}
+.segmentNav {
+	display: block;
+	margin: 0;
+	padding: 0;
+	height: 80px;
+	border-bottom: 1px solid #CCC;
+	max-width: 1100px;
+	margin: 0 auto;	
+}
+.segmentNav li {
+	display: block;
+	margin: 0;
+	margin: 0;
+	padding: 0;
+	height: 80px;
+	width: 20%;
+	float: left;
+}
+.segmentNav li a {
+	display: block;
+	line-height: 80px;
+	height: 80px;
+	font-size: 15px;
+	text-decoration: none;
+	color: #00853F;
+	text-align: center;
+}
+.playlist {
+	width: 95%;
+	padding: 20px 0;
+	margin: 0 auto;
+	clear: both;
+}
+.entries {
+	float: left;
+	clear: both;
+	width: 100%;
+}
+.entries a {
+	width: 190px;
+	display: block;
+	float: left;
+	height: 105px;
+	color: #00853F;
+	text-decoration: none;
+	font-weight: bold;
+	overflow: hidden;
+	position: relative;
+}
+.entries a:hover {
+	background-color: #9bcb44;
+}
+.entries a span {
+	display: block;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;	
+}		
+.entries .vidShadow {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	box-shadow: 0 0 10px #000 inset;
+	-webkit-transition: background-color 0.2s ease-out;
+	   -moz-transition: background-color 0.2s ease-out;
+	    -ms-transition: background-color 0.2s ease-out;
+	        transition: background-color 0.2s ease-out;
+	background-color: rgba(0,0,0,0);
+}
+.entries a:hover .vidShadow {
+	background-color: rgba(140,198,63,0.5);
+}
+.entries .vidThumb {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	position: relative;
+}
+.entries .vidThumb img {
+	display: block;
+	min-width: 100%;
+	height: 110%;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: -5%;
+	top: 0;
+}
+.entries .vidTitle {
+	display: none;
+}
+.entries .vidDesc {
+	display: none;
+}

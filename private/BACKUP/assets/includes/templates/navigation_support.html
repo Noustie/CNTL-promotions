@@ -1,0 +1,74 @@
+<!--Begin Navigation Menu include - /assets/includes/templates/navigation.html
+	All navigation items are assumed to be in the pre-id state until acted on by the JS
+-->
+<!--#if expr="$ctl_url=''"-->
+<!--#include virtual="/assets/includes/templates/variables.html"-->
+<!--#endif-->
+
+<!--#if expr="$nav_level_1='shop'"-->
+	<!--#set var="shopClass" value="active"-->
+<!--#elif expr="$nav_level_1='my_account'"-->
+	<!--#set var="myAccountClass" value="active"-->
+<!--#elif expr="$nav_level_1='support'"-->
+	<!--#set var="supportClass" value="active"-->
+<!--#endif-->
+
+<!--#if expr="$nav_level_2='setup'"-->
+	<!--#set var="setupClass" value="active"-->
+<!--#elif expr="$nav_level_2='guidance'"-->
+	<!--#set var="guidanceClass" value="active"-->
+<!--#elif expr="$nav_level_2='chat'"-->
+	<!--#set var="chatClass" value="active"-->
+<!--#endif-->
+<div id="tpl_nav-bar">
+	<div class="nav level1">
+		<ul>
+			<li class="<!--#echo var="shopClass"-->"><div><a href="<!--#echo var="ctl_url"-->/home/" clicktrack="ctl|corp|landing_page|global_nav|shop">Shop</a></div></li>
+			<li class="<!--#echo var="myAccountClass"-->"><div><a href="https://eam.centurylink.com/eam/login.do" clicktrack="ctl|corp|landing_page|global_nav|myaccount">My Account</a></div></li>
+			<li class="<!--#echo var="supportClass"-->"><div><a href="<!--#echo var="ctl_url"-->/help/" clicktrack="ctl|corp|landing_page|global_nav|support ">Support</a></div></li>
+			<li class="cap"></li>
+			<li class="right_flavor"><div>Customized for: <strong id="header-zip"></strong></div><a href="#ZAM" class="styled_button modal-trigger" id="dd_navigation-change-zip-btn" clicktrack="ctl|corp|main_nav|link|change-zip">Change</a></li>
+		</ul>
+	</div>
+	<div class="nav level2">
+		<ul>
+			<li class="cap_left"></li>
+			<li class="first <!--#echo var="setupClass"-->"><div><a href="/welcome/" clicktrack="ctl|corp|main_nav|link|welcomecenter">Setup & Customize Services</a></div></li>
+			<li class="<!--#echo var="guidanceClass"-->"><div><a href="/help/guidance/" clicktrack="ctl|corp|main_nav|link|guidancecenter">How to Use, Troubleshoot or Fix Services</a></div></li>
+			<li class="<!--#echo var="chatClass"-->"><div><a href="/help/chat/" clicktrack="ctl|corp|main_nav|link|chat">Chat with Us</a></div></li>
+			<li class="cap_right"></li>
+			<li class="right_flavor"><a href="https://eam.centurylink.com/eam/qbp/identify.do" class="icon_rightarrow" clicktrack="ctl|corp|global_nav|qbp">Quick Bill Pay</a></li>
+		</ul>
+	</div>
+</div>
+<input type="hidden" name="targetRedirect" id="targetRedirect" value="dd_navigation-change-zip-btn" />
+<script type="text/javascript">
+
+//var ttGeoLoc = { state: null, city: null, dma: null, zipcode: null };
+require(['order!jquery','order!jquery-ui','order!cookie','order!linkMatrix','order!centurycore'],function(){
+	var lm={ 
+	"dd_navigation-change-zip-btn":{
+		CTL: '#REMAINONPAGE', 
+		Q: '#REMAINONPAGE'
+	}};
+	jQuery.extend(linkMatrix.zam,lm);
+	
+	$('#dd_navigation-change-zip-btn').click(function(){
+		//remove the profile cookie when this is clicked before the zam is loaded
+		cookiejar.crumble('profile_cookie');
+		return true;
+	});
+	//if we aren't profiled already AND we haven't tried to post the zam form yet (to avoid submitting the form over and over if this is failing)
+	if(!subcookiejar.fetch('profile_cookie')){// && $.cookie('geoloc_zam')!='true'){
+		var zip;
+		if(subcookiejar.fetch('remember_me','zipCode')){
+			zip=subcookiejar.fetch('remember_me','zipCode');
+		}else if(ttGeoLoc.zipcode && ttGeoLoc.zipcode!==null){ 
+			zip=ttGeoLoc.zipcode;
+		}
+		$('#header-zip').html(zip); 
+		$('#zam_zip-code').val(zip);
+		getProfileFromZip(zip,'Y',qmz.profile);
+	}
+});
+</script>
