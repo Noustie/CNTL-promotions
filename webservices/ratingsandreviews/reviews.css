@@ -1,0 +1,363 @@
+#ratingsAndReviews .reviewsList {
+	clear: both;
+}
+#ratingsAndReviews .review {
+	width: 100%;
+	float: left;
+	clear: both;
+} 
+#ratingsAndReviews .review p {
+	padding: 0;
+	margin: 0;
+}
+#ratingsAndReviews .reviewStats {
+	width: 250px;
+	float: left;
+}
+#ratingsAndReviews .reviewText {
+	width: 65%;
+	float: right;
+}
+#ratingsAndReviews .secondaryRatings {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+}
+#ratingsAndReviews .rating {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	height: 24px;
+}
+#ratingsAndReviews .secondaryRatings .ratingLabel {
+	display: block;
+	float: left;
+	width: 50%;
+}
+#ratingsAndReviews .review .starRating {
+	padding: 15px 0 20px 0;
+}
+#ratingsAndReviews .starRatingBlock {
+	display: block;
+	width: 120px;
+	height: 24px;
+	margin: 0;
+	padding: 0;
+	background-position: left top;
+}
+#ratingsAndReviews .starRatingInner {
+	display: block;
+	width: 0px;
+	height: 24px;
+	margin: 0;
+	padding: 0;
+	background-position: left bottom;
+	text-indent: -9999px;
+}
+#ratingsAndReviews .stars1 .starRatingInner {	width: 20% 	}
+#ratingsAndReviews .stars2 .starRatingInner {	width: 40% 	}
+#ratingsAndReviews .stars3 .starRatingInner {	width: 60% 	}
+#ratingsAndReviews .stars4 .starRatingInner {	width: 80% 	}
+#ratingsAndReviews .stars5 .starRatingInner {	width: 100%	}
+
+#ratingsAndReviews .review .reviewRowWrap,
+#ratingsAndReviews .review .reviewRowWrapInner,
+#ratingsAndReviews .moreReviewsLink  {
+	height: 100%;
+	width: 100%;
+	float: left;
+	clear: both;
+	background-repeat: no-repeat;
+	background-position: center top;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */;
+}
+#ratingsAndReviews .review .reviewRowWrapInner {
+	height: auto;
+	background-position: center bottom;
+}
+
+#ratingsAndReviews .ratingBar {
+	display: block;
+	height: 15px;
+	border-radius: 10px;
+	width: 120px;
+	border: 1px solid #CCC;
+	background-color: #e6e6e6;
+	background-clip: padding-box; 
+	overflow: hidden;
+	box-shadow: 0 0 10px #CCC inset;
+}
+#ratingsAndReviews .ratingInner {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: #009ad7;
+	text-indent: -9999px;
+	box-shadow: 0 0 20px rgba(0,0,0,0.2) inset;
+}
+#ratingsAndReviews .bar0 	.ratingInner { 	width: 	0%	 }
+#ratingsAndReviews .bar1 	.ratingInner { 	width: 	10%	 }
+#ratingsAndReviews .bar2 	.ratingInner { 	width: 	20%	 }
+#ratingsAndReviews .bar3 	.ratingInner { 	width: 	30%	 }
+#ratingsAndReviews .bar4 	.ratingInner { 	width: 	40%	 }
+#ratingsAndReviews .bar5 	.ratingInner { 	width: 	50%	 }
+#ratingsAndReviews .bar6 	.ratingInner { 	width: 	60%	 }
+#ratingsAndReviews .bar7 	.ratingInner { 	width: 	70%	 }
+#ratingsAndReviews .bar8 	.ratingInner { 	width: 	80%	 }
+#ratingsAndReviews .bar9 	.ratingInner { 	width: 	90%	 }
+#ratingsAndReviews .bar10 	.ratingInner { 	width: 	100% }
+
+
+#ratingsAndReviews .reviewBody {
+	clear: both;
+	width: 100%;
+	float: left;
+	padding: 15px 0;
+}
+
+#ratingsAndReviews .reviewText .reviewtitle {
+	margin: 0;
+	text-transform: capitalize;
+}
+
+#ratingsAndReviews .ratingLabel {
+	float: left;
+	width: 60px;
+}
+#ratingsAndReviews .reviewsoverview, 
+.review .reviewRowWrapInner {
+	padding: 25px 20px;
+}
+
+
+#ratingsAndReviews .reviewsoverview {
+	overflow: hidden;
+	border: 1px solid #CCC;
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	background-color: #fafafa;
+}
+#ratingsAndReviews .reviewsoverview .starRatingBlock {
+	float: left;
+}
+#ratingsAndReviews .reviewsoverview .overviewheading {
+	float: left;
+	clear: both;
+	width: 100%;
+}
+#ratingsAndReviews .headingText {
+	float: left;
+	padding: 0 15px 0 0;
+	display: block;
+}
+#ratingsAndReviews .overallRatings {
+	width: 250px;
+	float: left;
+}
+#ratingsAndReviews .overallRatings .rating {
+	margin: 0;
+}
+#ratingsAndReviews .overallRatings .ratingBar {
+	float: left;
+}
+#ratingsAndReviews .overallRatings .numReviewsLabel {
+	float: left;
+	font-size: 10px;
+}
+#ratingsAndReviews .overallRatings .numReviews {
+	width: 30px;
+	text-align: right;
+	display: inline-block;
+	color: #00853F;
+}
+#ratingsAndReviews .categoryRatings {
+	width: 525px;
+	height: 120px;
+	float: right;
+}
+#ratingsAndReviews .categoryRatings h5 {
+	margin: 0 0 5px 0;
+}
+#ratingsAndReviews .categoryRatingsPad {
+	padding: 10px 25px;
+}
+#ratingsAndReviews .twoColStack {
+	overflow: hidden;
+}
+#ratingsAndReviews .twoColStack .rating {
+	width: 50%;
+	float: left;
+	margin: 0;
+}
+#ratingsAndReviews .categoryRatings .ratingLabel {
+	width: 105px;
+	font-size: 12px;
+}
+
+#ratingsAndReviews .reviewMeta .metaSmall {
+	font-size: 10px;
+	color: #666;
+}
+#ratingsAndReviews .reviewMeta .metaInline {
+	float: left;
+	display: block;
+	height: 14px;
+	line-height: 14px;
+	padding: 0 10px 0 0;
+	margin: 0 10px 0 0;
+	border-right: 1px solid #CCC;
+}
+#ratingsAndReviews .reviewMeta .reviewerNickname  {
+	font-weight: bold;
+}
+#ratingsAndReviews .reviewMeta .lastMetaInLine {
+	border-right: 0 none;
+}
+
+#ratingsAndReviews .moreReviewsLink {
+	padding: 30px;
+	margin: 0;
+	text-align: center;
+	clear: both;
+}
+#ratingsAndReviews .moreReviewsLink .moreReviews {
+	display: inline-block;
+	height: 50px;
+	line-height: 45px;
+	width: 370px;
+	font-size: 14px;
+	vertical-align: top;
+	text-decoration: none;
+}
+#ratingsAndReviews .moreReviewsLink .backToTopArrow {
+	display: inline-block;
+	padding: 20px 25px 0px 25px;
+	height: 45px;
+	font-size: 14px;
+	line-height: 1;
+	text-decoration: none;
+	margin: 0 0 0 25px;
+	border-left: 1px solid #CCC;
+	background-repeat: no-repeat;
+	background-position: center top;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #666;
+	vertical-align: top;
+}
+#ratingsAndReviews .endOfReviewsPager .backToTopArrow {
+	margin: 0;
+	border-left: 0 none;
+}
+#ratingsAndReviews .loadingSpinner { 
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	/*background: url('/prismtv/css/images/loading.gif') no-repeat center center;*/
+	background: url('./images/loading.gif') no-repeat center center;
+}
+#ratingsAndReviews .reviewsPlaceHolder { 
+	min-height: 500px; 
+	padding: 30px 0; 
+	text-align: center;
+	clear: both;
+	width: 100%;
+}
+#ratingsAndReviews .disclaimer {
+	margin: 0;
+}
+
+#ratingsAndReviews .displayOptions {
+	float: left;
+	width: 100%;
+}
+#ratingsAndReviews .displayOptionsWrap {
+	border: 1px solid #CCC;
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	background-color: #fafafa;
+	width: 100%;
+	float: left;	
+	clear: both;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	line-height: 20px;
+}
+#ratingsAndReviews .displayOptions .sortby,
+#ratingsAndReviews .displayOptions .filterby {
+	border-right: 1px solid #CCC;
+	float: left;
+	padding: 20px;
+}
+#ratingsAndReviews .displayOptions .sortby label,
+#ratingsAndReviews .displayOptions .filterby label {
+	display: inline-block;
+	padding: 0 5px;
+}
+#ratingsAndReviews .displayOptions .sortby strong,
+#ratingsAndReviews .displayOptions .filterby strong {
+	
+}
+#ratingsAndReviews .displayOptions .all-reviews-link {
+	padding: 20px;
+	display: block;
+	float: left;
+}
+#ratingsAndReviews .submitWrap {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	position: absolute;
+}
+#ratingsAndReviews .browseHeader {
+	background-repeat: no-repeat;
+	background-position: center top;
+	padding: 40px 10px 0 10px;
+}
+
+.hasJS #ratingsAndReviews .displayOptions .submitWrap {
+	display: none;
+}
+.hasJS #ratingsAndReviews .moreReviewsLink .previousReviews  {
+	display: none;
+}
+
+#ratingsAndReviews .glossyButtonBG,
+#ratingsAndReviews .moreReviewsLink .moreReviews  {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXIAAAAyCAMAAAB21aDjAAAAS1BMVEUAAADNzc2EhITk5OTQ0NDGxsYgICAAAAAAAAAAAADv7+/q6urn5+f////h4eHZ2dny8vL09PT4+Pjs7Oz29vbi4uL6+vr9/f37+/v8t9KsAAAACnRSTlMAWoz/zqc3G1APvBD5KwAAAPRJREFUeNrt21kOwiAURmFaaBUnOqh1/ys1xZu+kpjwJyTnW8J56AD3uqwLCdWFzh0GP293VLbNfjiKrxskVmve+Q0ivnO7MH0gMgW3S8sbIkuy5JCx5E/IWPIZMpZ8gowlv0CG5HKWfIWMJb9ChuRylvwGGZLLWXIPGUv+ggzJ5Sz5AzIkLyF5+3iWl/H6bB3f5XL8fRbxw988ThLLOLxtHbdCctx9lnHd3DrmWOSY1pJjJlGOyVu5xHy52JLYohCbArtCYrYrFNmIU1mH+Es+svcpkPc+x+isec92s0Doc3FrPp5R3ZiLmxhPqC5GBwAA/vIFff3kMjtzaVwAAAAASUVORK5CYII=);
+}
+#ratingsAndReviews .grayBubble, 
+#ratingsAndReviews .categoryRatings {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAg0AAAB4BAMAAACDRtz8AAAAJ1BMVEX+/v76+vry8vL39/f19fUAAADw8PDJyckAAAAAAAABAQG1tbWurq5nYpb/AAAADXRSTlOAgICAgACAgCQMMVYZn0YbjQAAAWlJREFUeNrt3bFKQgEUx+EbRK01ubu0Bg29gODacgnRISiug0tTQfYA6i4ovYC0myA9XPd6aKwhutP5fo/w8T/zKUrV3dQOo91z5j6/HXb3ReKOx9twGN4VqTuahMNHkbyTbeMweiySd/TaOGQ/i7rJsna4vSyy1z84FOk7nXPgwIEDBw4cOHDgwIEDBw4Fh4hDxCFqyeE8fZ1wOMtexx7swR7swR5+jQMHDhw4cODAgQMHDhw4cKjjEHGIOEQcIg5RSw5X6bvmwIEDBw4cOHDgwIHDPzn00tfnwIEDBw4cOHDgwIEDBw4cej0OEYeIQ9SSQzd9Fxw4cODAgQMHDhw4cODAgUO3yyFqyaFK35gDBw4cOHDgwOEvDsMqew/TxmH0VGXvpXEY7Krk9feNQ/mWfRDTzbJxWCUfxHg/OzgMFqn/Tk73m3n8nVwt3lM3W4bDYDXL3Hwdfyfr1qkrGwf/eUsOHDj84PAFB9L3PQQclRYAAAAASUVORK5CYII=);
+}
+#ratingsAndReviews .starBG {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAwCAMAAAA8VkqRAAABO1BMVEUAAADMzMwAAAAFBwUAAADMzMzMzMwJDAkAAAAAAAAAAAAUGhTMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMyMtm+Xu3oAAAAGCAYtekuUuH91nXU9YErMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMyZwmZ7rmKSuHxLf1dYbk5ZkE2Mu3dYjFFKh19Ca1OIuWxoglaEuWxNoFiJv1xcjV5roXmFt25Kh2ZXknKHunBbn29DmmJVh1NIfWCSvH9bjlkdJxw8TjhNeFdEf187kFm6x7TMzMxbrz9Sqz9Kpz9CpD8ilT86oD8xnD8pmD8bkT9jsz9qtj9xuj8NdDcPfzkUjT5qtEo4lzyIwkd4vT9+wD86jzcceDgymkcaiTwikU1WpTtCljlMnjpclUqCuFZJnFQfswo5AAAASXRSTlMAHw8kB8NtAQMJGhSC/S5kB1sYvgyaXRcM/hUwW/QjlOlDo4o1Sdak3dE8vSD+fu+zR8hQy/38uFC1onWypencgzvXLzNkqO8XJTos+AAAAYRJREFUOMu1kdduwjAUhklCiQOIPcLee3fvPeTu0paEvWnf/wkaoyixwZV60+8m0f/J5/gcG/6CzfaLiMXouQNCB1U4IXRSxQaEG7ScgQoMRViRsOKJh0lnnCZrBImI1eTMpBkPyl1ZuEbWtTzhXs3dHnWAHJnn9HFSeJ4yYJj03LQ2HWJ9RqjBkxvXBbl7uy7shEii6tEo6pQkRFy5jXq7OJ67oJtRd+yGLkwk7Fi7hOEf8fkATxX5vBHQ8mC3WzbShLff94q0Wru93peFUqv4qbBFqbX5oVBgAdb0wlf1Hm+33xXahQNv1VcMolahxfR+hekipBzky5X5A8G8cs2iXsBSmz1izGpXZnHZCoiXgyeNwRnnF1COjLDXeVHplLQcGePOq8o358c3BkZvKiOOWMv+s8YNIU6azeZ4OBwrnzoLMHEqy1IgHA5IsnxHLHIitUqcmbXUW9LEjy0y1AqEOYsAgNAItBqCLo4OzWYWPTgP2NtzrDswivqwIjYHDwC/8v8D9Nhpm44O5DoAAAAASUVORK5CYII=);
+}
+#ratingsAndReviews .edgeShadowGradientTop, 
+#ratingsAndReviews .review .reviewRowWrap {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAz4AAAAHCAMAAAD+iGgSAAAAflBMVEUAAADMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMwonIReAAAAKXRSTlMADy0oMgWACwI4PBk+I2geB1kUdnBLYVLLhJi0fESOwwmivavt4cf41bzh7ssAAAH3SURBVFjD7dPrjqJAEIZhTyieUREUGUVFnb3/G9w+VPfXVTMZ2U1mJjE8VFp/kACdfjsQW5GSWFU1Mrqw9qbOksxJn/TIgIytiTEz3pwtybc5WUHmLLyUbEhpDY09OQaKwLk4e1fnABdysu7KznkP3IS6VsM8mD8/5BGqHzV3q2/ce2jn3JWTdSEHuDpnrwgdiyPsydAorQ1JycLLnBXkRB0Q8ubMjIkxtgakR/pkTpZk6qy9LoyMqkqsSImtTiPISUmQlCWTkk2ReZOqkBW6QlYyLKSFuERdi9TZeCVvDI6hQl+hsxruyh0+ujAnNZ+4A+yeuAOcPqEfyxw+uKICpBD2IJJAFeiCl0E2XuotIPNWTO5tQVRijZ92glBkKcBKoVRIZKGW7xGH0BlCQ2qNYpO5oTg0h+pkdygP9cn+YCVk0kJI9SVsVJ96CZV2BW4IzF4P/MdtJXD+rcC9OWe+UcqElZQzeqvF+UcDogJ0gBJ4CzKH50EgCURBfBTQeRGoMI6cJFApo1BXWDNTbqkSRaVzXalaoK8vpqenR5CvGmGsU0bO3KSh2T+aNDQGcK88CPXoR+rr6XN6tzzay2VAbTe3ZrrSKFApSSBy4ujlzvwriRWzQGRXJjHL1yqDgse/H8MeTpKv+U8DbAF02tPbarVardbv+gsTqNcYsKdj8gAAAABJRU5ErkJggg==);
+}
+
+#ratingsAndReviews .verticalGradientSmall {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAyBAMAAABv1ay5AAAAFVBMVEX5+fns7Oz19fXy8vLu7u7w8PD39/fBXkvhAAAAGklEQVQI12NABQlIUAEDGsBhABw6IEEB7BAAo3MIIWMbkw8AAAAASUVORK5CYII=);
+}
+#ratingsAndReviews .verticalGradient,
+#ratingsAndReviews .reviewsoverview {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAC+BAMAAAAGp3gaAAAAG1BMVEX5+fnw8PDu7u7z8/P19fXr6+vs7Oz39/f29vYiLtwjAAAAIUlEQVQY02MgHRSQARuwQgcs0IACKEA0VCABJpABA4iBAA/NLMFzL/7yAAAAAElFTkSuQmCC);
+}
+#ratingsAndReviews .grayGradientBG,
+#ratingsAndReviews .reviewsList .review:first-child + .review,
+#ratingsAndReviews .reviewsList .review:first-child + .review + .review + .review,
+#ratingsAndReviews .reviewsList .review:first-child + .review + .review + .review + .review + .review,
+#ratingsAndReviews .reviewsList .review:first-child + .review + .review + .review + .review + .review + .review + .review,
+#ratingsAndReviews .reviewsList .review:first-child + .review + .review + .review + .review + .review + .review + .review + .review + .review {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAz4AAAABCAMAAAAo0YsPAAAAt1BMVEXr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+tbmR3+AAAAPHRSTlP88I/KASwJ6hIfBpUWeRojZ7eahNVWpA8nf3TZwQP03okMMEI30EY7TarismJRvVqfXuZva/c0rT/FSviwvj4YAAAA6ElEQVQoz83SV2KCABRE0dhRig0LRbBhb4jEELL/deXNPBbhmQ3Mx/1qVhbUU221ohkZyiLHcqhb6dOcWpU1fIst7OlHbGAHv+IAV5jAndI0vdCAXpAJP/OFTZ7twZiWVFdm3YQRPWBKR3iLMwzpRiEURdEoGpAolwIRBzGc6Ck6lZqKapHIRVn+YR8Jx/IyFxHUKh31hBPFFAg3cEXiJtBQhQiLMLypIZ3hLY4wpQeMyKS6WqoxecomnzJ4iQFdKBV3msAVDiAN7WBDCGwPW0B9a2qpOfWpW3EALDAsg2a0orbqqQU11T/znGvz+Dtf2gAAAABJRU5ErkJggg==);
+}
+
+#ratingsAndReviews .ratingInner {
+		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAABCAMAAACsYRHQAAABF1BMVEX/oDCIxEACm2iSwz8EnFwBm3VBs0AAm9UXokANn0ahwT2svzszrkB7xEDYsDUGnVY5sUAbpECCxEAqq0BYu0DkqjQAm8UAm4GxvTr7oS8hpkAmqUD3oy8QoEPwpTDCuDkAm7FLuEAAm41evkDtpjIAm6BvwkC+uTkJnkwBm8EAm7UAm88UoUH9oC+bwj5nwEAAm5hPuUAAm3vzpDEAm6sLn0qNxEBjv0AAm5IBm27OszemwDzqqDIAm8pGtkDFtjgDnGL6oy8Am7pzwkG2uzoBm6XhrDSXwj0Bm9nLtDgAm5zdrjQBm70InVJrwUAvrEB3w0BTukDTsDUJnVDbrjXItDjRsTYAm4jnqjMkp0G5ujoAm8wAm4Wx7CdzAAAAuklEQVQI11XBxQGCAAAAQElpATExsLs76DSwW/efQ7/eBTwv+NNovGU5Gq3VtoZRlyRpOLTtUmnd7U6n+fz9E4v1+wiCzGYgCGoaDMOhkO+fq9XRCMfxdLrZxDCM47hk8imKYji8pyiKZVkURRUll+v1joIgFAqTSaezK5dN80DTNM/zAACMxxAEuW67TRDEYkGSZDxuWa9KJZtV1etqPr+dGIa5bBwnEnksl8ViJjMYpFK6nki0WoF/X6ejHBDnNl0xAAAAAElFTkSuQmCC);
+}

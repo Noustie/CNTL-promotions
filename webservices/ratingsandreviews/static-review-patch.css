@@ -1,0 +1,36 @@
+.tabholder, .ajaxFragment {
+    display: block;
+}
+.subProduct {
+    width: 100%;
+    float: left;
+}
+.subProduct .rating {
+    margin: 0;
+}
+#ratingsAndReviews .subProduct .ratingLabel { 
+    /*width: auto;*/
+    /*margin: 0 10px 0 0;*/
+}
+#ratingsAndReviews .subProduct .ratingBar {
+    float: left;
+    margin: 0 10px 0 0;
+}
+#ratingsAndReviews .subProduct .numReviewsLabel {
+    float: left;
+    margin: 0 10px 0 0;
+}
+#ratingsAndReviews .moreReviewsLink .previousReviews {
+    display: inline-block;
+    height: 50px;
+    line-height: 45px;
+    width: 370px;
+    font-size: 14px;
+    vertical-align: top;
+    text-decoration: none;
+}
+.content {
+    background: transparent;
+    border: 1px solid #CCC;
+    border-radius: 7px;
+}

@@ -1,0 +1,82 @@
+<!--#if expr="${REQUEST_URI}!=/isajaxpaged=true/" -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reviews</title>
+    <link rel="stylesheet" type="text/css" href="//centurylink.com/prismtv/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="//centurylink.com/prismtv/css/global-masthead.css" />
+    <link rel="stylesheet" type="text/css" href="//centurylink.com/assets/css/global-nav.css" />
+ 
+    <link rel="stylesheet" href="//centurylink.com/assets/css/new-nav.css" />
+    <link rel="stylesheet" href="//centurylink.com/assets/css/new-screen.css" media="screen and (min-device-width:45em) and (min-width: 481px)" />
+    <link rel="stylesheet" href="//centurylink.com/assets/css/new-print.css" type="text/css" media="print" />
+
+<!--[if lte IE 8]>
+    <link rel="stylesheet" media="screen" href="//centurylink.com/assets/css/new-screen.css">
+<![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="//centurylink.com/prismtv/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="//centurylink.com/prismtv/css/prismHeroBanners.css" />
+    <link rel="stylesheet" type="text/css" href="./reviews.css" />
+    <link rel="stylesheet" type="text/css" href="./static-review-patch.css" />
+
+    <style>
+        .hasJS .reviewsBySubProduct {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<!--[if lt IE 8 ]><body id="body" class="ie oldIE ltIE8"><![endif]-->
+<!--[if IE 8 ]><body id="body" class="ie oldIE ie8"><![endif]-->
+<!--[if IE 9 ]><body id="bodytag" class="ie ie9"><![endif]-->
+<!--[if gt IE 9]><!--><body id="body" class=""><!--<![endif]-->
+
+    <div id="main" class="selectAddPrism selectBundleOptions selectLocal">
+
+        <!-- BEGIN MAIN CONTENT AREA -->
+        <div id="ratingsAndReviews" class="mainWrap clearfix main-container">
+            <div id="masthead" class="clearfix"> </div>
+            <div id="content" class="content sptv roundcorners">
+                <div class="pad">
+                    <div id="tabScrollToView" class="pageCont" itemscope itemtype="http://schema.org/Product">
+                        <div id="PrismReviews" class="index pageBody ajaxFragment tabholder clearfix roundcorners">
+                            <div class="padded">
+
+
+
+<!--#include virtual="./review-includes-test/prism/product-overview.html" -->
+
+                                <h4 class="edgeShadowGradientTop browseHeader">Browse reviews from Prism<sup>&trade;</sup> TV Customers: </h4>
+<!--#include virtual="./review-includes-test/prism/reviews-filter-form.html" -->
+
+<!--#endif -->
+                                <div class="reviewsList">
+<!--#include virtual="./review-includes-test/prism/review-pagination.html" -->
+                                </div>
+<!--#if expr="${REQUEST_URI}!=/isajaxpaged=true/" -->
+
+
+
+                            </div>
+                        </div>
+
+                    <!-- END PAGE CONTENT AREA -->
+                    </div>
+
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    <!-- END MAIN CONTENT AREA -->
+    </div>
+    <script type="text/javascript" src="//www.centurylink.com/prismtv/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./statictest/reviews.js"></script>
+</body>
+
+</html>
+<!--#endif -->

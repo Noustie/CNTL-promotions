@@ -1,4 +1,0 @@
-php_flag display_errors on
-
-RewriteEngine On
-RewriteRule ^/api/ api.php

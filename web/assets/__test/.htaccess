@@ -1,3 +1,0 @@
-RewriteCond %{HTTP_REFERER} ^https\:\/\/[a-z-]+.centurylink [NC]
-RewriteCond %{REQUEST_URI} videoOverlay.html [NC]
-RewriteRule ^(.*) https://staging.promotions.centurylink.com/test/$1 [NC]

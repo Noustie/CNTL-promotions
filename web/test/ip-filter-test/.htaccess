@@ -1,6 +1,0 @@
-satisfy any
-deny from all
-allow from 192.168.1.
-allow from 98.191.25.3
-allow from 127.0.0.1
-
