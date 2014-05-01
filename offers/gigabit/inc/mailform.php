@@ -85,8 +85,9 @@
 	MOVED CAUSE WE ARENT SENDING EMAILS ANYMORE
 
 
-	require("private/configs/getstarted-mail-config.php");
-
+	$emailHost = "mail.contactcenturylink.com";
+	$emailU = "smbinquiry@contactcenturylink.com";
+	$emailP = "5peYEs8Ujey7";
 	$emailFrom = "Vegas GPON 1GIG Inquiry <smbinquiry@contactcenturylink.com>";
 	$emailsTo = 'celestinec@peteramayer.com';
 
