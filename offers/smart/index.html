@@ -1,3 +1,45 @@
+<!--#if expr="${SERVER_NAME}=/staging/"-->
+    <!--#set var="SERVER_TYPE" value="DEV"-->
+<!--#else -->
+    <!--#set var="SERVER_TYPE" value="PROD"-->
+<!--#endif -->
+<!--#if expr="$SERVER_TYPE='DEV'"-->
+    <!--#set var="promos_url" value="http://staging.promotions.centurylink.com"-->
+    <!--#set var="ctl_url" value="http://webdmzqa2.centurylink.com"-->
+    <!--#set var="ctlsecure_url" value="https://webdmzqa2.centurylink.com"-->
+    <!--#set var="ctlmyacct_url" value="https://eamqa1.centurylink.com"-->
+    <!--#set var="q_url" value="http://tcat-preprod.centurylink.com"-->
+    <!--#set var="qcookie_url" value="https://tcat-preprod.centurylink.com"-->
+    <!--#set var="qshop_url" value="https://tcat-preprod.centurylink.com"-->
+    <!--#set var="qmobile_url" value="https://tcat-preprod.centurylink.com/mobile"-->
+    <!--#set var="search" value="http://search-dev.tservicesq.com"-->
+    <!--#set var="eq_url" value="http://eqtest4.centurylink.com"-->
+    <!--#set var="eqsecure_url" value="https://eqtest4.centurylink.com"-->
+    <!--#set var="ctleam_url" value="https://eqtest4.centurylink.com"-->
+    <!--#set var="qwest_url" value="http://tcat-preprod.centurylink.com"-->
+    <!--#set var="ctl_selfservice_url" value="http://selfserviceqa.centurylink.com/ticketingqa2"-->
+    <!--#set var="qportal_url" value="https://sbcontrolcenter-itv2.centurylink.com"-->
+    <!--#set var="faq_url" value="http://faq.centurylink.com"-->
+<!--#elif expr="$SERVER_TYPE='PROD'"-->
+    <!--#set var="promos_url" value="http://promotions.centurylink.com"-->
+    <!--#set var="ctl_url" value="http://www.centurylink.com"-->
+    <!--#set var="ctlsecure_url" value="https://www.centurylink.com"-->
+    <!--#set var="ctlmyacct_url" value="https://eam.centurylink.com"-->
+    <!--#set var="q_url" value="http://qwest.centurylink.com"-->
+    <!--#set var="qcookie_url" value="https://q.myaccount.centurylink.com"-->
+    <!--#set var="qshop_url" value="https://shop.centurylink.com"-->
+    <!--#set var="qmobile_url" value="https://m.centurylink.com"-->
+    <!--#set var="search" value="http://c.search.centurylink.com"-->
+    <!--#set var="eq_url" value="http://embarq.centurylink.com"-->
+    <!--#set var="eqsecure_url" value="https://embarq.centurylink.com"-->
+    <!--#set var="ctleam_url" value="https://embarq.centurylink.com"-->
+    <!--#set var="qwest_url" value="http://qwest.centurylink.com"-->
+    <!--#set var="ctl_selfservice_url" value="http://selfservice.centurylink.com"-->
+    <!--#set var="qportal_url" value="https://sbcontrolcenter.centurylink.com"-->
+    <!--#set var="faq_url" value="http://faq.centurylink.com"-->
+<!--#endif -->
+
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -30,6 +72,24 @@
     <!--<![endif]--> 
 
     <script type="text/javascript">
+        var SERVER_TYPE='<!--#echo var="SERVER_TYPE"-->';
+        var ctl_url='<!--#echo var="ctl_url"-->';
+        var promos_url='<!--#echo var="promos_url"-->';
+        var ctlsecure_url='<!--#echo var="ctlsecure_url"-->';
+        var ctlmyacct_url='<!--#echo var="ctlmyacct_url"-->';
+        var q_url='<!--#echo var="q_url"-->';
+        var qshop_url='<!--#echo var="qshop_url"-->';
+        var qmobile_url='<!--#echo var="qmobile_url"-->';
+        var eq_url='<!--#echo var="eq_url"-->';
+        var eqsecure_url='<!--#echo var="eqsecure_url"-->';
+        var ctleam_url='<!--#echo var="ctleam_url"-->';
+        var qwest_url='<!--#echo var="qwest_url"-->';
+        var ctl_selfservice_url='<!--#echo var="ctl_selfservice_url"-->';
+        var search='<!--#echo var="search"-->';
+        var qcookie_url='<!--#echo var="qcookie_url"-->';
+        var qportal_url='<!--#echo var="qportal_url"-->';
+        var faq_url='<!--#echo var="faq_url"-->';
+
         // var custClass = "business"; //uncomment to use biz suite
         var sAddress = "";
         var pageName = "ctl|rsd|product|emktg|smart_home"; //s.pageName
@@ -65,6 +125,21 @@
         var eBiz_evar54 = eBiz_prop25;
         var eBiz_evar55 = eBiz_prop26;
         var eBiz_evar56 = ""; 
+
+        if(typeof linkMatrix == "undefined") {
+            linkMatrix = {
+                ctam : {},
+                zam : {},
+                mam : {}
+            };
+        }
+        linkMatrix.zam["smart-home-main"] = {
+            type: "popup",
+            Q: promos_url+"/offers/smart/clicktochat-cris.html",  
+            CTL: promos_url +"/offers/smart/clicktochat-ens.html", 
+            EQ: promos_url+"/offers/smart/clicktochat-ens.html" 
+        }
+
     </script>
 
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -85,7 +160,8 @@
             <a href="http://centurylink.com" target="_blank"><img src="img/logo.png" class="logo fL" alt="CenturyLink&reg;" /></a>
             <div class="fR nav-cta">
                 <span class="green head-tfn-txt">Get a FREE consultation today!</span>
-                <span class="baby-blue head-tfn-cta">Call 866.948.0868</span>
+                <span class="baby-blue head-tfn-cta">Call 866-948-0868</span>
+                <a href="#ZAM" class="modal-trigger close-color-box" id="smart-home-main" clicktrack="ctl|rsd|product|emktg|smart_home|top|button|chat">Chat to Order</a>
             </div>
             <ul id="nav">
                 <li>
@@ -235,7 +311,7 @@
                 <p class="anim2-s3">Upgrade to a complete home security and home management system, powered by your CenturyLink<sup>&reg;</sup> High-Speed Internet connection. </p>
                 <p class="anim2-s4"><strong>Discover the many features CenturyLink Smart Home offers by exploring the interactive product icons within the home.</strong></p>
                 <a href="#room" class="anim2-s5 btn-animate" clicktrack="ctl|rsd|product|emktg|smart_home|start_exploring"><span class="shimmer">START EXPLORING</span></a>
-                <p class="anim2-s6 move-down">Get a FREE consultation today. <span class="blue-text">Call 866.948.0868.</span></p>
+                <p class="anim2-s6 move-down">Get a FREE consultation today. <span class="blue-text">Call 866-948-0868.</span></p>
             </div>
                         
             <div id="video1" class="videobox">
@@ -261,7 +337,7 @@
                 </div>
                 <div class="video-player" data-vidtrack=" Overview" data-vidsrc="B0PiNi_fBOA"></div>
                 <div class="vid-cta">
-                    <p><strong>Get a FREE consultation today! Call 866.948.0868.</strong></p>
+                    <p><strong>Get a FREE consultation today! Call 866-948-0868.</strong></p>
                 </div>
                 <div style="clear:both;"></div>
             </div>
@@ -284,7 +360,7 @@
                 </div>
                 <div class="video-player" data-vidtrack="_Security" data-vidsrc="lxl110-MFHA"></div>
                 <div class="vid-cta">
-                    <p><strong>Get a FREE consultation today! Call 866.948.0868.</strong></p>
+                    <p><strong>Get a FREE consultation today! Call 866-948-0868.</strong></p>
                 </div>
                 <div style="clear:both;"></div>
             </div>
@@ -307,7 +383,7 @@
                 </div>
                 <div class="video-player" data-vidtrack="_Touch_Screen" data-vidsrc="U1haYTPZZlE"></div>
                 <div class="vid-cta">
-                    <p><strong>Get a FREE consultation today! Call 866.948.0868.</strong></p>
+                    <p><strong>Get a FREE consultation today! Call 866-948-0868.</strong></p>
                 </div>
                 <div style="clear:both;"></div>
             </div>
@@ -328,7 +404,7 @@
                 </div>
                 <div class="video-player" data-vidtrack="_Emergency" data-vidsrc="FqAkyQWQCfI"></div>
                 <div class="vid-cta">
-                    <p><strong>Get a FREE consultation today! Call 866.948.0868.</strong></p>
+                    <p><strong>Get a FREE consultation today! Call 866-948-0868.</strong></p>
                 </div>
                 <div style="clear:both;"></div>
             </div>
@@ -350,7 +426,7 @@
                 </div>
                 <div class="video-player" data-vidtrack="_Temperature" data-vidsrc="ICW7AMi7vxQ"></div>
                 <div class="vid-cta">
-                    <p><strong>Get a FREE consultation today! Call 866.948.0868.</strong></p>
+                    <p><strong>Get a FREE consultation today! Call 866-948-0868.</strong></p>
                 </div>
                 <div style="clear:both;"></div>
             </div>
@@ -372,7 +448,7 @@
                 </div>
                 <div class="video-player" data-vidtrack="_Electronic" data-vidsrc="8B_hEdMWGhY"></div>
                 <div class="vid-cta">
-                    <p><strong>Get a FREE consultation today! Call 866.948.0868.</strong></p>
+                    <p><strong>Get a FREE consultation today! Call 866-948-0868.</strong></p>
                 </div>
                 <div style="clear:both;"></div>
             </div>
@@ -396,7 +472,7 @@
                 </div>
                 <div class="video-player" data-vidtrack="_Remote" data-vidsrc="mwrKwCmsZZ4"></div>
                 <div class="vid-cta">
-                    <p><strong>Get a FREE consultation today! Call 866.948.0868.</strong></p>
+                    <p><strong>Get a FREE consultation today! Call 866-948-0868.</strong></p>
                 </div>
                 <div style="clear:both;"></div>
             </div>          
@@ -418,7 +494,7 @@
                 </div>
                 <div class="video-player" data-vidtrack="_Lighting" data-vidsrc="zAfGmy__J20"></div>
                 <div class="vid-cta">
-                    <p><strong>Get a FREE consultation today! Call 866.948.0868.</strong></p>
+                    <p><strong>Get a FREE consultation today! Call 866-948-0868.</strong></p>
                 </div>
                 <div style="clear:both;"></div>
             </div> 
@@ -645,7 +721,7 @@
                                         <td class="tac no-line"></td>
                                     </tr>
                                 </table>
-                                <p class="table-txt-bottom">For questions or to order call 866.948.0868</p>
+                                <p class="table-txt-bottom">For questions or to order call 866-948-0868</p>
                                 <p class="plan-disclaimer"><a href="#site-disclaimer" class="undrln undrln-remove site-disclaimer wht-txt" clicktrack="ctl|rsd|product|emktg|smart_home|link|terms_and_conditions">* Terms and Conditions apply. See Details.</a></p>
                             </div>
                             
@@ -697,7 +773,7 @@
                 <p>Get more from your CenturyLink High-Speed Internet connection. Upgrade to CenturyLink Smart Home, the total home management system that&rsquo;s powered by CenturyLink&rsquo;s
 fast and reliable High-Speed Internet connection.</p>
                 <p>Call us now for a free Smart Home consultation or ask questions about what CenturyLink Smart Home can do for you.</p>
-                <span class="orange-tfn">866.948.0868</span>
+                <span class="orange-tfn">866-948-0868</span>
             </div>
         </div>
     </div>
@@ -753,7 +829,7 @@ fast and reliable High-Speed Internet connection.</p>
     
             <div class="video-player" data-vidtrack="_security" data-vidsrc="lxl110-MFHA"></div>
             <div class="vid-cta">
-                <p><strong>Get a FREE consultation today! Call 866.948.0868.</strong></p>
+                <p><strong>Get a FREE consultation today! Call 866-948-0868.</strong></p>
             </div>
             <div style="clear:both;"></div>
         </div>
@@ -780,7 +856,7 @@ fast and reliable High-Speed Internet connection.</p>
     
             <div class="video-player" data-vidtrack=" Overview" data-vidsrc="B0PiNi_fBOA"></div>
             <div class="vid-cta">
-                <p><strong>Get a FREE consultation today! Call 866.948.0868.</strong></p>
+                <p><strong>Get a FREE consultation today! Call 866-948-0868.</strong></p>
             </div>
             <div style="clear:both;"></div>
         </div>
@@ -803,7 +879,7 @@ fast and reliable High-Speed Internet connection.</p>
             </div>
             <div class="video-player" data-vidtrack="_Remote" data-vidsrc="mwrKwCmsZZ4"></div>
             <div class="vid-cta">
-                <p><strong>Get a FREE consultation today! Call 866.948.0868.</strong></p>
+                <p><strong>Get a FREE consultation today! Call 866-948-0868.</strong></p>
             </div>
             <div style="clear:both;"></div>
         </div>
@@ -825,7 +901,7 @@ fast and reliable High-Speed Internet connection.</p>
             </div>
             <div class="video-player" data-vidtrack="_Electronic" data-vidsrc="8B_hEdMWGhY"></div>
             <div class="vid-cta">
-                <p><strong>Get a FREE consultation today! Call 866.948.0868.</strong></p>
+                <p><strong>Get a FREE consultation today! Call 866-948-0868.</strong></p>
             </div>
             <div style="clear:both;"></div>
         </div>
@@ -847,7 +923,7 @@ fast and reliable High-Speed Internet connection.</p>
             </div>
             <div class="video-player" data-vidtrack="_Lighting" data-vidsrc="zAfGmy__J20"></div>
             <div class="vid-cta">
-                <p><strong>Get a FREE consultation today! Call 866.948.0868.</strong></p>
+                <p><strong>Get a FREE consultation today! Call 866-948-0868.</strong></p>
             </div>
             <div style="clear:both;"></div>
         </div>
@@ -869,7 +945,7 @@ fast and reliable High-Speed Internet connection.</p>
             </div>
             <div class="video-player" data-vidtrack="_Temperature" data-vidsrc="ICW7AMi7vxQ"></div>
             <div class="vid-cta">
-                <p><strong>Get a FREE consultation today! Call 866.948.0868.</strong></p>
+                <p><strong>Get a FREE consultation today! Call 866-948-0868.</strong></p>
             </div>
             <div style="clear:both;"></div>
         </div>
@@ -892,7 +968,7 @@ fast and reliable High-Speed Internet connection.</p>
             </div>
             <div class="video-player" data-vidtrack="_Touch_Screen" data-vidsrc="U1haYTPZZlE"></div>
             <div class="vid-cta">
-                <p><strong>Get a FREE consultation today! Call 866.948.0868.</strong></p>
+                <p><strong>Get a FREE consultation today! Call 866-948-0868.</strong></p>
             </div>
             <div style="clear:both;"></div>
         </div>
@@ -967,7 +1043,7 @@ fast and reliable High-Speed Internet connection.</p>
     <div style='display:none'>
         <div id="site-disclaimer" class="site-disclaimer">
             <p>
-                *Offer ends 6/30/2014. Offer available in select areas in select states. CenturyLink<sup>&reg;</sup> Smart Home service is available to CenturyLink<sup>&reg;</sup> High-Speed Internet customers who subscribe to up to 1.5 Mbps service or higher. A $34.99, $44.99 and $54.99 monthly recurring charge (MRC) applies to the Silver, Gold and Platinum packages, respectively, and requires a 36-month-term agreement for Monitored Home Security, Remote Automation and Control, and Energy Management services only. Additional equipment selected (outside of Standard Equipment offer), activation fees and installation fee of $199 for Silver and Gold and $499 for Platinum package will apply. MRC excludes all taxes, additional fees and surcharges. Rates and fees may vary based on customer&rsquo;s residence. <strong>Equipment Offer &ndash;</strong> Offer ends 6/30/2014. One offer per household and available to new CenturyLink<sup>&reg;</sup> Smart Home customers only. Offer includes standard equipment only; all additional equipment requested or required for service is not included. Retail value of equipment: Silver Package &ndash; $ 607; Gold Package &ndash; $757; Platinum Package &ndash; $1,612. Standard equipment included within each package may change, including added/removed/substituted or may vary by service area at CenturyLink&rsquo;s sole discretion without notice. Offer excludes all installation charges, taxes, or fees. Additional restrictions may apply. Contact CenturyLink for details. <strong>General &ndash;</strong> CenturyLink may change, cancel, or substitute offers and services, or vary them by service area at its sole discretion without notice. Requires credit approval and deposit may be required. Additional restrictions apply. <strong>Terms and Conditions &ndash;</strong> All products and services listed are governed by terms and conditions that Customer must agree to prior to installation. <strong>CenturyLink<sup>&reg;</sup> Smart Home &ndash;</strong> One offer per household. An early termination fee will be assessed if service is terminated before the end of the term agreement and be determined by the MRC multiplied by the number of months remaining in the agreement plus any applicable, remaining equipment monthly installment fees. Service is transferable to another location within CenturyLink landline service areas. Features may vary and interfacing with certain third party devices or plans may not be available. <strong>Licenses &ndash;</strong> Some states require licensing to perform security monitoring services. Some solutions may require the purchase of additional equipment. In those states where CSS offers such services, our licenses are listed as follows: <strong>AL</strong> Alabama Electronic Security Board of Licensure 927, 7956 Vaughn Rd., Montgomery, AL, 36116, (334) 264-9388; <strong>AR</strong> E080 Board of Private Investigators &amp; Private Security Agencies, #1 State Police Plaza Dr., Little Rock, AR 72209, (501) 618-8600; <strong>AZ</strong> State Board of Technical Registration 18129-0 with 55258; CO 720093 Colorado Springs Burglar Alarm License, 1053434 Denver Burglar Alarm Systems Business License, 1056182 Denver Central Station Business License, 7404 Douglas County False Alarm Reduction Program; <strong>FL</strong> EF20000931; <strong>IL</strong> 127001437; <strong>LA</strong> F82 &amp; F83; <strong>MI</strong> 8002000002, Department of Regulatory Affairs, 7150 Terrace Dr. 1st Floor, Wing B, Lansing, MI 48913, (517) 241-9288 Fax (517) 373-1044; <strong>MT</strong> FPL-BEL-000631, FPL-IEL-000632 Dept. of Labor &amp; Industry &ndash; Fire Prevention Licensure Program, 301 S. Park Ave., Helena, MT 59620-0517 (406) 841-2064; <strong>NC</strong> 2321CSA with BPN-007353P10 Alarm Systems Licensing Bd., 1631 Midtown Plaza, Ste. 104, Raleigh, NC 27609 (919) 875-3611; <strong>NE</strong> 604 Omaha False Alarm Reduction Program; <strong>NJ</strong> 34FB00046200, 34BA00183400, 34FA00142400 New Jersey Office of the Attorney General, Division of Consumer Affairs, Fire Alarm, Burglar Alarm and Locksmith Advisory Committee, 124 Halsey St. 6th Floor, Newark, NJ 07102, (973) 504-6245; <strong>NM</strong> 371128, 371129, 778 Albuquerque False Alarm Reduction Unit; <strong>NV</strong> B1300163C153571 Las Vegas, 2000053-032 Clark County Alarm Systems Monitoring License; 2012480159 Henderson Central Monitoring Station, 401XAlarmSystems Business/2011301497 Henderson Business License; <strong>OH</strong> 11-066 Mansfield Alarm Company License; <strong>OK</strong> 1795 State Department of Labor, 3017 North Stiles #100, Oklahoma City, OK 73105 with 11698; <strong>OR</strong> 45222; <strong>TN</strong> 1188 with 892; <strong>TX</strong> ACR-1825, AMT-1741196, APS-1742092 Texas Dept. of Insurance, 333 Guadalupe, Austin, TX 78714-9221 (512) 305-7900; B09304 Texas Private Security Bureau, 5805 N. Lamar Blvd., Austin 78752; <strong>SC</strong> 13428, 13480 South Carolina Department of Labor, Licensing &amp; Regulation, Contractor&rsquo;s Licensing Board, 110 Centerview Dr., Columbia, SC 29211, (803) 896-4686; <strong>UT</strong> 7973682-6501, <strong>VA</strong> 11-6450; <strong>WA</strong> Seattle 752245; <strong>WI</strong> La Crosse 7975; <strong>WY</strong> LV-A-26207. &copy; 2014 CenturyLink. All Rights Reserved.
+                *Offer ends Limited-time offer. Offer available in select areas in select states. CenturyLink<sup>&reg;</sup> Smart Home service is available to CenturyLink<sup>&reg;</sup> High-Speed Internet customers who subscribe to up to 1.5 Mbps service or higher. A $34.99, $44.99 and $54.99 monthly recurring charge (MRC) applies to the Silver, Gold and Platinum packages, respectively, and requires a 36-month-term agreement for Monitored Home Security, Remote Automation and Control, and Energy Management services only. Additional equipment selected (outside of Standard Equipment offer), activation fees and installation fee of $199 for Silver and Gold and $499 for Platinum package will apply. MRC excludes all taxes, additional fees and surcharges. Rates and fees may vary based on customer&rsquo;s residence. <strong>Equipment Offer &ndash;</strong> Offer ends 6/30/2014. One offer per household and available to new CenturyLink<sup>&reg;</sup> Smart Home customers only. Offer includes standard equipment only; all additional equipment requested or required for service is not included. Retail value of equipment: Silver Package &ndash; $ 607; Gold Package &ndash; $757; Platinum Package &ndash; $1,612. Standard equipment included within each package may change, including added/removed/substituted or may vary by service area at CenturyLink&rsquo;s sole discretion without notice. Offer excludes all installation charges, taxes, or fees. Additional restrictions may apply. Contact CenturyLink for details. <strong>General &ndash;</strong> CenturyLink may change, cancel, or substitute offers and services, or vary them by service area at its sole discretion without notice. Requires credit approval and deposit may be required. Additional restrictions apply. <strong>Terms and Conditions &ndash;</strong> All products and services listed are governed by terms and conditions that Customer must agree to prior to installation. <strong>CenturyLink<sup>&reg;</sup> Smart Home &ndash;</strong> One offer per household. An early termination fee will be assessed if service is terminated before the end of the term agreement and be determined by the MRC multiplied by the number of months remaining in the agreement plus any applicable, remaining equipment monthly installment fees. Service is transferable to another location within CenturyLink landline service areas. Features may vary and interfacing with certain third party devices or plans may not be available. <strong>Licenses &ndash;</strong> Some states require licensing to perform security monitoring services. Some solutions may require the purchase of additional equipment. In those states where CSS offers such services, our licenses are listed as follows: <strong>AL</strong> Alabama Electronic Security Board of Licensure 927, 7956 Vaughn Rd., Montgomery, AL, 36116, (334) 264-9388; <strong>AR</strong> E080 Board of Private Investigators &amp; Private Security Agencies, #1 State Police Plaza Dr., Little Rock, AR 72209, (501) 618-8600; <strong>AZ</strong> State Board of Technical Registration 18129-0 with 55258; CO 720093 Colorado Springs Burglar Alarm License, 1053434 Denver Burglar Alarm Systems Business License, 1056182 Denver Central Station Business License, 7404 Douglas County False Alarm Reduction Program; <strong>FL</strong> EF20000931; <strong>IL</strong> 127001437; <strong>LA</strong> F82 &amp; F83; <strong>MI</strong> 8002000002, Department of Regulatory Affairs, 7150 Terrace Dr. 1st Floor, Wing B, Lansing, MI 48913, (517) 241-9288 Fax (517) 373-1044; <strong>MT</strong> FPL-BEL-000631, FPL-IEL-000632 Dept. of Labor &amp; Industry &ndash; Fire Prevention Licensure Program, 301 S. Park Ave., Helena, MT 59620-0517 (406) 841-2064; <strong>NC</strong> 2321CSA with BPN-007353P10 Alarm Systems Licensing Bd., 1631 Midtown Plaza, Ste. 104, Raleigh, NC 27609 (919) 875-3611; <strong>NE</strong> 604 Omaha False Alarm Reduction Program; <strong>NJ</strong> 34FB00046200, 34BA00183400, 34FA00142400 New Jersey Office of the Attorney General, Division of Consumer Affairs, Fire Alarm, Burglar Alarm and Locksmith Advisory Committee, 124 Halsey St. 6th Floor, Newark, NJ 07102, (973) 504-6245; <strong>NM</strong> 371128, 371129, 778 Albuquerque False Alarm Reduction Unit; <strong>NV</strong> B1300163C153571 Las Vegas, 2000053-032 Clark County Alarm Systems Monitoring License; 2012480159 Henderson Central Monitoring Station, 401XAlarmSystems Business/2011301497 Henderson Business License; <strong>OH</strong> 11-066 Mansfield Alarm Company License; <strong>OK</strong> 1795 State Department of Labor, 3017 North Stiles #100, Oklahoma City, OK 73105 with 11698; <strong>OR</strong> 45222; <strong>TN</strong> 1188 with 892; <strong>TX</strong> ACR-1825, AMT-1741196, APS-1742092 Texas Dept. of Insurance, 333 Guadalupe, Austin, TX 78714-9221 (512) 305-7900; B09304 Texas Private Security Bureau, 5805 N. Lamar Blvd., Austin 78752; <strong>SC</strong> 13428, 13480 South Carolina Department of Labor, Licensing &amp; Regulation, Contractor&rsquo;s Licensing Board, 110 Centerview Dr., Columbia, SC 29211, (803) 896-4686; <strong>UT</strong> 7973682-6501, <strong>VA</strong> 11-6450; <strong>WA</strong> Seattle 752245; <strong>WI</strong> La Crosse 7975; <strong>WY</strong> LV-A-26207. &copy; 2014 CenturyLink. All Rights Reserved.
             </p>
         </div>
     </div>
@@ -1035,14 +1111,21 @@ fast and reliable High-Speed Internet connection.</p>
         </div>
     </div>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-    <script src="js/cycle2.min.js"></script>
-    <script src="js/cycle2.carousel.min.js"></script>
-    <script src="js/TweenMax.min.js"></script>
-    <script src="js/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="/offers/smart/js/vendor/jquery-1.9.1.min.js"></script>
+
+    <script type="text/javascript" src="//www.centurylink.com/assets/js/plugins/jqModal.js"></script>
+    <script type="text/javascript" src="//www.centurylink.com/assets/js/plugins/jquery.cookie.js"></script>
+    <script type="text/javascript" src="//www.centurylink.com/assets/js/plugins/cookies2.js"></script>
+    <script type="text/javascript" src="//www.centurylink.com/assets/js/plugins/jquery.qwest-core.js"></script>
+    <script type="text/javascript" src="//www.centurylink.com/assets/js/locator.js"></script>
+    <script type="text/javascript" src="//www.centurylink.com/assets/js/plugins/centurycore.shortcuts.js"></script>
+
+    <script src="/offers/smart/js/cycle2.min.js"></script>
+    <script src="/offers/smart/js/cycle2.carousel.min.js"></script>
+    <script src="/offers/smart/js/TweenMax.min.js"></script>
+    <script src="/offers/smart/js/jquery.colorbox-min.js"></script>
     <script src="//www.youtube.com/iframe_api"></script>
-    <script src="js/main.js"></script>    
+    <script src="/offers/smart/js/main.js"></script>    
 
     <!-- SiteCatalyst code version: H.20.3.
     Copyright 1997-2009 Omniture, Inc. More info available at http://www.omniture.com -->

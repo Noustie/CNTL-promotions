@@ -198,7 +198,7 @@ sub {bottom: -0.2em;}
 .header {
 	width: 100%;
 	height: 250px;
-	background: url(../images/landingHdr.jpg) center top no-repeat;
+	background: url(../images/landingHdr.png) center top no-repeat;
 	position: relative;
 	border-bottom: 1px solid #f8f8f8;
 }
@@ -276,17 +276,22 @@ sub {bottom: -0.2em;}
 }
 
 #lrgBizTab {
-	background: url(../images/lrgBizTabBG.jpg) no-repeat;
+	background: #626365 url(../images/lrgBizTabBG.png) no-repeat 564px center;
 }
 
 #smBizTab {
-	background: url(../images/smBizTabBG.jpg) no-repeat;
+	background: #71C434 url(../images/smBizTabBG.jpg) no-repeat;
 }
 
 #govTab {
-	background: url(../images/govTabBG.jpg) no-repeat;
+	background: #3E8D18 url(../images/govTabBG.png) no-repeat 564px center;
 }
 
+.businessSection .bizSection .col img {
+	min-width: 100%;
+	height: 112px;
+	width: auto;
+}
 
 #bizNav {
 	position: absolute;
@@ -348,6 +353,7 @@ sub {bottom: -0.2em;}
 #bizNav li a.govTab.selectedTab {
 	background: url(../images/govLink.png) no-repeat;
 	color: #fff;
+	border-bottom: 0 none;	
 }
 
 #bizNav li a.selectedTab:hover {

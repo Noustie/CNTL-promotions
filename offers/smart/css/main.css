@@ -1,3 +1,53 @@
+
+		/* MODIFIED FROM MAIN.CSS ON CENTURYLINK.COM */
+		/*----------------------Modal Window Styles---------------*/
+		.modals { position: absolute; top: 0; left: 0; z-index: 9000; }
+		.modal { z-index: 9000; width:406px; min-height:100px; padding:0; position: absolute; }
+		.modal .modal-top { background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -7px -2px; height:17px!important; height:37px; width:386px!important; width:406px; padding:10px; text-align:center; font-weight:bold; }
+		.modal .modal-bottom { background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -7px -80px; width:406px; height:52px; }
+		.modal .modal-content { width:366px!important; width:406px; padding:20px; background:transparent url('/assets/images/templates/modal_bg.png') repeat-y 0px 0px; overflow:visible; }
+		.modal a.modal-close-btn { background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -378px -168px; height:16px; width:16px;	display:block; float:right; vertical-align:bottom; float:right; }
+		.modal .modal-close{ float:right; width:100px; line-height:15px; *margin-top:-15px; text-align:right; }
+		.zam_close, .ctam_close, .mam_close{float:left;}
+		#zam_close-button,#ctam_close-button,#mam_close-button{float:left; margin-left:5px;}
+		.modal .modal-close a{ font-size:11px; color:green; }
+		.modal .modal-block-top{ margin-top:10px; background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -9px -136px; height:10px; width:356px; }
+		.modal .modal-block-bottom{ background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -9px -168px; height:12px; width:356px; }
+		.modal .modal-block{ border-right:1px solid #CCC; border-left:1px solid #CCC; background-color:#E7E7E7; min-height:10px; width:354px; }
+		.modal-block-title{ background: url('/assets/images/sprites/modal_sprite.png') no-repeat -378px -188px; padding-left:20px; margin-left:10px; }
+		.modal-block-title{ background: url('/assets/images/sprites/modal_sprite.png') no-repeat -378px -188px; padding-left:20px; margin-left:10px; }
+		.modal-block-expanded, .modal-block-expanded_lvl2{ display:none; }
+		.modal-block-expanded_lvl2{ margin:10px; }
+		.modals .modal form{ margin:10px 10px 0 0; background: transparent; padding:0; }
+		.modals .modal, .modals .modal p { font-size: 12px; }
+		.modals .modal input { font-size: 11px; }
+		.modals .error { clear: both; overflow: hidden; }
+		.modal form input{ font: inherit; }
+		.modal form label{ display:block; font-size:11px; }
+		.address-block{ float:left; margin:auto 10px 7px auto; }
+		.remember-me{ margin-left:20px; }
+		.link-protect-info{ background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -378px -138px; padding-left:20px; margin-left:20px; display:block; line-height:20px; }
+		.modal-button{ font-size:0; display:block; background:url('/assets/images/sprites/modal_sprite.png') no-repeat; }
+		.btn-modal-show-options{ background-position:-10px -185px; height:26px; width:131px; }
+
+		.btn-modal-show-options:hover{ background-position:-10px -215px; }
+		/*----------------------End Modal---------------*/
+
+		/*----------------------PopUp Window Styles---------------*/
+		.popup{ width:406px; min-height:100px; padding:0; }
+		.popup .popup-top{ background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -7px -2px; height:17px!important; height:37px; width:386px!important; width:406px; padding:10px; text-align:center; font-weight:bold; }
+		.popup .popup-bottom{ background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -7px -80px; width:406px; height:52px; }
+		.popup .popup-content{ width:366px!important; width:406px; padding:20px; background:transparent url('/assets/images/templates/modal_bg.png') repeat-y 0px 0px; overflow:visible; }
+		.popup-content p{ margin-bottom: 16px; }
+		.popup a.popup-close-btn{ background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -378px -168px; height:16px; width:16px; display: block; vertical-align: bottom; }
+		.popup-close-link { float: left; }
+		.popup .popup-close{ width:90px; line-height:15px; *margin-top:-15px; text-align:right; float:right; }
+		.popup .popup-close a{ font-size:11px; color:green; }
+
+		/*----------------------End Pop Up---------------*/
+
+
+
 /*ie10 styles*/
 .ie10 .add-ons{width: 510px;}
 .ie10 .add-ons table{height: 716px;}
