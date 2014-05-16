@@ -84,6 +84,14 @@ a{outline: none !important;}
  	background-color: #fff;
  	border-bottom: 1px solid #cccccc;
 }
+.header .smartHomeChat {
+	font-size: 12px;
+	background: url(img/chatIcon.png) no-repeat center top;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
 #demo,#benefits,#plans,#contact,#support{ /* VERY IMPORTANT, DO NOT DELETE THIS STYLE*/
 	margin-top: -52px;        /* Size of fixed header */
 	padding-bottom: 50px; 		/*makes sticky header work*/
