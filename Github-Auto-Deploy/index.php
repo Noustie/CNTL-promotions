@@ -17,7 +17,7 @@ if ( !!$payload ) {
 $fetch = shell_exec('cd /var/www/clients/client1/web5/private && ./gitfetch.sh 2>&1');
 $output = shell_exec('git log --name-status HEAD^..HEAD');
 
-echo "\n\n <br />".$fetch."\n\n <br />";
+//echo "\n\n <br />".$fetch."\n\n <br />";
 
 $logso .= "\n" . $output;
 file_put_contents('logs/github.txt', print_r($logso, TRUE) );
