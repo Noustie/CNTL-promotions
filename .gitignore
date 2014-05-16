@@ -11,7 +11,7 @@ EmailTemplates/
 findindexes*
 webservices/ratingsandreviews/review-inc*
 webservices/ratingsandreviews/sample-*
-Github-Auto-Deploy
+Github-Auto-Deploy/
 .htaccess
 robots.txt
 .DS_store
