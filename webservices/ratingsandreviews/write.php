@@ -2,7 +2,8 @@
 error_reporting(E_ERROR | E_PARSE);
 set_time_limit( 90 );
 
-include 'config.php';
+require("private/configs/ratingsandreviews-config.php");
+
 class RatingsAndReviews {
     var $prod_apikey = PROD_APIKEY; //PRODUCTION KEY
     var $prod_apiurl = PROD_APIURL; //PRODUCTION URL
@@ -982,4 +983,3 @@ $RatingsAndReviews = new RatingsAndReviews( "prod", $ids );
 
 
 $RatingsAndReviews->writeFiles();
-

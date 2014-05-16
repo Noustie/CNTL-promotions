@@ -2,6 +2,7 @@ test/
 files/
 stats/
 error/
+error.html
 **.csv
 **.txt
 qa/

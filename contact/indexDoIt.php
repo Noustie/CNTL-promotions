@@ -213,4 +213,3 @@ if ( prevent_multi_submit() ) {
 }
 
 header( 'Location: ' . $success );
-?>

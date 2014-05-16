@@ -1,25 +1,33 @@
 <?php 
+error_reporting(E_ERROR | E_PARSE);
+set_time_limit( 90 );
+
+require("private/configs/ratingsandreviews-config.php");
 
 class RatingsAndReviews {
-    var $prod_apikey = "tyuzag9qhjbc7gddgaez2j2yu"; //PRODUCTION KEY
-    var $prod_apiurl = "http://reviews.centurylink.com/data/"; //PRODUCTION URL
+    var $prod_apikey = PROD_APIKEY; //PRODUCTION KEY
+    var $prod_apiurl = PROD_APIURL; //PRODUCTION URL
 
-    var $staging_apikey = "z4qvcxmw4dzwemgwxx43ehfc"; //STAGING KEY
-    var $staging_apiurl = "http://reviews.centurylink.com/bvstaging/data/"; //STAGING URL
+    var $staging_apikey = STAGING_APIKEY; //STAGING KEY
+    var $staging_apiurl = STAGING_APIURL; //STAGING URL
 
     var $products = array(
         "prism" => array(
-            'productids' => "TV0100,TV0200,TV0300,TV0700",
+            'productids' => "TV0300,TV0700,TV0200,TV0100",
             'displaycode' => "7108prism",
+            'metapidfilter' => "All Prism Plans",
             'generaltitle' => "Prism<sup>&trade;</sup> TV",
-            'metatitle' => "CenturyLink&reg; Prism&trade; TV"
+            'metatitle' => "CenturyLink&reg; Prism&trade; TV",
+            'metapid' => "CenturyLink-Prism-TV"
         ),
         "hsi" => array(
-            'productids' => "RP1000,RP0900,RP0800,RP0700",
+            'productids' => "RP1000,RP0800,RP0600,RP0400,RP0100",
             'displaycode' => "7108",
+            'metapidfilter' => "All Speeds",
             'generaltitle' => "High-Speed Internet",
-            'metatitle' => "CenturyLink&reg; High-Speed Internet"
-        ),
+            'metatitle' => "CenturyLink&reg; High-Speed Internet",
+            'metapid' => "CenturyLink-High-Speed-Internet"
+        )
     );
 
     var $Queries = array( 
@@ -29,6 +37,7 @@ class RatingsAndReviews {
             "passKey" => "", 
             "Sort" => "submissiontime:desc",
             "Limit" => 100,
+            "Offset" => 0,
             "Filter" => array(
                 "ProductId:%%PROD_IDS%%"
             )
@@ -43,6 +52,7 @@ class RatingsAndReviews {
         "products" => array( 
             "ApiVersion" => 5.4, 
             "displaycode" => null,
+            "Limit" => 100,
             "passKey" => "",
             "stats" => "Reviews",
             "Filter" => array(
@@ -53,7 +63,6 @@ class RatingsAndReviews {
 
     var $product_meta_key = "";
 
-    var $reviewWeight = array( 25, 25, 30, 40, 40 );
     var $visibleReviewStats = array(
         '1Star' => 0,
         '2Star' => 0,
@@ -66,45 +75,82 @@ class RatingsAndReviews {
     var $productMeta = array(   
         'TV0100' => array(
             'Name' => "Prism<sup>&trade;</sup> Essential",
-            'SEOName' => "Prism&trade; Essential"
+            'SEOName' => "Prism&trade; Essential",
+            'ShortName' => "Essential"
         ), 
         'TV0200' => array(
             'Name' => "Prism<sup>&trade;</sup> Complete",
-            'SEOName' => "Prism&trade; Complete"
+            'SEOName' => "Prism&trade; Complete",
+            'ShortName' => "Complete"
         ), 
         'TV0700' => array(
             'Name' => "Prism<sup>&trade;</sup> Preferred",
-            'SEOName' => "Prism&trade; Preferred"
+            'SEOName' => "Prism&trade; Preferred",
+            'ShortName' => "Preferred"
         ), 
         'TV0300' => array(
             'Name' => "Prism<sup>&trade;</sup> Premium",
-            'SEOName' => "Prism&trade; Premium"
+            'SEOName' => "Prism&trade; Premium",
+            'ShortName' => "Premium"
         ), 
         'RP1000' => array(
-            'Name' => "High-Speed Internet<sup>&reg;</sup> 40Mbps",
-            'SEOName' => "High-Speed Internet&reg; 40Mbps"
+            'Name' => "High-Speed Internet 40 Mbps",
+            'SEOName' => "High-Speed Internet 40 Mbps",
+            'ShortName' => "40 Mbps"
         ), 
         'RP0900' => array(
-            'Name' => "High-Speed Internet<sup>&reg;</sup> 35Mbps",
-            'SEOName' => "High-Speed Internet&reg; 35Mbps"
+            'Name' => "High-Speed Internet 35 Mbps",
+            'SEOName' => "High-Speed Internet 35 Mbps",
+            'ShortName' => "35 Mbps"
         ), 
         'RP0800' => array(
-            'Name' => "High-Speed Internet<sup>&reg;</sup> 20Mbps",
-            'SEOName' => "High-Speed Internet&reg; 20Mbps"
+            'Name' => "High-Speed Internet 20 Mbps",
+            'SEOName' => "High-Speed Internet 20 Mbps",
+            'ShortName' => "20 Mbps"
         ), 
         'RP0700' => array(
-            'Name' => "High-Speed Internet<sup>&reg;</sup> 15Mbps",
-            'SEOName' => "High-Speed Internet&reg; 15Mbps"
+            'Name' => "High-Speed Internet 15 Mbps",
+            'SEOName' => "High-Speed Internet 15 Mbps",
+            'ShortName' => "15 Mbps"
+        ),
+        'RP0600' => array(
+            'Name' => "High-Speed Internet 12 Mbps",
+            'SEOName' => "High-Speed Internet 12 Mbps",
+            'ShortName' => "12 Mbps"
+        ), 
+        'RP0500' => array(
+            'Name' => "High-Speed Internet 10 Mbps",
+            'SEOName' => "High-Speed Internet 10 Mbps",
+            'ShortName' => "10 Mbps"
+        ),
+        'RP0400' => array(
+            'Name' => "High-Speed Internet 7 Mbps",
+            'SEOName' => "High-Speed Internet 7 Mbps",
+            'ShortName' => "7 Mbps"
+        ), 
+        'RP0300' => array(
+            'Name' => "High-Speed Internet 5 Mbps",
+            'SEOName' => "High-Speed Internet 5 Mbps",
+            'ShortName' => "5 Mbps"
+        ),
+        'RP0200' => array(
+            'Name' => "High-Speed Internet 3 Mbps",
+            'SEOName' => "High-Speed Internet 3 Mbps",
+            'ShortName' => "3 Mbps"
+        ), 
+        'RP0100' => array(
+            'Name' => "High-Speed Internet 1.5 Mbps",
+            'SEOName' => "High-Speed Internet 1.5 Mbps",
+            'ShortName' => "1.5 Mbps"
         )
     );
 
-    var $DATA;
-    var $ReviewsMap = array(
-        "config" => array(),
-        "reviews" => array()
-    );
+    var $ReviewsMap = null;
     var $ReviewsHTML = array();
     var $ProductHTML = "";
+
+    var $sort_by_key = null;
+    var $sort_by_dir = null;
 
     var $AllFilesOutput = array();
     // var $ScriptRoot = "http://staging.promotions.centurylink.com/test/bazaarvoice-api/";
@@ -112,18 +158,41 @@ class RatingsAndReviews {
     var $OutputRoot = "review-includes/";
     var $TestOutputRoot = "review-includes-test/";
 
-    //var $outputFetchRoot = "http://staging.promotions.centurylink.com/webservices/ratingsandreviews/";
-    var $outputFetchRoot = "http://staging.promotions.centurylink.com/test/bazaarvoice-api/";
+    var $outputFetchRoot = "http://staging.promotions.centurylink.com/webservices/ratingsandreviews/";
+    //var $outputFetchRoot = "http://staging.promotions.centurylink.com/test/bazaarvoice-api/";
     var $outputMapRoot = "/assets/feeds/third-party/bazaarVoice/";
+
+    var $aux_file_jsonmap = "review-map.json";
+    var $aux_file_jsonmap_all = "all-reviews-map.json";
+    var $aux_file_overview = "product-overview.html";
+    var $aux_file_pagination = "review-pagination.html";
+
+    var $truncationLimit;
 
     function RatingsAndReviews( $datatarget, $product_meta_key = "prism" ) 
     {
+        $this->truncationLimit = strtotime("January 1, 2005"); // strtotime("January 1, 2011");
+
         if ( $_GET["includetest"] == "1" ) {
             $this->OutputRoot = $this->TestOutputRoot;
         }
         $this->OutputRoot .= ($product_meta_key."/");
 
-        $apitarget = "reviews";
+        if ( !$_GET["nocache"] ) {
+            $reviewsMapFileTmp = file_get_contents( "./" . $this->OutputRoot . $this->aux_file_jsonmap_all );
+            if ( !!$reviewsMapFileTmp ) {
+                $this->ReviewsMap = json_decode( $reviewsMapFileTmp, true );
+            }
+        }
+
+        if ( $this->ReviewsMap == null ) {
+            $this->ReviewsMap = array(
+                "config" => array(),
+                "reviews" => array()
+            );
+        }
+
+        //$apitarget = "reviews";
         $this->product_meta_key = $product_meta_key;
 
         $prquery = $this->getQuerySpecifics( $datatarget, "products" );     
@@ -132,14 +201,24 @@ class RatingsAndReviews {
         $this->processProductsData( $productsData );
 
         $rrquery = $this->getQuerySpecifics( $datatarget, "reviews" );     
-        $reviewsRawJSON = $this->makeAPIRequest( ( $this->{ $datatarget . "_apiurl" } ), "reviews", $this->Queries[ "reviews" ] );      
-        $this->DATA = json_decode( $reviewsRawJSON, true );
-        $this->processReviewsData( $this->DATA );
+        
+        $offset = 0;
+        $reviewLoop = true;
 
 
+        while ( $reviewLoop ) {
+            $reviewsRawJSON = $this->makeAPIRequest( ( $this->{ $datatarget . "_apiurl" } ), "reviews", $this->Queries[ "reviews" ], array(), $offset );      
+            $reviewsData = json_decode( $reviewsRawJSON, true );
+            $totalOffsets = floor( $reviewsData["TotalResults"] / $this->Queries["reviews"]["Limit"] );
 
-        echo $reviewsRawJSON;
-        exit();
+            $reviewLoop = $this->processReviewsData( $reviewsData );
+
+            if ( $totalOffsets > $offset ) {
+                $offset++;
+            } else {
+                $reviewLoop = false;
+            }
+        }
     }
 
     function getQuerySpecifics ( $datatarget, $apitarget ) 
@@ -162,11 +241,16 @@ class RatingsAndReviews {
         return $out;
     }
 
-    function makeAPIRequest($url, $apitarget, array $post = NULL, array $options = array()) 
+    function makeAPIRequest($url, $apitarget, array $post = NULL, array $options = array(), $offset = 0 ) 
     {
         $filters = $post["Filter"];
         unset( $post["Filter"] );
+        if ( isset( $post["Offset"] ) ) {
+            $post["Offset"] = $offset * $post["Limit"];
+        }
         $curlURLOPT = $url . $apitarget. ".json?" . http_build_query($post) . $this->buildFilters($apitarget, $filters);
+
+        //echo $curlURLOPT . "\n\n";
 
         $defaults = array( 
             CURLOPT_HEADER => 0, 
@@ -185,26 +269,78 @@ class RatingsAndReviews {
             exit();
         } 
         curl_close($ch); 
-        echo ("\n\n <br /> <br />" . $curlURLOPT . "\n\n <br /> <br />"); 
-        //exit();
         return $result; 
     } 
     function processReviewsData ( $dataArr ) {
         $results = $dataArr["Results"];
-        foreach ($results as $key => $dataobj) {
-            $reviewHTML = $this->outputReviewTemplate( $dataobj, $reviewRowClass );
-            if ( !!$reviewHTML ) {
-                $this->ReviewsMap["reviews"][] = array( 
-                    "fullpath" => $this->outputMapRoot . $this->OutputRoot . "review".$dataobj["Id"].".html",
-                    //"filename" => "review".substr("000$key",-3).".html",
-                    "filename" => "review".$dataobj["Id"].".html",
-                    "stars" => $dataobj["Rating"],
-                    "productid" => $dataobj["ProductId"],
-                    "productname" => $this->productMeta[ $dataobj["ProductId"] ]["Name"]
-                );
-                $this->ReviewsHTML[] = $reviewHTML;
-            }
+        $this->ReviewsMap["config"]["rootpath"] = $this->outputMapRoot . $this->OutputRoot;
+        if ( !isset($this->ReviewsMap["config"]["pid"]) ){
+            $this->ReviewsMap["config"]["pid"] = array();
         }
+        if ( !isset($this->ReviewsMap["config"]["pidfilter"]) ){
+            $this->ReviewsMap["config"]["pidfilter"] = array();
+        }
+        $this->ReviewsMap["config"]["sort"] = array( 
+            "time-desc" => "Most Recent", 
+            //"help-desc" => "Most Helpful", 
+            "stars-desc" => "Highest", 
+            "stars-asc" => "Lowest" 
+        );
+        $this->ReviewsMap["config"]["filter"] = array( "pid", "stars" );
+        $this->ReviewsMap["config"]["stars"] = array( 
+            "5" => "5 Stars &#9733;&#9733;&#9733;&#9733;&#9733;", 
+            "4" => "4 Stars &#9733;&#9733;&#9733;&#9733;", 
+            "3" => "3 Stars &#9733;&#9733;&#9733;", 
+            "2" => "2 Stars &#9733;&#9733;", 
+            "1" => "1 Star &#9733;" 
+        );
+        $this->ReviewsMap["config"]["filenamepattern"] = "review-%%PID%%.html";
+        $this->ReviewsMap["config"]["filenamematch"] = "%%PID%%";
+
+        $keeplooping = true;
+
+        foreach ($results as $key => $dataobj) {
+            $reviewID = substr( ("00000000000".$dataobj["Id"] ), -11 );
+            $resultFileName = "review-".$reviewID.".html";
+            $submissiontime = strtotime( $dataobj["SubmissionTime"] );
+            
+            $dateoutputfolder = date( "Y/m-d", $submissiontime );
+            $fullpath = $this->outputMapRoot . $this->OutputRoot . $dateoutputfolder . "/" . $resultFileName;
+
+
+            if ( !file_exists( $this->OutputRoot . $dateoutputfolder . "/" . $resultFileName ) || !!$_GET["nocache"] ) {
+                $reviewHTML = $this->outputReviewTemplate( $dataobj, $reviewID, $reviewRowClass, $fullpath );
+                $keeplooping = true;
+            } else {
+                $keeplooping = false;
+                $reviewHTML = "";
+            }
+
+            $this->ReviewsMap["reviews"][$reviewID] = array( 
+                "stars" => $dataobj["Rating"],
+                "featured" => $dataobj["IsFeatured"],
+                "time" => $submissiontime,
+                "year" => $dateoutputfolder,
+                "pid" => $dataobj["ProductId"],
+                "help" => $dataobj["Helpfulness"],
+                "h_pos" => $dataobj["TotalPositiveFeedbackCount"],
+                "h_neg" => $dataobj["TotalNegativeFeedbackCount"],
+                "rid" => $reviewID
+            );
+            if ( !isset( $this->ReviewsMap["config"]["pid"][ $dataobj["ProductId"] ] ) ) {
+                $this->ReviewsMap["config"]["pid"][ $dataobj["ProductId"] ] = $this->productMeta[ $dataobj["ProductId"] ]["Name"];
+            }
+            if ( !isset( $this->ReviewsMap["config"]["pidfilter"][ $dataobj["ProductId"] ] ) ) {
+                $this->ReviewsMap["config"]["pidfilter"][ $dataobj["ProductId"] ] = $this->productMeta[ $dataobj["ProductId"] ]["ShortName"];
+            }
+            $this->ReviewsHTML[$reviewID] = $reviewHTML;
+        }
+
+        if ( isset($_GET["nocache"]) ) {
+            $keeplooping = true;
+        }
+
+        return $keeplooping;
     }
     function processProductsData ( $dataArr ) {
         $results = $dataArr["Results"];
@@ -221,7 +357,8 @@ class RatingsAndReviews {
                 '2 Stars' => 0,
                 '1 Star' => 0
             ),
-            'secondaryRatings' => array()
+            'secondaryRatings' => array(),
+            'subProducts' => array()
         );
 
         $productCount = 0;
@@ -259,6 +396,11 @@ class RatingsAndReviews {
                         $aggragatedData["MaxStarReviews"] = ceil( $totalRatingsObj / 100 ) * 100;
                     }
                 }
+                $aggragatedData["subProducts"][ $dataobj["Id"] ] = array(
+                    'RatingCount' => $dataobj["TotalReviewCount"], 
+                    'RatingAverage' => $dataobj["ReviewStatistics"]["AverageOverallRating"],
+                    'RatingRange' => $dataobj["ReviewStatistics"]["OverallRatingRange"]
+                );
             }
         }
 
@@ -275,17 +417,19 @@ class RatingsAndReviews {
     }
     function outputProductTemplate ( $productData ) {
         $output = array();
-        $output[] = "\n\t" . '<div class="roundcorners">';
-        $output[] = "\n\t" . '<div class="reviewsoverview" itemscope itemtype="Product">';
-        $output[] = "\n\t" . '<meta itemprop="name" content="' . $this->products[ $this->product_meta_key ]["metatitle"] . '">';
+        $output[] = "\n\t" . '<div class="roundcorners overviewWrapper">';
+        $output[] = "\n\t" . '<div class="reviewsoverview"'. '>';
+        $output[] = "\n\t\t" . '<meta itemprop="name" content="' . $this->products[ $this->product_meta_key ]["metatitle"] . '" />';
+        $output[] = "\n\t\t" . '<meta itemprop="productID" content="' . $this->products[ $this->product_meta_key ]["metapid"] . '" />';
         $output[] = "\n\t\t" . '<div class="heading">';
         $output[] = "\n\t\t\t" . '<h3 class="overviewheading" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">';
-        $output[] = "\n\t\t\t\t" . '<span class="headingText"><span itemprop="itemReviewed">' . $this->products{ $this->product_meta_key }["generaltitle"] . '</span> Overall Rating' . '</span>';
+        $output[] = "\n\t\t\t\t" . '<span class="headingText"><span>' . $this->products{ $this->product_meta_key }["generaltitle"] . '</span> Overall Rating' . '</span>';
         $starWidth = ceil( ($productData["AverageOverallRating"] / $productData["OverallRatingRange"]) * 100 );
-        $output[] = "\n\t\t\t\t" . '<meta itemprop="worstRating" content="1">';
-        $output[] = "\n\t\t\t\t" . '<span class="starRatingBlock starBG"><span class="starRatingInner starBG" style="width: ' . $starWidth . '%;"><span itemprop="ratingValue">'. round( $productData["AverageOverallRating"], 1 ) . '</span> Stars</span></span>';
-        $output[] = "\n\t\t\t\t" . '<meta itemprop="bestRating" content="' . $productData["OverallRatingRange"] . '">';
-        $output[] = "\n\t\t\t\t" . '<meta itemprop="ratingCount" content="' . $productData["TotalReviewCount"] . '">';
+        $output[] = "\n\t\t\t\t" . '<meta itemprop="itemReviewed" content="' . $this->products[ $this->product_meta_key ]["metatitle"] . '" />';
+        $output[] = "\n\t\t\t\t" . '<meta itemprop="worstRating" content="1" />';
+        $output[] = "\n\t\t\t\t" . '<span class="starRatingBlock starBG"><span class="starRatingInner starBG" style="width: ' . $starWidth . '%;"><span itemprop="ratingValue">'. round( $productData["AverageOverallRating"], 2 ) . '</span> Stars</span></span>';
+        $output[] = "\n\t\t\t\t" . '<meta itemprop="bestRating" content="' . $productData["OverallRatingRange"] . '" />';
+        $output[] = "\n\t\t\t\t" . '<meta itemprop="reviewCount" content="' . $productData["TotalReviewCount"] . '" />';
         $output[] = "\n\t\t\t" . '</h3>';
         $output[] = "\n\t\t" . '</div>';
         $output[] = "\n\t\t" . '<div class="ratings">';
@@ -295,8 +439,8 @@ class RatingsAndReviews {
             $ratingsWhole = round( ( $numRatings / $productData["MaxStarReviews"] ) * 10);
             $ratingsPerc = round( ( $numRatings / $productData["TotalReviewCount"] ) * 100);
             $output[] = "\n\t\t\t\t" . '<p class="rating">';
-            $output[] = "\n\t\t\t\t\t" . '<span class="ratingLabel">' . $starText . '</span>';
-            $output[] = "\n\t\t\t\t\t" . '<span class="ratingBar bar' . $ratingsWhole . '" data-numratings="' . $numRatings . '" title="' . $ratingsPerc . '%"><span class="ratingInner" style="width: ' . $ratingsPerc . '%; ">' . $ratingsPerc . '% of total number o reviews </span></span>';
+            $output[] = "\n\t\t\t\t\t" . '<a href="?reviewstars=' . str_replace( array(" Stars", " Star"), "", $starText ) . '" rel="nofollow"><span class="ratingLabel">' . $starText . '</span></a>';
+            $output[] = "\n\t\t\t\t\t" . '<span class="ratingBar bar' . $ratingsWhole . '" data-numratings="' . $numRatings . '" title="' . $ratingsPerc . '%"><span class="ratingInner" style="width: ' . $ratingsPerc . '%; ">' . $ratingsPerc . '% of total number of reviews </span></span>';
             $output[] = "\n\t\t\t\t\t" . '<small class="numReviewsLabel"><span class="numReviews">' . $numRatings . '</span> reviews</small>';
             $output[] = "\n\t\t\t\t" . '</p>';
         }
@@ -310,41 +454,59 @@ class RatingsAndReviews {
         foreach ($productData["secondaryRatings"] as $secRatingKey => $secRatingObj ) {
             $ratingsWhole = round( ( $secRatingObj["rating"] / $productData["OverallRatingRange"] ) * 10);
             $ratingsPerc = round( ( $secRatingObj["rating"] / $productData["OverallRatingRange"] ) * 100);
-            $output[] = "\n\t\t\t\t\t" . '<p class="rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">';
-            $output[] = "\n\t\t\t\t\t\t" . '<span class="ratingLabel" itemprop="itemReviewed">' . $secRatingObj["title"] . '</span>';
-            $output[] = "\n\t\t\t\t\t\t" . '<meta itemprop="worstRating" content="1">';
-            $output[] = "\n\t\t\t\t\t\t" . '<span class="ratingBar bar' . $ratingsWhole . '" data-rating="' . round( $secRatingObj["rating"], 2 ) . '" title="' . $ratingsPerc . '%"><span class="ratingInner" style="width: ' . $ratingsPerc . '%; " itemprop="ratingValue">' . round( $secRatingObj["rating"], 2 ) . '</span></span>';
-            $output[] = "\n\t\t\t\t\t\t" . '<meta itemprop="bestRating" content="' . $productData["OverallRatingRange"] . '">';
+            $output[] = "\n\t\t\t\t\t" . '<p class="rating"'.'>'; 
+            $output[] = "\n\t\t\t\t\t\t" . '<span class="ratingLabel"'.'>' . $secRatingObj["title"] . '</span>'; 
+            $output[] = "\n\t\t\t\t\t\t" . '' . '';
+            $output[] = "\n\t\t\t\t\t\t" . '<span class="ratingBar bar' . $ratingsWhole . '" data-rating="' . round( $secRatingObj["rating"], 2 ) . '" title="' . $ratingsPerc . '%"><span class="ratingInner" style="width: ' . $ratingsPerc . '%; "'.'>' . round( $secRatingObj["rating"], 2 ) . '</span></span>';
+            $output[] = "\n\t\t\t\t\t\t" . '' . '';
             $output[] = "\n\t\t\t\t\t" . '</p>';
         }
 
         $output[] = "\n\t\t\t\t" . '</div>';
         $output[] = "\n\t\t\t" . '</div>';
         $output[] = "\n\t\t\t" . '</div>';
+
+        $output[] = "\n\t\t" . '<div class="reviewsBySubProduct">';
+        foreach ( $productData["subProducts"] as $subProdID => $subProdObj ) {
+            $output[] = "\n\t\t\t" . '<div class="subProduct"'.'>'; 
+            $output[] = "\n\t\t\t\t" . ''.'';
+            $output[] = "\n\t\t\t\t" . ''.'';
+
+            $ratingsWhole = round( ( $subProdObj["RatingAverage"] / $subProdObj["RatingRange"] ) * 10);
+            $ratingsPerc = round( ( $subProdObj["RatingAverage"] / $subProdObj["RatingRange"] ) * 100);
+            $numRatings = $subProdObj["RatingCount"];
+
+            $output[] = "\n\t\t\t\t" . '<p class="rating">';
+            $output[] = "\n\t\t\t\t\t" . '<a href="?reviewpid=' . $subProdID . '"><span class="ratingLabel">' . $this->productMeta[ $subProdID ]["ShortName"] . '</span></a>';
+            $output[] = "\n\t\t\t\t\t" . '<span class="ratingBar bar' . $ratingsWhole . '" data-numratings="' . $numRatings . '" title="' . $ratingsPerc . '%"><span class="ratingInner" style="width: ' . $ratingsPerc . '%; ">' . $ratingsPerc . '% of total number o reviews </span></span>';
+            $output[] = "\n\t\t\t\t\t" . '<small class="numReviewsLabel"><span class="numReviews">' . $numRatings . '</span> reviews</small>';
+            $output[] = "\n\t\t\t\t" . '</p>';
+
+            $output[] = "\n\t\t\t" . '</div>';        
+        }
+
         $output[] = "\n\t\t" . '</div>';
         $output[] = "\n\t" . '</div>';
+        $output[] = "\n\t" . '</div>';
+
         $output[] = "\n\t" . '<span class="roundcorner rcLeft rcTop outsideW">&nbsp;</span> <span class="roundcorner rcLeft rcBottom outsideW">&nbsp;</span> <span class="roundcorner rcRight rcTop outsideW">&nbsp;</span> <span class="roundcorner rcRight rcBottom outsideW">&nbsp;</span>';
         $output[] = "\n\t" . '</div>';
         return $output;
     }
-    function outputReviewTemplate ( $dataobj, $reviewRowClass = "oddreview" ) {
+    function outputReviewTemplate ( $dataobj, $reviewID, $reviewRowClass = "oddreview", $fullpath = "" ) {
         //REVIEW WEIGHTING SYSTEM
         $reviewkey_int = intval($dataobj["Rating"])-1;
-        $this->reviewWeight[ $reviewkey_int ]--;
-        if ( $this->reviewWeight[ $reviewkey_int ] < 0 ) {
-            return false;
-        }
         $this->visibleReviewStats[ ($reviewkey_int+1)."Star" ] += 1;
 
 
         //CREATE REVIEW HTML
         $output = array();
-        $output[] = ( ("\n\t" . '<div class="review ' . $reviewRowClass . '" itemscope itemtype="http://schema.org/Product">') );
-        $output[] = ( ("\n\t" . '<meta itemprop="name" content="' . $this->productMeta[ $dataobj["ProductId"] ]["SEOName"] . '">') );
+        $output[] = ( ("\n\t" . '<div class="review ' . $reviewRowClass . '"'.' id="review-'.$reviewID.'">') );
+        $output[] = ( ("\n\t" . ''.'') );
+        $output[] = ( ("\n\t" . ''.'') );
         $output[] = ( ("\n\t" . '<div class="reviewRowWrap" itemprop="review" itemscope itemtype="http://schema.org/Review">') );
-        $output[] = ( ("\n\t" . '<meta itemprop="itemReviewed" content="' . $this->productMeta[ $dataobj["ProductId"] ]["SEOName"] . '">') );
+        $output[] = ( ("\n\t" . '<meta itemprop="itemReviewed" content="' . $this->products[ $this->product_meta_key ]["metatitle"] . '" />') );
         $output[] = ( ("\n\t" . '<div class="reviewRowWrapInner">') );
-
 
         $output[] = ( ("\n\t\t" . '<div class="reviewStats" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">') );
         $output[] = ( ("\n\t\t\t" . '<meta itemprop="worstRating" content="1" />') );
@@ -373,14 +535,17 @@ class RatingsAndReviews {
 
         $output[] = ( ("\n\t\t" . '<div class="reviewText">') );
         $output[] = ( ("\n\t\t\t" . '<div class="reviewMeta">') );
+
         if ( !!$reviewDate )        $output[] = ( ("\n\t\t\t\t" . '<p class="reviewDate metaSmall" itemprop="datePublished">'.date( 'F j, Y', $reviewDate ).'</p>') );
         if ( !!$reviewTitle )       $output[] = ( ("\n\t\t\t\t" . '<h4 class="reviewtitle" itemprop="name">'.$reviewTitle.'</h4>') );
         if ( !!$reviewerNickname )  $output[] = ( ("\n\t\t\t\t" . '<p class="reviewerNickname metaInline" itemprop="author">'.$reviewerNickname.'</p>') );
         if ( !!$reviewerLocation )  $output[] = ( ("\n\t\t\t\t" . '<p class="reviewerLocation metaInline" itemprop="contentLocation">'.$reviewerLocation.'</p>') );
         if ( !!$productname )       $output[] = ( ("\n\t\t\t\t" . '<p class="productname metaInline lastMetaInLine">'.$productname.'</p>') );
+
         $output[] = ( ("\n\t\t\t" . '</div>') );
         $output[] = ( ("\n\t\t\t" . '<div class="reviewBody" itemprop="reviewBody">') );
         $output[] = ( ("\n\t\t\t\t" . $reviewText) );
+        $output[] = ( ("\n\t\t\t" . '<!-- Was this review helpful? Yes: '.$dataobj["TotalPositiveFeedbackCount"].' | No: '.$dataobj["TotalNegativeFeedbackCount"].' -->') ); 
         $output[] = ( ("\n\t\t\t" . '</div>') );
         $output[] = ( ("\n\t\t" . '</div>') );
 
@@ -392,60 +557,371 @@ class RatingsAndReviews {
         return implode(" ", $output);
     }
     function writeOverviewFile () {
-        $fp = fopen( $this->OutputRoot."product-overview.html", 'w');
+        $thisfilename = $this->aux_file_overview;
+        $fp = fopen( $this->OutputRoot . $thisfilename, 'w');
         fwrite($fp, $this->ProductHTML );
         fclose($fp);
-        $this->AllFilesOutput[] = $this->ScriptRoot. $this->OutputRoot. "product-overview.html";
-        //echo "\n\n <br /> <br /> Overview File Written.";
+        //$this->AllFilesOutput[] = $this->ScriptRoot . $this->OutputRoot . $thisfilename;
     }
     function writeReviewFiles () {
-        foreach ( $this->ReviewsMap["reviews"] as $key => $reviewobj ) {
-            $nextpath = $reviewobj["filename"];
-            $fp = fopen($this->OutputRoot . $nextpath, 'w');
-            fwrite($fp, $this->ReviewsHTML["$key"] );
-            fclose($fp);
-            $this->AllFilesOutput[] = $this->ScriptRoot . $this->OutputRoot . $nextpath;
+        foreach ( $this->ReviewsHTML as $rid => $htmloutput ) {
+            if ( !!$htmloutput ) {
+                $nextpath = $this->getFileNameFromID( $rid );
+                $timefolders = explode("/", $this->ReviewsMap["reviews"][$rid]["year"] );
+
+                if (!is_dir($this->OutputRoot . $timefolders[0] )) {
+                    mkdir($this->OutputRoot . $timefolders[0] );         
+                }
+                if (!is_dir($this->OutputRoot . $timefolders[0] . "/" . $timefolders[1] )) {
+                    mkdir($this->OutputRoot . $timefolders[0] . "/" . $timefolders[1] );         
+                }
+
+                $fp = fopen( $this->OutputRoot . $timefolders[0] . "/" . $timefolders[1] . "/" . $nextpath, 'w');
+                fwrite($fp, $this->ReviewsHTML["$rid"] );
+                fclose($fp);
+            }
         }
-        //echo "\n\n <br /> <br /> $key Reviews Written.";
+    }
+    function getFileNameFromID ( $reviewid ) {
+        return str_replace( $this->ReviewsMap["config"]["filenamematch"], $reviewid, $this->ReviewsMap["config"]["filenamepattern"] );
     }
     function writeReviewSEOPagination () {
-        $thisfilename = "review-pagination.html";
-        $fp = fopen( $this->OutputRoot . $thisfilename, 'w');
-        $reviewsPerPage = 6;
-        fwrite($fp, "\n".'<!--#if expr="!${reviewPageLocation}" -->');
-        fwrite($fp, "\n".'<!--#set var="reviewPageLocation" value="" -->');
-        fwrite($fp, "\n".'<!--#endif -->');
-        fwrite($fp, "\n".'<!--#if expr="!${moreReviewsClicktrack}" -->');
-        fwrite($fp, "\n".'<!--#set var="moreReviewsClicktrack" value="" -->'."\n\n");
-        fwrite($fp, "\n".'<!--#endif -->');
-        foreach ( $this->ReviewsMap["reviews"] as $rkey => $reviewobj ) {
-            $pagenum = substr( "000" .ceil( $rkey / $reviewsPerPage ), -3);
-            if ( $rkey % $reviewsPerPage == 0 ) {
-                if ( $rkey > 0 ) {
-                    fwrite($fp, "\n\n".'<p class="moreReviewsLink edgeShadowGradientTop"><a href="<!--#echo var="reviewPageLocation"-->?reviewpage='.$pagenum.'" class="moreReviews querylink" clicktrack="<!--#echo var="moreReviewsClicktrack"-->">Load More Reviews</a></p>'."\n\n");
-                }
-                if ( $rkey > 0 ) {
-                    fwrite($fp, '<!--#elif expr="${REQUEST_URI}==/reviewpage='.$pagenum.'/" -->'."\n");
-                }
-                if ( $rkey == 0 ) {
-                    fwrite($fp, '<!--#if expr="${REQUEST_URI}!=/reviewpage/" -->'."\n");
+        $thisfilename = $this->aux_file_pagination;
+
+        $output = array();
+        $output[] = ( "\n".'<!--#if expr="!${reviewPageLocation}" -->');
+        $output[] = ( "\n".'<!--#set var="reviewPageLocation" value="" -->');
+        $output[] = ( "\n".'<!--#endif -->');
+        $output[] = ( "\n".'<!--#if expr="!${moreReviewsClicktrack}" -->');
+        $output[] = ( "\n".'<!--#set var="moreReviewsClicktrack" value="" -->');
+        $output[] = ( "\n".'<!--#endif -->');
+
+        $output[] = ( "\n".'<!--#if expr="${REQUEST_URI}=/reviewpage=([0-9]{5})/" -->');
+        $output[] = ( "\n".'<!--#set var="reviewpage" value="${1}" -->');
+        $output[] = ( "\n".'<!--#else -->');
+        $output[] = ( "\n".'<!--#set var="reviewpage" value="00000" -->');
+        $output[] = ( "\n".'<!--#endif -->');
+
+        $output[] = ( "\n".'<!--#if expr="${REQUEST_URI}=/reviewpid=([A-Z0-9]+)/" -->');
+        $output[] = ( "\n".'<!--#set var="reviewpid" value="-${1}" -->');
+        $output[] = ( "\n".'<!--#set var="qs_reviewpid" value="&reviewpid=${1}" -->');
+        $output[] = ( "\n".'<!--#else -->');
+        $output[] = ( "\n".'<!--#set var="reviewpid" value="" -->');
+        $output[] = ( "\n".'<!--#set var="qs_reviewpid" value="" -->');
+        $output[] = ( "\n".'<!--#endif -->');
+
+        $output[] = ( "\n".'<!--#if expr="${REQUEST_URI}=/reviewstars=([0-9])/" -->');
+        $output[] = ( "\n".'<!--#set var="reviewstars" value="-${1}stars" -->');
+        $output[] = ( "\n".'<!--#set var="qs_reviewstars" value="&reviewstars=${1}" -->');
+        $output[] = ( "\n".'<!--#else -->');
+        $output[] = ( "\n".'<!--#set var="reviewstars" value="" -->');
+        $output[] = ( "\n".'<!--#set var="qs_reviewstars" value="" -->');
+        $output[] = ( "\n".'<!--#endif -->');
+
+        $output[] = ( "\n".'<!--#if expr="${REQUEST_URI}=/reviewsort=([a-z-]+)/" -->');
+        $output[] = ( "\n".'<!--#set var="reviewsort" value="-${1}" -->');
+        $output[] = ( "\n".'<!--#set var="qs_reviewsort" value="&reviewsort=${1}" -->');
+        $output[] = ( "\n".'<!--#else -->');
+        $output[] = ( "\n".'<!--#set var="reviewsort" value="-time-desc" -->');
+        $output[] = ( "\n".'<!--#set var="qs_reviewsort" value="&reviewsort=time-desc" -->');
+        $output[] = ( "\n".'<!--#endif -->');
+
+        $output[] = ( "\n".'<!--#set var="reviewQS" value="${qs_reviewpid}${qs_reviewstars}${qs_reviewsort}" -->');
+
+        //Filename format: reviews-PID-0stars-sort.html
+        $output[] = ( "\n".'<!--#config errmsg="Sorry, but there are no reviews for these search terms." -->');
+        $output[] = ( "\n".'<!--#set var="reviewsincludename" value="reviews${reviewpid}${reviewstars}${reviewsort}.html" -->');
+        $output[] = ( "\n".'<!-- <!--#echo var="reviewsincludename" --> -->');
+        $output[] = ( "\n".'<!--#include virtual="${reviewsincludename}" -->');
+
+        $reviewFileArr = array_keys( $this->ReviewsMap["reviews"] ); //glob( $this->OutputRoot . "review-0*.html");
+        //$reviewFileArr = str_replace( $this->OutputRoot . "review-", "", $reviewFileArr );
+        //$reviewFileArr = str_replace( ".html", "", $reviewFileArr );
+
+        //rsort( $reviewFileArr );
+
+        $loopthrough_pid = array_merge( array(""), array_keys( $this->ReviewsMap["config"]["pid"] ) );
+        $loopthrough_stars = array_merge( array(""), array_keys( $this->ReviewsMap["config"]["stars"] ) );
+        $loopthrough_sort = array_merge( array_keys( $this->ReviewsMap["config"]["sort"] ) );
+
+        if ( !$_GET["nocache"] ) {
+
+        foreach ( $loopthrough_pid as $pid_index => $pid_val ) {
+            foreach ( $loopthrough_stars as $stars_index => $stars_val ) {
+                foreach ( $loopthrough_sort as $sort_index => $sort_val) {
+                    $pid_val_mod = "";
+                    $stars_val_mod = "";
+                    $sort_val_mod = "";
+                    if ( !!$pid_val ) $pid_val_mod = "-" . $pid_val;
+                    if ( !!$stars_val ) $stars_val_mod = "-" . $stars_val . "stars";
+                    if ( !!$sort_val ) $sort_val_mod = "-" . $sort_val;
+                    $pagerFileName = "reviews". $pid_val_mod . $stars_val_mod . $sort_val_mod .".html";
+                    
+                    $filteredFileArr = array();
+
+                    foreach ($reviewFileArr as $key => $rid) {
+                        $isinset = true;
+                        if ( !!$stars_val && $this->ReviewsMap["reviews"][$rid]["stars"] !== $stars_val ) {
+                            $isinset = false;
+                        }
+                        if ( !!$pid_val && $this->ReviewsMap["reviews"][$rid]["pid"] !== $pid_val ) {
+                            $isinset = false;
+                        }
+                        //Time Restrict
+                        if ( $this->ReviewsMap["reviews"][$rid]["time"] < $this->truncationLimit ) {
+                            $isinset = false;
+                        }
+                        if ( $isinset ) {
+                            $filteredFileArr[] = $rid;
+                        }
+                    }
+
+                    if ( !!$sort_val ) {
+                        if ( strpos( $sort_val, "time" ) !== false ) {
+                            $sort_by_key = "time";
+                        }
+                        if ( strpos( $sort_val, "help" ) !== false ) {
+                            $sort_by_key = "help";
+                        }
+                        if ( strpos( $sort_val, "stars" ) !== false ) {
+                            $sort_by_key = "stars";
+                        }
+                        if ( strpos( $sort_val, "asc" ) !== false ) {
+                            $sort_dir = SORT_ASC;
+                        } else {
+                            $sort_dir = SORT_DESC;
+                        }
+
+                        $this->sort_by_key = $sort_by_key;
+                        $this->sort_by_dir = $sort_dir;
+
+                        usort( $filteredFileArr, array( $this, "sortReviewPages") );
+                    }
+                    $this->collectReviewsInPager( $filteredFileArr, $pagerFileName );
+
                 }
             }
-            fwrite($fp, "<!-- REVIEW NUMBER $rkey --> \n");
-            fwrite($fp, '<!--#include virtual="'.$reviewobj["filename"].'" -->'."\n");
         }
-        fwrite($fp, "\n\n".'<p class="moreReviewsLink edgeShadowGradientTop">&nbsp;</p>'."\n\n");
-        fwrite($fp,'<!--#endif -->'."\n");
-        fclose($fp);
-        $this->AllFilesOutput[] = $this->ScriptRoot . $this->OutputRoot . $thisfilename;
+
+        }
+
+        foreach ($reviewFileArr as $index => $rkey) {
+            //Time Restrict
+            if ( $this->ReviewsMap["reviews"][$rkey]["time"] > $this->truncationLimit ) {
+                //$this->AllFilesOutput[] = $this->ScriptRoot . $this->OutputRoot . $this->getFileNameFromID( $rkey );            
+            }
+        }
+        
+        $fp = fopen( $this->OutputRoot . $thisfilename, 'w');
+        fwrite( $fp, implode(" ", $output) );
+        fclose( $fp );
+        //$this->AllFilesOutput[] = $this->ScriptRoot . $this->OutputRoot . $thisfilename;
+
+        $this->writeRevewsFilterForm();
+    }
+
+    function writeRevewsFilterForm () {
+        $thisfilename = "reviews-filter-form.html";
+        $output = array();
+
+        $output[] = ("\n\t" . '<form action="" method="GET" class="displayOptionsForm">');
+        $output[] = ("\n\t" . '<div class="displayOptions">');
+        $output[] = ("\n\t\t" . '<div class="displayOptionsWrap verticalGradientSmall">');
+        $output[] = ("\n\t\t" . '<div class="sortby"><strong>Sort By:</strong> ');
+        $output[] = ("\n\t\t\t" . '<label for="reviewsort">');
+        $output[] = ("\n\t\t\t" . '<select name="reviewsort" id="reviewsort">');
+
+        $defaultset = false;
+        foreach ($this->ReviewsMap["config"]["sort"] as $key => $value) {
+            if ( !$defaultset ) {
+                $output[] = ("\n\t\t\t\t" . '<option value="'.$key.'" class="sort-'.$key.' sort-default default">'.$value.'</option>');
+                $defaultset = true;
+            } else {
+                $output[] = ("\n\t\t\t\t" . '<option value="'.$key.'" class="sort-'.$key.'">'.$value.'</option>');
+            }
+        }
+
+        $output[] = ("\n\t\t\t" . '</select>');
+        $output[] = ("\n\t\t\t" . '</label>');
+        $output[] = ("\n\t\t" . '</div>');
+        $output[] = ("\n\t\t" . '<div class="filterby"><strong>Filter By: </strong>');
+        $output[] = ("\n\t\t\t" . '<label for="reviewpid">Plans: ');
+        $output[] = ("\n\t\t\t" . '<select name="reviewpid" id="reviewpid">'); 
+
+            $output[] = ("\n\t\t\t\t" . '<option value="" class="filter-default default" selected="selected">'.$this->products{ $this->product_meta_key }["metapidfilter"].'</option>');
+
+        $pidslist = explode(",", $this->products{ $this->product_meta_key }["productids"]);
+        foreach ($pidslist as $index => $key) {
+            if ( !!$this->ReviewsMap["config"]["pidfilter"]["$key"] ) {
+                $output[] = ("\n\t\t\t\t" . '<option value="'.$key.'" class="filter-'.$key.'">'.$this->ReviewsMap["config"]["pidfilter"]["$key"].'</option>');
+            }
+        }
+
+        $output[] = ("\n\t\t\t" . '</select>');
+        $output[] = ("\n\t\t\t" . '</label>');
+        $output[] = ("\n\t\t\t" . '<label for="reviewstars">Ratings: ');
+        $output[] = ("\n\t\t\t" . '<select name="reviewstars" id="reviewstars">');
+
+            $output[] = ("\n\t\t\t\t" . '<option value="" class="filter-default default" selected="selected">All Ratings</option>');
+        foreach ($this->ReviewsMap["config"]["stars"] as $key => $value) {
+            $output[] = ("\n\t\t\t\t" . '<option value="'.$key.'" class="filter-star'.$key.'">'.$value.'</option>');
+        }
+
+        $output[] = ("\n\t\t\t" . '</select>');
+        $output[] = ("\n\t\t\t" . '</label>');
+        $output[] = ("\n\t\t" . '</div>');
+        $output[] = ("\n\t\t" . '<div class="submitWrap"><input type="submit" /></div>');
+        $output[] = ("\n\t\t" . '<div class="all-reviews-link"><a href="?reviewspage=00000">Show All Reviews</a></div>');
+        $output[] = ("\n\t\t" . '</div>'); 
+        $output[] = ("\n\t\t" . '<span class="roundcorner rcLeft rcTop outsideW">&nbsp;</span> <span class="roundcorner rcLeft rcBottom outsideW">&nbsp;</span> <span class="roundcorner rcRight rcTop outsideW">&nbsp;</span> <span class="roundcorner rcRight rcBottom outsideW">&nbsp;</span>'); 
+        $output[] = ("\n\t" . '</div>'); 
+        $output[] = ("\n\t" . '</form>'); 
+
+        $fp = fopen( $this->OutputRoot . $thisfilename, 'w');
+        fwrite( $fp, implode(" ", $output) );
+        fclose( $fp );
+        //$this->AllFilesOutput[] = $this->ScriptRoot . $this->OutputRoot . $thisfilename;
+    }
+
+    function sortReviewPages($a, $b) {
+        $val = 0;
+        if ( $this->ReviewsMap["reviews"][ $a ][ $this->sort_by_key ] > $this->ReviewsMap["reviews"][ $b ][ $this->sort_by_key ] ) {
+            $val = 1;
+        }
+        if ( $this->ReviewsMap["reviews"][ $a ][ $this->sort_by_key ] < $this->ReviewsMap["reviews"][ $b ][ $this->sort_by_key ] ) {
+            $val = -1;
+        }
+        if ( $val === 0 ) {
+            if ( $this->ReviewsMap["reviews"][ $a ][ "time" ] > $this->ReviewsMap["reviews"][ $b ][ "time" ] ) {
+                $val = 1;
+            }
+            if ( $this->ReviewsMap["reviews"][ $a ][ "time" ] < $this->ReviewsMap["reviews"][ $b ][ "time" ] ) {
+                $val = -1;
+            }
+        }
+
+        if ( $this->sort_by_dir == SORT_DESC ) {
+            $val = $val * -1;
+        }
+        return $val;
+    }    
+
+    function collectReviewsInPager ( $reviewFileArr, $pagefilename ) {
+        $reviewsPerPage = 6;
+
+        $pagenum = "00000";
+        $lastpagenum = null;
+
+        $reviewcount = 0;
+        $pageoutput = array();
+        $pageoutput[] = ( "<!-- $pagefilename --> \n");
+        foreach ($reviewFileArr as $index => $rkey) {
+            if ( ceil( $reviewcount / $reviewsPerPage ) == 0 ) {
+                $pageoutput[] = ( "\n\n".'<!--#if expr="$reviewpage='.$pagenum.'" -->'."\n");
+            }
+            //$pageoutput[] = ( "<!-- REVIEW ID $rkey --> \n");
+            $pageoutput[] = ( '<!--#include virtual="'. $this->ReviewsMap["reviews"]["$rkey"]["year"] . "/" . $this->getFileNameFromID( $rkey ).'" -->'."\n");
+            if ( $reviewcount % $reviewsPerPage == 0 ) {
+                $nextpagenum = substr( "00000" .ceil( $reviewcount / $reviewsPerPage ), -5);
+                if ( $reviewcount > 0 ) {
+
+                    $pageoutput[] = ( "\n".'<p class="moreReviewsLink edgeShadowGradientTop">');
+                    if ( !!$lastpagenum ) {
+                        $pageoutput[] = ( '<a href="<!--#echo var="reviewPageLocation"-->?reviewpage='.$lastpagenum.'<!--#echo var="reviewQS"-->" class="previousReviews glossyButtonBG" rel="prev">Load Previous Reviews</a>' );
+                    }
+                    if ( !!$nextpagenum ) {
+                        $pageoutput[] = ( '<a href="<!--#echo var="reviewPageLocation"-->?reviewpage='.$nextpagenum.'<!--#echo var="reviewQS"-->" class="moreReviews glossyButtonBG querylink" clicktrack="<!--#echo var="moreReviewsClicktrack"-->" rel="next">Load More Reviews</a>' );
+                    }
+                    $pageoutput[] = ( '</p>'."\n\n");
+                    $lastpagenum = $pagenum; 
+                }
+                $pagenum = $nextpagenum;
+                if ( ceil( $reviewcount / $reviewsPerPage ) > 0 ) {
+                    $pageoutput[] = ( '<!--#elif expr="$reviewpage='.$pagenum.'" -->'."\n");
+                }
+            }
+            $reviewcount++;           
+        }
+        $pageoutput[] = ("\n".'<p class="moreReviewsLink edgeShadowGradientTop endOfReviewsPager">&nbsp;</p>'."\n");        
+        $pageoutput[] = ( '<!--#endif -->'."\n");
+        $this->writeReviewsSubPager( $pageoutput, $pagefilename );        
+    }
+
+    function writeReviewsSubPager ( $pageoutput, $pagefilename ) {
+
+        $fp = fopen( $this->OutputRoot . $pagefilename, 'w');
+        fwrite( $fp, implode(" ", $pageoutput) );
+        fclose( $fp );
+
+        //$this->AllFilesOutput[] = $this->ScriptRoot . $this->OutputRoot . $pagefilename;
+
     }
     function writeReviewMapJSON () {
-        $thisfilename = "review-map.json";
+
+        $fp = fopen( $this->OutputRoot . $this->aux_file_jsonmap_all, 'w');
+        fwrite( $fp, json_encode($this->ReviewsMap) );
+        fclose( $fp );
+
         $reviewMapJSON = $this->ReviewsMap;
-        $fp = fopen( $this->OutputRoot . $thisfilename, 'w');
-        fwrite( $fp, json_encode($reviewMapJSON) );
-        fclose($fp);
-        $this->AllFilesOutput[] = $this->ScriptRoot . $this->OutputRoot . $thisfilename;
+        $truncRevewMap = $this->reviewMapTruncation( $reviewMapJSON );
+        $fp = fopen( $this->OutputRoot . $this->aux_file_jsonmap, 'w');
+        fwrite( $fp, json_encode( $truncRevewMap ) );
+        fclose( $fp );
+
+        //$this->AllFilesOutput[] = $this->ScriptRoot . $this->OutputRoot . $this->aux_file_jsonmap;
+        //$this->AllFilesOutput[] = $this->ScriptRoot . $this->OutputRoot . $this->aux_file_jsonmap_all;
+    }
+    function reviewMapTruncation ( $reviewMapJSON ) {
+        $maxlength = 500;
+
+        $quotas = array(
+            '5stars' => 100, 
+            '4stars' => 100, 
+            '3stars' => 100, 
+            '2stars' => 50, 
+            '1stars' => 50 
+        );
+        foreach ( $reviewMapJSON["config"]["pid"] as $pidname => $pidfulltitle) {
+            $quotas["$pidname"] = ceil($maxlength/count($reviewMapJSON["config"]["pid"])/50)*50;
+        }
+
+        $reviewsList = $reviewMapJSON["reviews"];
+
+        if (  count( $reviewsList ) < $maxlength ) {
+            return $reviewMapJSON;
+        }
+        
+        $truncatedReviewsList = array();
+        $deferredReviewsList = array();
+        foreach ($reviewsList as $key => $reviewobj) {
+            $isUnderStarsQuota = !!($quotas[ $reviewobj["stars"]."stars" ]);
+            $isUnderPIDQuota = !!($quotas[ $reviewobj["pid"] ]);
+            if ( $isUnderStarsQuota && $isUnderPIDQuota ) {
+                //add to truncated
+                $quotas[ $reviewobj["stars"]."stars" ]--;
+                $quotas[ $reviewobj["pid"] ]--;
+                $truncatedReviewsList[$rid] = $reviewobj;
+
+                if ( count($truncatedReviewsList) > $maxlength ) {
+                    break;
+                }   
+
+            } else { 
+                //add to deferred
+                $deferredReviewsList[$rid] = $reviewobj;
+            }
+        }
+        if ( count($truncatedReviewsList) < $maxlength  ) {
+            foreach ( $deferredReviewsList as $rid => $reviewobj ) {
+                $truncatedReviewsList[$rid] = $reviewobj;
+                if ( count($truncatedReviewsList) > $maxlength ) {
+                    break;
+                }                   
+            }
+        }
+
+        $reviewMapJSON["reviews"] = $truncatedReviewsList;
+        return $reviewMapJSON;
     }
 
     //DEBUG
@@ -464,14 +940,23 @@ class RatingsAndReviews {
     }
     function outputFetchList () {
         //echo $this->outputVisibleReviewStats();
-        foreach ($this->AllFilesOutput as $key => $value) {
-            echo $this->outputFetchRoot.str_replace("./", "", $value)."\n";
+        $objects = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($this->OutputRoot), RecursiveIteratorIterator::SELF_FIRST);
+        foreach($objects as $name => $object){
+            //var_dump( $object );
+            if ( preg_match('/\.html|\.json/', $name)  ) {
+                echo $this->outputFetchRoot . str_replace("\n", "", $name) . "\n";
+            }
         }
+        //exit();
+
+        //foreach (//$this->AllFilesOutput as $key => $value) {
+            //echo $this->outputFetchRoot.str_replace("./", "", $value)."\n";
+        //}
     }
 
     function writeFiles () {
         $this->writeOverviewFile();
-        $this->writeReviewFiles();
+        $this->writeReviewFiles();            
         $this->writeReviewSEOPagination();
         $this->writeReviewMapJSON();
         $this->outputFetchList();
@@ -487,15 +972,15 @@ if ( $product == "hsi" ) {
     $ids = 'prism';
 }
 
-
+header('Expires: '.gmdate('D, d M Y H:i:s \G\M\T', time() + 1));
         
 
-$RatingsAndReviews = new RatingsAndReviews( "staging", $ids );
+$RatingsAndReviews = new RatingsAndReviews( "prod", $ids );
 
 //include_once("./prism-top-snippet.php");
 //$RatingsAndReviews->outputHTML();
 //include_once("./prism-btm-snippet.php");
 
 
-//$RatingsAndReviews->writeFiles();
+$RatingsAndReviews->writeFiles();
 
