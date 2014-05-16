@@ -13,3 +13,4 @@ webservices/ratingsandreviews/sample-*
 Github-Auto-Deploy
 .htaccess
 robots.txt
+.DS_store
