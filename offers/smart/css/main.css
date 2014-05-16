@@ -63,7 +63,7 @@ body{
 }
 h1{margin: 0;display: inline-block;}
 a{outline: none !important;}
-a:visited{color: #80b42c;}
+/* a:visited{color: #80b42c;} */
 .fL{float: left;}
 .fR{float: right;}
 .logo{
