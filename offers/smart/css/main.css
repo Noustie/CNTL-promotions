@@ -286,7 +286,10 @@ ul#nav li div a.ex-fix.active{
 }
 .nav-cta{
 	padding: 11px 20px 0 18px;
-}.nav-cta span{display: block;}
+	margin: 3px 0 0 0;
+	border-right: 1px solid #ddd;
+}
+.nav-cta span{display: block;}
 .green{color:#8cc63f;text-align: right}
 .baby-blue{color:#0098DB;text-align: right;}
 .head-tfn-txt{
