@@ -85,11 +85,10 @@
                 <div class="cta-wrapper">
                     <div class="fL logo"><a href="http://www.centurylink.com" target="_blank"><img src="<?php echo $path; ?>/img/centuryLink-logo.png" alt="CenturyLink"></a></div>
                     <div class="fR tfn">
-                        <span class="cta-title">Find out when you can get 1 Gig.</span>
                         <br>
-                        <a href="#" class="bookendButton signupbtn" clicktrack="ctl|rsd|emktg|offers|gigabit|topnav|sign_up">
+                        <a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop" class="bookendButton" clicktrack="ctl|rsd|emktg|offers|gigabit|topnav|sign_up">
                             <span class="bookend leftBookend">&nbsp;</span>
-                            <span class="bookend centerBookend">Sign Up Now</span>
+                            <span class="bookend centerBookend">Check For Services In My Area</span>
                             <span class="bookend rightBookend">&nbsp;</span>
                         </a>
                     </div>

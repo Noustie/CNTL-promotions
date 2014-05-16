@@ -38,7 +38,6 @@
 	function getDataFromDB ( $db_host, $db_user, $db_pass, $db_dbname, $timestamp_file ) {
 		global $ftp_remotefile, $ftp_localfile;
 
-
 		$tsfp = fopen($timestamp_file, 'r');
 		if ( !filesize($timestamp_file) ) {
 			echo "could not read timestamp file... exiting.";
@@ -63,6 +62,19 @@
 		//Get tabble contents based on day and time
 		//$sql = "SELECT * FROM CNTL_1GIG_VEGAS_INQUIRY WHERE submitTime > '$outputtime'";
 		$sql = "SELECT * FROM GPON_INQUIRY WHERE submitTime > '$outputtime'";
+
+		
+		if ( !!$_GET['daterange'] ) {
+			$daterange = preg_replace("/[^0-9-]/", ' ', $_GET['daterange'] );
+			$daterange = trim($daterange);
+			$daterangearray = explode( " ", $daterange );
+
+			$outputtime = $daterangearray[0];
+			$extrainputtime = $daterangearray[1];
+
+			$sql = "SELECT * FROM GPON_INQUIRY WHERE submitTime >= '$outputtime' AND submitTime <= '$extrainputtime'";
+		} 
+		
 
 		if($result = mysqli_query($con, $sql)){
 			$num_fields = mysqli_num_fields($result);
@@ -105,10 +117,16 @@
 		        $ftp_remotefile = str_replace("__DATE__", $range, $ftp_remotefile );
 
 		    	$fp = fopen($ftp_localfile, 'w+');
+		    	$csvval = '';
+		    	echo "<br /><br />\n\n\n";
 		    	foreach ($dataarr as $key => $dropvalue) {
-		            fputcsv($fp, $dropvalue, ",", '"');
+		            //fputcsv($fp, $dropvalue, ",", '"');
+		    		fwrite( $fp, arrayToCsv( $dropvalue, ',','"',true ) );
+		    		$csvval .= arrayToCsv( $dropvalue, ',','"',true );
 		    	}
-				fclose($fp);
+		    	//echo $csvval;
+		    	//echo "<br /><br />\n\n\n";
+		    	fclose($fp);
 			}
 		}
 
@@ -117,6 +135,29 @@
 
 		return $storelasttime;
 	}
+
+	function arrayToCsv( array &$fields, $delimiter = ';', $enclosure = '"', $encloseAll = false, $nullToMysqlNull = false ) {
+	    $delimiter_esc = preg_quote($delimiter, '/');
+	    $enclosure_esc = preg_quote($enclosure, '/');
+
+	    $output = array();
+	    foreach ( $fields as $field ) {
+	        if ($field === null && $nullToMysqlNull) {
+	            $output[] = 'NULL';
+	            continue;
+	        }
+
+	        // Enclose fields containing $delimiter, $enclosure or whitespace
+	        if ( $encloseAll || preg_match( "/(?:${delimiter_esc}|${enclosure_esc}|\s)/", $field ) ) {
+	            $output[] = $enclosure . str_replace($enclosure, $enclosure . $enclosure, $field) . $enclosure;
+	        }
+	        else {
+	            $output[] = $field;
+	        }
+	    }
+
+	    return implode( $delimiter, $output ) . "\n";
+	}	
 
 	function uploadToFTP ( $ftp_server, $ftp_port, $ftp_username, $ftp_password, $SFTP ) {
 		global $ftp_remotefile, $ftp_localfile;
