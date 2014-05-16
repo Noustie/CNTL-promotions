@@ -1,5 +1,6 @@
 test/
 webservices/ratingsandreviews/review-inc*
+webservices/ratingsandreviews/sample-*
 .htaccess
 files/
 stats/
@@ -7,3 +8,4 @@ stats/
 Github-Auto-Deploy
 **.txt
 robots.txt
+findindexes*
