@@ -92,6 +92,7 @@ a:visited{color: #80b42c;}
 	box-sizing: border-box;
 	text-decoration: none;
 	padding: 40px 20px 0 20px;
+	display: block;
 }
 #demo,#benefits,#plans,#contact,#support{ /* VERY IMPORTANT, DO NOT DELETE THIS STYLE*/
 	margin-top: -52px;        /* Size of fixed header */
