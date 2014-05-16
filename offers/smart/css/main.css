@@ -63,7 +63,7 @@ body{
 }
 h1{margin: 0;display: inline-block;}
 a{outline: none !important;}
-/* a:visited{color: #80b42c;} */
+a:visited{color: #80b42c;}
 .fL{float: left;}
 .fR{float: right;}
 .logo{
@@ -90,7 +90,8 @@ a{outline: none !important;}
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	
+	text-decoration: none;
+	padding: 40px 20px 0 20px;
 }
 #demo,#benefits,#plans,#contact,#support{ /* VERY IMPORTANT, DO NOT DELETE THIS STYLE*/
 	margin-top: -52px;        /* Size of fixed header */
