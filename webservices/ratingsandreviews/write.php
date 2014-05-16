@@ -2,7 +2,7 @@
 error_reporting(E_ERROR | E_PARSE);
 set_time_limit( 90 );
 
-require("private/configs/ratingsandreviews-config.php");
+require("configs/ratingsandreviews-config.php");
 
 class RatingsAndReviews {
     var $prod_apikey = PROD_APIKEY; //PRODUCTION KEY

@@ -1,5 +1,5 @@
 <?php
-require("private/configs/soho-mail-config.php");
+require("configs/soho-mail-config.php");
 $emailFrom = "SMB Customer Inquiry <smbinquiry@contactcenturylink.com>";
 
 //catch and declare the variable

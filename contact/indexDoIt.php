@@ -1,5 +1,5 @@
 <?php
-require("private/configs/contact-settings.php");
+require("configs/contact-settings.php");
 
 session_start();
 

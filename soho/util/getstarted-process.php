@@ -1,6 +1,6 @@
 <?php
 
-require("private/configs/getstarted-mail-config.php");
+require("configs/getstarted-mail-config.php");
 $emailFrom = "SMB Customer Inquiry <smbinquiry@contactcenturylink.com>";
 
 

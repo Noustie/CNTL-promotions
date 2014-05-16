@@ -6,7 +6,7 @@ CURRENTLY TESTING EMAIL SETUP FOR MAILGUN
 $emailFrom = "SMB Customer Inquiry <smbinquiry@contactcenturylink.com>";
 */
 
-require("private/configs/soho-mail-config.php");
+require("configs/soho-mail-config.php");
 $emailFrom = "SMB Customer Inquiry <smbinquiry@contactcenturylink.net>";
 
 
