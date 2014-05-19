@@ -31,7 +31,7 @@
 		.btn-modal-show-options{ background-position:-10px -185px; height:26px; width:131px; }
 
 		.btn-modal-show-options:hover{ background-position:-10px -215px; }
-		#interstitial { z-index: 9001 }
+		.modals #interstitial { z-index: 9001 }
 		/*----------------------End Modal---------------*/
 
 		/*----------------------PopUp Window Styles---------------*/
