@@ -80,7 +80,7 @@ a:visited{color: #80b42c;}
  	top: 0; 
  	left: 0; 
  	right: 0;
- 	z-index: 1000000;
+ 	z-index: 8998;
  	background-color: #fff;
  	border-bottom: 1px solid #cccccc;
 }
