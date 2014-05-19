@@ -293,7 +293,11 @@ sub {bottom: -0.2em;}
 	width: auto;
 	position: absolute;
 	top: 0;
+	right: 0;
+}
+.businessSection .bizSection .smBusiness img {
 	left: 0;
+	right: auto;
 }
 
 #bizNav {
