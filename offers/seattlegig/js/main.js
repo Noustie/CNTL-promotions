@@ -9,9 +9,9 @@ if ( !! document.createElement('canvas').getContext && !! document.createElement
 
         function particleCoords(i, ele) {
             var rnd = Math.random();
-            var fxl = 900;
-            var txl = -75 //-400+(Math.random()*1500);
-            var yBend = 320;
+            var fxl = $(".row.hero").width()+175;
+            var txl = -175;
+            var yBend = 320; //150+(Math.random()*320);
 
             var angleDegL = Math.atan2(165 - yBend, fxl - txl) * 180 / Math.PI;
             randNumLeft(i, ele, txl, fxl, angleDegL, yBend);
