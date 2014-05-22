@@ -14,7 +14,7 @@ if ( !! document.createElement('canvas').getContext && !! document.createElement
             var tyl = 150+(Math.random()* 381);
 
             var angleDegL = Math.atan2(165 - tyl, fxl - txl) * 180 / Math.PI;
-            --
+
             randNumLeft(i, ele, txl, fxl, angleDegL, tyl);
         }
 
