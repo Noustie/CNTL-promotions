@@ -10,7 +10,7 @@ if ( !! document.createElement('canvas').getContext && !! document.createElement
         function particleCoords(i, ele) {
             var rnd = Math.random();
             var fxl = $(".row.hero").width()+175;
-            var txl = -100+(Math.random()* -175);
+            var txl = 100;
 
             var tyl = 150+(Math.random()* 381);
 
