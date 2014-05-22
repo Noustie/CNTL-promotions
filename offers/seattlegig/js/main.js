@@ -11,12 +11,6 @@ if ( !!document.createElement('canvas').getContext && !!document.createElement('
             var txl = 100//-400+(Math.random()*1500);
             var yBend = -100;
 
-            if (txl > 1000){
-                yBend = rnd*(155 - -75)+ -75;
-            } else if (txl < -100){
-                yBend = rnd*(155 - 1)+ 1;
-            }
-
             var angleDegL = Math.atan2(165 - yBend, fxl - txl) * 180 / Math.PI;
             randNumLeft(i, ele, txl, fxl, angleDegL, yBend);
         }
