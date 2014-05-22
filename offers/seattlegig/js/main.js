@@ -1,102 +1,30 @@
 if ( !!document.createElement('canvas').getContext && !!document.createElement('canvas').getContext('2d')) {
         //TIMELINES FOR MODERN BROWSERS
     $(function() {
-        var mainw = $("#stars").width(),
-            mainh = $("#stars").height(),
-            midX = Math.floor(mainw / 2),
-            midY = Math.floor(mainh / 2);
-
-        var stage = new Kinetic.Stage({
-            container: "stars",
-            width: mainw,
-            height: mainh
-        });
-
-        var layer = new Kinetic.Layer();
-        var topLayer = new Kinetic.Layer();
-        var group = new Kinetic.Group();
-
-        var _baseRad = 2;
-        var _num = 50;
-
-        var tweens = [];
-        var _tmo = null;
-
-        // $(window).on( {
-        // 	click: function (e) {
-        // 		rndComet();
-        // 	}
-        // });
-
-        rndComet();
-
-        function rndComet() {
-            tweenComet({
-                x: /* Math.round( Math.random() )* */ mainw,
-                y: Math.round((Math.random() * 250))
-            });
+        var particle = $(".particle");
+        function getEachParticle(){
+            particle.each(particleCoords);
         }
+        function particleCoords(i, ele){
+            var rnd = Math.random();
+            var fxl = 462;
+            var txl = -400+(Math.random()*1500);
+            var yBend = -100;
 
-        function tweenComet(startpos) {
-            var dots = group.getChildren();
-            var toX = (startpos.x > 1) ? 0 : mainw;
-            var toY = Math.round(Math.random() * 100) + 200 + startpos.y; //Math.round( (Math.random()*mainh) );
-            var _yrnd = Math.random();
-            var time = 2;
-
-            //!! window.console && console.log(startpos, toX, toY)
-
-            for (var i = 0; i < dots.length; i++) {
-                dots[i].setX(startpos.x);
-                dots[i].setY(startpos.y);
-                dots[i].setOpacity(0.3);
-                tweens[i] = TweenMax.to(dots[i], time, {
-                    setOpacity: 0,
-                    overwrite: "all",
-                    setX: toX,
-                    setY: toY,
-                    delay: i * time * 0.0005,
-                    ease: Power4.easeOut
-                });
+            if (txl > 1000){
+                yBend = rnd*(155 - -75)+ -75;
+            } else if (txl < -100){
+                yBend = rnd*(155 - 1)+ 1;
             }
-            if ( !! _tmo) {
-                clearTimeout(_tmo);
-            }
-            _tmo = setTimeout(rndComet, time * 500 + Math.floor(Math.random() * 2500));
+
+            var angleDegL = Math.atan2(165 - yBend, fxl - txl) * 180 / Math.PI;
+            randNumLeft(i, ele, txl, fxl, angleDegL, yBend);
         }
-
-        for (i = 0; i < _num; i++) {
-            var radius = _baseRad + 1 - _baseRad * (i / (_num));
-    		var circle = new Kinetic.Rect({
-    			x: 0,
-    			y: 0,
-    			width: radius,
-    			height: radius,
-    			fill: '#FFFFFF',
-    			strokeWidth: 0
-    		});
-            group.add(circle);
+        function randNumLeft( i, comet, txl, fxl, angleDegL, yBend ){
+            TweenMax.fromTo(comet, 0.6+(Math.random()*1), {x:fxl, y:165, rotation:angleDegL, opacity:0.1, scaleY:0.1}, {x:txl, y:yBend, rotation: angleDegL, opacity: 0.6, scaleY: 0.5, ease:Power4.easeOut, onComplete:particleCoords, onCompleteParams:[i,comet] });
         }
-        stage.add(layer);
-        layer.add(group);
-        stage.add(topLayer);
-        //group.setOffset(0, 0);
-        TweenLite.ticker.addEventListener("tick", go);
-
-        var lastRot = 0;
-        group.setPosition(0, 0);
-
-        function go() {
-            stage.clear();
-            group.draw();
-            topLayer.draw();
-        }
-
-        // var tl = new TimelineMax();
-        // var row = $(".row");
-
-        //tl.staggerTo(row, 1, {opacity:1}, 0.4);
-        //
+        
+        getEachParticle();
         
         $('.sec1').waypoint(function() {
             $('.one').animate({

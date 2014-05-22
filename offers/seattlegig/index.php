@@ -1,17 +1,17 @@
 <?php
-$page_keywords = 'high speed internet bundle, internet offer, high speed internet, CenturyLink internet offer, 1 Gigabit, 1 Gig Fiber, Fiber Internet fast internet, internet Seattle, fast upload speed fast download speeds';
-$page_description = "CenturyLink's revolutionary 1 Gig Broadband network is coming to Seattle. Download speeds 100x faster than average broadband. Find out more.";
-$page_title = 'CenturyLink | Seattle 1 Gig Fiber Internet | Go Faster Than Ever';
+	$page_keywords = 'high speed internet bundle, internet offer, high speed internet, CenturyLink internet offer, 1 Gigabit, 1 Gig Fiber, Fiber Internet fast internet, internet Seattle, fast upload speed fast download speeds';
+	$page_description = "CenturyLink's revolutionary 1 Gig Broadband network is coming to Seattle. Download speeds 100x faster than average broadband. Find out more.";
+	$page_title = 'CenturyLink | Seattle 1 Gig Fiber Internet | Go Faster Than Ever';
 
-$svar = array(
-	'pageName' => "ctl|rsd|emktg|mdu_seattle",
-	'channel' => "rsd",
-	'prop3evar24' => "unknown",
-	'prop24evar53' => "ctl|rsd|emktg",
-	'prop38evar48' => "static_page",
-	'prop39evar49' => "landing_page",
-	'prop52evar56' => "peter_a_mayer"
-);
+	$svar = array(
+		'pageName' => "ctl|rsd|emktg|mdu_seattle",
+		'channel' => "rsd",
+		'prop3evar24' => "unknown",
+		'prop24evar53' => "ctl|rsd|emktg",
+		'prop38evar48' => "static_page",
+		'prop39evar49' => "landing_page",
+		'prop52evar56' => "peter_a_mayer"
+	);
 ?>
 <!DOCTYPE HTML>
 <head>
@@ -103,7 +103,8 @@ $svar = array(
 		    		</h2>
 		    	</div><!--end content hero div-->
 	    	</div>
-		    <div id="stars"></div>
+	    	<div class="particle"></div>
+		    <!-- <div id="stars"></div> -->
 	    </div><!--end row div-->
 
 	    <div class="row bar-break">
