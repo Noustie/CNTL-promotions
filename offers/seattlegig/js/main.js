@@ -9,7 +9,7 @@ if ( !!document.createElement('canvas').getContext && !!document.createElement('
             var rnd = Math.random();
             var fxl = 900;
             var txl = 100//-400+(Math.random()*1500);
-            var yBend = -100;
+            var yBend = 320;
 
             var angleDegL = Math.atan2(165 - yBend, fxl - txl) * 180 / Math.PI;
             randNumLeft(i, ele, txl, fxl, angleDegL, yBend);
