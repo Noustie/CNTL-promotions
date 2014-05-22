@@ -337,9 +337,6 @@
 	    
         <script src="/assets/js/common/jquery.min.js"></script>
         <script src="js/vendor/TweenMax.js"></script>
-        <!--[if !IE 8]>--> 
-			<script src="//d3lp1msu2r81bx.cloudfront.net/kjs/js/lib/kinetic-v4.5.4.min.js"></script>
-        <!--<![endif]-->
         <script src="js/vendor/waypoints.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
