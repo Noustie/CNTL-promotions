@@ -84,39 +84,59 @@
 
 /*Begin styles for 6/1/2012 A/B */
 
-.three-pane-container {
-}
-.alt-stripe-content-positioner-left {
-	float:left;
-	padding-right:7px;
-}
-.alt-stripe-content-positioner-right {
-	float:right;
-}
-.alt-stripe-content-positioner-middle {
-	float:left;
-}
-.alt-stripe-content-box {
-	background:url('/assets/images/sprites/page-specific/bundles_sprite.png') no-repeat -12px -91px;
-	height:625px;
-	width:302px;
+#three-pane-container
+{
+	margin-top: 40px;
 }
 
-.main-offer-left-banner {
-	height:229px;
-	width:349px;
-	background:url('/assets/images/sprites/page-specific/bundles_sprite.png') no-repeat -350px -566px;
-	float:left;
+.alt-stripe-content-positioner-left,
+.alt-stripe-content-positioner-middle,
+.alt-stripe-content-positioner-right
+{
+	position: relative;
+	float: left;
+	padding-right: 6px;
 }
 
+.alt-stripe-content-positioner-right
+{
+	padding-right: 0;
+}
 
-.bundle-three-pane-main-headline-wrapper {
-	margin-left:15px;
-	/*margin-top:74px;*/
-	margin-top:5px;
-	float:left;
-	width:395px;
-	
+.alt-stripe-content-box
+{
+	background: url('/assets/images/sprites/page-specific/bundles_sprite.png') no-repeat -12px -91px;
+	height: 625px;
+	width: 302px;
+}
+
+#main-offer-left-banner
+{
+	float: left;
+	width: 370px;
+}
+
+.main-offer-left-banner
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 229px;
+	width: 349px;
+	background: url('/assets/images/sprites/page-specific/bundles_sprite.png') no-repeat -350px -566px;
+}
+
+#bundle-three-pane-main-headline-wrapper
+{
+	margin-left: 15px;
+	margin-top: 5px;
+	float: left;
+	width: 395px;
+}
+
+#bundle-three-pane-main-headline-wrapper h2
+{
+	padding-top: 10px;
 }
 
 .threepane-main-already-customer {
@@ -126,28 +146,35 @@
 	right: 20px;
 }
 
-.bundle-three-pane-main-price-wrapper .copy-header {
-	color:#999999;
-	font-family:arial;
-	font-size:12px;
-	text-align:center;
+#bundle-three-pane-main-price-wrapper
+{
+	padding-left: 320px;
+	float: left;
 }
 
-.bundle-three-pane-main-price-wrapper {
+#bundle-three-pane-main-price-wrapper .copy-header
+{
+	color: #999;
+	font-family: arial;
+	font-size: 12px;
+	text-align: center;
+}
+
+#bundle-three-pane-main-price-wrapper {
 	float:left;
 	border-right: 1px solid #E0E0E0;
 	width:185px;
 	margin-top:15px;
 }
 
-.bundle-three-pane-main-price-wrapper .threepane-main-price {
+#bundle-three-pane-main-price-wrapper .threepane-main-price {
 	color:#00853F;
 	font-family:arial;
 	font-size:70px;
 	font-weight:bold;
 	text-align:center;
 }
-.bundle-three-pane-main-price-wrapper .threepane-main-price-superscript {
+#bundle-three-pane-main-price-wrapper .threepane-main-price-superscript {
 	color:#00853F;
 	font-family:arial;
 	font-size:24px;
@@ -158,7 +185,7 @@
 	top: -30px;
 }
 
-.bundle-three-pane-main-price-wrapper .threepane-main-disclaimer {
+#bundle-three-pane-main-price-wrapper .threepane-main-disclaimer {
 	color:#999999;
 	font-family:arial;
 	font-size:10px;
@@ -170,7 +197,14 @@
 	margin-left:20px;
 }
 
-
+/*.bundles-three-pane-offer-icon{
+background:url('/assets/images/sprites/page-specific/bundles_sprite.png') no-repeat scroll -50px -726px;
+ width:225px;
+ height:100px;
+ margin-top:16px;
+ margin-left:30px;     
+}
+*/
 
 
 
@@ -195,35 +229,37 @@
 	font-size:24px;
 }
 
-.bundles-three-pane-product-primary-heading {
-	color:#333333;
-	font-family:arial;
-	font-weight:bold;
-	font-size:24px;
-	text-align:center;
-	margin-top:5px;
-
+.bundles-three-pane-product-primary-heading
+{
+	color: #333;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 22px;
+	text-align: center;
+	margin-top: 10px;
 }
 
-.bundles-three-pane-product-secondary-heading-container {
-	margin-top:5px;
-	height:60px;
+.bundles-three-pane-product-secondary-heading-container
+{
+	margin-top: 5px;
+	height: 90px;
 }
 
-.bundles-three-pane-product-secondary-heading-copy {
-	color:#333333;
-	font-family:arial;
-	font-size:12px;
-	margin-left:10px;
-	float:left;
-	text-align:center;
-	width:275px;
+.bundles-three-pane-product-secondary-heading-copy
+{
+	color: #333;
+	font-family: arial;
+	font-size: 11px;
+	text-align: center;
+	width: auto;
+	padding: 0 16px;
 }
 
-.orange-text {
-	color:#ff6600;
-	font-family:arial;
-	font-size:12px;
+.orange-text
+{
+	color: #FF6319;
+	font-family: arial;
+	font-size: inherit;
 }
 
 .icon-product-heading-lock {
@@ -233,21 +269,38 @@
 	margin-left:10px;
 }
 
-.alt-stripe-bundle-component-first {
-	height:120px;
+
+.alt-stripe-bundle-component-first,
+.alt-stripe-bundle-component-middles
+{
+	border-bottom: #DDD solid 1px;
+	width: 296px;
+	margin-left: 1px;
+	padding-bottom: 10px;
 }
 
-.alt-stripe-bundle-component-middles {
-	height:108px;
+.alt-stripe-bundle-component-middles.bundle-even
+{
+	background-color: #F5F5F5;
 }
 
-.alt-stripe-bundle-component-last {
-	height:48px;
+.alt-stripe-bundle-component-last
+{
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	height: 48px;
 }
 
-.alt-stripe-start-now-button-container {
-	margin-top:10px;
-	margin-left:96px;
+.alt-stripe-start-now-button-container
+{
+	margin-top: 10px;
+}
+
+.alt-stripe-start-now-button-container .btn-start-now
+{
+	margin: 0 auto;
+	float: none;
 }
 
 .bundles-three-pane-phone-icon {
@@ -291,33 +344,35 @@
 	font-weight:bold;
 }
 
-.alt-stripe-product-item .copy {
-	color:#333333;
-	font-family:arial;
-	padding-left:25px;
+.alt-stripe-product-item .copy
+{
+	color: #333;
+	padding-left: 25px;
 }
 
-.three-pane-copy-block-wrapper-first {
-	padding-left:3px;
-	margin-top:8px;
-	width:220px;
+.three-pane-copy-block-wrapper-middles,
+.three-pane-copy-block-wrapper-first
+{
+	padding-left: 3px;
+	width: 228px;
+	float: left;
 }
 
-.three-pane-copy-block-wrapper-middles {
-	padding-left:3px;
-	margin-top:0px;
-	width:220px;
+.three-pane-copy-block-wrapper-first
+{
+	margin-top: 8px;
 }
 
-.product-icon-container {
-	width:58px;
-	height:65px;
-	float:left;
+.product-icon-container
+{
+	width: 58px;
+	float: left;
+	clear: left;
 }
 
-.start-now-text-link {
-	text-align:center;
-	padding-top:7px;
+.start-now-text-link
+{
+	text-align: center;
 }
 
 .start-now-text-link a{
@@ -328,25 +383,26 @@
 }
 
 .bundles-disclaimer-copy-start-now {
-	color:#999999;
+	color: #999;
 	font-family:arial;
 	font-size:10px;
 	text-align:center;
 }
 
-.bundles-disclaimer-copy-embedded {
-	color:#999999;
-	font-family:arial;
-	font-size:10px;
-	text-align:left;
-	line-height:80%;
+.bundles-disclaimer-copy-embedded
+{
+	color: #999;
+	font-size: 10px;
+	text-align: left;
+	line-height: 100%;
 }
 
 
-.bundles-disclaimer-wrapper-start-now {
-	text-align:center;
-	width:280px;
-	line-height:80%;
+.bundles-disclaimer-wrapper-start-now
+{
+	text-align: center;
+	padding: 0 20px;
+	line-height: 100%;
 }
 
 

@@ -1,0 +1,130 @@
+.global-nav{
+	color:#666;
+	font-size:11px;
+	float:right;
+	width:450px;
+	text-align:right;
+	padding-bottom: 5px;
+}
+.global-nav a{
+	color:#666;
+}
+.global-nav a:hover{
+}
+
+input#tpl_search-input {
+	margin-top: 5px;
+	width:175px;
+	background:url('/assets/images/sprites/new_header.png') no-repeat -3px -358px;
+	height:18px;
+	padding-left:20px;
+	padding-top: 3px;
+	border:0;
+	float:left;
+	font-size: 12px;
+	margin-left:50px;
+}
+.search-submit{
+	margin:3px auto auto 2px;
+	float:left; 
+}
+.header-contact{
+	color:#666;
+	float:right;
+	clear:right;
+	width:245px;
+}
+.header-contact td {
+	padding:4px;
+	vertical-align:middle;
+}
+	
+
+#dynamic-800-number{color:#666;}
+.phone-icon{
+	float:left;
+	background:url('/assets/images/sprites/template.png') no-repeat -906px -487px;
+	width:16px;
+	height:28px;
+	vertical-align:bottom; 
+	margin-top: 6px;
+}
+.chat-icon{
+	float:left;
+	background:url('/assets/images/sprites/template.png') no-repeat -923px -486px;
+	width:23px;
+	height:18px;
+	clear:both;
+	margin-top: 3px;
+	margin-left: 9px;
+}
+.gheader-emailus-icon{
+	float:left;
+	background:url('/assets/images/page-components/emailicon.png') no-repeat 0 0;
+	width:21px;
+	height:18px;
+	clear:both;
+	margin-top: 6px;
+	margin-left: 14px;
+}
+
+.global-above-logo-nav{
+	color:#666;
+	font-size:12px;
+	float:left;
+	text-align:left;
+	width:350px;
+}
+.global-above-logo-nav a{
+	color:#666;
+	padding: 0 5px;
+}
+.global-above-logo-nav a:hover{
+}
+.global-above-logo-nav .current a{
+    color: #00853F;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+#lbiz{
+	float: right; 
+	background: none; 
+	height: 43px; 
+	width:110px;
+	margin-top:-14px;
+}
+
+#lbiz-drop{
+	height: 20px;
+	width: 10px; 
+	float: right; 
+	background: url("/assets/images/sprites/new_header.png") no-repeat scroll -19px -379px transparent;";
+}
+
+#lbiz:hover{
+	background: url("/assets/images/sprites/new_header.png");
+    background-position: -60px -386px;
+	width: 108px;
+	height: 43px
+}
+
+#lbiz-link{
+	display: none; 
+	padding: 9px 0px 0px 1px;
+}	
+
+/*------------------------Footer Styles----------------*/
+div.footer{
+	text-align:center;
+	margin-bottom:10px;
+	padding:10px;
+	
+} 
+.footer, .footer a{
+	color:#666;
+	font-size:11px;
+	line-height:1.6em;
+}
+/*----------------------End Footer---------------*/

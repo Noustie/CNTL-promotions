@@ -1,87 +1,46 @@
-.main-price-content {
-	text-align: left;
-}
-.disclaimer {
-	padding: 10px 0px;
-}
-.check-avail {
-	padding-left: 7px;
+a { cursor: pointer; }
+
+#tpl_subnav-bar
+{
+	margin-bottom: 0;
 }
 
+div#easeVideoModal
+{
+	display: none;
+}
 
-.secondary a.important-details-internet {
+/* jQuery UI Dialogue custom settings */
+.ui-widget-overlay
+{
+	opacity: 0.50;
+	filter: Alpha(Opacity=50);
+	background-color: #333;
+	background-image: none;
+}
+
+.ui-dialog .ui-dialog-content
+{
+	overflow: visible;
+	padding: 0;
+}
+
+.ui-draggable .ui-dialog-titlebar
+{
+	background-color: #FFF;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.secondary a.important-details-internet
+{
 	color: #00853F;
 	display: block;
-}
-.internet-bottom-links-block {
-	margin-bottom: 15px;
-}
-
-div#home-ease-header-banner
-{
-	margin-right: 20px;
-}
-
-div.page-content .main-offer
-{
-	margin-top: 0;
-}
-
-div.page-content .main-offer h2
-{
-	font-weight: bold;
-	font-size: 24px;
-	margin-bottom: 4px;
-}
-
-div.page-content .main-offer h2 span
-{
-	font-size: 24px;
-	color: #00853F;
-	font-weight: normal;
-}
-
-
-.main-offer h3
-{
-	font-weight: bold;
-	font-size: 16px;
-	color: #333;
-	padding: 0;
-	margin: 0;
-}
-
-.main-offer p
-{
-	padding: 6px 0 0 0;
-	font-size: 12px;
-	color: #333;
-}
-
-.main-offer p.ease-cta
-{
-	font-weight: bold;
-	font-size: 14px;
-	padding: 8px 0 2px 0;
-	color: #333;
-}
-
-div.main-offer div.main-get-ease
-{
-	float: left;
-	padding-right: 20px;
-	margin-top: 8px;
-	border-right: #666 solid 1px;
-}
-
-div#chat-residential-centurylink-customer-support
-{
-	padding: 20px 0 0 20px;
 }
 
 table.comparison-table
 {
-	margin-top: 20px;
+	width: 946px;
 }
 
 table.comparison-table .expanded-heading td span
@@ -104,14 +63,26 @@ table.comparison-table .expanded-heading td
 	border-bottom: #DDD solid 1px;
 }
 
+.plansnprices .comparison-table td
+{
+	border: #CCC solid 1px;
+	border-left: none;
+	border-bottom: none;
+	width: 147px;
+	padding: 20px;
+}
+
 table.comparison-table td,
 table.comparison-table td li,
 table.comparison-table td div,
 table.comparison-table td p
 {
-	vertical-align: top;
-	color: #666;
-	font-size: 12px
+	vertical-align: middle;
+	color: #333;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 150%;
+	text-align: center;
 }
 
 table.comparison-table td div
@@ -141,82 +112,545 @@ table.comparison-table td p
 	padding: 6px 0 0 0;
 }
 
-table.comparison-table td .sub-note
+tr#bestValRow td { padding: 0 21px; margin: 0; border: none; }
+						
+.comparison-table.five-col tr td.bodyHead div
+{
+	float: left;
+}
+.comparison-table.five-col tr td.bodyHead div.midText
+{
+	padding-left: 70px;
+	padding-top: 4px;
+}
+
+/* adding below changes for WCP:131014-31 */
+
+div#easeHeaderNumber
+{
+	position: absolute;
+	left: 16px;
+	top: -120px;
+	color: #FF6319;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+tr.top td
+{
+	border-color: #DDDDDD;
+	border-style: solid;
+	border-width: 1px;
+	padding: 20px;
+	font-size: 16px;
+	font-weight: bold;
+}
+#tabPlans table.comparison-table tr td.basepack
+{
+	font-size: 22px;
+	border-width: 0 1px 1px 0;
+	padding-bottom: 0;
+}
+#tabPlans table.comparison-table tr td.basepack span
 {
 	font-size: 11px;
-	font-weight: normal;
-}
-
-
-div.secondary .ease-secondary-content
-{
-	display: block;
-	float: none;
-	width: 690px;
-	margin: 40px auto 20px auto;
-}
-
-.ease-bottom-hsi
-{
-	display: block;
-	float: left;
-	width: 422px;
-}
-
-.ease-bottom-hsi h4
-{
 	font-weight: bold;
-	font-size: 16px;
-	color: #333;
-	padding-right: 16px;
-	border-right: #666 solid 1px;
 }
 
-.ease-bottom-hsi p
+#tabPlans table.comparison-table tr td.bestValueColor
 {
-	padding: 6px 16px 6px 0;
+	background-color: #F5EECC;
+	width: 154px;
+}
+.plansnprices
+{
+	margin-left: 0;
+	border-bottom: #CCC solid 1px;
 }
 
-.ease-secondary-content-right-banner
+.comparison-table .priceline td
 {
-	float: left;
+	padding: 20px 20px 20px 20px;
+}
+
+.comparison-table .priceline td span
+{
+	position: relative;
+	text-align: center;
+	font-size: 40px;
+	line-height: 120%;	
+}
+
+.comparison-table .priceline sup
+{
+	vertical-align: top;
+	font-size: 24px;
+	padding: 0;
+}
+
+.comparison-table .priceline span.priceperiodtext
+{
+	position: absolute;
+	font-size: 11px;
+	color: #999;
+	right: -30px;
+	top: 24px;
+	padding: 0;
+}
+.easeSprite
+{
+	background-image: url("/assets/images/sprites/page-specific/ease_sprite.png");
+}
+.nortenSymantec
+{
+	background-position: -600px -27px;
+	width: 117px;
+	height: 43px;
+}
+.video
+{
+	background-position: -1087px -880px;
+	width: 96px;
+	height: 10px;
+	margin-top: 15px;
+}
+
+div#tabPlans div.easeSprite.video a
+{
 	display: block;
-	width: 220px;
-	vertical-align: middle;
-	padding-left: 16px;
+	width: inherit;
+	height: inherit;
 }
 
-.btn-get-hsi-now
+.nortonAntiVirus
 {
-	background: url("/assets/images/sprites/page-specific/ease/get-hsi-now.png") no-repeat scroll 0 0 transparent;
-	display: block;
-	float: left;
-	font-size: 0;
-	margin: auto 5px;
-	height: 31px;
-	width: 213px;
-}
-
-.btn-get-hsi-now:hover
-{
-	background-position: 0 -32px;
-}
-
-.orange-text
-{
-	color: #FF6319;
-	font-weight: bold;
-	font-size: 14px;
-}
-
-.icon-checkmark
-{
-	float: left;
-	background: url('/assets/images/sprites/template.png') no-repeat -942px -498px;
-	width: 18px;
+	background-position: -1090px -967px;
+	width: 146px;
 	height: 20px;
-	vertical-align: bottom; 
+}
+.nortonInternet
+{
+	background-position: -1086px -917px;
+	width: 146px;
+	height: 20px;
+}
+.norton360
+{
+	background-position: -1090px -1005px;
+	width: 146px;
+	height: 20px;
+}
+.checkMark
+{
+	background-position: -1102px -39px;
+	width: 34px;
+	height: 25px;
+	margin: 0 auto;
+}
+.identityGuard
+{
+	background-position: -967px -35px;
+	width: 116px;
+	height: 43px;
+}
+.pcService
+{
+	background-position: -1245px -45px;
+	width: 116px;
+	height: 43px;
+}
+.warrantiesGuarantees
+{
+	background-position: -172px -100px;
+	width: 116px;
+	height: 48px;
+	margin-bottom: -6px;
+}
+.pcProtection
+{
+	background-position: -65px -100px;
+	width: 116px;
+	height: 43px;
 }
 
-.page-content {overflow:visible;}
-#ease-offer-sprite {position:absolute;top:-12px;right:10px;margin-right:0;float:none;}
+div#easeContentTop
+{
+	position: absolute;
+	top: 176px;
+	left: 50%;
+	width: 1400px;
+	height: 620px;
+	margin-left: -697px;
+	background-position: 0 -178px;
+}
+
+.page-content
+{
+	position: relative;
+	padding: 0px 0px;
+	margin-top: 254px;
+	overflow: visible;
+}
+
+.easeHeader
+{
+	position: absolute;
+	left: 0px;
+	top: -67px;
+}
+.easeHeader ul
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	text-indent: 0;
+}
+.easeHeader li
+{
+	float: left;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	padding: 0;
+	margin: 0 0 0 10px;
+	color: #008000;
+	font-weight: bold;
+	cursor: pointer;
+	text-indent: 0;
+	padding-top: 14px;
+}
+.easeHeader li.whiteOverView
+{
+	background-position: -210px -24px;
+	width: 160px;
+	height: 24px;
+}
+.easeHeader li.grayOverView
+{
+	color: #333;
+	background-position: -402px -24px;
+	width: 140px;
+	height: 23px;
+	border-bottom: #CCC solid 1px;
+}
+
+.easeHeader li.whitePlanPrice
+{
+	background-position: -210px -24px;
+	width: 160px;
+	height: 24px;
+}
+.easeHeader li.grayPlanPrice
+{
+	color: #333;
+	background-position: -402px -24px;
+	width: 140px;
+	height: 23px;
+}
+
+.secondary
+{
+	border: 1px solid #CACCCD;
+	margin-top: 50px;
+	padding: 30px 10px;
+}
+
+.bestValue
+{
+	background-position: -749px -38px;
+	width: 194px;
+	height: 28px;
+}
+.bestValueTxt
+{
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.arrowExpand
+{
+	background-position: -1166px -27px;
+	height: 67px;
+	width: 61px;
+	margin-left: 870px;
+	margin-top: -12px;
+	position: absolute;
+	cursor: pointer;
+}
+.arrowCollapse
+{
+	background-position: -1166px -102px;
+	height: 67px;
+	width: 61px;
+	margin-left: 870px;
+	margin-top: -12px;
+	position: absolute;
+	cursor: pointer;
+}
+.comparison-table tr td.bodyHead
+{
+	padding: 11px 20px 12px 15px;
+}
+.comparison-table tr td.bodyHead div
+{
+	text-align: left;
+}
+
+.line
+{
+	margin-top: 30px;
+}
+.page-content-bottom
+{
+	background-position: -217px -828px;
+	height: 25px;
+	margin-top: 0px;
+	position: absolute;
+	width: 960px;
+}
+
+.viewPrice
+{
+	float: left;
+	width: 280px;
+	padding: 25px 44px 0 44px;
+	text-align: center;
+	border-right: 1px solid #CCC;
+	height: 140px;
+}
+.priceHeader
+{
+	font-size: 24px;
+	font-weight: bold;
+}
+.getInternetNow
+{
+	background-position: -40px -860px;
+	width: 125px;
+	height: 35px;
+	display: block;
+	margin: 10px auto 0 auto;
+}
+.getInternetNow:hover
+{
+	background-position: -40px -895px;
+}
+.viewPlans
+{
+	background-position: -215px -981px;
+	width: 216px;
+	height: 35px;
+	display: block;
+	margin: 10px auto 0 auto;
+}
+.viewPlans:hover
+{
+	background-position: -215px -1020px;
+}
+.easeCallImage
+{
+	background-position: -131px -1112px;
+	height: 166px;
+	position: absolute;
+	width: 253px;
+	margin-left: 300px;
+	margin-top: -137px;
+}
+.easeCall
+{
+	padding: 0;
+	height: 140px;
+}
+.easeCallLeft
+{
+	width: 70%;
+	padding-top: 35px;
+	text-align: center;
+	height: 100px;
+}
+.easeCallHeader
+{
+	font-size: 22px;
+	font-weight: bold;
+}
+
+#easeCallNum
+{
+	margin-top: 6px;
+	color: #FF6319;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.importantdetails,
+.importantdetails a
+{
+	color: #00853F !important;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+
+.importantdetails a:visited
+{
+	color: #00853F;
+}
+
+#easeDetailsPlans
+{
+	display: none;
+}
+
+.overview-top
+{
+	float: left;
+	width: 960px;
+	margin: 30px 0 40px 0;
+	height: auto;
+	clear: both;
+}
+
+.bordershadow
+{
+	background-position: -282px -1296px;
+	width: 960px;
+	height: 88px;
+	display: inline-block;
+}
+
+.overview-middle
+{
+	float: left;
+	margin: 0;
+	width: 960px;
+	position: relative;
+	clear: both;
+}
+
+.overview-secure
+{
+	float: left;
+	width: 960px;
+	position: relative;
+	clear: both;
+	margin: 0;
+}
+
+.rightImage1
+{
+	background-position: -683px -865px;
+	float: left;
+	height: 136px;
+	display: inline-block;
+	width: 141px;
+	border-right: 1px solid #CCC;
+}
+
+.rightImage2
+{
+	background-position: -853px -865px;
+	float: left;
+	height: 136px;
+	width: 196px;
+	display: inline-block;
+	margin: -20px 15px 0 20px;
+}
+
+.leftContentRow
+{
+	text-align: left;
+	width: 50%;
+	padding: 25px 50px 0 46px;
+	vertical-align: top;
+}
+
+.rightImageRow
+{
+	width: 50%;
+	vertical-align: middle;
+}
+
+.rightContentRow
+{
+	text-align: left;
+	width: 50%;
+	height: 100%;
+	padding: 20px 105px 0 50px;
+	vertical-align: top;
+}
+
+.leftImageRow
+{
+	width: 50%;
+	padding-left: 46px;
+}
+
+.leftImage1
+{
+	background-position: -430px -1040px;
+	display: inline-block;
+	height: 256px;
+	width: 100%;
+}
+
+.rightImage3
+{
+	background-position: -877px -1064px;
+	display: inline-block;
+	height: 220px;
+	width: 100%;
+}
+
+.subContent
+{
+	font-size: 14px;
+	color: #555;
+	line-height: 18px;
+	margin-top: 16px;
+}
+
+.ease-bottom h4
+{
+	font-weight: normal;
+	font-size: 22px;
+	border-right: none;
+	float: left;
+	margin-left: 4px;
+	padding-top: 4px;
+}
+
+.ease-bottom
+{
+	height: inherit;
+	padding: 0 44px;
+}
+
+.ease-bottom span
+{
+	float: right;
+}
+
+.downloadEase
+{
+	background-position: -218px -861px;
+	width: 212px;
+	height: 37px;
+	margin: 0 auto;
+}
+.downloadEase:hover
+{
+	background-position: -218px -899px;
+}
+
+.viewPrice p
+{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 14px;
+	color: #777;
+	line-height: 18px;
+}
+

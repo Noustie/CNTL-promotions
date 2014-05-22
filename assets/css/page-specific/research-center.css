@@ -104,3 +104,20 @@ p.tab-heading{
 	position:static; 
 	width:auto; 
 }
+.check-available {
+color:#00853F !important;
+font-family:arial;
+font-weight:bold;
+text-decoration:none;
+display:block;
+padding-right:7px;
+background: url('/assets/images/page-components/research-center/carrot.png') right center no-repeat;
+margin-bottom:19px;
+height:30px;
+line-height:30px;
+width:233px;
+font-size:15px;
+}
+.check-available:hover {
+text-decoration:underline;
+}

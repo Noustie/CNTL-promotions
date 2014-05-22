@@ -1,0 +1,94 @@
+.gpon-page-content-top {
+	height: 170px;
+	width: 960px;
+	z-index: -1;
+}
+
+.gpon-page-content-bottom {
+	height: 131px;
+	margin-top: -125px;
+	width: 960px;
+	z-index: -1;
+}
+
+.page-content-gpon {
+	background: url("/assets/images/sprites/gop_sprite.png") no-repeat scroll -44px -112px rgba(1, 0, 0, 0);
+	background: url("/assets/images/sprites/gop_sprite.png") no-repeat scroll -44px -112px\9;
+	height: 535px;
+	margin-left: -113px;
+	position: absolute;
+	width: 1400px;
+}
+
+.body-copy-wrapper {
+	width : 500px;
+	margin-top : 145px;
+	margin-left : 500px;
+}
+
+h1 {
+	color : #00853F;
+	font-size : 25px;
+	font-weight : bold;
+	padding-left : 28px;
+	padding-bottom : 1px;
+}
+
+/*.footer {
+	margin-top: 570px;
+}*/
+
+#tpl_footer {
+	margin-top: 540px;
+}
+
+#tpl_footer_bus_units{
+	margin-left : -245px;
+}
+
+.boldtext {
+	font-weight: bold;
+}
+
+.footer-bus-units {
+	padding-left: 300px;
+}
+
+p.copy-wrapper-top {
+	font-size:13px;
+	line-height : 15px;
+}
+
+p.copy-wrapper {
+	margin-top : 16px;
+	font-size:13px;
+	line-height : 15.5px;
+}
+
+.chat-contact-wrapper {
+	margin-top : 35px;
+}
+
+.lp-button-wrapper {
+	padding-left : 70px;
+}
+
+.contact-call-wrapper {
+	width : 245px;
+	padding-left : 25px;
+}
+
+.footer {
+/*	margin-top : -5px;*/
+}
+
+td.lpStaticButtonAddTextTD
+{
+	display: none;
+}
+
+tr.lpPoweredBy div.lpPoweredByDiv
+{
+	display: none;
+}
+

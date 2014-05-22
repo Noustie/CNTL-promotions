@@ -1,13 +1,23 @@
-.main-banner{
-	float:left;
-	width:665px;
-	height:226px;
-} 
-
-.product-content
+div#headerNotice
 {
-	clear: both;
-	padding-top: 10px;
+	display: block;
+	padding-top: 5px;
+	text-align: right;
+	clear: right;
+}
+
+div#tpl_header div#headerNotice a,
+div#tpl_header div#headerNotice a:visited,
+div#tpl_header div#headerNotice a:link
+{
+	color: #00853F;
+	font-size: 11px;
+	font-weight: normal;
+	text-decoration: none;
+}
+div#tpl_header div#headerNotice a:hover
+{
+	text-decoration: underline;
 }
 
 .product-content-block{
@@ -21,7 +31,7 @@
 	margin-right:2px;
 }
 .transitional-banner{
-	background:none; 
+	background:none;
 	padding:0; 
 	height:247px;  
 	width:238px; 
@@ -70,49 +80,6 @@ body strong
 {
 	margin: 0;
 }
-
-.product-icon-laptop
-{
-	float: right;
-	background:url('/assets/images/sprites/template.png') no-repeat -791px -798px;
-	width:73px;
-	height:50px;
-}
-
-.product-icon-phone
-{
-	float: right;
-	background:url('/assets/images/sprites/template.png') no-repeat -821px -872px;
-	width:35px;
-	height:63px;
-}
-
-.product-icon-bundle
-{
-	float: right;
-	background:url('/assets/images/sprites/template.png') no-repeat -626px -790px;
-	width:108px;
-	height:61px;
-}
-
-
-/* begin WCP 120924-8 | QC2388 - HSI Cybersale $50 Removal */
-.product-icon-directtv {
-    background: url("/assets/images/sprites/template.png") no-repeat scroll -678px -880px transparent;
-    float: right;
-    width: 56px;
-    height: 46px;
-}
-
-
-.product-icon-prismtv {
-    background: url("/assets/images/sprites/template.png") no-repeat scroll -867px -1019px transparent;
-    float: right;
-    width: 56px;
-    height: 46px;
-}
-
-/* end WCP 120924-8 | QC2388 - HSI Cybersale $50 Removal  */ 
 
 a#tpl_res-dd-get-internet{color:#00853F;}
 .secondary-content{
@@ -244,13 +211,8 @@ a#tpl_res-dd-get-internet{color:#00853F;}
 	float:left; 
 	width:120px;
 	margin-top:-30px
-	/*
-	 * IE 7 likes *, IE 6 and less likes _.  All other browsers ignore. */
-	 *margin-top:45px;
-	 _margin-top:45px;
 }
 
-.quick-links #hmAccount .welcome-object-links a{color:#00853F;}
 #hp-quicklink-email-go-to-hp{
 	margin:15px auto 15px 25px;
 }
@@ -260,16 +222,7 @@ a#tpl_res-dd-get-internet{color:#00853F;}
 }
 #hmAccount form a {
 	margin:10px 0px 0px 0px;
-
-
-
-
-
-
 }
-
-/*---------------------------Rotating Banners------------------------*/
-#banners{height:225px;width:664px;}
 
 #quicklink-customer-support-content-container-div .ql-support-links-left-column {
 	float:left;
@@ -302,7 +255,6 @@ a#tpl_res-dd-get-internet{color:#00853F;}
 
 .ql-cs-anchor-div a{
 	line-height:14px;
-	background:white; 
 	width:63px;
 	color:#00853F;
 	font-size:12px;
@@ -386,68 +338,8 @@ a#tpl_res-dd-get-internet{color:#00853F;}
 	font-size : 8px;
 }
 
-
 /* end added for Sept Release | CR170 | QC2312-13 */
 
-
-
-
-/*
- * WCP 130513-4 TnT Challenger
- */
-
-
-.main-container.newChallenge a#tpl_global-nav-quick-bill-pay
-{
-	position: absolute;
-	width: 125px;
-	height: 43px;
-	right: 260px;
-	bottom: -3px;
-	margin: 0;
-	background-image: url('/assets/images/sprites/page-specific/homepage_sprite.png');
-	background-position: -36px -776px;
-}
-
-.main-container.newChallenge form#tpl_search-form
-{
-	width: auto;
-	margin-right: 30px;
-}
-
-.main-container.newChallenge form#tpl_search-form a.btn-arrow
-{
-	position: absolute;
-	top: 8px;
-	right: 12px;
-	width: 17px;
-	height: 17px;
-	margin: 0;
-	background-image: url('/assets/images/sprites/page-specific/homepage_sprite.png');
-	background-position: -813px -517px;
-}
-
-.main-container.newChallenge #tpl_search-input
-{
-	width: 173px !important;
-	margin-right: 6px;
-	background-image: url('/assets/images/sprites/page-specific/homepage_sprite.png');
-	background-position: -616px -515px;
-}
-
-
-div.main-container.newChallenge a#tpl_menu-lvl1-help-moving
-{
-	display: none;
-}
-a#subnavSpecialOffers
-{
-	display: none;
-}
-div.main-container.newChallenge a#subnavSpecialOffers
-{
-	display: inline;
-}
 
 br.clearLeft
 {
@@ -455,16 +347,18 @@ br.clearLeft
 }
 
 
-
-div#product-content-challenge
+div#product-content
 {
 	position: relative;
 	width: 959px;
 	padding-top: 150px;
+	font-size: 14px;
+	color: #616365;
+	font-weight: normal;
 }
 
-div#product-content-challenge a,
-div#product-content-challenge a:link
+div#product-content a,
+div#product-content a:link
 {
 	color: #00853F;
 	cursor: pointer;
@@ -569,6 +463,7 @@ div#navFloat #btnNavFloatPhone .bucketIcon
 	height: 70px;
 	background-position: -819px -690px;
 }
+
 div#navFloat #btnNavFloatOffers .bucketIcon
 {
 	width: 134px;
@@ -576,8 +471,15 @@ div#navFloat #btnNavFloatOffers .bucketIcon
 	background-position: -520px -648px;
 }
 
+div#navFloat #btnNavFloatHomeSecurity .bucketIcon
+{
+	width: 134px;
+	height: 70px;
+	background-position: -168px -1980px;
+}
 
-form#wo_myaccount-login-challenge
+
+form#wo_myaccount-login
 {
 	padding-bottom: 9px;
 }
@@ -590,7 +492,7 @@ div#mac-user-wrap
 	height: 36px;
 	padding: 1px;
 }
-input#hpChallenge-wo-username
+input#hp-wo-username
 {
 	width: 196px;
 	height: 36px;
@@ -606,7 +508,7 @@ input#hpChallenge-wo-username
 	line-height: 36px;
 	vertical-align: middle;
 }
-input#hpChallenge-wo-username:focus
+input#hp-wo-username:focus
 {
 	background: none;
 }
@@ -623,7 +525,7 @@ div#mac-pass-wrap
 	background-position: -404px -584px;
 }
 
-input#hpChallenge-wo-password
+input#hp-wo-password
 {
 	font-size: 16px;
 	color: #333;
@@ -639,12 +541,12 @@ input#hpChallenge-wo-password
 	background-image: url('/assets/images/sprites/page-specific/homepage_sprite.png');
 	background-position: -18px -1252px;
 }
-input#hpChallenge-wo-password:focus
+input#hp-wo-password:focus
 {
 	background: none;
 }
 
-input#hpChallenge-wo-submit
+input#hp-wo-submit
 {
 	position: absolute;
 	right: 0;
@@ -659,14 +561,11 @@ input#hpChallenge-wo-submit
 	text-decoration: none;
 	cursor: pointer;
 }
-input#hpChallenge-wo-submit:hover
+input#hp-wo-submit:hover
 {
 	background-image: url('/assets/images/sprites/page-specific/homepage_sprite.png');
 	background-position: -406px -629px;
 }
-
-
-
 
 
 div#banners a.btnBannerPrevNext
@@ -676,55 +575,60 @@ div#banners a.btnBannerPrevNext
 	top: 120px;
 	width: 52px;
 	height: 52px;
-	opacity: 0.3;
-	filter: alpha(opacity=30);
 	background-repeat: no-repeat;
 	zoom: 1;
+	cursor: pointer;
 }
 div#banners a.btnBannerPrevNext:hover
 {
-	cursor: pointer;
-	opacity: 1;
-	filter: none;
+	text-decoration: none;
 }
 
 a#btnBannerPrev
 {
 	left: 18px;
 	background-image: url('/assets/images/sprites/page-specific/homepage_sprite.png');
-	background-position: -28px -1867px;
+	background-position: -34px -1927px;
+}
+a#btnBannerPrev:hover
+{
+	background-position: -34px -1867px;
 }
 
 a#btnBannerNext
 {
 	right: 18px;
 	background-image: url('/assets/images/sprites/page-specific/homepage_sprite.png');
-	background-position: -107px -1869px;
+	background-position: -102px -1927px;
+}
+a#btnBannerNext:hover
+{
+	background-position: -102px -1867px;
 }
 
 
-div.main-container.newChallenge div.main-banner
+div.main-container div.main-banner
 {
 	position: relative;
 	height: 242px;
 }
 
-div.main-container.newChallenge div.page-content
+div.main-container div.page-content
 {
 	padding: 0;
 	margin: 0;
 	border: none;
 }
 
-div.main-container.newChallenge div.main-banner,
-div.main-container.newChallenge div#banners
+div.main-container div.main-banner,
+div.main-container div#banners
 {
 	width: 725px;
 	height: 313px;
 	overflow: visible;
 }
 
-div.main-container.newChallenge div#banners .banner
+div.main-container div#banners .banner
 {
 	position: absolute;
 	z-index: 8;
@@ -733,7 +637,7 @@ div.main-container.newChallenge div#banners .banner
 	left: 0;
 }
 
-div.main-container.newChallenge div.banner-buttons
+div.main-container div.banner-buttons
 {
 	position: absolute;
 	left: 18px;
@@ -743,7 +647,7 @@ div.main-container.newChallenge div.banner-buttons
 	z-index: 20;
 }
 
-div.main-container.newChallenge div.banner-buttons a.banner-button
+div.main-container div.banner-buttons a.banner-button
 {
 	width: 16px;
 	height: 16px;
@@ -755,50 +659,87 @@ div.main-container.newChallenge div.banner-buttons a.banner-button
 	background-repeat: no-repeat;
 }
 
-div.main-container.newChallenge div.banner-buttons a.banner-button.current
+div.main-container div.banner-buttons a.banner-button.current
 {
 	background-position: -181px -1886px;
 }
 
-
-
-
-
-div.main-container div#banners div.banner div#countbox
+/* WCP 131202-2 */
+#countbox
 {
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 310px;
+	height: 65px;
 	position: absolute;
-	top: 80px;
-	left: 30px;
+	top: 229px;
+	left: 385px;
 }
 
-div.main-container.newChallenge div#banners div.banner div#countbox
+#countbox .countNum
 {
-	top: 160px;
-	left: 8px;
+    width: 64px;
+    margin-right: 12px;
 }
 
-div.main-container.newChallenge div.product-content,
-div.main-container.newChallenge div.secondary-content,
-div.main-container.newChallenge div#quick-link_tabs,
-div.main-container.newChallenge div.page-content-top,
-div.main-container.newChallenge div.page-content-bottom,
-div.main-container.newChallenge div#banners div.banner div,
-div#product-content-challenge,
-div.bannerChallenge,
-div#banners div.banner
+#countbox .num
 {
-	display: none;
+    color: #fff;
 }
 
-div.main-container.newChallenge div#product-content-challenge,
-div.main-container.newChallenge div#banners div.banner div.bannerChallenge,
-div.main-container.newChallenge div#mac-container,
-div.main-container div#banners div.banner div#countbox div
+#countbox .numLeft
 {
-	display: block;
+    background-color: #000;
+    padding-top: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 4px;
+    padding-bottom: 3px;
+    font-size: 29px;
+    border: 1px solid #000;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+	display: inline-block;
 }
 
+#countbox .numRight
+{
+    background-color: #000;
+    padding-top: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 3px;
+    border: 1px solid #000;
+    font-size: 29px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+}
 
+#countbox .countText
+{
+    font-size: 11px;
+    color: #fff;
+    text-align: right;
+    margin-top: 5px;
+    padding-right: 5px;
+}
+
+#countbox .countNum
+{
+    float: left;
+}
+
+#countbox .countNum .face
+{
+	background: url('/assets/images/page-components/flip_gradient.png');
+	background-repeat: no-repeat;
+	width: 27px;
+	position: absolute;
+	height: 38px;
+	background-position: -6px -8px;
+}
+/* End WCP 131202-2 */
 
 div.placard
 {
@@ -833,6 +774,12 @@ div.placard div.placardBottom
 	background-image: url('/assets/images/sprites/page-specific/homepage_sprite.png');
 	background-position: -14px -854px;
 }
+
+div.placard div.placardBottom-last
+{
+	display : none;
+}
+
 
 div.placard p
 {
@@ -981,14 +928,7 @@ div.placard p.subNote
 }
 
 
-#product-content-challenge
-{
-	font-size: 14px;
-	color: #616365;
-	font-weight: normal;
-}
-
-#product-content-challenge h2
+#product-content h2
 {
 	padding: 0;
 	margin: 0;
@@ -996,24 +936,24 @@ div.placard p.subNote
 	color: #5B8F22;
 	font-weight: normal;
 }
-#product-content-challenge h2 a
+#product-content h2 a
 {
 	font-size: inherit;
 	font-weight: inherit;
 }
 
-#product-content-challenge h3
+#product-content h3
 {
 	padding-top: 16px;
 	font-size: 16px;
 	color: #616365;
 	font-weight: bold;
 }
-div#product-content-challenge h3 a
+div#product-content h3 a
 {
 	color: #00853F;
 }
-#product-content-challenge h4
+#product-content h4
 {
 	font-size: 16px;
 	color: #666;
@@ -1104,7 +1044,6 @@ div#placardTV.prismTV div.panelLeft div.prismContent
 }
 
 
-
 div#placardTV div.panelRight
 {
 	margin-left: 40px;
@@ -1141,15 +1080,27 @@ div#placardOffers div.panelRight
 	background-position: -565px -1363px;
 }
 
-input#hpChallenge-wo-password.occupied,
-input#hpChallenge-wo-username.occupied
+div#placardHomeSecurity div.panelLeft
+{
+	width: 352px;
+	padding: 60px 0 0 40px;
+}
+div#placardHomeSecurity div.panelRight
+{
+	width: 515px;
+	height: 368px;
+	background-image: url('/assets/images/sprites/page-specific/homepage_sprite.png');
+	background-position: -322px -1910px;
+}
+
+input#hp-wo-password.occupied,
+input#hp-wo-username.occupied
 {
 	background: none;
 }
 
 div#mac-container
 {
-	display: none;
 	position: absolute;
 	right: 0;
 	top:0;
@@ -1234,7 +1185,7 @@ div#macSlideOutContainer
 	display: block;
 }
 
-div#macSlideOutContainer #hpChallenge-wo-remember-me
+div#macSlideOutContainer #hp-wo-remember-me
 {
 	margin: 3px 4px 0 0;
 	line-height: 10px;
@@ -1287,7 +1238,7 @@ div#macQuickLinks
 	left: 0;
 	z-index: 14;
 	padding-top: 0;
-	padding-left: 16px;
+	margin-left: 16px;
 	background-color: #FFF;
 }
 
@@ -1450,7 +1401,8 @@ p#copyZipRequired
 	list-style: none;
 	color: #666;	
 }
-#placardInternet .spd-graph div, .spd-graph span {
+#placardInternet .spd-graph div,
+#placardInternet .spd-graph span {
 	display: block;
 	position: relative;
 	color: #666;		
@@ -1467,6 +1419,7 @@ p#copyZipRequired
 	font-size: 10px;
 	letter-spacing: 1px;
 	width: 35%;
+	padding: 0;
 	height: 100%;
 	float: left;
 	text-align: center;
@@ -1672,6 +1625,17 @@ p#copyZipRequired
 	margin-left: 16px;
 }
 
+#home-speed-check {
+	position: absolute;
+	right: 5px;
+	top: -10px;
+	color: #fff;
+	text-transform: capitalize;
+	display: block;
+	padding: 7px 9px;
+	text-shadow: none;
+}
 
-
-
+#home-speed-check:hover {
+	color: #e0f0df;
+}

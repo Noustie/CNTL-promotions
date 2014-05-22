@@ -518,7 +518,13 @@ color:#00a9da;
 }
 #dtv-english-compare-table td.expanded ul.collapsed-features{
 	display:none;
-}	
+}
+#dtv-english-compare-table .nfl-pullThru{
+	display:block;
+}
+#dtv-english-compare-table td.expanded .nfl-pullThru{
+	display:none;
+}
 
 
 #dtv-english-compare-table .includes {color:#00a9da; font-size:14px; font-weight:bold; }
@@ -538,4 +544,4 @@ color:#00a9da;
 /* end added for intake 336 */
 
 #WholeHomeContent .btn-green-arrow {margin-bottom:20px;}
-
+.expanded .dollarsign { font-size:21px; }

@@ -1,0 +1,174 @@
+/*modals 
+#interstitial {height: 100%; width: 100%; position: fixed; left: 0px; top: 0px; z-index: 3999; background-color:#FFF; display:none;}
+
+.ctam-active-block{background:url("/assets/images/sprites/modal_sprite.png") no-repeat scroll -377px -205px transparent}
+*/
+.modal .modal-top{
+	background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -7px -2px;
+	height:17px!important;
+	height:37px;
+	width:386px!important;
+	width:406px;
+	padding:10px;
+	text-align:right;
+	font-weight:bold;
+}
+.modal .modal-bottom{
+	background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -7px -80px;
+	width:406px;
+	height:52px;
+}
+.modal .modal-content{
+	width:366px!important;
+	width:406px;
+	padding:20px;
+	background:transparent url('/assets/images/templates/modal_bg.png') repeat-y 0px 0px;
+	overflow:visible;
+}
+
+.modal form{
+	margin:10px;
+	background:white;
+	padding:10px;
+	
+}
+.modal-close{display:inline; padding-left:70px;}
+
+.modal-block-title{
+	background: url('/assets/images/sprites/modal_sprite.png') no-repeat -378px -188px;
+	padding-left:20px;
+	margin-left:10px;
+}
+
+
+
+
+
+
+/*----------------------Modal Window Styles---------------*/
+.modal{
+	width:406px;
+	min-height:100px;
+	padding:0;
+}
+.modal .modal-top{
+	background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -7px -2px;
+	height:17px!important;
+	height:37px;
+	width:386px!important;
+	width:406px;
+	padding:10px;
+	text-align:center;
+	font-weight:bold;
+}
+.modal .modal-bottom{
+	background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -7px -80px;
+	width:406px;
+	height:52px;
+}
+.modal .modal-content{
+	width:366px!important;
+	width:406px;
+	padding:20px;
+	background:transparent url('/assets/images/templates/modal_bg.png') repeat-y 0px 0px;
+	overflow:visible;
+}
+.modal a.modal-close-btn{
+	background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -378px -168px;
+	height:16px;
+	width:16px;
+	display:block;
+	float:right;
+	vertical-align:bottom;
+	float:right;
+}
+.modal .modal-close{
+	float:right;
+	width:100px;
+	line-height:15px;
+	*margin-top:-15px;
+	text-align:right;
+}
+.zam_close, .ctam_close, .mam_close{float:left;}
+#zam_close-button,#ctam_close-button,#mam_close-button{float:left; margin-left:5px;}
+.modal .modal-close a{
+	font-size:11px;
+	color:green;
+}
+.modal .modal-block-top{
+	margin-top:10px;
+	background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -9px -136px;
+	height:10px;
+	width:356px;
+}
+.modal .modal-block-bottom{
+	background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -9px -168px;
+	height:12px;
+	width:356px;
+}
+.modal .modal-block{
+	border-right:1px solid #CCC;
+	border-left:1px solid #CCC;
+	background-color:#E7E7E7;
+	min-height:10px;
+	width:354px;
+}
+.modal-block-title{
+	background: url('/assets/images/sprites/modal_sprite.png') no-repeat -378px -188px;
+	padding-left:20px;
+	margin-left:10px;
+}
+.modal-block-title{
+	background: url('/assets/images/sprites/modal_sprite.png') no-repeat -378px -188px;
+	padding-left:20px;
+	margin-left:10px;
+}
+.modal-block-expanded, .modal-block-expanded_lvl2{
+	display:none;
+}
+.modal-block-expanded_lvl2{
+	margin:10px;
+}
+.modal form{
+	margin:10px;
+	background:white;
+	padding:10px;
+	
+}
+.modal form input{
+
+}
+.modal form label{
+	display:block;
+	font-size:11px;
+}
+
+.address-block{
+	float:left;
+	margin:auto 10px 7px auto;
+}
+.remember-me{
+	margin-left:20px;
+}
+.link-protect-info{
+	background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -378px -138px;
+	padding-left:20px;
+	margin-left:20px;
+	display:block;
+	line-height:20px;
+}
+.modal-button{
+	font-size:0;
+	display:block;
+	background:url('/assets/images/sprites/modal_sprite.png') no-repeat;
+}
+.btn-modal-show-options{
+	background-position:-10px -185px;
+	height:26px;
+	width:131px;
+}
+
+.btn-modal-show-options:hover{
+	background-position:-10px -215px;
+}
+/*----------------------End Modal---------------*/

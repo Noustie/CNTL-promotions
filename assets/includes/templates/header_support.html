@@ -31,6 +31,7 @@ var ttGeoLoc = { state: null, city: null, dma: null, zipcode: null };
 	mboxCreate('digitalDialogsMain','path='+location.pathname);
 </script>
 <!-- End TnT-->
+<a name="top"></a>
 <div class="header" id="tpl_header">
 	<div class="links_left">
 		<ul class="links quick">
@@ -38,7 +39,12 @@ var ttGeoLoc = { state: null, city: null, dma: null, zipcode: null };
 			<li class="<!--#echo var="smBClass"-->"><a href="<!--#echo var="ctl_url"-->/small-business/" clicktrack="ctl|corp|small_business">Small Business</a></li>
 			<li class="<!--#echo var="lgBClass"-->"><a href="<!--#echo var="ctl_url"-->/business/" clicktrack="ctl|corp|large_business">Large Business</a></li>
 		</ul>
-		<a href="<!--#echo var="ctl_url"-->" clicktrack="ctl|corp|global_nav|logo" class="logo" id="tpl_logo"><img src="/assets/images/sprites/new_header.png" alt="Centurylink Home" /></a>
+		<!--Shumway 702 Mod....added #if expression. If needed, retain line 43 and delete line 42, 44, 45 and 46 to go back to original code-->
+		<!--#if expr="$mobile!='true'"-->
+			<a href="<!--#echo var="ctl_url"-->" clicktrack="ctl|corp|global_nav|logo" class="logo" id="tpl_logo"><img src="/assets/images/page-components/mobile_logo.png" alt="Centurylink Home" /></a>
+		<!--#else-->
+			<a href="<!--#echo var="qmobile_url"-->" clicktrack="ctl|corp|global_nav|logo" class="logo" id="tpl_logo"><img src="/assets/images/page-components/mobile_logo.png" alt="Centurylink Home" /></a>
+		<!--#endif-->
 	</div>
 <!--#config errmsg="[Error in Header File global nav conditional]" -->
 <!--#if expr="$isHomepage='yes'"-->
@@ -54,16 +60,16 @@ var ttGeoLoc = { state: null, city: null, dma: null, zipcode: null };
 <!--#else-->
 	<div class="links_right">
 		<ul class="links quick">
+			<li><a href="http://m.centurylink.com/" clicktrack="ctl|corp|landing_page|global_nav|link|mobile">Mobile Site</a></li>
 			<li><a href="<!--#echo var="ctl_url"-->/Pages/AboutUs/" clicktrack="ctl|corp|landing_page|global_nav|link|about">About Us</a></li>
-			<li><a href="http://storelocator.centurylinkapps.com/index.cfm" class="" id="tpl_global-nav-store_locator-link" clicktrack="ctl|corp|hp|global_nav|link|store_locator">Store Locator</a></li>
-			<li><a href="<!--#if expr="$DOMAIN='LQ'"--><!--#echo var="qwest_url"-->/residential/products/newsletter.html<!--#elif expr="$DOMAIN='LC'"--><!--#echo var="ctl_url"-->/shop/SpecialOffers/connect5.jsp<!--#endif-->" clicktrack="ctl|corp|landing_page|global_nav|link|email_offers">Email Offers</a></li>
-			<li><a href="http://espanol.centurylink.com/" onClick="return switchLanguage('es');function switchLanguage(lang){MP.SrcUrl=unescape('mp_js_orgin_url');MP.UrlLang='mp_js_current_lang';MP.init();MP.switchLanguage(MP.UrlLang==lang?'en':lang);return false;}" clicktrack="ctl|corp|landing_page|global_nav|link|espanol" id="tpl_global-nav-espanol-link">Espa&ntilde;ol</a></li>
+			<li><a href="http://storelocator.centurylinkapps.com/index.cfm" clicktrack="ctl|corp|hp|global_nav|link|store_locator">Store Locator</a></li>
+			<li><a href="<!--#if expr="$DOMAIN='LQ'"--><!--#echo var="qwest_url"-->/residential/products/newsletter.html<!--#elif expr="$DOMAIN='LC'"--><!--#echo var="ctl_url"-->/shop/SpecialOffers/connect5.jsp<!--#else-->#ZAM" class="modal-trigger" id="tpl_global-nav-email-offers-link<!--#endif-->" clicktrack="ctl|corp|landing_page|global_nav|link|email_offers">Email Offers</a></li>
+			<li><a href="https://eam.centurylink.com/eam/entryPoint.do"  clicktrack="ctl|corp|landing_page|global_nav|link|signin">Sign In</a></li>
 		</ul>
 		<ul class="links contact">
-			<li class="icon_call"><a href="<!--#if expr="$DOMAIN='LQ'"--><!--#echo var="ctl_url"-->/assets/popups/callus_qcenturylink.html<!--#elif expr="$DOMAIN='LC'"--><!--#echo var="ctl_url"-->/shop/SpecialOffers/connect5.jsp<!--#endif-->" clicktrack="ctl|corp|landing_page|global_nav|link|callus" target="_blank">Call Us</a></li>
+			<li class="icon_call"><a href="<!--#if expr="$DOMAIN='LQ'"--><!--#echo var="ctl_url"-->/assets/popups/callus_qcenturylink.html<!--#elif expr="$DOMAIN='LC'"--><!--#echo var="ctl_url"-->/shop/SpecialOffers/connect5.jsp<!--#else-->#ZAM" class="modal-trigger" id="tpl_global-contact-info-call<!--#endif-->" clicktrack="ctl|corp|landing_page|global_nav|link|callus" target="_blank">Call Us</a></li>
 			<li class="icon_chat"><a href="<!--#echo var="ctl_url"-->/help/chat/" clicktrack="ctl|corp|landing_page|global_nav|link|chat">Chat</a></li>
-			<li class="icon_email"><a href="
-<!--#if expr="$DOMAIN='LQ'"--><!--#echo var="qwest_url"-->/residential/customerService/help.html<!--#elif expr="$DOMAIN='LC'"--><!--#echo var="ctl_url"-->/Pages/Help/ContactUs/emailResidential.jsp <!--#endif-->" clicktrack="ctl|corp|landing_page|global_nav|link|emailus">Email Us</a></li>
+			<li class="icon_email"><a href="<!--#if expr="$DOMAIN='LQ'"--><!--#echo var="qwest_url"-->/residential/customerService/help.html<!--#elif expr="$DOMAIN='LC'"--><!--#echo var="ctl_url"-->/Pages/Help/ContactUs/emailResidential.jsp<!--#else-->#ZAM" class="modal-trigger" id="tpl_global-contact-info-email-us<!--#endif-->" clicktrack="ctl|corp|landing_page|global_nav|link|emailus">Email Us</a></li>
 		</ul>
 	</div>
 <!--#endif-->

@@ -1,11 +1,11 @@
-<!--begin variable setting file-->
+<!--begin variable setting file-->  
 <!--set environment and url variables-->
 <script type="text/javascript">
 	//echo server type url
 	//Server type: <!--#echo var="SERVER_TYPE"-->
 </script>
 <!--else is not catching in some cases, so setting vars first as alternative-->
-<!--#set var="ctl_url" value="http://www.centurylink.com"-->
+<!--#set var="ctl_url" value="//www.centurylink.com"-->
 <!--#set var="ctlsecure_url" value="https://www.centurylink.com"-->
 <!--#set var="ctlmyacct_url" value="https://eam.centurylink.com"-->
 <!--#set var="q_url" value="http://qwest.centurylink.com"-->
@@ -13,32 +13,34 @@
 <!--#set var="qshop_url" value="https://shop.centurylink.com"-->
 <!--#set var="qmobile_url" value="https://m.centurylink.com"-->
 <!--#set var="search" value="http://c.search.centurylink.com"-->
-<!--#set var="eq_url" value="http://embarq.centurylink.com"-->
-<!--#set var="eqsecure_url" value="https://embarq.centurylink.com"-->
-<!--#set var="ctleam_url" value="https://embarq.centurylink.com"-->
+<!--#set var="eq_url" value="http://eam.centurylink.com"-->
+<!--#set var="eqsecure_url" value="https://eam.centurylink.com"-->
+<!--#set var="ctleam_url" value="https://eam.centurylink.com"-->
 <!--#set var="qwest_url" value="http://qwest.centurylink.com"-->
 <!--#set var="ctl_selfservice_url" value="http://selfservice.centurylink.com"-->
 <!--#set var="qportal_url" value="https://sbcontrolcenter.centurylink.com"-->
 <!--#set var="faq_url" value="http://faq.centurylink.com"-->
+<!--#set var="goeam_url" value="http://geoamsrv.centurylink.com/geoam/addressmatch/addresses" -->
 
 <!--#if expr="$SERVER_TYPE='DEV'"-->
-	<!--#set var="ctl_url" value="http://webdmzdev2.centurylink.com"-->
+	<!--#set var="ctl_url" value="//webdmzdev2.centurylink.com"-->
 	<!--#set var="ctlsecure_url" value="https://webdmzdev2.centurylink.com"-->
 	<!--#set var="ctlmyacct_url" value="https://eamqa2.centurylink.com"-->
 	<!--#set var="q_url" value="https://tcat-int4.centurylink.com"-->
 	<!--#set var="qcookie_url" value="https://tcat-int4.centurylink.com"-->
-	<!--#set var="qshop_url" value="https://tcat-int4.centurylink.com"-->
+	<!--#set var="qshop_url" value="https://tcat-int1.centurylink.com"-->
 	<!--#set var="qmobile_url" value="https://tcat-int4.centurylink.com/mobile"-->
 	<!--#set var="search" value="http://search-dev.tservicesq.com"-->
-	<!--#set var="eq_url" value="http://embarq.centurylink.com"-->
-	<!--#set var="eqsecure_url" value="https://embarq.centurylink.com"-->
-	<!--#set var="ctleam_url" value="https://eqtest2.centurylink.com"-->
+	<!--#set var="eq_url" value="http://eamqa2.centurylink.com"-->
+	<!--#set var="eqsecure_url" value="https://eamqa2.centurylink.com"-->
+	<!--#set var="ctleam_url" value="https://eamqa2.centurylink.com"-->
 	<!--#set var="qwest_url" value="http://www-test.tservicesq.com"-->
 	<!--#set var="ctl_selfservice_url" value="http://selfserviceqa.centurylink.com"-->
 	<!--#set var="qportal_url" value="https://sbcontrolcenter-itv1.centurylink.com"-->
 	<!--#set var="faq_url" value="http://faq.centurylink.com"-->
+	<!--#set var="goeam_url" value="http://geoamsrv-itv1.centurylink.com/geoam/addressmatch/addresses" -->
 <!--#elif expr="$SERVER_TYPE='PROD'"-->
-	<!--#set var="ctl_url" value="http://www.centurylink.com"-->
+	<!--#set var="ctl_url" value="//www.centurylink.com"-->
 	<!--#set var="ctlsecure_url" value="https://www.centurylink.com"-->
 	<!--#set var="ctlmyacct_url" value="https://eam.centurylink.com"-->
 	<!--#set var="q_url" value="http://qwest.centurylink.com"-->
@@ -46,15 +48,16 @@
 	<!--#set var="qshop_url" value="https://shop.centurylink.com"-->
 	<!--#set var="qmobile_url" value="https://m.centurylink.com"-->
 	<!--#set var="search" value="http://c.search.centurylink.com"-->
-	<!--#set var="eq_url" value="http://embarq.centurylink.com"-->
-	<!--#set var="eqsecure_url" value="https://embarq.centurylink.com"-->
-	<!--#set var="ctleam_url" value="https://embarq.centurylink.com"-->
+	<!--#set var="eq_url" value="http://eam.centurylink.com"-->
+	<!--#set var="eqsecure_url" value="https://eam.centurylink.com"-->
+	<!--#set var="ctleam_url" value="https://eam.centurylink.com"-->
 	<!--#set var="qwest_url" value="http://qwest.centurylink.com"-->
 	<!--#set var="ctl_selfservice_url" value="http://selfservice.centurylink.com"-->
 	<!--#set var="qportal_url" value="https://sbcontrolcenter.centurylink.com"-->
 	<!--#set var="faq_url" value="http://faq.centurylink.com"-->
+	<!--#set var="goeam_url" value="http://geoamsrv.centurylink.com/geoam/addressmatch/addresses" -->
 <!--#elif expr="$SERVER_TYPE=E2E"-->
-	<!--#set var="ctl_url" value="http://webdmzpt1.centurylink.com"-->
+	<!--#set var="ctl_url" value="//webdmzpt1.centurylink.com"-->
 	<!--#set var="ctlsecure_url" value="https://webdmzpt1.centurylink.com"-->
 	<!--#set var="ctlmyacct_url" value="https://eampt1.centurylink.com"-->
 	<!--#set var="q_url" value="http://tcat-e2e.centurylink.com"-->
@@ -69,8 +72,9 @@
 	<!--#set var="ctl_selfservice_url" value="http://selfserviceqa.centurylink.com/ticketingpt1"-->
 	<!--#set var="qportal_url" value="https://sbcontrolcenter-e2e.centurylink.com"-->
 	<!--#set var="faq_url" value="http://faq.centurylink.com"-->
+	<!--#set var="goeam_url" value="http://geoamsrv-itv1.centurylink.com/geoam/addressmatch/addresses" -->
 <!--#elif expr="$SERVER_TYPE='PREPROD'"-->
-	<!--#set var="ctl_url" value="http://webdmzqa1.centurylink.com"-->
+	<!--#set var="ctl_url" value="//webdmzqa1.centurylink.com"-->
 	<!--#set var="ctlsecure_url" value="https://webdmzqa1.centurylink.com"-->
 	<!--#set var="ctlmyacct_url" value="https://eamqa3.centurylink.com"-->
 	<!--#set var="q_url" value="http://tcat-itv2.centurylink.com"-->
@@ -84,8 +88,9 @@
 	<!--#set var="qwest_url" value="http://tcat-itv2.centurylink.com"-->
 	<!--#set var="ctl_selfservice_url" value="http://selfserviceqa.centurylink.com/ticketingqa3"-->
 	<!--#set var="faq_url" value="http://faq.centurylink.com"-->
+	<!--#set var="goeam_url" value="http://geoamsrv-itv1.centurylink.com/geoam/addressmatch/addresses" -->
 <!--#elif expr="$SERVER_TYPE='TEST'"-->
-	<!--#set var="ctl_url" value="http://webdmzqa3.centurylink.com"-->
+	<!--#set var="ctl_url" value="//webdmzqa3.centurylink.com"-->
 	<!--#set var="ctlsecure_url" value="https://webdmzqa3.centurylink.com"-->
 	<!--#set var="ctlmyacct_url" value="https://eamqa2.centurylink.com"-->
 	<!--#set var="q_url" value="http://tcat-itv1.centurylink.com"-->
@@ -93,15 +98,16 @@
 	<!--#set var="qshop_url" value="https://tcat-itv1.centurylink.com"-->
 	<!--#set var="qmobile_url" value="https://tcat-itv1.centurylink.com/mobile"-->
 	<!--#set var="search" value="http://search-dev.tservicesq.com"-->
-	<!--#set var="eq_url" value="http://eqtest2.centurylink.com"-->
-	<!--#set var="eqsecure_url" value="https://eqtest2.centurylink.com"-->
-	<!--#set var="ctleam_url" value="https://eqtest2.centurylink.com"-->
-	<!--#set var="qwest_url" value="http://tcat-itv1.centurylink.com "-->
+	<!--#set var="eq_url" value="http://eamqa2.centurylink.com"-->
+	<!--#set var="eqsecure_url" value="https://eamqa2.centurylink.com"-->
+	<!--#set var="ctleam_url" value="https://eamqa2.centurylink.com"-->
+	<!--#set var="qwest_url" value="http://tcat-itv1.centurylink.com"-->
 	<!--#set var="ctl_selfservice_url" value="http://selfserviceqa.centurylink.com/ticketingqa2"-->
 	<!--#set var="qportal_url" value="https://sbcontrolcenter-itv1.centurylink.com"-->
 	<!--#set var="faq_url" value="http://faq.centurylink.com"-->
+	<!--#set var="goeam_url" value="http://geoamsrv-itv1.centurylink.com/geoam/addressmatch/addresses" -->
 <!--#elif expr="$SERVER_TYPE='TEST2'"-->
-	<!--#set var="ctl_url" value="http://webdmzqa2.centurylink.com"-->
+	<!--#set var="ctl_url" value="//webdmzqa2.centurylink.com"-->
 	<!--#set var="ctlsecure_url" value="https://webdmzqa2.centurylink.com"-->
 	<!--#set var="ctlmyacct_url" value="https://eamqa1.centurylink.com"-->
 	<!--#set var="q_url" value="http://tcat-preprod.centurylink.com"-->
@@ -116,22 +122,41 @@
 	<!--#set var="ctl_selfservice_url" value="http://selfserviceqa.centurylink.com/ticketingqa2"-->
 	<!--#set var="qportal_url" value="https://sbcontrolcenter-itv2.centurylink.com"-->
 	<!--#set var="faq_url" value="http://faq.centurylink.com"-->
+	<!--#set var="goeam_url" value="http://geoamsrv-itv1.centurylink.com/geoam/addressmatch/addresses" -->
+<!--#elif expr="$SERVER_TYPE='TEST3'"-->
+	<!--#set var="ctl_url" value="//webdmzqa2.centurylink.com"-->
+	<!--#set var="ctlsecure_url" value="https://webdmzqa2.centurylink.com"-->
+	<!--#set var="ctlmyacct_url" value="https://eamqa1.centurylink.com"-->
+	<!--#set var="q_url" value="http://tcat-preprod.centurylink.com"-->
+	<!--#set var="qcookie_url" value="https://tcat-preprod.centurylink.com"-->
+	<!--#set var="qshop_url" value="https://tcat-preprod.centurylink.com"-->
+	<!--#set var="qmobile_url" value="https://tcat-preprod.centurylink.com/mobile"-->
+	<!--#set var="search" value="http://search-dev.tservicesq.com"-->
+	<!--#set var="eq_url" value="http://eqtest4.centurylink.com"-->
+	<!--#set var="eqsecure_url" value="https://eqtest4.centurylink.com"-->
+	<!--#set var="ctleam_url" value="https://eqtest4.centurylink.com"-->
+	<!--#set var="qwest_url" value="http://tcat-preprod.centurylink.com"-->
+	<!--#set var="ctl_selfservice_url" value="http://selfserviceqa.centurylink.com/ticketingqa2"-->
+	<!--#set var="qportal_url" value="https://sbcontrolcenter-itv2.centurylink.com"-->
+	<!--#set var="faq_url" value="http://faq.centurylink.com"-->
+	<!--#set var="goeam_url" value="http://geoamsrv-itv1.centurylink.com/geoam/addressmatch/addresses" -->
 <!--#else-->
-	<!--#set var="ctl_url" value="http://webdmzdev2.centurylink.com"-->
+	<!--#set var="ctl_url" value="//webdmzdev2.centurylink.com"-->
 	<!--#set var="ctlsecure_url" value="https://webdmzdev2.centurylink.com"-->
 	<!--#set var="ctlmyacct_url" value="https://eamqa2.centurylink.com"-->
 	<!--#set var="q_url" value="http://tcat-int1.centurylink.com"-->
 	<!--#set var="qshop_url" value="https://tcat-int1.centurylink.com"-->
 	<!--#set var="qmobile_url" value="https://m.centurylink.com"-->
 	<!--#set var="search" value="http://search-dev.tservicesq.com"-->
-	<!--#set var="eq_url" value="http://embarq.centurylink.com"-->
-	<!--#set var="eqsecure_url" value="https://embarq.centurylink.com"-->
-	<!--#set var="ctleam_url" value="https://eqtest2.centurylink.com"-->
+	<!--#set var="eq_url" value="http://eamqa2.centurylink.com"-->
+	<!--#set var="eqsecure_url" value="https://eamqa2.centurylink.com"-->
+	<!--#set var="ctleam_url" value="https://eamqa2.centurylink.com"-->
 	<!--#set var="qcookie_url" value="https://tcat-int1.centurylink.com"-->
 	<!--#set var="qwest_url" value="http://www-test.tservicesq.com"-->
 	<!--#set var="ctl_selfservice_url" value="http://selfservice.centurylink.com"-->
 	<!--#set var="qportal_url" value="https://sbcontrolcenter-itv1.centurylink.com"-->
 	<!--#set var="faq_url" value="http://faq.centurylink.com"-->
+	<!--#set var="goeam_url" value="http://geoamsrv-itv1.centurylink.com/geoam/addressmatch/addresses" -->
 <!--#endif-->
 
 <script type="text/javascript">

@@ -17,7 +17,16 @@
 #ctam_ec-phonenum{display:none;}
 #ctam_nc-go {margin-left:0px;}
 #ctam_ec-go {margin-bottom:0px;}
-#ctam_modal .modal-block-expanded {margin-left:30px;}
+
+#ctam_modal .modal-block-expanded
+{
+	margin-left: 30px;
+}
+#ctam_modal .modal-block-expanded p
+{
+	padding-right: 16px;
+}
+
 #mam_ec-zip-on-file {display:none;}
 #mam_qwest-ma-container, #mam_ctl-ma-container {display:none;}
 #ctam_ec-phone-or-account {margin-left:14px;}
@@ -73,3 +82,47 @@
 
 #ctam_new-customer-expanded p {margin-right:20px;}
 #ctam_nc-unit-number {width:30px;}
+
+
+.input-hidden
+{
+	border: none;
+	width: 0;
+	height: 0;
+	line-height: 0;
+	padding: 0;
+	margin: 0;
+}
+
+#CTAM_Dynamic_Msg
+{
+	margin-left:20px;
+	margin-top:2px;
+	display:none; 
+	position:absolute;
+}
+
+#CTAM_Dynamic_Msg p
+{
+	color:#333333;	
+	font-family:Arial;
+	font-size:8px;
+	line-height:10px;
+	width:90%;
+}
+
+div.modal-content a.modal-button-go
+{
+	line-height: 28px;
+}
+
+a.tam_close
+{
+	float: left;
+}
+
+a#tam_close-button
+{
+	float: left;
+	margin-left: 5px;
+}

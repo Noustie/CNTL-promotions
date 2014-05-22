@@ -17,17 +17,40 @@
     sProducts = ""; //s.products
     orderNum = ""; //s.purchaseID
     totalOrderPrice = ""; //Doubleclick
-
-		require(['order!jquery','order!centurycore','order!cc-shortcuts'],function(){
-		/* This is the setup for the new override variables. This must load before the s_code and config files, and as close to the bottom of the page as humanly possible. */
-		qa.initialize();
-
-			var mconfig = $('<script>');
-			mconfig.attr('type','text/javascript');
-			mconfig.attr('src','/assets/js/third-party/metrics/metrixConfig.js');
-			$('head').append(mconfig);
-	});
-
 </script>
-
+<!--#if expr="$require2='true'"-->
+<script type="text/javascript">
+	require(['centurycore','cc-shortcuts'],function(){
+		//This is the setup for the new override variables. 
+		//This must load before the s_code and config files, and as close to the bottom of the page as humanly possible.
+		$.centurycore.analytics.initialize();
+	
+		var mconfig = $('<script>');
+		mconfig.attr('type','text/javascript');
+		mconfig.attr('src','/assets/js/third-party/metrics/metrixConfig.js');
+		var tealeaf = $('<script>');
+		tealeaf.attr('type','text/javascript');
+		tealeaf.attr('src','/assets/tealeaf/TeaLeaf.js');
+		$('head').append(tealeaf);
+		$('head').append(mconfig);
+	});
+</script>
+<!--#else-->
+<script type="text/javascript">
+	require(['order!jquery','order!centurycore','order!cc-shortcuts'],function(){
+		//This is the setup for the new override variables. 
+		//This must load before the s_code and config files, and as close to the bottom of the page as humanly possible.
+		$.centurycore.analytics.initialize();
+	
+		var mconfig = $('<script>');
+		mconfig.attr('type','text/javascript');
+		mconfig.attr('src','/assets/js/third-party/metrics/metrixConfig.js');
+		var tealeaf = $('<script>');
+		tealeaf.attr('type','text/javascript');
+		tealeaf.attr('src','/assets/tealeaf/TeaLeaf.js');
+		$('head').append(tealeaf);
+		$('head').append(mconfig);
+	});
+</script>
+<!--#endif-->
 <!-- ***************  METRIX CONFIGURATION CODE END  ******************** -->

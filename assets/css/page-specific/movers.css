@@ -1,0 +1,209 @@
+h1 {
+	color:#00853f;
+}
+
+h1.choose{
+display:block;
+text-align:center;
+margin:20px 75px 0 25px;
+padding:0;
+font-size:27px;
+}
+
+h1.choose, h2 {
+	color: #ffa02f;	
+}
+
+h2{
+	font-size:12pt; 
+	font-weight:bold; 
+	/* color:#CB6616; */
+	margin-bottom:10px;
+}
+
+p {
+	margin-bottom:10px;
+	font-size:12px;
+	line-height:15px;
+}
+
+.main_content_area{
+	/* background:url('/assets/images/page-components/moving/movers_page_BG.jpg') 0 -70px no-repeat; */
+	margin-left:-10px;
+	position:relative;
+}
+.movebox{
+	float:left; 
+	width:330px; 
+	height:245px; 
+	margin:10px 20px 10px 10px;
+	padding:15px;
+	font-size:8pt;
+	background:transparent;
+
+}
+
+#tpl_subnav-moving-dd a {
+    color: #00853F;
+    font-weight: bold;
+}
+
+#or {
+display:inline-block;
+padding:10px;
+width:21px;
+height:20px;
+line-height:20px;
+font-size:15px;
+background:green;
+-webkit-border-radius: 25px;
+-moz-border-radius: 25px;
+border-radius: 25px;
+color:white;
+position:absolute;
+text-align:center;
+margin:0;
+top:130px;
+left:367px;
+}
+
+.movebox, .newbox {
+	border:1px solid #CACCCD;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.newbox{
+	float:left; 
+	width:320px; 
+	height:245px; 
+	margin:10px 15px 25px 10px;
+	padding:15px;
+	font-size:8pt;
+	background:transparent;
+
+}
+*html .newbox{
+	margin-left:15px;
+}
+*html .movebox{
+	margin-left:10px;
+}
+a.move_cta_btn{
+	display:block;
+	float:right;
+	clear:both;
+	margin-top:15px;
+	height:30px;
+	width:95px;
+}
+a.new_cta_btn{
+	display:block;
+	float:right;
+	margin-top:15px;
+	clear:both;
+	height:30px;
+	width:95px;
+}
+a.move_cta_btn, a.new_cta_btn{background:url('/assets/images/page-components/moving/start_here_button_sprite.png') no-repeat;}
+a.move_cta_btn:hover, a.new_cta_btn:hover {background-position:0px -30px;}
+*+html a.new_cta_btn{margin-top:30px;}
+*+html a.move_cta_btn{margin-top:10px;}
+*html a.new_cta_btn{margin-top:30px;}
+*html a.move_cta_btn{margin-top:10px;}
+.mdisplay_none{display:none;}
+.bottombox{
+	width:720px; 
+	height:155px; 
+	clear:both;  
+	padding-bottom:160px;
+	padding-left:15px;
+	margin:0px 10px 10px 15px;
+	position:relative;
+	padding-top:15px;
+}
+*+html .bottombox{margin:30px auto 0 20px; padding-top:0; padding-bottom:150px; margin-bottom:0;}
+*html .bottombox{margin:30px auto 0 20px; padding-top:0;}
+.bottombox .content{
+	float:left;
+	width:214px!important;
+	width:234px; 
+	height:140px; 
+	margin:0;
+	padding:10px;
+	font-size:8pt;
+	border-right:1px solid #ddd;
+}
+.bottombox .last{border-right:0;}
+.bottombox .content p{
+	font-size:8pt;
+	margin:0;
+}
+.bottombox .content .price_content{
+	font-size:12px;
+	text-align:center;
+	height:75px;
+	font-size:11px;
+	margin-top:5px;
+	margin-bottom:0;
+	line-height:1.2em;
+}
+.bottombox .content .price{ 
+	color:green;
+	font-size:32px;
+	font-weight:bold;
+	line-height:1.5em;
+	
+}
+.bottombox .content .price sup{
+	font-size:smaller;
+    vertical-align: baseline;
+    position: relative;
+	bottom:0.3em;
+}
+*+html .bottombox .content .price sup{bottom: 0.6em;}
+
+
+.bottombox .content a.details_link{
+	display:block;
+	margin-top:40px;
+	clear:both;
+}
+.bottombox .content a, .bottombox .content a:link, .bottombox .content a:visited{
+	color:#2380B9;
+	font-weight:bold;
+	text-decoration:none;
+}
+.bottombox .content ul{color:#2380B9; padding-left:10px; margin-left:10px; list-style-type:disc; font-size:12px;}
+*+html .bottombox .content ul{margin-left:15px; padding-left:0; margin-top:5px;}
+*html .bottombox .content ul{margin-left:15px; padding-left:0; margin-top:5px;}
+.content li p{font-style:italic;}
+.bottombox .content a:hover{
+	text-decoration:underline;
+}
+.bottombox .content h3{
+	margin:0;
+	font-size:14px;
+	color:#CB6616; 
+	text-align:center;
+}
+
+#disclaimer {
+	display:block;
+	width:500px;
+	margin:20px auto;
+	line-height:15px;
+	font-size:11px;
+}
+
+a.signup_link{
+	text-indent:18px;
+	background:url('/assets/images/page-components/moving/arrow.gif') no-repeat;
+	margin:10px 0 10px 0;
+	display:block;
+	vertical-align;top;
+	line-height:18px;
+}
+.bea-portal-layout-grid{margin-bottom:0;}
+#ebiz-footer{margin-top:0;}

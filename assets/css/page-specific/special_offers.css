@@ -1,178 +1,139 @@
-.offer-heading{
-	display:block;
-	font-weight:bold;
-	font-size:11pt;
-	margin-bottom:5px;
-	height : 20px;
-	padding-bottom:6px;
-}
-.offer-heading p{
-	display:block;
-	font-weight:bold;
-	font-size:11pt;
-	margin-bottom:5px;
-	color:#094D9C
-}
-.offer-text{
-	display:block;
-	color:#000;
-}
-
-a.offer-seedetails{
-	display:block;
-	float:right;
-	width:auto;
-	color:#00853F;
-}
-/*
- * NEW styles for spec offers page, 3/31/2011
- */
-#internet .content{background:url('/assets/images/page-components/icon_hsi_0.jpg') no-repeat;}
-#phone .content{background:url('/assets/images/page-components/icon_phone_0.jpg') no-repeat;}
-#wireless .content{background:url('/assets/images/page-components/icon_wireless_0.jpg') no-repeat;}
-#bundles .content{background:url('/assets/images/page-components/icon_bundle_0.jpg') no-repeat;}
-#tv .content
-{
-	position: relative;
-	background: url('/assets/images/page-components/tv/genie_TVpromo.jpg') no-repeat;
-	background-position: 20px 14px;
-}
-
-.offer-box-top {
-	height:50px; 
-	background:url('/assets/images/page-components/300x50_bx_top.gif') no-repeat; 
-	margin-top:5px;
-	width:300px;
-	z-index:1;
-}
-.offer-box-bottom{
-	height:14px; 
-	background:url('/assets/images/page-components/300x14_bx_bottom.gif') no-repeat; 
-	margin-bottom:5px;
-	width:300px;
-}
-.offer-box {
-  background: url('/assets/images/page-components/300x10_bx_center.gif') repeat-y; 
-  padding:10px;
-  width:280px!important;
-  width:300px;
-  z-index:1;
-  overflow:visible;
-}
-.offer-box-content{
-	margin:-40px 10px -10px 10px;
-	z-index:100;
-	overflow:visible;
-	background:transparent;
-}
-.offer-box-content img{margin:10px;}
-.offers-right {
-	position:relative;
-	left:570px;
-	top:10px;
-	margin-bottom:10px;
-	width:300px;
-}
-.offer-heading {font-size:14px; color:#00853F;}
-
-
-.offer-callout-container {clear:both;margin:0px auto; width:auto;}
-.offer-callout {
-	width:260px!important;
-	width:300px;
-	height:187px;
-	background:url('/assets/images/page-components/300x187_bottom_box.gif') no-repeat; 
-	float:left; 
-	padding:10px 20px;
-	margin-right:6px;
-	position:relative;
-}
-.offer-callout p{
-	min-height:70px;
-	margin-top:10px;
-}
-.offer-callout a.learn-more{float:left; width:100px; display:block;}
-.offer-callout .icon{
-	float:right;
-	height:60px;
-}
-.offer-callout-title {font-size:16px;font-weight:bold; color:#009D00;}
-
-
-/*
- * NEW styles for spec offers bundles tab, 5/18/2012
- */
-.offer-heading-2-line {
-	height: 25px;
-}
-.offer-sub-heading-copy {
-	font-size:10pt;
-	font-weight: bold;
-	color: #00853F;
-}
-.offer-content-section h4{
-	color: #00853F;
-}
-.offer-content-section .learn-more-wrapper{
-	height:20px;
-}
-.offer-box-content .last-sub-element {
-	margin-top : 18px;
-}
-.orange-text {
-	color:#ff6600;
-	font-family:arial;
-	font-size:12px;
-}
-
-.small-pane-special-disclaimer { margin-bottom:1em; font-size:10px; color:#7a7a7a;}
-
-/* Begin added 2.18.2013 for QC2815 eMKTG  FEB Cybersale $50  */
-#hsi-1 div.offer-box-content {
-}
-
-.internet-offer-pane-sub-element1 {
+	/* start */
+	#topbar{ margin-bottom:0px !important;}
 	
-	background:url('/assets/images/page-components/5yrPL-pad-lock_60.jpg') 0 0 no-repeat; 
-	margin-left : -12px;
-	margin-bottom:12px;
-}
-.internet-offer-pane-sub-element2 {
-	background: url('/assets/images/page-components/icon_hsi_1.jpg') no-repeat;
-	width: 160px; 
-	height: 110px;
-	padding-right: 100px;
-	background-position: 165px 8px;
-}
+	div#content{ position:relative; top:-20px; width:959px; background: url('/assets/images/page-components/special_offers/mainSprite.png') no-repeat; background-position: 0 -451px; overflow:hidden;}
+	div#content b{font-weight:bold;}
+	div#content img{border:none; outline:none; border-style:none;}
+	
+	div#content div.headerRow{ width:375px; height:90px; padding:54px 0px 50px 15px; overflow:hidden;}
+	div#content div.headerRow h2{font-family:Arial; font-weight:bold; color:#333; font-size:32pt; margin:0px; }
+	div#content div.headerRow p{margin:4px 0 0 0; padding:0px; }
+	div#content div.formbutton{text-align:center; overflow:hidden; margin:10px auto 0 auto;}
+	
+	div#content div.promoRow{ overflow:hidden; margin-bottom:30px;}
+	div#content div.promoRow.last{ overflow:hidden; margin-bottom:10px;}
+	div#content div.tallPromo{position:relative; float:left; width:300px; padding-top:13px; margin-right:27px;}
+	div#content div.tallPromo div.pad{width:285px; text-align:center; border:1px solid #ccc; background-color:#f2f2f2; padding-top:18px; margin-left:13px; }
+	div#content div.widePromo{position:relative; float:left; width:468px; padding-top:13px; margin-right:20px;}
+	div#content div.widePromo div.pad{width:413px; height:292px; text-align:center; overflow:hidden; border:1px solid #ccc; background-color:#f2f2f2; padding: 31px 15px 0 25px; margin-left:13px;}
 
-.internet-sub-pane1-right-block {
-	width : 230px;
-	margin-left : 50px;
-}
+	div#content h3.bundleTitle{ position:absolute; top:0px; width:273px; height:35px; padding:8px 0 0 20px; color:#fff; font-size:13px; font-weight:bold; background: url('/assets/images/page-components/special_offers/mainSprite.png') 0 0 scroll no-repeat; background-position: -229px 0; overflow:hidden;}
+	div#content div.bundlePricing{border-bottom:1px solid #ccc;}
+	div#content div.bundleServices{height:365px !important; border-top:1px solid #ccc; overflow:hidden;}
 
-.internet-offer-pane-sub-heading {
-	font-weight : bold;
-	font-size : 13px;
-}
+	div#content .bugPad{padding-right:90px !important;}
+	div#content .bugIcon{background: url('/assets/images/page-components/special_offers/bug2.png') 175px 15px no-repeat scroll; }	
+	div#content .centerBkgImg{margin:0px auto !important;}
+	
+	/* pricing  */
+	div#content div.price{ margin:0; text-align:center; overflow:hidden; padding-top:29px;} /*block container*/
+	div#content div.termsBlue{display:block; height:25px; margin-top:12px; color:#0098db; text-align:center; font-size:12px; font-weight:bold; }
+	
+	div#content div.tallPromo h3.bundleDescription{text-align:center; font-size:21px; font-weight:bold; color:#666;}
+	div#content div.tallPromo h3.bundleDescription span{ font-size:21px; font-weight:bold !important; }
+	div#content div.tallPromo h3.bundleDescription.left{text-align:left;}
+	div#content div.tallPromo .fullDescription {display:table; text-align:center; vertical-align:middle; margin:15px 20px 15px 20px; font-size:12px;  width: 86%;}
+	div#content div.tallPromo .fullDescription p{display:table-cell; vertical-align:middle; height:46px; margin:0; padding:0;}
+	div#content div.tallPromo div.productRow{ display:block; margin:2.2em 0; height:80px; }
+	div#content div.tallPromo div.productRow div.prodImg { display:inline-block; width:150px; height:80px; margin:0 auto 0 15px; float:left; overflow:hidden;}
+	div#content div.tallPromo div.productRow div.prodDesc{ display:inline-block; width:100px; height:80px; text-align:left; overflow:hidden;}
+	
+	div#content div.widePromo h3.bundleDescription{margin:0px; text-align:left; font-size:21px; font-weight:bold; color:#333;}
+	div#content div.widePromo h3.bundleDescription sup{font-size:10px; top:-7px;}
+	div#content div.widePromo .fullDescription {text-align:left; margin:0 0 30px 0; width:80%;}
+	div#content div.widePromo div.productRow {display:block; overflow:hidden; }
+	div#content div.widePromo div.productRow div.img{width:228px; height:150px; float:left; text-align:left; position:relative; overflow:hidden;}
+	div#content div.widePromo div.productRow div.offerDetails{ height:116px; overflow:hidden; margin:0;}
+	
+		/* Area A, B, C */
+		div.bigText{color:#000; position:relative; height:57px; margin:0px auto; font-size:70px; line-height:60px; letter-spacing:-2px; font-weight:normal;}
+		div.bigText div{position:absolute; display:inline-block; line-height:inherit; letter-spacing:inherit;}
+		div.bigText div.dollars{left: 18px; font-size:inherit; }
+		div.bigText div.signBefore{ position:absolute; display:inline-block; font-size:.5em; left:0px; top:0px; line-height:1em; letter-spacing:1px;}
+		div.bigText div.cents{position:absolute; display:inline-block; top:0px; left:97px; line-height:1em; font-size:.5em; letter-spacing:-1px;}
+		div.bigText div.terms{position:absolute; display:inline-block; left:97px; top:31px; overflow:visible; line-height:1.2em; letter-spacing:0; text-align:left; width:55px; font-size:.125em;}
+		div.bigText.tallPromo_price{width:150px;}
+	
+		div.widePromo div.bigText div{text-align:left; left:0px; margin:0;}
+		
+		/* Area D */
+		div#areaD_intro{font-weight:bold; text-align:left; padding-left:25px;}
+		div.bigText.widePromo_areaD div.percentage{position:relative; width:144px; margin:0 auto; text-align:left; font-size:70px; }
+		div.bigText.widePromo_areaD div.percentSign{position:absolute; top:0px; left:92px; font-size:.5em; line-height:1em; }
+		div.bigText.widePromo_areaD div.off{position:absolute; top:34px; left:92px; font-size:.3em; line-height:1em; letter-spacing:0px; }
+		div.offerDetails div.offerService{width:140px; font-weight:bold; }
+		div#content div#areaD_button.formbutton{float:left; margin:0px;}
+		
+		/* Area E */
+		div.bigText.widePromo_areaE div.intro{position:absolute; top:0px; left:20px; font-size:inherit; }
+		div.bigText.widePromo_areaE{text-align:left; margin:0px; left:0px; padding:0px;}
+		div.bigText.widePromo_areaE div.free{font-size:60px;	margin-left:10px;}
+		div.offerDetails div.plainText{width:140px; font-weight:bold; }	
+		div#content div#areaE_button.formbutton{float:left; margin:0px;}
 
-.internet-offer-pane-sub-element2 .internet-tab-learn-more-wrapper {
-	margin-top : 40px; 
-	height : 20px;
-}
+		/* Area F */
+		div.bigText.widePromo_areaF div.intro{position:absolute; top:0px; left:20px; font-size:inherit; }
+		div.bigText.widePromo_areaF div.dollarSign{position:absolute; top:0px; left:0px; font-size:.5em; line-height:1em; }
+		div.bigText.widePromo_areaF div.dollars{position:absolute; top:0px; left:18px; font-size:inherit;  letter-spacing:-3px;}
+		div.bigText.widePromo_areaF div.cents{position:absolute; top:0px; left:95px; font-size:.5em; line-height:1em; letter-spacing:0px; }
+		div.bigText.widePromo_areaF div.terms{position:absolute; display:inline-block; left:97px; top:31px; overflow:visible; line-height:1.2em; letter-spacing:0; text-align:left; width:55px; font-size:.125em;}
+		div#content div#areaF_button.formbutton{float:left; margin:0px;}
+		div#content div.widePromo div#areaF_productRow div.offerDetails{height:130px;}
+		
+		/* Area G */
+		div#areaG_offerDetails div.intro{position:relative; text-align:left; font-size:inherit; }
+		div.bigText.widePromo_areaG div.dollarSign{position:relative; float:left; font-size:.5em; line-height:1em; letter-spacing:0px;}
+		div.bigText.widePromo_areaG div.dollars{position:relative; float:left; font-size:inherit; letter-spacing:-3px;}
+		div.bigText.widePromo_areaG div.cents{position:absolute; left:97px; font-size:.5em; line-height:1em; letter-spacing:0px; }
+		div.bigText.widePromo_areaG div.prepaid{position:absolute; left:97px; top:5px; font-size:.3em; line-height:.9em; letter-spacing:0px; }
+		div.bigText.widePromo_areaG div.terms{position:absolute; display:inline-block; left:97px; top:31px; overflow:visible; line-height:1.2em; letter-spacing:0; text-align:left; width:55px; font-size:.125em;}
+		div.bigText.widePromo_areaG .singleDigit{left:60px !important;}
+		div#areaG_qualifier.plainText{width:180px; font-weight:bold; margin-top:10px;}	
+		div#content div#areaG_button.formbutton{float:left; margin:0px;}
+		div#content div.widePromo div#areaG_productRow div.offerDetails{height:130px;}
+	
+	div#content h4.ctaPhone{font-size:21px; color:#666; margin:0; margin-top:10px; padding-right:13px; text-align:right;}
+	div#content h4.ctaPhone span.green{font-size:21px; font-weight:bold; color:#00853F !important;}
+	div#content div.bundleIntro{vertical-align:middle; font-weight:bold; padding:10px 0; margin:0px auto; text-align:center; background-color:#f2f2f2; border-top:1px solid #fff; border-bottom:1px solid #fff;}
 
+	div#content a.learnMoreBtn{display:block; width:143px; height:33px; cursor:pointer; margin:0px auto; text-align:center; background: url('/assets/images/page-components/special_offers/mainSprite.png') -812px -376px scroll no-repeat; }
+	div#content a.learnMoreBtn:hover{background-position: -812px -413px; }
+	div#content a.orderBtn{display:block; width:143px; height:33px; cursor:pointer; margin:0px auto; text-align:center; background: url('/assets/images/page-components/special_offers/mainSprite.png') -665px -376px scroll no-repeat; }
+	div#content a.orderBtn:hover{background-position: -665px -413px; }
 
-.internet-offer-pane-sub-element2-learn-more .spo-inet-learn-more-link {
-    color: #00853F;
-}
+	div#content .last{margin-right:0 !important;}	
+	div#content .orange{color:#f37324 !important;}
+	div#content .lightblue{color:#0098db !important;}
+	div#content .darkGray{color:#666 !important;}
+	
+	div#content .shortImg{height:70px !important;}
+	div#content .tallImg{height:100px !important;}
+	div#content .extraTallImg{height:180px !important;}
 
-.internet-offer-pane-sub-element2-learn-more {
-    background: url("/assets/images/templates/learnmore_icon.png") no-repeat scroll 0 0 transparent;
-    color: #00853F;
-    padding-left: 20px;
-    height:20px;
-    margin-top : 40px; 
-}
-
-
-/* End added 2.18.2013 for QC2815 eMKTG  FEB Cybersale $50  */
-
+	div#disclaimers{margin-left:20px; font-size:11px; position:relative}
+	div#disclaimers a{position:absolute; left:20px; font-size:11px;}
+	
+	/*  sprite images */
+	div#content .sprites { display:block; margin:0; background: url('/assets/images/page-components/special_offers/mainSprite.png') no-repeat; }	
+	div#content .breaks { width: 285px; height: 37px; background-position: -456px -129px; }
+	div#content .bug2 { width: 85px; height: 85px; background-position: -1002px -181px; }
+	div#content .buttons { width: 290px; height: 70px; background-position: -665px -376px; }
+	div#content .grey1 { width: 455px; height: 323px; background-position: 0 -121px; }
+	div#content .grey2 { width: 287px; height: 680px; background-position: -960px -267px; }
+	div#content .hero { width: 959px; height: 502px; background-position: 0 -451px; }
+	div#content .icon2 { width: 131px; height: 76px; background-position: -456px -242px; }
+	div#content .icon3 { width: 146px; height: 76px; background-position: -229px -44px; }
+	div#content .icon4 { width: 99px; height: 83px; background-position: -1088px -181px; }
+	div#content .icon5 { width: 146px; height: 76px; background-position: -376px -44px; }
+	div#content .icon6 { width: 143px; height: 74px; background-position: -456px -167px; }
+	div#content .icon7 { width: 131px; height: 76px; background-position: -850px 0; }
+	div#content .icon8 { width: 197px; height: 45px; background-position: -1002px -135px; }
+	div#content .icon9 { width: 179px; height: 128px; background-position: -523px 0; }
+	div#content .icon10 { width: 229px; height: 134px; background-position: -1020px 0; }
+	div#content .icon11 { width: 197px; height: 136px; background-position: -748px -239px; }
+	div#content .icon12 { width: 212px; height: 164px; background-position: -775px -76px; }
+	div#content .lrg-ltop { width: 208px; height: 131px; background-position: -456px -319px; }
+	div#content .lrgphone { width: 147px; height: 149px; background-position: -600px -167px; }
+	div#content .ltop1 { width: 146px; height: 76px; background-position: -703px 0; }
+	div#content .norton { width: 228px; height: 109px; background-position: 0 0; }
+	div#content .bundleTitle { width: 293px; height: 43px; background-position: -229px 0; }

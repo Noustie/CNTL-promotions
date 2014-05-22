@@ -1,0 +1,21 @@
+.main-offer-left-banner{
+	position:static;
+}
+#bundle-three-pane-main-price-wrapper{
+	padding-left:0;
+	float:left;
+	
+}
+#bundle-three-pane-main-headline-wrapper{
+	float:left;
+	clear:right;
+	margin-top:-40px;
+}
+#bundle-three-pane-main-headline-wrapper div{
+	float:left;
+}
+#bundle-three-pane-main-headline-wrapper .threepane-main-already-customer{
+	float:right;
+	position:relative;
+}
+

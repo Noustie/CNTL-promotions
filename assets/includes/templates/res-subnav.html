@@ -48,9 +48,9 @@
 		<a href="<!--#echo var="ctl_url"-->/home/internet/" clicktrack="ctl|corp|main_nav|link|internet">Internet</a>
 		<a href="<!--#echo var="ctl_url"-->/home/phone/" clicktrack="ctl|corp|main_nav|link|phone">Home Phone</a>
 		<a href="javascript:tvNavigation();" id="tpl_subnav_lvl1_tv" clicktrack="ctl|corp|main_nav|link|tv">TV</a>
-		<a href="<!--#echo var="ctl_url"-->/home/homesecurity/" clicktrack="ctl|corp|main_nav|link|home_security">Home Security</a>
+		<a id="href-level1-nav-home-security" href="//promotions.centurylink.com/offers/smart/" target="_blank" clicktrack="ctl|corp|main_nav|link|home_security">Home Security</a>
 		<a href="<!--#echo var="ctl_url"-->/home/mobile/" clicktrack="ctl|corp|main_nav|link|wireless">Verizon Wireless</a>
-		<a href="#ZAM" class="modal-trigger last" id="tpl_menu-lvl1-help-moving" clicktrack="ctl|corp|main_nav|link|moving">Moving?</a>
+		<a href="<!--#echo var="ctl_url"-->/home/specialoffers/" class="last" id="tpl_ext-footer-special-offers" clicktrack="ctl|corp|main_nav|link|special_offers">Special Offers</a>
 
 		<!--#elif expr="$template='d' || $template='D'"-->
 		<a href="#MAM" class="modal-trigger" id="tpl_menu-lvl1-myaccount" clicktrack="ctl|corp|main_nav|link|myaccount">MyAccount</a>
@@ -66,6 +66,7 @@
 					<li class="first"><a href="<!--#echo var="ctl_url"-->/home/internet/" class="level2-nav-links">Shop Internet service with phone</a></li>
 					<li><a href="<!--#echo var="ctl_url"-->/home/internetonly/" class="level2-nav-links">Shop Internet service without phone</a></li>
 					<li><a href="<!--#echo var="ctl_url"-->/home/internetupgrades/" class="level2-nav-links">Upgrade</a></li>
+					<li><a href="<!--#echo var="ctl_url"-->/home/ease/" class="level2-nav-links">CenturyLink @Ease&reg; Security &amp; Backup</a></li>
 					<li><a href="<!--#echo var="ctl_url"-->/home/internet/" id="tpl_menu-lvl2-internet-availability" class="auth-switch-ctam level2-nav-links">Check availability</a></li>
 				</ul>
 			</li>
@@ -95,6 +96,7 @@
 					<li class="first"><a href="<!--#echo var="ctl_url"-->/home/internet/" class="level2-nav-links">Shop Internet service with phone</a></li>
 					<li><a href="<!--#echo var="ctl_url"-->/home/internetonly/" class="level2-nav-links">Shop Internet service without phone</a></li>
 					<li><a href="<!--#echo var="ctl_url"-->/home/internetupgrades/" class="level2-nav-links">Upgrade</a></li>
+					<li><a href="<!--#echo var="ctl_url"-->/home/ease/" class="level2-nav-links">CenturyLink @Ease&reg; Security &amp; Backup</a></li>
 					<li><a href="<!--#echo var="ctl_url"-->/home/internet/" id="tpl_menu-lvl2-internet-availability" class="auth-switch-ctam level2-nav-links">Check availability</a></li>
 				</ul>
 			</li>
@@ -105,48 +107,55 @@
 					<li><a href="<!--#echo var="ctl_url"-->/home/phone/index.html#features" class="level2-nav-links">Calling features</a></li>
 				</ul>
 			</li>
-			<li id="tpl_subnav-tv-dd" class="<!--#echo var="tv_class"-->"><a href="javascript:tvNavigation();" id="tpl_subnav_lvl1_tv" clicktrack="ctl|corp|hp|res|dd|link|tv">TV</a>
+			<li id="tpl_subnav-tv-dd" class="<!--#echo var="tv_class"-->"><a href="javascript:tvNavigation();" id="tpl_subnav_lvl1_tv" clicktrack="ctl|corp|main_nav|link|tv">TV</a>
 				<ul class="sf-menu">
 					<li class="first"><a href="javascript:tvNavigation();" class="level2-nav-links" id="tpl_subnav_lvl2_tv" clicktrack="ctl|corp|hp|res|dd|link|tv">Shop TV</a></li>
 				</ul>
 			</li>
-			<li id="tpl_subnav-homesecurity-dd" class="<!--#echo var="security_class"-->"><a href="<!--#echo var="ctl_url"-->/home/homesecurity/" title="ctl|corp|main_nav|link|home_security">Home Security</a>
-				<ul class="sf-menu">
+			<li id="tpl_subnav-homesecurity-dd" class="<!--#echo var="security_class"-->"><a id="href-subnav-home-security" href="//promotions.centurylink.com/offers/smart/?rid=smart" target="_blank" title="ctl|corp|main_nav|link|home_security">Home Security</a>
+		<!--
+				<ul class="sf-menu" id="subnav-dropdown-links-home-security">
 					<li class="first"><a href="<!--#echo var="ctl_url"-->/home/homesecurity/" class="level2-nav-links">Shop Home Security</a></li>
 					<li><a href="<!--#echo var="ctl_url"-->/home/homesecurity/#monitoring" class="level2-nav-links">Security monitoring</a></li>
 					<li><a href="<!--#echo var="ctl_url"-->/home/homesecurity/#wireless" class="level2-nav-links">Wireless security systems</a></li>
 				</ul>
+		-->
 			</li>
+
+
 			<li id="tpl_subnav-wireless-dd" class="<!--#echo var="mobile_class"-->"><a href="<!--#echo var="ctl_url"-->/home/mobile/" clicktrack="ctl|corp|main_nav|link|wireless"><!--#echo var="vzw_display"-->Wireless</a>
 				<ul class="sf-menu">
 					<li class="first"><a href="<!--#echo var="ctl_url"-->/home/mobile/" class="level2-nav-links">Shop Wireless service</a></li>
 				</ul>
 			</li>
-			<li id="tpl_subnav-moving-dd" class="<!--#echo var="moving_class"-->"><a href="#ZAM" id="tpl_menu-lvl1-help-moving" class="level2-nav-links modal-trigger last" clicktrack="ctl|corp|main_nav|link|moving">Moving?</a>
+			<li class="last"><a href="<!--#echo var="ctl_url"-->/home/specialoffers/" id="tpl_ext-footer-special-offers" class="level2-nav-links last" clicktrack="ctl|corp|main_nav|link|special_offers">Special Offers</a>
 				<ul class="sf-menu">
-					<li class="first"><a href="#ZAM" class="modal-trigger level2-nav-links" id="tpl_menu-lvl2-help-moving">Get help with moving</a></li>
+					<li class="first"><a href="<!--#echo var="ctl_url"-->/home/specialoffers/" class="level2-nav-links" id="tpl_ext-footer-special-offers">Find your Special Offers</a></li>
 				</ul>
 			</li>
 		</ul>
 
 		<!--#endif-->
 	</div>
-	
-	
+
+
 	<!--#if expr="$template='a' || $template='A'"-->
-		<!--#if expr="$isCallToOrderPage!='yes'"-->
-		<a href="<!--#echo var="ctlmyacct_url"-->/eam/qbp/identify.do" class="nav-bar-billpay2" id="tpl_global-nav-quick-bill-pay" clicktrack="ctl|corp|button|quick_bill_pay">Quick Bill Pay</a>
-		<!--#endif-->
-		<form class="search-form" id="tpl_search-form">
-			<input type="text" name="search" id="tpl_search-input" width="5" /><a href="#ZAM" class="button btn-arrow search-submit modal-trigger" clicktrack="ctl|corp|search" id="site-search-submit"></a>
-		</form>
+		<a href="<!--#echo var="ctlmyacct_url"-->/eam/qbp/identify.do" class="nav-bar-billpay2"
+          id="tpl_global-nav-quick-bill-pay" clicktrack="ctl|corp|button|quick_bill_pay">Quick Bill Pay</a>
+
+	<form class="search-form" id="tpl_search-form">
+		<input type="text" name="search" id="tpl_search-input" width="5" /><a href="#ZAM" class="button btn-arrow search-submit modal-trigger" id="site-search-submit" clicktrack="ctl|corp|search"></a>
+	</form>
 	<!--#else-->
+		<a href="<!--#echo var="ctlmyacct_url"-->/eam/qbp/identify.do" class="nav-bar-billpay2"
+          id="tpl_global-nav-quick-bill-pay" clicktrack="ctl|corp|button|quick_bill_pay">Quick Bill Pay</a>
+
 	<form class="search-form" id="tpl_search-form">
 		<input type="text" name="search" id="tpl_search-input" width="5" /><a href="#ZAM" class="button btn-arrow search-submit modal-trigger" id="site-search-submit" clicktrack="ctl|corp|search"></a>
 	</form>
 	<!--#endif-->
-	
-	
+
+
 </div>
 <script type="text/javascript">
 	require(['order!jquery','order!jquery-ui','order!watermark'],function(){
@@ -156,6 +165,10 @@
 	});
 
 </script>
+
+
+
+
 <script type="text/javascript">
 function tvNavigation() {
   //ctl_url
@@ -164,15 +177,15 @@ function tvNavigation() {
 	var ind=theCookie.indexOf(" "+cookieName+"=");
 	if (ind==-1) ind=theCookie.indexOf(";"+cookieName+"=");
 	if (ind==-1 || cookieName=="") {
-     location = "<!--#echo var='ctl_url'-->/home/tv/";    
+     location = "<!--#echo var='ctl_url'-->/home/tv/";
 	 }
 	else {
 	var ind1=theCookie.indexOf(";",ind+1);
-	if (ind1==-1) ind1=theCookie.length; 
-	var isIptvQ = unescape(theCookie.substring(ind+cookieName.length+2,ind1)); 
+	if (ind1==-1) ind1=theCookie.length;
+	var isIptvQ = unescape(theCookie.substring(ind+cookieName.length+2,ind1));
 	if(isIptvQ == "true")
       location = "<!--#echo var='ctl_url'-->/prismtv/#index.html";
-	else	
+	else
 	 location = "<!--#echo var='ctl_url'-->/home/tv/";
   }
 }

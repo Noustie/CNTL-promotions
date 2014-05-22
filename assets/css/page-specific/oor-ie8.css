@@ -1,0 +1,12 @@
+.price .month{
+	margin-left:-56px;
+}
+.price2 .month{ line-height:1.2em; margin:-10px auto auto 20px;}
+
+.secondary_content .product_box .product_header{
+	background:url('/assets/images/page-components/oor/price-module.png') -1px -1px no-repeat;
+	
+}
+.bottom_content  hr {
+    border-top: 1px solid #ababab;
+}

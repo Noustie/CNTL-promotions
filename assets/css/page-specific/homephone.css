@@ -1,64 +1,72 @@
-.as-low-as{
-	width:80px;
+h3 {
+	margin-bottom: 5px;
+}
+p { 
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: normal;	
+	line-height: 1.5em;
+}
+.as-low-as {
+	width: 80px;
 	text-align:left;
 	padding-left: 20px;
 	font-size:14px;
 }
-.start-now{
+.start-now {
 	padding-left: 8px;
 }
 .tab-container {
 	min-height: 309px;
 }
 .tab-disclaimer {
-	padding-top:10px;
-	border-top: 1px solid #CACCCD;
+	padding-top: 10px;
 	text-align:center;
 }
 .tab-image-area {
 	margin-top: 20px;
 	text-align:center;
 }
-.main-offer-price p{
-	left:-20px;
+.main-offer-price p {
+	left: -20px;
 }
 .main-price-content {
-	text-align:left;
+	text-align: left;
 }
 .grey {
-	color:#333333;
+	color: #333333;
 }
 
 .price-amount .dollarsign {	
-	color:#00853F; 
+	color: #00853F; 
 	font-size:24px; 
 	vertical-align:top; 
 	position:relative;
 }
 .price-amount .dollar-amount {
-	color:#00853F; 
+	color: #00853F; 
 	font-size:44px;
 	font-weight: bold;
 }
-.price-amount .cent-amount{
-	color:#00853F; 
+.price-amount .cent-amount {
+	color: #00853F; 
 	font-size:24px;
 	font-weight: bold;
 	vertical-align:top; 
 	position:relative;
 	padding:0px;
 }
-.pricing .term-unit{
-	color:#999999; 
+.pricing .term-unit {
+	color: #999999; 
 	font-size:9px;
 	vertical-align:top; 
 	position:relative;
 } 
-.price-amount .dollarsign,.price-amount .dollar-amount,.price-amount .price-stacker{
-	float:left;
+.price-amount .dollarsign, .price-amount .dollar-amount, .price-amount .price-stacker {
+	float: left;
 }
 .price-stacker {
-	width:50px; 
+	width: 50px; 
 	padding:5px 0px 0px 5px;
 }
 .pricing {
@@ -69,7 +77,7 @@
 {
 	display: block;
 	float: left;
-	background: url('/assets/images/sprites/template.png') no-repeat -821px -872px;
+	background: url("http://localhost/assets/images/sprites/template.png") no-repeat -821px -872px;
 	width: 35px;
 	height: 63px;
 }
@@ -108,6 +116,125 @@
 	color : #000000;
 }
 
+.home-benefits-container {
+	padding: 10px;
+	margin-bottom: 20px;
+}
 
+.home-benefits-container img.float-left {
+	margin-right: 20px;
+}
+
+.home-benefits-container img.float-right {
+	margin-left: 20px;
+}
+
+.tab-cta {
+	margin-bottom: 40px;
+}
+
+#international .tab-cta {
+	margin-bottom: 0px;
+}
+
+.tab-cta, .tab-content-area {
+	border: none !important;
+}
+
+.ld, .ld li, .Id li p, .ld li h3, .tab-content-area ul.ld li p  {
+	padding-left: 0 !important;
+	margin-left: 0 !important;
+	list-style: none;
+}
+#international .tab-content-area h2 {
+	margin-bottom: 20px;
+}
+
+.tab-content-area ul.ld li {
+	margin-bottom: 10px;
+}
+
+.ui-tabs .ui-tabs-nav {
+	margin-left: 20px;
+}
+
+#features h3 {
+	margin-left: 25px;
+}
+
+#features .btn-bundle {
+	margin-top: 20px;
+	margin-left: 0;
+}
+
+/* #featurestable table */
+
+#featurestable .spanWrapper {
+	width: 255px;
+	position: absolute;
+	top: -20px;
+	display: none;
+	font-size: 11pt;
+	background: #fff;    
+	padding:15px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px #ddd;
+	opacity: 0.9;
+}
+#featured-columns, #featurestable {
+	margin: 20px auto;
+	width: 90%;
+}
+#featurestable {
+	border: 1px solid #83b53a;
+	table-layout: fixed;
+}
+#featurestable td {
+	padding: 15px; 
+text-align: center;
+	border-right: 1px solid #848283;
+	border-bottom: 1px solid #fff;
+}
+#featurestable td span {
+	display: block; 
+	padding: 15px; 
+	position: relative;
+}
+#featurestable tr:last-child td, .no-bottom {
+	border-bottom: none !important;
+}
+#featurestable p {
+	text-align: left;
+}
+#featurestable tr {
+	background: #efe9e9;
+}
+#featurestable tr:nth-of-type(odd), .odd {
+	background: #f8f4f5 !important;
+}
+#featurestable .black-bg {
+	background-color: #000;
+}
+#featurestable .black-bg h3 {
+	color: #83b53a;
+	margin-bottom: 0;
+	margin-left: 0;
+}
+
+#featured-columns {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+#featured-columns h3 {
+	margin-left: 0;
+}
+#featured-columns p {
+	margin-right: 20px;
+}
+#featured-columns .column {
+	width: 33%;
+}
 
 /* end styles added to support qc1853 8.21.2012 */

@@ -6,26 +6,21 @@
 <!--#endif-->
 <div class="nav-bar" id="tpl_nav-bar">
 	<div class="business-group-nav">
-		<!--navigation with mega drop downs -->
 		<ul class="sf-menu">
-			<li class="current" id="tpl_nav-res"><a href="<!--#echo var="ctl_url"--><!--#if expr="$isHomepage == yes"-->#<!--#else-->/home/<!--#endif-->" clicktrack="ctl|corp|residential">Shop</a>
-			</li>
-			<li id="tpl_nav-smb"><a href="https://eam.centurylink.com/eam/login.do?" clicktrack="ctl|corp|small_business">My Account</a>
-			</li>
-			<li id="tpl_nav-bmg"><a href="http://www.centurylink.com/help" clicktrack="ctl|corp|global_nav|support">Support</a>
-			</li>
+			<li class="current" id="tpl_nav-res"><a href="<!--#echo var="ctl_url"--><!--#if expr="$isHomepage='yes'"-->#<!--#else-->/home/<!--#endif-->" clicktrack="ctl|corp|global_nav|shop">Shop</a></li>
+			<li id="tpl_nav-smb"><a href="<!--#echo var="ctlmyacct_url"-->/eam/entryPoint.do" clicktrack="ctl|corp|global_nav|my_account">My Account</a></li>
+			<li id="tpl_nav-bmg"><a href="http://www.centurylink.com/help/" clicktrack="ctl|corp|global_nav|support">Support</a></li>
 		</ul>
+		<!--#config errmsg="error in nav button if statement" --> 
+		<!--#if expr="$DOCUMENT_URI='/home/internet/index.html'"-->
+		<a href="#CTAM" id="home-internet-speed-check" class="modal-trigger ctlButton" clicktrack="ctl|rsd|shop|internet|pre_id_learn|button|check_speeds_in_area">Check Internet Speeds in my area</a>
+		<!--#elif expr="$isHomepage='true'"-->
+		<a href="#CTAM" id="home-speed-check" class="modal-trigger ctlButton" clicktrack="ctl|corp|button|check_services_in_area">Check for services in my area</a>
+		<!--#endif-->
+		<!--#config errmsg="[It appears that you don't know how to use SSI]" --> 
 	</div>
 </div>
-<script type="text/javascript">
-	require(['order!jquery','order!superfish','order!supersubs'],function(){
-			jQuery(function(){
-			jQuery('ul.sf-menu').superfish({
-				autoArrows:  false,
-				dropShadows: false
-			});
-		});
-	})
 
-</script>
+
+
 <!--End Navigation Menu include-->

@@ -1,6 +1,41 @@
-.main-price-content{
-	text-align:left;
+body strong
+{
+	font-weight: bold;
 }
+
+.clearLeft
+{
+	clear: left;
+}
+
+body.rev2 #home-internet-tabs p
+{
+	line-height: 130%;
+}
+
+div#home-internet-tabs
+{
+	padding-top: 42px;
+}
+
+div#home-internet-tabs ul.ui-tabs-nav
+{
+	position: absolute;
+	bottom: auto;
+	top: 0;
+	padding: 0;
+}
+
+div#home-internet-tabs ul.ui-tabs-nav li.ui-state-default
+{
+	top: 4px;
+}
+
+div#home-internet-tabs ul.ui-tabs-nav li.ui-tabs-selected
+{
+	top: 5px;
+}
+
 .disclaimer {
 	padding: 10px 0px;
 }
@@ -46,59 +81,35 @@
 	margin: 0px;
 }
 
-#internet-preprice-copyblock {
-	color: #666666;
-	font-size: 11px;
-}
-#internet-afterprice-copyblock {
-	text-align:center; color:
-	#666666;
-	font-size: 11px;
-}
-.secondary a.important-details-internet {
+.secondary a.important-details-internet
+{
     color: #00853F;
     display: block;
 }
-.internet-bottom-links-block {
-	margin-bottom: 15px;
+
+.internet-secondary-offer
+{
+	display: table-row;
+	width: auto;
 }
 
-.internet-secondary-offer {
-	display:table-row;
-	width:auto;
+.internet-secondary-content
+{
+	display: table-cell;
 }
-
-.internet-secondary-content {
-	display:table-cell;
-}
-
-.internet-secondary-content-left-links {
-	float:left;
-}
-.internet-secondary-content-right-banner {
-	display:table-cell;
-	vertical-align:middle;
-	width:100%;
-}
-
 
 /* begin styles added to support WCP 120618-11 6/21/2012 */
-
-#HSI-button-test-120618-11-top { height:auto; }
-#HSI-button-test-120618-11-speed-tab { height:auto; }
-
-.btn-get-internet-now {
+.btn-get-internet-now
+{
     background: url("/assets/images/sprites/page-specific/internet/getinternet_sprite.png") no-repeat scroll 0 0 transparent;
     display: block;
-    float: left;
+    float: none;
     font-size: 0;
-    margin: auto 0px;
+    margin: 0 auto;
+    position: relative;
     height: 28px;
     width: 132px;
-	position:absolute;
-	margin-top: -10px;
-	
-	
+	margin-top: 0;
 }
 
 .btn-get-internet-now:hover {
@@ -115,36 +126,8 @@
     width: 132px;
 }
 
-.btn-show-my-options:hover {
-    background-position: 0 -30px;
-}
-
-
-.btn-avail-my-area {
-    background: url("/assets/images/sprites/page-specific/internet/whatsavail_sprite.png") no-repeat scroll 0 0 transparent;
-    display: block;
-    float: left;
-    font-size: 0;
-    margin: auto 5px;
-    height: 28px;
-    width: 235px;
-}
-
-.btn-avail-my-area:hover {
-    background-position: 0 -30px;
-}
-
-.btn-start-shopping {
-    background: url("/assets/images/sprites/page-specific/internet/startshopping_sprite.png") no-repeat scroll 0 0 transparent;
-    display: block;
-    float: left;
-    font-size: 0;
-    margin: auto 5px;
-    height: 28px;
-    width: 125px;
-}
-
-.btn-start-shopping:hover {
+.btn-show-my-options:hover
+{
     background-position: 0 -30px;
 }
 
@@ -152,29 +135,12 @@
 
 /* begin styles added to support qc1852 7.17.2012 */
 
-#ttmxhome-internet-features-tab { height : auto ;}
-#ttmxhome-internet-equipment-tab { height : auto ;}
-
-/*
-div.page-content-top h1 {
+#top-left-h1
+{
 	color : #00853F;
 	font-family : Arial;
 	font-weight : bold;
 	font-size : 16px;
-}
-*/
-
-#top-left-h1 {
-	color : #00853F;
-	font-family : Arial;
-	font-weight : bold;
-	font-size : 16px;
-}
-
-
-.h1wrapper {
-	margin-left : 20px;
-	margin-top: 8px;
 }
 
 .icon-laptop
@@ -185,88 +151,55 @@ div.page-content-top h1 {
 	height: 54px;
 }
 
-#value-prop-copy-internet {
-	height : auto;
+#value-prop-copy-internet
+{
+	height: auto;
 }
 
-ul.main-offer-details-list{
-
+ul.main-offer-details-list li
+{
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000;
 }
-ul.main-offer-details-list li{
-	font-family : Arial;
-	font-size : 12px;
-	font-weight : normal;
-	color : #000000;
-}
-ul.main-offer-details-list li b{
+ul.main-offer-details-list li b,
+ul.main-offer-details-list li strong
+{
 	font-weight:bold;
 }
-.main-offer-details-headline-bold {
+.main-offer-details-headline-bold
+{
 	font-family : Arial;
 	font-size : 20px;
 	font-weight : bold;
 	color : #00853F;
 }
 
-
-.main-offer-details-headline-normal {
-	font-family : Arial;
-	font-size : 20px;
-	font-weight : normal;
-	color : #00853F;
-}
-
-
-.tmSuper {
-	font-family : Arial;
-	font-size : 10px;
-	font-weight : normal;
-	color : #00853F;
-	position : relative;
-	top : -8px;
-}
-
-
 /* end styles added to support qc1852 7.17.2012 */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* begin styles added to support qc2030 9.13.2012 */
-
 
 #qc2030-value-prop-copy-internet { height : auto; }
 #qc2030-internet-main-banner-cta-controller { height : auto; }
 #qc2030-internet-tab-pane1-pricepoint-controller {height : auto ; }
 #qc2030-internet-tab-pane2-pricepoint-controller { height : auto }
 
-
-#top-left-h1-b {
-	color : #00853F;
-	font-family : Arial;
-	font-weight : bold;
-	font-size : 12px;
+#top-left-h1-b
+{
+	color: #00853F;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 12px;
 	display: block;
-	height:20px;
-	margin-bottom:10px;
-	margin-left:8px;
-	float:left;
+	height: 20px;
+	margin-bottom: 10px;
+	margin-left: 8px;
+	float: left;
 }
 
-
-.h1-b-ctam-wrapper {
+.h1-b-ctam-wrapper
+{
 	position:absolute;
 	z-index:1001;
 	left :830px;
@@ -276,40 +209,36 @@ ul.main-offer-details-list li b{
 	margin-top : -10px;
 }
 
-.internet-4tab-main-cta-btn-wrapper {
-	/*margin-top : 130px;*/
-	/*margin-top : 143px;
-	margin-left : 22px;
-	margin-top : 135px;*/
-	margin-top : 145px;
-	margin-left : 22px;
+.internet-4tab-main-cta-btn-wrapper
+{
+	margin-left: -4px !important;
+    margin-top: 130px;
+    width: 100%;
 }
 
-
-
-
-.internet-main-offer-column-one-copy {
-	float : left;
-	width : 420px;
-	min-height : 215px;
+.internet-main-offer-column-one-copy
+{
+	float: left;
+	width: 420px;
+	min-height: 215px;
 }
-
-.internet-main-offer-ul-wrapper {
-	margin-left : -6px;
-	width : 410px;
+body.rev2 .internet-main-offer-column-one-copy
+{
+	width: auto;
 }
 
 .internet-four-tab-main-offer-banner-cta-wrapper {
-	float : left;
+	float: left;
 }
 
-
-.internet-main-offer-column-two-image {
-	float : left;
-	background: url('/assets/images/sprites/page-specific/internet/hsilearn_sprite.png') no-repeat -15px -1382px;
-	width : 183px;
-	height: 188px;
+.internet-main-offer-column-two-image
+{
+	background: url("/assets/images/sprites/page-specific/internet/hsilearn_sprite.png") no-repeat scroll -9px -1384px;
+	float: left;
+	height: 186px;
+	width: 206px;
 }
+
 
 .internet-main-offer-column-three-pricepoint {
 	float : left;
@@ -325,56 +254,6 @@ ul.main-offer-details-list li b{
 	color : #000;
 }
 
-.price-disclaimer-row .currency-sign {
-	float : left;
-	font-family : Arial;
-	font-size : 40px;
-	font-weight : bold;
-	color : #00853F;
-	margin-top : -2px;
-	margin-right: -3px;
-}
-
-.price-disclaimer-row .dollar-value {
-	float : left;
-	font-family : Arial;
-	font-size : 72px;
-	font-weight : bold;
-	color : #00853F;
-	letter-spacing : -7px;
-	width : 70px;
-	margin-top : -12px;
-}
-
-
-.price-disclaimer-row .trailing-container {
-	float : left;
-	width : 70px;
-}
-
-.price-disclaimer-row .trailing-container .decimal-value {
-	font-family : Arial;
-	font-size : 40px;
-	font-weight : bold;
-	color : #00853F;
-	letter-spacing : -2px;
-	margin-top : -7px;
-	height : 40px;
-}
-
-.price-disclaimer-row .trailing-container .disclaimer-terms {
-	font-family : Arial;
-	color : #666;
-	font-size : 9px;
-	padding-left : 6px;
-	line-height : 95%;
-}
-
-.internet-main-offer-column-three-pricepoint .cta-button-wrapper {
-	margin-left : 18px;
-	margin-top : 15px;
-}
-
 .main-offer-details-headline-bold-v2 {
 	font-family : Arial;
 	font-size : 20px;
@@ -383,23 +262,20 @@ ul.main-offer-details-list li b{
 	margin-left : 3px;
 }
 
-.home_internet_tabs_ver_b{
-	/*margin-top : -15px;*/
+#home-internet-tabs
+{
+	display: none;
 	margin-top : -39px;
 }
 
-.internet-tab-enhanced-content-wrapper {
-	margin-left:16px; 
-	margin-top : 10px;
+.internet-tab-enhanced-content-wrapper
+{
+	margin-left: 16px; 
+	margin-top: 10px;
 }
 
 .speed-tab-enhanced-content-wrapper {
-	margin-left:16px; 
-	/*margin-top : 10px;
-	clear : both;*/
-}
-
-.internet-tab-three-pane-wrapper {
+	margin-left :16px;
 }
 
 .internet-tab-three-pane-left {
@@ -671,9 +547,10 @@ p.fe-copy {
 	font-weight: bold;
 }
 
-
-.icon-wrapper {
-	width : 267px;
+.icon-wrapper
+{
+	width: 267px;
+	height: 100px;
 }
 
 .icon-wrapper .icon-column-1 {
@@ -700,157 +577,137 @@ p.fe-copy {
 	margin-top : 20px;
 }
 
-.pane-body-copy-wrapper .pane-body-heading {
-	color: #595959;
-	font-family: Arial;
+.pane-body-copy-wrapper
+{
+	height: 160px;
+}
+
+.pane-body-copy-wrapper .pane-body-heading
+{
+	color: #555;
 	font-size: 14px;
 	font-weight: bold;
-	margin-left : 9px;
+	margin-left: 7px;
+	padding-right: 10px;
 }
 
-.pane-body-copy-wrapper .pane-body-list {
-	color: #595959;
-	font-family: Arial;
+.pane-body-copy-wrapper .pane-body-list
+{
+	color: #555;
 	font-size: 14px;
 	font-weight: normal;
-	margin-left : 7px;
-	/*margin-top : 2px;*/
+	margin-left: 7px;
+	padding-right: 8px;
 }
 
-
-.pane-body-copy-wrapper .internet-1 {
-	margin-top:18px;
-}
-
-.pane-body-copy-wrapper .internet-2 {
-	margin-top:10px;
-}
-
-.pane-body-copy-wrapper .internet-3 {
-	margin-top:12px;
-}
-
-.pane-body-list .li-element-first {
-	/*margin-top:-2px;*/
+.pane-body-list .li-element-first
+{
 	line-height : 14px;
 }
 
-.pane-body-list .li-element {
-	/*margin-top:-2px;*/
+.pane-body-list .li-element
+{
 	line-height : 14px;
 }
 
 
-.pane-body-pricepoint-wrapper {
+.pane-body-pricepoint-wrapper
+{
 	width : 267px;
-	margin-top : 4px;
 }
-
 
 .pane-pricepoint-disclaimer-wrapper {
-	text-align : center;
-	height : 35px;
+	text-align: center;
+	height: 26px;
 }
 
 .pane-pricepoint-disclaimer-font
 {
 	width: 60%;
 	padding: 0 20%;
-	margin-top: 5px;
+	margin-top: 5px !important;
 	color : #666;
 	font-family: Arial;
 	font-size: 9px;
 	font-weight: normal;
 }
 
-.pane-pricepoint-disclaimer-font br
+.pane-body-pricepoint-wrapper .pane-body-pricepoint-1
 {
-	display: none;
-}
-
-.pane-body-pricepoint-wrapper .pane-body-pricepoint-1 {
-	background: url('/assets/images/sprites/page-specific/internet/hsilearn_sprite.png') no-repeat -379px -202px;
+	background: url('/assets/images/sprites/page-specific/internet/hsilearn_sprite.png') no-repeat -379px -225px;
 	width : 226px;
-	height: 76px;
-	margin-left:12px;
-	margin-top : 3px;
+	height: 48px;
+	margin: 0 auto;
 }
 
-.pane-body-pricepoint-wrapper .pane1-pricepoint-pure-2999 {
-	background: url('/assets/images/sprites/page-specific/internet/hsilearn_sprite.png') no-repeat -9px -1595px;
-	width : 226px;
-	height: 76px;
-	margin-left:12px;
-	margin-top : 3px;
+.pane-body-pricepoint-wrapper .pane1-pricepoint-pure-2999
+{
+	background: url('/assets/images/sprites/page-specific/internet/hsilearn_sprite.png') no-repeat -9px -1619px;
+	width : 232px;
+	height: 48px;
+	margin: 0 auto;
 }
-.pane-body-pricepoint-wrapper .pane1-pricepoint-pure-2995 {
-	background: url('/assets/images/sprites/page-specific/internet/hsilearn_sprite.png') no-repeat -379px -201px;
-	width : 226px;
-	height: 76px;
-	margin-left:12px;
-	margin-top : 3px;
-}
-
-.pane-body-pricepoint-wrapper .pane-body-pricepoint-2 {
-	background: url('/assets/images/sprites/page-specific/internet/hsilearn_sprite.png') no-repeat -906px -1229px;
-	width : 246px;
-	height: 75px;
-	margin-left:9px;
-	margin-top : 9px;
+.pane-body-pricepoint-wrapper .pane1-pricepoint-pure-2995
+{
+	background: url('/assets/images/sprites/page-specific/internet/hsilearn_sprite.png') no-repeat -379px -225px;
+	width : 232px;
+	height: 48px;
+	margin: 0 auto;
 }
 
-.pane-body-pricepoint-wrapper .pane2-pricepoint-bundle-1495 {
-	background: url('/assets/images/sprites/page-specific/internet/hsilearn_sprite.png') no-repeat -619px -206px;
-	width : 246px;
-	height: 75px;
-	margin-left:9px;
-	margin-top : 9px;
-}
-
-.pane-body-pricepoint-wrapper .pane2-pricepoint-bundle-1499 {
-	background: url('/assets/images/sprites/page-specific/internet/hsilearn_sprite.png') no-repeat -8px -1695px;
-	width : 246px;
-	height: 75px;
-	margin-left:9px;
-	margin-top : 9px;
-}
-
-.pane-body-pricepoint-wrapper .pane2-pricepoint-bundle-1995 {
-	background: url('/assets/images/sprites/page-specific/internet/hsilearn_sprite.png') no-repeat -26px -1803px;
-	width : 215px;
-	height: 90px;
-	margin-left:9px;
-	margin-top : 9px;
-}
-
-.pane-body-pricepoint-wrapper .pane-body-pricepoint-3 {
-	background: url('/assets/images/sprites/page-specific/internet/hsilearn_sprite.png') no-repeat -3px -478px;
-	width : 189px;
-	height: 54px;
-	margin-left:30px;
-	margin-top : 63px;
+/* QC4125 2/28/2014 promo release */
+.pane-body-pricepoint-wrapper .pane1-pricepoint-pure-ksonly
+{
+	background: url('/assets/images/sprites/page-specific/internet/hsilearn_sprite.png') no-repeat -555px -1838px;
+	width : 232px;
+	height: 50px;
+	margin: 0 auto;
 }
 
 
-.pane-body-cta-button-wrapper {
-	width : 267px;
-	/*margin-top : 15px;*/
+
+.pane-body-pricepoint-wrapper .pane-body-pricepoint-2
+{
+    background: url("/assets/images/sprites/page-specific/internet/hsilearn_sprite.png") no-repeat -13px -1718px;
+    height: 48px;
+	margin: 0 auto;
+    width: 232px;
 }
 
-.pane-body-cta-button-wrapper .pane-1 {
-	margin-top : 2px;
+.pane-body-pricepoint-wrapper .pane2-pricepoint-bundle-1499
+{
+	background: url('/assets/images/sprites/page-specific/internet/hsilearn_sprite.png') no-repeat -13px -1718px;
+	width: 232px;
+	height: 48px;
+	margin: 0 auto;
 }
 
-.pane-body-cta-button-wrapper .pane-2 {
-	margin-top : 2px;
+.pane-body-pricepoint-wrapper .pane2-pricepoint-bundle-1995
+{
+	background: url('/assets/images/sprites/page-specific/internet/hsilearn_sprite.png') no-repeat -20px -1843px;
+	width : 232px;
+	height: 48px;
+	margin: 0 auto;
 }
 
-.pane-body-cta-button-wrapper .pane-3 {
-	margin-top : 2px;
+.pane-body-pricepoint-wrapper .pane-body-pricepoint-3
+{
+	background: url('/assets/images/sprites/page-specific/internet/hsilearn_sprite.png') no-repeat -2px -478px;
+	width: 208px;
+	height: 52px;
+	margin: 0 auto;
 }
 
-.pane-body-cta-button-wrapper .cta-button {
-	margin-left : 67px;
+.pane-body-cta-button-wrapper
+{
+	width: 267px;
+}
+
+.pane-body-cta-button-wrapper .pane-1,
+.pane-body-cta-button-wrapper .pane-2,
+.pane-body-cta-button-wrapper .pane-3
+{
+	margin-top: 10px;
 }
 
 .internet-tab-bottom-content-wrapper h2 {
@@ -998,75 +855,1169 @@ p.fe-copy {
 	background-color:#b0e0e6;
 }
 
-
-.fourtab-ab-main-content-float-image-wrapper {
-	position:absolute;
-	top:-1px;
-	left:620px;
+.fourtab-ab-main-content-float-image-wrapper
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	min-height: 204px;
 	z-index: 201;
 }
 
-
-.main-float-image {
-	background: url('/assets/images/sprites/page-specific/internet/hsilearn_sprite.png') no-repeat -20px -24px;
-	width : 327px;
-	height: 218px;
+a#internet-main-offer-four-tab-already-customer
+{
+	position: absolute;
+	top: 6px;
+	right: 15px;
+	text-align: right;
+	display: block;
+	white-space: nowrap;
 }
 
+body a#internet-main-offer-four-tab-already-customer span
+{
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	color: #00853F;
+	display: none;
+}
 
-	/* begin qc2030 T&T pricepoint background styles*/
+body.rev2 a#internet-main-offer-four-tab-already-customer span
+{
+	display: inline;
+}
 
-	.internet-main-offer-1495-pricepoint {
-		float : left;
-		background: url('/assets/images/sprites/page-specific/internet/hsilearn_sprite.png') no-repeat -17px -567px;
-		width : 183px;
-		height: 188px;
-	}
+body.rev2 a#btnHSIDetails
+{
+	display: inline;
+	position: absolute;
+	right: 15px;
+	bottom: 8px;
+	font-weight: bold;
+	color: #00853F;
+}
 
-	.internet-main-offer-1499-pricepoint {
-		float : left;
-		background: url('/assets/images/sprites/page-specific/internet/hsilearn_sprite.png') no-repeat -9px -267px;
-		width : 183px;
-		height: 188px;
-	}
+.main-float-image
+{
+	background: url('/assets/images/sprites/page-specific/internet/hsilearn_sprite.png') no-repeat -20px -24px;
+	width: 327px;
+	height: 228px;
+}
 
-	.internet-main-offer-1995-pricepoint {
-		float : left;
-		background: url('/assets/images/sprites/page-specific/internet/hsilearn_sprite.png') no-repeat -15px -1382px;
-		width : 183px;
-		height: 188px;
-	}
+/* begin qc2030 T&T pricepoint background styles*/
+.internet-main-offer-1495-pricepoint {
+	float : left;
+	background: url('/assets/images/sprites/page-specific/internet/hsilearn_sprite.png') no-repeat -17px -567px;
+	width : 183px;
+	height: 188px;
+}
 
-	/* end qc2030 T&T pricepoint background styles/*
+.internet-main-offer-1499-pricepoint {
+	float : left;
+	background: url('/assets/images/sprites/page-specific/internet/hsilearn_sprite.png') no-repeat -8px -267px;
+	width : 195px;
+	height: 188px;
+}
 
+.internet-main-offer-1995-pricepoint {
+	float : left;
+	background: url('/assets/images/sprites/page-specific/internet/hsilearn_sprite.png') no-repeat -15px -1382px;
+	width : 183px;
+	height: 188px;
+}
 
-/* end styles added to support qc2030 9.13.2012 */
+/* end qc2030 T&T pricepoint background styles */
 
 
 /* begin styles added to support qc2030 9.13.2012 */
 
-	#qc2550-internet-tab-pane3-pricepoint-controller { height : auto; }
-	.disclaimer-inettab-pane-container {
-		float : left;
-		width : 289px;
-	}
+#qc2550-internet-tab-pane3-pricepoint-controller { height : auto; }
+.disclaimer-inettab-pane-container {
+	float : left;
+	width : 289px;
+}
 
-	.inettab-pane-disclaimer-link {
-		margin-left : 76px;
-	}
+.inettab-pane-disclaimer-link {
+	margin-left : 76px;
+}
 
-	#internet-tab-mid-tab-disclaimer-middle { display : none; }
-	
-	#internet-tab-mid-tab-disclaimer-right { display : none; }
+#internet-tab-mid-tab-disclaimer-middle { display : none; }
 
-	.pane-body-pricepoint-wrapper .pane-body-pricepoint-3-exlusive-offer {
-		background: url('/assets/images/sprites/page-specific/internet/hsilearn_sprite.png') no-repeat -274px -1820px;
-		width : 2209px;
-		height: 75px;
-		margin-left:30px;
-		margin-top : 6px;
-	}
+#internet-tab-mid-tab-disclaimer-right { display : none; }
 
-
+.pane-body-pricepoint-wrapper .pane-body-pricepoint-3-exlusive-offer
+{
+	background: url('/assets/images/sprites/page-specific/internet/hsilearn_sprite.png') no-repeat -274px -1842px;
+	width: 232px;
+	height: 48px;
+	margin: 0 auto;
+}
 
 /* end styles added to support qc2030 9.13.2012 */
+
+
+div#bundleOnePrice
+{
+	display: none;
+	position: relative;
+}
+
+.hsiSprite
+{
+	display: block;
+	background-image: url('/assets/images/sprites/page-specific/internet/hsiLearn-rev2.png');
+	background-repeat: no-repeat;
+}
+
+/* :TODO: Axe if implementing B */
+div#bundleOnePrice5yr,
+div#contentTopDevices,
+div#contentTopOffer,
+li#tabTitleWhy,
+a#btnHSIDetails,
+body.rev2 div.internet-four-tab-main-offer-banner-cta-wrapper,
+body.rev2 div#main-float-image,
+body.rev2 div#qc2030-value-prop-copy-internet,
+body.rev2 div.internet-main-offer-ul-wrapper,
+body.rev2 div.main-offer-details-headline-bold-v2,
+body.rev2 #internet-tab-three-pane,
+body.rev2 li#tabTitleFeatures
+{
+	display: none;
+}
+/* End axe */
+
+body.rev2 h1#top-left-h1-b
+{
+	margin-left: 0;
+	color: #666;
+}
+
+body.rev2 li#tabTitleWhy
+{
+	display: block;
+}
+
+body.rev2 div#contentTopOffer
+{
+	display: block;
+	width: 358px;
+}
+
+div#contentTopOffer h2
+{
+	font-weight: bold;
+	font-size: 22px;
+	color: #00853F;
+}
+
+body.rev2 div#bundleOnePrice
+{
+	position: relative;
+	display: block;
+	float: left;
+	width: 153px;
+	height: 200px;
+}
+div#bundleOnePrice:before
+{
+	content: '';
+	position: absolute;
+	z-index: 260;
+	top: 0;
+	left: 0;
+	width: 153px;
+	height: 146px;
+	display: block;
+	background-image: url('/assets/images/sprites/page-specific/internet/hsiLearn-rev2.png');
+	background-repeat: no-repeat;
+	background-position: -914px -358px; /* 3 year 10mbps */
+}
+body.CRIS div#bundleOnePrice:before
+{
+	background-position: -914px -544px; /* 3 year 12mbps */
+}
+
+body.rev2 a#internet-main-offer-get-internet
+{
+	position: relative;
+	z-index: 210;
+	margin: 152px auto 0 auto;
+	width: 149px;
+	height: 29px;
+	background-position: -13px -85px;
+}
+body.rev2 a#internet-main-offer-get-internet:hover
+{
+	background-position: -13px -122px;
+}
+
+body.rev2 div#contentTopDevices
+{
+	display: block;
+	margin: 4px 6px 0 0;
+	width: 433px;
+	height: 178px;
+	background-position: -18px -428px;
+}
+
+/* Internet tab styles */
+div.internet-tab-enhanced-content-wrapper h2
+{
+	margin-bottom: 0;
+	font-weight: bold;
+	margin-left: 12px;
+}
+div.internet-tab-enhanced-content-wrapper h5
+{
+	font-size: 14px;
+	font-weight: normal;
+	color: #000;
+	padding: 4px 0 0 0;
+	margin-left: 12px;
+}
+
+div#hsiTabContent
+{
+	display: none;
+	position: relative;
+	padding-right: 120px;
+}
+body.rev2 div#hsiTabContent
+{
+	display: block;
+}
+
+div#hsiTabContentWrap
+{
+	margin-top: 10px;
+	background-color: #DDD;
+	padding: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+div.hsiContentBox h4 span
+{
+	color: #00853F;
+	font-size: inherit;
+	font-weight: inherit;
+}
+div.hsiContentBox h4 span.CRIS,
+body.CRIS div.hsiContentBox h4 span
+{
+	display: none;
+}
+body.CRIS div.hsiContentBox h4 span.CRIS
+{
+	display: inline;
+}
+
+div#speedContentBottom div div.hsiPriceBox p span,
+div#hsiTabContent div div.hsiPriceBox p span
+{
+	line-height: 100%;
+	color: #00853F;
+	font-weight: normal;
+}
+div#speedContentBottom p span.priceDollarSign,
+div#hsiTabContent p span.priceDollarSign
+{
+	font-size: 18px;
+	float: left;
+}
+
+div#speedContentBottom div.hsiPriceBox p span.priceDollarAmount,
+div#hsiTabContent div.hsiPriceBox p span.priceDollarAmount
+{
+	font-size: 36px;
+	font-weight: bold;
+	float: left;
+	margin-top: 0px;
+	letter-spacing: -1px;
+}
+
+div#speedContentBottom div.hsiPriceBox p span.priceDollarCents,
+div#hsiTabContent div.hsiPriceBox p span.priceDollarCents
+{
+	font-size: 18px;
+}
+
+div.hsiContentBox p span.priceDollarAmount.CRIS,
+body.CRIS div.hsiContentBox p span.priceDollarAmount
+{
+	display: none;
+}
+body.CRIS div.hsiContentBox p span.priceDollarAmount.CRIS
+{
+	display: inline;
+}
+
+div#speedContentBottom div.hsiPriceBox p span.pricePeriod,
+div#hsiTabContent div.hsiPriceBox p span.pricePeriod
+{
+	color: #666;
+	font-size: 11px;
+}
+
+div#speedContentBottom div.hsiPriceBox,
+div#hsiTabContent div.hsiPriceBox
+{
+	position: absolute;
+	top: 100px;
+	left: 42px;
+	width: 98px;
+	height: 68px;
+}
+
+div.hsiContentBox
+{
+	position: relative;
+	float: left;
+	background-position: -7px -190px;
+	width: 347px;
+	padding: 34px 0 0 270px;
+	height: 140px;
+	background-image: url('/assets/images/sprites/page-specific/internet/hsiLearn-rev2.png');
+	z-index: 220;
+}
+
+div.hsiContentBox p.priceBoxTitle
+{
+	width: 74px;
+	text-align: center;
+	color: #00853F;
+	font-size: 11px;
+}
+
+div#hsiContentBox1:before
+{
+	content: '';
+	position: absolute;
+	z-index: 260;
+	top: 0;
+	left: 0;
+	width: 121px;
+	height: 91px;
+	display: block;
+	background-image: url('/assets/images/sprites/page-specific/internet/hsiLearn-rev2.png');
+	background-repeat: no-repeat;
+	background-position: -1006px -98px; /* 10 Mbps */
+}
+body.CRIS div#hsiContentBox1:before
+{
+	background-position: -450px -97px; /* 40 Mbps */
+}
+
+div#hsiContentBox2:before
+{
+	content: '';
+	position: absolute;
+	z-index: 260;
+	top: 0;
+	left: 0;
+	width: 119px;
+	height: 91px;
+	display: block;
+	background-image: url('/assets/images/sprites/page-specific/internet/hsiLearn-rev2.png');
+	background-repeat: no-repeat;
+	background-position: -860px -97px; /* 1.5 Mbps */
+}
+body.CRIS div#hsiContentBox2:before
+{
+	background-position: -450px -97px; /* 40 Mbps */
+}
+div#hsiContentBox2:after
+{
+	content: '';
+	position: absolute;
+	z-index: 260;
+	top: 32px;
+	left: 132px;
+	width: 59px;
+	height: 62px;
+	display: block;
+	background-image: url('/assets/images/sprites/page-specific/internet/hsiLearn-rev2.png');
+	background-repeat: no-repeat;
+	background-position: -916px -26px; /* plus phone */
+}
+
+div#hsiContentBox3:before
+{
+	content: '';
+	position: absolute;
+	z-index: 260;
+	top: 0;
+	left: 0;
+	width: 119px;
+	height: 91px;
+	display: block;
+	background-image: url('/assets/images/sprites/page-specific/internet/hsiLearn-rev2.png');
+	background-repeat: no-repeat;
+	background-position: -1006px -98px; /* 10 Mbps */
+}
+body.CRIS div#hsiContentBox3:before
+{
+	background-position: -572px -97px; /* 12 Mbps */
+}
+div#hsiContentBox3:after
+{
+	content: '';
+	position: absolute;
+	z-index: 260;
+	top: 36px;
+	left: 132px;
+	width: 59px;
+	height: 62px;
+	display: block;
+	background-image: url('/assets/images/sprites/page-specific/internet/hsiLearn-rev2.png');
+	background-repeat: no-repeat;
+	background-position: -916px -26px; /* plus phone */
+}
+div#hsiContentBox3 div.hsiContentBoxRight
+{
+	margin-top: 6px;
+}
+
+div#hsiContentBox3 div#featPrepaidCard
+{
+	content: '';
+	position: absolute;
+	z-index: 260;
+	top: 0;
+	right: 0;
+	width: 578px;
+	height: 56px;
+	display: block;
+	background-image: url('/assets/images/sprites/page-specific/internet/hsiLearn-rev2.png');
+	background-repeat: no-repeat;
+	background-position: -803px -262px;
+}
+
+div.hsiContentBox div.hsiContentBoxRight h4
+{
+	font-size: 16px;
+	color: #00853F;
+	font-weight: bold;
+}
+
+div.hsiContentBox div.hsiContentBoxRight p
+{
+	margin-top: 8px;
+}
+
+div.hsiContentBox div.hsiContentBoxRight p span.CRIS,
+body.CRIS div.hsiContentBox div.hsiContentBoxRight p span
+{
+	display: none;
+}
+body.CRIS div.hsiContentBox div.hsiContentBoxRight p span.CRIS
+{
+	display: inline;
+}
+
+div.hsiContentBox div.hsiContentBoxRight p.hsiCheckmark
+{
+	position: relative;
+	padding-left: 18px;
+	width: 150px;
+}
+div.hsiContentBox div.hsiContentBoxRight p.hsiCheckmark:before
+{
+	content: '';
+	position: absolute;
+	z-index: 260;
+	top: 0;
+	left: 0;
+	width: 14px;
+	height: 14px;
+	display: block;
+	background-image: url('/assets/images/sprites/page-specific/internet/hsiLearn-rev2.png');
+	background-repeat: no-repeat;
+	background-position: -245px -136px;
+}
+
+a.btnHSICheckAvailability
+{
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+	display: block;
+	width: 142px;
+	height: 29px;
+	background-image: url('/assets/images/sprites/page-specific/internet/hsiLearn-rev2.png');
+	background-repeat: no-repeat;
+	background-position: -478px -19px;
+	cursor: pointer;
+}
+a.btnHSICheckAvailability:hover
+{
+	background-position: -478px -49px;
+}
+
+body.CRIS .ENS
+{
+	display: none;
+}
+
+div#hsiRightPanel
+{
+	position: absolute;
+	right: 48px;
+	top: 120px;
+	width: 136px;
+	height: 424px;
+	padding-right: 2px;
+	display: block;
+	background-image: url('/assets/images/sprites/page-specific/internet/hsiLearn-rev2.png');
+	background-repeat: no-repeat;
+	background-position: -649px -252px;
+}
+
+div#hsiRightPanel p
+{
+	font-weight: bold;
+	padding: 30px 20px 0 20px;
+	margin: 0;
+	font-size: 13px;
+	color: #000;
+	text-align: center;
+}
+
+div#hsiRightPanel div
+{
+	margin: 28px auto 0 auto;
+	display: block;
+	background-image: url('/assets/images/sprites/page-specific/internet/hsiLearn-rev2.png');
+	background-repeat: no-repeat;
+}
+div.hsiBadgeGuarantee
+{
+	width: 70px;
+	height: 67px;
+	background-position: -676px -22px;
+}
+div.hsiBadgeSupport
+{
+	width: 66px;
+	height: 70px;
+	background-position: -790px -22px;
+}
+div.hsiBadgeNorton
+{
+	width: 103px;
+	height: 88px;
+	background-position: -733px -127px;
+}
+
+
+/* Speed tab styles */
+body.rev2 div#speed-tab-enhanced-content-wrapper,
+body div#tabSpeedCompare
+{
+	display: none;
+}
+body.rev2 div#tabSpeedCompare
+{
+	display: block;
+}
+
+div#tabSpeedCompare h2
+{
+	font-size: 18px;
+	font-weight: bold;
+	padding: 8px 0 0 14px;
+}
+
+div#hsiContentBox:before
+{
+	content: '';
+	position: absolute;
+	z-index: 260;
+	top: 0;
+	left: 0;
+	width: 121px;
+	height: 91px;
+	display: block;
+	background-image: url('/assets/images/sprites/page-specific/internet/hsiLearn-rev2.png');
+	background-repeat: no-repeat;
+	background-position: -1006px -98px; /* 10 Mbps */
+}
+body.CRIS div#hsiContentBox:before
+{
+	background-position: -450px -97px; /* 40mbps */
+}
+
+div#speedTabContentRight
+{
+	position: relative;
+	padding: 0 16px 220px 16px;
+}
+div#speedTabContentRight:before
+{
+	content: '';
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	left: 0;
+	width: 272px;
+	height: 223px;
+	display: block;
+	background-image: url('/assets/images/sprites/page-specific/internet/hsiLearn-rev2.png');
+	background-repeat: no-repeat;
+	background-position: -2px -650px;
+}
+div#speedTabContentRight p
+{
+	padding-bottom: 12px;
+}
+div#speedTabContentRight p span
+{
+	color: #00853F;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+p#speedContentBottomTitle
+{
+	clear: left;
+	padding: 12px 0 2px 4px;
+	margin: 0;
+}
+
+div#speedContentBottom
+{
+	clear: left;
+	position: relative;
+	top: 0px;
+	padding: 8px 0 0 8px;
+	height: 192px;
+}
+div#speedContentBottom:before
+{
+	content: '';
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 882px;
+	height: 187px;
+	display: block;
+	background-image: url('/assets/images/sprites/page-specific/internet/hsiLearn-rev2.png');
+	background-repeat: no-repeat;
+	background-position: -10px -1161px;
+}
+
+div#speedRightPanel
+{
+	position: relative;
+	display: block;
+	width: 250px;
+	height: 190px;
+	z-index: 12;
+}
+div#speedRightPanel div
+{
+	display: block;
+	position: absolute;
+	z-index: 220;
+	background-image: url('/assets/images/sprites/page-specific/internet/hsiLearn-rev2.png');
+	background-repeat: no-repeat;
+}
+div#speedRightPanel div.hsiBadgeGuarantee
+{
+	left: 30px;
+	top: 8px;
+}
+div#speedRightPanel div.speedBadgeNorton
+{
+	width: 131px;
+	height: 68px;
+	background-position: -342px -622px;
+	left: 46px;
+	top: 94px;
+}
+div#speedRightPanel div.hsiBadgeSupport
+{
+	right: 40px;
+	top: 50px;
+}
+
+div#spdemo a#btnViewSpeedChart,
+div#spdemo img#staticSpeedChart,
+div#spdemo.staticSpeedChart a#btnViewStaticChart
+{
+	display: none;
+}
+div#spdemo.staticSpeedChart a#btnViewSpeedChart
+{
+	display: inline;
+}
+div#spdemo.staticSpeedChart img#staticSpeedChart
+{
+	position: absolute;
+	z-index: 300;
+	top: 0;
+	left: 85px;
+	display: block;
+	width: 400px;
+	height: 227px;
+}
+
+div#spdemo.staticSpeedChart ul#navSpeedChart li a:hover,
+div#spdemo.staticSpeedChart ul#navSpeedChart li.selectedSpeedNav a:hover,
+div#spdemo.staticSpeedChart ul#navSpeedChart li.selectedSpeedNav a
+{
+	box-shadow: none;
+	color: #000;
+	cursor: default;
+}
+div#spdemo.staticSpeedChart ul#navSpeedChart li a
+{
+	background-position-y: 0%;
+}
+
+#spdemo
+{
+	display: block;
+	margin: 0;
+	padding: 20px;
+	border: 2px solid #CCC;
+	border-radius: 5px;
+	float: left;
+}
+
+.spd-graph
+{
+	width: 560px;
+}
+
+.spd-graph ul li,
+.spd-graph ul
+{
+	margin: 0;
+	padding: 0;
+	display: block;
+	list-style: none;
+	color: #666;	
+}
+.spd-graph sup
+{
+	font-size: 60%;
+	position: relative;
+	left: 0;
+	top: -0.5em;		
+}
+.spd-graph div,
+.spd-graph span
+{
+	display: block;
+	position: relative;
+	color: #666;		
+}
+
+.spd-graph .spd-speeds
+{
+	width: 100%;
+}
+.spd-graph .spd-speeds p
+{
+	line-height: 1;
+	color: #666666;
+	font-size: 14px;
+	width: 50%;
+	float: left;
+	text-align: left;
+	font-weight: normal;
+	height: 25px;
+}
+.spd-graph .spd-speeds .compareSideBySide
+{
+	float: right;
+	text-align: right;
+}
+.spd-graph .spd-speeds ul
+{
+	width: 475px;
+	height: 85px;
+	float: right;
+}
+.spd-graph .spd-speeds ul li
+{
+	width: 100px;
+	height: 100%;
+	float: left;
+	display: block;
+	position: relative;
+	z-index: 100;
+	overflow: visible;
+	border-top: 1px solid #CCC;	
+	border-right: 1px solid #CCC;	
+	border-bottom: 1px solid #CCC;	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.spd-graph .spd-speeds ul li:first-child
+{
+	border-left: 1px solid #CCC;	
+}
+.spd-graph .spd-speeds ul li a
+{
+	position: relative;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	width: 100px;
+	height: 85px;
+	line-height: 77px;
+	display: block;
+	color: #333;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	box-shadow: 0 0 0 #CCC inset;
+	background-color: transparent;
+	background-image: url("/assets/images/page-components/spdemo/spd-dials.png");
+	background-position:  left top;
+	text-decoration: none;
+	-webkit-transition: box-shadow 200ms;
+	-moz-transition: box-shadow 200ms;
+	-ms-transition: box-shadow 200ms;
+	-o-transition: box-shadow 200ms;
+	transition: box-shadow 200ms;
+}
+.spd-graph .spd-speeds ul li a:hover
+{
+	color: #000;
+	box-shadow: 0 0 20px #CCC inset;	
+}
+.spd-graph .spd-speeds ul li .dial-speed3 { background-position:     3px 0%; }
+.spd-graph .spd-speeds ul li .dial-speed2 { background-position:   -93px 0%; }
+.spd-graph .spd-speeds ul li .dial-speed1 { background-position:  -187px 0%; }
+.spd-graph .spd-speeds ul li .dial-speed0 { background-position:  -283px 0%; }
+
+.spd-graph .spd-speeds ul .selectedSpeedNav
+{
+	z-index: 101;
+}
+#spdemo .spd-graph .spd-speeds ul .selectedSpeedNav a
+{
+	box-shadow: 0 0 0 #CCC inset;
+	z-index: 101;
+	color: #00853F;
+}
+.spd-graph .spd-speeds ul .selectedSpeedNav .dial-speed3 { background-position:     3px -100%; }
+.spd-graph .spd-speeds ul .selectedSpeedNav .dial-speed2 { background-position:   -93px -100%; }
+.spd-graph .spd-speeds ul .selectedSpeedNav .dial-speed1 { background-position:  -187px -100%; }
+.spd-graph .spd-speeds ul .selectedSpeedNav .dial-speed0 { background-position:  -283px -100%; }
+
+.spd-graph .spd-speeds ul #dialSpeed12,
+body.CRIS .spd-graph .spd-speeds ul #dialSpeed10
+{
+	display: none;
+}
+body.CRIS .spd-graph .spd-speeds ul #dialSpeed12
+{
+	display: block;
+}
+
+.spd-graph .spd-icon
+{
+	width: 39px;
+	height: 53px;
+	display: block;
+	background-image: url("/assets/images/page-components/spdemo/spd-spdemo-icons.png");
+	background-position: 0% 0%;
+	position: absolute;
+}
+#spd-photos .spd-icon { background-position: 0% 3%; }
+#spd-music .spd-icon { background-position: -3px 35%; }
+#spd-tvshows .spd-icon { background-position: 0% 67%; }
+#spd-movies .spd-icon { background-position: 0% 100%; }
+
+.spd-graph .spd-bar-holder { height: 30px; width: 0%; position: relative; top: 0; left: 0; }
+.spd-graph .spd-bar-holder .spd-b { height: 30px; position: absolute; top: 0; z-index: 50; }
+.spd-graph .spd-bar-holder .spd-b-center { width: 100%; z-index: 49; left: 0; background-position: left 0%; }
+
+#spd-photos .spd-bar-holder .spd-b,
+#spd-music .spd-bar-holder .spd-b,
+#spd-tvshows .spd-bar-holder .spd-b,
+#spd-movies .spd-bar-holder .spd-b
+{
+	background-image: url("/assets/images/page-components/spdemo/spd-greenbar.png")
+}
+
+.spd-graph .spd-downloadables
+{
+	height: 228px;
+	margin: 0;
+}
+.spd-graph .spd-downloadrow {
+	width: 100%;
+	height: 56px;
+	position: relative;
+}
+.spd-graph .spd-pic,
+.spd-graph .spd-bar,
+.spd-graph .spd-time
+{
+	display: block;
+	height: 100%;
+	margin: 0;
+}
+
+#spdemo.staticSpeedChart .spd-time
+{
+	display: none;
+}
+
+
+.spd-graph .spd-pic {
+	width: 90px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.spd-graph .spd-bar {
+	margin: 0 75px 0 85px;
+	padding: 10px 15px;
+	width: 400px;
+	border-top: 1px solid #CCC;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.spd-graph .last-bar .spd-bar {
+	border-bottom: 1px solid #CCC;
+}
+.spd-graph .spd-time {
+	width: 90px;
+	position: absolute;
+	top: 10px;
+	right: 0;
+	height: 28px;
+}
+.spd-graph .spd-time .spd-num {
+	font-size: 16px;
+	line-height: 16px;
+	height: 16px;
+	float: left;
+	padding: 0 5px;
+	text-align: right;
+	width: 3em;
+}
+.spd-graph .spd-time .spd-final-time {
+	font-size: 10px;
+	line-height: 10px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: auto;
+	padding: 0;
+	text-align: right;
+	width: 100%;
+}
+.spd-graph .spd-time .spd-type {
+	font-size: 10px;
+	line-height: 1;
+	height: 8px;
+	float: left;
+	top: 0;
+}
+.spd-graph .spd-time .spd-secs {
+	padding: 0 0 6px 0;
+	background: url("/assets/images/page-components/spdemo/spd-arrowup.png") left bottom no-repeat;
+}
+.spd-graph .spd-time .spd-mins {
+	padding: 6px 0 0 0;
+	background: url("/assets/images/page-components/spdemo/spd-arrowdown.png") left top no-repeat;
+}
+.spd-graph .spd-timeinsecs .spd-mins ,
+.spd-graph .spd-timeinmins .spd-secs {
+	display: none;
+}
+.spd-graph .spd-title {
+	font-size: 12px;
+	position: absolute;
+	bottom: 5px;
+	left: 2px;
+}
+.spd-graph .spd-fileweight {
+	font-size: 10px;
+	position: absolute;
+	top: 15px;
+	left: 30px;
+	width: 55px;
+	text-align: center;
+	color: #9e9d9d;
+}
+.spd-copygroup {
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 160px;
+}
+.spd-copygroup * {
+	color: #999;
+	font-size: 12px;
+}
+.spd-copygroup .spd-copy {
+	position: absolute;
+	visibility: hidden;
+}
+.spd-copygroup h3 {
+	padding: 0 0 10px 0;
+	font-size: 14px;
+	font-weight: bold;
+}
+.spd-copygroup .halflist li {
+	width: 215px;
+	float: left;
+	margin-right: 35px;
+}
+
+/* Why Centurylink tab styles */
+div#tabContentWhy
+{
+	padding: 0 0 0 20px;
+}
+
+div#tabContentWhyLeft
+{
+	float: left;
+	width: 548px;
+	margin-top: 30px;
+}
+div#tabContentWhyLeft > div
+{
+	position: relative;
+	padding: 30px 0 30px 280px;
+	min-height: 160px;
+}
+div#tabContentWhyLeft > div:before
+{
+	content: '';
+	position: absolute;
+	z-index: 260;
+	top: 0;
+	left: 0;
+	width: 258px;
+	height: 188px;
+	display: block;
+	background-image: url('/assets/images/sprites/page-specific/internet/hsiLearn-rev2.png');
+	background-repeat: no-repeat;
+}
+div#tabContentWhyLeft div#whyCL-Guarantee:before
+{
+	background-position: -610px -694px;
+}
+div#tabContentWhyLeft div#whyCL-Support:before
+{
+	background-position: -616px -925px;
+}
+div#tabContentWhyLeft div#whyCL-Norton
+{
+	padding-top: 40px;
+}
+div#tabContentWhyLeft div#whyCL-Norton:before
+{
+	background-position: -306px -749px;
+}
+
+div#tabContentWhyLeft h3
+{
+	font-size: 18px;
+	color: #00853F;
+	font-weight: bold;
+	padding: 0 0 12px 0;
+}
+
+body.CRIS div#tabContentWhyLeft p span,
+div#tabContentWhyLeft p span.CRIS
+{
+	display: none;
+}
+body.CRIS div#tabContentWhyLeft p span.CRIS
+{
+	display: inline;
+}
+
+div#tabContentWhy div.vertRule
+{
+	float: left;
+	width: 1px;
+	height: 640px;
+	margin: 30px 40px;
+	background-color: #CCC;
+}
+
+div#tabContentWhyRight
+{
+	padding: 46px 12px 0 0;
+}
+div#tabContentWhyRight h3
+{
+	color: #00853F;
+	font-size: 18px;
+	font-weight: normal;
+}
+div#tabContentWhyRight h3 strong
+{
+	font-weight: bold;
+}
+
+
+/* Ratings tab styles */
+div#panelRating p
+{
+	margin: 20px 0 0 0;
+	float: left;
+	font-size: 12px;
+}
+
+div#panelRating div
+{
+	display: block;
+	float: left;
+	margin: 8px 0 0 0;
+	width: 95px;
+	height: 17px;
+	background-image: url('/assets/images/sprites/page-specific/internet/hsiLearn-rev2.png');
+	background-repeat: no-repeat;
+	background-position: -470px -442px;
+}
+div#panelRating div.rateFourStars
+{
+	margin: 20px 0 0 8px;
+	background-position: -489px -442px;
+}
+
+div#panelRating p strong,
+div#panelRating p a
+{
+	font-size: 14px;
+}
+div#panelRating p a
+{
+	color: #00853F;
+}
+
+#home-internet-speed-check {
+	position: absolute;
+	right: 5px;
+	top: -10px;
+	color: #fff;
+	text-transform: capitalize;
+	display: block;
+	padding: 7px 9px;
+	text-shadow: none;
+}
+
+#home-internet-speed-check:hover {
+	color: #e0f0df;
+}
