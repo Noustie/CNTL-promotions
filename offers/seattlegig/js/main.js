@@ -12,7 +12,7 @@ if ( !! document.createElement('canvas').getContext && !! document.createElement
             var fxl = $(".row.hero").width()+175;
             var txl = 150+(Math.random()*320);
 
-            var angleDegL = Math.atan2(165 - yBend, fxl - txl) * 180 / Math.PI;
+            var angleDegL = Math.atan2(165 - 300, fxl - txl) * 180 / Math.PI;
             randNumLeft(i, ele, txl, fxl, angleDegL);
         }
 
