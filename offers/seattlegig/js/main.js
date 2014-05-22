@@ -12,11 +12,13 @@ if ( !! document.createElement('canvas').getContext && !! document.createElement
             var fxl = $(".row.hero").width()+175;
             var txl = -100+(Math.random()* -175);
 
-            var angleDegL = Math.atan2(165 - 300, fxl - txl) * 180 / Math.PI;
-            randNumLeft(i, ele, txl, fxl, angleDegL);
+            var tyl = -100+(Math.random()* -175);
+
+            var angleDegL = Math.atan2(165 - tyl, fxl - txl) * 180 / Math.PI;
+            randNumLeft(i, ele, txl, fxl, angleDegL, tyl);
         }
 
-        function randNumLeft(i, comet, txl, fxl, angleDegL) {
+        function randNumLeft(i, comet, txl, fxl, angleDegL, tyl) {
             TweenMax.fromTo(comet, 0.6 + (Math.random() * 1), {
                 x: fxl,
                 y: 165,
@@ -25,7 +27,7 @@ if ( !! document.createElement('canvas').getContext && !! document.createElement
                 scaleY: 0.1
             }, {
                 x: txl,
-                y: 300,
+                y: tyl,
                 rotation: angleDegL,
                 opacity: 0.6,
                 scaleY: 0.5,
