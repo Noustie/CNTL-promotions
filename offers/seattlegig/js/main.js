@@ -33,6 +33,7 @@ if ( !! document.createElement('canvas').getContext && !! document.createElement
                 opacity: 0,
                 scaleY: 0,
                 ease: Power4.easeOut,
+                repeatDelay: 3,
                 onComplete: particleCoords,
                 onCompleteParams: [i, comet]
             });
