@@ -20,7 +20,7 @@
 		.modal-block-expanded_lvl2{ margin:10px; }
 		.modals .modal form{ margin:10px 10px 0 0; background: transparent; padding:0; }
 		.modals .modal, .modals .modal p { font-size: 12px; }
-		.modals .modal input { font-size: 11px; }
+		.modals .modal input { font-size: 11px; margin: 0 5px 0 0; }
 		.modals .error { clear: both; overflow: hidden; }
 		.modal form input{ font: inherit; }
 		.modal form label{ display:block; font-size:11px; }
