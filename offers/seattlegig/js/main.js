@@ -19,7 +19,7 @@ if ( !! document.createElement('canvas').getContext && !! document.createElement
         }
 
         function randNumLeft(i, comet, txl, fxl, angleDegL, tyl) {
-            TweenMax.fromTo(comet, 0.6 + (Math.random() * 1), {
+            TweenMax.fromTo(comet, 1 + (Math.random() * 3), {
                 x: fxl,
                 y: 165,
                 rotation: angleDegL,
