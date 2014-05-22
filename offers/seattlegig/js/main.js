@@ -3,11 +3,11 @@ if ( !!document.createElement('canvas').getContext && !!document.createElement('
     $(function() {
         var particle = $(".particle");
         function getEachParticle(){
-            particleCoords(particle);
+            particle.each(particleCoords);
         }
         function particleCoords(i, ele){
             var rnd = Math.random();
-            var fxl = 462;
+            var fxl = 900;
             var txl = -400+(Math.random()*1500);
             var yBend = -100;
 
