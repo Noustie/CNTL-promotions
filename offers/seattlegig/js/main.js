@@ -10,14 +10,13 @@ if ( !! document.createElement('canvas').getContext && !! document.createElement
         function particleCoords(i, ele) {
             var rnd = Math.random();
             var fxl = $(".row.hero").width()+175;
-            var txl = 175;
-            var yBend = 150+(Math.random()*320);
+            var txl = 150+(Math.random()*320);
 
             var angleDegL = Math.atan2(165 - yBend, fxl - txl) * 180 / Math.PI;
-            randNumLeft(i, ele, txl, fxl, angleDegL, yBend);
+            randNumLeft(i, ele, txl, fxl, angleDegL);
         }
 
-        function randNumLeft(i, comet, txl, fxl, angleDegL, yBend) {
+        function randNumLeft(i, comet, txl, fxl, angleDegL) {
             TweenMax.fromTo(comet, 0.6 + (Math.random() * 1), {
                 x: fxl,
                 y: 165,
@@ -26,7 +25,7 @@ if ( !! document.createElement('canvas').getContext && !! document.createElement
                 scaleY: 0.1
             }, {
                 x: txl,
-                y: yBend,
+                y: 300,
                 rotation: angleDegL,
                 opacity: 0.6,
                 scaleY: 0.5,
