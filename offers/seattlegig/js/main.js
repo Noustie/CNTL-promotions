@@ -23,14 +23,14 @@ if ( !! document.createElement('canvas').getContext && !! document.createElement
                 x: fxl,
                 y: 165,
                 rotation: angleDegL,
-                opacity: 0.1,
-                scaleY: 0.1
+                opacity: 0.6,
+                scaleY: 0.5
             }, {
                 x: txl,
                 y: tyl,
                 rotation: angleDegL,
-                opacity: 0.6,
-                scaleY: 0.5,
+                opacity: 0.1,
+                scaleY: 0.1,
                 ease: Power4.easeOut,
                 onComplete: particleCoords,
                 onCompleteParams: [i, comet]
