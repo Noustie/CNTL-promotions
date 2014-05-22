@@ -1,7 +1,7 @@
 if ( !! document.createElement('canvas').getContext && !! document.createElement('canvas').getContext('2d')) {
     //TIMELINES FOR MODERN BROWSERS
     $(function() {
-        //var particle = $(".particle");
+        var particle = $(".particle");
 
         function getEachParticle() {
             particle.each(particleCoords);
