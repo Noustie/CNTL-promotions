@@ -8,7 +8,7 @@ if ( !!document.createElement('canvas').getContext && !!document.createElement('
         function particleCoords(i, ele){
             var rnd = Math.random();
             var fxl = 900;
-            var txl = -400+(Math.random()*1500);
+            var txl = 100//-400+(Math.random()*1500);
             var yBend = -100;
 
             if (txl > 1000){
