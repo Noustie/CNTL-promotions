@@ -1,7 +1,7 @@
 if ( !! document.createElement('canvas').getContext && !! document.createElement('canvas').getContext('2d')) {
     //TIMELINES FOR MODERN BROWSERS
     $(function() {
-        var particle = $(".particle");
+        //var particle = $(".particle");
 
         function getEachParticle() {
             particle.each(particleCoords);
@@ -11,7 +11,6 @@ if ( !! document.createElement('canvas').getContext && !! document.createElement
             var rnd = Math.random();
             var fxl = $(".row.hero").width();
             var txl = 0+(Math.random()* 60);
-
             var tyl = 150+(Math.random()* 381);
 
             var angleDegL = Math.atan2(165 - tyl, fxl - txl) * 180 / Math.PI;
