@@ -10,7 +10,7 @@ if ( !! document.createElement('canvas').getContext && !! document.createElement
         function particleCoords(i, ele) {
             var rnd = Math.random();
             var fxl = $(".row.hero").width();
-            var txl = 0;
+            var txl = 0+(Math.random()* 175);
             var tyl = 150+(Math.random()* 381);
 
             var angleDegL = Math.atan2(165 - tyl, fxl - txl) * 180 / Math.PI;
