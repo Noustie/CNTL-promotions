@@ -15,22 +15,23 @@ if ( !! document.createElement('canvas').getContext && !! document.createElement
             var tyl = 150+(Math.random()* 381);
 
             var angleDegL = Math.atan2(165 - tyl, fxl - txl) * 180 / Math.PI;
+            console.log(angleDegL);
             randNumLeft(i, ele, txl, fxl, angleDegL, tyl);
         }
 
         function randNumLeft(i, comet, txl, fxl, angleDegL, tyl) {
-            TweenMax.fromTo(comet, 1 + (Math.random() * 3), {
+            TweenMax.fromTo(comet, 0.6 + (Math.random() * 1), {
                 x: fxl,
                 y: 165,
                 rotation: angleDegL,
                 opacity: 0.6,
-                scaleY: 0.5
+                scaleY: 0.6
             }, {
                 x: txl,
                 y: tyl,
                 rotation: angleDegL,
-                opacity: 0.1,
-                scaleY: 0.1,
+                opacity: 0,
+                scaleY: 0,
                 ease: Power4.easeOut,
                 onComplete: particleCoords,
                 onCompleteParams: [i, comet]
