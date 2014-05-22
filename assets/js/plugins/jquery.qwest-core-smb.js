@@ -37,6 +37,24 @@ function($) {
 			$('.error').hide();
 			$('.modal-errors').hide();
 		},
+		overrideSubmit:function(form,trigger) {
+			//Added keypress handling for IEs misbehaviors.
+			$(form).keypress(function(event){
+				keycode = event.keyCode;
+				if (keycode == 13) {
+					//alert('called submit off enter');
+					$(this).submit();
+				} else {
+					return true;
+				}
+			});
+			$(form).submit(function(event){
+				$(trigger).click();
+				//alert('call the clicky!');
+				event.preventDefault();
+				return false;
+			});
+		},
 		redirectSuccessfulAuth : function(domain, modalType, redirId, customerType) {
 			var target = '';
 			var useJumpPage = '';
@@ -119,6 +137,8 @@ function($) {
 			if(target != '#NOREDIRECT') {
 				var subcookie = {redirectTarget:target};
 				$.centurycore.modals.options.cookieJar.bake('profile_cookie',subcookie,0,"/","centurylink.com");
+			} else {
+				target = qshop_url + document.location.pathname;
 			}
 		
 			if(useJumpPage) {	
@@ -267,6 +287,17 @@ function($) {
 				this.chctam.initialize();
 				//UPM internal Content Setup
 				this.upm.initialize();
+				
+				//Mass Form setup.  This is what makes the enter key work. commenting not required ones.
+				$.centurycore.overrideSubmit('#ctam_nc-form','#ctam_nc-go');
+				//$.centurycore.overrideSubmit('#ctam_nc-overlap-form','#ctam_nc-overlap-go');
+				$.centurycore.overrideSubmit('#ctam_ec-phone-or-account','#ctam_ec-go');
+				//$.centurycore.overrideSubmit('#ctam-mya-zip','#ctam_ec-zip-auth-go');
+				//$.centurycore.overrideSubmit('.ctam-myaccount-form','#ctam_ec-go');
+				//$.centurycore.overrideSubmit('#ctam-oor-form','#ctam_oor-go');
+				//$.centurycore.overrideSubmit('#mam_ec_form-zipentry','#mam_ec-zip-auth-go');
+				//$.centurycore.overrideSubmit('#mam-oor-form','#mam_oor-go');
+				//$.centurycore.overrideSubmit('.myaccount-form','#mam_ec-go');
 				
 				initializeLocator(this.options.requestor,this.options.serviceDomain);
 				SORRY_URL=qshop_url+"/MasterWebPortal/qCmsRepository/FreeRange/SmallBusiness/callToAction/smbSorry.vm";
@@ -2215,7 +2246,7 @@ function($) {
 				if(linkData.type != null) {
 					return linkData.type;
 				} else {
-					return false
+					return false;
 				}
 			}
 		},
@@ -2284,7 +2315,7 @@ function($) {
 					var lpNMT = q_url+"/global/includes/blank.js";
 				} else if(path.indexOf("/small-business/products/business-tv/") != -1){
 					var lpNMT = q_url+"/global/includes/c2c/smallbusiness/c2c_mtagconfig.js";
-				} else if(path.indexOf("/small-business/") != -1){
+				} else if(path.indexOf("/small-business/") != -1 || path.indexOf("/MasterWebPortal/freeRange/shop/SMB")  != -1){
 					var lpNMT = q_url+"/global/includes/c2c/smallbusiness/mtagconfig.js";
 				} else if(path.indexOf("/smallbusiness/") != -1){
 					var lpNMT = q_url+"/global/includes/c2c/smallbusiness/c2c_mtagconfig.js";

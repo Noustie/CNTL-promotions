@@ -15,7 +15,7 @@ function($) {
 				$.centurycore.initialize();
 			});
 		},
-		initialize:function(){
+		initialize:function(){ 
 			$.centurycore.modals.initialize({cookieJar:subcookiejar,serviceDomain:ctl_url});
 			$.centurycore.popups.initialize({triggerClass:'.popup-trigger'});
 			$.centurycore.welcomeobject.initialize();
@@ -100,10 +100,12 @@ function($) {
 			
 			if(domain == 'UNKNOWN' || domain == 'OOR' || typeof domain == 'undefined' || domain == '') {
 				$.centurycore.modals.activeModalType = null;
-				window.location = q_url + '/residential/ld/index_oor.html';
+				window.location = q_url + '/home/oor/index.html';
 				clearTimeout($.centurycore.modals.interstitialTimer);
 				return;
 			}
+			
+			
 			
 			if(q.utility.getLinkTypeById(redirId,domain,customerType) == 'popup') {
 				$.centurycore.modals.activeModalType = null;
@@ -114,13 +116,14 @@ function($) {
 			}
 
 			if(q.utility.getLinkTypeById(redirId,domain,customerType) == 'ajax') {
-                $.centurycore.modals.activeModalType = null;
+				$.centurycore.modals.activeModalType = null;
 				target = q.utility.getLinkEndpointById(redirId,domain,customerType);
 				$.ajax({
 					type: "GET",
 					url: target
                 }).done(function( msg ) {
-					var tip = $('#ajax-content-div');
+					
+					var tip = $('#ajax-content-div_'+redirId);
 					tip.html(msg);
                 });
                 qm.hideInterstitial();
@@ -158,6 +161,7 @@ function($) {
 				qm.options.cookieJar.bake('profile_cookie',subcookie,0,"/","centurylink.com");
 			}
 		    
+			
 			if(target == '#REMAINONPAGE') {
 				$('.jqmWindow').jqmHide();
 				$.centurycore.modals.hideInterstitial();
@@ -192,9 +196,13 @@ function($) {
 				
 				if(target == '#SEARCH') {
 					if(domain == 'Q'){
-						$('#search-site').val('ThunderCatProducts');
+						$('#search-site').val('residential_collection');
+						$('#proxystylesheet').val('lq_residential_frontend');
+						$('#client').val('lq_residential_frontend');
 					} else if (domain == 'CTL') {
-						$('#search-site').val('ctl');		
+						$('#search-site').val('residential_collection');
+						$('#proxystylesheet').val('ctl_residential_frontend');
+						$('#client').val('ctl_residential_frontend');		
 					}
 					$('#searchTextId').val($('#tpl_search-input').val());
 					$('#siteSearch').attr('action', search);
@@ -251,7 +259,7 @@ function($) {
 			customerType: 'unknown',
 			interstitialTimer:null,
 			getCustomerType: function(){
-				if(subcookiejar.fetch('customerType','customerType') || subcookiejar.fetch('remember_me','accountNumber') || subcookiejar.fetch('remember_me','telephoneNumber') || subcookiejar.fetch('remember_me','userName')) {
+				if(subcookiejar.fetch('customerType','customerType')=='EC' || subcookiejar.fetch('remember_me','accountNumber') || subcookiejar.fetch('remember_me','telephoneNumber') || subcookiejar.fetch('remember_me','userName')) {
 					return 'EC';
 				} else {
 					return 'NC';
@@ -265,11 +273,17 @@ function($) {
 			*/
 			showInterstitial:function(domain,timeoutCallback){
 			    var frame = 0;
-				if($.centurycore.modals.interstitialTimer == null) {
+				var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
+				if(navigator.userAgent.toLowerCase().indexOf('safari') > -1 && navigator.userAgent.toLowerCase().indexOf('mac') > -1){
+					var is_safari_mac=true;
+				} else var is_safari_mac=false;
+				
+				if($.centurycore.modals.interstitialTimer == null && !is_chrome && !is_safari_mac) {
 					$.centurycore.modals.interstitialTimer = setInterval(function(){frame++;if(frame > 6) {frame = 1};if (frame >= 1 && frame <= 6) {$('#interstitial-badge-image').eq(0).attr('src','/assets/images/templates/interstitial' + frame + '.bmp');}},500);
 				} else {
 					frame = 0;
 				}
+
 				$('#interstitial').show();
 				var dataSource = qm.getBestDataSource(),customerTypePretty,companyPretty;
 				switch(dataSource.shoppingDomain) {
@@ -301,21 +315,20 @@ function($) {
 				s.manageVars('clearVars');
 				s.pageName = "ctl|rsd|" + $.centurycore.modals.activeModalType + "|interstitial";
 				s.server="centurylink.com";
-				s.channel=s.eVar41="rsd";
-				s.prop3=s.eVar24=customerTypePretty;
-				s.prop38=eVar48="static_page";
-				s.prop39=eVar49=$.centurycore.modals.activeModalType + "_modal";
+				s.prop3=s.eVar24="unknown";
+				s.prop38=s.eVar48="modal";
+				s.prop39=s.eVar49=$.centurycore.modals.activeModalType + "_modal";
 				s.prop52=s.eVar56="ctl";
 				s.t();
 				//$.centurycore.clearErrors();
 				/* If the timeoutCallback parameter was provided and is a function, use it with the setTimeout instead of the default 'handleInterstitialTimeout'
 				NOTE:  This does not engage the hideInterstitial function.  If you need the logic in that function, you will need to call it
 				       yourself.
-				*/
+				COMMENTED OUT DUE TO FALSE PRESENTATION of ERRORS to customers*/
 				if(timeoutCallback != 'undefined' && typeof timeoutCallback == 'function') {
-					$.centurycore.modals.interstitialTimer = setTimeout(timeoutCallback,20000);
+					$.centurycore.modals.interstitialTimer = setTimeout(timeoutCallback,60000);
 				} else {
-					$.centurycore.modals.interstitialTimer = setTimeout($.centurycore.modals.handleInterstitialTimeout,20000);
+					$.centurycore.modals.interstitialTimer = setTimeout($.centurycore.modals.handleInterstitialTimeout,60000);
 				}
 				
 			},
@@ -334,7 +347,7 @@ function($) {
 				clearTimeout($.centurycore.modals.interstitialTimer);
 			},
 			handleInterstitialTimeout: function() {
-				if($.centurycore.modals.retries > 2) {
+				if($.centurycore.modals.retries > 4) {
 					window.location = 'http://sorry.centurylink.com/';
 					return;
 				} else {
@@ -386,7 +399,7 @@ function($) {
 				tam  : '#tam_modal',
 				targetRedirect : '#targetRedirect',
 				requestor:'EBIZ',
-				serviceDomain:'http://webdmzqa3.centurylink.com'
+				serviceDomain:'http://webdmzqa2.centurylink.com' //temp change from webdmzqa3 to webdmzqa2 because testing was blocked - ST
 			},
 			latestResponse: null,
 			ignorePreviousAuthData: false,
@@ -512,7 +525,7 @@ function($) {
 							s.prop39=s.eVar49="ctam_modal";
 							s.prop52=s.eVar56="ctl";
 							s.prop3=s.eVar24="unknown";
-							s.prop51=s.eVar51="locator|ctam:address"; // Registry Method 
+							//s.prop51=s.eVar51="locator|ctam:address"; // Registry Method 
 							s.events="event45";
 							s.t();
 							if(existingCustomer){qm.ctam.options.mode = 'existing'};
@@ -678,7 +691,7 @@ function($) {
 						case 'oor_services':
 							qm.showInterstitial();
 							$.centurycore.modals.activeModalType = 'oor';
-							window.location = q_url + '/residential/ld/index_oor.html';
+							window.location = ctl_url + '/home/oor/index.html';
 							clearTimeout($.centurycore.modals.interstitialTimer);
 							break;
 						case 'oor_nc-address':
@@ -983,7 +996,7 @@ function($) {
 						if(data.addressRequestValid) {
 							s.manageVars('clearVars');
 							s.prop3=s.eVar24="unknown";// New Customer or Existing Customer]
-							s.prop51=eVar51="locator|ctam:address"; // Registry Method
+							s.prop51=s.eVar51="locator|ctam:address"; // Registry Method
 							s.eVar60="ctam:" + street + unit + unitNumber + city + state + zip; // Registry Type Detail
 							s.events="event46";
 							s.t();
@@ -1111,6 +1124,15 @@ function($) {
 						}
 						return;
 					}
+					if(user != '') {
+					var rememberMe;
+					if($('#ctam_ec-q-ma-remember-me').is(':checked')) { rememberMe = 'Y'} else {rememberMe = 'N'};
+					
+					subcookiename='userName|'+user;
+					if(rememberMe == 'Y'){cookiejar.bake('remember_me',subcookiename,30,"/","centurylink.com");}
+					else{cookiejar.bake('remember_me',subcookiename,0,"/","centurylink.com");}
+					}
+					
 					qm.showInterstitial();
 					if(typeof customerData == 'undefined') {
 						customerData = {};
@@ -1240,13 +1262,12 @@ function($) {
 						domainOverride = profileData.shoppingDomainOverride;
 					}
 					
-					
-					
-					s.manageVars('clearVars');
+					/* s.manageVars('clearVars');
 					s.prop3=s.eVar24='unknown';
 					s.prop51=eVar51="locator|ctam"; // Registry Method 
 					s.events="event45";
-					s.t();
+					//s.t();  commented this call as we are getting duplicate call in L CTL  config page for the UAT defect fix
+					*/ 
 					$('#ctam_ec-phonenum').hide();
 					$('#ma-container').show();
 						
@@ -1271,7 +1292,7 @@ function($) {
 						case 'oor_services':
 							qm.showInterstitial();
 							$.centurycore.modals.activeModalType = 'oor';
-							window.location = q_url + '/residential/ld/index_oor.html';
+							window.location = ctl_url + '/home/oor/index.html';
 							clearTimeout($.centurycore.modals.interstitialTimer);
 							break;
 						case 'oor_nc-address':
@@ -1380,8 +1401,15 @@ function($) {
 						}
 						return false;
 					}
-					//var rememberMe = {'userName': user}
-					//subcookiejar.bake('remember_me',rememberMe,0,"/","centurylink.com");
+					if(user != '') {
+					var rememberMe;
+					if($('#mam_remember-me').is(':checked')) { rememberMe = 'Y'} else {rememberMe = 'N'};
+					
+					subcookiename='userName|'+user;
+					if(rememberMe == 'Y'){cookiejar.bake('remember_me',subcookiename,30,"/","centurylink.com");}
+					else{cookiejar.bake('remember_me',subcookiename,0,"/","centurylink.com");}
+					}
+					
 					return true;
 				}
 			},
@@ -1703,23 +1731,67 @@ function($) {
 				return finalURL;
 			}
 		},
-		welcomeobject:{
-			options:{},
-			defaults:{maLoginButton:'#wo-submit-login',maUserNameField:'#hp-wo-username',maPasswordField:'#hp-wo-password',maRememberMeField:'#wo-remember-me'},
-			initialize:function(options) {
-				$.extend(this.options,this.defaults);
-				$.extend(this.options,options);
-				$(qwo.options.maLoginButton).live('click',qwo.processSubmission);
-				var rememberedUser = subcookiejar.fetch('remember_me','userName');
-				if(rememberedUser != null) {
-					$(qwo.options.maUserNameField).val(rememberedUser);
-					$(qwo.options.maPasswordField).focus();
-					$(qwo.options.maRememberMeField).attr('checked','checked');
+		welcomeobject: {
+			options: {},
+			defaults: { maLoginForm: 'wo_myaccount-login', maLoginButton: 'hp-wo-submit', maUserNameField: 'hp-wo-username', maPasswordField: 'hp-wo-password', maRememberMeField: 'hp-wo-remember-me' },
+			initialize: function(options) {
+				$.extend(this.options, this.defaults);
+				$.extend(this.options, options);
+
+				if(!document.getElementById(qwo.options.maLoginForm))
+				{
+					return false;
+				}
+
+				document.getElementById(qwo.options.maLoginForm).onsubmit = function() { qwo.processSubmission(); };
+
+				// Clear user-name on load
+				document.getElementById(this.options.maUserNameField).value = '';
+				document.getElementById(this.options.maUserNameField).onblur = function()
+				{
+					this.className = (this.value == '' ? '' : 'occupied' );
+				};
+				document.getElementById(this.options.maUserNameField).onclick = function()
+				{
+					this.className = 'occupied';
+				};
+				
+				document.getElementById(this.options.maPasswordField).onblur = function()
+				{
+					this.className = (this.value == '' ? '' : 'occupied' );
+				};
+				document.getElementById(this.options.maPasswordField).onclick = function()
+				{
+					this.className = 'occupied';
+				};
+
+				var rememberedUser = subcookiejar.fetch('remember_me', 'userName');
+				if(rememberedUser != null)
+				{
+					$('#hp-wo-username').val(rememberedUser);
+					$('#hp-wo-password').focus();
+					$('#hp-wo-remember-me').attr('checked', 'checked');
+					$('#hp-wo-username').addClass('occupied');
 				}
 			},
-			processSubmission:function(){
-				//qm.showInterstitial();
-				//return false;
+			processSubmission: function()
+			{
+				// Force lower-case in user-name on form submission.
+				document.getElementById(qwo.options.maUserNameField).value = document.getElementById(qwo.options.maUserNameField).value.toLowerCase();
+				
+				var user = $('#hp-wo-username').val();
+				if(user != '') {
+					var rememberMe;
+					if($('#hp-wo-remember-me').is(':checked')) { rememberMe = 'Y'} else {rememberMe = 'N'};
+					
+					subcookiename='userName|'+user;
+					if(rememberMe == 'Y'){cookiejar.bake('remember_me',subcookiename,30,"/","centurylink.com");}
+					else{cookiejar.bake('remember_me',subcookiename,0,"/","centurylink.com");}
+					}
+				
+				// Show interstitial and redirect if times out
+				qm.showInterstitial('', function() { window.location.href = ctleam_url + '/eam/login.do' } );
+				return true;
 			}
 		},
 		thirdparty:{
@@ -1828,7 +1900,15 @@ function($) {
 			}
 		},
 		bannerRotator:{
-			defaults:{identifier:'', containerId:'banners', bannerBaseClass:'banner', buttonContainerClass:'banner-buttons', displayTime:10000 },
+			defaults: {
+				identifier: '',
+				containerId: 'banners',
+				bannerBaseClass: 'banner',
+				buttonContainerClass: 'banner-buttons',
+				displayTime: 10000,
+				displaySlideNum: true,
+				displayBtnPlay: true
+			},
 			options:{},
 			buttons:[],
 			current:null,
@@ -1837,36 +1917,49 @@ function($) {
 			playerState: 0,
 			container:null,
 			userPaused:false,
-			initialize: function(options){
+			initialize: function(options)
+			{
 				$.extend(br.options, br.defaults);
 				$.extend(br.options, options);
 				br.container = $('#'+br.options.containerId);
 				bannerClass = br.options.bannerBaseClass;
-				if(br.options.identifier != '') {
+				if(br.options.identifier != '')
+				{
 					bannerClass = bannerClass + '-' + br.options.identifier;
 				}
 				var banners = $('#' + br.options.containerId + ' .'+bannerClass);
-				$(banners).each(function(){
-					$(this).mouseover(function(){if(!br.userPaused){br.pause}});
-					$(this).mouseout(function(){if(!br.userPaused){br.play}});
-					if(br.slides.length==0) { 
-						br.current = this;
-						$(this).show();
-					} else {
-						$(this).hide();
+				$(banners).each(function()
+					{
+						$(this).mouseover(function(){if(!br.userPaused){br.pause}});
+						$(this).mouseout(function(){if(!br.userPaused){br.play}});
+						if(br.slides.length==0) { 
+							br.current = this;
+							$(this).show();
+						} else {
+							$(this).hide();
+						}
+						br.slides[br.slides.length] = this;
+						br.addButton(this);
 					}
-					br.slides[br.slides.length] = this;
-					br.addButton(this);
-				});
+				);
 
-				playButton = $('<a>');
-				playButton.attr('id','banner-toggle');
-				playButton.attr('href','#');
-				playButton.attr('class','banner-button');
-				playButton.css('background-image','url(/assets/images/templates/btn_play.gif)').css('height','25px').css('width','20px');
-				playButton.click(br.toggleRotatorState);
-				br.buttons[br.buttons.length] = playButton;
-				$('.' + br.options.buttonContainerClass).append(playButton);
+				if(br.options.displayBtnPlay)
+				{
+					playButton = $('<a>');
+					playButton.attr('id', 'banner-toggle');
+					playButton.attr('class', 'banner-button');
+					playButton.css(
+						{
+							'background-image': 'url(/assets/images/templates/btn_play.gif)',
+							'height': '25px',
+							'width': '20px',
+							'cursor': 'pointer'
+						}
+					);
+					playButton.click(br.toggleRotatorState);
+					br.buttons[br.buttons.length] = playButton;
+					$('.' + br.options.buttonContainerClass).append(playButton);
+				}
 
 				$('#banner-1').addClass('current');
 				br.play();
@@ -1874,20 +1967,55 @@ function($) {
 			addButton: function()
 			{
 				var newButton = $('<a>');
-				newButton.attr('id','banner-' + br.slides.length);
-				newButton.attr('href','#');
-				newButton.attr('class','banner-button');
+				newButton.attr('id', 'banner-' + br.slides.length);
+				newButton.attr('href', '#');
+				newButton.attr('class', 'banner-button');
 				newButton.click(br.gotoSlide);
-				//newButton.click(br.trackSelection());
-				newButton.text(br.slides.length);
+				if(br.options.displaySlideNum)
+				{
+					newButton.text(br.slides.length);
+				}
 				
 				br.buttons[br.buttons.length] = newButton;
 				$('.' + br.options.buttonContainerClass).append(newButton);
 			},
+			addPrevNext: function()
+			{
+				var btnPrev = document.createElement('a');
+				btnPrev.id = 'btnBannerPrev';
+				btnPrev.className = 'btnBannerPrevNext';
+		
+				btnPrev.onclick = function(e)
+				{
+					br.previousSlide();
+					br.pause();
+					return false;
+				};
+		
+				br.container.append(btnPrev);
+		
+				var btnNext = document.createElement('a');
+				btnNext.id = 'btnBannerNext';
+				btnNext.className = 'btnBannerPrevNext';
+		
+				btnNext.onclick = function(e)
+				{
+					br.nextSlide();
+					br.pause();
+					return false;
+				};
+		
+				br.container.append(btnNext);
+
+				return null;
+			},
 			gotoSlide:function(e)
 			{
 				e.preventDefault();
-				$('#banner-toggle').css('background-image','url(/assets/images/templates/btn_pause.gif)');
+				if(br.options.displayBtnPlay)
+				{
+					$('#banner-toggle').css('background-image','url(/assets/images/templates/btn_pause.gif)');
+				}
 				br.userPaused = true;
 				br.pause();
 				id = $(this).attr('id').substring($(this).attr('id').indexOf('-')+1,$(this).attr('id').length)-1;
@@ -1941,11 +2069,17 @@ function($) {
 			toggleRotatorState:function(){
 				br.playerState = (br.playerState)?0:1;
 				if(br.playerState) {
-					$('#banner-toggle').css('background-image','url(/assets/images/templates/btn_play.gif)');
+					if(br.options.displayBtnPlay)
+					{
+						$('#banner-toggle').css('background-image','url(/assets/images/templates/btn_play.gif)');
+					}
 					br.userPaused = false;
 					br.play();
 				} else {
-					$('#banner-toggle').css('background-image','url(/assets/images/templates/btn_pause.gif)');
+					if(br.options.displayBtnPlay)
+					{
+						$('#banner-toggle').css('background-image','url(/assets/images/templates/btn_pause.gif)');
+					}
 					br.userPaused = true;
 					br.pause();
 				}

@@ -1,4 +1,4 @@
-/*
+/* 
  * jqModal - Minimalist Modaling with jQuery
  *   (http://dev.iceburg.net/jquery/jqModal/)
  *
