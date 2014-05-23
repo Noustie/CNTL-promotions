@@ -4,7 +4,6 @@ if ( !! document.createElement('canvas').getContext && !! document.createElement
         var particle = $(".particle");
 
         function particleCoords(i, ele) {
-            console.log(i, ele);
             var rnd = Math.random();
             var fxr = $(".row.hero").width();
             var txl = 0 + (Math.random() * -200);
