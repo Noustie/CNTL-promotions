@@ -3,10 +3,6 @@ if ( !! document.createElement('canvas').getContext && !! document.createElement
     $(function() {
         var particle = $(".particle");
 
-        function getEachParticle() {
-            particle.each(particleCoords);
-        }
-
         function particleCoords(i, ele) {
             var rnd = Math.random();
             var fxr = $(".row.hero").width();
@@ -20,7 +16,7 @@ if ( !! document.createElement('canvas').getContext && !! document.createElement
         }
 
         function randNumLeft(i, comet, txl, fxr, angleDegL, tyl, fyr) {
-            TweenMax.fromTo(comet, 1, {
+            TweenMax.fromTo(comet, 2, {
                 x: fxr,
                 y: fyr,
                 rotation: angleDegL,
@@ -39,7 +35,7 @@ if ( !! document.createElement('canvas').getContext && !! document.createElement
             });
         }
 
-        getEachParticle();
+        particleCoords(0, particle[0]);
 
         $('.sec1').waypoint(function() {
             $('.one').animate({

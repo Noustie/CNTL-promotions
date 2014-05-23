@@ -104,7 +104,6 @@
 		    	</div><!--end content hero div-->
 	    	</div>
 	    	<div class="particle"></div>
-		    <!-- <div id="stars"></div> -->
 	    </div><!--end row div-->
 
 	    <div class="row bar-break">
