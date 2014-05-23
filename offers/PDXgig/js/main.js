@@ -8,7 +8,7 @@ if ( !! document.createElement('canvas').getContext && !! document.createElement
             var fxr = $(".row.hero").width();
             var txl = 0 + (Math.random() * -200);
             var fyr = 0 + (Math.random() * 165);
-            var tyl = 250 + (Math.random() * 300);
+            var tyl = 200 + (Math.random() * 250);
 
             var angleDegL = Math.atan2(fyr - tyl, fxr - txl) * 180 / Math.PI;
 
