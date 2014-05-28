@@ -97,7 +97,7 @@
                         CenturyLink brings 1 gigabit fiber<br>service to Las Vegas
                     </a>
                     <p class="blurb">
-                        <strong>MONROE, La., October 9, 2013 &mdash; CenturyLink, Inc. (NYSE: CTL)</strong> today announced that it will expand its fiber network pilot to Las Vegas, enabling Internet speeds of up to 1 gigabit per second (Gbps). CenturyLink’s enhanced fiber network will deliver this ultra-fast broadband technology to residential...<a href="<?php echo $path; ?>/news/lasvegas.php" class="read-more-link" clicktrack="ctl|rsd|emktg|offers|gigabit|home|link|article_1">Read More</a>
+                        <strong>MONROE, La., October 9, 2013 &mdash; CenturyLink, Inc. (NYSE: CTL)</strong> today announced that it will expand its fiber network pilot to Las Vegas, enabling Internet speeds of up to 1 gigabit per second (Gbps). CenturyLink’s enhanced fiber network will deliver this ultra-fast broadband technology to residential...<a href="<?php echo $path; ?>/news/lasvegas.php" class="read-more-link" clicktrack="ctl|rsd|emktg|offers|gigabit|home|link|article_2">Read More</a>
                     </p>
                 </div>
                 <div style="clear:both;"></div>
