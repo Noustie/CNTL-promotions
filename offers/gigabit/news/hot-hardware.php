@@ -35,7 +35,7 @@
         </div>
 
         <div class="news-paper">
-            <a href="<?php echo $path; ?>/news" class="see-more-features">&laquo;&laquo;View All News</a>
+            <a href="<?php echo $path; ?>/news" class="see-more-features">&laquo;View All News</a>
             <h2>News</h2>
             <h3>CenturyLink Gambles On Gigabit Internet In Las Vegas</h3>
             <p class="news-blurb">
