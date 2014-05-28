@@ -47,7 +47,6 @@
                 <div style="clear:both"></div>
             </div>
 
-
             <div class="news-unit">
                 <div class="news-unit-info fL">
                     <h4><a href="<?php echo $path; ?>/news/lasvegas.php" clicktrack="ctl|rsd|emktg|offers|gigabit|news|link|article_1">CenturyLink brings 1 gigabit fiber service to Las Vegas</a></h4>
