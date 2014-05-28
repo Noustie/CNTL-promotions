@@ -42,7 +42,7 @@
             </p>
     		<span class="date">5/22/14</span>
     		<p>
-                <strong>LAS VEGAS</strong> –- CenturyLink, Inc. (NYSE: CTL), which offers the fastest residential broadband speeds in Las Vegas, has announced plans to expand its gigabit fiber network and more than double the number of homes eligible for up to 1 gigabit per second (Gbps) service by the end of 2014.
+                <strong>LAS VEGAS</strong> -- CenturyLink, Inc. (NYSE: CTL), which offers the fastest residential broadband speeds in Las Vegas, has announced plans to expand its gigabit fiber network and more than double the number of homes eligible for up to 1 gigabit per second (Gbps) service by the end of 2014.
     		</p>
             <p>
                 CenturyLink first launched its up to 1 Gbps fiber service in Las Vegas in October 2013, delivering ultra-fast broadband speeds up to 100 times faster than the national average download speeds to residential customers in the northwest Las Vegas area. This fiber network expansion will bring the service to select residential communities in the west, southwest, Rhodes Ranch, Southern Highlands, North Las Vegas, Henderson and Anthem areas of Las Vegas.
