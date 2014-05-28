@@ -84,7 +84,7 @@
             <div class="newsblurbs">
 
                 <div class="newsblurb fL">
-                    <a href="<?php echo $path; ?>/news/lasvegas.php" class="title" clicktrack="ctl|rsd|emktg|offers|gigabit|home|link|article_1">
+                    <a href="<?php echo $path; ?>/news/centurylink-expands-las-vegas-coverage.php" class="title" clicktrack="ctl|rsd|emktg|offers|gigabit|home|link|article_1">
                         CenturyLink plans expansion of Las Vegas<br>gigabit fiber network 
                     </a>
                     <p class="blurb">
