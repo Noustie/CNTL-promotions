@@ -38,7 +38,7 @@
 
             <div class="news-unit">
                 <div class="news-unit-info fL">
-                    <h4><a href="<?php echo $path; ?>/news/centurylink-expands-las-vegas-coverage.php" clicktrack="ctl|rsd|emktg|offers|gigabit|news|link|article_1">CenturyLink plans expansion of Las Vegas gigabit fiber network</a></h4>
+                    <h4><a href="<?php echo $path; ?>/news/centurylink-expands-las-vegas-coverage.php" clicktrack="ctl|rsd|emktg|offers|gigabit|news|link|article_1">CenturyLink plans expansion of<br>Las Vegas gigabit fiber network</a></h4>
                     <p>
                         <strong>LAS VEGAS –- CenturyLink, Inc. (NYSE: CTL),</strong> which offers the fastest residential broadband speeds in Las Vegas, has announced plans to expand its gigabit fiber network and more than double the number of homes eligible for up to 1 gigabit per second (Gbps) service by the end of 2014.<br><br><a href="<?php echo $path; ?>/news/centurylink-expands-las-vegas-coverage.php" clicktrack="ctl|rsd|emktg|offers|gigabit|news|link|article_1">Read more</a>
                     </p>
