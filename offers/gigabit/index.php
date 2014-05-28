@@ -88,7 +88,7 @@
                         CenturyLink plans expansion of Las Vegas<br>gigabit fiber network 
                     </a>
                     <p class="blurb">
-                        <strong>LAS VEGAS &mdash; CenturyLink, Inc. (NYSE: CTL),</strong> which offers the fastest residential broadband speeds in Las Vegas, has announced plans to expand its gigabit fiber network and more than double the number of homes eligible for up to 1 gigabit per second (Gbps) service by the end of 2014...<a href="<?php echo $path; ?>/news/lasvegas.php" class="read-more-link" clicktrack="ctl|rsd|emktg|offers|gigabit|home|link|article_1">Read More</a>
+                        <strong>LAS VEGAS &mdash; CenturyLink, Inc. (NYSE: CTL),</strong> which offers the fastest residential broadband speeds in Las Vegas, has announced plans to expand its gigabit fiber network and more than double the number of homes eligible for up to 1 gigabit per second (Gbps) service by the end of 2014...<a href="<?php echo $path; ?>/news/centurylink-expands-las-vegas-coverage.php" class="read-more-link" clicktrack="ctl|rsd|emktg|offers|gigabit|home|link|article_1">Read More</a>
                     </p>
                 </div>
 
