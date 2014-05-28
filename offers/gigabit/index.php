@@ -82,21 +82,22 @@
         <div class="newsy">
             <h3><strong>Get the latest</strong> about speeds up to 1 Gig.</h3>
             <div class="newsblurbs">
+
+                <div class="newsblurb fL">
+                    <a href="<?php echo $path; ?>/news/lasvegas.php" class="title" clicktrack="ctl|rsd|emktg|offers|gigabit|home|link|article_1">
+                        CenturyLink plans expansion of Las Vegas<br>gigabit fiber network 
+                    </a>
+                    <p class="blurb">
+                        <strong>LAS VEGAS &mdash; CenturyLink, Inc. (NYSE: CTL),</strong> which offers the fastest residential broadband speeds in Las Vegas, has announced plans to expand its gigabit fiber network and more than double the number of homes eligible for up to 1 gigabit per second (Gbps) service by the end of 2014...<a href="<?php echo $path; ?>/news/lasvegas.php" class="read-more-link" clicktrack="ctl|rsd|emktg|offers|gigabit|home|link|article_1">Read More</a>
+                    </p>
+                </div>
+
                 <div class="newsblurb fL">
                     <a href="<?php echo $path; ?>/news/lasvegas.php" class="title" clicktrack="ctl|rsd|emktg|offers|gigabit|home|link|article_1">
                         CenturyLink brings 1 gigabit fiber<br>service to Las Vegas
                     </a>
                     <p class="blurb">
                         <strong>MONROE, La., October 9, 2013 &mdash; CenturyLink, Inc. (NYSE: CTL)</strong> today announced that it will expand its fiber network pilot to Las Vegas, enabling Internet speeds of up to 1 gigabit per second (Gbps). CenturyLink’s enhanced fiber network will deliver this ultra-fast broadband technology to residential...<a href="<?php echo $path; ?>/news/lasvegas.php" class="read-more-link" clicktrack="ctl|rsd|emktg|offers|gigabit|home|link|article_1">Read More</a>
-                    </p>
-                </div>
-
-                <div class="newsblurb fL">
-                    <a href="<?php echo $path; ?>/news/omaha.php" class="title" clicktrack="ctl|rsd|emktg|offers|gigabit|home|link|article_2">
-                        CenturyLink to make Omaha one of the<br>fastest broadband cities in America
-                    </a>
-                    <p class="blurb">
-                        <strong>OMAHA, Neb., May 1, 2013 &mdash; CenturyLink, Inc. (NYSE: CTL)</strong> today announced it is connecting 48,000 Omaha homes and businesses with its new high-speed fiber network pilot that will deliver Internet speeds of up to one Gigabit per second (Gbps) – 100 times faster...<a href="<?php echo $path; ?>/news/omaha.php" clicktrack="ctl|rsd|emktg|offers|gigabit|home|link|article_2" class="read-more-link">Read More</a>
                     </p>
                 </div>
                 <div style="clear:both;"></div>
