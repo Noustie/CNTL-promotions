@@ -34,7 +34,7 @@
             Internet speeds&nbsp;&nbsp;<strong>100x faster</strong>&nbsp;&nbsp;than average broadband speeds.*
         </div>
         <div class="news-paper">
-            <a href="<?php echo $path; ?>/news" class="see-more-features">&lt;&lt;View All News</a>
+            <a href="<?php echo $path; ?>/news" class="see-more-features">&laquo;&laquo;View All News</a>
             <h2>News</h2>
             <h3>CenturyLink plans expansion of Las Vegas gigabit fiber network</h3>
             <p class="news-blurb">
