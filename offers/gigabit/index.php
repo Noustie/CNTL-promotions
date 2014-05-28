@@ -93,7 +93,7 @@
                 </div>
 
                 <div class="newsblurb fL">
-                    <a href="<?php echo $path; ?>/news/lasvegas.php" class="title" clicktrack="ctl|rsd|emktg|offers|gigabit|home|link|article_1">
+                    <a href="<?php echo $path; ?>/news/lasvegas.php" class="title" clicktrack="ctl|rsd|emktg|offers|gigabit|home|link|article_2">
                         CenturyLink brings 1 gigabit fiber<br>service to Las Vegas
                     </a>
                     <p class="blurb">
