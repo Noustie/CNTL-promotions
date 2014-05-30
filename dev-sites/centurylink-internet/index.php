@@ -67,7 +67,7 @@
                     <li>Award-winning Norton&trade; AntiVirus Online is included at no additional cost.</li>
                 </ul>
             </div>
-
+            <p class="high-speed-call">Higher Speeds Available. Call 1.866.366.7931</p>
         </div>
     </div>
 
