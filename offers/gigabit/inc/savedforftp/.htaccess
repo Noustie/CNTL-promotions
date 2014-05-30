@@ -1,0 +1,6 @@
+# PASSWORD PROTECTION -- STAGING SETTINGS -- COMMENT ON LIVE
+AuthName "Protected Area. Please Authenticate."
+AuthType Basic
+AuthUserFile /var/www/.htpasswd
+AuthGroupFile /dev/null
+Require valid-user

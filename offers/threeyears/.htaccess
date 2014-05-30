@@ -1,0 +1,5 @@
+# single page redirect
+
+RewriteEngine    On
+RewriteCond      %{QUERY_STRING}    ^value=100&rid=power$
+RewriteRule      (.*)               /offers/threeyears/?     [R=permanent]

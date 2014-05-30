@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^(.*)$ /offers/gigabit/$1 [L,R=301]

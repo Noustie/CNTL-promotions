@@ -1,0 +1,5 @@
+# single page redirect
+
+RewriteEngine    On
+RewriteCond      %{QUERY_STRING}    ^value=100&rid=offer$
+RewriteRule      (.*)               /offers/tripleplay/?     [R=permanent]

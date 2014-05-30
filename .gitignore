@@ -12,6 +12,6 @@ findindexes*
 webservices/ratingsandreviews/review-inc*
 webservices/ratingsandreviews/sample-*
 Github-Auto-Deploy/
-.htaccess
+/.htaccess
 robots.txt
 .DS_store
