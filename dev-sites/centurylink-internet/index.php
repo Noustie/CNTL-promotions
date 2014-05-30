@@ -2,7 +2,7 @@
     require_once("inc/config.php");
     $nav_class["home"] = "selected";
     $title = "CenturyLink | High Speed Internet";
-    $description = "Bundle CenturyLink High-Speed Internet and Phone service today and save. Lock in a low price for the next year with no contract. Offer ends soon.";
+    $description = "Bundle CenturyLink High-Speed Internet and Phone service today and save. Lock in a low price for the next three years with no contract. Offer ends soon";
     $keywords = "centurylink, price lock, high-speed internet, phone internet bundle, home internet";
 
     $svar = array(
@@ -48,7 +48,7 @@
 
     <div class="mid-tfn">
         <div class="container-940">
-            <span>Order Today! Call 866-366-7931 or <u>Order Online</u></span>
+            <span>Order Today! Call 866-366-7931 or <a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop" clicktrack="ctl|rsd|emktg|microsite|position2|link|order_now">Order Online</a></span>
         </div>
     </div>
 
