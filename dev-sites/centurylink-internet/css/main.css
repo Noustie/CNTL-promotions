@@ -252,7 +252,7 @@ a:active{
     background-image: url("../img/mid-grey-area.jpg");
     background-repeat: repeat-x;
     background-position: top left;
-    height: 605px;
+    height: 573px;
     margin-top: -1px;
 }
 .home.main-info h2{
@@ -260,7 +260,7 @@ a:active{
     font-weight: 100;
     color: #616365;
     font-size: 28px;
-    margin-top: 0px;
+    margin-top: -5px;
     padding-top: 30px;
     text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.9);
 }
@@ -284,12 +284,12 @@ a:active{
     text-indent:-9999px;
     margin:0px auto;
     position: relative;
-    top: -70px;
+    top: -100px;
 }
 .home.main-info .price-module-one ul, .home.main-info .price-module-two ul{
     color: #616365;
-    font-size: 14px;
-    width: 378px;
+    font-size: 13px;
+    width: 398px;
     position: absolute;
     top: 215px;
     left: 348px;

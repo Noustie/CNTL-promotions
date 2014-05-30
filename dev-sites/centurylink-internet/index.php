@@ -61,7 +61,7 @@
                     High-Speed Internet $19.95 a month when you bundle*
                 </p>
                 <ul>
-                    <li>Watch movies and shows on Netflix&reg; and Hulu in HD.</li>
+                    <li>Watch movies and shows on Netflix<sup>&reg;</sup> and Hulu in HD.</li>
                     <li>Save on mobile data &ndash; connect with in-home Wi-Fi to download the latest apps.</li>
                     <li>Get answers when you need them with 24/7 tech support.</li>
                     <li>Award-winning Norton&trade; AntiVirus Online is included at no additional cost.</li>
