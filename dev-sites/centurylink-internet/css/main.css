@@ -259,10 +259,10 @@ a:active{
     text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.9);
 }
 .home.main-info .price-module-one{
-    width: 382px;
-    height: 405px;
+    width: 775px;
+    height: 419px;
     display: block;
-    background-image: url("../img/hsi-home-page.png");
+    background-image: url("../img/center.png");
     background-repeat: no-repeat;
     background-position: top left;
     margin-left: 80px;
