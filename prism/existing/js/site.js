@@ -104,7 +104,7 @@ window.s.server = "promotions.centurylink.com";
 	var tabDCTracking = function() {
 		var axel = Math.random() + "";
 		var a = axel * 10000000000000;
-		$('body').append('<iframe src="http://fls.doubleclick.net/activityi;src=2660564;type=produ742;cat=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+		$('body').append('<iframe src="https://fls.doubleclick.net/activityi;src=2660564;type=produ742;cat=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
 	}
 
 	var tabTracking = function(tabID) {
