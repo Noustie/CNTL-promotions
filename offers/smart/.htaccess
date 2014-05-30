@@ -1,6 +1,6 @@
 RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://promotions.centurylink.com/$1 [R,L]
+RewriteRule ^(.*)$ https://promotions.centurylink.com/offers/smart/$1 [R,L]
 
 AddOutputFilterByType DEFLATE text/plain
 AddOutputFilterByType DEFLATE text/html
