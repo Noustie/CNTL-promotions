@@ -25,8 +25,7 @@
             <div class="countdownclock">
                 <div class="container-940">
                     <span class="before-clock fL">Time left to order today</span>
-                    <div class="clock fL" id="countbox">
-                    </div>
+                    <div class="clock fL" id="countbox"></div>
                     <span class="after-clock fR">Call Now: 1.866.366.7931</span>
                     <div style="clear:both;"></div>
                 </div>
@@ -39,40 +38,7 @@
                         No Contract 5-year price guarantee CenturyLink High-Speed Internet $14.95 a month when you bundle* Speeds up to 768 Kbps.
                     </p>
                     <div class="pp">
-                        <img src="<?php echo $path; ?>img/slide1-title1.png" class="title1 slide1-pos">
-                        <img src="<?php echo $path; ?>img/slide1-title2.png" class="title2 slide1-pos">
-                        <img src="<?php echo $path; ?>img/slide1-title3.png" class="title3 slide1-pos">
-                        <div class="slide1-pp slide1-pos">
-                            <img src="<?php echo $path; ?>img/slide1-pp1.png">
-                            <!--<a href="<?php echo $path; ?>internet" class="learn-more-btn" clicktrack="ctl|rsd|emktg|microsite|position2|internet|banner|button|learn_more">Learn more</a>-->
-                        </div>
-                        <img src="<?php echo $path; ?>img/slide1-blue.png" class="slide1-blue slide1-pos">
-                        <img src="<?php echo $path; ?>img/slide1-lg-circ.png" class="lrg-circ-s1 slide1-pos">
-                        <img src="<?php echo $path; ?>img/slide1-md-circ.png" class="md-circ-s1 slide1-pos">
-                        <img src="<?php echo $path; ?>img/slide1-sm-circ.png" class="sm-circ-s1 slide1-pos">
-                    </div>
-                </div>
-            </div>
-
-            <div class="slide2">
-                <div class="container-940">
-                    <p class="hidden">
-                        Bundle now. Save big.
-                        CenturyLink&reg; High-Speed Internet + Unlimited Nationwide Calling
-                        $59.95 a month*
-                        Speeds up to 10Mbps
-                        No Contract 5 - year price guarantee 
-                    </p>
-                    <div class="pp">
-                        <img src="<?php echo $path; ?>img/slide2-title.png" class="title slide2-pos">
-                        <div class="slide2-pp slide2-pos">
-                            <img src="<?php echo $path; ?>img/slide2-pp.png">
-                            <!--<a href="<?php echo $path; ?>bundles" class="learn-more-btn" clicktrack="ctl|rsd|emktg|microsite|position2|bundles|banner|button|learn_more">Learn more</a>-->
-                        </div>
-                        <img src="<?php echo $path; ?>img/slide2-blue.png" class="slide2-blue slide2-pos">
-                        <img src="<?php echo $path; ?>img/slide1-lg-circ.png" class="lrg-circ slide2-pos">
-                        <img src="<?php echo $path; ?>img/slide1-md-circ.png" class="md-circ slide2-pos">
-                        <img src="<?php echo $path; ?>img/slide1-sm-circ.png" class="sm-circ slide2-pos">
+                        <img src="<?php echo $path; ?>img/header-pp.png" alt="CenturyLink High-Speed Internet">
                     </div>
                 </div>
             </div>

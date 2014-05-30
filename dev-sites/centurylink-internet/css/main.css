@@ -207,8 +207,6 @@ a:active{
 
 .slide1{
     height: 482px;
-    display: none;
-    opacity: 0;
     background-image: url("../img/HSI.jpg");
     background-repeat: no-repeat;
     background-position: right top;
@@ -224,83 +222,6 @@ a:active{
     position: absolute;
     top: 95px;
 }
-.slide1-pos{position: absolute;}
-.slide1 .title1{top: 0;}
-.slide1 .title2{top: 40px;}
-.slide1 .title3{top: 85px;}
-.slide1 .slide1-pp{top:119px;z-index: 80;}
-.slide1 .slide1-blue{top:238px;z-index: 78;}
-.slide1 .lrg-circ-s1{top:214px;z-index: 79;}
-.slide1 .md-circ-s1{top: 353px;left: 128px;}
-.slide1 .sm-circ-s1{top: 170px;left: 90px;}
-.slide1 a.learn-more-btn{
-    background-image: url("../img/learnmore-btn.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    text-indent: -9999px;
-    display: block;
-    width: 112px;
-    height: 37px;
-    position: absolute;
-    top: 172px;
-    left: 185px;
-    z-index: 100;
-}
-
-.ie8 .pp{
-    visibility: visible !important;
-    filter: none !important;
-    opacity: 1;
-}
-.ie8 .slide1-pos, .ie8 .slide2-pos{
-    visibility: visible !important;
-    filter: none !important;
-    opacity: 1;
-}
-
-.slide2{
-    height: 482px;
-    display: none;
-    opacity: 0;
-    background-image: url("../img/Bundle.jpg");
-    background-repeat: no-repeat;
-    background-position: right top;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 30;
-}
-.slide2 .pp{
-    width: 449px;
-    height: 318px;
-    position: absolute;
-    top: 125px;
-}
-.slide2-pos{position: absolute;}
-.slide2 .title{}
-.slide2 .slide2-pp{top: 56px;z-index: 80;}
-.slide2 .slide2-blue{top: 186px;}
-.slide2 .lrg-circ{top:162px;z-index: 79;}
-.slide2 .md-circ{top: 302px;left: 128px;}
-.slide2 .sm-circ{top: 116px;left: 90px;}
-.slide2 .pp a.learn-more-btn{
-    background-image: url("../img/learnmore-btn.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    text-indent: -9999px;
-    display: block;
-    width: 112px;
-    height: 37px;
-    position: absolute;
-    top: 178px;
-    left: 183px;
-    z-index: 81;
-}
-
-
-
-
 
 
 .mid-tfn{
