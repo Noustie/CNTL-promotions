@@ -55,7 +55,6 @@ textarea {
     padding: 0.2em 0;
 }
 
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -163,8 +162,6 @@ a:active{
 }
 
 
-
-
 .header{
     height: 70px;
     display: block;
@@ -198,8 +195,6 @@ a:active{
 .nav ul li a:active{
     text-decoration: underline;
 }
-
-
 
 
 .home.hero{

@@ -31,7 +31,7 @@
     <script type="text/javascript" src="<?php echo $path; ?>js/jquery.min.js"></script>
     <script type="text/javascript" src="<?php echo $path; ?>js/greensock/TweenMax.min.js"></script>
     <script type="text/javascript" src="<?php echo $path; ?>js/main.js"></script>
-    <script type="text/javascript" src="<?php echo $path; ?>js/animation.js"></script>
+
     <!-- Do not touch! -->
     <!-- SiteCatalyst code version: H.20.3.
     Copyright 1997-2009 Omniture, Inc. More info available at http://www.omniture.com -->
