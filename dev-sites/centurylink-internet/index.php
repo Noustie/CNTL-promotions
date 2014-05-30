@@ -48,7 +48,7 @@
 
     <div class="mid-tfn">
         <div class="container-940">
-            <span>Order Today! Call 866-366-7931 or <a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop" target="_blank" clicktrack="ctl|rsd|emktg|microsite|position2|link|order_now">Order Online</a></span>
+            <span>Order Today! Call 866-366-7931 or <a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop" target="_blank" class="shop-link" clicktrack="ctl|rsd|emktg|microsite|position2|link|order_now">Order Online</a></span>
         </div>
     </div>
 

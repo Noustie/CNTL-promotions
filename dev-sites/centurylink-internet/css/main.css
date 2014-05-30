@@ -71,11 +71,9 @@ a{
 }
 a:visited{
     color: inherit;
-
 }
 a:hover{
     text-decoration: underline;
-
 }
 a:active{
 }
@@ -86,7 +84,9 @@ a:active{
     width: 940px;
     margin: 0 auto;
 }
-
+a.shop-link, a.shop-link:visited, a.shop-link:hover, a.shop-link:active{
+    color:#fff;
+}
 .before-clock{
     font-size: 18px;
     font-style: italic;
