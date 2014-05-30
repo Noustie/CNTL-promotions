@@ -26,7 +26,7 @@
                 <div class="container-940">
                     <span class="before-clock fL">Time left to order today</span>
                     <div class="clock fL" id="countbox"></div>
-                    <span class="after-clock fR">Call Now: 1.866.366.7931</span>
+                    <span class="after-clock fR">Call Now: 866-366-7931</span>
                     <div style="clear:both;"></div>
                 </div>
             </div>
@@ -35,7 +35,7 @@
                 <div class="container-940">
                     <p class="hidden">
                         CenturyLink&reg; High-Speed Internet. Consistently fast. Guaranteed price.
-                        No Contract 5-year price guarantee CenturyLink High-Speed Internet $14.95 a month when you bundle* Speeds up to 768 Kbps.
+                        3 years. 1 price. 0 contract. $19.95 a month when you bundle* Speeds up to 10Mbps
                     </p>
                     <div class="pp">
                         <img src="<?php echo $path; ?>img/header-pp.png" alt="CenturyLink High-Speed Internet">
@@ -48,34 +48,24 @@
 
     <div class="mid-tfn">
         <div class="container-940">
-            <span>Call Now: 1.866.366.7931</span>
+            <span>Order Today! Call 866-366-7931 or <u>Order Online</u></span>
         </div>
     </div>
 
     <div class="home main-info">
         <div class="container-940">
-            <h2>Choose CenturyLink and Save.</h2>
+            <h2>Choose CenturyLink and save on speeds up to 10 Mbps.</h2>
             <div class="price-module-one fL">
+                <h1>CenturyLink High-Speed Internet</h1>
                 <p class="hidden">
-                    High-Speed Internet $14.95 a month when you bundle*
+                    High-Speed Internet $19.95 a month when you bundle*
                 </p>
                 <ul>
-                    <li>1-Year Price-Lock Guarantee</li>
-                    <li>Speeds up to 768 Kbps</li>
-                    <li>Perfect for emailing friends and family<br>and web browsing</li>
+                    <li>Watch movies and shows on Netflix&reg; and Hulu in HD.</li>
+                    <li>Save on mobile data &ndash; connect with in-home Wi-Fi to download the latest apps.</li>
+                    <li>Get answers when you need them with 24/7 tech support.</li>
+                    <li>Award-winning Norton&trade; AntiVirus Online is included at no additional cost.</li>
                 </ul>
-                <!--<a href="<?php echo $path; ?>internet" class="hero-learn-more-btn" clicktrack="ctl|rsd|emktg|microsite|position2|button|internet">Learn more</a>-->
-            </div>
-            <div class="price-module-two fL">
-                <p class="hidden">
-                    Bundle Internet + Phone $54.95 a month*
-                </p>
-                <ul>
-                    <li>1-Year Price-Lock Guarantee</li>
-                    <li>Speeds up to 768 Kbps</li>
-                    <li>Unlimited nationwide and local calling</li>
-                </ul>
-                <!--<a href="<?php echo $path; ?>bundles" class="hero-learn-more-btn" clicktrack="ctl|rsd|emktg|microsite|position2|button|bundles">Learn more</a>-->
             </div>
         </div>
         
@@ -106,7 +96,7 @@
 
     <div class="lower-tfn">
         <div class="container-940">
-            <span>Call Now: 1.866.366.7931</span>
+            <span>Call Now: 866-366-7931</span>
         </div>
     </div>
 
