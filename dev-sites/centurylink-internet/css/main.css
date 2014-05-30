@@ -252,7 +252,7 @@ a:active{
     background-image: url("../img/mid-grey-area.jpg");
     background-repeat: repeat-x;
     background-position: top left;
-    height: 638px;
+    height: 605px;
     margin-top: -1px;
 }
 .home.main-info h2{
@@ -276,13 +276,15 @@ a:active{
     position: relative;
     top: -35px;
 }
-.home.main-info .price-module-two{
-    width: 382px;
-    height: 405px;
-    display: block;
-    background-image: url("../img/home-bundle-price.png");
-    background-repeat: no-repeat;
-    background-position: top left;
+.high-speed-call {
+    clear:both;
+    background: url('../img/high-speed-call.png') 0 35px transparent no-repeat;
+    width:360px;
+    height:115px;
+    text-indent:-9999px;
+    margin:0px auto;
+    position: relative;
+    top: -70px;
 }
 .home.main-info .price-module-one ul, .home.main-info .price-module-two ul{
     color: #616365;
@@ -707,10 +709,6 @@ a:active{
 .clearfix {
     *zoom: 1;
 }
-.squeeze-top{
-    margin-top: -50px;
-}
-.high-speed-call{clear:both;background: url('../img/high-speed-call.png') 0 35px transparent no-repeat;width:360px;height:115px;text-indent:-9999px;margin:0px auto;}
 
 /* ==========================================================================
    Print styles
