@@ -226,6 +226,9 @@ a:active{
     font-size: 24px;
     color: #74b023;
     font-weight: 100 !important;
+    position: absolute;
+    top: 80px;
+    left: 370px;
 }
 .mid-tfn{
     background-image: url("../img/mid-green-stripe.jpg");
@@ -268,8 +271,10 @@ a:active{
     background-image: url("../img/center.png");
     background-repeat: no-repeat;
     background-position: top left;
-    margin-left: 80px;
+    margin-left: 70px;
     margin-right: 20px;
+    position: relative;
+    top: -35px;
 }
 .home.main-info .price-module-two{
     width: 382px;
@@ -280,11 +285,12 @@ a:active{
     background-position: top left;
 }
 .home.main-info .price-module-one ul, .home.main-info .price-module-two ul{
-    display: block;
-    margin-top: 330px;
     color: #616365;
-    margin-left: 70px;
     font-size: 14px;
+    width: 378px;
+    position: absolute;
+    top: 215px;
+    left: 348px;
 }
 .home.main-info .price-module-one ul li, .home.main-info .price-module-two ul li{
     padding-bottom: 3px;
@@ -338,10 +344,6 @@ a:active{
     margin-left: 20px;
     margin-right: 20px;
 }
-
-
-
-
 
 .internet.hero{
     background-image: url("../img/HSI.jpg");
@@ -705,8 +707,10 @@ a:active{
 .clearfix {
     *zoom: 1;
 }
-
-.high-speed-call{clear:both;background: url('../img/high-speed-call.png') 0 35px transparent no-repeat;width:360px;height:115px;text-indent:-9999px;margin:30px auto;}
+.squeeze-top{
+    margin-top: -50px;
+}
+.high-speed-call{clear:both;background: url('../img/high-speed-call.png') 0 35px transparent no-repeat;width:360px;height:115px;text-indent:-9999px;margin:0px auto;}
 
 /* ==========================================================================
    Print styles
