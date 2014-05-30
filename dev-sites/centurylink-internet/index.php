@@ -2,7 +2,7 @@
     require_once("inc/config.php");
     $nav_class["home"] = "selected";
     $title = "CenturyLink | High Speed Internet";
-    $description = "Bundle CenturyLink High-Speed Internet and Phone service today and save. Lock in a low price for the next three years with no contract. Offer ends soon";
+    $description = "Bundle CenturyLink High-Speed Internet and Phone service today and save. Lock in a low price for the next three years with no contract. Offer ends soon.";
     $keywords = "centurylink, price lock, high-speed internet, phone internet bundle, home internet";
 
     $svar = array(
