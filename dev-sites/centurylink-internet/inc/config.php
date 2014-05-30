@@ -7,7 +7,7 @@
         "bundles" => ''
     );
 
-    /*$path = "/test/bundle/";*/
-    $path = "/";
+    $path = "/dev-sites/centurylink-internet/";
+    // $path = "/";
 
 ?>
