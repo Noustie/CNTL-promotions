@@ -215,11 +215,11 @@ div.mastNav p.links {
 }
 .mastNav .phone {
 	width: 155px;
-	background: #fff url('http://www.centurylink.com/prismtv/images/icons/iconPhone.gif') no-repeat 5px center;
+	background: #fff url('//www.centurylink.com/prismtv/images/icons/iconPhone.gif') no-repeat 5px center;
 }
 .mastNav .chatOnline {
 	/*width: 155px;*/
-	background: #fff url('http://www.centurylink.com/prismtv/images/icons/iconChat.gif') no-repeat left center;
+	background: #fff url('//www.centurylink.com/prismtv/images/icons/iconChat.gif') no-repeat left center;
 }
 
 
@@ -594,7 +594,7 @@ p.redZoneBtn {
 
 /* MODIFIED FROM MAIN.CSS ON CENTURYLINK.COM*/
 /* =footer */
-#footer {background: url("http://www.centurylink.com/static/Images/Layout/footerBg.gif") no-repeat; font-size: 12px; margin: 0 auto; width: 960px; height: 100px; overflow: hidden; clear:both}
+#footer {background: url("//www.centurylink.com/static/Images/Layout/footerBg.gif") no-repeat; font-size: 12px; margin: 0 auto; width: 960px; height: 100px; overflow: hidden; clear:both}
 #footer .copyright {font-size: 11px; margin-top: 14px;}
 #footer .cta {font-size: 16px; color: #999; font-weight: bold;  margin: 0 0 12px; }
 #footer .about {width: 70%; float: left; padding-top: 4px; position: relative; top: 20px; left: 20px;}
