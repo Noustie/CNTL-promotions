@@ -8,15 +8,10 @@
 
 	$http_origin = $_SERVER['HTTP_ORIGIN'];
 
-	if ( !!$http_origin ) {
-		echo "Origin: ";
-		echo $http_origin;
-	}
-
 	if ( !!$http_origin && preg_match('/\.centurylink\.com$/', $http_origin) === 0 )
 	{  
 	    //header("Access-Control-Allow-Origin: $http_origin");
-	    echo "error: $http_origin";
+	    //echo "error: $http_origin";
 	    header("HTTP/1.0 404 Not Found");
 	    exit();
 	}
