@@ -1,8 +1,10 @@
 <?php
-
-	error_reporting(E_ALL);
-	ini_set("display_errors", 1);
+	
 	$hostName = $_SERVER['SERVER_NAME']; 
+	if ( strpos($hostName, "staging.") !== -1 || $_GET['errdebug'] === 'yes' ) {
+		error_reporting(E_ALL);
+		ini_set("display_errors", 1);
+	}
 
 	function trim_value(&$value)
 	{
