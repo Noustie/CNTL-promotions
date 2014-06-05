@@ -2,7 +2,7 @@
 	
 	$hostName = $_SERVER['SERVER_NAME']; 
 	if ( strpos($hostName, "staging.") !== -1 || $_GET['errdebug'] === 'yes' ) {
-		error_reporting(E_ALL);
+		error_reporting(E_ALL ^ E_NOTICE);
 		ini_set("display_errors", 1);
 	}
 
