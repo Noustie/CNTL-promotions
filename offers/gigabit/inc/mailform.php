@@ -9,6 +9,7 @@
 	$http_origin = $_SERVER['HTTP_ORIGIN'];
 
 	if ( !!$http_origin ) {
+		echo "Origin: ";
 		echo $http_origin;
 	}
 
