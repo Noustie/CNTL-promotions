@@ -6,6 +6,14 @@
 		ini_set("display_errors", 1);
 	}
 
+	$http_origin = $_SERVER['HTTP_ORIGIN'];
+
+	if ( preg_match('/\.centurylink\.com$/gi', $http_origin) )
+	{  
+	    header("Access-Control-Allow-Origin: $http_origin");
+	}
+
+
 	function trim_value(&$value)
 	{
 	    $value = trim($value);

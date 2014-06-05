@@ -2,9 +2,5 @@ Order allow,deny
 Allow from all
 Satisfy all
 
-SetEnvIf Origin "^(.*\.centurylink\.com)" ORIGIN_SUB_DOMAIN=$1
-Header set Access-Control-Allow-Origin "%{ORIGIN_SUB_DOMAIN}" env=ORIGIN_SUB_DOMAIN
-Header set Access-Control-Allow-Credentials true
-
 # Header set Access-Control-Allow-Origin "*"
 # Header set Access-Control-Allow-Credentials true
