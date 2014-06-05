@@ -1,7 +1,9 @@
-Allow from all
-Satisy any
 SetEnvIf Origin "^(.*\.centurylink\.com)$" ORIGIN_SUB_DOMAIN=$1
 <IfModule mod_headers.c>
     Header set Access-Control-Allow-Origin "%{ORIGIN_SUB_DOMAIN}e" env=ORIGIN_SUB_DOMAIN
     Header set Access-Control-Allow-Credentials true
 </IfModule>
+
+Order allow,deny
+Allow from all
+Satisfy all
