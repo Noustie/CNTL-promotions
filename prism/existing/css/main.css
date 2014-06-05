@@ -660,6 +660,16 @@ div.mastNav p.links {
 	font-size: 14px;
 	text-align: center;
 	padding-top: 352px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.p-placement-1 {
+	text-align: center;
+	padding-top: 315px;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 .ir{
 	display: block;
