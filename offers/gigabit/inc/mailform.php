@@ -8,6 +8,10 @@
 
 	$http_origin = $_SERVER['HTTP_ORIGIN'];
 
+	if ( !!$http_origin ) {
+		echo $http_origin;
+	}
+
 	if ( preg_match('/\.centurylink\.com$/', $http_origin) )
 	{  
 	    header("Access-Control-Allow-Origin: $http_origin");
