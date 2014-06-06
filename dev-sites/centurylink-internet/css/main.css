@@ -180,7 +180,11 @@ a.shop-link, a.shop-link:visited, a.shop-link:hover, a.shop-link:active{
 a.orangeBookend:hover .centerBookend,
 a.bookendButton:hover .centerBookend { background-color: rgba(0,0,0,0.2); }
 a.bookendButton:hover { text-decoration: none; }
-
+.hero-btn{
+    position: absolute;
+    top: 277px;
+    left: 160px;
+}
 
 .header{
     height: 70px;

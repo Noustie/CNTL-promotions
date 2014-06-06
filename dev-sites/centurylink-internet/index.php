@@ -72,13 +72,14 @@
                     <li>Award-winning Norton&trade; AntiVirus Online is included at no additional cost.</li>
                 </ul>
             </div>
-            <p class="high-speed-call">Higher Speeds Available.                         
+            <div class="high-speed-call">
+                Higher Speeds Available.
                 <a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop" targert="_blank" class="orangeBookend bookendButton snipe-btn" clicktrack="ctl|rsd|emktg|microsite|position2|button|check_avail2">
                     <span class="bookend leftBookend">&nbsp;</span>
                     <span class="bookend centerBookend">Check Availability</span>
                     <span class="bookend rightBookend">&nbsp;</span>
                 </a>
-            </p>
+            </div>
         </div>
     </div>
 
