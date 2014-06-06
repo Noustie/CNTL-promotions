@@ -73,7 +73,7 @@
                 </ul>
             </div>
             <div class="high-speed-call">
-                Higher Speeds Available.
+                <p>Higher Speeds Available.</p>
                 <a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop" targert="_blank" class="orangeBookend bookendButton snipe-btn" clicktrack="ctl|rsd|emktg|microsite|position2|button|check_avail2">
                     <span class="bookend leftBookend">&nbsp;</span>
                     <span class="bookend centerBookend">Check Availability</span>

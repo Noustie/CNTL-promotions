@@ -301,14 +301,12 @@ a.bookendButton:hover { text-decoration: none; }
     top: -35px;
 }
 .high-speed-call {
-    clear:both;
+
+}
+.high-speed-call p{
     background: url('../img/high-speed-call.png') 0 35px transparent no-repeat;
-    width:360px;
-    height:115px;
     text-indent:-9999px;
-    margin:0px auto;
     position: relative;
-    top: -100px;
 }
 .home.main-info .price-module-one ul, .home.main-info .price-module-two ul{
     color: #616365;
