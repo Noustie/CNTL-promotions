@@ -60,7 +60,7 @@
     <div class="home main-info">
         <div class="container-940">
             <h2>Choose CenturyLink and save on speeds up to 10 Mbps.</h2>
-            <div class="price-module-one fL">
+            <div class="price-module-one">
                 <h1>CenturyLink High-Speed Internet</h1>
                 <p class="hidden">
                     High-Speed Internet $19.95 a month when you bundle*
