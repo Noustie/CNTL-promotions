@@ -38,6 +38,11 @@
                         3 years. 1 price. 0 contract. $19.95 a month when you bundle* Speeds up to 10Mbps
                     </p>
                     <div class="pp">
+                        <a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop" targert="_blank" class="orangeBookend bookendButton" clicktrack="ctl|rsd|emktg|microsite|position2|button|check_avail1">
+                            <span class="bookend leftBookend">&nbsp;</span>
+                            <span class="bookend centerBookend">Check Availability</span>
+                            <span class="bookend rightBookend">&nbsp;</span>
+                        </a>
                         <img src="<?php echo $path; ?>img/header-pp.png" alt="CenturyLink High-Speed Internet">
                     </div>
                 </div>
@@ -67,7 +72,13 @@
                     <li>Award-winning Norton&trade; AntiVirus Online is included at no additional cost.</li>
                 </ul>
             </div>
-            <p class="high-speed-call">Higher Speeds Available. Call 1.866.366.7931</p>
+            <p class="high-speed-call">Higher Speeds Available.                         
+                <a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop" targert="_blank" class="orangeBookend bookendButton" clicktrack="ctl|rsd|emktg|microsite|position2|button|check_avail2">
+                    <span class="bookend leftBookend">&nbsp;</span>
+                    <span class="bookend centerBookend">Check Availability</span>
+                    <span class="bookend rightBookend">&nbsp;</span>
+                </a>
+            </p>
         </div>
     </div>
 
