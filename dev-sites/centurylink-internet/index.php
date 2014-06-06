@@ -38,7 +38,7 @@
                         3 years. 1 price. 0 contract. $19.95 a month when you bundle* Speeds up to 10Mbps
                     </p>
                     <div class="pp">
-                        <a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop" targert="_blank" class="orangeBookend bookendButton" clicktrack="ctl|rsd|emktg|microsite|position2|button|check_avail1">
+                        <a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop" targert="_blank" class="orangeBookend bookendButton hero-btn" clicktrack="ctl|rsd|emktg|microsite|position2|button|check_avail1">
                             <span class="bookend leftBookend">&nbsp;</span>
                             <span class="bookend centerBookend">Check Availability</span>
                             <span class="bookend rightBookend">&nbsp;</span>
@@ -73,7 +73,7 @@
                 </ul>
             </div>
             <p class="high-speed-call">Higher Speeds Available.                         
-                <a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop" targert="_blank" class="orangeBookend bookendButton" clicktrack="ctl|rsd|emktg|microsite|position2|button|check_avail2">
+                <a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop" targert="_blank" class="orangeBookend bookendButton snipe-btn" clicktrack="ctl|rsd|emktg|microsite|position2|button|check_avail2">
                     <span class="bookend leftBookend">&nbsp;</span>
                     <span class="bookend centerBookend">Check Availability</span>
                     <span class="bookend rightBookend">&nbsp;</span>
