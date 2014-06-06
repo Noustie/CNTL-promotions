@@ -316,6 +316,7 @@ a.bookendButton:hover { text-decoration: none; }
     position: relative;
     left: 50%;
     margin-left: -80px;
+    top: -42px;
 }
 .home.main-info .price-module-one ul, .home.main-info .price-module-two ul{
     color: #616365;
