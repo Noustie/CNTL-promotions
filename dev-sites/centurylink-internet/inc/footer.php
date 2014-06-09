@@ -21,7 +21,7 @@
             <div style="clear:both;"></div>
 
             <p class="small grey">*Other fees and conditions may apply. <a href="<?php echo $path; ?>disclaimer.html" class="disclaimer-link" clicktrack="ctl|rsd|emktg|microsite|position2|footer|link|fees_and_conditions" onclick="window.open(this.href,'disclaimer','height=650,width=600,left=100,top=50,resizable=yes,scrollbars=yes,toolbar=no,status=no');return false;" target="_blank">Click here for details</a></p>
-            <p class="small dk-grey">©2014 CenturyLink. All Rights Reserved. The name CenturyLink and the pathways logo are trademarks of CenturyLink.</p>
+            <p class="small dk-grey">&copy;2014 CenturyLink. All Rights Reserved.</p>
         </div>
         <div class="footer-bottom"></div>
     </div>
