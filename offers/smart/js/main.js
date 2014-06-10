@@ -190,13 +190,13 @@ $(function(){
 		tl_start.to( $(".lady"), 0.5, { alpha:1, ease:Power2.easeOut })
 				.from( $(".lady"), 1.7, { left:"300px", ease:Power2.easeInOut }, 0.4)
 				.to($(".anim2 .anim2-s1"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, .4)
+				.from($(".limited-time-offer-snipe"), 0.7,{ backgroundPosition:"-380px 0px", ease:Power2.easeInOut}, .5)
+				.to($(".limited-time-offer-snipe a"), 0.7,{ opacity:1, ease:Power2.easeInOut}, .7)
 				.to($(".anim2 .anim2-s2"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, .5)
 				.to($(".anim2 .anim2-s3"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, .6)
 				.to($(".anim2 .anim2-s4"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, .7)
 				.to($(".anim2 .anim2-s5"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, .8)
-				.to($(".anim2 .anim2-s6"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, .8)
-				.from($(".limited-time-offer-snipe"), 0.7,{ backgroundPosition:"-380px 0px", ease:Power2.easeInOut}, .9)
-				.to($(".limited-time-offer-snipe a"), 0.7,{ opacity:1, ease:Power2.easeInOut}, 1.2);
+				.to($(".anim2 .anim2-s6"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, .8);
 		
 		tl_demo.to( $(".lady"), 0.5, { left:"-200px", scale: 1.3, alpha:0, ease: Power2.easeInOut}, 0)
 		 		.to( $(".anim2"), 0.5, { left:"700px", scale: 1.3, alpha:0, ease: Power2.easeInOut}, 0)
