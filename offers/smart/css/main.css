@@ -606,6 +606,9 @@ a.btn-animate:hover{
 	transform: rotateY(0deg);
 	-webkit-transform: rotateY(0deg); /* Safari and Chrome */
 }
+.lt-ie9 .icon-shimmer1,.lt-ie9 .icon-shimmer2,.lt-ie9 .icon-shimmer3,.lt-ie9 .icon-shimmer4,.lt-ie9 .icon-shimmer5,.lt-ie9 .icon-shimmer6,.lt-ie9 .icon-shimmer7,.lt-ie9 .icon-shimmer8 {
+	display: none;
+}
 .videoNav {
 	background: #ffffff;
 	position: relative;
