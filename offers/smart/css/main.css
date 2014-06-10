@@ -355,9 +355,6 @@ ul#nav li div a.ex-fix.active{
 .anim2 a{position: relative;}
 .anim2-s2{margin-bottom: -25px;}
 .limited-time-offer-snipe{
-	background-image: url('../img/smart-offer-snipe.png');
-	background-repeat: no-repeat;
-	background-position: 0px 0px;
 	top: 20px;
 	right: 0px;
 	position: absolute;
