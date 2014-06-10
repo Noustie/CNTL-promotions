@@ -354,7 +354,7 @@ ul#nav li div a.ex-fix.active{
 .anim2 img{position: relative;z-index: 99;}
 .anim2 a{position: relative;}
 .anim2-s2{margin-bottom: -25px;}
-.anim2 .limited-time-offer-snipe{
+.limited-time-offer-snipe{
 	background-image: url('../img/smart-offer-snipe.png');
 	background-repeat: no-repeat;
 	background-position: 0px 0px;
@@ -365,20 +365,20 @@ ul#nav li div a.ex-fix.active{
 	width: 380px;
 	height: 78px;
 }
-.anim2 .limited-time-offer-snipe p{
+.limited-time-offer-snipe p{
 
 }
-.anim2 .limited-time-offer-snipe a:link{
+.limited-time-offer-snipe a:link{
 	color: #a0cfeb;
 	text-decoration: none;
 }
-.anim2 .limited-time-offer-snipe a:visited{
+.limited-time-offer-snipe a:visited{
 	
 }
-.anim2 .limited-time-offer-snipe a:hover{
+.limited-time-offer-snipe a:hover{
 	text-decoration: underline;
 }
-.anim2 .limited-time-offer-snipe a:active{
+.limited-time-offer-snipe a:active{
 	
 }
 .roomBox {
