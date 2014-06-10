@@ -39,7 +39,6 @@
     <!--#set var="faq_url" value="http://faq.centurylink.com"-->
 <!--#endif -->
 
-
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -72,6 +71,7 @@
     <!--<![endif]--> 
 
     <script type="text/javascript">
+        document.getElementsByTagName("html")[0].className = (document.getElementsByTagName("html")[0].className).replace("no-js", "");
         var SERVER_TYPE='<!--#echo var="SERVER_TYPE"-->';
         var ctl_url='<!--#echo var="ctl_url"-->';
         var promos_url='<!--#echo var="promos_url"-->';
