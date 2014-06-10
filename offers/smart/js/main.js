@@ -196,8 +196,8 @@ $(function(){
 				.to($(".anim2 .anim2-s4"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, 0.7)
 				.to($(".anim2 .anim2-s5"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, 0.8)
 				.to($(".anim2 .anim2-s6"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, 0.8)
-				.staggerFrom(snipePanels, 0.7,{ y:-85, ease:Power2.easeInOut}, 0.1, 0.9)
-				.to($(".limited-time-offer-snipe a"), 0.7,{ opacity:1, ease:Power2.easeInOut}, 1);
+				.staggerFrom(snipePanels, 0.5,{ y:-85, ease:Power2.easeOut}, 0.01, 1.5)
+				.to($(".limited-time-offer-snipe a"), 0.7,{ opacity:1, ease:Power2.easeInOut}, 1.6);
 		
 		tl_demo.to( $(".lady"), 0.5, { left:"-200px", scale: 1.3, alpha:0, ease: Power2.easeInOut}, 0)
 		 		.to( $(".anim2"), 0.5, { left:"700px", scale: 1.3, alpha:0, ease: Power2.easeInOut}, 0)
