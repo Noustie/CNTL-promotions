@@ -201,7 +201,11 @@ $(function(){
 		
 		tl_demo.to( $(".lady"), 0.5, { left:"-200px", scale: 1.3, alpha:0, ease: Power2.easeInOut}, 0)
 		 		.to( $(".anim2"), 0.5, { left:"700px", scale: 1.3, alpha:0, ease: Power2.easeInOut}, 0)
-		 		.to( $(".lady, .anim2"), 0.1, { display:"none"}, 0.7)
+		 		
+		 		.staggerTo(snipePanels, 0.45,{ x:700, rotationX:90, scale:0.5, ease:Power2.easeOut}, 0.01, 0.7)
+				.to($(".limited-time-offer-snipe a"), 0.7,{ opacity:0, ease:Power2.easeInOut}, 0.7)
+
+				.to( $(".lady, .anim2"), 0.1, { display:"none"}, 0.7)
 				.to($(".roomblur"), 0.5, { alpha:0 }, 0.3)
 				.to($(".roomblur"), 0.1, { display:"none" }, 0.8)
 				.to($(".tips"), 0.1, { display:"block" }, 0.8)
