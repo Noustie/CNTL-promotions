@@ -359,7 +359,7 @@ ul#nav li div a.ex-fix.active{
 	right: 0px;
 	position: absolute;
 	display: inline-block;
-	width: 380px;
+	width: 384px;
 	height: 78px;
 	-webkit-transform: translate3d(0,0,0);
 	-moz-transform: translate3d(0,0,0);
@@ -370,7 +370,7 @@ ul#nav li div a.ex-fix.active{
 .panels{
 	background-image: url('../img/smart-offer-snipe.png');
 	background-repeat: no-repeat;
-	width: 10%;
+	width: 9%;
 	height: 100%;
 	display: block;
 	float: right;
