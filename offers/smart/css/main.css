@@ -376,6 +376,7 @@ ul#nav li div a.ex-fix.active{
 	float: right;
 }
 
+.f0{background-position: 0% 0%;}
 .f1{background-position: 10% 0%;}
 .f2{background-position: 20% 0%;}
 .f3{background-position: 30% 0%;}
