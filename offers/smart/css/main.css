@@ -371,15 +371,21 @@ ul#nav li div a.ex-fix.active{
 .limited-time-offer-snipe a:link{
 	color: #a0cfeb;
 	text-decoration: none;
+	font-size: 11px;
 }
 .limited-time-offer-snipe a:visited{
-	
+	color: #a0cfeb;
+	text-decoration: none;	
+	font-size: 11px;
 }
 .limited-time-offer-snipe a:hover{
+	color: #a0cfeb;
 	text-decoration: underline;
 }
 .limited-time-offer-snipe a:active{
-	
+	color: #a0cfeb;
+	text-decoration: none;	
+	font-size: 11px;
 }
 .roomBox {
 	width: 100%;
@@ -1707,7 +1713,7 @@ tr.small-top-padding > th{padding-top: 15px;}
     background-color: transparent;
     border: 0;
     overflow: hidden;
-    *text-indent: -9999px;
+    text-indent: -9999px;
 }
 
 .ir:before {
