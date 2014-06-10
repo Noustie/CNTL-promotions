@@ -195,7 +195,7 @@ $(function(){
 				.to($(".anim2 .anim2-s4"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, .7)
 				.to($(".anim2 .anim2-s5"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, .8)
 				.to($(".anim2 .anim2-s6"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, .8)
-				.from($(".limited-time-offer-snipe"), 0.7,{ backgroundPosition:"-380px 0px" ease:Power2.easeInOut}, .8);
+				.from($(".limited-time-offer-snipe"), 0.7,{ backgroundPosition:"-380px 0px", ease:Power2.easeInOut}, .8);
 		
 		tl_demo.to( $(".lady"), 0.5, { left:"-200px", scale: 1.3, alpha:0, ease: Power2.easeInOut}, 0)
 		 		.to( $(".anim2"), 0.5, { left:"700px", scale: 1.3, alpha:0, ease: Power2.easeInOut}, 0)
