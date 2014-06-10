@@ -362,6 +362,8 @@ ul#nav li div a.ex-fix.active{
 	left: 0px;
 	position: absolute;
 	display: inline-block;
+	width: 380px;
+	height: 78px;
 }
 .anim2 span.limited-time-offer-snipe p{
 
