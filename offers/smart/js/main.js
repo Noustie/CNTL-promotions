@@ -225,10 +225,16 @@ $(function(){
 				.to($(".anim2 .anim2-s3"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, .6)
 				.to($(".anim2 .anim2-s4"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, .7)
 				.to($(".anim2 .anim2-s5"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, .8)
-				.to($(".anim2 .anim2-s6"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, .8);
+				.to($(".anim2 .anim2-s6"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, .8)
+				.staggerFrom(snipePanels, 0.45,{ x:-85, scale:0.5, ease:Power2.easeOut}, 0.01, 2)
+				.to($(".limited-time-offer-snipe a"), 0.7,{ opacity:1, ease:Power2.easeInOut}, 2.1);;
 		
 		tl_demo.to( $(".lady"), 0.7, { left:"-500px", alpha:1, ease: Power2.easeInOut}, 0)
 		 		.to( $(".anim2"), 0.7, { left:"1400px", alpha:1, ease: Power2.easeInOut}, 0)
+
+		 		.staggerTo(snipePanels, 0.5,{rotationX:90, scale:0.5, ease:Power2.easeIn}, 0.01, 0)
+				.to($(".limited-time-offer-snipe a"), 0.5,{ opacity:0, ease:Power2.easeInOut}, 0)
+
 		 		.to( $(".lady, .anim2"), 0.1, { display:"none"}, 0.7)
 				.to($(".roomblur"), 0.5, { alpha:1 }, 0.3)
 				.to($(".roomblur"), 0.1, { display:"none" }, 0.8)
