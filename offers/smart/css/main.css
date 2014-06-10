@@ -375,6 +375,7 @@ ul#nav li div a.ex-fix.active{
 	position: absolute;
 	bottom: 5px;
 	right: 14px;
+	opacity: 0;
 }
 .limited-time-offer-snipe a:visited{
 	color: #a0cfeb;
