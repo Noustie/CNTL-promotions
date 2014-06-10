@@ -358,8 +358,8 @@ ul#nav li div a.ex-fix.active{
 	background-image: url('../img/smart-offer-snipe.png');
 	background-repeat: no-repeat;
 	background-position: 0px 0px;
-	top: 0px;
-	left: 0px;
+	top: 20px;
+	right: 0px;
 	position: absolute;
 	display: inline-block;
 	width: 380px;
@@ -372,6 +372,9 @@ ul#nav li div a.ex-fix.active{
 	color: #a0cfeb;
 	text-decoration: none;
 	font-size: 11px;
+	position: absolute;
+	top:0px;
+	left:0px;
 }
 .limited-time-offer-snipe a:visited{
 	color: #a0cfeb;
