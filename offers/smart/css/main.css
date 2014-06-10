@@ -1655,7 +1655,7 @@ a.explore-all-features-btn:hover{
 #installation-fee .i-o-pricepoints{
 	margin-top: 25px;
 }
-#site-disclaimer{
+#site-disclaimer, #snipe-disclaimer{
 	font-size: 14px;
 	color:black;
 	padding: 70px;
