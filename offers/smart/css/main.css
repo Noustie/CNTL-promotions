@@ -358,7 +358,7 @@ ul#nav li div a.ex-fix.active{
 	top: 20px;
 	right: 0px;
 	position: absolute;
-	display: inline-block;
+	display: none;
 	width: 384px;
 	height: 78px;
 	-webkit-transform: translate3d(0,0,0);
@@ -367,6 +367,9 @@ ul#nav li div a.ex-fix.active{
 	-o-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 	overflow: hidden;
+}
+.no-js .limited-time-offer-snipe{
+	display: inline-block;
 }
 .panels{
 	background-image: url('../img/smart-offer-snipe.png');

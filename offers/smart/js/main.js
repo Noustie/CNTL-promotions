@@ -641,6 +641,7 @@ $(function(){
     $(".tipDot8").click(function(e){$('.cycle-slideshow').cycle('goto', 6);e.preventDefault();});
 		
 	$(window).load(function () { 
+		tl_start.set(snipePanels, {display:"inline-block"});
 		tl_start.play()
 		if(location.hash === "#site-disclaimer"){
 			$('.site-disclaimer').click();
