@@ -364,7 +364,32 @@ ul#nav li div a.ex-fix.active{
 	display: inline-block;
 	width: 380px;
 	height: 78px;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-mstransform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
 }
+.panels{
+	background-image: url('../img/smart-offer-snipe.png');
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	width: 10%;
+	height: 100%;
+	display: block;
+	float: right;
+}
+
+.f1{background-position: 10% 0%;}
+.f2{background-position: 20% 0%;}
+.f3{background-position: 30% 0%;}
+.f4{background-position: 40% 0%;}
+.f5{background-position: 50% 0%;}
+.f6{background-position: 60% 0%;}
+.f7{background-position: 70% 0%;}
+.f8{background-position: 80% 0%;}
+.f9{background-position: 90% 0%;}
+.f10{background-position: 101% 0%;}
 .limited-time-offer-snipe p{
 
 }
