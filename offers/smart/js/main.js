@@ -179,6 +179,8 @@ $(function(){
 	tl_demo = new TimelineMax({paused: true});
 	tl_start = new TimelineMax({paused: true});
 
+	tl_start.set($(".limited-time-offer-snipe"), {display:"inline-block"});
+
 	$("body").on("click", "a[clicktrack]", function () {
 		Deferr.enqueueAction( eventTrack, [ this, { eVar30: $(this).attr("clicktrack") }, $(this).attr("clicktrack") ] );
 	});
@@ -641,7 +643,6 @@ $(function(){
     $(".tipDot8").click(function(e){$('.cycle-slideshow').cycle('goto', 6);e.preventDefault();});
 		
 	$(window).load(function () { 
-		tl_start.set($(".limited-time-offer-snipe"), {display:"inline-block"});
 		tl_start.play()
 		if(location.hash === "#site-disclaimer"){
 			$('.site-disclaimer').click();
