@@ -238,12 +238,7 @@ $(function(){
 		 		.to( $(".lady, .anim2"), 0.1, { display:"none"}, 0.7)
 				.to($(".roomblur"), 0.5, { alpha:1 }, 0.3)
 				.to($(".roomblur"), 0.1, { display:"none" }, 0.8)
-				.to($(".tips"), 0.1, { display:"block" }, 0.8)
-				.staggerFromTo(alldots,
-						1.5,
-						{ alpha:1 },
-						{ alpha:1, ease:Back.easeOut }, 
-						.1)
+				.to($(".tips"), 0.1, { display:"block" }, 0.8);
 	}
 			
 	var tl_shimmer = TweenMax.to( $(".shimmer"), 1, { backgroundPosition: "180px 6px", repeatDelay: 3, repeat: -1 } );
