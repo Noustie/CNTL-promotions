@@ -592,20 +592,7 @@ $(function(){
     	e.preventDefault();
     });
 
-    //Home button behavior
-	$("#demo-btn, .demo-btn").click(function(e){
-    	$.colorbox.close(); 
-    	$(".videobox").fadeOut(500).delay(2000); 
-         if ( !!window.player ) {
-             window.player.pauseVideo();
-        }
-        $("#slideshow .vidpopup-active").removeClass("vidpopup-active");
-        if(tl_demo._totalDuration >= 3){
-       		 tl_demo.reverse();
-             tl_shimmer.restart();
-        }
-    });
-
+	//nav drop downs
 	$(".nav-expansion").hide();
     $("#demo-btn, .home-exp").hover(
 		function() {
@@ -623,6 +610,22 @@ $(function(){
 		}
 	);
 
+	//Home button behavior
+	$("#demo-btn, .demo-btn").click(function(e){
+    	$.colorbox.close(); 
+    	$(".videobox").fadeOut(500).delay(2000); 
+         if ( !!window.player ) {
+             window.player.pauseVideo();
+        }
+        $("#slideshow .vidpopup-active").removeClass("vidpopup-active");  // removes the active state from cycle tabs
+        if(tl_demo._totalDuration >= 3){
+       		 tl_demo.reverse();
+             tl_shimmer.restart();
+        }
+        $('.expansion-link').removeClass('active');
+	    $(this).parent().children().addClass('active');
+    });
+
 	//Video button behavior
     $("#video-btn").click(function(e){
 		$.colorbox.close(); 
@@ -630,7 +633,9 @@ $(function(){
          if ( !!window.player ) {
              window.player.pauseVideo();
         }
-        $("#slideshow .vidpopup-active").removeClass("vidpopup-active");
+        $("#slideshow .vidpopup-active").removeClass("vidpopup-active"); // removes the active state from cycle tabs
+        $('.expansion-link').removeClass('active');
+	    $(this).parent().children().addClass('active');
         tl_demo.play();
     });
 
