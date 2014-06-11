@@ -624,6 +624,8 @@ $(function(){
         }
         $('.expansion-link').removeClass('active');
 	    $(this).parent().children().addClass('active');
+	   	$('ul#nav li > a').removeClass('active');
+	    $('ul#nav li a#demo-btn').addClass('active');
     });
 
 	//Video button behavior
@@ -636,6 +638,8 @@ $(function(){
         $("#slideshow .vidpopup-active").removeClass("vidpopup-active"); // removes the active state from cycle tabs
         $('.expansion-link').removeClass('active');
 	    $(this).parent().children().addClass('active');
+	    $('ul#nav li > a').removeClass('active');
+	    $('ul#nav li a#demo-btn').addClass('active');
         tl_demo.play();
     });
 
