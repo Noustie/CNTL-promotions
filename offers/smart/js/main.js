@@ -203,7 +203,7 @@ $(function(){
 		tl_demo.to( $(".lady"), 0.5, { left:"-200px", scale: 1.3, alpha:0, ease: Power2.easeInOut}, 0)
 		 		.to( $(".anim2"), 0.5, { left:"700px", scale: 1.3, alpha:0, ease: Power2.easeInOut}, 0)
 		 		
-		 		.staggerTo(snipePanels, 0.5,{rotationX:90, scale:0.5, ease:Power2.easeIn}, 0.01, 0)
+		 		.staggerTo($(".limited-time-offer-snipe"), 0.5,{width:"0%", ease:Power2.easeIn}, 0.01, 0)
 				.to($(".limited-time-offer-snipe a"), 0.5,{ opacity:0, ease:Power2.easeInOut}, 0)
 
 				.to( $(".lady, .anim2"), 0.1, { display:"none"}, 0.7)
