@@ -197,13 +197,13 @@ $(function(){
 				.to($(".anim2 .anim2-s4"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, 0.7)
 				.to($(".anim2 .anim2-s5"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, 0.8)
 				.to($(".anim2 .anim2-s6"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, 0.8)
-				.to($(".limited-time-offer-snipe"), 0.7,{width:"100%", ease:Power2.easeOut}, 1.6)
+				.to($(".limited-time-offer-snipe"), 0.7,{width:384, ease:Power2.easeOut}, 1.6)
 				.to($(".limited-time-offer-snipe a"), 0.7,{ opacity:1, ease:Power2.easeInOut}, 1.8);
 		
 		tl_demo.to( $(".lady"), 0.5, { left:"-200px", scale: 1.3, alpha:0, ease: Power2.easeInOut}, 0)
 		 		.to( $(".anim2"), 0.5, { left:"700px", scale: 1.3, alpha:0, ease: Power2.easeInOut}, 0)
 		 		
-		 		.staggerTo($(".limited-time-offer-snipe"), 0.5,{width:"0%", ease:Power2.easeIn}, 0.01, 0)
+		 		.staggerTo($(".limited-time-offer-snipe"), 0.5,{width:0, ease:Power2.easeIn}, 0.01, 0)
 				.to($(".limited-time-offer-snipe a"), 0.5,{ opacity:0, ease:Power2.easeInOut}, 0)
 
 				.to( $(".lady, .anim2"), 0.1, { display:"none"}, 0.7)
