@@ -156,10 +156,12 @@ p.quote span{
     color:#284e36;
     font-size: 20px;
 }
+
 /*VIDEO*/
 .video{
     height: 460px;
 }
+
 /*EXPANDER*/
 .expander{
     height: 400px;
@@ -167,6 +169,7 @@ p.quote span{
     background-repeat: repeat-x;
     background-position: top left;
 }
+
 /*LOWER-QUOTE*/
 .lower-quote{
     height: 215px;
@@ -176,6 +179,7 @@ p.quote span{
 .lower-quote p.quote{
     margin-left: 150px;
 }
+
 /*LINKS*/
 .links{
     height: 265px;   
@@ -259,6 +263,7 @@ p.quote span{
 .footer .copyright{
     margin: 0px;
 }
+
 /*BOOK END BUTTON*/
 /* FLEXIBLE BUTTON STYLES */
 .bookendButton { height: 32px; line-height: 30px; display: inline-block; color: #FFF; text-decoration: none; font-size: 14px; text-shadow: 0 -1px 4px rgba(0,0,0,0.2); position: relative; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAADAgMAAAAvs40RAAAACVBMVEUAAAAAAAAAAACDY+nAAAAAA3RSTlMLIkQgIOiWAAAADklEQVQI12NoYHBgYAAAA0YAwS3hRw0AAAAASUVORK5CYII=); background-position: bottom center; background-repeat: repeat-x; border-radius: 5px; }
