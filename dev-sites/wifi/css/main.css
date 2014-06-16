@@ -87,6 +87,7 @@ textarea {
     font-size: 24px;
     color: #000;
     margin-bottom: 0px;
+    margin-top: 18px;
 }
 .header .tfn span{color: #ff6319;}
 /*HERO*/
@@ -274,7 +275,7 @@ p.quote span{
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAAhCAMAAAAyCiXOAAAAt1BMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABaNxAAAAAAAAAAAAAAAAAAAAAAAAAAAAAdCwIAAAAAAAAAAADojijvkyrqjynHTg3KTw3GTA38my36lyv8my3pXBDnWQ/tWw/uXQ/uXhDvYBHvYhLwZBPwZhTxaBXxaxbybhfzcBjzcxr0dRv1eBz2ex72fh/3gSD4gyH4hiP5iCT6iyX6jib7kCf7kij8lCn8lir9mCv9mSz+myz+nC0zaIulAAAAH3RSTlMAAQMEBgkKCxEUFRscICItMjtCRJWanKSqru/w8PL0pLMKRQAAALxJREFUeNrt1cFpQzEQRVGNvj5ZBXfghSH915NdWggmkFiyJk1MIItzSnhceBH9fD1vDap8/Nznjn5e3mxBqff7HL2faQlKvXz1EcdVWNS6fq7RQ1dUixhNWPxJWE1Y1BMWwkJYCEtYCAthISwQFsJCWCAshIWwQFgIC2GBsBAWwgJh8X/DyjnMQKmVOXbOwxKUemQePVp0U1AnH9/zOfae2SPMQVVXudfeI1cTFqVhPffKaBHdF1Jo5878BeJ7TFuNscoKAAAAAElFTkSuQmCC); 
     font-weight: bold; vertical-align: top; position: relative; top: 0; left: 0; z-index: 20; }
 .leftBookend { background-position: left top; width: 55%; top: 0; left: -2px; position: absolute; }
-.centerBookend { padding: 0 20px; margin: 0; z-index: 25; position: relative; height: 30px; background-image: none; border-radius: 3px;
+.centerBookend { padding: 0 50px; margin: 0; z-index: 25; position: relative; height: 30px; background-image: none; border-radius: 3px;
     -webkit-transition: background-color 200ms;
     -moz-transition: background-color 200ms;
     -ms-transition: background-color 200ms;
