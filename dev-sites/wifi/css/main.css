@@ -203,7 +203,7 @@ p.quote span{
 
 }
 .links ul{
-    width: 45%;
+    width: 38%;
     list-style-type: none;
     margin-left: 60px;
     padding: 0px;
@@ -213,7 +213,7 @@ p.quote span{
 }
 .links ul li a{
     color: #00853f;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 /*LOWER-CTA*/
