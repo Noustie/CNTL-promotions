@@ -134,12 +134,12 @@ textarea {
     padding-bottom: 30px;
     font-weight: 100;
 }
-.content p.first{
+.content .first{
     width: 410px;
     margin-left: 60px;
     margin-right: 40px;
 }
-.content p.second{
+.content .second{
     width: 410px;
 }
 .difficultul{
