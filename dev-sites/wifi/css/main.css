@@ -208,10 +208,6 @@ p.quote span{
 .links ul li a{
     color: #00853f;
     font-size: 20px;
-    padding-right: 15px;
-    background-image: url(../img/link-arrow.png);
-    background-repeat: no-repeat;
-    background-position: right 6px;
 }
 
 /*LOWER-CTA*/
