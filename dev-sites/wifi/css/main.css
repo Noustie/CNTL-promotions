@@ -175,14 +175,6 @@ p.quote span{
     padding-top: 50px;
 }
 
-/*EXPANDER*/
-.expander{
-    height: 400px;
-    background-image: url(../img/stripe.jpg);
-    background-repeat: repeat-x;
-    background-position: top left;
-}
-
 /*LOWER-QUOTE*/
 .lower-quote{
     height: 215px;
