@@ -199,6 +199,7 @@ p.quote span{
 
 }
 .links ul{
+    width: 45%;
     list-style-type: none;
     margin-left: 60px;
     padding: 0px;
