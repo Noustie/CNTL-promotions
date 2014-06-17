@@ -187,7 +187,8 @@ p.quote span{
 
 /*LINKS*/
 .links{
-    height: 265px;   
+    padding-top: 45px;
+    padding-bottom: 20px;
 }
 .links h4{
     color: #666;
@@ -195,7 +196,7 @@ p.quote span{
     font-weight: 100;
     margin: 0;
     margin-left: 60px;
-    padding-top: 45px;
+
 }
 .links ul{
     list-style-type: none;
