@@ -141,7 +141,9 @@ textarea {
 }
 .content p.second{
     width: 410px;
-
+}
+.content p.second ul{
+    display: inline-block;
 }
 
 /*UPPER-QUOTE*/
