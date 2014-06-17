@@ -126,11 +126,11 @@ textarea {
 .content{
     background-image: url(../img/other-stripe.jpg);
     background-repeat: repeat-x;
-    background-position: bottom left;
+    background-position: bottom;
     color: #616365;
     line-height: 24px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     font-weight: 100;
 }
 .content p.first{
