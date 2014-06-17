@@ -227,12 +227,14 @@ p.quote span{
 /*LOWER-CTA*/
 .lower-cta{
     background-color: #284e36;
-    font-size: 22px;
+    font-size: 18px;
     color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
 }
 .lower-cta p{
     margin-left: 60px;
-    padding-top: 65px;
     margin-top: 0px;
     font-weight: 100;
 }
