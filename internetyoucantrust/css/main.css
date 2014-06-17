@@ -250,6 +250,7 @@ p.quote span{
     margin: 0px;
     margin-bottom: 10px;
     text-align: left;
+    padding-left: 60px;
 }
 .footer ul{
     text-align: center;
