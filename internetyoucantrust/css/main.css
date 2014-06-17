@@ -124,7 +124,6 @@ textarea {
 
 /*CONTENT*/
 .content{
-    height: 220px;
     background-image: url(../img/other-stripe.jpg);
     background-repeat: repeat-x;
     background-position: bottom left;
