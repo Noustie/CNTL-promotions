@@ -189,6 +189,9 @@ p.quote span{
 .links{
     padding-top: 45px;
     padding-bottom: 20px;
+    background-image: url(../img/stripe.jpg);
+    background-repeat: repeat-x;
+    background-position: top left;
 }
 .links h4{
     color: #666;
