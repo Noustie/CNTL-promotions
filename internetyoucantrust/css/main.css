@@ -142,8 +142,11 @@ textarea {
 .content .second{
     width: 410px;
 }
+.content .second p{
+    margin-top: 0px;
+}
 .difficultul{
-    display: inline;
+    display: block;
 }
 
 /*UPPER-QUOTE*/
