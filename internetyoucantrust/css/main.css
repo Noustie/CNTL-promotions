@@ -249,6 +249,7 @@ p.quote span{
 .footer .source{
     margin: 0px;
     margin-bottom: 10px;
+    text-align: left;
 }
 .footer ul{
     text-align: center;
