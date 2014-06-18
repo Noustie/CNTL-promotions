@@ -27,7 +27,7 @@
         <script type="text/javascript">
             // var custClass = "business"; //uncomment to use biz suite
             var sAddress = "";
-            var pageName = "<?php echo $svar['eBiz_pageName']; ?>"; //s.pageName
+            var eBiz_pageName = "<?php echo $svar['pageName']; ?>"; //s.pageName
             var pageType = ""; //s.pageType
             var errorType = ""; //s.prop2
             var accountEvents = ""; //eVar1
