@@ -128,13 +128,13 @@
                     SFGate, San Francisco, CA, June 13, 2014
                 </p>
                 <ul>
-                    <li><a href="http://www.centurylink.com/home/" clicktrack="ctl|rsd|emktg|comcast|link|residential">Residential</a></li>
+                    <li><a href="http://www.centurylink.com/home/" clicktrack="ctl|rsd|emktg|comcast|link|residential" target="_blank">Residential</a></li>
                     <li>|</li>
-                    <li><a href="http://www.centurylink.com/small-business/" clicktrack="ctl|rsd|emktg|comcast|link|small_business">Small Business</a></li>
+                    <li><a href="http://www.centurylink.com/small-business/" clicktrack="ctl|rsd|emktg|comcast|link|small_business" target="_blank">Small Business</a></li>
                     <li>|</li>
-                    <li><a href="https://www.centurylink.com/business/" clicktrack="ctl|rsd|emktg|comcast|link|large_business">Large Business</a></li>
+                    <li><a href="https://www.centurylink.com/business/" clicktrack="ctl|rsd|emktg|comcast|link|large_business" target="_blank">Large Business</a></li>
                     <li>|</li>
-                    <li><a href="http://www.centurylink.com/wholesale/" clicktrack="ctl|rsd|emktg|comcast|link|wholesale">Wholesale</a></li>
+                    <li><a href="http://www.centurylink.com/wholesale/" clicktrack="ctl|rsd|emktg|comcast|link|wholesale" target="_blank">Wholesale</a></li>
                     <div style="clear:both;"></div>
                 </ul>
                 <p class="copyright">&copy; 2014, CenturyLink. All Rights Reserved.</p>
