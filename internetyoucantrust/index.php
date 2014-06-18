@@ -54,6 +54,7 @@
             var eBiz_prop39 = "<?php echo $svar['prop39evar49']; ?>";
             var eBiz_prop52 = "<?php echo $svar['prop52evar56']; ?>";
             var eBiz_evar27 = "";
+            var eBiz_evar41 = eBiz_channel;
             var eBiz_evar48 = eBiz_prop38;
             var eBiz_evar49 = eBiz_prop39;
             var eBiz_evar53 = eBiz_prop24;
