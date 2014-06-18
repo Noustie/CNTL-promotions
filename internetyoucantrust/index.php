@@ -74,7 +74,7 @@
         <!-- End Google Tag Manager -->
         <div class="header">
             <div class="container">
-                <a href="http://www.centurylink.com"><img src="img/logo.png" class="fL" alt="CenturyLink"></a>
+                <a href="http://www.centurylink.com" clicktrack="ctl|rsd|emktg|comcast|image|centurylink_logo"><img src="img/logo.png" class="fL" alt="CenturyLink"></a>
                 <div style="clear:both;"></div>
             </div>
         </div>
@@ -83,7 +83,7 @@
             <div class="container">
                 <h1>COMCAST CUSTOMERS:<br>Is it <i><strong>your</strong></i> house or <i><strong>their</strong></i> hotspot?</h1>
                 <h2>Opt out.</h2>
-                <a href="http://www.centurylink.com/home/internet" class="bookendButton">
+                <a href="http://www.centurylink.com/home/internet" class="bookendButton" clicktrack="ctl|rsd|emktg|comcast|button|switch_top">
                     <span class="bookend leftBookend">&nbsp;</span>
                     <span class="bookend centerBookend">Switch Now</span>
                     <span class="bookend rightBookend">&nbsp;</span>
@@ -112,7 +112,7 @@
         <div class="lower-cta">
             <div class="container">
                 <p>Don&rsquo;t let Comcast turn your home into their hotspot.</p>
-                <a href="http://www.centurylink.com/home/internet" class="bookendButton">
+                <a href="http://www.centurylink.com/home/internet" class="bookendButton" clicktrack="ctl|rsd|emktg|comcast|button|switch_bottom">
                     <span class="bookend leftBookend">&nbsp;</span>
                     <span class="bookend centerBookend">Switch Now</span>
                     <span class="bookend rightBookend">&nbsp;</span>
@@ -128,13 +128,13 @@
                     SFGate, San Francisco, CA, June 13, 2014
                 </p>
                 <ul>
-                    <li><a href="http://www.centurylink.com/home/">Residential</a></li>
+                    <li><a href="http://www.centurylink.com/home/" clicktrack="ctl|rsd|emktg|comcast|link|residential">Residential</a></li>
                     <li>|</li>
-                    <li><a href="http://www.centurylink.com/small-business/">Small Business</a></li>
+                    <li><a href="http://www.centurylink.com/small-business/" clicktrack="ctl|rsd|emktg|comcast|link|small_business">Small Business</a></li>
                     <li>|</li>
-                    <li><a href="https://www.centurylink.com/business/">Large Business</a></li>
+                    <li><a href="https://www.centurylink.com/business/" clicktrack="ctl|rsd|emktg|comcast|link|large_business">Large Business</a></li>
                     <li>|</li>
-                    <li><a href="http://www.centurylink.com/wholesale/">Wholesale</a></li>
+                    <li><a href="http://www.centurylink.com/wholesale/" clicktrack="ctl|rsd|emktg|comcast|link|wholesale">Wholesale</a></li>
                     <div style="clear:both;"></div>
                 </ul>
                 <p class="copyright">&copy; 2014, CenturyLink. All Rights Reserved.</p>
