@@ -46,6 +46,7 @@
             var totalOrderPrice = ""; //Doubleclick
             var eBiz_server = "<?php echo $svar['server']; ?>"; // s.server
             var eBiz_channel = "<?php echo $svar['channel']; ?>"; // s.channel, s.eVar41
+            var eBiz_prop3 = "<?php echo $svar['prop3evar24']; ?>";
             var eBiz_prop20 = "<?php echo $svar['prop20']; ?>";
             var eBiz_prop24 = "<?php echo $svar['prop24evar53']; ?>";
             var eBiz_prop25 = "<?php echo $svar['prop25evar54']; ?>";
@@ -54,6 +55,7 @@
             var eBiz_prop39 = "<?php echo $svar['prop39evar49']; ?>";
             var eBiz_prop52 = "<?php echo $svar['prop52evar56']; ?>";
             var eBiz_evar27 = "";
+            var eBiz_evar24 = eBiz_prop3;
             var eBiz_evar41 = eBiz_channel;
             var eBiz_evar48 = eBiz_prop38;
             var eBiz_evar49 = eBiz_prop39;
