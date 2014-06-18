@@ -1,15 +1,3 @@
-<?php
-    $svar = array(
-        'pageName' => "ctl|rsd|emktg|comcast",
-        'channel' => "rsd",
-        'prop3evar24' => "unknown",
-        'prop24evar53' => "ctl|rsd|emktg",
-        'prop38evar48' => "static_page",
-        'prop39evar49' => "landing_page",
-        'prop52evar56' => "pam"
-    );
-?>
-
 <!DOCTYPE html>
 <html class="no-js">
     <head>
@@ -27,39 +15,8 @@
         <script type="text/javascript">
             // var custClass = "business"; //uncomment to use biz suite
             var sAddress = "";
-            var pageName = "<?php echo $svar['pageName']; ?>"; //s.pageName
-            var pageType = ""; //s.pageType
-            var errorType = ""; //s.prop2
-            var accountEvents = ""; //eVar1
-            var serviceEvents = ""; //eVar2
-            var pCategory = ""; //eVar3
-            var unisysEvent = ""; //eVar4
-            var orderType = ""; //eVar7
-            var zipAvail = ""; //eVar8
-            var phoneAvail = ""; //eVar9
-            var addressAvail = ""; //eVar10
-            var respMsg = ""; //eVar11
-            var availType = ""; //eVar12
-            var sEvents = ""; //s.events
-            var sProducts = ""; //s.products
-            var orderNum = ""; //s.purchaseID
-            var totalOrderPrice = ""; //Doubleclick
-            var eBiz_server = "<?php echo $svar['server']; ?>"; // s.server
-            var eBiz_channel = "<?php echo $svar['channel']; ?>"; // s.channel, s.eVar41
-            var eBiz_prop20 = "<?php echo $svar['prop20']; ?>";
-            var eBiz_prop24 = "<?php echo $svar['prop24evar53']; ?>";
-            var eBiz_prop25 = "<?php echo $svar['prop25evar54']; ?>";
-            var eBiz_prop26 = "<?php echo $svar['prop26evar55']; ?>";
-            var eBiz_prop38 = "<?php echo $svar['prop38evar48']; ?>";
-            var eBiz_prop39 = "<?php echo $svar['prop39evar49']; ?>";
-            var eBiz_prop52 = "<?php echo $svar['prop52evar56']; ?>";
-            var eBiz_evar27 = "";
-            var eBiz_evar48 = eBiz_prop38;
-            var eBiz_evar49 = eBiz_prop39;
-            var eBiz_evar53 = eBiz_prop24;
-            var eBiz_evar54 = eBiz_prop25;
-            var eBiz_evar55 = eBiz_prop26;
-            var eBiz_evar56 = eBiz_prop52;
+            var pageName = "ctl|rsd|emktg|comcast"; //s.pageName
+
         </script>
     </head>
     <body>
@@ -169,13 +126,30 @@
         })();
         </script>
 
-        <script type="text/javascript" src="js/qwest-core.js"></script>
-        <script type="text/javascript" src="js/centurycore.shortcuts.js"></script>
-
-        <script>
-            $(document).ready(function(){
-                qa.initialize();
-            });
+        <!-- Do not touch! -->
+        <!-- SiteCatalyst code version: H.20.3.
+        Copyright 1997-2009 Omniture, Inc. More info available at http://www.omniture.com -->
+        <script type="text/javascript" src="/assets/js/third-party/metrics/metrixConfig.js"></script>
+        <noscript>
+            <a href="http://www.omniture.com" title="Web Analytics"><img src="http://qwest.com/images/spacer.gif" height="1" width="1" border="0" title="" /></a>
+        </noscript>
+        <!-- / DO NOT REMOVE / -->
+        <!-- End SiteCatalyst code version: H.20.3. -->
+        
+        <!-- / IgnitionOne / -->
+        <script type="text/javascript">
+        (function() {
+          var h = 'com-centurylink.netmng.com';
+          var a = '1279';
+          var t = document.createElement('script');
+          t.type = 'text/javascript'; t.async = true;
+          var p = 'https:'==document.location.protocol?'https://':'http://';
+          var m = document.referrer.match(/https?:\/\/([a-z]+\.[a-z\.]+)/i);
+          var r = (m && m[1] != document.location.hostname) ? ('&ref=' + escape(document.referrer)) : '';
+          t.src = p + h + '/?async=1&aid=' + a + r;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(t, s);
+        })();
         </script>
     </body>
 </html>
