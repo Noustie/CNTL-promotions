@@ -943,9 +943,6 @@ p.squash-top {
 	padding-left: 30px;
 	padding-top: 40px;
 }
-/*.hbo-go .childWrap, .max-go .childWrap {
-	padding: 80px 340px 40px 40px;
-}*/
 .child.redzone {
 	background: url("../images/saints-vs-falcons.jpg") no-repeat scroll 481px 59px transparent!important;
 }
@@ -977,6 +974,12 @@ p.squash-top {
 	background:url("../images/siliconevalley.jpg") no-repeat scroll 415px 38px transparent!important;
 }
 .child.max-go {
+	background:url("../images/go-strikeback.jpg") no-repeat scroll 415px 38px transparent!important;
+}
+.child.showtime-anytime {
+	background:url("../images/penny-dreadful.jpg") no-repeat scroll 415px 38px transparent!important;
+}
+.child.starz-play {
 	background:url("../images/go-strikeback.jpg") no-repeat scroll 415px 38px transparent!important;
 }
 .child h2 {
