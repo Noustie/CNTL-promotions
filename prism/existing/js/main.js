@@ -1,5 +1,5 @@
 $(function(){
-	s.linkInternalFilters += ",.apple.,.google.";
+	s.linkInternalFilters += ",.apple.,.google.,.promotions.centurylink.";
 	
 	var trackthis = $(".trackMe");
 
