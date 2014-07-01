@@ -7,6 +7,21 @@ $(function(){
 		var currentTab = $(trackObj).attr("data-clicktrack");
 		s.manageVars('clearVars');
 		s.pageName = currentTab;
+		s.channel = eBiz_channel;
+		s.prop20  = eBiz_prop20;
+		s.prop24  = eBiz_prop24;
+		s.prop26  = eBiz_prop26;
+		s.prop38  = eBiz_prop38;
+		s.prop39  = eBiz_prop39;
+		s.prop52  = eBiz_prop52;
+		s.evar35  = eBiz_evar35;
+		s.evar41  = eBiz_evar41;
+		s.evar48  = eBiz_evar48;
+		s.evar49  = eBiz_evar49;
+		s.evar53  = eBiz_evar53;
+		s.evar54  = eBiz_evar54;
+		s.evar55  = eBiz_evar55;
+		s.evar56  = eBiz_evar56;
 		s.t();
 	}
 
