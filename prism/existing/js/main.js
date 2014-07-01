@@ -14,14 +14,14 @@ $(function(){
 		s.prop38  = eBiz_prop38;
 		s.prop39  = eBiz_prop39;
 		s.prop52  = eBiz_prop52;
-		s.evar35  = eBiz_evar35;
-		s.evar41  = eBiz_evar41;
-		s.evar48  = eBiz_evar48;
-		s.evar49  = eBiz_evar49;
-		s.evar53  = eBiz_evar53;
-		s.evar54  = eBiz_evar54;
-		s.evar55  = eBiz_evar55;
-		s.evar56  = eBiz_evar56;
+		s.eVar35  = eBiz_evar35;
+		s.eVar41  = eBiz_evar41;
+		s.eVar48  = eBiz_evar48;
+		s.eVar49  = eBiz_evar49;
+		s.eVar53  = eBiz_evar53;
+		s.eVar54  = eBiz_evar54;
+		s.eVar55  = eBiz_evar55;
+		s.eVar56  = eBiz_evar56;
 		s.t();
 	}
 
