@@ -1,1 +1,1 @@
-redirect /soho/lc/promos/internet/ http://www.centurylink.com/small-business/lp/lc/internet/
+redirect 301 /soho/lc/promos/internet/ http://www.centurylink.com/small-business/lp/lc/internet/
