@@ -20,7 +20,7 @@ $(function(){
 		s.eVar49  = eBiz_evar49;
 		s.eVar53  = eBiz_evar53;
 		s.eVar54  = eBiz_evar54;
-		s.eVar55  = eBiz_evar55;
+		//s.eVar55  = eBiz_evar55;
 		s.eVar56  = eBiz_evar56;
 		s.t();
 	}
