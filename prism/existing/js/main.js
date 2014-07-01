@@ -5,7 +5,7 @@ $(function(){
 
 	function trackTab(trackObj){
 		var currentTab = $(trackObj).attr("data-clicktrack");
-		s.manageVars('clearVars');
+		//s.manageVars('clearVars');
 		s.pageName = currentTab;
 		s.t();
 	}
