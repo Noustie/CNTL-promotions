@@ -125,7 +125,7 @@ function onYouTubeIframeAPIReady() {
 		});
 
 		if ( !getQueryParam("x") || !!getQueryParam("x").match("home") ) {
-			dropInVideoPlayer( "landingVid", $('#data-videoid').attr('data-videoid'), "380", "214", false );
+			dropInVideoPlayer( "landingVid", $('#landingVid').attr('data-videoid'), "380", "214", false );
 		}
 	});
 }
