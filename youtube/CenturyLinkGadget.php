@@ -2,7 +2,7 @@
 // start a new session
 
 require_once 'Zend/Loader.php';
-require_once 'private/configs/youtube-config.php';
+require_once 'configs/youtube-config.php';
 
 Zend_Loader::loadClass('Zend_Gdata_YouTube');
 Zend_Loader::loadClass('Zend_Gdata_AuthSub');
