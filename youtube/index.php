@@ -3,14 +3,16 @@ $canonicalURL = "https://www.youtube.com/user/centurylink";
 $xParam = $_GET["x"];
 
 if ( isset( $_GET["sharelink"] ) && !!$_GET["sharelink"] ) {
-	 header( "Location: $canonicalURL/?x=$xParam#gh-overviewtab" );
+	header( "Location: $canonicalURL/?x=$xParam#gh-overviewtab" );
 }
 
 // start a new session
 session_start();
-error_reporting(E_ALL ^ E_NOTICE);
-ini_set('display_errors', '1');
 
+if ( strpos($_SERVER['SERVER_NAME'], 'staging') ) {
+	error_reporting(E_ALL ^ E_NOTICE);
+	ini_set('display_errors', '1');
+}
 
 ?>
 <!DOCTYPE HTML>
@@ -74,6 +76,7 @@ ini_set('display_errors', '1');
 
 	<div id="container">
 <?php
+
 		$CLFeed->buildSegmentNav();
 
 ?>
@@ -84,7 +87,7 @@ ini_set('display_errors', '1');
 					<p>A trusted provider of reliable phone, broadband High-Speed Internet, digital TV and networking services to homes and businesses.</p>
 					<div class="header">
 						<h2>Time to make your <br />business shine</h2>
-						<div id="landingVid" data-videoid="7sxwi2Owec8"></div>
+						<div id="landingVid" data-videoid="<?php echo $CLFeed->featuredVideo ?>"></div>
 					</div> <!-- header -->
 					<div id="tabs" class="homeTabsWrap">
 						<ul id="bizNav">

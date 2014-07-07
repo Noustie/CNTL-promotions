@@ -2,6 +2,7 @@
 // start a new session
 
 require_once 'Zend/Loader.php';
+require_once 'private/configs/youtube-config.php';
 
 Zend_Loader::loadClass('Zend_Gdata_YouTube');
 Zend_Loader::loadClass('Zend_Gdata_AuthSub');
@@ -9,11 +10,13 @@ Zend_Loader::loadClass('Zend_Gdata_AuthSub');
 //CENTURYLINK YOUTUBE GADGET CLASS
 class CenturyLinkGadget {
 	//YouTube API Key -- Registered under centurylink.brandchannel@gmail.com
-	private $userName = "CenturyLink";
-	private $apiKey = 'AI39si4cNb_BGTtuap6au1oOMAuDIreLf_RyJ4gTEEROigjmuiT-BaEuN4kLESIEsHcdc-2ahFp53fhqgdu68LB8hjSApZ5PZA';
+	private $userName = $youtube_userName; 
+	private $apiKey = $youtube_apiKey;
 	private $yt;
 	private $auth;
 	private $ToHTML;
+
+	public $featuredVideo = '7sxwi2Owec8';
 
 	private $cacheName = './CenturyLink.json';
 
