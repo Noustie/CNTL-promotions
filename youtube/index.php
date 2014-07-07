@@ -87,7 +87,7 @@ if ( strpos($_SERVER['SERVER_NAME'], 'staging') ) {
 					<p>A trusted provider of reliable phone, broadband High-Speed Internet, digital TV and networking services to homes and businesses.</p>
 					<div class="header">
 						<h2>Time to make your <br />business shine</h2>
-						<div id="landingVid" data-videoid="<?php echo $CLFeed->featuredVideo ?>"></div>
+						<div id="landingVid" data-videoid="<?php echo $CLFeed->homeFeaturedVideo ?>"></div>
 					</div> <!-- header -->
 					<div id="tabs" class="homeTabsWrap">
 						<ul id="bizNav">

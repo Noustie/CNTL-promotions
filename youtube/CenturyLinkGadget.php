@@ -10,9 +10,6 @@ Zend_Loader::loadClass('Zend_Gdata_AuthSub');
 $GLOBALS['youtube_userName'] = $youtube_userName;
 $GLOBALS['youtube_apiKey'] = $youtube_apiKey;
 
-echo $GLOBALS['youtube_userName'];
-echo $GLOBALS['youtube_apiKey'];
-
 //CENTURYLINK YOUTUBE GADGET CLASS
 class CenturyLinkGadget {
 	//YouTube API Key -- Registered under centurylink.brandchannel@gmail.com
@@ -22,7 +19,7 @@ class CenturyLinkGadget {
 	private $auth;
 	private $ToHTML;
 
-	public $featuredVideo = '7sxwi2Owec8';
+	public $homeFeaturedVideo = '7sxwi2Owec8';
 
 	private $cacheName = './CenturyLink.json';
 
