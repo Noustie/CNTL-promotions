@@ -97,11 +97,11 @@ class CenturyLinkGadget {
 	);
 
 	public function __construct( $forceNoRefresh = false ) {
-		$userName = $GLOBALS['youtube_userName']; 
-		$apiKey = $GLOBALS['youtube_apiKey'];
+		$this->userName = $GLOBALS['youtube_userName']; 
+		$this->apiKey = $GLOBALS['youtube_apiKey'];
 
 
-		$this->yt = new Zend_Gdata_YouTube(null, "Corporate YouTube Brand Channel", null, $apiKey );
+		$this->yt = new Zend_Gdata_YouTube(null, "Corporate YouTube Brand Channel", null, $this->apiKey );
 		$this->yt->setMajorProtocolVersion(2);
 
 		//$this->auth = $this->getAuthSubRequestUrl();
