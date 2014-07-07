@@ -84,6 +84,7 @@ class CenturyLinkGadget {
 	            "PLEYIeiCR-pz6JxctpF-QomFMEycyz4q-0", 
 	            "PLEYIeiCR-pz6BGasgc8VgYDdocGMpJAFj", 
 	            "PLEYIeiCR-pz70zSzc-xff5WAGta9_x02Q",
+				"PLEYIeiCR-pz4WXg2cMqv5GrPijvstO81j",	            
 				"PLEYIeiCR-pz4TgGVUUJQ2EsCYIHxWu9Y1",	            
 	            "PL454B8399B874015D", 
 	            "PL60E1892FAC289D78", 
