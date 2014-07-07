@@ -10,6 +10,8 @@ Zend_Loader::loadClass('Zend_Gdata_AuthSub');
 $GLOBALS['youtube_userName'] = $youtube_userName;
 $GLOBALS['youtube_apiKey'] = $youtube_apiKey;
 
+echo $GLOBALS['youtube_userName'];
+echo $GLOBALS['youtube_apiKey'];
 
 //CENTURYLINK YOUTUBE GADGET CLASS
 class CenturyLinkGadget {
