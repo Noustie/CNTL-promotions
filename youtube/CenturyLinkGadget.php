@@ -19,7 +19,7 @@ class CenturyLinkGadget {
 	private $auth;
 	private $ToHTML;
 
-	public $homeFeaturedVideo = '7sxwi2Owec8';
+	public $homeFeaturedVideo = 'BK_Nh05PhlQ';
 
 	private $cacheName = './CenturyLink.json';
 
