@@ -60,6 +60,7 @@ $headerInfo = <<<HEADERBLOCK
 	width: 200;
 	top: 100px;
 	left: 90px;
+	color: #999999;
 }
 .get-net-now {
 	position: absolute;
