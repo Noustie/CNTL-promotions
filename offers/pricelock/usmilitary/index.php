@@ -54,6 +54,13 @@ $headerInfo = <<<HEADERBLOCK
 	background: url(images/military-cta.png) left top no-repeat;
 	margin-left: 40px;
 }
+#rightRail .disclaimer {
+	font-size: 9px;
+	position: absolute;
+	width: 200;
+	top: 100px;
+	left: 90px;
+}
 .get-net-now {
 	position: absolute;
 	left: 20px;
