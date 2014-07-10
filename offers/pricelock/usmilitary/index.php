@@ -57,9 +57,9 @@ $headerInfo = <<<HEADERBLOCK
 #rightRail .disclaimer {
 	font-size: 9px;
 	position: absolute;
-	width: 200;
-	top: 100px;
-	left: 90px;
+	width: 130px;
+	top: 85px;
+	left: 177px;
 	color: #999999;
 }
 .get-net-now {
