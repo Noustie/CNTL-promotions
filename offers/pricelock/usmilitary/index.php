@@ -163,7 +163,7 @@ include('../includes/header.php');
                                 <div class="tabContent">
                                     <div class="tabcopy">
                                         <h3 class="black-txt">For those in the Armed Forces, staying connected to friends and family is more important than ever.</h3>
-										<p>That&rsquo;s why we&rsquo;re proud to offer those serving our country our best offers. Our guarantee is that you&rsquo;ll get a low monthly price on up to 40 Mbps High-Speed Internet for 12 months when you bundle with Home Phone. SSave even more when you bundle with TV.</p>
+										<p>That&rsquo;s why we&rsquo;re proud to offer those serving our country our best offers. Our guarantee is that you&rsquo;ll get a low monthly price on up to 40 Mbps High-Speed Internet for 12 months when you bundle with Home Phone. Save even more when you bundle with TV.</p>
                                         <ul>
                                         	<li>Download speeds of up to 40 Mbps so you can stream, game, and videoconference with family and friends</li>
                                         	<li>A private, direct connection to our national network (where available)</li>
