@@ -178,9 +178,7 @@ include('../includes/header.php');
                     <div id="rightRail">
 						<h3 class="ir">CenturyLink&trade; High-Speed Internet &ndash; $5 Off a Month With Our Armed Forces Discount</h3>
 						<p class="ir">$19.95 a month when you bundle with Unlimited Nationwide Calling*</p>
-						<p class="ir">5 years. 1 price.  0 contract.</p>
-						<p class="ir">Get Internet at a 5-year price.</p>
-						<p class="ir">Offer available only to active and retired military.</p>
+						<p class="disclaimer">a month for 12 months on connection speeds up to 40 Mbps (in select areas) when you bundle with Home Phone</p>
 <!-- 						<div id="chatBtn" class="chatBtn"></div> -->
 						<div class="get-net-now">
 							<a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop?newIap=true">
