@@ -1,0 +1,39 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
+VAGRANTFILE_API_VERSION = "2"
+
+$script = <<SCRIPT
+echo "BEGIN shell provisioner......"
+echo "<---- Installing APACHE2"
+sudo apt-get update
+sudo apt-get install -y apache2 curl libcurl3 libcurl3-dev php5 php5-curl
+echo "<---- Configuring APACHE2"
+# sudo rm -rf /var/www
+sudo ln -s /vagrant_root /var/www/web
+sudo ln -s /vagrant_private /var/www/private
+sudo a2enmod rewrite
+sudo a2enmod include
+sudo a2enmod headers
+sudo a2enmod ssl
+sudo rm -rf /etc/apache2/sites-enabled/000-default
+sudo rm -rf /etc/apache2/sites-enabled/000-default-ssl
+sudo ln -s /vagrant/default /etc/apache2/sites-enabled/000-default
+sudo ln -s /vagrant/default-ssl /etc/apache2/sites-enabled/000-default-ssl
+sudo rm -rf /etc/apache2/httpd.conf
+sudo ln -s /vagrant/httpd.conf /etc/apache2/httpd.conf
+sudo service apache2 restart
+echo "END shell provisioner."
+SCRIPT
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  config.vm.box = "hashicorp/precise64"
+  # config.vm.network "forwarded_port", guest: 80, host: 8080
+  # config.vm.network "forwarded_port", guest: 443, host: 8080
+
+  config.vm.network "private_network", ip: "192.168.33.18"
+  config.vm.synced_folder "../", "/vagrant_root"
+  config.vm.synced_folder "../../private", "/vagrant_private"
+  config.vm.provision "shell", inline: $script
+end

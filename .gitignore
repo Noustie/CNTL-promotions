@@ -13,5 +13,7 @@ webservices/ratingsandreviews/review-inc*
 webservices/ratingsandreviews/sample-*
 Github-Auto-Deploy/
 /.htaccess
+/private
+/vagrant/.vagrant
 robots.txt
 .DS_store
