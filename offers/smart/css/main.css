@@ -965,7 +965,7 @@ a.cycle-next:active{}
   }
 }
 @-moz-document url-prefix() { 
-  td.opt-add{
+  .opt-add{
   	padding-top: 6px !important;
   }
 }
