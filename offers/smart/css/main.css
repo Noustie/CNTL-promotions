@@ -963,6 +963,8 @@ a.cycle-next:active{}
   .price-grid table td {
      padding: 2px 0 2px 0;
   }
+}
+@-moz-document url-prefix() { 
   td.opt-add{
   	padding-top: 6px !important;
   }
