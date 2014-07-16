@@ -959,6 +959,14 @@ a.cycle-next:active{}
 /* 	padding-top: 80px; */
 	position: relative;
 }
+@-moz-document url-prefix() { 
+  .price-grid table td {
+     padding: 2px 0 2px 0;
+  }
+  .optadd{
+  	padding-top: 6px !important;
+  }
+}
 .price-grid table a{text-decoration: none !important;}
 a.addon-icon{
 	background: rgba(0, 0, 0, 0) url('../img/pop-up-icon.png') center right no-repeat;
