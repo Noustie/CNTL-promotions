@@ -200,7 +200,7 @@ include('../includes/header.php');
                     </div>
                 </div>
                 <div class="disclaimer" style="clear: both;">
-                	*Other fees and conditions may apply. <a href="http://www.centurylink.com/common/disclaimers/general.html" target="_blank" onclick="javascript:window.open(this.href,'disclaimer','height=600,width=800,left=100,top=50,resizable=no,scrollbars=yes,toolbar=no,status=no');return false;">Click here for details.</a>
+                	*Other fees and conditions may apply. <a href="http://www.centurylink.com/common/popups/residential/pricing_details_popup.html" target="_blank" onclick="javascript:window.open(this.href,'disclaimer','height=600,width=800,left=100,top=50,resizable=no,scrollbars=yes,toolbar=no,status=no');return false;">Click here for details.</a>
                 	<!-- <br /><a href="http://www.centurylink.com/Pages/Disclaimers/internetDisclaimer.jsp" target="_blank" onclick="javascript:window.open(this.href,'disclaimer','height=600,width=800,left=100,top=50,resizable=no,scrollbars=yes,toolbar=no,status=no');return false;">**See other important details.</a> -->
                 </div>
             </div>
