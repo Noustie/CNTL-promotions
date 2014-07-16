@@ -918,6 +918,7 @@ a.cycle-next:active{}
 	height:700px;
 	color:#666666;
 	background-image: url('../img/price-grid-bg.png');
+	background-repeat: none;
 	margin-top: 45px;
 	/* margin-left: -10px; */
 	position: relative;
