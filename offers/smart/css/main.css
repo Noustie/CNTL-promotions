@@ -931,6 +931,9 @@ a.cycle-next:active{}
 	font-size: 10px;
 	text-transform: uppercase;
 }
+.small-grey-text-in-table{
+	font-size: 14px !important;
+}
 .lg{color:#99cc33;}
 .mg{color:#6ca423;}
 .dg{color:#336633;}
