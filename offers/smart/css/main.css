@@ -885,7 +885,7 @@ a.cycle-next:active{}
 	background-image: url('../img/plan-bg-grad.gif');
 	background-color: #709c13;
 	background-repeat: repeat-y;
-	height: 720px;
+	height: 940px;
 	position: relative;
 	overflow: hidden;
 	border-top: 1px solid #FFF;
@@ -915,7 +915,7 @@ a.cycle-next:active{}
 .fourteen{font-size: 14px !important;}
 .price-grid{
 	width:793px;
-	height:415px;
+	height:700px;
 	color:#666666;
 	background-image: url('../img/price-grid-bg.png');
 	margin-top: 45px;
@@ -924,6 +924,11 @@ a.cycle-next:active{}
 	margin-left: -7px;
 	text-shadow: none !important;
 	filter: none !important;
+}
+.table-alt-text-orange{
+	color: #ff6600;
+	font-size: 10px;
+	text-transform: uppercase;
 }
 .lg{color:#99cc33;}
 .mg{color:#6ca423;}
