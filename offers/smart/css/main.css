@@ -934,6 +934,9 @@ a.cycle-next:active{}
 .small-grey-text-in-table{
 	font-size: 12px !important;
 }
+.beige-background{
+	background-color: #ebf5d6;
+}
 .lg{color:#99cc33;}
 .mg{color:#6ca423;}
 .dg{color:#336633;}
@@ -942,7 +945,7 @@ a.cycle-next:active{}
 	margin-top: 10px;
 	display: inline-table;
 }
-.tar{text-align: right;padding-right: 40px !important;}
+.tar{text-align: right;padding-right: 15px !important;}
 .tac{text-align: center;}
 .price-grid table tr{
 	border-bottom: 1px solid #ececec;
