@@ -915,7 +915,7 @@ a.cycle-next:active{}
 .fourteen{font-size: 14px !important;}
 .price-grid{
 	width:793px;
-	height:700px;
+	height:648px;
 	color:#666666;
 	background-image: url('../img/price-grid-bg.png');
 	background-repeat: no-repeat;
@@ -932,7 +932,7 @@ a.cycle-next:active{}
 	text-transform: uppercase;
 }
 .small-grey-text-in-table{
-	font-size: 14px !important;
+	font-size: 12px !important;
 }
 .lg{color:#99cc33;}
 .mg{color:#6ca423;}
