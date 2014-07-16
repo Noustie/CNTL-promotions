@@ -1242,6 +1242,7 @@ a.lady-in-corner:hover{
 }
 .lower-snipe{
 	right: 230px;
+	z-index: 999;
 }
 a.intro-offer{
 	height: 43px;
