@@ -474,9 +474,9 @@ $(function(){
 		   //tile2 animate on screen
 		   .to($(".price-grid"), .3, {opacity:0, ease:Linear.easeNone}, "label1")
 		   .to($(".price-grid"), 1.4, {top:-1000, ease:Linear.easeNone}, "label1")
-		   .to($(".plan-animate-container.tile2"), .8, {top:-572, opacity:1, ease:Linear.easeNone}, "label1")
+		   .to($(".plan-animate-container.tile2"), .8, {top:-809, opacity:1, ease:Linear.easeNone}, "label1")
 		   .to($(".plan-tile2-a1"), .8, {top:-303, opacity:1, autoAlpha:1, ease:Linear.easeNone}, "label1")
-		   .to($(".plan-tile2-a2"), .8, {top:-1228, opacity:1, autoAlpha:1, ease:Linear.easeNone}, "label1")
+		   .to($(".plan-tile2-a2"), .8, {top:-1476, opacity:1, autoAlpha:1, ease:Linear.easeNone}, "label1")
 		   .to($(".plan-tile2-a4"), .6, {opacity:1, delay:0.7, autoAlpha:1, bezier:{type:'quadratic', values:[{x:0, y:0},{x:100, y:0},{x:200, y:54}]}, ease:Linear.easeNone}, "label1")
 		   .to($(".plan-tile2-a3"), .6, {opacity:1, delay:0.7, autoAlpha:1, bezier:{type:'quadratic', values:[{x:0, y:0},{x:-70, y:0},{x:-105, y:-14}]}, ease:Linear.easeNone}, "label1")
 		   
@@ -489,7 +489,7 @@ $(function(){
 		   .to($(".plan-animate-container.tile2"), .8, {top:-832, ease:Linear.easeNone}, "label2")
 		   
 		   //tile3 animate on screen
-		   .to($(".plan-animate-container.tile3"), 1, {top:-1761, opacity:1, ease:Linear.easeNone}, "label2")
+		   .to($(".plan-animate-container.tile3"), 1, {top:-1966, opacity:1, ease:Linear.easeNone}, "label2")
 		   .to($(".plan-tile3-a1"), .9, {top:-731, opacity:1, autoAlpha:1, ease:Linear.easeNone, display:"inline-block"}, "label2")
 		   .to($(".plan-tile3-a2"), 1, {height:720, delay:0.7, opacity:1, ease:Linear.easeNone}, "label2")
 		   .to($(".plan-tile3-a4"), .8, {top:310, opacity:1, delay:0.4, ease:Linear.easeNone}, "label2")
