@@ -954,6 +954,9 @@ a.cycle-next:active{}
 	border-right: 1px solid #ececec;
 	padding: 3px 0 2px 0;
 }
+.lt-ie9 .price-grid table td{
+	padding: 2px 0 2px 0px;
+}
 .price-grid table th{
 	border-right: 1px solid #ececec;
 /* 	padding-top: 80px; */
@@ -1226,21 +1229,21 @@ a.lady-in-corner:hover{
 .plan-tile3-a4{
 	position: absolute;
 	opacity: 0;
-	top: 730px;
+	top: 950px;
 	z-index: 1;
 	left: 785px;
 }
 .plan-tile3-a3{
 	position: absolute;
 	opacity: 0;
-	top: 730px;
+	top: 950px;
 	z-index: 1;
 	left: 785px;
 }
 .plan-tile3-a5{
 	position: absolute;
 	opacity: 0;
-	top: 725px;
+	top: 945px;
 	left: 705px;
 	z-index: 1;
 }
