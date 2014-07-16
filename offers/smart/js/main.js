@@ -466,7 +466,7 @@ $(function(){
 		   .to($(".plans .lady-in-corner"), .8, {right:-240, top:-200, opacity:0, ease:Linear.easeNone}, "label1")
 		   .to($(".plan-animate-container.tile1 h3"), .2, { opacity:0, ease:Linear.easeNone}, "label1")
 		   .to($(".plan-animate-container.tile1 p"), .2, { opacity:0, ease:Linear.easeNone}, "label1")
-		   .to($(".lower-snipe"), .8, {right:-380, top:-80}, "label1")
+		   .to($(".lower-snipe"), .8, {right:-380, top:-80, opacity:0, ease:Linear.easeNone}, "label1")
 		   
 		   .to($(".plan-animate-container.tile1 h3"), .8, { top:-250, ease:Linear.easeNone}, "label1")
 		   .to($(".plan-animate-container.tile1 p"), .9, { top:-250, ease:Linear.easeNone}, "label1")
