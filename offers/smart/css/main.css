@@ -1241,7 +1241,7 @@ a.lady-in-corner:hover{
 	background-position: -60px -90px;
 }
 .lower-snipe{
-	right: 230px !important;
+	right: 230px;
 }
 a.intro-offer{
 	height: 43px;
