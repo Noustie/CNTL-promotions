@@ -80,9 +80,9 @@ a:link{outline: none !important;}
 	margin:0 auto;
 	background-image: url('../img/hero-bg.jpg');
 	background-repeat: no-repeat;
-	background-position: center top;
-	background-attachment: scroll;
-	background-color: #4482a7;
+	background-position: 50% 0px;
+	background-attachment: fixed;
+	background-color: #002612;
 }
 .hero h1{text-align: center;}
 .content.hero{max-width: 100%;}
@@ -317,7 +317,7 @@ p.phone .grey.slim{font-size: 20px;}
 
 .speed-price{
 	font-size: 50px;
-	color: #ffffff;
+	color: #007f3d;
 	margin: 0 !important;
 	text-shadow: 0px -1px 1px #666;
 	line-height: 35px;
@@ -334,27 +334,13 @@ p.phone .grey.slim{font-size: 20px;}
 	
 }
 p.speed-disclaimer{
-	color: #fff;
-	font-size: 9px;
-	width: 100px;
-	padding-top: 10px;
-}
-p.speed-disclaimer.grey{
 	color: #999;
 	font-size: 9px;
 	width: 100px;
 	padding-top: 10px;
 }
-.speed-price.green{
-	font-size: 50px;
-	color: #007f3d;
-	margin: 0 !important;
-	text-shadow: 0px -1px 1px #666;
-	line-height: 35px;
-	width:100px;
-	height: 40px;
-	padding: 25px 8px 0 20px;
-}
+
+
 .price-lock-text{
 	margin: 0 !important;
 	padding-left: 20px;

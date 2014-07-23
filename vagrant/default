@@ -1,6 +1,7 @@
 <VirtualHost *:80>
     ServerName local.centurylink.com
 	ServerAdmin brownkg@peteramayer.com
+	EnableSendfile off
 
 	DocumentRoot /var/www/web
 	<Directory />

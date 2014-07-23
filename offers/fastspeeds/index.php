@@ -134,12 +134,12 @@ $svar = array(
 
 	    <div class="row">
 	    	<div class="content chart">
-	    		<div class="specs orange-chart fL">
+	    		<div class="specs green-chart fL">
 		    		<div class="sec1">
 		    			<img src="img/100mbps.png" alt="Download speeds 100Mbps" class="mbps-top" />
 		    			<div class="bar-wrapper">
 			    			<div class="bar-bottom">
-				    			<div class="bar-middle one orange">
+				    			<div class="bar-middle one green">
 				    				<div class="bar-top">
 				    				</div>
 				    			</div>
@@ -159,7 +159,7 @@ $svar = array(
 		    			<p class="fL speed-price"><span class="sub">$</span>89<span class="sub">99</span></p>
 		    			<p class="fL speed-disclaimer">a month when you bundle with Unlimited Nationwide Calling*</p>
 		    			<div style="clear:both;"></div>
-		    			<p class="white price-lock-text"><strong>3-Year Price Guarantee</strong></p>
+		    			<p class="green price-lock-text"><strong>3-Year Price Guarantee</strong></p>
 		    		</div>
 		    		<div class="sec3">
 		    			<p class="fL">Best for homes with <strong>multiple high bandwidth Internet users</strong> on many different devices.</p>
@@ -182,12 +182,12 @@ $svar = array(
 		    		<div style="clear:both;"></div>
 	    		</div>
 	    		
-	    		<div class="specs orange-chart fL">
+	    		<div class="specs green-chart fL">
 		    		<div class="sec1">
 		    			<img src="img/80mbps.png" alt="Download speeds 80Mbps" class="mbps-top" />
 		    			<div class="bar-wrapper">
 			    			<div class="bar-bottom">
-				    			<div class="bar-middle two orange">
+				    			<div class="bar-middle two green">
 				    				<div class="bar-top">
 				    				</div>
 				    			</div>
@@ -207,7 +207,7 @@ $svar = array(
 		    			<p class="fL speed-price"><span class="sub">$</span>89<span class="sub">99</span></p>
 		    			<p class="fL speed-disclaimer">a month when you bundle with Unlimited Nationwide Calling*</p>
 		    			<div style="clear:both;"></div>
-		    			<p class="white price-lock-text"><strong>3-Year Price Guarantee</strong></p>
+		    			<p class="green price-lock-text"><strong>3-Year Price Guarantee</strong></p>
 		    		</div>
 		    		<div class="sec3">
 		    			<p class="fL">Best for homes with many Internet users who <strong>frequently upload large files</strong>.</p>
