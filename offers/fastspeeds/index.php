@@ -343,7 +343,7 @@ $svar = array(
 		    		<p class="irtext">Call Now to Order 888-305-2484</p>
 	    		</div>
 	    		<div class="fL ctachat">
-	    			<div id="chat-residential-english-triple" class="chatBtn"></div>
+	    			<div id="chat-residential-english-triple" class="chatBtn" clicktrack="ctl|rsd|promo|pair_bonding|button|chat"></div>
 	    		</div>
 	    		<div style="clear:both;"></div>
 	    	</div><!--end content div-->
@@ -404,9 +404,11 @@ $svar = array(
 				//}
 			}
 			$(document).ready(function () {
-				//Deferr.enqueueAction(createBundlesCTCButton, ["chat-residential-english-triple"]);
 				createBundlesCTCButton( "chat-residential-english-triple" );
 				qa.initialize();
+				$('.chatBtn a').live('mouseup', function (e) {
+					qa.trackAction( $(this).parent().attr('clicktrack') );
+				})
 			});
 		</script>	
 		<!-- Do not touch! -->
