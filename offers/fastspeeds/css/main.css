@@ -88,13 +88,50 @@ a:link{outline: none !important;}
 	background-position: 50% 0px;
 	background-attachment: fixed;
 	background-color: #002612;
+	overflow: hidden;
 }
-.content.hero{ max-width: 100%; }
+.content.hero{ 
+	max-width: 100%; 
+	position: relative;
+	height: 100%;
+	-webkit-perspective: 500px;
+	-moz-perspective: 500px;
+	-ms-perspective: 500px;
+	perspective: 500px;
+}
 
 .hero p,
-.hero h1 { display: block; text-align: left; text-indent: -9999px; position: absolute; } 
-.hero .hero-text1 {
+.hero h1 { display: block; text-align: left; text-indent: -9999px; position: absolute; margin: 0; padding: 0;} 
 
+.hero small {
+	color: #FFFFFF;
+}
+
+.hero .herotext-part1 {
+	background: url('../img/hero-tagline-part1.png') no-repeat;
+	width: 364px;
+	height: 51px;
+	left: 170px;
+	top: 105px;
+}
+.hero .herotext-part2 {
+	background: url('../img/hero-tagline-part2.png') no-repeat;
+	width: 501px;
+	height: 85px;
+	left: 305px;
+	top: 135px;	
+}
+.hero .herotext-part3 {
+	background: #ffa02f url('../img/headline.png') no-repeat 10px center;
+	width: 1500px;
+	height: 45px;
+	left: 240px;
+	top: 225px;	
+}
+.hero .herotext-part4 {
+	position: absolute;
+	top: 273px;
+	left: 840px;
 }
 .stripe{
 	position: relative;
@@ -267,6 +304,9 @@ p.phone .grey.slim{font-size: 20px;}
 	width: 90%;
 	height: 25px;
 	font-size: 16px;
+	font-weight: normal;
+	font-weight: 100;
+	text-shadow: 0 1px 1px solid #000;
 	margin: 0;
 	padding: 0;
 	text-align: center;
@@ -294,6 +334,7 @@ p.phone .grey.slim{font-size: 20px;}
 	color: #999;
 	font-size: 9px;
 	width: 100px;
+	text-indent: 5px;
 }
 
 .sec4 p, .sec5 p, .sec6 p{
@@ -319,7 +360,7 @@ p.phone .grey.slim{font-size: 20px;}
 }
 
 .mbps-top{padding:20px 0 10px 35px ;}
-.mbps-bottom{padding:20px 0 10px 35px ;}
+.mbps-bottom{padding:10px 0 10px 35px ;}
 
 .speed-price{
 	font-size: 50px;

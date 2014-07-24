@@ -96,10 +96,10 @@ $svar = array(
 
 	    <div class="row hero">
 	    	<div class="content hero">
-	    		<p class="headline hl-part1">Our fastest just got</p>
-	    		<p class="headline hl-part2">even faster</p>
-	    		<h1 class="hl-part3">CenturyLink now offers speeds up to 100 Mbps!</h1>
-	    		<small class="hl-part4">(in select areas)</small>
+	    		<p class="headline herotext-part1">Our fastest just got</p>
+	    		<p class="headline herotext-part2">even faster</p>
+	    		<h1 class="herotext-part3">CenturyLink now offers speeds up to 100 Mbps!</h1>
+	    		<small class="herotext-part4">(in select areas)</small>
 	    		<div style="clear:both;"></div>
 	    	</div><!--end content hero div-->
 	    </div><!--end row div-->
@@ -134,8 +134,8 @@ $svar = array(
 				    				<div class="bar-top"></div>
 				    			</div>
 			    			</div>
+		    				<small>(in select areas)</small>	    		
 		    			</div>
-		    			<small>(in select areas)</small>	    		
 		    			<img src="img/12mbps.png" alt="Upload speeds 12Mbps" class="mbps-bottom" />
 		    			<div class="bar-wrapper">
 			    			<div class="bar-bottom short-bar">
@@ -183,8 +183,8 @@ $svar = array(
 				    				<div class="bar-top"></div>
 				    			</div>
 			    			</div>
+		    				<small>(in select areas)</small>	    		
 		    			</div>		    		
-		    			<small>(in select areas)</small>	    		
 		    			<img src="img/40mbps-grey.png" alt="Upload speeds 40Mbps" class="mbps-bottom" />
 		    			<div class="bar-wrapper">
 			    			<div class="bar-bottom short-bar">
@@ -232,8 +232,8 @@ $svar = array(
 				    				<div class="bar-top"></div>
 				    			</div>
 			    			</div>
+		    				<small>(in select areas)</small>	    		
 		    			</div>		    		
-		    			<small>(in select areas)</small>	    		
 		    			<img src="img/30mbps.png" alt="Upload speeds 30Mbps" class="mbps-bottom" />
 		    			<div class="bar-wrapper">
 			    			<div class="bar-bottom short-bar">
@@ -281,8 +281,8 @@ $svar = array(
 				    				<div class="bar-top"></div>
 				    			</div>
 			    			</div>
+		    				<small>(in select areas)</small>	    		
 		    			</div>		    		
-		    			<small>(in select areas)</small>	    		
 		    			<img src="img/5mbps.png" alt="Upload speeds 5Mbps" class="mbps-bottom" />
 		    			<div class="bar-wrapper">
 			    			<div class="bar-bottom short-bar">
