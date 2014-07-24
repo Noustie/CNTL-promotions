@@ -81,13 +81,13 @@ a:link{outline: none !important;}
 .content.hero{
 }
 .row.hero{	
-	height: 381px;
+	height: 400px;
 	margin:0 auto;
 	background-image: url('../img/hero-bg.jpg');
 	background-repeat: no-repeat;
 	background-position: 50% 0px;
 	background-attachment: fixed;
-	background-color: #002612;
+	background-color: #001d0e;
 	overflow: hidden;
 }
 .content.hero{ 
