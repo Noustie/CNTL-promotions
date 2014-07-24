@@ -157,7 +157,7 @@ $svar = array(
 		    			<p class="green price-lock-text"><strong>1-Year Price-Lock Guarantee</strong></p>
 		    		</div>
 		    		<div class="sec3">
-		    			<a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop" target="_blank" class="ctabutton" clicktrack="ctl|rsd|promo|pair_bonding|button|order_100M"><span class="fade"></span> <span>Order 100 Mpbs</span></a>
+		    			<a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop" target="_blank" class="ctabutton" clicktrack="ctl|rsd|promo|pair_bonding|button|order_100M"><span class="fade"></span> <span>Order 100 Mbps</span></a>
 		    			<p class="fL">Best for homes with <strong>multiple high bandwidth Internet users</strong> on many different devices.</p>
 		    		</div>
 		    		<div class="sec4">
@@ -206,7 +206,7 @@ $svar = array(
 		    			<p class="green price-lock-text"><strong>1-Year Price-Lock Guarantee</strong></p>
 		    		</div>
 		    		<div class="sec3">
-		    			<a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop" target="_blank" class="ctabutton" clicktrack="ctl|rsd|promo|pair_bonding|button|order_80M"><span class="fade"></span> <span>Order 80 Mpbs</span></a>
+		    			<a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop" target="_blank" class="ctabutton" clicktrack="ctl|rsd|promo|pair_bonding|button|order_80M"><span class="fade"></span> <span>Order 80 Mbps</span></a>
 		    			<p class="fL">Best for homes with many Internet users who <strong>frequently upload large files</strong>.</p>
 		    		</div>
 		    		<div class="sec4">
@@ -255,7 +255,7 @@ $svar = array(
 		    			<p class="green price-lock-text"><strong>1-Year Price-Lock Guarantee</strong></p>
 		    		</div>
 		    		<div class="sec3">
-		    			<a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop" target="_blank" class="ctabutton" clicktrack="ctl|rsd|promo|pair_bonding|button|order_60M"><span class="fade"></span> <span>Order 60 Mpbs</span></a>
+		    			<a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop" target="_blank" class="ctabutton" clicktrack="ctl|rsd|promo|pair_bonding|button|order_60M"><span class="fade"></span> <span>Order 60 Mbps</span></a>
 		    			<p>Best for homes with <strong>many Internet users</strong> who occasionally upload files to the cloud.</p>
 		    		</div>
 		    		<div class="sec4">
@@ -304,7 +304,7 @@ $svar = array(
 		    			<p class="green price-lock-text"><strong>3-Year Price-Lock Guarantee</strong></p>
 		    		</div>
 		    		<div class="sec3">
-		    			<a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop" target="_blank" class="ctabutton" clicktrack="ctl|rsd|promo|pair_bonding|button|order_40M"><span class="fade"></span> <span>Order 40 Mpbs</span></a>
+		    			<a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop" target="_blank" class="ctabutton" clicktrack="ctl|rsd|promo|pair_bonding|button|order_40M"><span class="fade"></span> <span>Order 40 Mbps</span></a>
 		    			<p>Best for homes with <strong>multiple Internet users</strong> online at the same time.</p>
 		    		</div>
 		    		<div class="sec4">
