@@ -1,6 +1,6 @@
 <?php
-$page_keywords = 'high speed internet bundle, internet offer, high speed internet, CenturyLink internet offer, 100 Mbps, fast internet, 30-Day satisfaction guarantee, fast upload speed fast download speeds';
-$page_description = "Enjoy blazing fast Internet speeds up to 100 Mbps with Century Link High Speed Internet. Prices starting at $24.95 for speeds of 40 Mbps. Lock in your price.";
+$page_keywords = 'high speed internet bundle, internet offer, high speed internet, CenturyLink internet offer, 100 Mbps, fast internet, 30-Day satisfaction guarantee, fast upload speeds, fast download speeds';
+$page_description = "Enjoy blazing fast Internet speeds up to 100 Mbps with CenturyLink High Speed Internet. Prices starting at $24.95 for speeds of 40 Mbps. Lock in your price.";
 $page_title = '100 Mbps High Speed Internet | CenturyLink';
 
 $svar = array(
@@ -78,7 +78,7 @@ $svar = array(
 	</head>
     <body>
 
-	    <div class="row">
+	    <div class="row headerrow">
 	    	<div class="content header">
 	    			<div class="logo fL">
 	    				<a href="" class="logo-link"><img src="img/logo.png" alt="CenturyLink" /></a>
@@ -99,6 +99,7 @@ $svar = array(
 	    </div><!--end row div-->
 
 	    <div class="row hero">
+	    	<img src="./img/hero-bg.jpg" alt="" class="herobg-img">
 	    	<div class="content hero">
 	    		<p class="headline herotext-part1">Our fastest just got</p>
 	    		<p class="headline herotext-part2">even faster</p>
@@ -298,7 +299,7 @@ $svar = array(
 		    			</div>		    		
 		    		</div>
 		    		<div class="sec2">
-		    			<p class="fL speed-price green"><span class="sub">$</span>29<span class="sub">95</span></p>
+		    			<p class="fL speed-price green"><span class="sub">$</span>24<span class="sub">95</span></p>
 		    			<p class="fL speed-disclaimer grey">a month when you bundle with Unlimited Nationwide Calling*</p>
 		    			<div style="clear:both;"></div>
 		    			<p class="green price-lock-text"><strong>3-Year Price-Lock Guarantee</strong></p>
