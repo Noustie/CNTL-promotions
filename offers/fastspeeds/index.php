@@ -4,14 +4,14 @@ $page_description = "Enjoy blazing fast Internet speeds up to 100 Mbps with Cent
 $page_title = '100 Mbps High Speed Internet | CenturyLink';
 
 $svar = array(
-	'pageName' => "ctl|rsd|promos|pair_bonding",
+	'pageName' => "ctl|rsd|promo|pair_bonding",
 	'server' => "centurylink.com",
 	'channel' => "rsd",
-	'prop20' => "promos",
-	'prop24evar53' => "ctl|rsd|promos",
+	'prop20' => "promo",
+	'prop24evar53' => "ctl|rsd|promo",
 	'prop38evar48' => "static_page",
-	'prop39evar49' => "static_page",
-	'prop52evar56' => "ctl",
+	'prop39evar49' => "landing_page",
+	'prop52evar56' => "peter_a_mayer",
 );
 ?>
 <!DOCTYPE html>
@@ -60,6 +60,7 @@ $svar = array(
 		var totalOrderPrice = ""; //Doubleclick
 		var eBiz_server = "<?php echo $svar['server']; ?>"; // s.server
 		var eBiz_channel = "<?php echo $svar['channel']; ?>"; // s.channel, s.eVar41
+		var eBiz_prop3 = "unknown";
 		var eBiz_prop20 = "<?php echo $svar['prop20']; ?>";
 		var eBiz_prop24 = "<?php echo $svar['prop24evar53']; ?>";
 		var eBiz_prop25 = "<?php echo $svar['prop25evar54']; ?>";
@@ -67,7 +68,9 @@ $svar = array(
 		var eBiz_prop38 = "<?php echo $svar['prop38evar48']; ?>";
 		var eBiz_prop39 = "<?php echo $svar['prop39evar49']; ?>";
 		var eBiz_prop52 = "<?php echo $svar['prop52evar56']; ?>";
+		var eBiz_evar24 = "unknown";
 		var eBiz_evar27 = "";
+		var eBiz_evar41 = "<?php echo $svar['channel']; ?>";
 		var eBiz_evar48 = eBiz_prop38;
 		var eBiz_evar49 = eBiz_prop39;
 		var eBiz_evar53 = eBiz_prop24;
@@ -99,7 +102,9 @@ $svar = array(
 	    </div><!--end row div-->
 
 	    <div class="row hero">
-	    	<img src="./img/hero-bg.jpg" alt="" class="herobg-img">
+	    	<div class="herobg-wrap">
+	    		<img src="./img/hero-bg.jpg" alt="" class="herobg-img">
+	    	</div>
 	    	<div class="content hero">
 	    		<p class="headline herotext-part1">Our fastest just got</p>
 	    		<p class="headline herotext-part2">even faster</p>
@@ -127,7 +132,7 @@ $svar = array(
 	    </div><!--end row div-->
 
 
-	    <div class="row">
+	    <div class="row rowchart">
 	    	<div class="content chart">
 	    		<div class="specs green-chart fL">
 		    		<p class="extreme-speed-flyout">Extreme Speed</p>
@@ -331,7 +336,7 @@ $svar = array(
 	    	</div><!--end content chart div-->
 	    </div><!--end row div-->
 
-	    <div class="row">
+	    <div class="row second-cta-row">
 	    	<div class="content second-cta">
 	    		<div class="fL ctatext">
 		    		<p class="irtext">Get CenturyLink<sup>&reg;</sup> High-Speed Internet Today!</p>
@@ -365,7 +370,7 @@ $svar = array(
 	    	</div><!--end content div-->
 	    </div><!--end row div-->
 
-	    <div class="row">
+	    <div class="row rowclip">
 	    	<div class="content footer">
 	    		<p>*Other fees and conditions may apply. Click <a onclick="window.open(this.href,'disclaimer','height=500,width=800,left=100,top=50,resizable=no,scrollbars=yes,toolbar=no,status=no');return false;" target="_blank" href="./disclaimer.php">here</a> for details.</p>
 	    		<br/>
@@ -385,6 +390,8 @@ $svar = array(
 	    </div><!--end row div-->
 	    
         <script src="/assets/js/common/jquery.min.js"></script>
+        <script src="/assets/js/plugins/jquery.qwest-core.js"></script>
+        <script src="/assets/js/plugins/centurycore.shortcuts.js"></script>
         <script src="js/vendor/TweenMax.js"></script>
         <script src="js/vendor/waypoints.js"></script>
         <script src="js/plugins.js"></script>
@@ -399,6 +406,7 @@ $svar = array(
 			$(document).ready(function () {
 				//Deferr.enqueueAction(createBundlesCTCButton, ["chat-residential-english-triple"]);
 				createBundlesCTCButton( "chat-residential-english-triple" );
+				qa.initialize();
 			});
 		</script>	
 		<!-- Do not touch! -->
