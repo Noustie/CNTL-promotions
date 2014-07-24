@@ -111,6 +111,7 @@ a:link{outline: none !important;}
 	left: 0;
 	min-width: 1305px;
 	width: 100%;
+	display: block;
 }
 
 .hero p,
