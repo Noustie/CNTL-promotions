@@ -170,11 +170,11 @@ $svar = array(
 		    			<p class="fL speed-price"><span class="sub">$</span>49<span class="sub">95</span></p>
 		    			<p class="fL speed-disclaimer">a month when you bundle with Unlimited Nationwide Calling*</p>
 		    			<div style="clear:both;"></div>
-		    			<p class="green price-lock-text"><strong>1-Year Price-Lock Guarantee</strong></p>
+		    			<p class="green price-lock-text"><strong>1-Year Price Guarantee</strong></p>
 		    		</div>
 		    		<div class="sec3">
 		    			<a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop" target="_blank" class="ctabutton" clicktrack="ctl|rsd|promo|pair_bonding|button|order_100M"><span class="fade"></span> <span>Order 100 Mbps</span></a>
-		    			<p class="fL">Best for homes with <strong>multiple high bandwidth Internet users</strong> on many different devices.</p>
+		    			<p class="fL">Best for homes with <strong>multiple high-bandwidth Internet users</strong> on many different devices.</p>
 		    		</div>
 		    		<div class="sec4">
 		    			<img class="fL" src="img/music-dl.png" alt="" />
@@ -219,7 +219,7 @@ $svar = array(
 		    			<p class="fL speed-price"><span class="sub">$</span>44<span class="sub">95</span></p>
 		    			<p class="fL speed-disclaimer">a month when you bundle with Unlimited Nationwide Calling*</p>
 		    			<div style="clear:both;"></div>
-		    			<p class="green price-lock-text"><strong>1-Year Price-Lock Guarantee</strong></p>
+		    			<p class="green price-lock-text"><strong>1-Year Price Guarantee</strong></p>
 		    		</div>
 		    		<div class="sec3">
 		    			<a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop" target="_blank" class="ctabutton" clicktrack="ctl|rsd|promo|pair_bonding|button|order_80M"><span class="fade"></span> <span>Order 80 Mbps</span></a>
@@ -268,7 +268,7 @@ $svar = array(
 		    			<p class="fL speed-price green"><span class="sub">$</span>39<span class="sub">95</span></p>
 		    			<p class="fL speed-disclaimer grey">a month when you bundle with Unlimited Nationwide Calling*</p>
 		    			<div style="clear:both;"></div>
-		    			<p class="green price-lock-text"><strong>1-Year Price-Lock Guarantee</strong></p>
+		    			<p class="green price-lock-text"><strong>1-Year Price Guarantee</strong></p>
 		    		</div>
 		    		<div class="sec3">
 		    			<a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop" target="_blank" class="ctabutton" clicktrack="ctl|rsd|promo|pair_bonding|button|order_60M"><span class="fade"></span> <span>Order 60 Mbps</span></a>
@@ -317,7 +317,7 @@ $svar = array(
 		    			<p class="fL speed-price green"><span class="sub">$</span>24<span class="sub">95</span></p>
 		    			<p class="fL speed-disclaimer grey">a month when you bundle with Unlimited Nationwide Calling*</p>
 		    			<div style="clear:both;"></div>
-		    			<p class="green price-lock-text"><strong>3-Year Price-Lock Guarantee</strong></p>
+		    			<p class="green price-lock-text"><strong>3-Year Price Guarantee</strong></p>
 		    		</div>
 		    		<div class="sec3">
 		    			<a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop" target="_blank" class="ctabutton" clicktrack="ctl|rsd|promo|pair_bonding|button|order_40M"><span class="fade"></span> <span>Order 40 Mbps</span></a>
