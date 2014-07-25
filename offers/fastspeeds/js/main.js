@@ -25,7 +25,8 @@ $(function(){
 		  .from($(".herotext-part3"), 2.5, { x:2000, rotationX: 3600, ease:Power4.easeOut }, 1.8)
 		  
 		  .from($(".herotext-part4"), 1.5, { opacity: 0 }, 2.4);
-		  
+
 	}
+
 });
 

@@ -165,6 +165,15 @@ a:link{outline: none !important;}
 	top: 273px;
 	left: 840px;
 }
+
+.no-js .hero .herotext-part1,
+.no-js .hero .herotext-part2,
+.no-js .hero .herotext-part3,
+.no-js .hero .herotext-part4 {
+	visibility: hidden;
+}
+
+
 .stripe{
 	position: relative;
 	margin-bottom: 10px;
