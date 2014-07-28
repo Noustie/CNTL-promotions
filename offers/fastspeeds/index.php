@@ -26,7 +26,7 @@ $svar = array(
 	<title><?php echo $page_title; ?></title>
 	<meta name="description" content="<?php echo $page_description; ?>" />
 	<meta name="keywords" content="<?php echo $page_keywords; ?>" />
-	<link rel="shortcut icon" href="http://www.centurylink.com/favicon.ico" type="image/vnd.microsoft.icon" />
+	<link rel="shortcut icon" href="//www.centurylink.com/favicon.ico" type="image/vnd.microsoft.icon" />
 
 	<script src="//shop.centurylink.com/global/includes/c2c/residential/mtagconfig.js"></script>
 
@@ -409,9 +409,10 @@ $svar = array(
 		<!-- Scripts for Click to Chat Functionality -->
 		<script type="text/javascript">
 			 function createBundlesCTCButton(name){
-				//if( typeof(lpMTagConfig.dynButton)!="undefined") {
-					lpMTagConfig.dynButton[lpMTagConfig.dynButton.length] = {'name':name,'pid':name};
-				//}
+					lpMTagConfig.dynButton[lpMTagConfig.dynButton.length] = {
+						'name':name,
+						'pid':name
+					};
 			}
 			$(document).ready(function () {
 				createBundlesCTCButton( "chat-residential-english-triple" );
@@ -426,7 +427,7 @@ $svar = array(
 		Copyright 1997-2009 Omniture, Inc. More info available at http://www.omniture.com -->
 		<script type="text/javascript" src="/assets/js/third-party/metrics/metrixConfig.js"></script>
 		<noscript>
-			<a href="http://www.omniture.com" title="Web Analytics"><img src="http://qwest.com/images/spacer.gif" height="1" width="1" border="0" title="" /></a>
+			<a href="http://www.omniture.com" title="Web Analytics"><img src="//qwest.com/images/spacer.gif" height="1" width="1" border="0" title="" /></a>
 		</noscript>
 		<!-- / DO NOT REMOVE / -->
 		<!-- End SiteCatalyst code version: H.20.3. -->
