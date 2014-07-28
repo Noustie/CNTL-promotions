@@ -196,7 +196,7 @@
 		
 		</div> <!-- end content -->	
 		<p class="disclaimer"><?php echo $bankdisclaimer; ?> Service and offer may not be available everywhere. Residential customers only. 
-One offer per customer. New subscriber to Prism<sup>&trade;</sup> Premium required. Card terms and conditions will apply. Additional restrictions may apply. <a href="http://www.centurylink.com/Pages/Disclaimers/dtvDisclaimer.jsp" onclick="javascript:window.open(this.href,'Disclaimer','height=600,width=780,left=100,top=50,resizable=no,scrollbars=yes,toolbar=no,status=no');return false;">Click here for details</a>.<br /> 
+One offer per customer. New subscriber to Prism<sup>&trade;</sup> Premium required. Card terms and conditions will apply. Additional restrictions may apply. <a href="./disclaimer.html" onclick="javascript:window.open(this.href,'Disclaimer','height=600,width=780,left=100,top=50,resizable=no,scrollbars=yes,toolbar=no,status=no');return false;">Click here for details</a>.<br /> 
 <sup>&dagger;</sup><a href="fiberOverlay.html" class="colorbox fiberOptics">Fiber-optics</a> may apply to all or a significant amount of the network, depending on your location.</p>
 		<div id="footer">
 			<div class="about">
@@ -210,7 +210,7 @@ One offer per customer. New subscriber to Prism<sup>&trade;</sup> Premium requir
 					<li><a href="http://www.centurylink.com/static/Pages/PrivacyPolicy/privacyPolicy.html" target="_blank" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|footer|link|position7|privacy">Privacy</a></li>
 					<li><a href="http://www.centurylink.com/sitemap.html" target="_blank" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|footer|link|position8|site_map">Site Map</a></li>
 				</ul>
-				<p class="copyright">&copy;2013 CenturyLink, Inc. All Rights Reserved. The name CenturyLink and the pathways logo are trademarks of CenturyLink, Inc.</p>
+				<p class="copyright">&copy; <?php echo date("Y"); ?>  CenturyLink, Inc. All Rights Reserved. The name CenturyLink and the pathways logo are trademarks of CenturyLink, Inc.</p>
 			</div>
 			<div class="support">
 				<p style="color:#999999;">Call us at: <?php echo $phone; ?></p>
