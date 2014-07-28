@@ -148,62 +148,97 @@ margin-left: 235px;
 	position: relative
 }
 
+.twoCol {
+	float: left;
+	width: 50%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0 20px;
+}
+
 /* HEADER */
 
-/*
+
+.tv-img{
+	position: relative;
+}
+.tv-img img{
+	padding-left: 0;
+	margin-top: 0;
+	position: relative;
+	z-index: 1;
+	top: 0;
+	left: 60px;
+}
 #header {
 	width: 960px;
 	height: 430px;
 	margin: 0 auto;
 	position: relative;
-	background: url(../images/prism-visa-150.jpg) center top no-repeat;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 55px 440px 0 55px;
 }
-*/
-.tv-img{
-	position: relative;
-}
-.tv-img img{
-	float: left;
-	padding-left: 21px;
-	margin-top: -50px;
-	position: absolute;
-	z-index: -1;
-}
-
 #header h1 {
-	color: #8dc63f;
-	font-size: 32px;
-	font-weight: 100;
-	padding: 55px 0 35px 87px;
+	color: #FFF;
+	font-size: 30px;
+	font-weight: normal;
 	margin: 0
 }
-
-#header h1 span {
-	color: #cccccc;
-	font-size: 27px;
-	display: block;
-}
-
-#header p {
-	color: #ccc;
-	font-size: 16px;
-	padding: 0 0 0 87px;
+#header .subhead {
+	font-size: 24px;
+	color: #FFF;
+	padding: 0 0 18px 0;
 	margin: 0;
 }
 
-#header p.larger {
-	font-size: 20px;
+#header .priceBlock {
+	position: relative;
+	top: 0;
+	left: 0;
+	line-height: 1;
+	font-size: 93px;
+	height: 90px;
+	color: #8dc63f;
+	padding: 0 0 0 0;
+	width: 260px;
+	float: left;	
+}
+#header .priceMain {
+	float: left;
+	display: inline-block;
+}
+#header .priceSup {
+	font-size: 50%;
+	float: left;
+	line-height: 1.2;
+	height: 50%;
+	display: inline-block;
+}
+#header .priceTerms {
+	font-size: 12px;
+	color: #FFF;
+	display: block;
+	float: left;
+	width: 100px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 5px 0 0 5px;
+	margin: 0;
+	display: inline-block;
+}
+#header .priceTermsExtra {
+	float: left;
+	clear: both;
+	font-size: 9px;
+}
+#header p {
+	color: #FFF;
 }
 
-#header h3 {
-	color: #8dc63f;
-	font-size: 105px;
-	padding: 0 0 18px 87px;
-	width: 242px;
-	float: left;
-	line-height: 105px;
-	font-weight: 100;
-}
 
 #header h4 {
 	color: #8dc63f;
@@ -216,7 +251,7 @@ margin-left: 235px;
 
 #header h5 {
 	clear: left;
-	padding: 0 0 0 87px;
+	padding: 0 0 0 0;
 	font-size: 32px;
 	color: #ccc;
 }
@@ -245,32 +280,42 @@ margin-left: 235px;
 	z-index: 1;
 }
 
+#benefits .header {
+	padding: 0 87px 25px 87px;
+}
 #benefits h2 {
 	font-size: 30px;
 	color: #8dc63f;
-	padding: 20px 0 5px 87px;
+	padding: 20px 0 5px 0;
 } 
 
-#benefits p {
-	padding: 0 0 0 87px;
-	width: 680px;
+#benefits h3 {
+	font-size: 20px;
+} 
+
+#benefits .header p {
 	font-size: 18px;
 	color: #333333;
+	padding: 0 100px 0 0;
+}
+#benefits p {
+	font-size: 15px;
+	color: #333333;
+	padding: 0 15px 0 0;
 }
 
 #benefits ul {
-	width: 360px;
-	float: right;
-	padding: 60px 90px 0 0;
+	width: 350px;
+	clear: both;
+	padding: 10px 0 10px 20px;
+	margin: 0;
 	color: #8dc63f;
 }
 
 #benefits ul li {
-	float: left;
-	clear: left;
-	margin: 0 0 20px 15px;
-	font-size: 16px;
-	line-height: 20px;
+	margin: 0 0 10px 0;
+	font-size: 14px;
+	line-height: 1.4;
 }
 
 #benefits ul li span {
