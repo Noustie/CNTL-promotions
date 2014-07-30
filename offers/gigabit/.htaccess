@@ -1,4 +1,4 @@
 # ModPagespeedDisallow "*"
 
 # Edited by Keegan on 7/02/2014
-RewriteRule /offers/gigabit/(.*) https://www.centurylink.com/fiber/$1 [R=301,L]
+RewriteRule (.*) https://www.centurylink.com/fiber/$1 [R=301,L]
