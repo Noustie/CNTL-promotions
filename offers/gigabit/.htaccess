@@ -3,5 +3,9 @@
 # Edited by Keegan on 7/02/2014
 
 RewriteEngine On
-RewriteCond %{REQUEST_URI} ^((?!hede)[\s\S])*$
-RewriteRule (.*)/ https://www.centurylink.com/fiber/$1/ [R=301]
+RewriteRule / https://www.centurylink.com/fiber/ [R=301]
+RewriteRule (benefits.*)/ https://www.centurylink.com/fiber/$1/ [R=301]
+RewriteRule (business.*)/ https://www.centurylink.com/fiber/$1/ [R=301]
+RewriteRule (cities.*)/ https://www.centurylink.com/fiber/$1/ [R=301]
+RewriteRule (faqs.*)/ https://www.centurylink.com/fiber/$1/ [R=301]
+RewriteRule (news.*)/ https://www.centurylink.com/fiber/$1/ [R=301]
