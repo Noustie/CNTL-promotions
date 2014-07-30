@@ -3,7 +3,7 @@
 # Edited by Keegan on 7/02/2014
 
 RewriteEngine On
-RewriteRule / https://www.centurylink.com/fiber/ [R=301]
+RewriteRule .$ https://www.centurylink.com/fiber/ [R=301]
 RewriteRule (benefits.*)/ https://www.centurylink.com/fiber/$1/ [R=301]
 RewriteRule (business.*)/ https://www.centurylink.com/fiber/$1/ [R=301]
 RewriteRule (cities.*)/ https://www.centurylink.com/fiber/$1/ [R=301]
