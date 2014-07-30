@@ -3,5 +3,5 @@
 # Edited by Keegan on 7/02/2014
 
 RewriteEngine On
-RewriteCond %{REQUEST_URI} ^((?!img).)*$
+RewriteCond %{REQUEST_URI} ^((?!hede)[\s\S])*$
 RewriteRule (.*)/ https://www.centurylink.com/fiber/$1/ [R=301]
