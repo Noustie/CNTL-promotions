@@ -196,7 +196,9 @@
 		
 		</div> <!-- end content -->	
 		<p class="disclaimer"><?php echo $bankdisclaimer; ?> Service and offer may not be available everywhere. Residential customers only. 
-One offer per customer. Card terms and conditions will apply. Additional restrictions may apply. <a href="./disclaimer.html" onclick="javascript:window.open(this.href,'Disclaimer','height=600,width=780,left=100,top=50,resizable=no,scrollbars=yes,toolbar=no,status=no');return false;">Click here for details</a>.<br /> 
+One offer per customer. Card terms and conditions will apply. Additional restrictions may apply. <nobr>
+	<a href="./disclaimer.html" onclick="javascript:window.open(this.href,'Disclaimer','height=600,width=780,left=100,top=50,resizable=no,scrollbars=yes,toolbar=no,status=no');return false;">Click here for details</a>
+</nobr>.<br /> 
 <sup>&dagger;</sup><a href="fiberOverlay.html" class="colorbox fiberOptics">Fiber-optics</a> may apply to all or a significant amount of the network, depending on your location.</p>
 		<div id="footer">
 			<div class="about">
