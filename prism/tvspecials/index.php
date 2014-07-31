@@ -1,19 +1,19 @@
 <?php 
 	$phone = "1.866.960.7089";
 	$price = "$150";
-	$bgimg = "images/header.jpg";
+	$bgimg = "images/ens-header.jpg";
 	if(isset($_GET["m"])){
 		if($_GET["m"]=="e"){
-			$phone="1.866.960.7089";
+			$phone="866-960-7089";
 			$price="$150";
-			$bgimg = "images/header.jpg";
+			$bgimg = "images/ens-header.jpg";
 			$bankdisclaimer = "Card issued by MetaBank™, Member FDIC, pursuant to a license from Visa U.S.A., Inc.";
 			$bundle = "Bundle with Prism<sup>&trade;</sup> TV and receive a";
 		} 
 		if($_GET["m"]=="c"){
-			$phone="1.800.960.2531";
+			$phone="800-960-2531";
 			$price="$150";
-			$bgimg = "images/prism-visa-header-bg.jpg";
+			$bgimg = "images/cris-header.jpg";
 			$bankdisclaimer = "Card issued by J.P. Morgan Chase Bank, N.A. pursuant to a license from Visa U.S.A. Inc.";
 			$bundle = "Bundle with Prism<sup>&trade;</sup> TV and receive a";
 		}
@@ -32,10 +32,6 @@
 	
 	<style type="text/css">
 		#header {
-			width: 960px;
-			height: 430px;
-			margin: 0 auto;
-			position: relative;
 			background: url(<?php echo $bgimg; ?>) center top no-repeat;
 		}
 	</style>
@@ -152,25 +148,39 @@
 		</div>
 		
 		<div id="header">
-			<h1>Switch to Prism<sup>&trade;</sup> TV today. <span>Time is running out.</span></h1>
-			<p><?php echo $bundle; ?></p>
-			<h3><?php echo $price; ?></h3>
-			<h4>Visa<sup>&#174;</sup><br /> Prepaid Card</h4>
-			<h5>Call <span><?php echo $phone; ?></span></h5>
-			<p class="larger">today before it's too late.</p> 
+			<h1>Connect Your Favorite Gadgets With This Great Bundle</h1>
+			<p class="subhead">Internet + TV + Phone</p>
+			<h3 class="priceBlock">
+				<span class="priceSup">$</span>
+				<span class="priceMain">89</span>
+				<span class="priceSup">95</span>
+				<small class="priceTerms">a month <br>
+					for 6 months*</small>
+			</h3>
+			<p class="priceTermsExtra">Additional monthly equipment fees will apply</p>
+			<h5>Call <span><?php echo $phone; ?></span> today.</h5>
 		</div> <!-- end header -->
 		<div id="content" class="clearfix">
 			<div id="benefits">
-				<h2>Prism<sup>&trade;</sup> TV will change the way you see television.</h2>
-				<p>CenturyLink<sup>&reg;</sup> Prism<sup>&trade;</sup> is one of the most advanced TV services in the world, delivered to your neighborhood through CenturyLink's dynamic <a href="fiberOverlay.html" class="colorbox fiberOptics">fiber-optic</a><sup>&dagger;</sup> network. Put more simply, Prism<sup>&trade;</sup> TV leaves cable and satellite in the dust.</p>
-				<div class="tv-img">
-					<img src="images/tv-img.jpg" alt="Video On Demand with CenturyLink Prism TV">
-					<ul>
-						<li class="offers">Prism<sup>&trade;</sup> TV offers:</li>
-						<li><span><strong>An interactive experience</strong> that will keep you on the edge of your seat</span></li>
-						<li><span>Features like <strong>Whole Home DVR, Warp-Speed Channel Change and App Center</strong> that you might not find in cable and satellite</span></li>
-						<li><span><strong>Free professional installation</strong>, automatic updates and a <strong>30-Day Satisfaction Guarantee</strong></span></li>
-					</ul>
+				<div class="header">
+					<h2>Have lots of Internet-connected gadgets? <br>
+						This is the perfect bundle for your family. </h2>
+					<p>When you bundle with the Prism<sup>&trade;</sup> Complete Lite package, you not only get cool features like Prism on the Go and Find-It-Fast Navigation<sup>&reg;</sup>, but also super-fast Internet with speeds up to 20 Mbps and Home Phone service. This way, your family can stay entertained and connected. </p>
+				</div>
+				<div class="tv-img shadowDivider">
+					<div class="twoCol">
+						<img src="images/devices.jpg" alt="Video On Demand with CenturyLink Prism TV">
+					</div>
+					<div class="twoCol">
+						<h3>There&rsquo;s a lot to love about this bundle:</h3>
+						<ul>
+							<li><span>Enjoy over 190 channels with Prism<sup>&trade;</sup> Complete Lite.</span></li>
+							<li><span>Super-fast Internet so you can watch Netflix<sup>&reg;</sup> and stream music on Spotify at the same time.</span></li>
+							<li><span>Get answers when you need them with 24/7  tech support.</span></li>
+							<li><span>Stay in touch with reliable Home Phone service.</span></li>
+						</ul>
+						<p><strong>Sign up for this amazing bundle today and get brilliant features at a price that fits your budget.</strong></p>
+					</div>
 				</div>
 			</div> <!-- end benefits -->
 			
@@ -186,9 +196,9 @@
 		
 		</div> <!-- end content -->	
 		<p class="disclaimer"><?php echo $bankdisclaimer; ?> Service and offer may not be available everywhere. Residential customers only. 
-One offer per customer. New subscriber to Prism<sup>&trade;</sup> Premium required. Card terms and conditions will apply. Additional restrictions may apply. <a href="http://www.centurylink.com/Pages/Disclaimers/dtvDisclaimer.jsp" onclick="javascript:window.open(this.href,'Disclaimer','height=600,width=780,left=100,top=50,resizable=no,scrollbars=yes,toolbar=no,status=no');return false;">Click here for details</a>.<br /> 
-<sup>&dagger;</sup><a href="fiberOverlay.html" class="colorbox fiberOptics">Fiber-optics</a> may apply to all or a significant amount of the network, depending on your location.<br />
-Oz the Great and Powerful: &copy;2013 Disney. All Rights Reserved.</p>
+One offer per customer. Card terms and conditions will apply. Additional restrictions may apply. <nobr>
+	<a href="./disclaimer.html" onclick="javascript:window.open(this.href,'Disclaimer','height=600,width=780,left=100,top=50,resizable=no,scrollbars=yes,toolbar=no,status=no');return false;">Click here for details</a>.</nobr> <br /> 
+<sup>&dagger;</sup><a href="fiberOverlay.html" class="colorbox fiberOptics">Fiber-optics</a> may apply to all or a significant amount of the network, depending on your location.</p>
 		<div id="footer">
 			<div class="about">
 				<ul class="nav">
@@ -201,7 +211,7 @@ Oz the Great and Powerful: &copy;2013 Disney. All Rights Reserved.</p>
 					<li><a href="http://www.centurylink.com/static/Pages/PrivacyPolicy/privacyPolicy.html" target="_blank" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|footer|link|position7|privacy">Privacy</a></li>
 					<li><a href="http://www.centurylink.com/sitemap.html" target="_blank" clicktrack="ctl|rsd|shop|iptv_retention|pre_id_learn|footer|link|position8|site_map">Site Map</a></li>
 				</ul>
-				<p class="copyright">&copy;2013 CenturyLink, Inc. All Rights Reserved. The name CenturyLink and the pathways logo are trademarks of CenturyLink, Inc.</p>
+				<p class="copyright">&copy; <?php echo date("Y"); ?>  CenturyLink, Inc. All Rights Reserved. The name CenturyLink and the pathways logo are trademarks of CenturyLink, Inc.</p>
 			</div>
 			<div class="support">
 				<p style="color:#999999;">Call us at: <?php echo $phone; ?></p>

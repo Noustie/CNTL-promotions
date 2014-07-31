@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule (.*) https://www.centurylink.com/fiber/business-fiber-internet/ [R=301]

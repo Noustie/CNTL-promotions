@@ -1,11 +1,13 @@
 # ModPagespeedDisallow "*"
 
 # Edited by Keegan on 7/02/2014
-Redirect 301 /offers/gigabit/benefits/index.php https://www.centurylink.com/fiber/benefits/
-Redirect 301 /offers/gigabit/cities/index.php https://www.centurylink.com/fiber/cities/
-Redirect 301 /offers/gigabit/business-fiber-internet/index.php https://www.centurylink.com/fiber/business-fiber-internet/
-Redirect 301 /offers/gigabit/business/index.php https://www.centurylink.com/fiber/business-fiber-internet/
-Redirect 301 /offers/gigabit/community/index.php https://www.centurylink.com/fiber/community/
-Redirect 301 /offers/gigabit/news/index.php https://www.centurylink.com/fiber/news/
-Redirect 301 /offers/gigabit/faqs/index.php https://www.centurylink.com/fiber/faqs/
-Redirect 301 /offers/gigabit/index.php https://www.centurylink.com/fiber/
+
+# Add this back in if making this live
+# Redirect 301 /offers/gigabit/ https://www.centurylink.com/fiber/
+
+RewriteEngine On
+RewriteRule (benefits.*)/ https://www.centurylink.com/fiber/$1/ [R=301]
+RewriteRule (business.*)/ https://www.centurylink.com/fiber/$1/ [R=301]
+RewriteRule (cities.*)/ https://www.centurylink.com/fiber/$1/ [R=301]
+RewriteRule (faqs.*)/ https://www.centurylink.com/fiber/$1/ [R=301]
+RewriteRule (news.*)/ https://www.centurylink.com/fiber/$1/ [R=301]
