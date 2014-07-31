@@ -114,11 +114,11 @@ div.mastNav p.links {
 }
 .mastNav .phone {
 	width: 155px;
-	background: #fff url('http://www.centurylink.com/prismtv/images/icons/iconPhone.gif') no-repeat 5px center;
+	background: #fff url('//www.centurylink.com/prismtv/images/icons/iconPhone.gif') no-repeat 5px center;
 }
 .mastNav .chatOnline {
 	/*width: 155px;*/
-	background: #fff url('http://www.centurylink.com/prismtv/images/icons/iconChat.gif') no-repeat left center;
+	background: #fff url('//www.centurylink.com/prismtv/images/icons/iconChat.gif') no-repeat left center;
 }
 
 .topPhone {
@@ -391,7 +391,7 @@ p.disclaimer a {
 
 /* FOOTER */
 #footer {
-	background: url("http://www.centurylink.com/static/Images/Layout/footerBg.gif") no-repeat;
+	background: url("//www.centurylink.com/static/Images/Layout/footerBg.gif") no-repeat;
 	font-size: 12px;
 	margin: 0 auto;
 	width: 960px;
