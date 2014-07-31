@@ -1,2 +1,2 @@
 RewriteEngine On
-RewriteRule ^(.*)$ https://www.centurylink.com/fiber/business-fiber-internet/ [L,R=301]
+RewriteRule ^(.*)$ https://www.centurylink.com/fiber/business-fiber-internet/ [L,R=301] 
