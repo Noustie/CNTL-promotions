@@ -3,7 +3,7 @@
 # Edited by Keegan on 7/02/2014
 
 # Add this back in if making this live
-# Redirect 301 /offers/gigabit/ https://www.centurylink.com/fiber/
+Redirect 301 /offers/gigabit/ https://www.centurylink.com/fiber/
 
 RewriteEngine On
 RewriteRule (benefits.*)/ https://www.centurylink.com/fiber/$1/ [R=301]
