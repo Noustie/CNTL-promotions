@@ -168,7 +168,7 @@ $svar = array(
 		    		</div>
 		    		<div class="sec2">
 		    			<p class="fL speed-price"><span class="sub">$</span>49<span class="sub">95</span></p>
-		    			<p class="fL speed-disclaimer">a month when you bundle with Unlimited Nationwide Calling*</p>
+		    			<p class="fL speed-disclaimer">a month for 12 months when bundled with Home Phone*</p>
 		    			<div style="clear:both;"></div>
 		    			<p class="green price-lock-text"><strong>1-Year Price Guarantee</strong></p>
 		    		</div>
@@ -217,7 +217,7 @@ $svar = array(
 		    		</div>
 		    		<div class="sec2">
 		    			<p class="fL speed-price"><span class="sub">$</span>44<span class="sub">95</span></p>
-		    			<p class="fL speed-disclaimer">a month when you bundle with Unlimited Nationwide Calling*</p>
+		    			<p class="fL speed-disclaimer">a month for 12 months when bundled with Home Phone*</p>
 		    			<div style="clear:both;"></div>
 		    			<p class="green price-lock-text"><strong>1-Year Price Guarantee</strong></p>
 		    		</div>
@@ -266,7 +266,7 @@ $svar = array(
 		    		</div>
 		    		<div class="sec2">
 		    			<p class="fL speed-price green"><span class="sub">$</span>39<span class="sub">95</span></p>
-		    			<p class="fL speed-disclaimer grey">a month when you bundle with Unlimited Nationwide Calling*</p>
+		    			<p class="fL speed-disclaimer grey">a month for 12 months when bundled with Home Phone*</p>
 		    			<div style="clear:both;"></div>
 		    			<p class="green price-lock-text"><strong>1-Year Price Guarantee</strong></p>
 		    		</div>
