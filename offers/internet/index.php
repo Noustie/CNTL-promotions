@@ -1,10 +1,37 @@
+<?php 
+    $phone = "866-000-0000";
+    $img_prefix = "ten-mbps-";
+    if(isset($_GET["mkt"])){
+        //ENS
+        if($_GET["mkt"]=="ens"){
+            $phone="000-000-0000";
+            $img_prefix = "ten-mbps-";
+            $title = "CenturyLink | Residential | High-Speed Internet";
+            $description = "Get great deals on fast, reliable Internet – all backed by our 30-Day Satisfaction Guarantee and 24/7 technical support.";
+            $keywords = "CenturyLink, CenturyLink High-Speed Internet, Pure broadband, CenturyLink Internet bundles, no contract Internet, Internet and Home Phone bundles, fast Internet, cheap Internet, great Internet deals, CenturyLink 3-year Internet deal";
+            $floodlight = "";
+        }
+        //CRIS
+        if($_GET["mkt"]=="cris"){
+            $phone="111-111-1111";
+            $img_prefix = "twelve-mbps-";
+            $title = "CenturyLink | Residential | High-Speed Internet";
+            $description = "Get great deals on fast, reliable Internet – all backed by our 30-Day Satisfaction Guarantee and 24/7 technical support.";
+            $keywords = "CenturyLink, CenturyLink High-Speed Internet, Pure broadband, CenturyLink Internet bundles, no contract Internet, Internet and Home Phone bundles, fast Internet, cheap Internet, great Internet deals, CenturyLink 3-year Internet deal";
+            $floodlight = "";
+        }
+    }
+ ?>
+
+
 <!DOCTYPE html>
 <html class="no-js">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
+        <title><?php echo $title; ?></title>
+        <meta name="description" content="<?php echo $description; ?>">
+        <meta name="keywords" content="<?php echo $keywords; ?>">
         <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" href="css/normalize.min.css">
@@ -13,6 +40,8 @@
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
+
+        <?php include $floodlight.'.php' ?>
 
         <div class="page-wrapper">
 
