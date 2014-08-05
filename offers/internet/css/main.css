@@ -63,16 +63,17 @@ textarea {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 a{text-decoration: none;}
+a:hover{text-decoration: underline;}
 .fR{float: right;}
 .fL{float: left;}
 .container{width: 940px; margin:0 auto;}
 div{position: relative;}
 
-
 body{
     background-image: url(../img/centurylink-internet-background.jpg);
     background-repeat: no-repeat;
     background-position: top center;
+    padding-bottom: 100px;
 }
 .header{
     height: 82px;
@@ -122,14 +123,9 @@ ul li{
     color: #333333;
     padding-bottom: 5px;
 }
-
-
-
-
-
-
-
-
+.hsi .container, .internet-and-phone .container{
+    box-shadow: 0px 0px 35px rgba(0,0,0,0.2);
+}
 .internet-and-phone .container{
     border: 1px solid #cccccc;
     background-color: #fff;
@@ -144,9 +140,9 @@ ul li{
     padding-top: 14px;
 }
 .internet-and-phone .left-side{
-    width: 470px;
+    width: 530px;
     padding-left: 80px;
-    padding-right: 80px;
+    padding-right: 120px;
 }
 .internet-and-phone .left-side .tenmbps-hsi-and-phone-img{
     margin-top: 18px;
@@ -155,7 +151,7 @@ ul li{
     padding-left: 0px;
 }
 .internet-and-phone .right-side{
-    width: 467px;
+    width: 405px;
 }
 .offset-img{
     position: absolute;
@@ -191,46 +187,75 @@ ul li{
     top: -10px;
 }
 .perks{
-
+    background-image: url(../img/perks.png);
+    width: 280px;
+    height: 98px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin-left: -10px;
+    margin-top: -10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .hsi .container{
     border: 1px solid #cccccc;
     background-color: #fff;
+    margin-bottom: 30px;
+}
+.hsi .heading h3{
+    margin-left: 125px;
+}
+.hsi .left-side{
+    margin-left: 140px;
+}
+.hsi .right-side{
+    margin-right: 130px;
+    margin-top: 30px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+.tfn-cta .container{
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    position: relative;
+    height: 108px;
+    background-image: url(../img/lower-cta-background-stripe.jpg);
+    background-repeat: repeat-x;
+}
+.tfn-cta .container .shadow{
+    background-image: url(../img/shadow.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: absolute;
+    left:13px;
+    width:913px;
+    height: 47px;
+}
+.tfn-cta .tfn-cta-text{
+    font-size: 18px;
+    margin-left: 60px;
+    padding-top: 10px;
+}
+.orange{
+    color: #ff6600;
+    font-weight: bold;
+}
+.cta{
+    font-size: 24px;
+}
+.disclaimer{
+    color: #9a9b9c;
+    font-size: 11px;
+    margin-right: 50px;
+    padding-top: 55px;
+}
+.footer{
+    color: #616365;
+    font-size: 11px;
+    text-align: center;
+    padding-top: 25px;
+}
+.footer p{
+    margin-top: 5px;
+}
 
 /*BOOK END BUTTON*/
 /* FLEXIBLE BUTTON STYLES */
@@ -275,10 +300,9 @@ a.bookendButton:hover { text-decoration: none; }
    ========================================================================== */
 
 .ir {
-    background-color: transparent;
-    border: 0;
+    text-indent: 100%;
+    white-space: nowrap;
     overflow: hidden;
-    *text-indent: -9999px;
 }
 
 .ir:before {

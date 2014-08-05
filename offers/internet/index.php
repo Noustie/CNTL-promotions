@@ -82,7 +82,7 @@
                 <div class="container">
                     <div class="heading">
                         <h3>High-Speed Internet</h3>
-                        <img src="img/tenmbps-lowerheading-laptop.png" alt="">
+                        <img src="img/tenmbps-lowerheading-laptop.png" alt="" class="offset-img">
                     </div>
                     <div class="left-side fL">
                         <h2>Pure broadband&trade;</h2>
@@ -99,7 +99,7 @@
                             <span class="bookend rightBookend">&nbsp;</span>
                         </a>
                         <p><a href="" class="offer-details">Offer details</a></p>
-                        <p class="perks">Norton by Symantec. 30-Day Satisfaction Guarantee. 24/7 Technical Support</p>
+                        <p class="perks ir">Norton by Symantec. 30-Day Satisfaction Guarantee. 24/7 Technical Support</p>
                     </div>
                     <div class="right-side fR">
                         <img src="img/tenmbps-ipad.png" alt="">
@@ -110,6 +110,7 @@
 
             <div class="row tfn-cta">
                 <div class="container">
+                    <div class="shadow"></div>
                     <div class="tfn-cta-text fL">
                         <p class="orange">
                             Call a CenturyLink representative.<br>
