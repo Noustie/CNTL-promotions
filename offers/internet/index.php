@@ -9,7 +9,7 @@
             $title = "CenturyLink | Residential | High-Speed Internet";
             $description = "Get great deals on fast, reliable Internet – all backed by our 30-Day Satisfaction Guarantee and 24/7 technical support.";
             $keywords = "CenturyLink, CenturyLink High-Speed Internet, Pure broadband, CenturyLink Internet bundles, no contract Internet, Internet and Home Phone bundles, fast Internet, cheap Internet, great Internet deals, CenturyLink 3-year Internet deal";
-            $floodlight = "";
+            $floodlight = "floodlight-ens.php";
         }
         //CRIS
         if($_GET["mkt"]=="cris"){
@@ -41,7 +41,7 @@
     </head>
     <body>
 
-        <?php include $floodlight.'.php' ?>
+        <?php include " 'inc/'.$floodlight.'.php' " ?>
 
         <div class="page-wrapper">
 
