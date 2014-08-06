@@ -72,7 +72,7 @@ div{position: relative;}
 body{
     background-image: url(../img/centurylink-internet-background.jpg);
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: center 0px;
     padding-bottom: 100px;
 }
 .header{
