@@ -1,12 +1,12 @@
 <?php 
     $phone = "866-000-0000";
-    $img_prefix = "ten-mbps-";
+    $img_prefix = "ens-";
     $floodlight = "floodlight-ens.php";
     if(isset($_GET["mkt"])){
         //ENS
         if($_GET["mkt"]=="ens"){
             $phone="000-000-0000";
-            $img_prefix = "ten-mbps-";
+            $img_prefix = "ens-";
             $title = "CenturyLink | Residential | High-Speed Internet";
             $description = "Get great deals on fast, reliable Internet – all backed by our 30-Day Satisfaction Guarantee and 24/7 technical support.";
             $keywords = "CenturyLink, CenturyLink High-Speed Internet, Pure broadband, CenturyLink Internet bundles, no contract Internet, Internet and Home Phone bundles, fast Internet, cheap Internet, great Internet deals, CenturyLink 3-year Internet deal";
@@ -15,7 +15,7 @@
         //CRIS
         if($_GET["mkt"]=="cris"){
             $phone="111-111-1111";
-            $img_prefix = "twelve-mbps-";
+            $img_prefix = "cris-";
             $title = "CenturyLink | Residential | High-Speed Internet";
             $description = "Get great deals on fast, reliable Internet – all backed by our 30-Day Satisfaction Guarantee and 24/7 technical support.";
             $keywords = "CenturyLink, CenturyLink High-Speed Internet, Pure broadband, CenturyLink Internet bundles, no contract Internet, Internet and Home Phone bundles, fast Internet, cheap Internet, great Internet deals, CenturyLink 3-year Internet deal";
@@ -49,15 +49,15 @@
             <div class="row header">
                 <div class="container">
                     <div class="logo fL">
-                        <a href="">
+                        <a href="http://www.centurylink.com/">
                             <img src="img/centurylink-logo.png" alt="CenturyLink">
                         </a>
                     </div>
                     <nav class="fR">
-                        <a href="">Home</a> |
-                        <a href="">About Us</a> |
-                        <a href="">Manage My Account</a> |
-                        <a href="">Contact Us</a>
+                        <a href="http://www.centurylink.com/">Home</a> |
+                        <a href="http://www.centurylink.com/Pages/AboutUs/">About Us</a> |
+                        <a href="https://eam.centurylink.com/eam/login.do">Manage My Account</a> |
+                        <a href="http://www.centurylink.com/help/contact/">Contact Us</a>
                     </nav>
                     <div style="clear:both;"></div>
                 </div><!--end container -->           
@@ -75,10 +75,10 @@
                 <div class="container">
                     <div class="heading">
                         <h3>High-Speed Internet + Home Phone</h3>
-                        <img src="img/tenmbps-heading-device.png" alt="" class="offset-img">
+                        <img src="img/<?php echo $img_prefix; ?>upper-heading-devices.png" alt="High-Speed Internet and Home Phone" class="offset-img">
                     </div>
                     <div class="left-side fL">
-                        <img src="img/tenmbps-laptop-phone.png" alt="" class="tenmbps-hsi-and-phone-img">
+                        <img src="img/<?php echo $img_prefix; ?>content-bug-devices" alt="" class="tenmbps-hsi-and-phone-img">
                         <ul>
                             <li>Watch movies and shows on Netflix<sup>&reg;</sup> and Hulu in HD.</li>
                             <li>Save on mobile data &ndash; connect with in-home Wi-Fi to download the latest apps.</li>
@@ -96,7 +96,7 @@
                         <div class="tag-line">
                             3 Years. 1 Price. No Contract.
                         </div>
-                        <a href="" class="bookendButton" clicktrack="">
+                        <a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop" class="bookendButton" clicktrack="">
                             <span class="bookend leftBookend">&nbsp;</span>
                             <span class="bookend centerBookend">Check Availability</span>
                             <span class="bookend rightBookend">&nbsp;</span>
@@ -112,7 +112,7 @@
                 <div class="container">
                     <div class="heading">
                         <h3>High-Speed Internet</h3>
-                        <img src="img/tenmbps-lowerheading-laptop.png" alt="" class="offset-img">
+                        <img src="img/<?php echo $img_prefix; ?>lower-heading-devices.png" alt="" class="offset-img">
                     </div>
                     <div class="left-side fL">
                         <h2>Pure broadband&trade;</h2>
@@ -123,7 +123,7 @@
                         <div class="tag-line">
                             Pure speed online. No phone line required.
                         </div>
-                        <a href="" class="bookendButton" clicktrack="">
+                        <a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop" class="bookendButton" clicktrack="">
                             <span class="bookend leftBookend">&nbsp;</span>
                             <span class="bookend centerBookend">Check Availability</span>
                             <span class="bookend rightBookend">&nbsp;</span>
@@ -132,7 +132,7 @@
                         <p class="perks ir">Norton by Symantec. 30-Day Satisfaction Guarantee. 24/7 Technical Support</p>
                     </div>
                     <div class="right-side fR">
-                        <img src="img/tenmbps-ipad.png" alt="">
+                        <img src="img/<?php echo $img_prefix; ?>content-bug-ipad.png" alt="">
                     </div>
                     <div style="clear:both;"></div>
                 </div>
@@ -144,7 +144,7 @@
                     <div class="tfn-cta-text fL">
                         <p class="orange">
                             Call a CenturyLink representative.<br>
-                            <span class="cta">XXX-XXX-XXXX</span>
+                            <span class="cta"><?php echo $phone; ?></span>
                         </p>
                     </div>
                     <div class="disclaimer fR">
@@ -157,10 +157,10 @@
             <div class="row footer">
                 <div class="container">
                     <nav>
-                        <a href="">Residential</a> |
-                        <a href="">Small Business</a> |
-                        <a href="">Large Business</a> |
-                        <a href="">Wholesale</a>
+                        <a href="http://www.centurylink.com/home/">Residential</a> |
+                        <a href="http://www.centurylink.com/small-business/">Small Business</a> |
+                        <a href="https://www.centurylink.com/business/">Large Business</a> |
+                        <a href="http://www.centurylink.com/wholesale/">Wholesale</a>
                     </nav>
                     <p>&copy; 2014 CenturyLink. All Rights Reserved.</p>
                 </div>
@@ -168,8 +168,8 @@
 
         </div><!--end page-wrapper -->
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+        <script type="text/javascript" src="/assets/js/common/jquery.min.js"></script>
+        <script type="text/javascript" src="js/vendor/TweenMax.min.js"></script>
 
         <script src="js/main.js"></script>
     </body>

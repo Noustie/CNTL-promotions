@@ -89,10 +89,10 @@ nav{
     color: #666666;
     margin-top: 10px;
 }
-nav a:link{}
-nav a:visited{}
-nav a:hover{}
-nav a:active{}
+nav a:link{color: #999999;}
+nav a:visited{color: #999999;}
+nav a:hover{color: #007f3d;transition: all 0.2s;}
+nav a:active{color: #999999;}
 h1{
     font-size: 36px;
     font-weight: bold;
