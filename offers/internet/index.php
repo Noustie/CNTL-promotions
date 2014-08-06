@@ -41,7 +41,7 @@
     </head>
     <body>
 
-        <?php include " 'inc/'.$floodlight.'.php' " ?>
+        <?php include 'inc/'.$floodlight.'.php' ?>
 
         <div class="page-wrapper">
 
