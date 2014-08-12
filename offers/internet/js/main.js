@@ -7,7 +7,7 @@ $(function(){
 		// Calculate distance scrolled 
 		if (fromtheTop > 0) { 
 			// Make sure it's never less than 0 
-			var newPos = ( (fromtheTop * 0.1) + 0); 
+			var newPos = ( (fromtheTop * 0.001) + 0); 
 			//Ratio here - change 
 			if ($('html').hasClass('csstransforms3d')) {
 				TweenMax.to(bg, 0.2, {backgroundPosition:'center -'+newPos+'px'});						

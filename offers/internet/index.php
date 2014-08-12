@@ -78,7 +78,7 @@
                         <img src="img/<?php echo $img_prefix; ?>upper-heading-devices.png" alt="High-Speed Internet and Home Phone" class="offset-img">
                     </div>
                     <div class="left-side fL">
-                        <img src="img/<?php echo $img_prefix; ?>content-bug-devices" alt="" class="tenmbps-hsi-and-phone-img">
+                        <img src="img/<?php echo $img_prefix; ?>content-bug-devices.png" alt="" class="tenmbps-hsi-and-phone-img">
                         <ul>
                             <li>Watch movies and shows on Netflix<sup>&reg;</sup> and Hulu in HD.</li>
                             <li>Save on mobile data &ndash; connect with in-home Wi-Fi to download the latest apps.</li>
