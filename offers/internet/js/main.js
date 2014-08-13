@@ -5,7 +5,9 @@ $(function(){
 
 
 
+	// function x(){
 
+	// }
 
 
 
@@ -14,7 +16,10 @@ $(function(){
 
 
 	$(window).scroll( function() { 
-		var fromtheTop = $(this).scrollTop(); 
+		var fromtheTop = $(this).scrollTop();
+		console.log(fromtheTop);
+
+
 		// Calculate distance scrolled 
 		if (fromtheTop > 0) { 
 			// Make sure it's never less than 0 
