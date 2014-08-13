@@ -2,6 +2,17 @@ $(function(){
 
 	var bg = $("body");
 
+
+
+
+
+
+
+
+
+
+
+
 	$(window).scroll( function() { 
 		var fromtheTop = $(this).scrollTop(); 
 		// Calculate distance scrolled 
@@ -14,7 +25,31 @@ $(function(){
 			}
 		} else { 
 			// If it's less than 0, reset to original position 
-			TweenMax.to(bg, 0.1, {backgroundPosition:'center 0px'});						
+			TweenMax.set(bg, 0.1, {backgroundPosition:'center 0px'});						
 		}
 	});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
