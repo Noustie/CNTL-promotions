@@ -186,60 +186,55 @@ $(function(){
 	});
 
 	var alldots = $( ".tipDot1,.tipDot2,.tipDot3,.tipDot4,.tipDot5,.tipDot6,.tipDot7,.tipDot8" );
+	var heroDevices = $(" .hero-surface, .hero-gps, .hero-phone ");
 
 	if ( !!document.createElement('canvas').getContext && !!document.createElement('canvas').getContext('2d')) {
 		//TIMELINES FOR MODERN BROWSERS
-		tl_start.to( $(".lady"), 0.5, { alpha:1, ease:Power2.easeOut })
-				.from( $(".lady"), 1.7, { left:"300px", ease:Power2.easeInOut }, 0.4)
+		tl_start.staggerTo( heroDevices, 0.5, { opacity:1, ease:Power2.easeOut }, 0.3)
 				.to($(".anim2 .anim2-s1"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, 0.4)
 				.to($(".anim2 .anim2-s2"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, 0.5)
 				.to($(".anim2 .anim2-s3"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, 0.6)
 				.to($(".anim2 .anim2-s4"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, 0.7)
 				.to($(".anim2 .anim2-s5"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, 0.8)
-				.to($(".anim2 .anim2-s6"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, 0.8)
+				.to($(".anim2 .anim2-s6"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, 0.8);
+				
 				//.to($(".limited-time-offer-snipe"), 0.7,{width:384, ease:Power2.easeOut}, 1.6)
 				//.to($(".limited-time-offer-snipe a"), 0.7,{ opacity:1, ease:Power2.easeInOut}, 1.8);
-		;
-		tl_demo.to( $(".lady"), 0.5, { left:"-200px", scale: 1.3, alpha:0, ease: Power2.easeInOut}, 0)
-		 		.to( $(".anim2"), 0.5, { left:"700px", scale: 1.3, alpha:0, ease: Power2.easeInOut}, 0)
+		tl_demo.staggerTo( heroDevices, 0.5, { opacity:0, ease:Power2.easeOut }, 0.3)
+		 		.to( $(".anim2"), 0.5, { left:"700px", scale: 1.3, opacity:0, ease: Power2.easeInOut}, 0)
 		 		
 		 		//.staggerTo($(".limited-time-offer-snipe"), 0.5,{width:0, ease:Power2.easeIn}, 0.01, 0)
 				//.to($(".limited-time-offer-snipe a"), 0.5,{ opacity:0, ease:Power2.easeInOut}, 0)
 
-				.to( $(".lady, .anim2"), 0.1, { display:"none"}, 0.7)
+				.to( $(".anim2"), 0.1, { display:"none"}, 0.7)
 				.to($(".roomblur"), 0.5, { alpha:0 }, 0.3)
 				.to($(".roomblur"), 0.1, { display:"none" }, 0.8)
 				.to($(".tips"), 0.1, { display:"block" }, 0.8)
-		.staggerFromTo(alldots,
-						1.5,
-						{alpha:0, scale:0.1, rotationY:0, z:-50},
-						{alpha:1, scale:1, rotationY:360, z:0, ease:Back.easeOut }, 
-						.1)
-		;
+				.staggerFromTo(alldots,	1.5, {alpha:0, scale:0.1, rotationY:0, z:-50},{alpha:1, scale:1, rotationY:360, z:0, ease:Back.easeOut }, .1)
+				.to($(".hero-back-btn"), 0.7,{opacity: 1, ease:Power2.easeInOut}, 0.8);
 	} else {
 		//TIMELINES FOR IE 8
-		tl_start.to( $(".lady"), 0.5, { alpha:1, ease:Power2.easeOut })
-				.from( $(".lady"), 1.7, { left:"300px", ease:Power2.easeInOut }, 0.4)
+		tl_start.staggerTo( heroDevices, 0.5, { opacity:1, ease:Power2.easeOut }, 0.3)
 				.to($(".anim2 .anim2-s1"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, .4)
 				.to($(".anim2 .anim2-s2"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, .5)
 				.to($(".anim2 .anim2-s3"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, .6)
 				.to($(".anim2 .anim2-s4"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, .7)
 				.to($(".anim2 .anim2-s5"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, .8)
 				.to($(".anim2 .anim2-s6"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, .8)
-				.to($(".anim2 .anim2-s6"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, 0.8)
+				.to($(".anim2 .anim2-s6"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, 0.8);
 				//.to($(".limited-time-offer-snipe"), 0.7,{width:384, ease:Power2.easeOut}, 1.6)
-				//.to($(".limited-time-offer-snipe a"), 0.7,{ opacity:1, ease:Power2.easeInOut}, 1.8)
-		;
-		tl_demo.to( $(".lady"), 0.7, { left:"-500px", alpha:1, ease: Power2.easeInOut}, 0)
-		 		.to( $(".anim2"), 0.7, { left:"1400px", alpha:1, ease: Power2.easeInOut}, 0)
+				//.to($(".limited-time-offer-snipe a"), 0.7,{ opacity:1, ease:Power2.easeInOut}, 1.8);
+		tl_demo.staggerTo( heroDevices, 0.5, { opacity:0, ease:Power2.easeOut }, 0.3)
+		 		.to( $(".anim2"), 0.7, { left:"700px", alpha:1, ease: Power2.easeInOut}, 0)
 
 		 		//.staggerTo($(".limited-time-offer-snipe"), 0.5,{width:0, ease:Power2.easeIn}, 0.01, 0)
 				//.to($(".limited-time-offer-snipe a"), 0.5,{ opacity:0, ease:Power2.easeInOut}, 0)
 
-		 		.to( $(".lady, .anim2"), 0.1, { display:"none"}, 0.7)
+		 		.to( $(".anim2"), 0.1, { display:"none"}, 0.7)
 				.to($(".roomblur"), 0.5, { alpha:1 }, 0.3)
 				.to($(".roomblur"), 0.1, { display:"none" }, 0.8)
-				.to($(".tips"), 0.1, { display:"block" }, 0.8);
+				.to($(".tips"), 0.1, { display:"block" }, 0.8)
+				.to($(".hero-back-btn"), 0.7,{opacity: 1, ease:Power2.easeInOut}, 0.8);
 	}
 			
 	var tl_shimmer = TweenMax.to( $(".shimmer"), 1, { backgroundPosition: "180px 6px", repeatDelay: 3, repeat: -1 } );
@@ -273,6 +268,7 @@ $(function(){
 		$('ul#nav li a').removeClass('active');
 	  	$("#video-btn").addClass('active');
 	});
+
 	//Demo area tooltip controls
 	$(".tt-point-left").on({ 
 		click: function (e){
@@ -282,30 +278,22 @@ $(function(){
 		},
 		mouseover: function (e) {
 			var tip = $(this).children(".tooltip")[0];
-			if ( !!document.createElement('canvas').getContext && !!document.createElement('canvas').getContext('2d')) {
-				TweenMax.to( this, .4, { zIndex: 100 } );
-				TweenMax.to( tip, .4, { left:"76px", alpha:1, overwrite:1, display:'block' } );
-			} else {
-				TweenMax.to( this, .4, { zIndex: 100 } );
-				TweenMax.to( tip, .4, { left:"76px", alpha:1, overwrite:1, display:'block' } );
-			}
+			var tipLabel = $(this).children(".tooltip-label-hover-text");
+			TweenMax.to( this, 0.4, { zIndex: 100 } );
+			TweenMax.to( tip, 0.4, { left:"76px", opacity:1, overwrite:1, display:'block' } );
+			TweenMax.to( tipLabel, 0.2, {opacity:0} );
 			e.preventDefault();
 		},
 		mouseout: function (e) {
 			var tip = $(this).children(".tooltip")[0];
-			if ( !!document.createElement('canvas').getContext && !!document.createElement('canvas').getContext('2d')) {
-			TweenMax.to(this, .4, { zIndex: 10 } );
-			TweenMax.to(tip, .4, { left:"85px", alpha:0, overwrite:1, onCompleteParams:[tip], 
+			var tipLabel = $(this).children(".tooltip-label-hover-text");
+			TweenMax.to(this, 0.4, { zIndex: 10 } );
+			TweenMax.to(tip, 0.4, { left:"85px", opacity:0, overwrite:1, onCompleteParams:[tip], 
 				onComplete: function (tip) {
-				TweenMax.set(tip, { display:"none", alpha: 0 } );
-			}});
-			} else {
-			TweenMax.to(this, .4, { zIndex: 10 } );
-			TweenMax.to(tip, .4, { left:"85px", alpha:0, overwrite:1, onCompleteParams:[tip], 
-				onComplete: function (tip) {
-				TweenMax.set(tip, { display:"none", alpha: 0 } );
-			}});			
-			}
+					TweenMax.set(tip, { display:"none", opacity: 0 } );
+				}
+			});
+			TweenMax.to( tipLabel, 0.4, {opacity:1} );	
 			e.preventDefault();
 		}
 	});
@@ -318,17 +306,22 @@ $(function(){
 		},
 		mouseover: function (e) {
 			var tip = $(this).children(".tooltip")[0];
-			TweenMax.to( this, .4, { zIndex: 100 } );
-			TweenMax.to( tip, .4, { left:"-245px", opacity:1, overwrite:1, display:'block' } );
+			var tipLabel = $(this).children(".tooltip-label-hover-text");
+			TweenMax.to( this, 0.4, { zIndex: 100 } );
+			TweenMax.to( tip, 0.4, { left:"-245px", opacity:1, overwrite:1, display:'block' } );
+			TweenMax.to( tipLabel, 0.2, {opacity:0} );
 			e.preventDefault();
 		},
 		mouseout: function (e) {
 			var tip = $(this).children(".tooltip")[0];
-			TweenMax.to(this, .4, { zIndex: 10 } );
-			TweenMax.to(tip, .4, { left:"-250px", opacity:0, overwrite:1, onCompleteParams:[tip], 
+			var tipLabel = $(this).children(".tooltip-label-hover-text");
+			TweenMax.to(this, 0.4, { zIndex: 10 } );
+			TweenMax.to(tip, 0.4, { left:"-250px", opacity:0, overwrite:1, onCompleteParams:[tip], 
 				onComplete: function (tip) {
-				TweenMax.set(tip, { display:"none", opacity: 0 } );
-			}} );
+					TweenMax.set(tip, { display:"none", opacity: 0 } );
+				}
+			});
+			TweenMax.to( tipLabel, 0.4, {opacity:1} );
 			e.preventDefault();
 		}
 	});

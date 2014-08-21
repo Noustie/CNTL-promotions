@@ -1,51 +1,51 @@
 
-		/* MODIFIED FROM MAIN.CSS ON CENTURYLINK.COM */
-		/*----------------------Modal Window Styles---------------*/
-		.modals { position: absolute; top: 0; left: 0; z-index: 9000; }
-		.modal { z-index: 9000; width:406px; min-height:100px; padding:0; position: absolute; }
-		.modal .modal-top { background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -7px -2px; height:17px!important; height:37px; width:386px!important; width:406px; padding:10px; text-align:center; font-weight:bold; }
-		.modal .modal-bottom { background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -7px -80px; width:406px; height:52px; }
-		.modal .modal-content { width:366px!important; width:406px; padding:20px; background:transparent url('/assets/images/templates/modal_bg.png') repeat-y 0px 0px; overflow:visible; }
-		.modal a.modal-close-btn { background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -378px -168px; height:16px; width:16px;	display:block; float:right; vertical-align:bottom; float:right; }
-		.modal .modal-close{ float:right; width:100px; line-height:15px; *margin-top:-15px; text-align:right; }
-		.zam_close, .ctam_close, .mam_close{float:left;}
-		#zam_close-button,#ctam_close-button,#mam_close-button{float:left; margin-left:5px;}
-		.modal .modal-close a{ font-size:11px; color:green; }
-		.modal .modal-block-top{ margin-top:10px; background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -9px -136px; height:10px; width:356px; }
-		.modal .modal-block-bottom{ background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -9px -168px; height:12px; width:356px; }
-		.modal .modal-block{ border-right:1px solid #CCC; border-left:1px solid #CCC; background-color:#E7E7E7; min-height:10px; width:354px; }
-		.modal-block-title{ background: url('/assets/images/sprites/modal_sprite.png') no-repeat -378px -188px; padding-left:20px; margin-left:10px; }
-		.modal-block-title{ background: url('/assets/images/sprites/modal_sprite.png') no-repeat -378px -188px; padding-left:20px; margin-left:10px; }
-		.modal-block-expanded, .modal-block-expanded_lvl2{ display:none; }
-		.modal-block-expanded_lvl2{ margin:10px; }
-		.modals .modal form{ margin:10px 10px 0 0; background: transparent; padding:0; }
-		.modals .modal, .modals .modal p { font-size: 12px; }
-		.modals .modal input { font-size: 11px; margin: 0 5px 0 0; }
-		.modals .error { clear: both; overflow: hidden; }
-		.modal form input{ font: inherit; }
-		.modal form label{ display:block; font-size:11px; }
-		.address-block{ float:left; margin:auto 10px 7px auto; }
-		.remember-me{ margin-left:20px; }
-		.link-protect-info{ background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -378px -138px; padding-left:20px; margin-left:20px; display:block; line-height:20px; }
-		.modal-button{ font-size:0; display:block; background:url('/assets/images/sprites/modal_sprite.png') no-repeat; }
-		.btn-modal-show-options{ background-position:-10px -185px; height:26px; width:131px; }
+/* MODIFIED FROM MAIN.CSS ON CENTURYLINK.COM */
+/*----------------------Modal Window Styles---------------*/
+.modals { position: absolute; top: 0; left: 0; z-index: 9000; }
+.modal { z-index: 9000; width:406px; min-height:100px; padding:0; position: absolute; }
+.modal .modal-top { background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -7px -2px; height:17px!important; height:37px; width:386px!important; width:406px; padding:10px; text-align:center; font-weight:bold; }
+.modal .modal-bottom { background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -7px -80px; width:406px; height:52px; }
+.modal .modal-content { width:366px!important; width:406px; padding:20px; background:transparent url('/assets/images/templates/modal_bg.png') repeat-y 0px 0px; overflow:visible; }
+.modal a.modal-close-btn { background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -378px -168px; height:16px; width:16px;	display:block; float:right; vertical-align:bottom; float:right; }
+.modal .modal-close{ float:right; width:100px; line-height:15px; *margin-top:-15px; text-align:right; }
+.zam_close, .ctam_close, .mam_close{float:left;}
+#zam_close-button,#ctam_close-button,#mam_close-button{float:left; margin-left:5px;}
+.modal .modal-close a{ font-size:11px; color:green; }
+.modal .modal-block-top{ margin-top:10px; background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -9px -136px; height:10px; width:356px; }
+.modal .modal-block-bottom{ background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -9px -168px; height:12px; width:356px; }
+.modal .modal-block{ border-right:1px solid #CCC; border-left:1px solid #CCC; background-color:#E7E7E7; min-height:10px; width:354px; }
+.modal-block-title{ background: url('/assets/images/sprites/modal_sprite.png') no-repeat -378px -188px; padding-left:20px; margin-left:10px; }
+.modal-block-title{ background: url('/assets/images/sprites/modal_sprite.png') no-repeat -378px -188px; padding-left:20px; margin-left:10px; }
+.modal-block-expanded, .modal-block-expanded_lvl2{ display:none; }
+.modal-block-expanded_lvl2{ margin:10px; }
+.modals .modal form{ margin:10px 10px 0 0; background: transparent; padding:0; }
+.modals .modal, .modals .modal p { font-size: 12px; }
+.modals .modal input { font-size: 11px; margin: 0 5px 0 0; }
+.modals .error { clear: both; overflow: hidden; }
+.modal form input{ font: inherit; }
+.modal form label{ display:block; font-size:11px; }
+.address-block{ float:left; margin:auto 10px 7px auto; }
+.remember-me{ margin-left:20px; }
+.link-protect-info{ background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -378px -138px; padding-left:20px; margin-left:20px; display:block; line-height:20px; }
+.modal-button{ font-size:0; display:block; background:url('/assets/images/sprites/modal_sprite.png') no-repeat; }
+.btn-modal-show-options{ background-position:-10px -185px; height:26px; width:131px; }
 
-		.btn-modal-show-options:hover{ background-position:-10px -215px; }
-		.modals #interstitial { z-index: 9001 }
-		/*----------------------End Modal---------------*/
+.btn-modal-show-options:hover{ background-position:-10px -215px; }
+.modals #interstitial { z-index: 9001 }
+/*----------------------End Modal---------------*/
 
-		/*----------------------PopUp Window Styles---------------*/
-		.popup{ width:406px; min-height:100px; padding:0; }
-		.popup .popup-top{ background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -7px -2px; height:17px!important; height:37px; width:386px!important; width:406px; padding:10px; text-align:center; font-weight:bold; }
-		.popup .popup-bottom{ background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -7px -80px; width:406px; height:52px; }
-		.popup .popup-content{ width:366px!important; width:406px; padding:20px; background:transparent url('/assets/images/templates/modal_bg.png') repeat-y 0px 0px; overflow:visible; }
-		.popup-content p{ margin-bottom: 16px; }
-		.popup a.popup-close-btn{ background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -378px -168px; height:16px; width:16px; display: block; vertical-align: bottom; }
-		.popup-close-link { float: left; }
-		.popup .popup-close{ width:90px; line-height:15px; *margin-top:-15px; text-align:right; float:right; }
-		.popup .popup-close a{ font-size:11px; color:green; }
+/*----------------------PopUp Window Styles---------------*/
+.popup{ width:406px; min-height:100px; padding:0; }
+.popup .popup-top{ background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -7px -2px; height:17px!important; height:37px; width:386px!important; width:406px; padding:10px; text-align:center; font-weight:bold; }
+.popup .popup-bottom{ background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -7px -80px; width:406px; height:52px; }
+.popup .popup-content{ width:366px!important; width:406px; padding:20px; background:transparent url('/assets/images/templates/modal_bg.png') repeat-y 0px 0px; overflow:visible; }
+.popup-content p{ margin-bottom: 16px; }
+.popup a.popup-close-btn{ background:transparent url('/assets/images/sprites/modal_sprite.png') no-repeat -378px -168px; height:16px; width:16px; display: block; vertical-align: bottom; }
+.popup-close-link { float: left; }
+.popup .popup-close{ width:90px; line-height:15px; *margin-top:-15px; text-align:right; float:right; }
+.popup .popup-close a{ font-size:11px; color:green; }
 
-		/*----------------------End Pop Up---------------*/
+/*----------------------End Pop Up---------------*/
 
 
 
@@ -134,7 +134,7 @@ ul#nav li {
 	color: #fff !important;
 }
 .move-down{
-	padding-top: 60px;
+	padding-top: 30px;
 	font-size: 18px !important;
 	font-weight: bold;
 	color: #616365;
@@ -311,7 +311,7 @@ ul#nav li div a.ex-fix.active{
 	border-bottom: 1px solid #FFF;
 	margin-top: 53px;
 }
-.demo .lady, .demo .anim2{
+.hero-surface, .hero-gps, .hero-phone, .demo .anim2{
 	filter: none !important;
 	display: inline-block;
 }
@@ -320,40 +320,58 @@ ul#nav li div a.ex-fix.active{
 	position: absolute;
 	height: 100%;
 	width: 100%;
-}	
-.lady{
-	width: 360px;
+}
+.hero-devices{
 	position: absolute;
-	left: 82px;
-	bottom: -192px;
-	z-index: 100;
-	top: auto;
-	opacity: 0;
+	top:0px;
+	left:0px;
+	z-index: 4;
+	width: 100%;
+	height: 100%;
+}
+.hero-surface{
+	position: absolute;
+	top: -98px;
+	left: -282px;
+}
+.hero-gps{
+	position: absolute;
+	top: 240px;
+	left: 33px;
+}
+.hero-phone{
+	position: absolute;
+	top: 196px;
+	left: 197px;
 }
 .anim2{
-	width: 505px;
+	width: 465px;
 	position: absolute;
-	top: 83px;
+	top: 95px;
+	left: 450px;
 	z-index: 5;
-	right: 70px;
-	left:auto;
-	overflow: hidden;
 	opacity: 1;
+	overflow: hidden;
 }
 .anim2-s1,.anim2-s2,.anim2-s3,.anim2-s4,.anim2-s5,.anim2-s6{
 	opacity: 0;
 	opacity: 1\9;
 	left: -600px;
 }
+.hero-surface, .hero-gps, .hero-phone, .hero-back-btn{
+	opacity: 0;
+	opacity: 1\9;
+}
 .anim2 p{
 	font-size: 15px;
+	margin-bottom: 25px;
 	position: relative;
 	color: #616365;
 	text-shadow: 1px 1px .06em rgba(255,255,255,0.5);
 }
 .anim2 img{position: relative;z-index: 99;}
 .anim2 a{position: relative;}
-.anim2-s2{margin-bottom: -25px;}
+.anim2-s2{margin-top: 12px;}
 .limited-time-offer-snipe{
 	top: 20px;
 	right: 0px;
@@ -409,6 +427,19 @@ ul#nav li div a.ex-fix.active{
 	width: 100%;
 	display: block;
 }
+.hero-back-btn{
+	position: absolute;
+	z-index: 21;
+	top: 10px;
+	left: 10px;
+	color: #fff;
+	background-repeat: no-repeat;
+	font-size: 12px;
+	background-position: 0px 0px;
+	background-image: url(../img/inner-room-back.png);
+	padding-left: 20px;
+	opacity: 0;
+}
 .tips{
 	position: absolute;
 	z-index: 20;
@@ -422,9 +453,9 @@ ul#nav li div a.ex-fix.active{
 }
 .tips .loadvideo {
 	position: absolute;
-	width: 100px;
+/*	width: 100px;
 	height: 100px;
-	display: block;
+	display: block;*/
 	z-index: 10;
 	-webkit-transform-origin: 42px 42px 0;
 	-moz-transform-origin: 42px 42px 0;
@@ -449,7 +480,7 @@ ul#nav li div a.ex-fix.active{
 .tips a.tipDot3 { top: 70.8%; left: 46.5%; }
 .tips a.tipDot4 { top: 7%; left: 85.3%; }
 .tips a.tipDot5 { top: 34%; left: 40.1%; }
-.tips a.tipDot6 { top: 43%; left: 68.9%; }
+.tips a.tipDot6 { top: 38%; left: 68.9%; }
 .tips a.tipDot7 { top: 17.5%;	left: 3.5%;}
 .tips a.tipDot8 { top: 52.7%; left: 89.9%; }
 
@@ -464,14 +495,73 @@ ul#nav li div a.ex-fix.active{
 .tips a.tipDot8 .dot { background-position: 57.4% 0; }
 
 /* Position of Sprite hover */
-.tips a.tipDot1 .dot:hover { background-position: 100% 97%; }
-.tips a.tipDot2 .dot:hover { background-position: 14.7% 97%; }
-.tips a.tipDot3 .dot:hover { background-position: 43% 97%;}
-.tips a.tipDot4 .dot:hover { background-position: 71.5% 97%; }
-.tips a.tipDot5 .dot:hover { background-position: 29% 97%; }
-.tips a.tipDot6 .dot:hover { background-position: 85.9% 97%; }
-.tips a.tipDot7 .dot:hover { background-position: 0.5% 97%; }
-.tips a.tipDot8 .dot:hover { background-position: 57.4% 97%; }
+.tips a.tipDot1:hover .dot { background-position: 100% 97%; }
+.tips a.tipDot2:hover .dot { background-position: 14.7% 97%; }
+.tips a.tipDot3:hover .dot { background-position: 43% 97%;}
+.tips a.tipDot4:hover .dot { background-position: 71.5% 97%; }
+.tips a.tipDot5:hover .dot { background-position: 29% 97%; }
+.tips a.tipDot6:hover .dot { background-position: 85.9% 97%; }
+.tips a.tipDot7:hover .dot { background-position: 0.5% 97%; }
+.tips a.tipDot8:hover .dot { background-position: 57.4% 97%; }
+
+
+/*Position of tooltip label text*/
+.tips .tooltip-label-hover-text{
+	font-size: 12px;
+	color: #545454;
+	text-decoration: none;
+	position: absolute;
+	background-color: rgba(255,255,255,0.8);
+	border-radius: 4px;
+	border:1px solid #fff;
+	font-weight: bold;
+}
+
+.tips a.tipDot1 .tooltip-label-hover-text{
+	padding: 7px 16px;
+	left: -102px;
+	top: 28px;
+}
+.tips a.tipDot2 .tooltip-label-hover-text{
+	padding: 7px 16px;
+	left: 61px;
+	top: 27px;
+	width: 100%;
+}
+.tips a.tipDot3 .tooltip-label-hover-text{
+	padding: 7px 16px;
+	left: -170px;
+	top: 27px;
+}
+.tips a.tipDot4 .tooltip-label-hover-text{
+	padding: 7px 16px;
+	left: -132px;
+	top: 27px;
+}
+.tips a.tipDot5 .tooltip-label-hover-text{
+	padding: 7px 16px;
+	left: -166px;
+	top: 27px;
+	width:160px;
+}
+.tips a.tipDot6 .tooltip-label-hover-text{
+	padding: 7px 16px;
+	left: -139px;
+	top: 27px;
+	width:127px;
+}
+.tips a.tipDot7 .tooltip-label-hover-text{
+	padding: 7px 16px;
+	left: 66px;
+	top: 27px;
+	width: 150px;
+}
+.tips a.tipDot8 .tooltip-label-hover-text{
+	padding: 7px 16px;
+	left: -102px;
+	top: 27px;
+}
+
 
 .tt-point-left .tooltip{
 	position: absolute;
@@ -555,15 +645,15 @@ a.btn-animate {
 	font-size: 15px;
 	color: #FFF;
 	font-weight: bold;
-	width: 188px;
-	background: transparent url("../img/explore-btn.png");
+	width: 211px;
+	background: transparent url("../img/view-all-features-btn.png");
 	background-position: center top;
 	text-decoration: none;
 	text-indent: -9999px;
 	margin-left: -1px;
 }
 a.btn-animate:hover{
-	background: transparent url("../img/explore-btn.png");
+	background: transparent url("../img/view-all-features-btn.png");
 	background-position: center bottom;
 }
 .btn-animate .shimmer {
