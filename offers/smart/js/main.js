@@ -402,7 +402,7 @@ $(function(){
 	//beneftis page timeline and controls
 	benefitsTl = new TimelineMax({paused:true});
 	benefitsTl.to($(".benefits .dot-bar"), 1, {top:-100, ease:Linear.easeNone}, "label1")
-			.to($(".benefits .floater"), 1, {backgroundPosition: "-30px -691px", ease:Linear.easeNone}, "label1")
+			.to($(".benefits .floater"), 1, {backgroundPosition: "435px -630px", ease:Linear.easeNone}, "label1")
 			.to($(".benefits .slow-bg"), 1, {backgroundPosition: "-60px -250px", ease:Linear.easeNone}, "label1")
 			.to($(".benefits .scroll-height.tile1"), 1, {top:-458, ease:Linear.easeNone}, "label1")
 			.to($(".benefits .scroll-height.tile1"), .3, {opacity:0, ease:Linear.easeNone}, "label1")
@@ -416,15 +416,15 @@ $(function(){
 			.to($(".benefits .scroll-height.tile3"), 1, {top:-1027, ease:Linear.easeNone}, "label2")
 			.to($(".benefits .scroll-height.tile3"), .4, {opacity:1, ease:Linear.easeNone}, "label2")
 			
-			.to($(".benefits .floater"), 1.1, {backgroundPosition: "-30px -1304px", ease:Linear.easeNone},"label2")
+			.to($(".benefits .floater"), 1.1, {backgroundPosition: "435px -1254px", ease:Linear.easeNone},"label2")
 			.to($(".benefits .slow-bg"), 1.1, {backgroundPosition: "-60px -360px", ease:Linear.easeNone}, "label2")
 			.to($(".benefits .dot-bar"), 1.1, {top:-23, ease:Sine.easeInOut}, "label2")
 			
 			.addLabel("label3");
-			var benefitsTlTotalDuration = benefitsTl.totalDuration(); 	
-				
-	$(".security").click(function(e){
-		e.preventDefault();
+			var benefitsTlTotalDuration = benefitsTl.totalDuration();
+
+		$(".convenience").click(function(e){
+   		e.preventDefault();
 	    benefitsTl.tweenTo("label1", {ease:Sine.easeInOut});
 	    $('.benefits-content .mini-nav ul li').removeClass('mini-nav-active');
 	    $('.benefits-content .caps .first').addClass('mini-nav-active');
@@ -443,8 +443,8 @@ $(function(){
 	    $('.expansion-link').removeClass('active');
 	    $(this).parent().children().addClass('active');
 	});
-   	$(".convenience").click(function(e){
-   		e.preventDefault();
+	$(".security").click(function(e){
+		e.preventDefault();
 	    benefitsTl.tweenTo("label3", {ease:Sine.easeInOut});
 	    $('.benefits-content .mini-nav ul li').removeClass('mini-nav-active');
 	    $('.benefits-content .caps .last').addClass('mini-nav-active');
@@ -535,7 +535,7 @@ $(function(){
   	}); 
 	
 	//Scroll navigation
-	$("a#demo-btn, .demo-btn, a#video-btn").bind('click', { id: '#demo' }, scroller);
+	$("a#demo-btn, .demo-btn, a#video-btn, a.btn-animate").bind('click', { id: '#demo' }, scroller);
 	$("a#benefits-btn, .security, .emanagement, .convenience").bind('click', { id: '#benefits' }, scroller);
 	$("a#plans-btn, a.pricing, a.installation, a.equipment").bind('click', { id: '#plans' }, scroller);
 	$("a#contact-btn").bind('click', { id: '#contact' }, scroller);
@@ -605,8 +605,8 @@ $(function(){
 		}
 	);
 
-	//Home button behavior
-	$("#demo-btn, .demo-btn").click(function(e){
+	//Home button behavior and inner room back button
+	$("#demo-btn, .demo-btn, .hero-back-btn").click(function(e){
     	$.colorbox.close(); 
     	$(".videobox").fadeOut(500).delay(2000); 
          if ( !!window.player ) {
@@ -620,11 +620,11 @@ $(function(){
         $('.expansion-link').removeClass('active');
 	    $(this).parent().children().addClass('active');
 	   	$('ul#nav li > a').removeClass('active');
-	    $('ul#nav li a#demo-btn').addClass('active');
+	    $('ul#nav li a#demo-btn, .icon-intro').addClass('active');
     });
 
 	//Video button behavior
-    $("#video-btn").click(function(e){
+    $("#video-btn, a.btn-animate").click(function(e){
 		$.colorbox.close(); 
 		$(".videobox").fadeOut(500).delay(2000); 
          if ( !!window.player ) {
@@ -634,7 +634,7 @@ $(function(){
         $('.expansion-link').removeClass('active');
 	    $(this).parent().children().addClass('active');
 	    $('ul#nav li > a').removeClass('active');
-	    $('ul#nav li a#demo-btn').addClass('active');
+	    $('ul#nav li a#demo-btn, #video-btn').addClass('active');
         tl_demo.play();
     });
 

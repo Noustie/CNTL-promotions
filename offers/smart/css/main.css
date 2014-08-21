@@ -439,6 +439,8 @@ ul#nav li div a.ex-fix.active{
 	background-image: url(../img/inner-room-back.png);
 	padding-left: 20px;
 	opacity: 0;
+	text-decoration: none;
+	cursor: pointer;
 }
 .tips{
 	position: absolute;
@@ -861,10 +863,8 @@ a.cycle-next:active{}
 }
 .benefits p{width: 370px;}
 .benefits .floater{
-	width:1020px;
-	height:1000px;
 	background:url('../img/benefits-rhr.png') no-repeat;
-	background-position: -30px -50px;
+	background-position: 435px 0px;
 }
 .benefits .slow-bg {
 	width:1020px;
