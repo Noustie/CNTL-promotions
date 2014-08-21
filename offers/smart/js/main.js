@@ -190,7 +190,7 @@ $(function(){
 
 	if ( !!document.createElement('canvas').getContext && !!document.createElement('canvas').getContext('2d')) {
 		//TIMELINES FOR MODERN BROWSERS
-		tl_start.staggerTo( heroDevices, 0.5, { opacity:1, ease:Power2.easeOut }, 0.3)
+		tl_start.staggerTo( heroDevices, 0.7, { opacity:1, ease:Power2.easeOut }, 0.3)
 				.to($(".anim2 .anim2-s1"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, 0.4)
 				.to($(".anim2 .anim2-s2"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, 0.5)
 				.to($(".anim2 .anim2-s3"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, 0.6)
@@ -214,7 +214,7 @@ $(function(){
 				.to($(".hero-back-btn"), 0.7,{opacity: 1, ease:Power2.easeInOut}, 0.8);
 	} else {
 		//TIMELINES FOR IE 8
-		tl_start.staggerTo( heroDevices, 0.5, { opacity:1, ease:Power2.easeOut }, 0.3)
+		tl_start.staggerTo( heroDevices, 0.7, { opacity:1, ease:Power2.easeOut }, 0.3)
 				.to($(".anim2 .anim2-s1"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, .4)
 				.to($(".anim2 .anim2-s2"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, .5)
 				.to($(".anim2 .anim2-s3"), 0.7,{ left:"0px", opacity: 1, ease:Power2.easeInOut}, .6)

@@ -700,7 +700,6 @@ a.btn-animate:hover{
 	padding-left: 40px;
 	font-weight: bold;
 }
-
 #slideshow{
 	max-width:935px;
 	margin:auto;
@@ -708,78 +707,72 @@ a.btn-animate:hover{
 	margin-left: 40px;
 }
 #cycle div{width:100%}
-
+#cycle{height:90px;}
 .slideshow div a.carousel-style{
-	position: relative;
-	background-image: url("../img/carousel-tile-bg.jpg");
+	position: absolute;
 	background-repeat: no-repeat;
 	width:220px;
-	height:83px;
-	margin-right: 18px;	
+	height:90px;
+	display: block;
+	overflow: hidden;
 }
-/*
 #cycle .cycle-slide{
 	position: relative;
-	background-image: url("../img/carousel-tile-bg.jpg");
 	background-repeat: no-repeat;
 	width:220px;
-	height:83px;
-	margin-right: 18px;	
-}
-*/
-#cycle .cycle-slide{
-	position: relative;
-	background-image: url("../img/carousel-tile-bg.jpg");
-	background-repeat: no-repeat;
-	width:220px;
-	height:83px;
-	margin-right: 18px;	
+	height:90px;
+	margin-right: 18px;
+	overflow: hidden;
 }
 a.carousel-style a{
 	position: absolute;
 	text-decoration: none;
 }
+.carousel-icon{
+	top: 3px;
+	left: 6px;
+}
 a.carousel-style img{
 	position: absolute;
-	z-index: 98;
-	margin-left: 6px;
-	margin-top: 7px;
+}
+p.carousel-return-text{
+	top: 5px !important;
+	line-height: 11px;
 }
 a.carousel-style p{
 	position: absolute;
 	margin: 0;
-	background-image: url("../img/white-transparent.png");
-	width: 201px;
-	left: 6px;
+	width: 220px;
+	height: 32px;
+	bottom: 0px;
 	text-transform: uppercase;
 	font-size: 11px !important;
-	color:#669933;
-	z-index: 100;
-	padding: 4px 0 4px 7px;
-	margin: 54px 0px 0px 0px;
-	top:-1px;
+	color: #669933;
+	top: 10px;
+	left: 40px;
+}
+
+.cycle-slide a .carousel-transparent-bg{
+	display: block;
+	height: 32px;
+	position: absolute;
+	bottom: 0px;
+	background-image: url("../img/white-transparent.png");
 }
 a.carousel-style img.carousel-play{
 	position: absolute;
 	margin: 0;
-	z-index: 99;
 	left:90px;
 	top:6px;
 }
-#cycle .cycle-slide:hover{
-	background-image: url("../img/carousel-tile-bg.jpg");
-	background-position: 0px -83px;
+#cycle .cycle-slide:hover p{
 	color:#ffffff;
-}
-#cycle .vidpopup-active{
-	background-image: url("../img/carousel-tile-bg.jpg");
-	background-position: 0px -83px;
 }
 #cycle .vidpopup-active p{
 	background-image: url("../img/green-transparent.png");
 	color:#ffffff;
 }
-#cycle .cycle-slide:hover > .video-pop-up p{
+#cycle .cycle-slide:hover .carousel-transparent-bg{
 	background-image: url("../img/green-transparent.png" ) !important;
 	color:#ffffff !important;
 }
@@ -826,7 +819,7 @@ a.cycle-next:hover{
 }
 a.cycle-next:active{}
 
-#cycle{height:83px;}
+
 .caps{text-transform: uppercase !important;}
 .ben-ul-li-a{font-size: 14px;}
 .undrln{text-decoration: underline;}
