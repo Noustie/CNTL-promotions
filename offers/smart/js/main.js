@@ -308,7 +308,7 @@ $(function(){
 			var tip = $(this).children(".tooltip")[0];
 			var tipLabel = $(this).children(".tooltip-label-hover-text");
 			TweenMax.to( this, 0.4, { zIndex: 100 } );
-			TweenMax.to( tip, 0.4, { left:"-245px", opacity:1, overwrite:1, display:'block' } );
+			TweenMax.to( tip, 0.4, { left:"-220px", opacity:1, overwrite:1, display:'block' } );
 			TweenMax.to( tipLabel, 0.2, {opacity:0} );
 			e.preventDefault();
 		},
@@ -316,7 +316,7 @@ $(function(){
 			var tip = $(this).children(".tooltip")[0];
 			var tipLabel = $(this).children(".tooltip-label-hover-text");
 			TweenMax.to(this, 0.4, { zIndex: 10 } );
-			TweenMax.to(tip, 0.4, { left:"-250px", opacity:0, overwrite:1, onCompleteParams:[tip], 
+			TweenMax.to(tip, 0.4, { left:"-225px", opacity:0, overwrite:1, onCompleteParams:[tip], 
 				onComplete: function (tip) {
 					TweenMax.set(tip, { display:"none", opacity: 0 } );
 				}
@@ -547,6 +547,28 @@ $(function(){
 		$('html,body').animate({scrollTop: scrollYPos }, dur*1000);
 		event.preventDefault();
 	}
+
+	//waypoint-triggers
+	$('#demo').waypoint(function() {
+  		$('ul#nav li > a').removeClass('active');
+	  	$('#demo-btn').addClass('active');
+	}, { offset: '-1%' });
+	$('#benefits').waypoint(function() {
+  		$('ul#nav li > a').removeClass('active');
+	  	$('#benefits-btn').addClass('active');
+	}, { offset: '50%' });
+	$('#plans').waypoint(function() {
+  		$('ul#nav li > a').removeClass('active');
+	  	$('#plans-btn').addClass('active');
+	}, { offset: '50%' });
+	$('#contact').waypoint(function() {
+  		$('ul#nav li > a').removeClass('active');
+	  	$('#contact-btn').addClass('active');
+	}, { offset: '50%' });
+	$('#support').waypoint(function() {
+  		$('ul#nav li > a').removeClass('active');
+	  	$('#support-btn').addClass('active');
+	}, { offset: '50%' });
 	
 	//colorbox initialize
 	$("a.inline").colorbox({inline:true, width:"1020px"});
@@ -639,12 +661,12 @@ $(function(){
     });
 
     $(".tipDot1").click(function(e){$('.cycle-slideshow').cycle('goto', 7);e.preventDefault();});
-    $(".tipDot2").click(function(e){$('.cycle-slideshow').cycle('goto', 0);e.preventDefault();});
-    $(".tipDot3").click(function(e){$('.cycle-slideshow').cycle('goto', 1);e.preventDefault();});
-    $(".tipDot4").click(function(e){$('.cycle-slideshow').cycle('goto', 2);e.preventDefault();});
-    $(".tipDot5").click(function(e){$('.cycle-slideshow').cycle('goto', 3);e.preventDefault();});
-    $(".tipDot6").click(function(e){$('.cycle-slideshow').cycle('goto', 4);e.preventDefault();});
-    $(".tipDot7").click(function(e){$('.cycle-slideshow').cycle('goto', 5);e.preventDefault();});
+    $(".tipDot2").click(function(e){$('.cycle-slideshow').cycle('goto', 1);e.preventDefault();});
+    $(".tipDot3").click(function(e){$('.cycle-slideshow').cycle('goto', 3);e.preventDefault();});
+    $(".tipDot4").click(function(e){$('.cycle-slideshow').cycle('goto', 4);e.preventDefault();});
+    $(".tipDot5").click(function(e){$('.cycle-slideshow').cycle('goto', 2);e.preventDefault();});
+    $(".tipDot6").click(function(e){$('.cycle-slideshow').cycle('goto', 5);e.preventDefault();});
+    $(".tipDot7").click(function(e){$('.cycle-slideshow').cycle('goto', 0);e.preventDefault();});
     $(".tipDot8").click(function(e){$('.cycle-slideshow').cycle('goto', 6);e.preventDefault();});
 		
 	$(window).load(function () { 
