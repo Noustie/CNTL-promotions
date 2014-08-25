@@ -210,7 +210,7 @@ $(function(){
 				.to($(".roomblur"), 0.5, { alpha:0 }, 0.3)
 				.to($(".roomblur"), 0.1, { display:"none" }, 0.8)
 				.to($(".tips"), 0.1, { display:"block" }, 0.8)
-				.staggerFromTo(alldots,	1.5, {alpha:0, scale:0.1, rotationY:0, z:-50},{alpha:1, scale:1, rotationY:360, z:0, ease:Back.easeOut, onComplete: hoverTrigger}, .1)
+				.staggerFromTo(alldots,	1.5, {alpha:0, scale:0.1, rotationY:0, z:-50},{alpha:1, scale:1, rotationY:360, z:0, ease:Back.easeOut}, .1)
 				.to($(".hero-back-btn"), 0.7,{opacity: 1, ease:Power2.easeInOut}, 0.8);
 	} else {
 		//TIMELINES FOR IE 8
@@ -260,7 +260,7 @@ $(function(){
 
 	function hoverTrigger(trig){
 		if (trig) {
-			$("a.tipDot7").trigger('mouseover');
+			$("a.tipDot7").trigger('mouseenter');
 			trig = false;
 		}else{
 			$("a.tipDot7").trigger('mouseout');
@@ -278,6 +278,8 @@ $(function(){
 		//adds active class to "VIDEOS" button
 		$('ul#nav li a').removeClass('active');
 	  	$("#video-btn").addClass('active');
+		hoverTrigger(trig);
+		// trig = false;
 	});
 
 	//Demo area tooltip controls
@@ -288,6 +290,8 @@ $(function(){
 			e.preventDefault();
 		},
 		mouseover: function (e) {
+			trig = false;
+			hoverTrigger(trig);
 			var tip = $(this).children(".tooltip")[0];
 			var tipLabel = $(this).children(".tooltip-label-hover-text");
 			TweenMax.to( this, 0.4, { zIndex: 100 } );
@@ -316,6 +320,8 @@ $(function(){
 			e.preventDefault();
 		},
 		mouseover: function (e) {
+			trig = false;
+			hoverTrigger(trig);
 			var tip = $(this).children(".tooltip")[0];
 			var tipLabel = $(this).children(".tooltip-label-hover-text");
 			TweenMax.to( this, 0.4, { zIndex: 100 } );
