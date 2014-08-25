@@ -358,7 +358,7 @@ ul#nav li div a.ex-fix.active{
 	opacity: 1\9;
 	left: -600px;
 }
-.hero-surface, .hero-gps, .hero-phone, .hero-back-btn{
+.hero-surface, .hero-gps, .hero-phone{
 	opacity: 0;
 	opacity: 1\9;
 	alpha:0;
@@ -432,14 +432,13 @@ ul#nav li div a.ex-fix.active{
 	position: absolute;
 	z-index: 21;
 	top: 10px;
-	left: 10px;
+	left: -50px;
 	color: #fff;
 	background-repeat: no-repeat;
 	font-size: 12px;
 	background-position: 0px 0px;
 	background-image: url(../img/inner-room-back.png);
 	padding-left: 20px;
-	opacity: 0;
 	text-decoration: none;
 	cursor: pointer;
 }
