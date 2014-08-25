@@ -210,7 +210,7 @@ $(function(){
 				.to($(".roomblur"), 0.5, { alpha:0 }, 0.3)
 				.to($(".roomblur"), 0.1, { display:"none" }, 0.8)
 				.to($(".tips"), 0.1, { display:"block" }, 0.8)
-				.staggerFromTo(alldots,	1.5, {alpha:0, scale:0.1, rotationY:0, z:-50},{alpha:1, scale:1, rotationY:360, z:0, ease:Back.easeOut }, .1)
+				.staggerFromTo(alldots,	1.5, {alpha:0, scale:0.1, rotationY:0, z:-50},{alpha:1, scale:1, rotationY:360, z:0, ease:Back.easeOut, onComplete: hoverTrigger}, .1)
 				.to($(".hero-back-btn"), 0.7,{opacity: 1, ease:Power2.easeInOut}, 0.8);
 	} else {
 		//TIMELINES FOR IE 8
@@ -254,6 +254,17 @@ $(function(){
 			tl_iconshimmer.to( randomshimmer, .3, { opacity:1, rotationY:360, transformOrigin:"50% 50%"})
 				  		 .to( randomshimmer, .3, { opacity:0, rotationY:0, transformOrigin:"50% 50%"});
 		}
+	}
+
+	var trig = true;
+
+	function hoverTrigger(trig){
+		if (trig) {
+			$("a.tipDot7").trigger('mouseover');
+			trig = false;
+		}else{
+			$("a.tipDot7").trigger('mouseout');
+		};
 	}
 
 	//starts the explore timeline, and stops the shimmer timeline
@@ -547,28 +558,6 @@ $(function(){
 		$('html,body').animate({scrollTop: scrollYPos }, dur*1000);
 		event.preventDefault();
 	}
-
-	//waypoint-triggers
-	$('#demo').waypoint(function() {
-  		$('ul#nav li > a').removeClass('active');
-	  	$('#demo-btn').addClass('active');
-	}, { offset: '-1%' });
-	$('#benefits').waypoint(function() {
-  		$('ul#nav li > a').removeClass('active');
-	  	$('#benefits-btn').addClass('active');
-	}, { offset: '50%' });
-	$('#plans').waypoint(function() {
-  		$('ul#nav li > a').removeClass('active');
-	  	$('#plans-btn').addClass('active');
-	}, { offset: '50%' });
-	$('#contact').waypoint(function() {
-  		$('ul#nav li > a').removeClass('active');
-	  	$('#contact-btn').addClass('active');
-	}, { offset: '50%' });
-	$('#support').waypoint(function() {
-  		$('ul#nav li > a').removeClass('active');
-	  	$('#support-btn').addClass('active');
-	}, { offset: '50%' });
 	
 	//colorbox initialize
 	$("a.inline").colorbox({inline:true, width:"1020px"});
@@ -668,6 +657,23 @@ $(function(){
     $(".tipDot6").click(function(e){$('.cycle-slideshow').cycle('goto', 5);e.preventDefault();});
     $(".tipDot7").click(function(e){$('.cycle-slideshow').cycle('goto', 0);e.preventDefault();});
     $(".tipDot8").click(function(e){$('.cycle-slideshow').cycle('goto', 6);e.preventDefault();});
+
+	//waypoint-triggers
+	function neighbors(el){
+		var elle = $(el).attr('class');
+		elle = elle.replace("container ", "");
+		return $('#'+elle+'-btn');
+	}
+	$('.demo,.benefits,.plans,.contact,.support').waypoint(function(direction) {
+			neighbors(this).toggleClass('active', direction === 'down');
+		}, {
+			offset: '90%'
+		})
+		.waypoint(function(direction) {
+			neighbors(this).toggleClass('active', direction === 'up');
+		}, {
+			offset: function() { return -$(this).height() + 300; }
+	});
 		
 	$(window).load(function () { 
 		tl_start.play()
