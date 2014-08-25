@@ -623,13 +623,14 @@ $(function(){
 
 	//Home button behavior and inner room back button
 	$("#demo-btn, .demo-btn, .hero-back-btn").click(function(e){
+		console.log(tl_demo._totalDuration);
     	$.colorbox.close(); 
     	$(".videobox").fadeOut(500).delay(2000); 
          if ( !!window.player ) {
              window.player.pauseVideo();
         }
         $("#slideshow .vidpopup-active").removeClass("vidpopup-active");  // removes the active state from cycle tabs
-        if(tl_demo._totalDuration >= 3){
+        if(tl_demo._totalDuration >= 4){
        		 tl_demo.reverse();
              tl_shimmer.restart();
         }
