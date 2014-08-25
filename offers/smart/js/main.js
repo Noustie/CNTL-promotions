@@ -566,7 +566,7 @@ $(function(){
 		var scrollYPos = $(event.data.id).offset().top;
 		var windowScrollTop = $(window).scrollTop();
 		var dur = Math.abs((scrollYPos - windowScrollTop) / 700);
-		$('html,body').animate({scrollTop: scrollYPos }, dur*1000);
+		$('html,body').stop(true,true).animate({scrollTop: scrollYPos }, dur*1000);
 		event.preventDefault();
 	}
 	
@@ -679,12 +679,12 @@ $(function(){
 	$('.demo,.benefits,.plans,.contact,.support').waypoint(function(direction) {
 			neighbors(this).toggleClass('active', direction === 'down');
 		}, {
-			offset: 100
+			offset: '45%'
 		})
 		.waypoint(function(direction) {
 			neighbors(this).toggleClass('active', direction === 'up');
 		}, {
-			offset: function() { return -$(this).height() + 250; }
+			offset: function() { return -$(this).height()/2 + 25; }
 	});
 		
 	$(window).load(function () { 
