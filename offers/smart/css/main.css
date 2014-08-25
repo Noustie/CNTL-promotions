@@ -517,49 +517,42 @@ ul#nav li div a.ex-fix.active{
 	border-radius: 4px;
 	border:1px solid #fff;
 	font-weight: bold;
+	padding: 7px 16px;
 }
 
 .tips a.tipDot1 .tooltip-label-hover-text{
-	padding: 7px 16px;
 	left: -102px;
 	top: 28px;
 }
 .tips a.tipDot2 .tooltip-label-hover-text{
-	padding: 7px 16px;
 	left: 61px;
 	top: 27px;
 	width: 100%;
 }
 .tips a.tipDot3 .tooltip-label-hover-text{
-	padding: 7px 16px;
 	left: -170px;
 	top: 27px;
 }
 .tips a.tipDot4 .tooltip-label-hover-text{
-	padding: 7px 16px;
 	left: -132px;
 	top: 27px;
 }
 .tips a.tipDot5 .tooltip-label-hover-text{
-	padding: 7px 16px;
-	left: -166px;
+	left: 60px;
 	top: 27px;
 	width:160px;
 }
 .tips a.tipDot6 .tooltip-label-hover-text{
-	padding: 7px 16px;
-	left: -139px;
+	left: 60;
 	top: 27px;
 	width:127px;
 }
 .tips a.tipDot7 .tooltip-label-hover-text{
-	padding: 7px 16px;
 	left: 66px;
 	top: 27px;
 	width: 150px;
 }
 .tips a.tipDot8 .tooltip-label-hover-text{
-	padding: 7px 16px;
 	left: -102px;
 	top: 27px;
 }
