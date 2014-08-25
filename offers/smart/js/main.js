@@ -447,6 +447,7 @@ $(function(){
 	    $('ul#nav li > a').removeClass('active');
 	    $('ul#nav li a#benefits-btn').addClass('active');
 	    $('.expansion-link').removeClass('active');
+	    $('.expansion-link.convenience.icon-convenience').addClass('active');
 	    $(this).parent().children().addClass('active');
 	});
 	$(".emanagement").click(function(e){
@@ -457,6 +458,7 @@ $(function(){
 	    $('ul#nav li > a').removeClass('active');
 	    $('ul#nav li a#benefits-btn').addClass('active');
 	    $('.expansion-link').removeClass('active');
+	    $('.expansion-link.emanagement.icon-emanagement').addClass('active');
 	    $(this).parent().children().addClass('active');
 	});
 	$(".security").click(function(e){
@@ -467,6 +469,7 @@ $(function(){
 	    $('ul#nav li > a').removeClass('active');
 	    $('ul#nav li a#benefits-btn').addClass('active');
 	    $('.expansion-link').removeClass('active');
+	    $('.expansion-link.security.icon-security').addClass('active');
 	    $(this).parent().children().addClass('active');
 	});
 	
@@ -521,6 +524,7 @@ $(function(){
 	    $('ul#nav li > a').removeClass('active');
 	    $('ul#nav li a#plans-btn').addClass('active');
 	    $('.expansion-link').removeClass('active');
+	    $('.expansion-link.pricing.icon-pricing').addClass('active');
 	    $(this).parent().children().addClass('active');
 	});
 	$(".installation").click(function(e){
@@ -531,6 +535,7 @@ $(function(){
 	    $('ul#nav li > a').removeClass('active');
 	    $('ul#nav li a#plans-btn').addClass('active');
 	    $('.expansion-link').removeClass('active');
+	    $('.expansion-link.installation.icon-installation').addClass('active');
 	    $(this).parent().children().addClass('active');
 	});
    	$(".equipment").click(function(e){
@@ -541,6 +546,7 @@ $(function(){
 	    $('ul#nav li > a').removeClass('active');
 	    $('ul#nav li a#plans-btn').addClass('active');
 	    $('.expansion-link').removeClass('active');
+	    $('.expansion-link.equipment.icon-equipment').addClass('active');
 	    $(this).parent().children().addClass('active');
 	});
 	
