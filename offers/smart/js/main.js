@@ -201,7 +201,7 @@ $(function(){
 				//.to($(".limited-time-offer-snipe"), 0.7,{width:384, ease:Power2.easeOut}, 1.6)
 				//.to($(".limited-time-offer-snipe a"), 0.7,{ opacity:1, ease:Power2.easeInOut}, 1.8);
 		tl_demo.staggerTo( heroDevices, 0.5, { opacity:0, ease:Power2.easeOut }, 0.3)
-		 		.to( $(".anim2"), 0.5, { left:"900px", scale: 1.3, opacity:0, ease: Power2.easeInOut}, 0)
+		 		.to( $(".anim2"), 0.5, { left:"700px", scale: 1.3, opacity:0, ease: Power2.easeInOut}, 0)
 		 		
 		 		//.staggerTo($(".limited-time-offer-snipe"), 0.5,{width:0, ease:Power2.easeIn}, 0.01, 0)
 				//.to($(".limited-time-offer-snipe a"), 0.5,{ opacity:0, ease:Power2.easeInOut}, 0)
@@ -225,7 +225,7 @@ $(function(){
 				//.to($(".limited-time-offer-snipe"), 0.7,{width:384, ease:Power2.easeOut}, 1.6)
 				//.to($(".limited-time-offer-snipe a"), 0.7,{ opacity:1, ease:Power2.easeInOut}, 1.8);
 		tl_demo.staggerTo( heroDevices, 0.5, { left:"-700px", ease:Power2.easeOut }, 0.3)
-		 		.to( $(".anim2"), 0.7, { left:"900px", alpha:1, ease: Power2.easeInOut}, 0)
+		 		.to( $(".anim2"), 0.7, { left:"1300px", alpha:1, ease: Power2.easeInOut}, 0)
 
 		 		//.staggerTo($(".limited-time-offer-snipe"), 0.5,{width:0, ease:Power2.easeIn}, 0.01, 0)
 				//.to($(".limited-time-offer-snipe a"), 0.5,{ opacity:0, ease:Power2.easeInOut}, 0)
