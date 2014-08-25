@@ -312,7 +312,7 @@ ul#nav li div a.ex-fix.active{
 	margin-top: 53px;
 }
 .hero-surface, .hero-gps, .hero-phone, .demo .anim2{
-	filter: none !important;
+/*	filter: none !important;*/
 	display: inline-block;
 }
 .roomblur {
