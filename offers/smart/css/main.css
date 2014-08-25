@@ -311,8 +311,8 @@ ul#nav li div a.ex-fix.active{
 	border-bottom: 1px solid #FFF;
 	margin-top: 53px;
 }
-.hero-surface, .hero-gps, .hero-phone, .demo .anim2{
-/*	filter: none !important;*/
+.hero-surface, .hero-gps, .hero-phone, .demo .anim2, .hero-back-btn{
+	filter: none !important;
 	display: inline-block;
 }
 .roomblur {
