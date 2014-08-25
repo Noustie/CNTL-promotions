@@ -630,7 +630,7 @@ $(function(){
              window.player.pauseVideo();
         }
         $("#slideshow .vidpopup-active").removeClass("vidpopup-active");  // removes the active state from cycle tabs
-        if(tl_demo._totalDuration >= 4){
+        if(tl_demo._totalDuration >= 1){
        		 tl_demo.reverse();
              tl_shimmer.restart();
         }
