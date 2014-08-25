@@ -361,6 +361,7 @@ ul#nav li div a.ex-fix.active{
 .hero-surface, .hero-gps, .hero-phone, .hero-back-btn{
 	opacity: 0;
 	opacity: 1\9;
+	alpha:0;
 }
 .anim2 p{
 	font-size: 15px;
