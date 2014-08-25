@@ -679,12 +679,12 @@ $(function(){
 	$('.demo,.benefits,.plans,.contact,.support').waypoint(function(direction) {
 			neighbors(this).toggleClass('active', direction === 'down');
 		}, {
-			offset: '90%'
+			offset: 100
 		})
 		.waypoint(function(direction) {
 			neighbors(this).toggleClass('active', direction === 'up');
 		}, {
-			offset: function() { return -$(this).height() + 300; }
+			offset: function() { return -$(this).height() + 250; }
 	});
 		
 	$(window).load(function () { 
