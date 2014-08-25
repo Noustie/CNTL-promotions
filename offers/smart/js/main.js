@@ -549,6 +549,9 @@ $(function(){
 	    $('.expansion-link.equipment.icon-equipment').addClass('active');
 	    $(this).parent().children().addClass('active');
 	});
+
+   	//initial active states on page load for drop down nav
+	$(".expansion-link.pricing, .expansion-link.convenience").addClass('active');
 	
     //Main nav active states	
   	$('ul#nav li > a').click(function(){
@@ -594,6 +597,7 @@ $(function(){
 		e.preventDefault(); 
 	});
 
+	//hero CTA behavior
 	$("a.explore-all-features-btn").click(function(e) {
     	$.colorbox.close(); 
     	e.preventDefault();
