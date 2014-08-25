@@ -279,7 +279,6 @@ $(function(){
 		$('ul#nav li a').removeClass('active');
 	  	$("#video-btn").addClass('active');
 		hoverTrigger(trig);
-		// trig = false;
 	});
 
 	//Demo area tooltip controls
