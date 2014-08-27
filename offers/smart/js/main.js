@@ -633,7 +633,6 @@ $(function(){
 
 	//Home button behavior and inner room back button
 	$("#demo-btn, .demo-btn, .hero-back-btn").click(function(e){
-		console.log(tl_demo._totalDuration);
     	$.colorbox.close(); 
     	$(".videobox").fadeOut(500).delay(2000); 
          if ( !!window.player ) {
