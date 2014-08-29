@@ -733,6 +733,7 @@ div.mastNav p.links {
 	padding-top:10px;
 	float:left;
 }
+.lt_left.nflRedZone { padding-top: 0;}
 .lt_left p {
 	margin:0;
 }
@@ -755,6 +756,10 @@ p.squash {
 	line-height:12px;
 	font-size:12px;
 	width: 350px;
+}
+p.squash.nflRedZone {
+	line-height: 18px;
+	font-size: 14px;
 }
 p.squash2 {
 	font-size: 13px;
