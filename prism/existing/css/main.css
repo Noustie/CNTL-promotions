@@ -901,7 +901,7 @@ p.squash-top {
 	top: 329px;
 	color: #999999;
 	width: 388px;
-	line-height: 10px;
+	line-height: 12px;
 }
 .or{
 	font-size: 17px;
@@ -916,7 +916,7 @@ p.squash-top {
 	top: 369px;
 	color: #999999;
 	width: 388px;
-	line-height: 10px;
+	line-height: 12px;
 }
 .bottomRounded {
 	background: url("../images/bottomRounded.png") no-repeat scroll 0 0 transparent;
