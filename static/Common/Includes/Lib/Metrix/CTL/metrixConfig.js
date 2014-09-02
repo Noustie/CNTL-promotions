@@ -103,7 +103,7 @@ if (typeof setU6 == "undefined"){
 //Creation Date: 12/16/2010
 var axel = Math.random() + "";
 var a = axel * 10000000000000;
-document.write('<iframe src="http://fls.doubleclick.net/activityi;src=2833013;type=shared;cat=globa539;u7='+currDateStr+';u5='+currPage+';u6='+setU6+';u2=Page;ord=' + a + '?" width="1" height="1" frameborder="0"></iframe>');
+document.write('<iframe src="//fls.doubleclick.net/activityi;src=2833013;type=shared;cat=globa539;u7='+currDateStr+';u5='+currPage+';u6='+setU6+';u2=Page;ord=' + a + '?" width="1" height="1" frameborder="0"></iframe>');
 
 
 /*** Omniture SiteCatalyst ***/
