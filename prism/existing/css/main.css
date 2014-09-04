@@ -913,7 +913,7 @@ p.squash-top {
 	font-size: 10px;
 	text-align: left;
 	right: 6px;
-	top: 340px;
+	top: 350px;
 	color: #999999;
 	width: 388px;
 	line-height: 12px;
@@ -976,16 +976,16 @@ p.squash-top {
 	background:url("../images/vod-alt5.jpg") no-repeat scroll 417px 45px transparent!important;
 }
 .child.hbo-go {
-	background:url("../images/the-hobbit.jpg") no-repeat scroll 386px 38px transparent!important;
+	background:url("../images/the-hobbit.jpg") no-repeat scroll 386px 48px transparent!important;
 }
 .child.max-go {
-	background:url("../images/the-knick-go.jpg") no-repeat scroll 389px 38px transparent!important;
+	background:url("../images/the-knick-go.jpg") no-repeat scroll 389px 48px transparent!important;
 }
 .child.showtime-anytime {
-	background:url("../images/deadly-sins-go.jpg") no-repeat scroll 409px 38px transparent!important;
+	background:url("../images/deadly-sins-go.jpg") no-repeat scroll 409px 34px transparent!important;
 }
 .child.starz-play {
-	background:url("../images/the-chair-play.jpg") no-repeat scroll 407px 38px transparent!important;
+	background:url("../images/the-chair-play.jpg") no-repeat scroll 407px 48px transparent!important;
 }
 .child h2 {
 	color:#00853e;
