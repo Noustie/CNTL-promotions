@@ -22,3 +22,11 @@
 // 	});
 
 // });
+
+
+$(function(){
+	qa.initialize();
+	$('.chatBtn a').live('mouseup', function (e) {
+	qa.trackAction( $(this).parent().attr('clicktrack') );
+	})
+});

@@ -4,6 +4,18 @@
     $floodlight = "";
     $tracking_bundle = "";
     $tracking_pure = "";
+
+    $svar = array(
+        'pageName' => "ctl|rsd|promos|internet|pre_id_learn",
+        'server' => "centurylink.com",
+        'channel' => "rsd",
+        'prop20' => "promo",
+        'prop24evar53' => "ctl|rsd|promo",
+        'prop38evar48' => "static_page",
+        'prop39evar49' => "landing_page",
+        'prop52evar56' => "peter_a_mayer",
+    );
+
     if(isset($_GET["mkt"])){
         //ENS
         if($_GET["mkt"]=="ens"){
@@ -38,12 +50,55 @@
         <title><?php echo $title; ?></title>
         <meta name="description" content="<?php echo $description; ?>">
         <meta name="keywords" content="<?php echo $keywords; ?>">
-        <meta name="viewport" content="width=device-width">
+
+        <link rel="shortcut icon" href="//www.centurylink.com/favicon.ico" type="image/vnd.microsoft.icon" />
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+        <script type="text/javascript">
+            // var custClass = "business"; //uncomment to use biz suite
+            var sAddress = "";
+            var eBiz_pageName = "<?php echo $svar['pageName']; ?>"; //s.pageName
+            var pageType = ""; //s.pageType
+            var errorType = ""; //s.prop2
+            var accountEvents = ""; //eVar1
+            var serviceEvents = ""; //eVar2
+            var pCategory = ""; //eVar3
+            var unisysEvent = ""; //eVar4
+            var orderType = ""; //eVar7
+            var zipAvail = ""; //eVar8
+            var phoneAvail = ""; //eVar9
+            var addressAvail = ""; //eVar10
+            var respMsg = ""; //eVar11
+            var availType = ""; //eVar12
+            var sEvents = ""; //s.events
+            var sProducts = ""; //s.products
+            var orderNum = ""; //s.purchaseID
+            var totalOrderPrice = ""; //Doubleclick
+            var eBiz_server = "<?php echo $svar['server']; ?>"; // s.server
+            var eBiz_channel = "<?php echo $svar['channel']; ?>"; // s.channel, s.eVar41
+            var eBiz_prop3 = "unknown";
+            var eBiz_prop20 = "<?php echo $svar['prop20']; ?>";
+            var eBiz_prop24 = "<?php echo $svar['prop24evar53']; ?>";
+            var eBiz_prop25 = "<?php echo $svar['prop25evar54']; ?>";
+            var eBiz_prop26 = "<?php echo $svar['prop26evar55']; ?>";
+            var eBiz_prop38 = "<?php echo $svar['prop38evar48']; ?>";
+            var eBiz_prop39 = "<?php echo $svar['prop39evar49']; ?>";
+            var eBiz_prop52 = "<?php echo $svar['prop52evar56']; ?>";
+            var eBiz_evar24 = "unknown";
+            var eBiz_evar27 = "";
+            var eBiz_evar41 = "<?php echo $svar['channel']; ?>";
+            var eBiz_evar48 = eBiz_prop38;
+            var eBiz_evar49 = eBiz_prop39;
+            var eBiz_evar53 = eBiz_prop24;
+            var eBiz_evar54 = eBiz_prop25;
+            var eBiz_evar55 = eBiz_prop26;
+            var eBiz_evar56 = eBiz_prop52;
+        </script>
+
     </head>
     <body>
 
@@ -101,12 +156,16 @@
                         <div class="tag-line">
                             3 Years. 1 Price. No Contract.
                         </div>
-                        <a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop" class="bookendButton" clicktrack="<?php echo $tracking_bundle; ?>">
+                        <a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop" target="_blank" class="bookendButton" clicktrack="<?php echo $tracking_bundle; ?>">
                             <span class="bookend leftBookend">&nbsp;</span>
                             <span class="bookend centerBookend">Check Availability</span>
                             <span class="bookend rightBookend">&nbsp;</span>
                         </a>
-                        <p><a href="" class="offer-details">Offer details</a></p>
+                        <p>
+                            <a href="./disclaimer.php" class="offer-details" onclick="window.open(this.href,'disclaimer','height=500,width=800,left=100,top=50,resizable=no,scrollbars=yes,toolbar=no,status=no');return false;" target="_blank">
+                                Offer details
+                            </a>
+                        </p>
                         <p class="perks ir">Norton by Symantec. 30-Day Satisfaction Guarantee. 24/7 Technical Support</p>
                     </div>
                     <div style="clear:both;"></div>
@@ -128,12 +187,16 @@
                         <div class="tag-line">
                             Pure speed online. No phone line required.
                         </div>
-                        <a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop" class="bookendButton" clicktrack="<?php echo $tracking_pure; ?>">
+                        <a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop" target="_blank" class="bookendButton" clicktrack="<?php echo $tracking_pure; ?>">
                             <span class="bookend leftBookend">&nbsp;</span>
                             <span class="bookend centerBookend">Check Availability</span>
                             <span class="bookend rightBookend">&nbsp;</span>
                         </a>
-                        <p><a href="" class="offer-details">Offer details</a></p>
+                        <p>
+                            <a href="./disclaimer.php" class="offer-details" onclick="window.open(this.href,'disclaimer','height=500,width=800,left=100,top=50,resizable=no,scrollbars=yes,toolbar=no,status=no');return false;" target="_blank">
+                                Offer details
+                            </a>
+                        </p>
                         <p class="perks ir">Norton by Symantec. 30-Day Satisfaction Guarantee. 24/7 Technical Support</p>
                     </div>
                     <div class="right-side fR">
@@ -167,15 +230,26 @@
                         <a href="https://www.centurylink.com/business/">Large Business</a> |
                         <a href="http://www.centurylink.com/wholesale/">Wholesale</a>
                     </nav>
-                    <p>&copy; 2014 CenturyLink. All Rights Reserved.</p>
+                    <p>&copy; <?php echo date('Y');?> CenturyLink. All Rights Reserved.</p>
                 </div>
             </div>
 
         </div><!--end page-wrapper -->
 
-        <script type="text/javascript" src="/assets/js/common/jquery.min.js"></script>
-        <script type="text/javascript" src="js/vendor/TweenMax.min.js"></script>
+        <script language="JavaScript" type="text/javascript" src="/assets/js/common/jquery.min.js"></script>
+        <script src="/assets/js/plugins/jquery.qwest-core.js"></script>
+        <script src="/assets/js/plugins/centurycore.shortcuts.js"></script>
 
         <script src="js/main.js"></script>
+
+        <!-- Do not touch! -->
+        <!-- SiteCatalyst code version: H.20.3.
+        Copyright 1997-2009 Omniture, Inc. More info available at http://www.omniture.com -->
+        <script type="text/javascript" src="/assets/js/third-party/metrics/metrixConfig.js"></script>
+        <noscript>
+            <a href="http://www.omniture.com" title="Web Analytics"><img src="//qwest.com/images/spacer.gif" height="1" width="1" border="0" title="" /></a>
+        </noscript>
+        <!-- / DO NOT REMOVE / -->
+        <!-- End SiteCatalyst code version: H.20.3. -->
     </body>
 </html>
