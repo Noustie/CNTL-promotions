@@ -4,6 +4,8 @@
     $floodlight = "";
     $tracking_bundle = "";
     $tracking_pure = "";
+    $bundle_disclaimer = "";
+    $pure_disclaimer = "";
 
     $svar = array(
         'pageName' => "ctl|rsd|promos|internet|pre_id_learn",
@@ -27,6 +29,8 @@
             $floodlight = "floodlight-ens";
             $tracking_bundle = "ctl|rsd|emktg|offers|hsi|lp|link|ens|bundle";
             $tracking_pure = "ctl|rsd|emktg|offers|hsi|lp|link|ens|pure";
+            $bundle_disclaimer = "ens-bundle-disclaimer";
+            $pure_disclaimer = "ens-pure-disclaimer";
         }
         //CRIS
         if($_GET["mkt"]=="cris"){
@@ -38,6 +42,8 @@
             $floodlight = "floodlight-cris";
             $tracking_bundle = "ctl|rsd|emktg|offers|hsi|lp|link|cris|bundle";
             $tracking_pure = "ctl|rsd|emktg|offers|hsi|lp|link|cris|pure";
+            $bundle_disclaimer = "cris-bundle-disclaimer";
+            $pure_disclaimer = "cris-pure-disclaimer";
         }
     }
 ?>
@@ -162,7 +168,7 @@
                             <span class="bookend rightBookend">&nbsp;</span>
                         </a>
                         <p>
-                            <a href="./disclaimer.php" class="offer-details" onclick="window.open(this.href,'disclaimer','height=500,width=800,left=100,top=50,resizable=no,scrollbars=yes,toolbar=no,status=no');return false;" target="_blank">
+                            <a href="./<?php echo $bundle_disclaimer; ?>.php" class="offer-details" onclick="window.open(this.href,'<?php echo $bundle_disclaimer; ?>','height=500,width=800,left=100,top=50,resizable=no,scrollbars=yes,toolbar=no,status=no');return false;" target="_blank">
                                 Offer details
                             </a>
                         </p>
@@ -193,7 +199,7 @@
                             <span class="bookend rightBookend">&nbsp;</span>
                         </a>
                         <p>
-                            <a href="./disclaimer.php" class="offer-details" onclick="window.open(this.href,'disclaimer','height=500,width=800,left=100,top=50,resizable=no,scrollbars=yes,toolbar=no,status=no');return false;" target="_blank">
+                            <a href="./<?php echo $pure_disclaimer; ?>.php" class="offer-details" onclick="window.open(this.href,'<?php echo $pure_disclaimer; ?>','height=500,width=800,left=100,top=50,resizable=no,scrollbars=yes,toolbar=no,status=no');return false;" target="_blank">
                                 Offer details
                             </a>
                         </p>
