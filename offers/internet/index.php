@@ -1,29 +1,34 @@
 <?php 
-    $phone = "866-000-0000";
-    $img_prefix = "ens-";
-    $floodlight = "floodlight-ens.php";
+    $phone = "";
+    $img_prefix = "";
+    $floodlight = "";
+    $tracking_bundle = "";
+    $tracking_pure = "";
     if(isset($_GET["mkt"])){
         //ENS
         if($_GET["mkt"]=="ens"){
-            $phone="000-000-0000";
+            $phone="866-962-6021";
             $img_prefix = "ens-";
             $title = "CenturyLink | Residential | High-Speed Internet";
             $description = "Get great deals on fast, reliable Internet – all backed by our 30-Day Satisfaction Guarantee and 24/7 technical support.";
             $keywords = "CenturyLink, CenturyLink High-Speed Internet, Pure broadband, CenturyLink Internet bundles, no contract Internet, Internet and Home Phone bundles, fast Internet, cheap Internet, great Internet deals, CenturyLink 3-year Internet deal";
             $floodlight = "floodlight-ens";
+            $tracking_bundle = "ctl|rsd|emktg|offers|hsi|lp|link|ens|bundle";
+            $tracking_pure = "ctl|rsd|emktg|offers|hsi|lp|link|ens|pure";
         }
         //CRIS
         if($_GET["mkt"]=="cris"){
-            $phone="111-111-1111";
+            $phone="888-807-4368";
             $img_prefix = "cris-";
             $title = "CenturyLink | Residential | High-Speed Internet";
             $description = "Get great deals on fast, reliable Internet – all backed by our 30-Day Satisfaction Guarantee and 24/7 technical support.";
             $keywords = "CenturyLink, CenturyLink High-Speed Internet, Pure broadband, CenturyLink Internet bundles, no contract Internet, Internet and Home Phone bundles, fast Internet, cheap Internet, great Internet deals, CenturyLink 3-year Internet deal";
             $floodlight = "floodlight-cris";
+            $tracking_bundle = "ctl|rsd|emktg|offers|hsi|lp|link|cris|bundle";
+            $tracking_pure = "ctl|rsd|emktg|offers|hsi|lp|link|cris|pure";
         }
     }
- ?>
-
+?>
 
 <!DOCTYPE html>
 <html class="no-js">
@@ -78,7 +83,7 @@
                         <img src="img/<?php echo $img_prefix; ?>upper-heading-devices.png" alt="High-Speed Internet and Home Phone" class="offset-img">
                     </div>
                     <div class="left-side fL">
-                        <img src="img/<?php echo $img_prefix; ?>content-bug-devices.png" alt="" class="tenmbps-hsi-and-phone-img">
+                        <img src="img/<?php echo $img_prefix; ?>content-bug-devices.png" alt="High-Speed Internet and Home Phone" class="tenmbps-hsi-and-phone-img">
                         <ul>
                             <li>Watch movies and shows on Netflix<sup>&reg;</sup> and Hulu in HD.</li>
                             <li>Save on mobile data &ndash; connect with in-home Wi-Fi to download the latest apps.</li>
@@ -96,7 +101,7 @@
                         <div class="tag-line">
                             3 Years. 1 Price. No Contract.
                         </div>
-                        <a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop" class="bookendButton" clicktrack="">
+                        <a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop" class="bookendButton" clicktrack="<?php echo $tracking_bundle; ?>">
                             <span class="bookend leftBookend">&nbsp;</span>
                             <span class="bookend centerBookend">Check Availability</span>
                             <span class="bookend rightBookend">&nbsp;</span>
@@ -112,7 +117,7 @@
                 <div class="container">
                     <div class="heading">
                         <h3>High-Speed Internet</h3>
-                        <img src="img/<?php echo $img_prefix; ?>lower-heading-devices.png" alt="" class="offset-img">
+                        <img src="img/<?php echo $img_prefix; ?>lower-heading-devices.png" alt="High-Speed Internet" class="offset-img">
                     </div>
                     <div class="left-side fL">
                         <h2>Pure broadband&trade;</h2>
@@ -123,7 +128,7 @@
                         <div class="tag-line">
                             Pure speed online. No phone line required.
                         </div>
-                        <a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop" class="bookendButton" clicktrack="">
+                        <a href="https://shop.centurylink.com/MasterWebPortal/freeRange/login/shop" class="bookendButton" clicktrack="<?php echo $tracking_pure; ?>">
                             <span class="bookend leftBookend">&nbsp;</span>
                             <span class="bookend centerBookend">Check Availability</span>
                             <span class="bookend rightBookend">&nbsp;</span>
