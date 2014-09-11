@@ -6,6 +6,7 @@
     $tracking_pure = "";
     $bundle_disclaimer = "";
     $pure_disclaimer = "";
+    $pure_price = "";
 
     $svar = array(
         'pageName' => "ctl|rsd|promos|internet|pre_id_learn",
@@ -31,6 +32,7 @@
             $tracking_pure = "ctl|rsd|emktg|offers|hsi|lp|link|ens|pure";
             $bundle_disclaimer = "ens-bundle-disclaimer";
             $pure_disclaimer = "ens-pure-disclaimer";
+            $pure_price = "39";
         }
         //CRIS
         if($_GET["mkt"]=="cris"){
@@ -44,6 +46,7 @@
             $tracking_pure = "ctl|rsd|emktg|offers|hsi|lp|link|cris|pure";
             $bundle_disclaimer = "cris-bundle-disclaimer";
             $pure_disclaimer = "cris-pure-disclaimer";
+            $pure_price = "29";
         }
     }
 ?>
@@ -187,7 +190,7 @@
                     <div class="left-side fL">
                         <h2>Pure broadband&trade;</h2>
                         <div class="pricepoint">
-                            <span class="price"><sup>$</sup>39<sup>95</sup></span>
+                            <span class="price"><sup>$</sup><?php echo $pure_price; ?><sup>95</sup></span>
                             <span class="time-frame">a month when<br>you bundle</span>
                         </div>
                         <div class="tag-line">
