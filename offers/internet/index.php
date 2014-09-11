@@ -7,6 +7,8 @@
     $bundle_disclaimer = "";
     $pure_disclaimer = "";
     $pure_price = "";
+    $pure_claim = "";
+    $bundle_claim = "";
 
     $svar = array(
         'pageName' => "ctl|rsd|promos|internet|pre_id_learn",
@@ -33,6 +35,8 @@
             $bundle_disclaimer = "ens-bundle-disclaimer";
             $pure_disclaimer = "ens-pure-disclaimer";
             $pure_price = "39";
+            $pure_claim = "a month for 12 months";
+            $bundle_claim = "a month when you bundle";
         }
         //CRIS
         if($_GET["mkt"]=="cris"){
@@ -47,6 +51,8 @@
             $bundle_disclaimer = "cris-bundle-disclaimer";
             $pure_disclaimer = "cris-pure-disclaimer";
             $pure_price = "29";
+            $pure_claim = "a month for 12 months";
+            $bundle_claim = "a month when you bundle";
         }
     }
 ?>
@@ -160,7 +166,7 @@
                         <h2>Centurylink<sup>&reg;</sup> High-Speed Internet</h2>
                         <div class="pricepoint">
                             <span class="price"><sup>$</sup>19<sup>95</sup></span>
-                            <span class="time-frame">a month when<br>you bundle</span>
+                            <span class="time-frame"><?php echo $bundle_claim; ?></span>
                         </div>
                         <div class="tag-line">
                             3 Years. 1 Price. No Contract.
@@ -191,7 +197,7 @@
                         <h2>Pure broadband&trade;</h2>
                         <div class="pricepoint">
                             <span class="price"><sup>$</sup><?php echo $pure_price; ?><sup>95</sup></span>
-                            <span class="time-frame">a month when<br>you bundle</span>
+                            <span class="time-frame"><?php echo $pure_claim; ?></span>
                         </div>
                         <div class="tag-line">
                             Pure speed online. No phone line required.
