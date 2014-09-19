@@ -177,7 +177,7 @@
                             <span class="bookend rightBookend">&nbsp;</span>
                         </a>
                         <p>
-                            <a href="./<?php echo $bundle_disclaimer; ?>.php" class="offer-details" onclick="window.open(this.href,'<?php echo $bundle_disclaimer; ?>','height=500,width=800,left=100,top=50,resizable=no,scrollbars=yes,toolbar=no,status=no');return false;" target="_blank">
+                            <a onclick="window.open(this.href,'<?php echo $bundle_disclaimer; ?>','height=500,width=800,left=100,top=50,resizable=no,scrollbars=yes,toolbar=no,status=no');return false;" target="_blank" class="offer-details" href="./<?php echo $bundle_disclaimer; ?>.php">
                                 Offer details
                             </a>
                         </p>
@@ -208,7 +208,7 @@
                             <span class="bookend rightBookend">&nbsp;</span>
                         </a>
                         <p>
-                            <a href="./<?php echo $pure_disclaimer; ?>.php" class="offer-details" onclick="window.open(this.href,'<?php echo $pure_disclaimer; ?>','height=500,width=800,left=100,top=50,resizable=no,scrollbars=yes,toolbar=no,status=no');return false;" target="_blank">
+                            <a onclick="window.open(this.href,'<?php echo $pure_disclaimer; ?>','height=500,width=800,left=100,top=50,resizable=no,scrollbars=yes,toolbar=no,status=no');return false;" target="_blank" class="offer-details" href="./<?php echo $pure_disclaimer; ?>.php">
                                 Offer details
                             </a>
                         </p>
