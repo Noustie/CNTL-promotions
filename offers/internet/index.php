@@ -4,8 +4,8 @@
     $floodlight = "";
     $tracking_bundle = "";
     $tracking_pure = "";
-    $bundle_disclaimer = "ens-bundle-disclaimer";
-    $pure_disclaimer = "ens-pure-disclaimer";
+    $bundle_disclaimer = "";
+    $pure_disclaimer = "";
     $pure_price = "";
     $pure_claim = "";
     $bundle_claim = "";
@@ -32,8 +32,8 @@
             $floodlight = "floodlight-ens";
             $tracking_bundle = "ctl|rsd|emktg|offers|hsi|lp|link|ens|bundle";
             $tracking_pure = "ctl|rsd|emktg|offers|hsi|lp|link|ens|pure";
-            $bundle_disclaimer = "ens-bundle-disclaimer";
-            $pure_disclaimer = "ens-pure-disclaimer";
+            $bundle_disclaimer = "ens_bundle_disclaimer";
+            $pure_disclaimer = "ens_pure_disclaimer";
             $pure_price = "39";
             $pure_claim = "a month for 12 months";
             $bundle_claim = "a month when you bundle";
@@ -48,8 +48,8 @@
             $floodlight = "floodlight-cris";
             $tracking_bundle = "ctl|rsd|emktg|offers|hsi|lp|link|cris|bundle";
             $tracking_pure = "ctl|rsd|emktg|offers|hsi|lp|link|cris|pure";
-            $bundle_disclaimer = "cris-bundle-disclaimer";
-            $pure_disclaimer = "cris-pure-disclaimer";
+            $bundle_disclaimer = "cris_bundle_disclaimer";
+            $pure_disclaimer = "cris_pure_disclaimer";
             $pure_price = "29";
             $pure_claim = "a month for 12 months";
             $bundle_claim = "a month when you bundle";
@@ -177,7 +177,7 @@
                             <span class="bookend rightBookend">&nbsp;</span>
                         </a>
                         <p>
-                            <a onclick="window.open(this.href,'<?php echo $bundle_disclaimer; ?>','height=500,width=800,left=100,top=50,resizable=no,scrollbars=yes,toolbar=no,status=no');return false;" target="_blank" class="offer-details" href="<?php echo $bundle_disclaimer; ?>.php">
+                            <a onclick="window.open(this.href,'<?php echo $bundle_disclaimer; ?>','height=500,width=800,left=100,top=50,resizable=no,scrollbars=yes,toolbar=no,status=no');return false;" target="_blank" class="offer-details" href="./<?php echo $bundle_disclaimer; ?>.php">
                                 Offer details
                             </a>
                         </p>
@@ -208,7 +208,7 @@
                             <span class="bookend rightBookend">&nbsp;</span>
                         </a>
                         <p>
-                            <a onclick="window.open(this.href,'<?php echo $pure_disclaimer; ?>','height=500,width=800,left=100,top=50,resizable=no,scrollbars=yes,toolbar=no,status=no');return false;" target="_blank" class="offer-details" href="<?php echo $pure_disclaimer; ?>.php">
+                            <a onclick="window.open(this.href,'<?php echo $pure_disclaimer; ?>','height=500,width=800,left=100,top=50,resizable=no,scrollbars=yes,toolbar=no,status=no');return false;" target="_blank" class="offer-details" href="./<?php echo $pure_disclaimer; ?>.php">
                                 Offer details
                             </a>
                         </p>
