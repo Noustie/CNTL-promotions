@@ -4,8 +4,8 @@
     $floodlight = "";
     $tracking_bundle = "";
     $tracking_pure = "";
-    $bundle_disclaimer = "";
-    $pure_disclaimer = "";
+    $bundle_disclaimer = "ens-bundle-disclaimer";
+    $pure_disclaimer = "ens-pure-disclaimer";
     $pure_price = "";
     $pure_claim = "";
     $bundle_claim = "";
