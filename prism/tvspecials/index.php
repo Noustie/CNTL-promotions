@@ -42,7 +42,7 @@
 	http://www.omniture.com -->
 	<script type="text/javascript">
 		var sAddress = ""; //s.address
-		var pageName = "ctl|rsd|promos|special_offers|iptv|150card"; //s.pageName
+		var pageName = "ctl|rsd|promos|special_offers|iptv|100card"; //s.pageName
 		var pageType = ""; //s.pageType
 		var errorType = ""; //s.prop2
 		var accountEvents = ""; //eVar1
@@ -65,7 +65,7 @@
 		var eBiz_prop24 = "ctl|rsd|promos";
 		var eBiz_prop25 = "ctl|rsd|promos|special_offers";
 		var eBiz_prop26 = "ctl|rsd|promos|special_offers|iptv";
-		var eBiz_prop27 = "ctl|rsd|promos|special_offers|iptv|150card";		
+		var eBiz_prop27 = "ctl|rsd|promos|special_offers|iptv|100card";		
 		var eBiz_prop38 = "static_page";
 		var eBiz_prop39 = "static_page";
 		var eBiz_prop52 = "ctl";
