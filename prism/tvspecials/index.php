@@ -23,6 +23,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>CenturyLink Prism TV | Switch Today | <?php echo $price; ?> Prepaid Card</title>
 	<meta name="description" content="Switch your TV service to CenturyLink Prism TV today and get a <?php echo $price; ?> prepaid card when you bundle. See offer!">
 	<meta name="keywords" content="CenturyLink Prism TV, CenturyLink, Prism TV service, TV service, Prism TV, IPTV, digital TV, advanced TV, television, Prism TV service, Prism TV bundles, Prism TV packages, Prism Features, HD TV, Prism, Internet Protocol TV, TV, whole home DVR, dvr">
 	<link rel="stylesheet" type="text/css" href="css/reset.css" />
@@ -86,7 +87,6 @@
 	<script type="text/javascript" src="//qwest.centurylink.com/global/includes/c2c/residential/mtagconfig.js"></script>
 	<script type="text/javascript" src="//www.centurylink.com/assets/js/plugins/jquery.qwest-core.js"></script>
 	<script type="text/javascript" src="//www.centurylink.com/assets/js/plugins/centurycore.shortcuts.js"></script>	
-	<title>CenturyLink Prism TV | Switch Today | <?php echo $price; ?> Prepaid Card</title>
 	
 	<script>
 		var createBundlesCTCButton = function(name, pid, targetContainer){
@@ -150,7 +150,7 @@
 		<div id="header">
 			<h1>Connect Your Favorite Gadgets With This Great Bundle</h1>
 			<p class="subhead">Internet + TV + Phone</p>
-			<p style="visibility:hidden;">CenturyLink Prism TV | Switch Today | $150 Prepaid Card</p>
+			<p style="visibility:hidden;">$100 CenturyLink* Visa Prepaid Card^</p>
 			<h3 class="priceBlock">
 				<span class="priceSup">$</span>
 				<span class="priceMain">89</span>
