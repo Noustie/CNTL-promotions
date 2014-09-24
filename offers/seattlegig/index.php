@@ -152,7 +152,7 @@
 		    		</div>
 		    		<div class="sec2">
 		    			<p class="fL white price-disclaimer">As low as</p>
-		    			<p class="fL speed-price shadow"><span class="sub">$</span>59<span class="sub">95</span></p>
+		    			<p class="fL speed-price shadow"><span class="sub">$</span>79<span class="sub">95</span></p>
 		    			<p class="fL white speed-disclaimer">a month for<br>12 months**</p>
 		    			<div style="clear:both;"></div>
 		    		</div>
