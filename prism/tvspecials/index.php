@@ -1,18 +1,18 @@
 <?php 
 	$phone = "1.866.960.7089";
-	$price = "$150";
+	$price = "$100";
 	$bgimg = "images/ens-header.jpg";
 	if(isset($_GET["m"])){
 		if($_GET["m"]=="e"){
 			$phone="866-960-7089";
-			$price="$150";
+			$price="$100";
 			$bgimg = "images/ens-header.jpg";
 			$bankdisclaimer = "Card issued by MetaBank&trade;, Member FDIC, pursuant to a license from Visa U.S.A., Inc.";
 			$bundle = "Bundle with Prism<sup>&trade;</sup> TV and receive a";
 		} 
 		if($_GET["m"]=="c"){
 			$phone="800-960-2531";
-			$price="$150";
+			$price="$100";
 			$bgimg = "images/cris-header.jpg";
 			$bankdisclaimer = "Card issued by MetaBank&trade;, Member FDIC, pursuant to a license from Visa U.S.A., Inc.";
 			$bundle = "Bundle with Prism<sup>&trade;</sup> TV and receive a";
@@ -150,6 +150,7 @@
 		<div id="header">
 			<h1>Connect Your Favorite Gadgets With This Great Bundle</h1>
 			<p class="subhead">Internet + TV + Phone</p>
+			<p style="visibility:hidden;">CenturyLink Prism TV | Switch Today | $150 Prepaid Card</p>
 			<h3 class="priceBlock">
 				<span class="priceSup">$</span>
 				<span class="priceMain">89</span>
