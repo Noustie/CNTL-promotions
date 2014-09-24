@@ -7,14 +7,14 @@
 			$phone="866-960-7089";
 			$price="$150";
 			$bgimg = "images/ens-header.jpg";
-			$bankdisclaimer = "Card issued by MetaBank™, Member FDIC, pursuant to a license from Visa U.S.A., Inc.";
+			$bankdisclaimer = "Card issued by MetaBank&trade;, Member FDIC, pursuant to a license from Visa U.S.A., Inc.";
 			$bundle = "Bundle with Prism<sup>&trade;</sup> TV and receive a";
 		} 
 		if($_GET["m"]=="c"){
 			$phone="800-960-2531";
 			$price="$150";
 			$bgimg = "images/cris-header.jpg";
-			$bankdisclaimer = "Card issued by J.P. Morgan Chase Bank, N.A. pursuant to a license from Visa U.S.A. Inc.";
+			$bankdisclaimer = "Card issued by MetaBank&trade;, Member FDIC, pursuant to a license from Visa U.S.A., Inc.";
 			$bundle = "Bundle with Prism<sup>&trade;</sup> TV and receive a";
 		}
 	}
