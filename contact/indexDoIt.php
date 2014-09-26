@@ -1,9 +1,14 @@
 <?php
+if ( $_SERVER['SERVER_ADDR'] == '192.168.33.18') {
+	$path = '/var/www/private';
+	set_include_path(get_include_path() . PATH_SEPARATOR . $path);
+}
 require("configs/contact-settings.php");
 
 session_start();
 
 function prevent_multi_submit($type = "post", $excl = "/^x|y$/") {
+	return true; //dev
     $string = "";
     foreach ($_POST as $key => $val) {
         if ( preg_match( $excl, $key ) == 0 ) {
@@ -103,76 +108,28 @@ if ( prevent_multi_submit() ) {
 
 
 		$topicMap = array(
-					"1" => "My Account",
-					"2" => "Customer Service",
-					"3" => "Phone Repair",
-					"4" => "Internet/Technical Support",
-					"5" => "Billing/Pricing",
-					"6" => "Other"
-				 );
+			"1" => "My Account",
+			"2" => "Customer Service",
+			"3" => "Phone Repair",
+			"4" => "Internet/Technical Support",
+			"5" => "Billing/Pricing",
+			"6" => "Other"
+		 );
 
-		// global $dbServer, $dbU, $dbP, $dbName;
-		// $topicName = "";
-
-		// $mysqli = new mysqli($dbServer, $dbU, $dbP, $dbName);
-		// if (mysqli_connect_errno()) {
-		// 	printf("Connect failed (request): %s\n", mysqli_connect_error());
-		// 	exit();
-		// }
-
-		//$result = $mysqli->query("SELECT TopicName FROM Topic WHERE TopicID = " . $topicID);
-
-		// while ($row = $result->fetch_assoc( )) {
-		// 	$topicName = $row['TopicName'];
-		// }
-
-		// $result->close();
-		// $mysqli->close();
-		// echo $topicMap[$topicID];
-		// var_dump($topicMap);
-		// exit();
 		return ($topicMap[$topicContent]);
 		
 	}
 
-	// function SaveToDB($topicID, $comments, $title, $firstName, $lastName, $email, $acctNum, $phone, $billingTitle, $billingFirstName, $billingLastName, $billingAddress1, $billingAddress2, $billingState, $billingZipCode)
-	// {
-	// 	global $dbServer, $dbU, $dbP, $dbName;
-
-	// 	$mysqli = new mysqli($dbServer, $dbU, $dbP, $dbName);
-	// 	if (mysqli_connect_errno()) {
-	// 		printf("Connect failed (save): %s\n", mysqli_connect_error());
-	// 		exit();
-	// 	}
-
-	// 	if (!($stmt = $mysqli->prepare("INSERT INTO Contact (Title,FirstName,LastName,Email,Phone,AcctNum,BillingTitle,BillingFirstName,BillingLastName,BillingAddress1,BillingAddress2,BillingState,BillingZipCode,Comments,TopicID) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"))) {
-	// 		echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
-	// 		exit();
-	// 	}
-
-	// 	if (!$stmt->bind_param('ssssssssssssssi',$title,$firstName,$lastName,$email,$phone,$acctNum,$billingTitle,$billingFirstName,$billingLastName,$billingAddress1,$billingAddress2,$billingState,$billingZipCode,$comments,$topicID)) {
-	// 		echo "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error;
-	// 		exit();
-	// 	}
-
-	// 	if (!$stmt->execute()) {
-	// 		echo "Execute failed: (" . $stmt->errno . ") " . $stmt->error;
-	// 		exit();
-	// 	}
-
-	// 	$stmt->close();
-	// 	$mysqli->close();
-	// }
 
 	function SendEmail($topicID, $comments, $source, $title, $firstName, $lastName, $email, $acctNum, $phone, $billingTitle, $billingFirstName, $billingLastName, $billingAddress1, $billingAddress2, $billingState, $billingZipCode)
 	{
-		global $emailHost, $emailU, $emailP, $emailFrom, $sendToEmailArr;
+		global $smtp_emailHost, $smtp_emailPort, $smtp_emailU, $smtp_emailP, $smtp_emailFrom, $sendToEmailArr;
 
 		require_once "Mail.php";
 
 		$topicName = GetTopic($topicID);
 		$today = date("F j, Y, g:i a");
-		$to = $sendToEmailArr["live"]; // live, QA, DEV
+		$to = $sendToEmailArr["DEV"]; // live, QA, DEV
 		$subject = "Support Request - $topicName";
 		if (!empty($billingState))
 			$subject .= " - $billingState";
@@ -193,11 +150,24 @@ if ( prevent_multi_submit() ) {
 		$body .= "Billing Zip: $billingZipCode \n";
 		$body .= "Topic: $topicName \n";
 		$body .= "Comments: $comments \n\n";
-		$headers = array ('From' => $emailFrom, 'To' => $to, 'Reply-To' => $email, 'Subject' => $subject, 'X-peteramayer-whitelist' => '5TxfWIuhbBEayO9emzWutkYB3PIxAuMk');
+		$headers = array (
+			'From' => $smtp_emailFrom, 
+			'To' => $to, 
+			'Reply-To' => $email, 
+			'Subject' => $subject, 
+			'X-peteramayer-whitelist' => '5TxfWIuhbBEayO9emzWutkYB3PIxAuMk'
+		);
 
-		$smtp = Mail::factory('smtp', array ('host' => $emailHost, 'auth' => true, 'username' => $emailU, 'password' => $emailP));
+		$smtp = Mail::factory('smtp', array( 
+			'host' => $smtp_emailHost, 
+			'auth' => true, 
+			'port' => $smtp_emailPort, 
+			'username' => $smtp_emailU, 
+			'password' => $smtp_emailP
+		));
 
 		$mail = $smtp->send($to, $headers, $body);
+		var_dump($mail);
 
 		if (PEAR::isError($mail))
 		{
@@ -207,9 +177,8 @@ if ( prevent_multi_submit() ) {
 	}
 
 	Validate($honeyPot, $email, $topicID, $comments, $title, $firstName, $lastName);
-	//SaveToDB($topicID, $comments, $title, $firstName, $lastName, $email, $acctNum, $phone, $billingTitle, $billingFirstName, $billingLastName, $billingAddress1, $billingAddress2, $billingState, $billingZipCode);
 	SendEmail($topicID, $comments, $source, $title, $firstName, $lastName, $email, $acctNum, $phone, $billingTitle, $billingFirstName, $billingLastName, $billingAddress1, $billingAddress2, $billingState, $billingZipCode);
 
 }
+//header( 'Location: ' . $success );
 
-header( 'Location: ' . $success );

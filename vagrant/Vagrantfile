@@ -6,10 +6,11 @@ VAGRANTFILE_API_VERSION = "2"
 
 $script = <<SCRIPT
 echo "BEGIN shell provisioner......"
-echo "<---- Installing APACHE2"
+echo "<---- Installing LAMP"
 sudo apt-get update
-sudo apt-get install -y apache2 curl libcurl3 libcurl3-dev php5 php5-curl
-echo "<---- Configuring APACHE2"
+sudo apt-get install -y apache2 curl libcurl3 libcurl3-dev php5 php5-dev php-pear php5-curl
+sudo pear install Net_SMTP
+echo "<---- Configuring LAMP"
 # sudo rm -rf /var/www
 sudo ln -s /vagrant_root /var/www/web
 sudo ln -s /vagrant_private /var/www/private
