@@ -164,7 +164,7 @@ ul li{
 .price{
     font-size: 90px;
 }
-.price sup{font-size: 50px;}
+.price sup{font-size: 50px;top: -0.57em}
 .time-frame{
     font-size: 10px;
     color: #666666;
