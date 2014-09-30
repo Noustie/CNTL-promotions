@@ -1,7 +1,6 @@
 <VirtualHost *:80>
     ServerName local.centurylink.com
 	ServerAdmin brownkg@peteramayer.com
-	EnableSendfile off
 
 	DocumentRoot /var/www/web
 	<Directory />
@@ -9,6 +8,7 @@
 		AllowOverride None
 	</Directory>
 	<Directory /var/www/web/>
+		EnableSendfile off
 		Options Includes FollowSymLinks MultiViews
 		AllowOverride All
 		Order allow,deny

@@ -3,7 +3,7 @@
 					<input type="hidden" name="success" id="success" value="<?php echo $successPath; ?>success.php" />
 					<h3 class="gradHeader">How Can We Help You? <span>(Required)</span></h3>
 					<p>
-						<label for="topicID">What is the nature of your inquiry?</label><br />
+						<label for="topicID">What is the nature of your inquiry?</label>
 						<select id="topicID" name="topicID">
 							<option value="" selected="selected">Select a Topic</option>
 							<option value="1">My Account</option>
@@ -15,47 +15,47 @@
 						</select>
 					</p>
 					<p class="commentsP">
-						<label for="comments">What seems to be giving you trouble today?</label><br />
+						<label for="comments">What seems to be giving you trouble today?</label>
 						<textarea id="comments" name="comments"></textarea>
 					</p>
 					<h3 class="gradHeader">Contact Information <span>(Required)</span></h3>
-					<p>
-						<label for="title">Contact Name:</label><br />
-						<span class="ghost">Must be at least 18 years old and authorized to act on behalf of the primary account holder.</span><br />
-						<select id="title" name="title">
-							<option value="" selected="selected">Title</option>
-							<option value="Mr.">Mr.</option>
-							<option value="Mrs.">Mrs.</option>
-							<option value="Ms.">Ms.</option>
-							<option value="Dr.">Dr.</option>
-						</select>
-						<input type="text" name="firstName" id="firstName" value="First Name" />
-						<input type="text" name="lastName" id="lastName" value="Last Name" />
-					</p>
 					<p class="contactP">
-						<input type="text" name="email" id="email" value="Email Address" />
+						<span class="gutterBlock">
+							<label for="title">Contact Name:</label>
+							<span class="ghost">Must be at least 18 years old and authorized to act on behalf of the primary account holder.</span>
+							<select id="title" name="title">
+								<option value="" selected="selected">Title</option>
+								<option value="Mr.">Mr.</option>
+								<option value="Mrs.">Mrs.</option>
+								<option value="Ms.">Ms.</option>
+								<option value="Dr.">Dr.</option>
+							</select>
+							<input type="text" name="firstName" id="firstName" value="First Name" />
+							<input type="text" name="lastName" id="lastName" value="Last Name" />
+						</span>
+						<span class="gutterBlock"><input type="text" name="email" id="email" value="Email Address" /></span>
 					</p>
 					<h3 class="gradHeader">Account Information</h3>
 					<p class="accountIntro">Though not required, this information will help us provide assistance if you have account-specific questions.</p>
 					<div id="accountInfoFloats">
 						<div id="acctNumCont" class="left">
 							<p>
-								<label for="acctNum">Account Number:</label><br />
-								<input type="text" name="acctNum" id="acctNum" /><br />
+								<label for="acctNum">Account Number:</label>
+								<input type="text" name="acctNum" id="acctNum" />
 								<span class="ghost">Providing your account number will expedite your request.</span>
 							</p>
 						</div>
 						<div id="teleNumCont" class="left">
 							<p>
-								<label for="phone">Telephone Number Associated with Account:</label><br />
+								<label for="phone">Telephone Number Associated with Account:</label>
 								<input type="text" name="phone" id="phone" maxlength="14" />
 								<span class="ghost">Format: (555) 555-5555</span>
 							</p>
 						</div>
 					</div>
 					<p id="billingInformation">
-						<label for="billingTitle">Billing Name:</label><br />
-						<label for="sameAsContact" class="sameAsContactLabel"><input name="sameAsContact" id="sameAsContact" type="checkbox" /> Same as Contact Name above</label><br />
+						<label for="billingTitle">Billing Name:</label>
+						<label for="sameAsContact" class="sameAsContactLabel"><input name="sameAsContact" id="sameAsContact" type="checkbox" /> Same as Contact Name above</label>
 						<select id="billingTitle" name="billingTitle">
 							<option value="" selected="selected">Title</option>
 							<option value="Mr.">Mr.</option>
@@ -67,7 +67,7 @@
 						<input type="text" name="billingLastName" id="billingLastName" value="Last Name" />
 					</p>
 					<p>
-						<label for="billingAddress1">Billing Address:</label><br />
+						<label for="billingAddress1">Billing Address:</label>
 						<input type="text" name="billingAddress1" id="billingAddress1" value="Street Address" />
 						<input type="text" name="billingAddress2" id="billingAddress2" value="Suite, Apt. #, etc." />
 						<select id="billingState" name="billingState">
