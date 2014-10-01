@@ -186,7 +186,6 @@ if ( $emailArrSelection !== 'live' || prevent_multi_submit() ) {
 		));
 
 		$mail = $smtp->send($to, $headers, $body);
-		var_dump($mail);
 
 		if (PEAR::isError($mail))
 		{
@@ -199,5 +198,5 @@ if ( $emailArrSelection !== 'live' || prevent_multi_submit() ) {
 	SendEmail($topicID, $comments, $source, $title, $firstName, $lastName, $email, $acctNum, $phone, $billingTitle, $billingFirstName, $billingLastName, $billingAddress1, $billingAddress2, $billingState, $billingZipCode);
 
 }
-//header( 'Location: ' . $success );
+header( 'Location: ' . $success );
 
