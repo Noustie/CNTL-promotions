@@ -1,30 +1,12 @@
 <?php
-	if ( strpos( $_SERVER['SERVER_NAME'], 'staging' ) === false ) {
-    	if ( !!!$_SERVER['HTTPS'] || $_SERVER['HTTPS'] == 'no' ) {
-    		header( 'Location: https://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'], true );
-		}
-    }
+	if ( !!!$_SERVER['HTTPS'] || $_SERVER['HTTPS'] == 'no' ) {
+		header( 'Location: https://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'], true );
+	}
+	$currentFile = basename($_SERVER["PHP_SELF"]);
+	$successPath = "/contact_fb/";
 
-$successPath = "/contact_fb/";
-
+function echoTracking () {	
 ?>
-
-<!DOCTYPE html>
-<html lang="en-US" class="fb-html">
-<head>
-	<meta charset="utf-8">
-	<title>CenturyLink | Customer Support</title>
-	<meta name="robots" content="noindex, nofollow">
-	<meta name="description" content="Let CenturyLink help you. Please complete the form and a CenturyLink representative will contact you." />
-	<meta name="keywords" content="" />
-	<meta name="robots" content="" />
-	<link rel="stylesheet" href="/contact/css/reset.css" />
-	<link rel="stylesheet" href="/contact/css/master.css" />
-	<link rel="stylesheet" href="/contact/css/colorbox.css" />
-	<script type="text/javascript" src="/assets/js/common/jquery.min.js"></script>
-	<script type="text/javascript" src="/contact/js/jquery.validate.min.js"></script>
-	<script type="text/javascript" src="/contact/js/jquery.colorbox-min.js"></script>
-
 	<script type="text/javascript">
 		// var sAccount;
 		// var custClass = "business"; //uncomment to use biz suite
@@ -63,30 +45,21 @@ $successPath = "/contact_fb/";
 		var eBiz_evar55 = eBiz_prop26;
 		var eBiz_evar56 = "";
 	</script>
-</head>
+<?php 
+}
 
-<body class="fb-html">
+include('../contact/includes/header.php'); 
+
+?>
 	    <!--START MAIN CONTENT AREA - set height in master.css-->
-	    <div id="content" class="content-fb">
-	    	<!-- START SUBHEAD -->
-	    	<div class="subHeaderCont">
-	    		<h2>Let&rsquo;s Connect</h2>
-	    		<div class="connect left">
-	    			<p>We want to address your concerns as quickly as possible. Please fill out the form below, and we will get to work.</p>
-	    		</div>
-	    		<div class="subnav right">
-					<div class="team right">
-	    				<p><a href="https://promotions.centurylink.com/contact/team.php" target="_blank" clicktrack="ctl|rsd|product|emktg|2012|facebook|customer_service|button|meet_team">Meet the Team</a></p>
-	    			</div>
-					<div class="tweet right">
-	    				<p>Send us a tweet or follow us at<br /><a href="http://twitter.com/CenturyLinkHelp" target="_blank" clicktrack="ctl|rsd|product|emktg|2012|facebook|customer_service|button|twitter">@CenturyLinkHelp</a></p>
-	    			</div>
-	    		</div>
-	    	</div>
-	    	<!-- END SUBHEAD -->
-	    	<?php
-				include('../contact/includes/form.php');
-			?>
+	    <div id="content">
+		<?php
+			session_start();
+		?>
+		<?php include('../contact/includes/subhead.php'); ?>
+	    	
+	    	<?php include('../contact/includes/form.php'); ?>
+	    	
 	    </div>
 	    <!--END MAIN CONTENT AREA-->
 
@@ -127,3 +100,4 @@ $successPath = "/contact_fb/";
 </body>
 
 </html>
+

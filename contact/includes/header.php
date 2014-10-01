@@ -1,10 +1,3 @@
-<?php
-	if ( !!!$_SERVER['HTTPS'] || $_SERVER['HTTPS'] == 'no' ) {
-		header( 'Location: https://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'], true );
-	}
-	$currentFile = basename($_SERVER["PHP_SELF"]);
-	$successPath = "/contact/"
-?>
 
 <!DOCTYPE html>
 <html lang="en-US">
@@ -24,10 +17,13 @@
 	<script type="text/javascript" src="/assets/js/common/jquery.min.js"></script>
 	<script type="text/javascript" src="/contact/js/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="/contact/js/jquery.colorbox-min.js"></script>
-</head>
 
-<body>
+<?php echoTracking(); ?>
+
+</head>
+<body class="fb-html">
 	<div id="mainWidth">
+		<?php if ( 	$successPath == "/contact/" ) : ?>
 	    <!--START HEADER AREA-->
 	    <div id="headerContainer">
 	        <div id="top_nav">
@@ -43,3 +39,4 @@
 			</div>	    
 		</div>
 	    <!--END HEADER AREA-->
+	    <?php endif; ?>

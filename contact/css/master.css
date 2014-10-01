@@ -503,7 +503,7 @@ label.error {
 .left {float: left;}
 .right {float: right;}
 
-@media only screen and (max-width: 870px) {
+@media only screen and (max-width: 809px) {
 	.right {
 		float: left;
 	}

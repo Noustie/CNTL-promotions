@@ -1,5 +1,13 @@
-<?php include('includes/header.php'); ?>
-<script type="text/javascript">
+<?php
+	if ( !!!$_SERVER['HTTPS'] || $_SERVER['HTTPS'] == 'no' ) {
+		header( 'Location: https://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'], true );
+	}
+	$currentFile = basename($_SERVER["PHP_SELF"]);
+	$successPath = "/contact/";
+
+function echoTracking () {
+?>
+	<script type="text/javascript">
 		// var sAccount;
 		// var custClass = "business"; //uncomment to use biz suite
 		var eBiz_linkInternalFilters = "javascript:,centurylink.,centurytel.,embarqmail.,synacor.,embarq.,speedpay.,mspcare.bcgi.,embarqnow.,centurylink-business,twitter.,facebook."; //Uncomment for special clicktrack needs
@@ -37,7 +45,11 @@
 		var eBiz_evar55 = eBiz_prop26;
 		var eBiz_evar56 = "";
 	</script>
+<?
+}
 
+include('includes/header.php'); 
+?>
 	    <!--START MAIN CONTENT AREA - set height in master.css-->
 	    <div id="content">
 		<?php
