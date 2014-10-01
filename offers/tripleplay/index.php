@@ -43,7 +43,7 @@ $c2c_buttonname = 'chat-centurylink-residential-customer-support-triple'; //LCTL
 		<div class="page-content">
 			<div class="pageHeader">
 				<h1 class="ir">the power of 3 | DIRECTV service + Internet + Home Phone</h1>
-				<div class="headCta non150pp">
+				<div class="headCta non150pp" style="background: transparent url('images/ctl-prepaidvisa-v4.png') no-repeat 15px 25px;">
 					<h2 class="abir">Bundle all 3 services and get a Centurylink&reg; Visa&reg; Prepaid Card^</h2>
 					<div id="<?php echo $c2c_buttonname; ?>" class="chatBtn"> </div>
 				</div>
