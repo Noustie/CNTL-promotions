@@ -116,13 +116,13 @@ $c2c_buttonname = 'chat-residential-english-triple'; //LQ
 		<span class="corner cBottomLeft"> &nbsp; </span><span class="corner cBottomRight"> &nbsp; </span>
 	</div>
 	<div class="pageSubFoot">
-		<p class="discliamer col">*Other fees and conditions may apply. <a class="popupTrigger" target="_blank" href="<?php echo $disclaimer; ?>">Click here for details.</a><br>
-<br />
+		<p class="discliamer col">
+			*Other fees and conditions may apply. <a class="popupTrigger" target="_blank" href="<?php echo $disclaimer; ?>">Click here for details.</a><br>
+			<br />
 			Limited time offer. New approved customers only. Conditions apply. 24-month DIRECTV agreement required.** <br />
 			Credit card required (except in PA). Hardware and programming available separately. Additional fees required.  <br />
-			Applicable use tax adjustment may apply on the retail value of the installation.<br>
-			Reward cards are issued in connection with a loyalty, award or promotion program. <br>
-Card terms and conditions apply.		</p>
+			Applicable use tax adjustment may apply on the retail value of the installation.
+		</p>
 <?php require_once("../common/dtv-triple/includes/sharing.php") ?>
 	</div>
 <?php require_once("../common/dtv-triple/includes/foot.php") ?>
