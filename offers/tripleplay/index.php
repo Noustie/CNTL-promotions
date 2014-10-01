@@ -123,9 +123,7 @@ $c2c_buttonname = 'chat-centurylink-residential-customer-support-triple'; //LCTL
 			<br />
 			Limited time offer. New approved customers only. Conditions apply. 24-month DIRECTV agreement required.**  <br />
 			Credit card required (except in PA). Hardware and programming available separately. Additional fees required.  <br />
-			Applicable use tax adjustment may apply on the retail value of the installation.<br />
-			Reward cards are issued in connection with a loyalty, award or promotion program. <br />
-			Card terms and conditions apply.
+			Applicable use tax adjustment may apply on the retail value of the installation.
 		</p>
 <?php require_once("../common/dtv-triple/includes/sharing.php") ?>
 	</div>
