@@ -4,7 +4,8 @@
 	}
 	$currentFile = basename($_SERVER["PHP_SELF"]);
 	$successPath = "/contact_fb/";
-
+	$bodyClasses = "fb-html";
+	
 function echoTracking () {	
 ?>
 	<script type="text/javascript">

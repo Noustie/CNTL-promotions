@@ -149,6 +149,13 @@ h2 {
 }
 
 /* Form Styles */
+
+.formContainer section {
+	display: block;
+	padding: 0 0 20px 0;
+}
+
+
 h3.gradHeader {
 	width: 100%;
 	-webkit-border-radius: 6px;

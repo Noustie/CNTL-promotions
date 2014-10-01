@@ -19,7 +19,7 @@
 	    			</div>
 	    			<?php endif; ?>
 					<div class="tweet right">
-	    				<p>Send us a tweet or follow us at<br /><a href="http://twitter.com/CenturyLinkHelp" target="_blank" clicktrack="ctl|rsd|product|emktg|2012|customer_service|button|twitter">@CenturyLinkHelp</a></p>
+	    				<p>Send us a tweet or follow us at<br /> <a href="http://twitter.com/CenturyLinkHelp" target="_blank" clicktrack="ctl|rsd|product|emktg|2012|customer_service|button|twitter">@CenturyLinkHelp</a></p>
 	    			</div>
 	    		</div>
 	    		<?php if ($currentFile != 'team.php') : ?>
@@ -28,9 +28,9 @@
 						<div class="copyBlock">
 							<img class="serviceTroubleImg" src="/contact/images/dr-kit-icon.png" alt="Service Troubleshooter">
 							<h3>Are you having Internet issues? </h3>
-							<p><a href="#learnmore">The Service Troubleshooter</a> can help you diagnose and resolve many Internet problems. </p>
+							<p>The Service Troubleshooter can help you diagnose and resolve many Internet problems. </p>
 						</div>
-						<a href="#learnmore" class="btn-learn-more">Learn More</a>
+						<a target="_blank" href="https://selfservice.centurylink.com/ticketing/residential/displayResidentialTicketingLanding.do" class="btn-learn-more">Learn More</a>
 					</div>
 	    		</div>
 	    		<?php endif; ?>	    		

@@ -4,6 +4,7 @@
 	}
 	$currentFile = basename($_SERVER["PHP_SELF"]);
 	$successPath = "/contact/";
+	$bodyClasses = "";
 
 function echoTracking () {
 ?>

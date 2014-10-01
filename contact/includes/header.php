@@ -21,7 +21,7 @@
 <?php echoTracking(); ?>
 
 </head>
-<body class="fb-html">
+<body class="<?php echo $bodyClasses; ?>">
 	<div id="mainWidth">
 		<?php if ( 	$successPath == "/contact/" ) : ?>
 	    <!--START HEADER AREA-->
