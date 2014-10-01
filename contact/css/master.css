@@ -103,8 +103,8 @@ h2 {
 }
 
 #mainWidth .facebook_contact {
-	margin: 0 2%;
-	width: 96%;
+	margin: 0;
+	width: 100%;
 }
 
 .fb-html {
