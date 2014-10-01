@@ -79,7 +79,7 @@ if ( $emailArrSelection !== 'live' || prevent_multi_submit() ) {
 	function checkLength ( $checkLengthArray ) {
 		$output = "";
 		for ($i=0; $i < count($checkLengthArray); $i++) { 
-			if ( strlen($checkLengthArray) > 1500 ) {
+			if ( strlen($checkLengthArray[$i]) > 1500 ) {
 				$output .= '<li>Some Entries Were too long. Please enter less than 1500 charcters for every entry.</li>';
 			}
 		}
