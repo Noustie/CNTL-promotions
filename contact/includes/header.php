@@ -15,6 +15,9 @@
 	<meta name="description" content="Let CenturyLink help you. Please complete the form and a CenturyLink representative will contact you." />
 	<meta name="keywords" content="" />
 	<meta name="robots" content="" />
+<!--[if lt IE 9]>
+<script src="/contact/js/html5shiv.js"></script>
+<![endif]-->	
 	<link rel="stylesheet" href="/contact/css/reset.css" />
 	<link rel="stylesheet" href="/contact/css/master.css" />
 	<link rel="stylesheet" href="/contact/css/colorbox.css" />

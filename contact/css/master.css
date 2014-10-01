@@ -88,7 +88,7 @@ h2 {
 }
 
 #hdr_logo h1 {
-    background: url("../images/logo.gif") no-repeat scroll left top transparent;
+    background: url("/common/images/logo.png") no-repeat scroll left top transparent;
     height: 43px;
     line-height: 0;
     text-indent: -9999px;
@@ -129,6 +129,7 @@ h2 {
 	font-size: 12px;
 	max-width: 360px;
 	width: 100%;
+	min-height: 40px;
 }
 
 .tweet {
@@ -363,27 +364,25 @@ label {
 }
 
 #thanks h2 {
-	padding: 0 0 0 30px;
+	padding: 30px;
 	margin: 0;
-	max-width: 780px;
-	background: url(../images/thanksHeadGrad.png) left top repeat-x;
+	width: 100%;
+	background: #01853f url('../images/header-grad.png') left top repeat-x;
 	border-radius: 6px 6px 0 0;
 	color: #FFF;
 	font-size: 29px;
-	line-height: 85px;
 	font-weight: normal;	
 }
 
 #thanks p {
-	background: url(../images/thanksBodyGrad.png) left top repeat-x;
-	height: 165px;
+	background: #e9e9ea url('../images/thanksBodyGrad.png') left top repeat-x;
 	font-size: 24px;
 	line-height: 32px;
 	font-weight: normal;
 	color: #2d2929;
-	max-width: 750px;
-	padding: 25px 40px 0 20px;
+	padding: 25px 30px;
 	border-radius: 0 0 6px 6px;
+	width: 100%;
 }
 
 /** Footer Styles **/
