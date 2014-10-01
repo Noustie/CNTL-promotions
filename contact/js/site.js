@@ -84,9 +84,9 @@ function validateForm() {
 				required: "Email is required.",
 				email: "Valid email required."
 			},
-			firstName: "This field is required.",
-			lastName: "This field is required.",
-			title: "This field is required."		
+			firstName: "All Contact Information is required.",
+			lastName: "All Contact Information is required.",
+			title: "All Contact Information is required."		
 		}
 	});
 }

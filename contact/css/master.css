@@ -448,6 +448,8 @@ label.error {
 	border-radius: 0 6px 6px 0;
 	padding: 5px 10px 5px 15px;
 	margin-left: 10px;
+	display: inline-block;
+	max-width: 180px;
 }
 
 .subheadInternetBlock {
@@ -528,6 +530,20 @@ label.error {
 	.connect {
 		margin: 0 0 10px 0;
 	}
+	label.error {
+		background: #FF0000;
+		color: #FFF;
+		right: 0;
+		-webkit-border-radius: 0 0 6px 6px;
+		-moz-border-radius: 0 0 6px 6px;
+		border-radius: 0 0 6px 6px;
+		padding: 5px 10px 5px 15px;
+		margin-left: 10px;
+		margin-bottom: 15px;
+		display: inline-block;
+		max-width: 100%;
+	}
+
 }
 @media only screen and (max-width: 680px) {
 	.gutterBlock {
@@ -558,6 +574,9 @@ label.error {
 		max-width: 100%;
 		margin: 0 0 10px 0;
 	}
+	#lastName.error {
+		margin: 0;
+	} 
 	.subHeaderCont {
 		padding: 0;
 	}
@@ -577,4 +596,5 @@ label.error {
 		max-width: 200px;
 		min-height: 100%;
 	}
+
 }
