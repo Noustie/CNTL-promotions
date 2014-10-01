@@ -6,7 +6,7 @@
 				<li><a target="_blank" href="http://www.centurylink.com/Pages/AboutUs/Community/Disabled">Customers with Disabilities</a></li>
 				<li class="footernav_last"><a target="_blank" href="http://www.centurylink.com/Pages/AboutUs/CompanyInformation/Regulatory/tariffLibrary.jsp">Tariffs</a></li>
 			</ul>
-			<p>Copyright &copy;2012, CenturyLink, Inc. All Rights Reserved.</p>
+			<p>Copyright &copy;<?php echo date('Y') ?>, CenturyLink, Inc. All Rights Reserved.</p>
 		</div>
 	    <!--END FOOTER CONTENT AREA-->
 	</div>

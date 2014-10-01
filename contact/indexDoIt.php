@@ -8,7 +8,6 @@ require("configs/contact-settings.php");
 session_start();
 
 function prevent_multi_submit($type = "post", $excl = "/^x|y$/") {
-	return true; //dev
     $string = "";
     foreach ($_POST as $key => $val) {
         if ( preg_match( $excl, $key ) == 0 ) {
@@ -29,24 +28,31 @@ function prevent_multi_submit($type = "post", $excl = "/^x|y$/") {
 }
 
 $success = trim($_POST['success']);
+$success = filter_var($success, FILTER_SANITIZE_URL);
 
-if ( prevent_multi_submit() ) {
 
-	$sendToEmailArr = array(
-		"live" => "talktous@centurylink.com",
-		"QA" => "corbettj@peteramayer.com",
-		"DEV" => "brownkg@peteramayer.com",
-		"CEE" => "celestinec@peteramayer.com"
-	);
+$sendToEmailArr = array(
+	"live" => "talktous@centurylink.com",
+	"QA" => "corbettj@peteramayer.com",
+	"DEV" => "brownkg@peteramayer.com",
+	"CEE" => "celestinec@peteramayer.com"
+);
+$emailArrSelection = 'DEV';
+if ( $_SERVER['SERVER_NAME'] == 'promotions.centurylink.com' ) {
+	$emailArrSelection = 'live';
+}
 
-	$topicID = trim($_POST['topicID']);
-	$comments = trim($_POST['comments']);
-	$title = trim($_POST['title']);
-	$firstName = trim($_POST['firstName']);
-	$lastName = trim($_POST['lastName']);
-	$email = trim($_POST['email']);
-	$acctNum = trim($_POST['acctNum']);
-	$phone = trim($_POST['phone']);
+
+if ( $emailArrSelection !== 'live' || prevent_multi_submit() ) {
+
+	$topicID 	= filter_var( trim($_POST['topicID']), 		FILTER_SANITIZE_STRING );
+	$comments 	= filter_var( trim($_POST['comments']), 	FILTER_SANITIZE_STRING );
+	$title 		= filter_var( trim($_POST['title']), 		FILTER_SANITIZE_STRING );
+	$firstName 	= filter_var( trim($_POST['firstName']), 	FILTER_SANITIZE_STRING );
+	$lastName 	= filter_var( trim($_POST['lastName']), 	FILTER_SANITIZE_STRING );
+	$email 		= filter_var( trim($_POST['email']), 		FILTER_SANITIZE_EMAIL );
+	$acctNum 	= filter_var( trim($_POST['acctNum']), 		FILTER_SANITIZE_STRING );
+	$phone 		= filter_var( trim($_POST['phone']), 		FILTER_SANITIZE_STRING );
 	$billingTitle = "";
 	$billingFirstName = "";
 	$billingLastName = "";
@@ -70,9 +76,22 @@ if ( prevent_multi_submit() ) {
 	if (isset($_POST['xljsdfljkj']))
 		$honeyPot = trim($_POST['xljsdfljkj']);
 
+	function checkLength ( $checkLengthArray ) {
+		$output = "";
+		for ($i=0; $i < count($checkLengthArray); $i++) { 
+			if ( strlen($checkLengthArray) > 1500 ) {
+				$output .= '<li>Some Entries Were too long. Please enter less than 1500 charcters for every entry.</li>';
+			}
+		}
+		return $output;
+	}
+
 	function Validate($honeyPot, $email, $topicID, $comments, $title, $firstName, $lastName)
 	{
 		$errMsg = "";
+
+		$errMsg .= checkLength( array($email, $topicID, $comments, $title, $firstName, $lastName) );
+
 
 		if ($honeyPot != "")
 			$errMsg .= '<li>Request is invalid.</li>';
@@ -123,13 +142,13 @@ if ( prevent_multi_submit() ) {
 
 	function SendEmail($topicID, $comments, $source, $title, $firstName, $lastName, $email, $acctNum, $phone, $billingTitle, $billingFirstName, $billingLastName, $billingAddress1, $billingAddress2, $billingState, $billingZipCode)
 	{
-		global $smtp_emailHost, $smtp_emailPort, $smtp_emailU, $smtp_emailP, $smtp_emailFrom, $sendToEmailArr;
+		global $smtp_emailHost, $smtp_emailPort, $smtp_emailU, $smtp_emailP, $smtp_emailFrom, $sendToEmailArr, $emailArrSelection;
 
 		require_once "Mail.php";
 
 		$topicName = GetTopic($topicID);
 		$today = date("F j, Y, g:i a");
-		$to = $sendToEmailArr["DEV"]; // live, QA, DEV
+		$to = $sendToEmailArr[$emailArrSelection]; // live, QA, DEV
 		$subject = "Support Request - $topicName";
 		if (!empty($billingState))
 			$subject .= " - $billingState";

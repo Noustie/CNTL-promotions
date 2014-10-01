@@ -112,7 +112,7 @@ h2 {
 	overflow: hidden;
 	max-width: 810px;
 	clear: both;
-	padding: 0 0 20px 0;
+	padding: 0;
 }
 
 .connect {
@@ -318,9 +318,10 @@ label {
 }
 
 .teamMember {
-	max-width: 33%;
-	height: 36em;
+	max-width: 200px;
+	min-height: 35em;
 	float: left;
+	padding: 0 15px 15px 0;
 }
 
 .teamMember ul {
@@ -332,7 +333,7 @@ label {
 	margin-bottom: 7px;
 }
 
-.teamMember ul li span {
+.teamMember ul li strong {
 	color: #00853F;
 	font-weight: bold;
 }
@@ -439,15 +440,28 @@ label.error {
 }
 
 .subheadInternetBlock {
-	background: #cecece url('/contact/images/gray-bar-grad.png') center center repeat-x;
-	padding: 20px;
+	background: #FFF url('/contact/images/gray-bar-grad-top.png') center top repeat-x;
 	margin: 20px 0 30px;
 	border: 1px solid #999999;
 	border-radius: 10px;
-	width: 100%;
 	float: left;
 	clear: both;
 	font-size: 13px;
+	width: 100%;
+	overflow: hidden;
+}
+.subheadInternetBlock .innerWrap {
+	background: transparent url('/contact/images/gray-bar-grad-btm.png') center bottom repeat-x;
+	padding: 20px;
+	width: 100%;
+	height: 100%;
+	float: left;
+	clear: both;
+}
+.subheadInternetBlock .copyBlock {
+	float: left;
+	max-width: 610px;
+	width: 100%;
 }
 .subheadInternetBlock h3 {
 	font-weight: bold;
@@ -459,7 +473,7 @@ label.error {
 }
 .serviceTroubleImg {
 	float: left;
-	margin: 0 15px 0 0;
+	margin: 0 15px 10px 0;
 }
 .btn-learn-more {
 	width: 126px;
@@ -534,7 +548,7 @@ label.error {
 		margin: 0 0 10px 0;
 	}
 	.subHeaderCont {
-		padding: 0 0 20px 0;
+		padding: 0;
 	}
 	.right {
 		float: left;
@@ -547,5 +561,9 @@ label.error {
 	}
 	.connect {
 		margin: 0 0 10px 0;
+	}
+	.teamMember {
+		max-width: 200px;
+		min-height: 100%;
 	}
 }
