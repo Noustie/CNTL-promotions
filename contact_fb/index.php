@@ -52,7 +52,7 @@ include('../contact/includes/header.php');
 
 ?>
 	    <!--START MAIN CONTENT AREA - set height in master.css-->
-	    <div id="content">
+	    <div id="content" class="facebook_contact">
 		<?php
 			session_start();
 		?>

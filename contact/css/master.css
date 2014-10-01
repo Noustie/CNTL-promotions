@@ -102,6 +102,11 @@ h2 {
 	overflow: hidden;
 }
 
+#mainWidth .facebook_contact {
+	margin: 0 2%;
+	width: 96%;
+}
+
 .fb-html {
 	overflow: hidden;
 }
@@ -116,7 +121,7 @@ h2 {
 }
 
 .connect {
-	max-width: 395px;
+	max-width: 370px;
 	width: 100%;
 }
 
@@ -127,7 +132,7 @@ h2 {
 .subnav {
 	overflow: hidden;
 	font-size: 12px;
-	max-width: 360px;
+	max-width: 350px;
 	width: 100%;
 	min-height: 40px;
 }
@@ -140,7 +145,7 @@ h2 {
 .team {
 	background: url('../images/teamIcon.png') left top no-repeat;
 	padding: 5px 0 5px 35px;
-	margin-left: 35px;
+	margin-left: 20px;
 }
 
 /* Form Styles */
