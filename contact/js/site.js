@@ -84,9 +84,11 @@ function validateForm() {
 				required: "Email is required.",
 				email: "Valid email required."
 			},
-			firstName: "All Contact Information is required.",
-			lastName: "All Contact Information is required.",
-			title: "All Contact Information is required."		
+			topicID: "Please choose a topic.",
+			comments: "Tell us how we can help.",
+			firstName: "First Name is required.",
+			lastName: "Last Name is required.",
+			title: "Please choose a Title."		
 		}
 	});
 }

@@ -241,7 +241,9 @@ label {
 	max-width: 200px;
 	margin-right: 10px;
 }
-
+#lastName {
+	margin-right: 0px;
+}
 #email {
 	width: 100%;
 	max-width: 550px;
@@ -440,16 +442,11 @@ label {
 
 label.error {
 	border: 0 none;
-	background: #FF0000 url(../images/errCorner.png) left center no-repeat;
-	color: #FFF;
+	color: #FF0000;
 	right: 0;
-	-webkit-border-radius: 0 6px 6px 0;
-	-moz-border-radius: 0 6px 6px 0;
-	border-radius: 0 6px 6px 0;
 	padding: 5px 10px 5px 15px;
 	margin-left: 10px;
 	display: inline-block;
-	max-width: 180px;
 }
 
 .subheadInternetBlock {
@@ -531,19 +528,12 @@ label.error {
 		margin: 0 0 10px 0;
 	}
 	label.error {
-		background: #FF0000;
-		color: #FFF;
 		right: 0;
-		-webkit-border-radius: 0 0 6px 6px;
-		-moz-border-radius: 0 0 6px 6px;
-		border-radius: 0 0 6px 6px;
-		padding: 5px 10px 5px 15px;
-		margin-left: 10px;
+		padding: 5px 0;
+		margin-left: 0;
 		margin-bottom: 15px;
 		display: inline-block;
-		max-width: 100%;
 	}
-
 }
 @media only screen and (max-width: 680px) {
 	.gutterBlock {
