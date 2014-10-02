@@ -4,7 +4,7 @@ if ( !!!$_SERVER['HTTPS'] || $_SERVER['HTTPS'] == 'no' ) {
 	header( 'Location: https://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'], true );
 }
 $currentFile = basename($_SERVER["PHP_SELF"]);
-$successPath = "/contact/";
+$successPath = "/contact_fb/";
 $bodyClasses = "fb-html";
 $trackingBase = 'rsd|product|emktg|2012|customer_service_form|facebook';
 

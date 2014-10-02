@@ -22,7 +22,7 @@
 </head>
 <body class="<?php echo $bodyClasses; ?>">
 	<div id="mainWidth">
-		<?php if ( 	$successPath == "/contact/" ) : ?>
+		<?php if ( $successPath == "/contact/" ) : ?>
 	    <!--START HEADER AREA-->
 	    <div id="headerContainer">
 	        <div id="top_nav">
