@@ -1,9 +1,20 @@
-<?php include('includes/header.php'); ?>
+<?php 
+if ( !!!$_SERVER['HTTPS'] || $_SERVER['HTTPS'] == 'no' ) {
+	header( 'Location: https://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'], true );
+}
+$currentFile = basename($_SERVER["PHP_SELF"]);
+$successPath = "/contact/";
+$bodyClasses = "";
+$trackingBase = 'rsd|product|emktg|2012|customer_service_form';
+
+function echoTracking () {
+	global $trackingBase;
+?>
 <script type="text/javascript">
 		// var sAccount;
 		// var custClass = "business"; //uncomment to use biz suite
 		var eBiz_linkInternalFilters = "javascript:,centurylink.,centurytel.,embarqmail.,synacor.,embarq.,speedpay.,mspcare.bcgi.,embarqnow.,centurylink-business,twitter.,facebook."; //Uncomment for special clicktrack needs
-		var pageName = "ctl|rsd|product|emktg|2012|customer_service_form|sent"; //s.pageName
+		var pageName = "ctl|<?php echo $trackingBase; ?>|sent"; //s.pageName
 		var pageType = ""; 		//s.pageType
 		var errorType = ""; 	//s.prop2
 		var accountEvents = ""; //eVar1
@@ -25,7 +36,7 @@
 		var eBiz_prop20 = "";
 		var eBiz_prop24 = "rsd|product";
 		var eBiz_prop25 = "rsd|product|emktg|2012";
-		var eBiz_prop26 = "rsd|product|emktg|2012|customer_service_form|sent";
+		var eBiz_prop26 = "<?php echo $trackingBase; ?>|sent";
 		var eBiz_prop38 = "static_page";
 		var eBiz_prop39 = "landing_page";
 		var eBiz_prop52 = "";
@@ -37,7 +48,10 @@
 		var eBiz_evar55 = eBiz_prop26;
 		var eBiz_evar56 = "";
 	</script>
-
+<?php
+}
+include('includes/header.php'); 
+?>
 	    <!--START MAIN CONTENT AREA - set height in master.css-->
 	    <div id="content">
 
@@ -45,10 +59,10 @@
 	    	<div class="subHeaderCont">
 	    		<div class="subnav right">
 					<div class="team right">
-	    				<p><a href="team.php" clicktrack="ctl|rsd|product|emktg|2012|customer_service|sent|button|team" target="_blank">Meet the Team</a></p>
+	    				<p><a href="team.php" clicktrack="ctl|<?php echo $trackingBase; ?>|sent|button|team" target="_blank">Meet the Team</a></p>
 	    			</div>
 					<div class="tweet right">
-	    				<p>Send us a tweet or follow us at<br /><a href="http://twitter.com/CenturyLinkHelp" target="_blank" clicktrack="ctl|rsd|product|emktg|2012|customer_service|sent|button|twitter">@CenturyLinkHelp</a></p>
+	    				<p>Send us a tweet or follow us at<br /><a href="http://twitter.com/CenturyLinkHelp" target="_blank" clicktrack="ctl|<?php echo $trackingBase; ?>|sent|button|twitter">@CenturyLinkHelp</a></p>
 	    			</div>
 	    		</div>
 	    	</div>
@@ -56,7 +70,7 @@
 	    	
 	    	<div id="thanks">
 	    		<h2>We&rsquo;re Working On It!</h2>
-	    		<p>Thank you for using the CenturyLink online customer service form. Our team is reviewing your request and will address the matter as quickly as possible. If you have any immediate questions, please visit us on <a href="http://centurylink.com" target="_blank" clicktrack="ctl|rsd|product|emktg|2012|customer_service|sent|button|centurylink">centurylink.com</a>.</p>
+	    		<p>Thank you for using the CenturyLink online customer service form. Our team is reviewing your request and will address the matter as quickly as possible. If you have any immediate questions, please visit us on <a href="http://centurylink.com" target="_blank" clicktrack="ctl|<?php echo $trackingBase; ?>|sent|button|centurylink">centurylink.com</a>.</p>
 	    	</div>
 	    	
 	    </div>

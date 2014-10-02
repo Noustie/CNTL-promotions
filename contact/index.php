@@ -1,18 +1,20 @@
 <?php
-	if ( !!!$_SERVER['HTTPS'] || $_SERVER['HTTPS'] == 'no' ) {
-		header( 'Location: https://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'], true );
-	}
-	$currentFile = basename($_SERVER["PHP_SELF"]);
-	$successPath = "/contact/";
-	$bodyClasses = "";
+if ( !!!$_SERVER['HTTPS'] || $_SERVER['HTTPS'] == 'no' ) {
+	header( 'Location: https://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'], true );
+}
+$currentFile = basename($_SERVER["PHP_SELF"]);
+$successPath = "/contact/";
+$bodyClasses = "";
+$trackingBase = 'rsd|product|emktg|2012|customer_service_form';
 
 function echoTracking () {
+	global $trackingBase;
 ?>
 	<script type="text/javascript">
 		// var sAccount;
 		// var custClass = "business"; //uncomment to use biz suite
 		var eBiz_linkInternalFilters = "javascript:,centurylink.,centurytel.,embarqmail.,synacor.,embarq.,speedpay.,mspcare.bcgi.,embarqnow.,centurylink-business,twitter.,facebook."; //Uncomment for special clicktrack needs
-		var pageName = "ctl|rsd|product|emktg|2012|customer_service_form"; //s.pageName
+		var pageName = "ctl|<?php echo $trackingBase; ?>"; //s.pageName
 		var pageType = ""; 		//s.pageType
 		var errorType = ""; 	//s.prop2
 		var accountEvents = ""; //eVar1
@@ -34,7 +36,7 @@ function echoTracking () {
 		var eBiz_prop20 = "";
 		var eBiz_prop24 = "rsd|product";
 		var eBiz_prop25 = "rsd|product|emktg|2012";
-		var eBiz_prop26 = "rsd|product|emktg|2012|customer_service_form";
+		var eBiz_prop26 = "<?php echo $trackingBase; ?>";
 		var eBiz_prop38 = "static_page";
 		var eBiz_prop39 = "landing_page";
 		var eBiz_prop52 = "";

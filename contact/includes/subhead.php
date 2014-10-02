@@ -15,11 +15,11 @@
 	    		<div class="subnav right">
 	    			<?php if ($currentFile != 'team.php') : ?>
 					<div class="team right">
-	    				<p><a href="team.php" clicktrack="ctl|rsd|product|emktg|2012|customer_service|button|meet_team" target="_blank">Meet the Team</a></p>
+	    				<p><a href="team.php" clicktrack="ctl|<?php echo $trackingBase; ?>|button|meet_team" target="_blank">Meet the Team</a></p>
 	    			</div>
 	    			<?php endif; ?>
 					<div class="tweet right">
-	    				<p>Send us a tweet or follow us at<br /> <a href="http://twitter.com/CenturyLinkHelp" target="_blank" clicktrack="ctl|rsd|product|emktg|2012|customer_service|button|twitter">@CenturyLinkHelp</a></p>
+	    				<p>Send us a tweet or follow us at<br /> <a href="http://twitter.com/CenturyLinkHelp" target="_blank" clicktrack="ctl|<?php echo $trackingBase; ?>|button|twitter">@CenturyLinkHelp</a></p>
 	    			</div>
 	    		</div>
 	    		<?php if ($currentFile != 'team.php') : ?>
@@ -30,7 +30,7 @@
 							<h3>Are you having Internet issues? </h3>
 							<p>The Service Troubleshooter can help you diagnose and resolve many Internet problems. </p>
 						</div>
-						<a target="_blank" href="https://selfservice.centurylink.com/ticketing/residential/displayResidentialTicketingLanding.do" class="btn-learn-more">Learn More</a>
+						<a target="_blank" href="https://selfservice.centurylink.com/ticketing/residential/displayResidentialTicketingLanding.do" clicktrack="ctl|<?php echo $trackingBase; ?>|button|learn_more" class="btn-learn-more">Learn More</a>
 					</div>
 	    		</div>
 	    		<?php endif; ?>	    		
