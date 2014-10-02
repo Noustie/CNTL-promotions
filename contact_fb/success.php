@@ -52,7 +52,7 @@ function echoTracking () {
 <?php    	
 }
 
-include('includes/header.php'); 
+include('../contact/includes/header.php'); 
 ?>
 	    <!--START MAIN CONTENT AREA - set height in master.css-->
 	    <div id="content" class="content-fb">
