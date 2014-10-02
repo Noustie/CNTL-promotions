@@ -44,7 +44,7 @@ $c2c_buttonname = 'chat-centurylink-residential-customer-support-triple'; //LCTL
 			<div class="pageHeader">
 				<h1 class="ir">the power of 3 | DIRECTV service + Internet + Home Phone</h1>
 				<div class="headCta non150pp" style="background: transparent url('images/ctl-prepaidvisa-v4.png') no-repeat 15px 25px;">
-					<h2 class="abir">Bundle all 3 services and get a Centurylink&reg; Visa&reg; Prepaid Card^</h2>
+					<h2 class="abir">Bundle all 3 services and get a Centurylink&reg; Visa&reg; Prepaid Card*</h2>
 					<div id="<?php echo $c2c_buttonname; ?>" class="chatBtn"> </div>
 				</div>
 				<h3 class="snipe ir">NEW!</h3>
@@ -119,7 +119,7 @@ $c2c_buttonname = 'chat-centurylink-residential-customer-support-triple'; //LCTL
 	</div>
 	<div class="pageSubFoot">
 		<p class="discliamer col">
-			Other fees and conditions may apply. <a class="popupTrigger" target="_blank" href="<?php echo $disclaimer; ?>">Click here for details.</a> <br>
+			*Other fees and conditions may apply. <a class="popupTrigger" target="_blank" href="<?php echo $disclaimer; ?>">Click here for details.</a> <br>
 			<br />
 			Limited time offer. New approved customers only. Conditions apply. 24-month DIRECTV agreement required.**  <br />
 			Credit card required (except in PA). Hardware and programming available separately. Additional fees required.  <br />

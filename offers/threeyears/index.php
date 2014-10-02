@@ -41,7 +41,7 @@ $c2c_buttonname = 'chat-residential-english-triple'; //LQ
 			<div class="pageHeader">
 				<h1 class="ir">the power of 3 | DIRECTV service + Internet + Home Phone</h1>
 				<div class="headCta" style="background: transparent url('images/ctl-prepaidvisa-v4.png') no-repeat 15px 25px;">
-					<h2 class="abir">Bundle all 3 services and get a $100 CenturyLink&trade; Visa&reg; Prepaid Card^</h2>
+					<h2 class="abir">Bundle all 3 services and get a $100 CenturyLink&trade; Visa&reg; Prepaid Card*</h2>
 					<div id="<?php echo $c2c_buttonname; ?>" class="chatBtn"> </div>
 				</div>
 				<h3 class="snipe ir">NEW!</h3>
