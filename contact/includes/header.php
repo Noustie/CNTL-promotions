@@ -29,7 +29,7 @@
 				<ul>
 					<li><a target="_blank" href="http://www.centurylink.com">Home</a></li>
 					<li><a target="_blank" href="http://www.centurylink.com/Pages/AboutUs/">About Us</a></li>
-					<li><a target="_blank" href="http://espanol.centurylink.com/">Español</a></li>
+					<li><a target="_blank" href="http://espanol.centurylink.com/">Espa&ntilde;ol</a></li>
 					<li class="topnav_last"><a target="_blank" href="http://m.centurylink.com">Mobile Site</a></li>
 				</ul>
 			</div>
