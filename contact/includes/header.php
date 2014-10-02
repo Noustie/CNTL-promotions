@@ -1,13 +1,12 @@
 
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
 	<meta charset="utf-8">
 	<title>CenturyLink | Customer Support</title>
-	<meta name="robots" content="noindex, nofollow">
 	<meta name="description" content="Let CenturyLink help you. Please complete the form and a CenturyLink representative will contact you." />
 	<meta name="keywords" content="" />
-	<meta name="robots" content="" />
+	<meta id="vptag" name="viewport" content="width=device-width">
 <!--[if lt IE 9]>
 <script src="/contact/js/html5shiv.js"></script>
 <![endif]-->	
