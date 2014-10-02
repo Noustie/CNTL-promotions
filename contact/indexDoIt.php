@@ -37,13 +37,13 @@ $sendToEmailArr = array(
 	"DEV" => "brownkg@peteramayer.com",
 	"CEE" => "celestinec@peteramayer.com"
 );
-$emailArrSelection = 'DEV';
+$emailArrSelection = 'QA';
 if ( $_SERVER['SERVER_NAME'] == 'promotions.centurylink.com' ) {
 	$emailArrSelection = 'live';
 }
 
 
-if ( $emailArrSelection !== 'live' || prevent_multi_submit() ) {
+if ( prevent_multi_submit() ) {
 
 	$topicID 	= filter_var( trim($_POST['topicID']), 		FILTER_SANITIZE_STRING );
 	$comments 	= filter_var( trim($_POST['comments']), 	FILTER_SANITIZE_STRING );
@@ -56,10 +56,10 @@ if ( $emailArrSelection !== 'live' || prevent_multi_submit() ) {
 	$billingTitle = "";
 	$billingFirstName = "";
 	$billingLastName = "";
-	$billingAddress1 = trim($_POST['billingAddress1']);
-	$billingAddress2 = trim($_POST['billingAddress2']);
-	$billingState = trim($_POST['billingState']);
-	$billingZipCode = trim($_POST['billingZipCode']);
+	$billingAddress1 = 	filter_var( trim($_POST['billingAddress1']), 	FILTER_SANITIZE_STRING );
+	$billingAddress2 = 	filter_var( trim($_POST['billingAddress2']), 	FILTER_SANITIZE_STRING );
+	$billingState = 	filter_var( trim($_POST['billingState']), 	FILTER_SANITIZE_STRING );
+	$billingZipCode = 	filter_var( trim($_POST['billingZipCode']), 	FILTER_SANITIZE_STRING );
 	$source = ( strpos($success,'fb') ) ? 'Facebook' : 'Standalone';
 	$honeyPot  = "";
 
@@ -68,9 +68,9 @@ if ( $emailArrSelection !== 'live' || prevent_multi_submit() ) {
 		$billingFirstName = $firstName;
 		$billingLastName = $lastName;
 	} else {
-		$billingTitle = trim($_POST['billingTitle']);
-		$billingFirstName = trim($_POST['billingFirstName']);
-		$billingLastName = trim($_POST['billingLastName']);
+		$billingTitle = 	filter_var( trim($_POST['billingTitle']), 	FILTER_SANITIZE_STRING );
+		$billingFirstName = filter_var( trim($_POST['billingFirstName']), 	FILTER_SANITIZE_STRING );
+		$billingLastName = 	filter_var( trim($_POST['billingLastName']), 	FILTER_SANITIZE_STRING );
 	}
 
 	if (isset($_POST['xljsdfljkj']))
