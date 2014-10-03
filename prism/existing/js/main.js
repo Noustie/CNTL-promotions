@@ -49,5 +49,11 @@ $(function(){
 			}
 		}
 		setTimeout( delay, 10 );		
-	});	
+	});
+
+	//Remedies the PDF tracking firing 2 times.
+	$(window).on(‘load’, function () { s.linkDownloadFileTypes = s.linkDownloadFileTypes.replace('pdf,','');  })
+
 });
+
+
