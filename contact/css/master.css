@@ -193,16 +193,15 @@ input, select, textarea {
 	display: inline-block;
 	border: 1px solid #9a9b9c;
 	color: #666;
-	line-height: 40px;
-	padding: 5px 5px 5px 8px;
+	padding: 0 5px 0 8px;
 	box-shadow: 0 1px 1px #aaa inset;
 }
-
-select {
-	height: 40px;
+textarea {
+	padding: 5px 8px;
 }
 
-input {
+select, input {
+	line-height: 40px;
 	height: 40px;
 }
 
