@@ -193,6 +193,7 @@ input, select, textarea {
 	display: inline-block;
 	border: 1px solid #9a9b9c;
 	color: #666;
+	line-height: 40px;
 	padding: 5px 5px 5px 8px;
 	box-shadow: 0 1px 1px #aaa inset;
 }
@@ -330,12 +331,11 @@ label {
 }
 
 .teamMember {
-	width: 25%;
-	min-width: 200px;
+	width: 180px;
 	min-height: 35em;
 	float: left;
-	padding: 0 7px 15px 7px;
-	margin: 0;
+	padding: 0 0 25px 0;
+	margin: 0 10px;
 }
 
 .teamMember ul {
