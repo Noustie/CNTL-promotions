@@ -586,5 +586,10 @@ label.error {
 		max-width: 200px;
 		min-height: 100%;
 	}
-
+}
+@media only screen and (max-width: 460px) {
+	.teamMember {
+		float: none;
+		margin: 0 auto;
+	}
 }
