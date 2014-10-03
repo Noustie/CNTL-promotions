@@ -96,9 +96,9 @@ h2 {
 }
 
 #content {
-	width: 88%;
+	width: 90%;
 	max-width: 810px;
-	margin: 0 6%;
+	margin: 0 5%;
 	overflow: hidden;
 }
 
@@ -189,15 +189,12 @@ h3.gradHeader span {
 }
 
 input, select, textarea {
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
 	border-radius: 6px;
+	display: inline-block;
 	border: 1px solid #9a9b9c;
 	color: #666;
 	padding: 5px 5px 5px 8px;
-	-moz-box-shadow: 0 1px 1px #aaa inset;
 	box-shadow: 0 1px 1px #aaa inset;
-	-webkit-box-shadow: 0 1px 1px #aaa inset;
 }
 
 select {
@@ -333,10 +330,12 @@ label {
 }
 
 .teamMember {
-	max-width: 200px;
+	width: 25%;
+	min-width: 200px;
 	min-height: 35em;
 	float: left;
-	padding: 0 15px 15px 0;
+	padding: 0 7px 15px 7px;
+	margin: 0;
 }
 
 .teamMember ul {
