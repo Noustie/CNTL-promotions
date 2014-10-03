@@ -71,25 +71,11 @@
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
 
-        <!--[if IE 8]>
+        <!--[if IE]>
             <style type="text/css">
-                .price sup{top: -0.8em}
+              .price sup{top: -0.8em}
             </style>
         <![endif]-->
-
-        <!--[if IE 9]>
-            <style type="text/css">
-                .price sup{top: -0.8em}
-            </style>
-        <![endif]-->
-
-
-        <style>
-            @media all and (-ms-high-contrast:none)
-            {
-                *::-ms-backdrop, .price sup { top: -0.8em } /* IE11 */
-            }
-        </style>
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
