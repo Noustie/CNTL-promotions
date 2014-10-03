@@ -77,6 +77,12 @@
             </style>
         <![endif]-->
 
+        <!--[if IE 9]>
+            <style type="text/css">
+                .price sup{top: -0.8em}
+            </style>
+        <![endif]-->
+
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
         <script type="text/javascript">
