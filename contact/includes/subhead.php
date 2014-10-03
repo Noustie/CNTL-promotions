@@ -15,7 +15,7 @@
 	    		<div class="subnav right">
 	    			<?php if ($currentFile != 'team.php') : ?>
 					<div class="team right">
-	    				<p><a href="team.php" clicktrack="ctl|<?php echo $trackingBase; ?>|button|meet_team" target="_blank">Meet the Team</a></p>
+	    				<p><a href="/contact/team.php" clicktrack="ctl|<?php echo $trackingBase; ?>|button|meet_team" target="_blank">Meet the Team</a></p>
 	    			</div>
 	    			<?php endif; ?>
 					<div class="tweet right">

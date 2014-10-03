@@ -59,7 +59,7 @@ include('includes/header.php');
 	    	<div class="subHeaderCont">
 	    		<div class="subnav right">
 					<div class="team right">
-	    				<p><a href="team.php" clicktrack="ctl|<?php echo $trackingBase; ?>|sent|button|team" target="_blank">Meet the Team</a></p>
+	    				<p><a href="/contact/team.php" clicktrack="ctl|<?php echo $trackingBase; ?>|sent|button|team" target="_blank">Meet the Team</a></p>
 	    			</div>
 					<div class="tweet right">
 	    				<p>Send us a tweet or follow us at<br /><a href="http://twitter.com/CenturyLinkHelp" target="_blank" clicktrack="ctl|<?php echo $trackingBase; ?>|sent|button|twitter">@CenturyLinkHelp</a></p>
