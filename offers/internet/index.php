@@ -83,6 +83,14 @@
             </style>
         <![endif]-->
 
+
+        <style>
+            @media all and (-ms-high-contrast:none)
+            {
+                *::-ms-backdrop, .price sup { top: -0.8em } /* IE11 */
+            }
+        </style>
+
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
         <script type="text/javascript">
