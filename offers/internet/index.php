@@ -83,10 +83,6 @@
             </style>
         <![endif]-->
 
-        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
-           .price sup{top: -0.8em}  
-        }
-
         <!--[if IE]>
             <style type="text/css">
               .price sup{top: -0.8em}
@@ -95,9 +91,8 @@
 
 
         <style>
-            @media all and (-ms-high-contrast:none)
-            {
-                *::-ms-backdrop, .price sup { top: -0.8em } /* IE11 */
+            @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+                .price sup{top: -0.8em}  
             }
         </style>
 
