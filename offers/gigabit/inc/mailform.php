@@ -98,13 +98,6 @@
 	MOVED CAUSE WE ARENT SENDING EMAILS ANYMORE
 
 
-	$emailHost = "mail.contactcenturylink.com";
-	$emailU = "smbinquiry@contactcenturylink.com";
-	$emailP = "5peYEs8Ujey7";
-	$emailFrom = "Vegas GPON 1GIG Inquiry <smbinquiry@contactcenturylink.com>";
-	$emailsTo = 'celestinec@peteramayer.com';
-
-
 	function SendEmail($name, $streetAddress, $unitNumber, $zip, $email, $phone, $successView, $email_TO, $email_FROM, $email_HOST, $email_PORT, $email_UN, $email_PW)
 	{
 		require_once "Mail.php";
