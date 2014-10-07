@@ -37,7 +37,7 @@ $sendToEmailArr = array(
 	"DEV" => "brownkg@peteramayer.com",
 	"CEE" => "celestinec@peteramayer.com"
 );
-$emailArrSelection = 'live';
+$emailArrSelection = 'DEV';
 if ( $_SERVER['SERVER_NAME'] == 'promotions.centurylink.com' ) {
 	$emailArrSelection = 'live';
 }
