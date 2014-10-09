@@ -81,6 +81,7 @@ class CenturyLinkGadget {
 		'small_medium_business' => array(
 	        'title' => 'Small-Medium Business',
 	        'playlists' => array(
+	            "PLEYIeiCR-pz5rmaTm4DiRUfkxsxgMKcJh", 
 	            "PLEYIeiCR-pz6JxctpF-QomFMEycyz4q-0", 
 	            "PLEYIeiCR-pz6BGasgc8VgYDdocGMpJAFj", 
 	            "PLEYIeiCR-pz70zSzc-xff5WAGta9_x02Q",
