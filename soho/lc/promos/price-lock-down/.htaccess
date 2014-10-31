@@ -1,0 +1,4 @@
+# single page redirect
+
+RewriteEngine    On
+RewriteRule      (.*) http://www.centurylink.com/small-business/lp/lc/price-lock-down/? [R=301]

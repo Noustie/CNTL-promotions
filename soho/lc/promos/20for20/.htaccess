@@ -1,0 +1,4 @@
+# single page redirect
+
+RewriteEngine    On
+RewriteRule      (.*) http://www.centurylink.com/small-business/lp/lc/20for20/? [R=301]
