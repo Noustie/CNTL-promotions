@@ -71,27 +71,27 @@ $c2c_buttonname = 'chat-residential-english-triple'; //LQ
 					</div>
 					<div id="directv" class="tab bgleft showtime">
 						<div class="tabPad">
-							<h3 class="abir">Includes 12 FREE months of SHOWTIME<sub>&reg;</sub> </h3>
-							<h3>Don&rsquo;t just watch TV. DIRECTV&trade;. </h3>
+							<h3 class="uppercase">Don&rsquo;t just watch TV. DIRECTV<sup>&reg;</sup>.</h3>
 							<ul>
-								<!--<li>140+ channels, including music channels and local channels.<sup>&dagger;</sup></li>-->
-								<li>NO extra charge for local channels</li>
-								<li>4 FREE Upgrades : Genie&trade; &ndash; DIRECTV's best HD DVR ever! Connect up to 4 rooms. Record up to 5 shows at once.<br>
-								<span style="font-size:10px;line-height:12px;">Additional equipment required. Additional &amp; Advanced receiver fees apply. Minimum 2-room set-up required for free Genie upgrade offer.</span></li>
-								<li>FREE standard professional installation</li>
-								<li>3 FREE months of HBO<sup>&reg;</sup> + SHOWTIME<sub>&reg;</sub></li>
+								<li>NO extra charge for local channels. <br> They&rsquo;re included in over 99% of the U.S.</li>
+								<li>4 FREE Upgrades: Genie<sup>&reg;</sup> &ndash; DIRECTV's best HD DVR ever! Connect up to 4 rooms. Record up to 5 shows at once. <br> <small>Additional equipment required. Additional &amp; Advanced receiver fees apply. </small></li>
+								<li>FREE standard professional installation in up to four rooms</li>
+								<li>3 FREE Months of HBO<sup>&reg;</sup>  + SHOWTIME<sup>&reg;</sup> + Cinemax<sup>&reg;</sup> with SELECT<sup>&trade;</sup> through ULTIMATE Packages</li>
 							</ul>
 							<p class="discliamer">Local channels eligibility based on service address. Not all networks available in all markets.</p>
 						</div>
 					</div>
 					<div id="hsi" class="tab bgright">
+						<img src="/offers/common/dtv-triple/img/speed-bug-12mbps.png" alt="Speeds up to 12 Mbps" class="speedbug">
 						<div class="tabPad">
 							<h3>Go consistently fast on a private, direct connection.</h3>
 							<ul>
-								<li>Connection speeds at 12 Mbps to download, upload, surf, watch and chat</li>
-								<li>Watch movies on Netflix<sup>&reg;</sup>, Skype<sup>&reg;</sup> with friends and family, or connect on Facebook and Twitter with the reliability and speed you need</li>
-								<li>Play online games or stream HD Hollywood movies without slowing down</li>
-								<li>Plus, get backup, security and support for all your digital files with CenturyLink @Ease<sup>&trade;</sup> &ndash; FREE with High-Speed Internet service</li>
+								<li>Watch movies and shows on Netflix<sup>&reg;</sup> and Hulu in HD</li>
+								<li>Save on mobile data &ndash; connect with in-home Wi-Fi to download the latest apps</li>
+								<li>Get answers when you need them with 24/7 tech support</li>
+								<li>Includes award-winning Norton<sup>&trade;</sup> AntiVirus Online, at no additional cost</li>
+								<li>Skype<sup>&reg;</sup> with friends and family around the world &ndash; up to 7 at once</li>
+								<li>Stream music instantly with Pandora and Spotify</li>
 							</ul>
 						</div>
 					</div>
@@ -117,11 +117,9 @@ $c2c_buttonname = 'chat-residential-english-triple'; //LQ
 	</div>
 	<div class="pageSubFoot">
 		<p class="discliamer col">
-			*Other fees and conditions may apply. <a class="popupTrigger" target="_blank" href="<?php echo $disclaimer; ?>">Click here for details.</a><br>
+			<strong>Other fees and conditions may apply. <a class="popupTrigger" target="_blank" href="<?php echo $disclaimer; ?>">Click here for details.</a></strong> <br>
 			<br />
-			Limited time offer. New approved customers only. Conditions apply. 24-month DIRECTV agreement required.** <br />
-			Credit card required (except in PA). Hardware and programming available separately. Additional fees required.  <br />
-			Applicable use tax adjustment may apply on the retail value of the installation.
+			<strong>LOffer valid through 1/5/2015. New approved customers only. Conditions apply. 24-month DIRECTV agreement required.</strong>* Credit card required (except in PA). $19.95 Handling &amp; Delivery fee may apply. Applicable use tax adjustment may apply on the retail value of the installation. Programming, pricing and offers are subject to change and may vary in certain markets. Some offers may not be available through all channels and in select areas.
 		</p>
 <?php require_once("../common/dtv-triple/includes/sharing.php") ?>
 	</div>

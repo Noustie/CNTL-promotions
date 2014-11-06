@@ -488,6 +488,8 @@ ROUNDED CORNER HTML IMPLEMENTATION:
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
 
+.uppercase {text-transform: uppercase;}
+.speedbug {position: absolute; top: 50px; left: 370px; z-index: 100; }
 
 
 /* =============================================================================

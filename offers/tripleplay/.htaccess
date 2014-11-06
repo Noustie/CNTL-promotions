@@ -1,4 +1,4 @@
 # single page redirect
 
-RewriteEngine    On
-RewriteRule      (.*)               http://www.centurylink.com/home/bundles/?     [R=301]
+# RewriteEngine    On
+# RewriteRule      (.*)               http://www.centurylink.com/home/bundles/?     [R=301]
