@@ -76,7 +76,7 @@ $c2c_buttonname = 'chat-centurylink-residential-customer-support-triple'; //LCTL
 						<div class="tabPad">
 							<h3 class="uppercase">Don&rsquo;t just watch TV. DIRECTV<sup>&reg;</sup>.</h3>
 							<ul>
-								<li>NO extra charge for local channels. <br> They&rsquo;re included in over 99% of the U.S.</li>
+								<li>NO extra charge for local channels, <br> they&rsquo;re included in over 99% of the U.S.</li>
 								<li>4 FREE Upgrades: Genie<sup>&reg;</sup> &ndash; DIRECTV's best HD DVR ever! Connect up to 4 rooms. Record up to 5 shows at once. <br> <small>Additional equipment required. Additional &amp; Advanced receiver fees apply. </small></li>
 								<li>FREE standard professional installation in up to four rooms</li>
 								<li>3 FREE Months of HBO<sup>&reg;</sup>  + SHOWTIME<sup>&reg;</sup> + Cinemax<sup>&reg;</sup> with SELECT<sup>&trade;</sup> through ULTIMATE Packages</li>
