@@ -119,7 +119,7 @@ $c2c_buttonname = 'chat-residential-english-triple'; //LQ
 		<p class="discliamer col">
 			<strong>Other fees and conditions may apply. <a class="popupTrigger" target="_blank" href="<?php echo $disclaimer; ?>">Click here for details.</a></strong> <br>
 			<br />
-			<strong>LOffer valid through 1/5/2015. New approved customers only. Conditions apply. 24-month DIRECTV agreement required.</strong>* Credit card required (except in PA). $19.95 Handling &amp; Delivery fee may apply. Applicable use tax adjustment may apply on the retail value of the installation. Programming, pricing and offers are subject to change and may vary in certain markets. Some offers may not be available through all channels and in select areas.
+			<strong>Offer valid through 1/5/2015. New approved customers only. Conditions apply. 24-month DIRECTV agreement required.</strong>* Credit card required (except in PA). $19.95 Handling &amp; Delivery fee may apply. Applicable use tax adjustment may apply on the retail value of the installation. Programming, pricing and offers are subject to change and may vary in certain markets. Some offers may not be available through all channels and in select areas.
 		</p>
 <?php require_once("../common/dtv-triple/includes/sharing.php") ?>
 	</div>
